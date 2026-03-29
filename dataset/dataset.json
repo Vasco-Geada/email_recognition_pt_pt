@@ -1,0 +1,22 @@
+[
+  {
+    "subject": "Reunião amanhã",
+    "body": "Olá, consegues reunir amanhã à tarde?",
+    "label": "agendamento_reuniao"
+  },
+  {
+    "subject": "Cancelar reunião",
+    "body": "A reunião de sexta fica cancelada",
+    "label": "cancelamento_reuniao"
+  },
+  {
+    "subject": "Reunião",
+    "body": "Sexta não consigo, pode ser segunda?",
+    "label": "discussao_data"
+  },
+  {
+    "subject": "Relatório",
+    "body": "Envio em anexo o relatório",
+    "label": "nao_reuniao"
+  }
+]
