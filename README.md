@@ -1,0 +1,2 @@
+# Reconhecimento Automático de Eventos e Expressões Temporais em Emails: Desenvolvimento de um Modelo em Português Europeu
+O email permanece um meio central de comunicação em contextos académicos, profissionais e organizacionais, sendo frequentemente utilizado para anunciar eventos, definir prazos, atribuir tarefas e coordenar atividades. Esta informação, apesar de relevante para a gestão do tempo e da produtividade, encontra-se expressa de forma não estruturada, recorrendo à linguagem natural, frequentemente informal e dependente do contexto comunicativo.
