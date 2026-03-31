@@ -41,7 +41,6 @@ class EmailIntentClassifier:
         self.class_labels = [
             "agendamento_reuniao",
             "cancelamento_reuniao",
-            "discussao_data",
             "nao_reuniao"
         ]
     
@@ -203,8 +202,7 @@ class EmailIntentClassifier:
             max_iter=max_iter,
             class_weight='balanced',
             random_state=random_state,
-            solver='lbfgs',
-            multi_class='multinomial'
+            solver='lbfgs'
         )
         
         self.model.fit(X_train, y_train)
