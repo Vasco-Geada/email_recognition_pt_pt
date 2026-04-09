@@ -41,7 +41,7 @@ Place your data in `dataset/dataset.json` with this format:
   {
     "subject": "Email subject",
     "body": "Email content",
-    "label": "agendamento_reuniao"  // or cancelamento_reuniao, discussao_data, nao_reuniao
+    "label": "agendamento_reuniao"  // or cancelamento_reuniao, reuniao_confirmada, nao_reuniao
   }
 ]
 ```
@@ -132,7 +132,7 @@ INFO - Loaded 400 samples
 INFO - Label distribution:
        agendamento_reuniao: 150
        nao_reuniao: 120
-       discussao_data: 80
+       REUNIAO_CONFIRMADA: 80
        cancelamento_reuniao: 50
 INFO - Training set: 320 samples
 INFO - Test set: 80 samples

@@ -73,7 +73,7 @@ class EmailAnalysisPipeline:
     ACTION_REQUIRED_INTENTS = {
         "agendamento_reuniao",      # Schedule action needed
         "cancelamento_reuniao",      # Cancellation action needed
-        "discussao_data",            # Decision needed
+        "reuniao_confirmada",            # Decision needed
     }
     
     # No action required for these
@@ -85,7 +85,7 @@ class EmailAnalysisPipeline:
     INTENT_PRIORITY = {
         "agendamento_reuniao": "high",      # Scheduling often time-sensitive
         "cancelamento_reuniao": "high",     # Cancellations need quick response
-        "discussao_data": "medium",        # Data discussion less urgent
+        "reuniao_confirmada": "medium",        # Data discussion less urgent
         "nao_reuniao": "low",              # Info emails are non-urgent
     }
     
@@ -151,7 +151,7 @@ class EmailAnalysisPipeline:
         """
         summaries = {
             "agendamento_reuniao": (
-                f"📅 SCHEDULE MEETING"
+                f"📅 SCHEDULE MEETING OR DISCUSS DATE/TIME"
                 f" | Trigger: {trigger} ({trigger_method})"
                 if trigger else "📅 SCHEDULE MEETING (no clear trigger)"
             ),
@@ -160,8 +160,8 @@ class EmailAnalysisPipeline:
                 f" | Trigger: {trigger} ({trigger_method})"
                 if trigger else "❌ CANCELLATION NOTICE (confirm via email)"
             ),
-            "discussao_data": (
-                f"🗓️ DISCUSS DATE/TIME"
+            "reuniao_confirmada": (
+                f"🗓️ CONFIRM MEETING OR DATE/TIME"
                 f" | Trigger: {trigger} ({trigger_method})"
                 if trigger else "🗓️ DISCUSS DATE/TIME (no specific trigger)"
             ),
@@ -311,7 +311,7 @@ class EmailAnalysisPipeline:
             {
                 'agendamento_reuniao': [...],
                 'cancelamento_reuniao': [...],
-                'discussao_data': [...],
+                'reuniao_confirmada': [...],
                 'nao_reuniao': [...]
             }
         """
