@@ -10,7 +10,7 @@ A baseline text classification pipeline that classifies email intents using **TF
 
 - **agendamento_reuniao**: Schedule/request a meeting
 - **cancelamento_reuniao**: Cancel/decline a meeting
-- **discussao_data**: Discuss/negotiate meeting date/time
+- **reuniao_confirmada**: Discuss/negotiate meeting date/time
 - **nao_reuniao**: Not related to meetings
 
 ### Features

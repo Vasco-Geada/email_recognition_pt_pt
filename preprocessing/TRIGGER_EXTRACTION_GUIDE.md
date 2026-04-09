@@ -47,7 +47,7 @@ EXAMPLES by Intent:
    Function: Related trigger for rescheduling
 
 
-3. DISCUSSAO_DATA (Data/Time Discussion)
+3. REUNIAO_CONFIRMADA (Data/Time Discussion)
    Email: "Qual dia você sugere para conversar?"
    Trigger: "qual dia"
    Function: Signals need to discuss timing
@@ -129,7 +129,7 @@ Role: General statement
 
 EXAMPLE 3: The word "data" (date/data)
 ```
-Intent: DISCUSSAO_DATA
+Intent: REUNIAO_CONFIRMADA
 Email: "Qual data você prefere?"
 Trigger: YES - triggers date discussion
 Role: Explicitly requesting date choice
@@ -155,15 +155,15 @@ Different intents use DIFFERENT vocabularies.
 Vocabulary Overlap:
 ```
 SHARED WORDS (appear in multiple intent lexicons):
-├─ "quando" → agendamento_reuniao, discussao_data
-├─ "dia" → agendamento_reuniao, discussao_data  
+├─ "quando" → agendamento_reuniao, reuniao_confirmada
+├─ "dia" → agendamento_reuniao, reuniao_confirmada  
 ├─ "disponível" → agendamento_reuniao, cancelamento_reuniao
 └─ "reunião" → agendamento_reuniao, cancelamento_reuniao
 
 INTENT-SPECIFIC WORDS:
 ├─ agendamento_reuniao: "agendar", "marcar" (scheduling actions)
 ├─ cancelamento_reuniao: "cancelar", "adiar" (negation/delay)
-├─ discussao_data: "qual dia", "propor data" (date inquiry)
+├─ reuniao_confirmada: "qual dia", "propor data" (date inquiry)
 └─ nao_reuniao: (empty - no characteristic triggers)
 ```
 
@@ -171,7 +171,7 @@ STRATEGY:
 For each intent, search only the relevant vocabulary subset:
 - agendamento_reuniao: Search for scheduling triggers
 - cancelamento_reuniao: Search for cancellation triggers
-- discussao_data: Search for date-inquiry triggers
+- reuniao_confirmada: Search for date-inquiry triggers
 
 BENEFIT: Vastly reduces false positives compared to searching all triggers
 against all intents regardless of predicted intent.
@@ -390,7 +390,7 @@ Triggers "agendar" but intent is not scheduling
 Negation + Conditional:
 ```
 "Se não conseguir agendar, podemos tentar outra data?" 
-→ Actually a date-discussion (DISCUSSAO_DATA)
+→ Actually a date-discussion (REUNIAO_CONFIRMADA)
 → Lexical extraction finds both "agendar" and date references
 → Ambiguous which trigger to return
 ```
@@ -718,7 +718,7 @@ Example labeled data:
   },
   {
     "text": "Qual data você sugere?",
-    "intent": "discussao_data",
+    "intent": "reuniao_confirmada",
     "trigger": "qual data",
     "trigger_start": 0,
     "trigger_end": 9,
@@ -814,7 +814,7 @@ email = "Vamos agendar uma reunião para próxima semana?"
 # Get intent
 intent_result = intent_classifier(email, 
     candidate_labels=["agendamento_reuniao", "cancelamento_reuniao", 
-                      "discussao_data", "nao_reuniao"])
+                      "reuniao_confirmada", "nao_reuniao"])
 intent = intent_result['labels'][0]  # Top prediction
 
 # Get trigger(s)
@@ -866,7 +866,7 @@ Per-intent metrics:
 Track performance separately for each intent:
 - agendamento_reuniao: F1 = 0.89
 - cancelamento_reuniao: F1 = 0.85
-- discussao_data: F1 = 0.78
+- reuniao_confirmada: F1 = 0.78
 - nao_reuniao: F1 = 0.92 (easier - no trigger expected)
 ```
 

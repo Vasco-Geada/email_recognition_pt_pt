@@ -9,7 +9,7 @@ Demonstrates:
 5. Error handling
 """
 
-from preprocessing.trigger_extraction import TriggerExtractor, EmailIntent
+from trigger_extraction import TriggerExtractor, EmailIntent
 
 
 def example_basic_extraction():
@@ -36,9 +36,9 @@ def example_basic_extraction():
     
     # Example 3: Discussão de Data
     text3 = "Qual dia você sugere para a próxima reunião de equipa?"
-    result3 = extractor.extract_trigger(text3, "discussao_data")
+    result3 = extractor.extract_trigger(text3, "reuniao_confirmada")
     print(f"Text: {text3}")
-    print(f"Intent: discussao_data")
+    print(f"Intent: reuniao_confirmada")
     print(f"Result: {result3}\n")
     
     # Example 4: No Trigger Found
@@ -67,7 +67,7 @@ def example_batch_processing():
     intents = [
         "agendamento_reuniao",
         "cancelamento_reuniao",
-        "discussao_data",
+        "reuniao_confirmada",
         "nao_reuniao",
     ]
     
@@ -147,16 +147,16 @@ def example_intent_aware_extraction():
     text = "Qual dia você prefere para agendar a reunião?"
     
     result_agend = extractor.extract_trigger(text, "agendamento_reuniao")
-    result_discus = extractor.extract_trigger(text, "discussao_data")
+    result_discus = extractor.extract_trigger(text, "reuniao_confirmada")
     
     print(f"\nText: {text}")
     print(f"\n  As agendamento_reuniao:")
     print(f"    Trigger: {result_agend['trigger'] if result_agend else 'None'}")
     print(f"    (Action: SCHEDULE the meeting)")
     
-    print(f"\n  As discussao_data:")
+    print(f"\n  As reuniao_confirmada:")
     print(f"    Trigger: {result_discus['trigger'] if result_discus else 'None'}")
-    print(f"    (Action: DISCUSS the date)")
+    print(f"    (Action: CONFIRM the meeting or date)")
     
     print("\n  → Same sentence, different meaning based on intent!")
 
