@@ -1,0 +1,1002 @@
+[
+  {
+    "subject": "Reunião",
+    "body": "Pode então ficar marcado para quarta-feira. Pode ser às 14h?",
+    "label": "agendamento_reuniao"
+  },
+  {
+    "subject": "Reunião",
+    "body": "Perfeito, fica então às 10h.",
+    "label": "reuniao_confirmada"
+  },
+  {
+    "subject": "Reunião",
+    "body": "Fica então para próxima segunda às às 12h.Por mim está ótimo, pode ser ficar entao para próxima segunda às às 12h.",
+    "label": "reuniao_confirmada"
+  },
+  {
+    "subject": "Reunião",
+    "body": "Temos de cancelar a reunião segunda.",
+    "label": "cancelamento_reuniao"
+  },
+  {
+    "subject": "Reunião",
+    "body": "Olá Ricardo, a reunião de depois de almoço, perto das 14:30h? foi cancelada.",
+    "label": "cancelamento_reuniao"
+  },
+  {
+    "subject": "Reunião",
+    "body": "Fica então para próxima terça às às 9:30h?.Por mim está ótimo, pode ser ficar entao para próxima terça às às 9:30h?.",
+    "label": "reuniao_confirmada"
+  },
+  {
+    "subject": "Reunião",
+    "body": "A reunião marcada para amanhã fica sem efeito.",
+    "label": "cancelamento_reuniao"
+  },
+  {
+    "subject": "Reunião",
+    "body": "Consegues reunir depois de almoço, perto das 14:30h? no sala B?",
+    "label": "agendamento_reuniao"
+  },
+  {
+    "subject": "Reunião",
+    "body": "Olá Maria, a reunião de para a semana foi cancelada.",
+    "label": "cancelamento_reuniao"
+  },
+  {
+    "subject": "Reunião",
+    "body": "Peço imensa desculpa mas acha que podemos remarcar a entrevista para quarta à mesma hora?",
+    "label": "cancelamento_reuniao"
+  },
+  {
+    "subject": "Reunião",
+    "body": "Confirmado para amanhã à tarde no Zoom.",
+    "label": "reuniao_confirmada"
+  },
+  {
+    "subject": "Reunião",
+    "body": "Pode então ficar marcado para quarta-feira. Pode ser às 12h?",
+    "label": "agendamento_reuniao"
+  },
+  {
+    "subject": "Reunião",
+    "body": "Confirmado para para a semana no escritório.",
+    "label": "reuniao_confirmada"
+  },
+  {
+    "subject": "Reunião",
+    "body": "Boas Pedro, vamos marcar uma reunião depois de almoço, perto das 14:30h??",
+    "label": "agendamento_reuniao"
+  },
+  {
+    "subject": "Reunião",
+    "body": "Olá Ana, podemos reunir às 10h para falar sobre relatório?",
+    "label": "agendamento_reuniao"
+  },
+  {
+    "subject": "Reunião",
+    "body": "Perfeito, fica então às 15h.",
+    "label": "reuniao_confirmada"
+  },
+  {
+    "subject": "Reunião",
+    "body": "Olá Sofia, podemos reunir amanhã à tarde para falar sobre cliente XPTO?",
+    "label": "agendamento_reuniao"
+  },
+  {
+    "subject": "Reunião",
+    "body": "Olá João, a reunião de para a semana foi cancelada.",
+    "label": "cancelamento_reuniao"
+  },
+  {
+    "subject": "Reunião",
+    "body": "Peço imensa desculpa mas acha que podemos remarcar a entrevista para quarta à mesma hora?",
+    "label": "cancelamento_reuniao"
+  },
+  {
+    "subject": "Reunião",
+    "body": "Confirmado para amanhã à tarde no escritório.",
+    "label": "reuniao_confirmada"
+  },
+  {
+    "subject": "Reunião",
+    "body": "Sim sim claro. Sem problema.",
+    "label": "reuniao_confirmada"
+  },
+  {
+    "subject": "Reunião",
+    "body": "Consegues reunir sexta no sala B?",
+    "label": "agendamento_reuniao"
+  },
+  {
+    "subject": "Reunião",
+    "body": "Pode então ficar marcado para quarta-feira. Pode ser às 12h?",
+    "label": "agendamento_reuniao"
+  },
+  {
+    "subject": "Reunião",
+    "body": "Fica então para próxima quarta às às 9:30h?.Por mim está ótimo, pode ser ficar entao para próxima quarta às às 9:30h?.",
+    "label": "reuniao_confirmada"
+  },
+  {
+    "subject": "Reunião",
+    "body": "Consegues reunir depois de almoço, perto das 14:30h? no Zoom?",
+    "label": "agendamento_reuniao"
+  },
+  {
+    "subject": "Reunião",
+    "body": "Fica então para quinta às às 12h.Por mim está ótimo, pode ser ficar entao para quinta às às 12h.",
+    "label": "reuniao_confirmada"
+  },
+  {
+    "subject": "Reunião",
+    "body": "Desculpa, mas vou ter de desmarcar a reunião às 10h.",
+    "label": "cancelamento_reuniao"
+  },
+  {
+    "subject": "Reunião",
+    "body": "Sim sim claro. Sem problema.",
+    "label": "reuniao_confirmada"
+  },
+  {
+    "subject": "Reunião",
+    "body": "Desculpa, mas vou ter de desmarcar a reunião amanhã.",
+    "label": "cancelamento_reuniao"
+  },
+  {
+    "subject": "Reunião",
+    "body": "Pode então ficar marcado para quarta-feira. Pode ser às 12h?",
+    "label": "agendamento_reuniao"
+  },
+  {
+    "subject": "Reunião",
+    "body": "Olá Ana, podemos reunir amanhã para falar sobre cliente XPTO?",
+    "label": "agendamento_reuniao"
+  },
+  {
+    "subject": "Reunião",
+    "body": "Sim sim claro. Sem problema.",
+    "label": "reuniao_confirmada"
+  },
+  {
+    "subject": "Reunião",
+    "body": "Ok, combinamos sexta.",
+    "label": "reuniao_confirmada"
+  },
+  {
+    "subject": "Reunião",
+    "body": "Sim sim claro. Sem problema.",
+    "label": "reuniao_confirmada"
+  },
+  {
+    "subject": "Reunião",
+    "body": "Peço imensa desculpa mas acha que podemos remarcar a entrevista para quarta à mesma hora?",
+    "label": "cancelamento_reuniao"
+  },
+  {
+    "subject": "Reunião",
+    "body": "Pode ser amanhã à tarde?",
+    "label": "agendamento_reuniao"
+  },
+  {
+    "subject": "Reunião",
+    "body": "Pode ser amanhã?",
+    "label": "agendamento_reuniao"
+  },
+  {
+    "subject": "Reunião",
+    "body": "Pretendo marcar uma entrevista para falarmos um pouco sobre os teus conhecimentos na área web e outros assuntos importantes. Podemos marcar para esta semana?",
+    "label": "agendamento_reuniao"
+  },
+  {
+    "subject": "Reunião",
+    "body": "Temos de cancelar a reunião segunda.",
+    "label": "cancelamento_reuniao"
+  },
+  {
+    "subject": "Reunião",
+    "body": "Fica então para próxima segunda às às 16h?.Por mim está ótimo, pode ser ficar entao para próxima segunda às às 16h?.",
+    "label": "reuniao_confirmada"
+  },
+  {
+    "subject": "Reunião",
+    "body": "Fechado, reunião sexta.",
+    "label": "reuniao_confirmada"
+  },
+  {
+    "subject": "Reunião",
+    "body": "Ok, combinamos amanhã.",
+    "label": "reuniao_confirmada"
+  },
+  {
+    "subject": "Reunião",
+    "body": "Consegues reunir depois de almoço, perto das 14:30h? no Zoom?",
+    "label": "agendamento_reuniao"
+  },
+  {
+    "subject": "Reunião",
+    "body": "Podemos agendar uma call sexta sobre projeto da tese?",
+    "label": "agendamento_reuniao"
+  },
+  {
+    "subject": "Reunião",
+    "body": "Consegues reunir às 10h no sala A?",
+    "label": "agendamento_reuniao"
+  },
+  {
+    "subject": "Reunião",
+    "body": "Peço imensa desculpa mas acha que podemos remarcar a entrevista para próxima terça à mesma hora?",
+    "label": "cancelamento_reuniao"
+  },
+  {
+    "subject": "Reunião",
+    "body": "Desculpa, mas vou ter de desmarcar a reunião amanhã à tarde.",
+    "label": "cancelamento_reuniao"
+  },
+  {
+    "subject": "Reunião",
+    "body": "Boas Ana, vamos marcar uma reunião para a semana?",
+    "label": "agendamento_reuniao"
+  },
+  {
+    "subject": "Reunião",
+    "body": "Pode ser segunda?",
+    "label": "agendamento_reuniao"
+  },
+  {
+    "subject": "Reunião",
+    "body": "Fica então para terça às às 9:30h?.Por mim está ótimo, pode ser ficar entao para terça às às 9:30h?.",
+    "label": "reuniao_confirmada"
+  },
+  {
+    "subject": "Reunião",
+    "body": "Pode ser às 15h?",
+    "label": "agendamento_reuniao"
+  },
+  {
+    "subject": "Reunião",
+    "body": "Pretendo marcar uma entrevista para falarmos um pouco sobre os teus conhecimentos na área web e outros assuntos importantes. Podemos marcar para esta semana?",
+    "label": "agendamento_reuniao"
+  },
+  {
+    "subject": "Reunião",
+    "body": "Olá Pedro, a reunião de segunda foi cancelada.",
+    "label": "cancelamento_reuniao"
+  },
+  {
+    "subject": "Reunião",
+    "body": "Fica então para sexta às às 12h.Por mim está ótimo, pode ser ficar entao para sexta às às 12h.",
+    "label": "reuniao_confirmada"
+  },
+  {
+    "subject": "Reunião",
+    "body": "Temos de cancelar a reunião às 15h.",
+    "label": "cancelamento_reuniao"
+  },
+  {
+    "subject": "Reunião",
+    "body": "Sim sim claro. Sem problema.",
+    "label": "reuniao_confirmada"
+  },
+  {
+    "subject": "Reunião",
+    "body": "Olá João, a reunião de às 10h foi cancelada.",
+    "label": "cancelamento_reuniao"
+  },
+  {
+    "subject": "Reunião",
+    "body": "Ok, combinamos para a semana.",
+    "label": "reuniao_confirmada"
+  },
+  {
+    "subject": "Reunião",
+    "body": "Consegues reunir amanhã à tarde no sala B?",
+    "label": "agendamento_reuniao"
+  },
+  {
+    "subject": "Reunião",
+    "body": "Perfeito, fica então amanhã.",
+    "label": "reuniao_confirmada"
+  },
+  {
+    "subject": "Reunião",
+    "body": "Ok, combinamos amanhã à tarde.",
+    "label": "reuniao_confirmada"
+  },
+  {
+    "subject": "Reunião",
+    "body": "Pode então ficar marcado para quarta-feira. Pode ser às 12h?",
+    "label": "agendamento_reuniao"
+  },
+  {
+    "subject": "Reunião",
+    "body": "Desculpa, mas vou ter de desmarcar a reunião às 10h.",
+    "label": "cancelamento_reuniao"
+  },
+  {
+    "subject": "Reunião",
+    "body": "Boas Ricardo, vamos marcar uma reunião depois de almoço, perto das 14:30h??",
+    "label": "agendamento_reuniao"
+  },
+  {
+    "subject": "Reunião",
+    "body": "Peço imensa desculpa mas acha que podemos remarcar a entrevista para próxima sexta à mesma hora?",
+    "label": "cancelamento_reuniao"
+  },
+  {
+    "subject": "Reunião",
+    "body": "Boas Pedro, vamos marcar uma reunião segunda?",
+    "label": "agendamento_reuniao"
+  },
+  {
+    "subject": "Reunião",
+    "body": "A reunião marcada para às 15h fica sem efeito.",
+    "label": "cancelamento_reuniao"
+  },
+  {
+    "subject": "Reunião",
+    "body": "Confirmado para segunda no Teams.",
+    "label": "reuniao_confirmada"
+  },
+  {
+    "subject": "Reunião",
+    "body": "Pode ser às 15h?",
+    "label": "agendamento_reuniao"
+  },
+  {
+    "subject": "Reunião",
+    "body": "Olá Pedro, podemos reunir às 10h para falar sobre relatório?",
+    "label": "agendamento_reuniao"
+  },
+  {
+    "subject": "Reunião",
+    "body": "Desculpa, mas vou ter de desmarcar a reunião sexta.",
+    "label": "cancelamento_reuniao"
+  },
+  {
+    "subject": "Reunião",
+    "body": "Temos de cancelar a reunião para a semana.",
+    "label": "cancelamento_reuniao"
+  },
+  {
+    "subject": "Reunião",
+    "body": "Confirmado para depois de almoço, perto das 14:30h? no escritório.",
+    "label": "reuniao_confirmada"
+  },
+  {
+    "subject": "Reunião",
+    "body": "Boas Ricardo, vamos marcar uma reunião sexta?",
+    "label": "agendamento_reuniao"
+  },
+  {
+    "subject": "Reunião",
+    "body": "Confirmado para amanhã no sala A.",
+    "label": "reuniao_confirmada"
+  },
+  {
+    "subject": "Reunião",
+    "body": "Pretendo marcar uma entrevista para falarmos um pouco sobre os teus conhecimentos na área web e outros assuntos importantes. Podemos marcar para esta semana?",
+    "label": "agendamento_reuniao"
+  },
+  {
+    "subject": "Reunião",
+    "body": "Pode ser às 10h?",
+    "label": "agendamento_reuniao"
+  },
+  {
+    "subject": "Reunião",
+    "body": "Peço imensa desculpa mas acha que podemos remarcar a entrevista para terça à mesma hora?",
+    "label": "cancelamento_reuniao"
+  },
+  {
+    "subject": "Reunião",
+    "body": "Fica então para próxima quinta às às 16h?.Por mim está ótimo, pode ser ficar entao para próxima quinta às às 16h?.",
+    "label": "reuniao_confirmada"
+  },
+  {
+    "subject": "Reunião",
+    "body": "Sim sim claro. Sem problema.",
+    "label": "reuniao_confirmada"
+  },
+  {
+    "subject": "Reunião",
+    "body": "Desculpa, mas vou ter de desmarcar a reunião às 15h.",
+    "label": "cancelamento_reuniao"
+  },
+  {
+    "subject": "Reunião",
+    "body": "Ok, combinamos às 15h.",
+    "label": "reuniao_confirmada"
+  },
+  {
+    "subject": "Reunião",
+    "body": "Pode ser depois de almoço, perto das 14:30h??",
+    "label": "agendamento_reuniao"
+  },
+  {
+    "subject": "Reunião",
+    "body": "Podemos agendar uma call amanhã sobre cliente XPTO?",
+    "label": "agendamento_reuniao"
+  },
+  {
+    "subject": "Reunião",
+    "body": "Consegues reunir depois de almoço, perto das 14:30h? no sala B?",
+    "label": "agendamento_reuniao"
+  },
+  {
+    "subject": "Reunião",
+    "body": "Consegues reunir às 15h no Zoom?",
+    "label": "agendamento_reuniao"
+  },
+  {
+    "subject": "Reunião",
+    "body": "Confirmado para amanhã no sala B.",
+    "label": "reuniao_confirmada"
+  },
+  {
+    "subject": "Reunião",
+    "body": "Pode ser às 15h?",
+    "label": "agendamento_reuniao"
+  },
+  {
+    "subject": "Reunião",
+    "body": "Peço imensa desculpa mas acha que podemos remarcar a entrevista para terça à mesma hora?",
+    "label": "cancelamento_reuniao"
+  },
+  {
+    "subject": "Reunião",
+    "body": "Pode então ficar marcado para quarta-feira. Pode ser às 9:30h??",
+    "label": "agendamento_reuniao"
+  },
+  {
+    "subject": "Reunião",
+    "body": "Pretendo marcar uma entrevista para falarmos um pouco sobre os teus conhecimentos na área web e outros assuntos importantes. Podemos marcar para esta semana?",
+    "label": "agendamento_reuniao"
+  },
+  {
+    "subject": "Reunião",
+    "body": "Olá Maria, podemos reunir sexta para falar sobre relatório?",
+    "label": "agendamento_reuniao"
+  },
+  {
+    "subject": "Reunião",
+    "body": "Pode então ficar marcado para quarta-feira. Pode ser às 12h?",
+    "label": "agendamento_reuniao"
+  },
+  {
+    "subject": "Reunião",
+    "body": "Confirmado para amanhã à tarde no escritório.",
+    "label": "reuniao_confirmada"
+  },
+  {
+    "subject": "Reunião",
+    "body": "Ok, combinamos às 15h.",
+    "label": "reuniao_confirmada"
+  },
+  {
+    "subject": "Reunião",
+    "body": "Pode ser às 10h?",
+    "label": "agendamento_reuniao"
+  },
+  {
+    "subject": "Reunião",
+    "body": "Pode então ficar marcado para quarta-feira. Pode ser às 16h??",
+    "label": "agendamento_reuniao"
+  },
+  {
+    "subject": "Reunião",
+    "body": "Perfeito, fica então segunda.",
+    "label": "reuniao_confirmada"
+  },
+  {
+    "subject": "Reunião",
+    "body": "Olá Ana, a reunião de amanhã foi cancelada.",
+    "label": "cancelamento_reuniao"
+  },
+  {
+    "subject": "Reunião",
+    "body": "Pode ser amanhã?",
+    "label": "agendamento_reuniao"
+  },
+  {
+    "subject": "Reunião",
+    "body": "Temos de cancelar a reunião às 10h.",
+    "label": "cancelamento_reuniao"
+  },
+  {
+    "subject": "Reunião",
+    "body": "Pode então ficar marcado para quarta-feira. Pode ser às 9:30h??",
+    "label": "agendamento_reuniao"
+  },
+  {
+    "subject": "Reunião",
+    "body": "Pode ser depois de almoço, perto das 14:30h??",
+    "label": "agendamento_reuniao"
+  },
+  {
+    "subject": "Reunião",
+    "body": "Boas Maria, vamos marcar uma reunião às 10h?",
+    "label": "agendamento_reuniao"
+  },
+  {
+    "subject": "Reunião",
+    "body": "Pretendo marcar uma entrevista para falarmos um pouco sobre os teus conhecimentos na área web e outros assuntos importantes. Podemos marcar para esta semana?",
+    "label": "agendamento_reuniao"
+  },
+  {
+    "subject": "Reunião",
+    "body": "Peço imensa desculpa mas acha que podemos remarcar a entrevista para sexta à mesma hora?",
+    "label": "cancelamento_reuniao"
+  },
+  {
+    "subject": "Reunião",
+    "body": "Perfeito, fica então segunda.",
+    "label": "reuniao_confirmada"
+  },
+  {
+    "subject": "Reunião",
+    "body": "Pode então ficar marcado para quarta-feira. Pode ser às 14h?",
+    "label": "agendamento_reuniao"
+  },
+  {
+    "subject": "Reunião",
+    "body": "Temos de cancelar a reunião às 10h.",
+    "label": "cancelamento_reuniao"
+  },
+  {
+    "subject": "Reunião",
+    "body": "Fechado, reunião às 10h.",
+    "label": "reuniao_confirmada"
+  },
+  {
+    "subject": "Reunião",
+    "body": "Consegues reunir segunda no sala A?",
+    "label": "agendamento_reuniao"
+  },
+  {
+    "subject": "Reunião",
+    "body": "Temos de cancelar a reunião amanhã.",
+    "label": "cancelamento_reuniao"
+  },
+  {
+    "subject": "Reunião",
+    "body": "Peço imensa desculpa mas acha que podemos remarcar a entrevista para próxima sexta à mesma hora?",
+    "label": "cancelamento_reuniao"
+  },
+  {
+    "subject": "Reunião",
+    "body": "Confirmado para amanhã à tarde no sala B.",
+    "label": "reuniao_confirmada"
+  },
+  {
+    "subject": "Reunião",
+    "body": "Pretendo marcar uma entrevista para falarmos um pouco sobre os teus conhecimentos na área web e outros assuntos importantes. Podemos marcar para esta semana?",
+    "label": "agendamento_reuniao"
+  },
+  {
+    "subject": "Reunião",
+    "body": "Olá João, a reunião de às 10h foi cancelada.",
+    "label": "cancelamento_reuniao"
+  },
+  {
+    "subject": "Reunião",
+    "body": "Olá João, podemos reunir amanhã para falar sobre revisão do código?",
+    "label": "agendamento_reuniao"
+  },
+  {
+    "subject": "Reunião",
+    "body": "Boas João, vamos marcar uma reunião depois de almoço, perto das 14:30h??",
+    "label": "agendamento_reuniao"
+  },
+  {
+    "subject": "Reunião",
+    "body": "Confirmado para depois de almoço, perto das 14:30h? no Zoom.",
+    "label": "reuniao_confirmada"
+  },
+  {
+    "subject": "Reunião",
+    "body": "Fica então para quarta às às 12h.Por mim está ótimo, pode ser ficar entao para quarta às às 12h.",
+    "label": "reuniao_confirmada"
+  },
+  {
+    "subject": "Reunião",
+    "body": "Boas Ana, vamos marcar uma reunião segunda?",
+    "label": "agendamento_reuniao"
+  },
+  {
+    "subject": "Reunião",
+    "body": "Olá Ricardo, a reunião de para a semana foi cancelada.",
+    "label": "cancelamento_reuniao"
+  },
+  {
+    "subject": "Reunião",
+    "body": "Consegues reunir amanhã à tarde no escritório?",
+    "label": "agendamento_reuniao"
+  },
+  {
+    "subject": "Reunião",
+    "body": "Pode ser depois de almoço, perto das 14:30h??",
+    "label": "agendamento_reuniao"
+  },
+  {
+    "subject": "Reunião",
+    "body": "Olá Ricardo, a reunião de segunda foi cancelada.",
+    "label": "cancelamento_reuniao"
+  },
+  {
+    "subject": "Reunião",
+    "body": "Fechado, reunião amanhã.",
+    "label": "reuniao_confirmada"
+  },
+  {
+    "subject": "Reunião",
+    "body": "Confirmado para às 10h no Teams.",
+    "label": "reuniao_confirmada"
+  },
+  {
+    "subject": "Reunião",
+    "body": "Olá Pedro, podemos reunir segunda para falar sobre relatório?",
+    "label": "agendamento_reuniao"
+  },
+  {
+    "subject": "Reunião",
+    "body": "Temos de cancelar a reunião amanhã.",
+    "label": "cancelamento_reuniao"
+  },
+  {
+    "subject": "Reunião",
+    "body": "Podemos agendar uma call às 15h sobre planeamento?",
+    "label": "agendamento_reuniao"
+  },
+  {
+    "subject": "Reunião",
+    "body": "Pode então ficar marcado para quarta-feira. Pode ser às 14h?",
+    "label": "agendamento_reuniao"
+  },
+  {
+    "subject": "Reunião",
+    "body": "A reunião marcada para depois de almoço, perto das 14:30h? fica sem efeito.",
+    "label": "cancelamento_reuniao"
+  },
+  {
+    "subject": "Reunião",
+    "body": "Fica então para quarta às às 14h.Por mim está ótimo, pode ser ficar entao para quarta às às 14h.",
+    "label": "reuniao_confirmada"
+  },
+  {
+    "subject": "Reunião",
+    "body": "Pode então ficar marcado para quarta-feira. Pode ser às 9:30h??",
+    "label": "agendamento_reuniao"
+  },
+  {
+    "subject": "Reunião",
+    "body": "Pretendo marcar uma entrevista para falarmos um pouco sobre os teus conhecimentos na área web e outros assuntos importantes. Podemos marcar para esta semana?",
+    "label": "agendamento_reuniao"
+  },
+  {
+    "subject": "Reunião",
+    "body": "Fica então para próxima quinta às às 12h.Por mim está ótimo, pode ser ficar entao para próxima quinta às às 12h.",
+    "label": "reuniao_confirmada"
+  },
+  {
+    "subject": "Reunião",
+    "body": "Boas Pedro, vamos marcar uma reunião às 15h?",
+    "label": "agendamento_reuniao"
+  },
+  {
+    "subject": "Reunião",
+    "body": "Sim sim claro. Sem problema.",
+    "label": "reuniao_confirmada"
+  },
+  {
+    "subject": "Reunião",
+    "body": "Ok, combinamos às 15h.",
+    "label": "reuniao_confirmada"
+  },
+  {
+    "subject": "Reunião",
+    "body": "Olá Pedro, a reunião de depois de almoço, perto das 14:30h? foi cancelada.",
+    "label": "cancelamento_reuniao"
+  },
+  {
+    "subject": "Reunião",
+    "body": "Podemos agendar uma call depois de almoço, perto das 14:30h? sobre relatório?",
+    "label": "agendamento_reuniao"
+  },
+  {
+    "subject": "Reunião",
+    "body": "Perfeito, fica então às 15h.",
+    "label": "reuniao_confirmada"
+  },
+  {
+    "subject": "Reunião",
+    "body": "A reunião marcada para para a semana fica sem efeito.",
+    "label": "cancelamento_reuniao"
+  },
+  {
+    "subject": "Reunião",
+    "body": "Peço imensa desculpa mas acha que podemos remarcar a entrevista para próxima terça à mesma hora?",
+    "label": "cancelamento_reuniao"
+  },
+  {
+    "subject": "Reunião",
+    "body": "Desculpa, mas vou ter de desmarcar a reunião sexta.",
+    "label": "cancelamento_reuniao"
+  },
+  {
+    "subject": "Reunião",
+    "body": "Boas Pedro, vamos marcar uma reunião às 15h?",
+    "label": "agendamento_reuniao"
+  },
+  {
+    "subject": "Reunião",
+    "body": "Temos de cancelar a reunião depois de almoço, perto das 14:30h?.",
+    "label": "cancelamento_reuniao"
+  },
+  {
+    "subject": "Reunião",
+    "body": "Boas Maria, vamos marcar uma reunião às 10h?",
+    "label": "agendamento_reuniao"
+  },
+  {
+    "subject": "Reunião",
+    "body": "Olá João, a reunião de às 15h foi cancelada.",
+    "label": "cancelamento_reuniao"
+  },
+  {
+    "subject": "Reunião",
+    "body": "Olá Ricardo, podemos reunir segunda para falar sobre projeto da tese?",
+    "label": "agendamento_reuniao"
+  },
+  {
+    "subject": "Reunião",
+    "body": "Confirmado para amanhã no escritório.",
+    "label": "reuniao_confirmada"
+  },
+  {
+    "subject": "Reunião",
+    "body": "Podemos agendar uma call segunda sobre revisão do código?",
+    "label": "agendamento_reuniao"
+  },
+  {
+    "subject": "Reunião",
+    "body": "A reunião marcada para segunda fica sem efeito.",
+    "label": "cancelamento_reuniao"
+  },
+  {
+    "subject": "Reunião",
+    "body": "Ok, combinamos depois de almoço, perto das 14:30h?.",
+    "label": "reuniao_confirmada"
+  },
+  {
+    "subject": "Reunião",
+    "body": "Boas Ana, vamos marcar uma reunião às 10h?",
+    "label": "agendamento_reuniao"
+  },
+  {
+    "subject": "Reunião",
+    "body": "Olá João, podemos reunir às 15h para falar sobre revisão do código?",
+    "label": "agendamento_reuniao"
+  },
+  {
+    "subject": "Reunião",
+    "body": "Ok, combinamos para a semana.",
+    "label": "reuniao_confirmada"
+  },
+  {
+    "subject": "Reunião",
+    "body": "Temos de cancelar a reunião segunda.",
+    "label": "cancelamento_reuniao"
+  },
+  {
+    "subject": "Reunião",
+    "body": "Peço imensa desculpa mas acha que podemos remarcar a entrevista para segunda à mesma hora?",
+    "label": "cancelamento_reuniao"
+  },
+  {
+    "subject": "Reunião",
+    "body": "Olá João, podemos reunir amanhã para falar sobre revisão do código?",
+    "label": "agendamento_reuniao"
+  },
+  {
+    "subject": "Reunião",
+    "body": "Temos de cancelar a reunião às 10h.",
+    "label": "cancelamento_reuniao"
+  },
+  {
+    "subject": "Reunião",
+    "body": "Olá Pedro, a reunião de às 15h foi cancelada.",
+    "label": "cancelamento_reuniao"
+  },
+  {
+    "subject": "Reunião",
+    "body": "Boas Ricardo, vamos marcar uma reunião para a semana?",
+    "label": "agendamento_reuniao"
+  },
+  {
+    "subject": "Reunião",
+    "body": "Perfeito, fica então amanhã à tarde.",
+    "label": "reuniao_confirmada"
+  },
+  {
+    "subject": "Reunião",
+    "body": "A reunião marcada para segunda fica sem efeito.",
+    "label": "cancelamento_reuniao"
+  },
+  {
+    "subject": "Reunião",
+    "body": "A reunião marcada para para a semana fica sem efeito.",
+    "label": "cancelamento_reuniao"
+  },
+  {
+    "subject": "Reunião",
+    "body": "Fica então para próxima quinta às às 16h?.Por mim está ótimo, pode ser ficar entao para próxima quinta às às 16h?.",
+    "label": "reuniao_confirmada"
+  },
+  {
+    "subject": "Reunião",
+    "body": "Olá Ricardo, a reunião de segunda foi cancelada.",
+    "label": "cancelamento_reuniao"
+  },
+  {
+    "subject": "Reunião",
+    "body": "Pode então ficar marcado para quarta-feira. Pode ser às 12h?",
+    "label": "agendamento_reuniao"
+  },
+  {
+    "subject": "Reunião",
+    "body": "Pretendo marcar uma entrevista para falarmos um pouco sobre os teus conhecimentos na área web e outros assuntos importantes. Podemos marcar para esta semana?",
+    "label": "agendamento_reuniao"
+  },
+  {
+    "subject": "Reunião",
+    "body": "Olá Ricardo, podemos reunir segunda para falar sobre planeamento?",
+    "label": "agendamento_reuniao"
+  },
+  {
+    "subject": "Reunião",
+    "body": "Temos de cancelar a reunião para a semana.",
+    "label": "cancelamento_reuniao"
+  },
+  {
+    "subject": "Reunião",
+    "body": "Consegues reunir para a semana no sala A?",
+    "label": "agendamento_reuniao"
+  },
+  {
+    "subject": "Reunião",
+    "body": "Perfeito, fica então sexta.",
+    "label": "reuniao_confirmada"
+  },
+  {
+    "subject": "Reunião",
+    "body": "Peço imensa desculpa mas acha que podemos remarcar a entrevista para terça à mesma hora?",
+    "label": "cancelamento_reuniao"
+  },
+  {
+    "subject": "Reunião",
+    "body": "Consegues reunir depois de almoço, perto das 14:30h? no escritório?",
+    "label": "agendamento_reuniao"
+  },
+  {
+    "subject": "Reunião",
+    "body": "A reunião marcada para para a semana fica sem efeito.",
+    "label": "cancelamento_reuniao"
+  },
+  {
+    "subject": "Reunião",
+    "body": "Sim sim claro. Sem problema.",
+    "label": "reuniao_confirmada"
+  },
+  {
+    "subject": "Reunião",
+    "body": "Sim sim claro. Sem problema.",
+    "label": "reuniao_confirmada"
+  },
+  {
+    "subject": "Reunião",
+    "body": "Sim sim claro. Sem problema.",
+    "label": "reuniao_confirmada"
+  },
+  {
+    "subject": "Reunião",
+    "body": "Olá Pedro, podemos reunir às 10h para falar sobre projeto da tese?",
+    "label": "agendamento_reuniao"
+  },
+  {
+    "subject": "Reunião",
+    "body": "Temos de cancelar a reunião segunda.",
+    "label": "cancelamento_reuniao"
+  },
+  {
+    "subject": "Reunião",
+    "body": "A reunião marcada para sexta fica sem efeito.",
+    "label": "cancelamento_reuniao"
+  },
+  {
+    "subject": "Reunião",
+    "body": "A reunião marcada para às 10h fica sem efeito.",
+    "label": "cancelamento_reuniao"
+  },
+  {
+    "subject": "Reunião",
+    "body": "Pretendo marcar uma entrevista para falarmos um pouco sobre os teus conhecimentos na área web e outros assuntos importantes. Podemos marcar para esta semana?",
+    "label": "agendamento_reuniao"
+  },
+  {
+    "subject": "Reunião",
+    "body": "Sim sim claro. Sem problema.",
+    "label": "reuniao_confirmada"
+  },
+  {
+    "subject": "Reunião",
+    "body": "Temos de cancelar a reunião amanhã.",
+    "label": "cancelamento_reuniao"
+  },
+  {
+    "subject": "Reunião",
+    "body": "Podemos agendar uma call segunda sobre planeamento?",
+    "label": "agendamento_reuniao"
+  },
+  {
+    "subject": "Reunião",
+    "body": "Desculpa, mas vou ter de desmarcar a reunião sexta.",
+    "label": "cancelamento_reuniao"
+  },
+  {
+    "subject": "Reunião",
+    "body": "Podemos agendar uma call sexta sobre relatório?",
+    "label": "agendamento_reuniao"
+  },
+  {
+    "subject": "Reunião",
+    "body": "Pretendo marcar uma entrevista para falarmos um pouco sobre os teus conhecimentos na área web e outros assuntos importantes. Podemos marcar para esta semana?",
+    "label": "agendamento_reuniao"
+  },
+  {
+    "subject": "Reunião",
+    "body": "Ok, combinamos às 15h.",
+    "label": "reuniao_confirmada"
+  },
+  {
+    "subject": "Reunião",
+    "body": "Fica então para próxima quarta às às 12h.Por mim está ótimo, pode ser ficar entao para próxima quarta às às 12h.",
+    "label": "reuniao_confirmada"
+  },
+  {
+    "subject": "Reunião",
+    "body": "Olá Pedro, podemos reunir às 10h para falar sobre projeto da tese?",
+    "label": "agendamento_reuniao"
+  },
+  {
+    "subject": "Reunião",
+    "body": "Confirmado para sexta no Zoom.",
+    "label": "reuniao_confirmada"
+  },
+  {
+    "subject": "Reunião",
+    "body": "Sim sim claro. Sem problema.",
+    "label": "reuniao_confirmada"
+  },
+  {
+    "subject": "Reunião",
+    "body": "Fechado, reunião amanhã à tarde.",
+    "label": "reuniao_confirmada"
+  },
+  {
+    "subject": "Reunião",
+    "body": "Temos de cancelar a reunião sexta.",
+    "label": "cancelamento_reuniao"
+  },
+  {
+    "subject": "Reunião",
+    "body": "Desculpa, mas vou ter de desmarcar a reunião segunda.",
+    "label": "cancelamento_reuniao"
+  },
+  {
+    "subject": "Reunião",
+    "body": "A reunião marcada para segunda fica sem efeito.",
+    "label": "cancelamento_reuniao"
+  }
+]
