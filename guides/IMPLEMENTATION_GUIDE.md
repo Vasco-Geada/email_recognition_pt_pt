@@ -351,7 +351,7 @@ Code Example:
   {
     'agendamento_reuniao': 0.892,
     'cancelamento_reuniao': 0.067,
-    'discussao_data': 0.035,
+    'REUNIAO_CONFIRMADA': 0.035,
     'nao_reuniao': 0.006
   }
 
