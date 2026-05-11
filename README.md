@@ -3,6 +3,71 @@ O email permanece um meio central de comunicação em contextos académicos, pro
 
 ---
 
+## 📁 Estrutura do Projeto
+
+```
+email_recognition_pt_pt/
+├── README.md                                    # Este ficheiro
+├── QUICKSTART.md                                # Guia de início rápido
+├── requirements.txt                             # Dependências do projeto
+├── emailExtraction.py                           # Script principal de extração de emails
+├── emailTest.py                                 # Testes de emails
+├── test_argument_extraction.py                  # Testes de extração de argumentos
+│
+├── models/                                      # Modelos treinados
+│   ├── train_intent.py                         # Script de treino do classificador de intenção
+│   ├── predict_intent.py                       # Script de predição de intenção
+│   ├── intent_classifier.joblib                # Modelo treinado (Logistic Regression)
+│   └── tfidf_vectorizer.joblib                 # Vetorizador TF-IDF treinado
+│
+├── preprocessing/                               # Módulo de pré-processamento
+│   ├── __init__.py
+│   ├── preprocess.py                           # Funções de pré-processamento gerais
+│   ├── cleaning.py                             # Limpeza de texto
+│   ├── metadata.py                             # Extração de metadados
+│   ├── email_pipeline.py                       # Pipeline de processamento de emails
+│   ├── email_pipeline_enhanced.py              # Pipeline melhorado
+│   ├── trigger_extraction.py                   # Extração de triggers/expressões
+│   ├── trigger_examples.py                     # Exemplos de triggers
+│   ├── temporal_normalization.py               # Normalização de expressões temporais
+│   └── argument_extraction.py                  # Extração de argumentos
+│
+├── argumentExtraction/                          # Módulo de extração de argumentos
+│   └── old_code.py                             # Código antigo (referência)
+│
+├── temporalNormalization/                       # Módulo de normalização temporal
+│   ├── examples_temporal_normalization.py      # Exemplos de normalização temporal
+│   └── test_temporal_normalization.py          # Testes de normalização temporal
+│
+├── dataset/                                     # Dados de treino e testes
+│   ├── dataset.json                            # Dataset principal (estrutura JSON)
+│   ├── temp_emails.json                        # Dataset temporário de emails
+│   └── generate_emails.py                      # Script para gerar dados de exemplo
+│
+└── guides/                                      # Documentação e guias
+    ├── ARCHITECTURE.md                         # Descrição da arquitetura do projeto
+    ├── IMPLEMENTATION_GUIDE.md                 # Guia de implementação
+    ├── IMPLEMENTATION_SUMMARY_TEMPORAL.md      # Resumo de implementação temporal
+    ├── ARGUMENT_EXTRACTION_GUIDE.md            # Guia de extração de argumentos
+    ├── ARGUMENT_EXTRACTION_INDEX.md            # Índice de extração de argumentos
+    ├── ARGUMENT_EXTRACTION_QUICKSTART.md       # Quickstart de extração de argumentos
+    ├── ARGUMENT_EXTRACTION_SUMMARY.md          # Resumo de extração de argumentos
+    ├── TEMPORAL_NORMALIZATION_GUIDE.md         # Guia de normalização temporal
+    ├── TEMPORAL_NORMALIZATION_README.md        # README de normalização temporal
+    └── TRIGGER_EXTRACTION_GUIDE.md             # Guia de extração de triggers
+```
+
+### Descrição dos Componentes
+
+- **models/**: Contém o classificador de intenções de email (TF-IDF + Logistic Regression) e scripts de treino/predição
+- **preprocessing/**: Pipeline de processamento de texto, limpeza, extração de features e normalização
+- **argumentExtraction/**: Funcionalidades para extração de argumentos/entidades de emails
+- **temporalNormalization/**: Módulo para reconhecer e normalizar expressões temporais em português
+- **dataset/**: Dados de treino em formato JSON e utilitários de geração de dados
+- **guides/**: Documentação técnica detalhada sobre cada componente
+
+---
+
 ## 📧 Email Intent Classification Model
 
 ### Overview

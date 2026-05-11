@@ -1,0 +1,29 @@
+# requirements.txt
+# ================
+# 
+# Dependências para o sistema de Gold Annotations
+# 
+# O sistema funciona exclusivamente com biblioteca padrão do Python 3.11+
+# Nenhuma dependência externa é necessária para funcionalidade básica.
+#
+# Para funcionalidade avançada (opcional):
+# spacy>=3.0          # Para NER e processamento linguístico avançado
+# scikit-learn>=1.0   # Para análise de clustering
+# pandas>=1.3         # Para manipulação de dados
+# matplotlib>=3.3     # Para visualização de métricas
+# 
+# Recomendação:
+# - Use com Python 3.11 ou superior
+# - Para desenvolvimento: pip install -e .[dev]
+# 
+# Installação básica (nenhuma dependência):
+# $ python gold_annotations_generator.py emails.json output.json
+#
+# Installação com utensílios opcionais:
+# $ pip install spacy scikit-learn pandas matplotlib
+# $ python -m spacy download pt_core_news_sm
+#
+# Verificação de installação:
+# $ python -c "from gold_annotations import *; print('OK')"
+#
+# Última atualização: 11 de Maio de 2024

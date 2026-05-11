@@ -1,0 +1,27 @@
+[
+  {
+    "subject": "Reunião amanhã",
+    "body": "Boas Ana, podemos reunir amanhã às 15h no Teams para discutir o dataset?",
+    "label": "agendamento_reuniao"
+  },
+  {
+    "subject": "Cancelar reunião de sexta",
+    "body": "Infelizmente não consigo aparecer sexta de manhã à reunião da sala 2.3. Marca para próxima semana?",
+    "label": "cancelamento_reuniao"
+  },
+  {
+    "subject": "Re: Reunião confirmada",
+    "body": "Confirmed! Vejo te sexta às 14h na biblioteca para falarmos sobre o pipeline NLP.",
+    "label": "reuniao_confirmada"
+  },
+  {
+    "subject": "Combinar horário",
+    "body": "Professor Silva, podemos marcar uma reunião para discutir a dissertação? Estou disponível depois de almoço.",
+    "label": "agendamento_reuniao"
+  },
+  {
+    "subject": "Reunião com o grupo",
+    "body": "Oi a todos, combinámos para amanhã às 16h via Zoom para falarmos dos resultados das métricas F1?",
+    "label": "agendamento_reuniao"
+  }
+]
