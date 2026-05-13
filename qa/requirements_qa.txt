@@ -1,0 +1,42 @@
+# Question Answering Module - Dependencies
+# Project: Email Recognition PT-PT
+# Version: 1.0
+
+# Core NLP & Transformers
+torch>=2.0.0
+transformers>=4.35.0
+sentencepiece>=0.1.99
+
+# BERTimbau models (Portuguese BERT)
+# Pre-trained Portuguese models from HuggingFace
+# Will be auto-downloaded on first use
+
+# Numerical computing
+numpy>=1.24.0
+scikit-learn>=1.3.0
+
+# Data processing
+pandas>=2.0.0
+
+# Utilities
+tqdm>=4.65.0
+
+# Optional: Fine-tuning and advanced features
+# Uncomment if doing fine-tuning:
+# datasets>=2.14.0
+# accelerate>=0.24.0
+# bitsandbytes>=0.41.0  # For quantization
+
+# Development & Testing (optional)
+# pytest>=7.4.0
+# pytest-cov>=4.1.0
+
+# Notes:
+# - torch can also be installed with CPU-only support:
+#   pip install torch --index-url https://download.pytorch.org/whl/cpu
+#
+# - For CUDA support, install appropriate torch version:
+#   pip install torch torchvision torchaudio --index-url https://download.pytorch.org/whl/cu118
+#
+# - BERTimbau models will be auto-downloaded from HuggingFace on first use
+#   (requires huggingface_hub which comes with transformers)

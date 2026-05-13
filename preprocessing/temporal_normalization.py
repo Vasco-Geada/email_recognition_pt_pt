@@ -9,7 +9,7 @@ into structured datetime objects. It supports:
 - Informal temporal markers (depois de almoço)
 - Complex combined expressions
 
-Author: NLP Engineer
+
 Date: 2026
 """
 

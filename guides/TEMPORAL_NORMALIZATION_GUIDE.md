@@ -4,7 +4,7 @@ TEMPORAL EXPRESSION NORMALIZATION: DESIGN & ANALYSIS GUIDE
 A comprehensive guide to understanding rule-based temporal normalization for
 Portuguese emails, including strategy, edge cases, limitations, and ML improvements.
 
-Author: NLP Engineer
+
 Date: 2026
 """
 

@@ -4,7 +4,7 @@ Argument Extraction Module for Portuguese Meeting Emails
 This module extracts structured arguments (participants, time, location, topic)
 from email bodies using spaCy NER, regex patterns, and lexical heuristics.
 
-Author: NLP Engineer
+
 Purpose: Baseline for event and temporal expression extraction in Portuguese
 """
 
