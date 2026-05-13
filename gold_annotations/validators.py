@@ -375,8 +375,8 @@ class ConsistencyValidator:
         warnings = []
         
         intent_trigger_map = {
-            'agendamento_reuniao': ['reunir', 'marcar', 'agendar', 'combinar'],
-            'cancelamento_reuniao': ['cancelar', 'faltar'],
+            'agendamento_reuniao': ['reunir', 'marcar', 'agendar', 'combinar', 'reunião', 'reuniao', 'falar', 'conversar'],
+            'cancelamento_reuniao': ['cancelar', 'faltar', 'imprevisto', 'adiar', 'cancelamento', 'cancelar reunião', 'não vou conseguir', 'cancelar a reunião'],
             'reuniao_confirmada': ['confirmar', 'confimado'],  # typo intencional para aceitar variações
         }
         

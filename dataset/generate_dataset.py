@@ -10,7 +10,7 @@ fake = Faker("pt_PT")
 
 TOTAL_EMAILS = 300
 
-OUTPUT_PATH = "dataset/realistic_emails_v2.json"
+OUTPUT_PATH = "dataset/realistic_dataset.json"
 
 # =========================================================
 # PERSONAS
