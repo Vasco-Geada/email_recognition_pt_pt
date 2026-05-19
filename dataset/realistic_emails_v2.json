@@ -1,0 +1,1802 @@
+[
+  {
+    "subject": "Fw: Call",
+    "body": "Consegues reunir depois da aula? tranquilo\n\nCumprimentos\nDISCLAIMER: mensagem automática",
+    "label": "agendamento_reuniao",
+    "persona": "professor"
+  },
+  {
+    "subject": "Fw: Mudança de planos",
+    "body": "Hoje não vai dar 😅\n\nObrigado\nEnviado do telemóvel",
+    "label": "cancelamento_reuniao",
+    "persona": "professor"
+  },
+  {
+    "subject": "Meeting",
+    "body": "Consegues reunir depois da aula? 😂\n\n\nEnviado do Outlook",
+    "label": "agendamento_reuniao",
+    "persona": "aluno_informal"
+  },
+  {
+    "subject": "Re: Dissertação",
+    "body": "Bora fazer uma reunião rápida quinta de manhã?\n\n\nDISCLAIMER: mensagem automática",
+    "label": "agendamento_reuniao",
+    "persona": "aluno_stressado"
+  },
+  {
+    "subject": "Re: Imprevisto",
+    "body": "Olá Rita, afinal vou ter de cancelar a reunião de terça.\n\nBjs\nDISCLAIMER: mensagem automática",
+    "label": "cancelamento_reuniao",
+    "persona": "aluno_informal"
+  },
+  {
+    "subject": "Re: Adiar reunião",
+    "body": "Ok 👍\n\n\nEnviado do telemóvel",
+    "label": "cancelamento_reuniao",
+    "persona": "aluno_stressado"
+  },
+  {
+    "subject": "Call",
+    "body": "Podemos fazer uma quick call quinta de manhã? isso resolve-se\n\nObrigado\nSent from my iPhone",
+    "label": "agendamento_reuniao",
+    "persona": "professor"
+  },
+  {
+    "subject": "Re: Dissertação",
+    "body": "Consegues reunir depois da aula? logo se vê\n\nCumprimentos\nDISCLAIMER: mensagem automática",
+    "label": "agendamento_reuniao",
+    "persona": "professor"
+  },
+  {
+    "subject": "Re: Discussão resultados",
+    "body": "Quando puderes temos de combinar uma reunião.\n\nCumprimentos\nEnviado do telemóvel",
+    "label": "agendamento_reuniao",
+    "persona": "professor"
+  },
+  {
+    "subject": "Reunião",
+    "body": "Podemos fazer uma quick call quarta à tarde?\n\nThanks",
+    "label": "agendamento_reuniao",
+    "persona": "aluno_internacional"
+  },
+  {
+    "subject": "RE: Adiar reunião",
+    "body": "A reunião fica sem efeito.\n\nThanks\nDISCLAIMER: mensagem automática",
+    "label": "cancelamento_reuniao",
+    "persona": "aluno_internacional"
+  },
+  {
+    "subject": "Re: Precisamos de falar",
+    "body": "Marta, consegues aparecer no laboratório quarta à tarde?\n\n\nDISCLAIMER: mensagem automática",
+    "label": "agendamento_reuniao",
+    "persona": "aluno_informal"
+  },
+  {
+    "subject": "Re: Não vou conseguir",
+    "body": "Combinado. depois falamos\n\n\nDISCLAIMER: mensagem automática",
+    "label": "cancelamento_reuniao",
+    "persona": "aluno_stressado"
+  },
+  {
+    "subject": "RE: Meeting",
+    "body": "Tranquilo.",
+    "label": "agendamento_reuniao",
+    "persona": "aluno_stressado"
+  },
+  {
+    "subject": "Reunião",
+    "body": "Bora fazer uma reunião rápida sexta? logo se vê\n\nCumprimentos\nSent from my iPhone",
+    "label": "agendamento_reuniao",
+    "persona": "professor"
+  },
+  {
+    "subject": "Mudança de planos",
+    "body": "Não vou conseguir aparecer sexta às 16h.\n\nCumprimentos\nDISCLAIMER: mensagem automática",
+    "label": "cancelamento_reuniao",
+    "persona": "professor"
+  },
+  {
+    "subject": "RE: Cancelamento",
+    "body": "Afinal já não consigo reunir.\nvemos isso amanhã\n\nCumps\nEnviado do Outlook",
+    "label": "cancelamento_reuniao",
+    "persona": "aluno_informal"
+  },
+  {
+    "subject": "Adiar reunião",
+    "body": "Não vou conseguir aparecer pelas 14h. tranquilo\n\nObrigado\nEnviado do Outlook",
+    "label": "cancelamento_reuniao",
+    "persona": "professor"
+  },
+  {
+    "subject": "Meeting",
+    "body": "Precisamos de discutir o métricas F1. Dá para reunir segunda?\n\nObrigado",
+    "label": "agendamento_reuniao",
+    "persona": "professor"
+  },
+  {
+    "subject": "Fw: Não vou conseguir",
+    "body": "Confirmado. isso resolve-se\n\nAbraço",
+    "label": "cancelamento_reuniao",
+    "persona": "aluno_stressado"
+  },
+  {
+    "subject": "Combinado",
+    "body": "Tudo certo para sexta. na boa\n\nCumps\nEnviado do Outlook",
+    "label": "reuniao_confirmada",
+    "persona": "aluno_informal"
+  },
+  {
+    "subject": "Combinado",
+    "body": "Pode ser.\n\nAté já",
+    "label": "reuniao_confirmada",
+    "persona": "aluno_informal"
+  },
+  {
+    "subject": "Re: Meeting",
+    "body": "Professora Ana Costa, consegues aparecer no laboratório entre cadeiras?\n\nCumprimentos\nEnviado do Outlook",
+    "label": "agendamento_reuniao",
+    "persona": "professor"
+  },
+  {
+    "subject": "Fw: Combinado",
+    "body": "Combinado.",
+    "label": "reuniao_confirmada",
+    "persona": "aluno_stressado"
+  },
+  {
+    "subject": "RE: Call",
+    "body": "Acho que sexta já dá.\nlogo se vê\n\nThanks\nEnviado do telemóvel",
+    "label": "agendamento_reuniao",
+    "persona": "aluno_internacional"
+  },
+  {
+    "subject": "Fw: Cancelamento",
+    "body": "Tranquilo. isso resolve-se\n\nBjs\nEnviado do telemóvel",
+    "label": "cancelamento_reuniao",
+    "persona": "aluno_informal"
+  },
+  {
+    "subject": "Re: Confirmado",
+    "body": "Depois falamos.\n\nThanks",
+    "label": "reuniao_confirmada",
+    "persona": "aluno_internacional"
+  },
+  {
+    "subject": "Dissertação",
+    "body": "Quando puderes temos de combinar uma reunião. isso resolve-se\n\nObrigado",
+    "label": "agendamento_reuniao",
+    "persona": "professor"
+  },
+  {
+    "subject": "Reunião",
+    "body": "Boas Ana, tens disponibilidade na próxima semana?\n\n\nSent from my iPhone",
+    "label": "agendamento_reuniao",
+    "persona": "aluno_stressado"
+  },
+  {
+    "subject": "RE: Combinado",
+    "body": "Ok, parece-me bem.\n\nBest regards",
+    "label": "reuniao_confirmada",
+    "persona": "aluno_internacional"
+  },
+  {
+    "subject": "Re: Cancelamento",
+    "body": "Não vou conseguir aparecer quinta de manhã. isso resolve-se\n\nCumps",
+    "label": "cancelamento_reuniao",
+    "persona": "aluno_informal"
+  },
+  {
+    "subject": "Re: Call",
+    "body": "Temos de alinhar a parte do dataset. 🔥\n\n\nEnviado do telemóvel",
+    "label": "agendamento_reuniao",
+    "persona": "aluno_informal"
+  },
+  {
+    "subject": "Fw: Tudo certo",
+    "body": "Confirmado 👍\n\nAté já\nEnviado do Outlook",
+    "label": "reuniao_confirmada",
+    "persona": "aluno_informal"
+  },
+  {
+    "subject": "Fw: Meeting",
+    "body": "Podemos fazer uma quick call antes da aula?\n\nBest regards",
+    "label": "agendamento_reuniao",
+    "persona": "aluno_internacional"
+  },
+  {
+    "subject": "Re: Call",
+    "body": "Bora fazer uma reunião rápida terça?\n\nObrigado\nDISCLAIMER: mensagem automática",
+    "label": "agendamento_reuniao",
+    "persona": "professor"
+  },
+  {
+    "subject": "Re: Mudança de planos",
+    "body": "A reuniao sobre relatório vai ter de ficar para outro dia.\n\nThanks\nSent from my iPhone",
+    "label": "cancelamento_reuniao",
+    "persona": "aluno_internacional"
+  },
+  {
+    "subject": "Re: Discussão resultados",
+    "body": "Inês, consegues aparecer no biblioteca na próxima semana?\n\nAté já",
+    "label": "agendamento_reuniao",
+    "persona": "aluno_informal"
+  },
+  {
+    "subject": "Re: Confirmado",
+    "body": "Eu apareço no Zoom. vemos isso amanha",
+    "label": "reuniao_confirmada",
+    "persona": "aluno_stressado"
+  },
+  {
+    "subject": "Fw: Discussão resultados",
+    "body": "Combinado.\nna boa 👌\n\nAté já",
+    "label": "agendamento_reuniao",
+    "persona": "aluno_informal"
+  },
+  {
+    "subject": "Meeting",
+    "body": "Na boa.\n\nAbraço\nDISCLAIMER: mensagem automática",
+    "label": "agendamento_reuniao",
+    "persona": "aluno_informal"
+  },
+  {
+    "subject": "RE: Reunião",
+    "body": "Temos de alinhar a parte do deadline.\n\nObrigado\nEnviado do telemóvel",
+    "label": "agendamento_reuniao",
+    "persona": "professor"
+  },
+  {
+    "subject": "Fw: Mudança de planos",
+    "body": "Tranquilo. depois falamos 😂\n\n\nDISCLAIMER: mensagem automática",
+    "label": "cancelamento_reuniao",
+    "persona": "aluno_informal"
+  },
+  {
+    "subject": "RE: Adiar reunião",
+    "body": "Não vou conseguir ir ao laboratório.\n\n\nEnviado do Outlook",
+    "label": "cancelamento_reuniao",
+    "persona": "aluno_informal"
+  },
+  {
+    "subject": "RE: Combinado",
+    "body": "Depois falamos.\n\nObrigado",
+    "label": "reuniao_confirmada",
+    "persona": "professor"
+  },
+  {
+    "subject": "Re: Precisamos de falar",
+    "body": "Temos de alinhar a parte do BERT.\n\nObrigado\nEnviado do Outlook",
+    "label": "agendamento_reuniao",
+    "persona": "professor"
+  },
+  {
+    "subject": "Re: Combinado",
+    "body": "Tudo certo para daqui a 2 dias.\n\nBjs\nSent from my iPhone",
+    "label": "reuniao_confirmada",
+    "persona": "aluno_informal"
+  },
+  {
+    "subject": "Re: Reunião",
+    "body": "Acho que sexta já dá.\n\n\nEnviado do telemóvel",
+    "label": "agendamento_reuniao",
+    "persona": "aluno_stressado"
+  },
+  {
+    "subject": "Re: Adiar reunião",
+    "body": "A reunião fica sem efeito. vemos isso amanhã",
+    "label": "cancelamento_reuniao",
+    "persona": "aluno_stressado"
+  },
+  {
+    "subject": "RE: Tudo certo",
+    "body": "Pode ser. logo se vê\n\nBest regards\nDISCLAIMER: mensagem automática",
+    "label": "reuniao_confirmada",
+    "persona": "aluno_internacional"
+  },
+  {
+    "subject": "Projeto",
+    "body": "15h é complicado.\n\n\nSent from my iPhone",
+    "label": "agendamento_reuniao",
+    "persona": "aluno_stressado"
+  },
+  {
+    "subject": "Re: Reunião confirmada",
+    "body": "Tudo certo para sexta às 16h.\n\nObrigado\nEnviado do Outlook",
+    "label": "reuniao_confirmada",
+    "persona": "professor"
+  },
+  {
+    "subject": "Mudança de planos",
+    "body": "Hello Rita, afinal vou ter de cancelar a reunião de na próxima semana.\n\nThanks\nDISCLAIMER: mensagem automática",
+    "label": "cancelamento_reuniao",
+    "persona": "aluno_internacional"
+  },
+  {
+    "subject": "Re: Projeto",
+    "body": "Boas João, podemos reunir quinta de manhã para falar sobre trabalho de grupo?\n\n\nEnviado do Outlook",
+    "label": "agendamento_reuniao",
+    "persona": "aluno_stressado"
+  },
+  {
+    "subject": "RE: Não vou conseguir",
+    "body": "Hoje não vai dar 😅 isso resolve-se\n\nCumprimentos\nEnviado do Outlook",
+    "label": "cancelamento_reuniao",
+    "persona": "professor"
+  },
+  {
+    "subject": "Re: Reunião",
+    "body": "Temos de alinhar a parte do pipeline NLP.\n\nObrigado\nEnviado do Outlook",
+    "label": "agendamento_reuniao",
+    "persona": "professor"
+  },
+  {
+    "subject": "Re: Imprevisto",
+    "body": "Na boa.\n\nThanks\nEnviado do Outlook",
+    "label": "cancelamento_reuniao",
+    "persona": "aluno_internacional"
+  },
+  {
+    "subject": "Fw: Reunião",
+    "body": "Acho que sexta já dá.\ntranquilo\n\n\nDISCLAIMER: mensagem automática",
+    "label": "agendamento_reuniao",
+    "persona": "aluno_stressado"
+  },
+  {
+    "subject": "RE: Confirmado",
+    "body": "Eu apareço no sala 2.3.\n\nCumprimentos\nSent from my iPhone",
+    "label": "reuniao_confirmada",
+    "persona": "professor"
+  },
+  {
+    "subject": "RE: Mudança de planos",
+    "body": "Depois falamos.\n\n\nDISCLAIMER: mensagem automática",
+    "label": "cancelamento_reuniao",
+    "persona": "aluno_stressado"
+  },
+  {
+    "subject": "Re: Confirmado",
+    "body": "Tranquilo.\n😂\n\nCumps\nDISCLAIMER: mensagem automática",
+    "label": "reuniao_confirmada",
+    "persona": "aluno_informal"
+  },
+  {
+    "subject": "Projeto",
+    "body": "Se calhar era melhor reunir sexta. 😅\n\nBjs\nEnviado do telemóvel",
+    "label": "agendamento_reuniao",
+    "persona": "aluno_informal"
+  },
+  {
+    "subject": "RE: Dissertação",
+    "body": "Na boa. 👌\n\nAbraço\nEnviado do Outlook",
+    "label": "agendamento_reuniao",
+    "persona": "aluno_stressado"
+  },
+  {
+    "subject": "Re: Adiar reunião",
+    "body": "Não vou conseguir ir ao Zoom.\n😅",
+    "label": "cancelamento_reuniao",
+    "persona": "aluno_informal"
+  },
+  {
+    "subject": "Re: Combinado",
+    "body": "Fechado então.\n\nObrigado\nEnviado do Outlook",
+    "label": "reuniao_confirmada",
+    "persona": "professor"
+  },
+  {
+    "subject": "Tudo certo",
+    "body": "Eu apareço no laboratório.\n\nThanks",
+    "label": "reuniao_confirmada",
+    "persona": "aluno_internacional"
+  },
+  {
+    "subject": "Fw: Não vou conseguir",
+    "body": "Não vou conseguir aparecer pelas 14h.\n\nCumprimentos\nEnviado do Outlook",
+    "label": "cancelamento_reuniao",
+    "persona": "professor"
+  },
+  {
+    "subject": "Re: Precisamos de falar",
+    "body": "Combinado.\n\nAbraço",
+    "label": "agendamento_reuniao",
+    "persona": "aluno_stressado"
+  },
+  {
+    "subject": "Tudo certo",
+    "body": "Perfeito, fica então combinado para depois do laboratório.\n\nCumps",
+    "label": "reuniao_confirmada",
+    "persona": "aluno_informal"
+  },
+  {
+    "subject": "Fw: Dissertação",
+    "body": "Podemos fazer uma quick call depois de almoço?\n\nThanks\nEnviado do telemóvel",
+    "label": "agendamento_reuniao",
+    "persona": "aluno_internacional"
+  },
+  {
+    "subject": "Re: Discussão resultados",
+    "body": "Temos de alinhar a parte do artigo.\n\nThanks\nEnviado do Outlook",
+    "label": "agendamento_reuniao",
+    "persona": "aluno_internacional"
+  },
+  {
+    "subject": "Adiar reunião",
+    "body": "Afinal já não consigo reunir.\n\nThanks\nEnviado do telemóvel",
+    "label": "cancelamento_reuniao",
+    "persona": "aluno_internacional"
+  },
+  {
+    "subject": "Re: Imprevisto",
+    "body": "Hoje não vai dar 😅\n\nBest regards\nDISCLAIMER: mensagem automática",
+    "label": "cancelamento_reuniao",
+    "persona": "aluno_internacional"
+  },
+  {
+    "subject": "Fw: Call",
+    "body": "Boa tarde Marta, tens disponibilidade depois do laboratório?\n\nCumprimentos\nDISCLAIMER: mensagem automática",
+    "label": "agendamento_reuniao",
+    "persona": "professor"
+  },
+  {
+    "subject": "Fw: Adiar reunião",
+    "body": "Hoje não vai dar 😅 tranquilo\n\nAbraço\nEnviado do telemóvel",
+    "label": "cancelamento_reuniao",
+    "persona": "aluno_stressado"
+  },
+  {
+    "subject": "Re: Confirmado",
+    "body": "Combinado, vemos isso ao final do dia.\n\nAbraço\nDISCLAIMER: mensagem automática",
+    "label": "reuniao_confirmada",
+    "persona": "aluno_stressado"
+  },
+  {
+    "subject": "Fw: Cancelamento",
+    "body": "A reunião sobre revisão bibliográfica vai ter de ficar para outro dia.\n\nObrigado",
+    "label": "cancelamento_reuniao",
+    "persona": "professor"
+  },
+  {
+    "subject": "RE: Mudança de planos",
+    "body": "A reunião fica sem efeito.\n\nObrigado\nEnviado do telemóvel",
+    "label": "cancelamento_reuniao",
+    "persona": "professor"
+  },
+  {
+    "subject": "Fw: Confirmado",
+    "body": "Confirmado 👍 logo se vê\n\nCumprimentos",
+    "label": "reuniao_confirmada",
+    "persona": "professor"
+  },
+  {
+    "subject": "RE: Discussão resultados",
+    "body": "Logo vemos. 😅\n\n\nSent from my iPhone",
+    "label": "agendamento_reuniao",
+    "persona": "aluno_stressado"
+  },
+  {
+    "subject": "Fw: Cancelamento",
+    "body": "Depois falamos.\n\nAbraço\nSent from my iPhone",
+    "label": "cancelamento_reuniao",
+    "persona": "aluno_stressado"
+  },
+  {
+    "subject": "Re: Reunião confirmada",
+    "body": "Confirmado 👍\n\nObrigado\nDISCLAIMER: mensagem automática",
+    "label": "reuniao_confirmada",
+    "persona": "professor"
+  },
+  {
+    "subject": "Cancelamento",
+    "body": "A reunião fica sem efeito.\n\n\nDISCLAIMER: mensagem automática",
+    "label": "cancelamento_reuniao",
+    "persona": "aluno_informal"
+  },
+  {
+    "subject": "RE: Meeting",
+    "body": "Consegues reunir depois da aula? vemos isso amanhã\n\nThanks\nEnviado do telemóvel",
+    "label": "agendamento_reuniao",
+    "persona": "aluno_internacional"
+  },
+  {
+    "subject": "Adiar reunião",
+    "body": "Não vou conseguir ir ao Teams.\n\nObrigado\nDISCLAIMER: mensagem automática",
+    "label": "cancelamento_reuniao",
+    "persona": "professor"
+  },
+  {
+    "subject": "RE: Mudança de planos",
+    "body": "Ok 👍 👌\n\n\nSent from my iPhone",
+    "label": "cancelamento_reuniao",
+    "persona": "aluno_informal"
+  },
+  {
+    "subject": "Call",
+    "body": "Precisamos de discutir o Visualização de Dados. Dá para reunir sexta? isso resolve-se\n\nBest regards\nEnviado do Outlook",
+    "label": "agendamento_reuniao",
+    "persona": "aluno_internacional"
+  },
+  {
+    "subject": "RE: Meeting",
+    "body": "Quando puderes temos de combinar uma reunião. logo se vê\n\nCumprimentos\nEnviado do telemóvel",
+    "label": "agendamento_reuniao",
+    "persona": "professor"
+  },
+  {
+    "subject": "Reunião confirmada",
+    "body": "Acho que sexta já dá.\n\n\nSent from my iPhone",
+    "label": "reuniao_confirmada",
+    "persona": "aluno_informal"
+  },
+  {
+    "subject": "RE: Precisamos de falar",
+    "body": "Quando puderes temos de combinar uma reuniao.\n\nBest regards\nEnviado do telemóvel",
+    "label": "agendamento_reuniao",
+    "persona": "aluno_internacional"
+  },
+  {
+    "subject": "Fw: Adiar reunião",
+    "body": "Na boa. 😅\n\nCumps\nSent from my iPhone",
+    "label": "cancelamento_reuniao",
+    "persona": "aluno_informal"
+  },
+  {
+    "subject": "Reunião confirmada",
+    "body": "Eu apareço no bar da faculdade.\n\nObrigado\nSent from my iPhone",
+    "label": "reuniao_confirmada",
+    "persona": "professor"
+  },
+  {
+    "subject": "Fw: Reunião",
+    "body": "Se calhar era melhor reunir depois de almoço. 😂\n\nCumps",
+    "label": "agendamento_reuniao",
+    "persona": "aluno_informal"
+  },
+  {
+    "subject": "Dissertação",
+    "body": "Precisamos de discutir o artigo. Dá para reunir mais logo?\n\nBest regards\nEnviado do telemóvel",
+    "label": "agendamento_reuniao",
+    "persona": "aluno_internacional"
+  },
+  {
+    "subject": "Call",
+    "body": "Precisamos de discutir o trabalho de grupo. Dá para reunir quinta de manhã?\n\nAté já",
+    "label": "agendamento_reuniao",
+    "persona": "aluno_informal"
+  },
+  {
+    "subject": "Call",
+    "body": "Podemos fazer uma quick call quarta à tarde? na boa\n\nCumprimentos\nEnviado do telemóvel",
+    "label": "agendamento_reuniao",
+    "persona": "professor"
+  },
+  {
+    "subject": "Meeting",
+    "body": "Temos de alinhar a parte do revisão bibliográfica. vemos isso amanhã\n\nObrigado\nDISCLAIMER: mensagem automática",
+    "label": "agendamento_reuniao",
+    "persona": "professor"
+  },
+  {
+    "subject": "RE: Mudança de planos",
+    "body": "Logo vemos.\n\nThanks\nEnviado do Outlook",
+    "label": "cancelamento_reuniao",
+    "persona": "aluno_internacional"
+  },
+  {
+    "subject": "Combinado",
+    "body": "Combinado, vemos isso pelas 14h. 😅\n\n\nEnviado do telemóvel",
+    "label": "reuniao_confirmada",
+    "persona": "aluno_informal"
+  },
+  {
+    "subject": "Projeto",
+    "body": "Precisamos de discutir o BERT. Dá para reunir sexta?\n\nThanks\nDISCLAIMER: mensagem automática",
+    "label": "agendamento_reuniao",
+    "persona": "aluno_internacional"
+  },
+  {
+    "subject": "Fw: Mudança de planos",
+    "body": "A reunião fica sem efeito.\n\nObrigado\nDISCLAIMER: mensagem automática",
+    "label": "cancelamento_reuniao",
+    "persona": "professor"
+  },
+  {
+    "subject": "Re: Precisamos de falar",
+    "body": "Precisamos de discutir o BERT. Dá para reunir depois do laboratório?\n\nBest regards\nEnviado do Outlook",
+    "label": "agendamento_reuniao",
+    "persona": "aluno_internacional"
+  },
+  {
+    "subject": "Re: Mudança de planos",
+    "body": "15h é complicado.\n\nBjs",
+    "label": "cancelamento_reuniao",
+    "persona": "aluno_informal"
+  },
+  {
+    "subject": "RE: Precisamos de falar",
+    "body": "Tranquilo. vemos isso amanhã\n\nObrigado\nDISCLAIMER: mensagem automática",
+    "label": "agendamento_reuniao",
+    "persona": "professor"
+  },
+  {
+    "subject": "RE: Call",
+    "body": "Depois falamos.\n\nObrigado\nDISCLAIMER: mensagem automática",
+    "label": "agendamento_reuniao",
+    "persona": "professor"
+  },
+  {
+    "subject": "RE: Tudo certo",
+    "body": "Tudo certo para após o seminário.\n\nObrigado\nSent from my iPhone",
+    "label": "reuniao_confirmada",
+    "persona": "professor"
+  },
+  {
+    "subject": "Re: Cancelamento",
+    "body": "Não vou conseguir ir ao gabinete.\n\nBest regards\nDISCLAIMER: mensagem automática",
+    "label": "cancelamento_reuniao",
+    "persona": "aluno_internacional"
+  },
+  {
+    "subject": "Não vou conseguir",
+    "body": "Acho que sexta já dá. 😅\n\nAbraço\nDISCLAIMER: mensagem automática",
+    "label": "cancelamento_reuniao",
+    "persona": "aluno_stressado"
+  },
+  {
+    "subject": "Fw: Call",
+    "body": "Carolina, consegues aparecer no gabinete amanhã?\n\nObrigado\nDISCLAIMER: mensagem automática",
+    "label": "agendamento_reuniao",
+    "persona": "professor"
+  },
+  {
+    "subject": "RE: Imprevisto",
+    "body": "A reunião fica sem efeito.\n\nBjs\nSent from my iPhone",
+    "label": "cancelamento_reuniao",
+    "persona": "aluno_informal"
+  },
+  {
+    "subject": "Re: Call",
+    "body": "Depois falamos.\n\nCumprimentos",
+    "label": "agendamento_reuniao",
+    "persona": "professor"
+  },
+  {
+    "subject": "Precisamos de falar",
+    "body": "Podemos fazer uma quick call daqui a 2 dias?\n\nAbraço\nDISCLAIMER: mensagem automática",
+    "label": "agendamento_reuniao",
+    "persona": "aluno_informal"
+  },
+  {
+    "subject": "Combinado",
+    "body": "Combinado.\n\n\nSent from my iPhone",
+    "label": "reuniao_confirmada",
+    "persona": "aluno_stressado"
+  },
+  {
+    "subject": "Re: Confirmado",
+    "body": "Na boa.\n\nCumps\nEnviado do Outlook",
+    "label": "reuniao_confirmada",
+    "persona": "aluno_informal"
+  },
+  {
+    "subject": "Fw: Combinado",
+    "body": "Ok, parece-me bem.\nisso resolve-se\n\nThanks\nEnviado do telemóvel",
+    "label": "reuniao_confirmada",
+    "persona": "aluno_internacional"
+  },
+  {
+    "subject": "RE: Não vou conseguir",
+    "body": "Tranquilo.\n\nAbraço",
+    "label": "cancelamento_reuniao",
+    "persona": "aluno_stressado"
+  },
+  {
+    "subject": "Re: Meeting",
+    "body": "Hi Ricardo, tens disponibilidade amanhã às 15h?\n\nBest regards\nDISCLAIMER: mensagem automática",
+    "label": "agendamento_reuniao",
+    "persona": "aluno_internacional"
+  },
+  {
+    "subject": "Fw: Precisamos de falar",
+    "body": "Confirmado.\n\nBjs\nEnviado do telemóvel",
+    "label": "agendamento_reuniao",
+    "persona": "aluno_informal"
+  },
+  {
+    "subject": "RE: Combinado",
+    "body": "Tudo certo para depois do laboratório.\n\n\nEnviado do Outlook",
+    "label": "reuniao_confirmada",
+    "persona": "aluno_stressado"
+  },
+  {
+    "subject": "Re: Combinado",
+    "body": "Depois falamos. 👌\n\n\nEnviado do Outlook",
+    "label": "reuniao_confirmada",
+    "persona": "aluno_informal"
+  },
+  {
+    "subject": "Re: Projeto",
+    "body": "Pode ser.\n\nBjs\nEnviado do Outlook",
+    "label": "agendamento_reuniao",
+    "persona": "aluno_informal"
+  },
+  {
+    "subject": "Re: Confirmado",
+    "body": "Logo vemos.\n\n\nDISCLAIMER: mensagem automática",
+    "label": "reuniao_confirmada",
+    "persona": "aluno_stressado"
+  },
+  {
+    "subject": "RE: Reunião",
+    "body": "Precisamos de discutir o deadline. Dá para reunir daqui a 2 dias?\n\nObrigado\nDISCLAIMER: mensagem automática",
+    "label": "agendamento_reuniao",
+    "persona": "professor"
+  },
+  {
+    "subject": "RE: Tudo certo",
+    "body": "Pode ser. 😅\n\n\nEnviado do Outlook",
+    "label": "reuniao_confirmada",
+    "persona": "aluno_informal"
+  },
+  {
+    "subject": "RE: Call",
+    "body": "Temos de alinhar a parte do Segurança Informática.\n\nThanks\nEnviado do Outlook",
+    "label": "agendamento_reuniao",
+    "persona": "aluno_internacional"
+  },
+  {
+    "subject": "Fw: Mudança de planos",
+    "body": "Hi Ana, afinal vou ter de cancelar a reunião de daqui a 2 dias. logo se vê\n\nThanks\nEnviado do telemóvel",
+    "label": "cancelamento_reuniao",
+    "persona": "aluno_internacional"
+  },
+  {
+    "subject": "RE: Confirmado",
+    "body": "Pode ser. vemos isso amanhã\n\nAbraço\nDISCLAIMER: mensagem automática",
+    "label": "reuniao_confirmada",
+    "persona": "aluno_stressado"
+  },
+  {
+    "subject": "Fw: Projeto",
+    "body": "Quando puderes temos de combinar uma reunião.\nlogo se vê\n\nCumprimentos\nEnviado do Outlook",
+    "label": "agendamento_reuniao",
+    "persona": "professor"
+  },
+  {
+    "subject": "Fw: Tudo certo",
+    "body": "Está ótimo para mim.\n\nBest regards",
+    "label": "reuniao_confirmada",
+    "persona": "aluno_internacional"
+  },
+  {
+    "subject": "Fw: Precisamos de falar",
+    "body": "Boas Professor Silva, podemos reunir quinta de manhã para falar sobre baseline?\n\nThanks\nSent from my iPhone",
+    "label": "agendamento_reuniao",
+    "persona": "aluno_internacional"
+  },
+  {
+    "subject": "Re: Mudança de planos",
+    "body": "Tranquilo. 😅\n\nCumps\nEnviado do Outlook",
+    "label": "cancelamento_reuniao",
+    "persona": "aluno_informal"
+  },
+  {
+    "subject": "Re: Projeto",
+    "body": "Boa tarde Professor Ricardo Mendes, podemos reunir sexta para falar sobre Segurança Informática?\n\nObrigado\nEnviado do Outlook",
+    "label": "agendamento_reuniao",
+    "persona": "professor"
+  },
+  {
+    "subject": "Fw: Tudo certo",
+    "body": "Na boa 👍 👍\n\nAté já",
+    "label": "reuniao_confirmada",
+    "persona": "aluno_informal"
+  },
+  {
+    "subject": "Re: Reunião",
+    "body": "Confirmado.\n\nThanks\nDISCLAIMER: mensagem automática",
+    "label": "agendamento_reuniao",
+    "persona": "aluno_internacional"
+  },
+  {
+    "subject": "Fw: Confirmado",
+    "body": "Confirmado 👍\n\nObrigado\nSent from my iPhone",
+    "label": "reuniao_confirmada",
+    "persona": "professor"
+  },
+  {
+    "subject": "Tudo certo",
+    "body": "Combinado, vemos isso na próxima semana.\n\nAbraço",
+    "label": "reuniao_confirmada",
+    "persona": "aluno_stressado"
+  },
+  {
+    "subject": "Re: Não vou conseguir",
+    "body": "Logo vemos.\n\nAbraço\nEnviado do telemóvel",
+    "label": "cancelamento_reuniao",
+    "persona": "aluno_stressado"
+  },
+  {
+    "subject": "RE: Meeting",
+    "body": "Na boa.\n\n\nEnviado do Outlook",
+    "label": "agendamento_reuniao",
+    "persona": "aluno_stressado"
+  },
+  {
+    "subject": "Re: Combinado",
+    "body": "Logo vemos.",
+    "label": "reuniao_confirmada",
+    "persona": "aluno_stressado"
+  },
+  {
+    "subject": "Reunião confirmada",
+    "body": "15h é complicado.\n\nAbraço\nEnviado do Outlook",
+    "label": "reuniao_confirmada",
+    "persona": "aluno_stressado"
+  },
+  {
+    "subject": "Fw: Reunião confirmada",
+    "body": "Está ótimo para mim.\n\nCumprimentos",
+    "label": "reuniao_confirmada",
+    "persona": "professor"
+  },
+  {
+    "subject": "Não vou conseguir",
+    "body": "Peço desculpa mas temos de adiar.\n\nObrigado",
+    "label": "cancelamento_reuniao",
+    "persona": "professor"
+  },
+  {
+    "subject": "Re: Reunião confirmada",
+    "body": "Depois falamos. vemos isso amanhã\n\nObrigado\nEnviado do telemóvel",
+    "label": "reuniao_confirmada",
+    "persona": "professor"
+  },
+  {
+    "subject": "Não vou conseguir",
+    "body": "Hoje não vai dar 😅\n\nObrigado\nEnviado do telemóvel",
+    "label": "cancelamento_reuniao",
+    "persona": "professor"
+  },
+  {
+    "subject": "Call",
+    "body": "Se calhar era melhor reunir depois de almoço. logo se vê\n\nObrigado",
+    "label": "agendamento_reuniao",
+    "persona": "professor"
+  },
+  {
+    "subject": "Re: Mudança de planos",
+    "body": "A reunião sobre métricas F1 vai ter de ficar para outro dia. depois falamos\n\nThanks\nEnviado do Outlook",
+    "label": "cancelamento_reuniao",
+    "persona": "aluno_internacional"
+  },
+  {
+    "subject": "RE: Adiar reunião",
+    "body": "15h é complicado. na boa\n\nBjs",
+    "label": "cancelamento_reuniao",
+    "persona": "aluno_informal"
+  },
+  {
+    "subject": "Re: Tudo certo",
+    "body": "Perfeito, fica então combinado para ao final do dia.\n😂\n\nThanks\nEnviado do Outlook",
+    "label": "reuniao_confirmada",
+    "persona": "aluno_internacional"
+  },
+  {
+    "subject": "Re: Combinado",
+    "body": "Na boa 👍 depois falamos\n\nCumprimentos\nEnviado do telemóvel",
+    "label": "reuniao_confirmada",
+    "persona": "professor"
+  },
+  {
+    "subject": "Fw: Combinado",
+    "body": "Combinado, vemos isso quarta à tarde.\n\nObrigado\nEnviado do telemóvel",
+    "label": "reuniao_confirmada",
+    "persona": "professor"
+  },
+  {
+    "subject": "Fw: Não vou conseguir",
+    "body": "Peço desculpa mas temos de adiar.\n\n\nEnviado do Outlook",
+    "label": "cancelamento_reuniao",
+    "persona": "aluno_stressado"
+  },
+  {
+    "subject": "Meeting",
+    "body": "Confirmado.\n\n\nEnviado do Outlook",
+    "label": "agendamento_reuniao",
+    "persona": "aluno_stressado"
+  },
+  {
+    "subject": "RE: Tudo certo",
+    "body": "Confirmado. na boa\n\nBjs\nEnviado do telemóvel",
+    "label": "reuniao_confirmada",
+    "persona": "aluno_informal"
+  },
+  {
+    "subject": "RE: Precisamos de falar",
+    "body": "Podemos fazer uma quick call pelas 14h?\n\nObrigado\nSent from my iPhone",
+    "label": "agendamento_reuniao",
+    "persona": "professor"
+  },
+  {
+    "subject": "Reunião confirmada",
+    "body": "Confirmado.\n\nThanks\nEnviado do Outlook",
+    "label": "reuniao_confirmada",
+    "persona": "aluno_internacional"
+  },
+  {
+    "subject": "Cancelamento",
+    "body": "Logo vemos.\n\n\nEnviado do telemóvel",
+    "label": "cancelamento_reuniao",
+    "persona": "aluno_stressado"
+  },
+  {
+    "subject": "Re: Projeto",
+    "body": "Maria, consegues aparecer no laboratório amanha às 15h?\n\nAbraço\nDISCLAIMER: mensagem automática",
+    "label": "agendamento_reuniao",
+    "persona": "aluno_informal"
+  },
+  {
+    "subject": "Re: Discussão resultados",
+    "body": "Diana, consegues aparecer no sala 2.3 quinta de manhã?\n\nBest regards\nDISCLAIMER: mensagem automática",
+    "label": "agendamento_reuniao",
+    "persona": "aluno_internacional"
+  },
+  {
+    "subject": "Re: Meeting",
+    "body": "Consegues reunir depois da aula?\n\nCumprimentos\nSent from my iPhone",
+    "label": "agendamento_reuniao",
+    "persona": "professor"
+  },
+  {
+    "subject": "Re: Precisamos de falar",
+    "body": "Podemos fazer uma quick call após o seminário?\n\nAbraço",
+    "label": "agendamento_reuniao",
+    "persona": "aluno_stressado"
+  },
+  {
+    "subject": "Re: Confirmado",
+    "body": "Confirmado 👍\n\nCumps\nEnviado do Outlook",
+    "label": "reuniao_confirmada",
+    "persona": "aluno_informal"
+  },
+  {
+    "subject": "Re: Reunião",
+    "body": "Se calhar era melhor reunir depois de almoço.\n\nCumprimentos",
+    "label": "agendamento_reuniao",
+    "persona": "professor"
+  },
+  {
+    "subject": "Fw: Imprevisto",
+    "body": "Não vou conseguir aparecer na próxima semana.\n👍\n\nAbraço\nEnviado do Outlook",
+    "label": "cancelamento_reuniao",
+    "persona": "aluno_stressado"
+  },
+  {
+    "subject": "Precisamos de falar",
+    "body": "Boas Inês, tens disponibilidade depois do laboratório? 🔥\n\n\nEnviado do Outlook",
+    "label": "agendamento_reuniao",
+    "persona": "aluno_informal"
+  },
+  {
+    "subject": "RE: Discussão resultados",
+    "body": "Consegues reunir depois da aula?\n\nBest regards\nDISCLAIMER: mensagem automática",
+    "label": "agendamento_reuniao",
+    "persona": "aluno_internacional"
+  },
+  {
+    "subject": "Fw: Não vou conseguir",
+    "body": "Vou ter aula nesse horário.\n\nBjs\nSent from my iPhone",
+    "label": "cancelamento_reuniao",
+    "persona": "aluno_informal"
+  },
+  {
+    "subject": "Re: Adiar reunião",
+    "body": "Boa tarde João, afinal vou ter de cancelar a reunião de após o seminário.\n\nObrigado\nSent from my iPhone",
+    "label": "cancelamento_reuniao",
+    "persona": "professor"
+  },
+  {
+    "subject": "RE: Reunião",
+    "body": "Professora Ana Costa, consegues aparecer no campus mais logo?\n\nBjs\nEnviado do Outlook",
+    "label": "agendamento_reuniao",
+    "persona": "aluno_informal"
+  },
+  {
+    "subject": "Re: Cancelamento",
+    "body": "Acho que sexta já dá.\n\nAbraço\nDISCLAIMER: mensagem automática",
+    "label": "cancelamento_reuniao",
+    "persona": "aluno_stressado"
+  },
+  {
+    "subject": "RE: Dissertação",
+    "body": "Logo vemos.\n\n\nEnviado do telemóvel",
+    "label": "agendamento_reuniao",
+    "persona": "aluno_stressado"
+  },
+  {
+    "subject": "Fw: Meeting",
+    "body": "Professora Ana Costa, consegues aparecer no Discord terça?\n\nCumprimentos",
+    "label": "agendamento_reuniao",
+    "persona": "professor"
+  },
+  {
+    "subject": "Call",
+    "body": "Consegues reunir depois da aula?\n\nAté já\nEnviado do Outlook",
+    "label": "agendamento_reuniao",
+    "persona": "aluno_informal"
+  },
+  {
+    "subject": "Re: Não vou conseguir",
+    "body": "Confirmado.\n\nBest regards\nEnviado do telemóvel",
+    "label": "cancelamento_reuniao",
+    "persona": "aluno_internacional"
+  },
+  {
+    "subject": "Fw: Confirmado",
+    "body": "Perfeito, fica então combinado para mais logo.\n\nAté já\nEnviado do telemóvel",
+    "label": "reuniao_confirmada",
+    "persona": "aluno_informal"
+  },
+  {
+    "subject": "Fw: Confirmado",
+    "body": "Confirmado 👍 🔥\n\nBest regards\nSent from my iPhone",
+    "label": "reuniao_confirmada",
+    "persona": "aluno_internacional"
+  },
+  {
+    "subject": "RE: Combinado",
+    "body": "Perfeito, fica então combinado para daqui a 2 dias. depois falamos\n\nAté já\nEnviado do telemóvel",
+    "label": "reuniao_confirmada",
+    "persona": "aluno_informal"
+  },
+  {
+    "subject": "Fw: Reunião confirmada",
+    "body": "Perfeito, fica então combinado para daqui a 2 dias.\ndepois falamos\n\nBest regards\nDISCLAIMER: mensagem automática",
+    "label": "reuniao_confirmada",
+    "persona": "aluno_internacional"
+  },
+  {
+    "subject": "Fw: Mudança de planos",
+    "body": "Hey Diana, afinal vou ter de cancelar a reunião de mais logo. tranquilo 👍",
+    "label": "cancelamento_reuniao",
+    "persona": "aluno_stressado"
+  },
+  {
+    "subject": "Não vou conseguir",
+    "body": "Não vou conseguir aparecer mais logo.\n\nObrigado\nSent from my iPhone",
+    "label": "cancelamento_reuniao",
+    "persona": "professor"
+  },
+  {
+    "subject": "RE: Imprevisto",
+    "body": "A reunião sobre baseline vai ter de ficar para outro dia.\n\nBest regards\nEnviado do Outlook",
+    "label": "cancelamento_reuniao",
+    "persona": "aluno_internacional"
+  },
+  {
+    "subject": "Fw: Confirmado",
+    "body": "Combinado.\n\nAbraço\nEnviado do telemóvel",
+    "label": "reuniao_confirmada",
+    "persona": "aluno_stressado"
+  },
+  {
+    "subject": "Tudo certo",
+    "body": "Confirmado 👍 vemos isso amanhã\n\nObrigado\nSent from my iPhone",
+    "label": "reuniao_confirmada",
+    "persona": "professor"
+  },
+  {
+    "subject": "RE: Confirmado",
+    "body": "Fechado então.",
+    "label": "reuniao_confirmada",
+    "persona": "aluno_stressado"
+  },
+  {
+    "subject": "Dissertação",
+    "body": "Ok 👍 tranquilo\n\nAbraço\nEnviado do Outlook",
+    "label": "agendamento_reuniao",
+    "persona": "aluno_stressado"
+  },
+  {
+    "subject": "Reunião",
+    "body": "Combinado.\n\nCumps\nDISCLAIMER: mensagem automática",
+    "label": "agendamento_reuniao",
+    "persona": "aluno_informal"
+  },
+  {
+    "subject": "Re: Confirmado",
+    "body": "Acho que sexta já dá.\n\n\nEnviado do Outlook",
+    "label": "reuniao_confirmada",
+    "persona": "aluno_stressado"
+  },
+  {
+    "subject": "Re: Call",
+    "body": "Consegues reunir depois da aula?\n\nCumprimentos\nDISCLAIMER: mensagem automática",
+    "label": "agendamento_reuniao",
+    "persona": "professor"
+  },
+  {
+    "subject": "Cancelamento",
+    "body": "A reunião fica sem efeito.\n\nCumprimentos\nSent from my iPhone",
+    "label": "cancelamento_reuniao",
+    "persona": "professor"
+  },
+  {
+    "subject": "Meeting",
+    "body": "Professor Ricardo Mendes, consegues aparecer no Zoom ao final do dia?\n\nCumprimentos\nEnviado do Outlook",
+    "label": "agendamento_reuniao",
+    "persona": "professor"
+  },
+  {
+    "subject": "Fw: Imprevisto",
+    "body": "Não vou conseguir ir ao campus.\n\nThanks\nDISCLAIMER: mensagem automática",
+    "label": "cancelamento_reuniao",
+    "persona": "aluno_internacional"
+  },
+  {
+    "subject": "Fw: Não vou conseguir",
+    "body": "Vou ter aula nesse horário. 😅\n\nThanks",
+    "label": "cancelamento_reuniao",
+    "persona": "aluno_internacional"
+  },
+  {
+    "subject": "Fw: Mudança de planos",
+    "body": "Vou ter aula nesse horário.\n\n\nEnviado do Outlook",
+    "label": "cancelamento_reuniao",
+    "persona": "aluno_stressado"
+  },
+  {
+    "subject": "Fw: Imprevisto",
+    "body": "Não vou conseguir ir ao bar da faculdade. 😂\n\nBest regards",
+    "label": "cancelamento_reuniao",
+    "persona": "aluno_internacional"
+  },
+  {
+    "subject": "Re: Confirmado",
+    "body": "Perfeito, fica então combinado para sexta às 16h.\n\nBest regards\nSent from my iPhone",
+    "label": "reuniao_confirmada",
+    "persona": "aluno_internacional"
+  },
+  {
+    "subject": "Adiar reunião",
+    "body": "A reunião sobre pipeline NLP vai ter de ficar para outro dia.\ndepois falamos\n\nCumps\nSent from my iPhone",
+    "label": "cancelamento_reuniao",
+    "persona": "aluno_informal"
+  },
+  {
+    "subject": "Re: Adiar reunião",
+    "body": "Acho que sexta já dá. vemos isso amanha 😅",
+    "label": "cancelamento_reuniao",
+    "persona": "aluno_stressado"
+  },
+  {
+    "subject": "Dissertação",
+    "body": "Na boa.\n\nThanks",
+    "label": "agendamento_reuniao",
+    "persona": "aluno_internacional"
+  },
+  {
+    "subject": "Fw: Imprevisto",
+    "body": "Não vou conseguir aparecer quarta à tarde.\n\nAbraço\nEnviado do Outlook",
+    "label": "cancelamento_reuniao",
+    "persona": "aluno_stressado"
+  },
+  {
+    "subject": "Fw: Precisamos de falar",
+    "body": "Podemos fazer uma quick call depois do laboratório?\n\nBjs\nSent from my iPhone",
+    "label": "agendamento_reuniao",
+    "persona": "aluno_informal"
+  },
+  {
+    "subject": "RE: Tudo certo",
+    "body": "Tudo certo para depois de almoço. isso resolve-se\n\nAbraço\nEnviado do Outlook",
+    "label": "reuniao_confirmada",
+    "persona": "aluno_stressado"
+  },
+  {
+    "subject": "Re: Cancelamento",
+    "body": "Peço desculpa mas temos de adiar.\n\nObrigado\nDISCLAIMER: mensagem automática",
+    "label": "cancelamento_reuniao",
+    "persona": "professor"
+  },
+  {
+    "subject": "Re: Reunião confirmada",
+    "body": "Confirmado 👍\n\nBest regards",
+    "label": "reuniao_confirmada",
+    "persona": "aluno_internacional"
+  },
+  {
+    "subject": "RE: Não vou conseguir",
+    "body": "Não vou conseguir aparecer segunda.\n\nBest regards\nSent from my iPhone",
+    "label": "cancelamento_reuniao",
+    "persona": "aluno_internacional"
+  },
+  {
+    "subject": "Imprevisto",
+    "body": "A reunião fica sem efeito.\n\nCumprimentos\nEnviado do Outlook",
+    "label": "cancelamento_reuniao",
+    "persona": "professor"
+  },
+  {
+    "subject": "RE: Reunião confirmada",
+    "body": "Combinado, vemos isso segunda.\n\nCumprimentos\nEnviado do telemóvel",
+    "label": "reuniao_confirmada",
+    "persona": "professor"
+  },
+  {
+    "subject": "Precisamos de falar",
+    "body": "Podemos fazer uma quick call ao final do dia? na boa\n\nCumps\nEnviado do telemóvel",
+    "label": "agendamento_reuniao",
+    "persona": "aluno_informal"
+  },
+  {
+    "subject": "Fw: Combinado",
+    "body": "Pode ser.\n\nBjs",
+    "label": "reuniao_confirmada",
+    "persona": "aluno_informal"
+  },
+  {
+    "subject": "Confirmado",
+    "body": "Pode ser. vemos isso amanhã\n\nAbraço\nSent from my iPhone",
+    "label": "reuniao_confirmada",
+    "persona": "aluno_stressado"
+  },
+  {
+    "subject": "Re: Reunião",
+    "body": "Podemos fazer uma quick call ao final do dia? 🔥\n\nCumps",
+    "label": "agendamento_reuniao",
+    "persona": "aluno_informal"
+  },
+  {
+    "subject": "RE: Dissertação",
+    "body": "Se calhar era melhor reunir pelas 14h.\n\nObrigado\nEnviado do Outlook",
+    "label": "agendamento_reuniao",
+    "persona": "professor"
+  },
+  {
+    "subject": "RE: Tudo certo",
+    "body": "Pode ser.\nvemos isso amanhã\n\nThanks",
+    "label": "reuniao_confirmada",
+    "persona": "aluno_internacional"
+  },
+  {
+    "subject": "RE: Combinado",
+    "body": "Depois falamos.\n\nAbraço",
+    "label": "reuniao_confirmada",
+    "persona": "aluno_stressado"
+  },
+  {
+    "subject": "RE: Projeto",
+    "body": "Bora fazer uma reunião rápida mais logo?\n\nBest regards\nEnviado do Outlook",
+    "label": "agendamento_reuniao",
+    "persona": "aluno_internacional"
+  },
+  {
+    "subject": "Fw: Adiar reunião",
+    "body": "Afinal já não consigo reunir.\n\nCumprimentos\nSent from my iPhone",
+    "label": "cancelamento_reuniao",
+    "persona": "professor"
+  },
+  {
+    "subject": "Não vou conseguir",
+    "body": "Pode ser.\nna boa 🔥\n\nAté já\nDISCLAIMER: mensagem automática",
+    "label": "cancelamento_reuniao",
+    "persona": "aluno_informal"
+  },
+  {
+    "subject": "Re: Confirmado",
+    "body": "Confirmado 👍\n\nAbraço\nDISCLAIMER: mensagem automática",
+    "label": "reuniao_confirmada",
+    "persona": "aluno_stressado"
+  },
+  {
+    "subject": "Fw: Meeting",
+    "body": "Bom dia André, podemos reunir antes da aula para falar sobre dissertação? isso resolve-se\n\nObrigado\nDISCLAIMER: mensagem automática",
+    "label": "agendamento_reuniao",
+    "persona": "professor"
+  },
+  {
+    "subject": "Fw: Meeting",
+    "body": "Viva Carolina, tens disponibilidade após o seminário?\n\nCumprimentos\nEnviado do telemóvel",
+    "label": "agendamento_reuniao",
+    "persona": "professor"
+  },
+  {
+    "subject": "Fw: Tudo certo",
+    "body": "15h é complicado.\n\nAbraço\nEnviado do telemóvel",
+    "label": "reuniao_confirmada",
+    "persona": "aluno_stressado"
+  },
+  {
+    "subject": "Re: Reunião confirmada",
+    "body": "15h é complicado. na boa\n\nCumps",
+    "label": "reuniao_confirmada",
+    "persona": "aluno_informal"
+  },
+  {
+    "subject": "Fw: Combinado",
+    "body": "Está ótimo para mim. logo se vê 🔥\n\nAbraço\nSent from my iPhone",
+    "label": "reuniao_confirmada",
+    "persona": "aluno_stressado"
+  },
+  {
+    "subject": "RE: Confirmado",
+    "body": "Tudo certo para entre cadeiras. na boa 🔥\n\nBest regards",
+    "label": "reuniao_confirmada",
+    "persona": "aluno_internacional"
+  },
+  {
+    "subject": "Confirmado",
+    "body": "Eu apareço no sala 2.3.\n\nCumprimentos\nSent from my iPhone",
+    "label": "reuniao_confirmada",
+    "persona": "professor"
+  },
+  {
+    "subject": "Mudança de planos",
+    "body": "Tranquilo.\n\n\nEnviado do Outlook",
+    "label": "cancelamento_reuniao",
+    "persona": "aluno_stressado"
+  },
+  {
+    "subject": "Adiar reunião",
+    "body": "Afinal já não consigo reunir.\n\nAbraço\nSent from my iPhone",
+    "label": "cancelamento_reuniao",
+    "persona": "aluno_stressado"
+  },
+  {
+    "subject": "Combinado",
+    "body": "Ok, parece-me bem.\n\nCumps\nSent from my iPhone",
+    "label": "reuniao_confirmada",
+    "persona": "aluno_informal"
+  },
+  {
+    "subject": "Fw: Tudo certo",
+    "body": "Pode ser. logo se vê\n\nBest regards\nSent from my iPhone",
+    "label": "reuniao_confirmada",
+    "persona": "aluno_internacional"
+  },
+  {
+    "subject": "RE: Cancelamento",
+    "body": "Vou ter aula nesse horário.\n\nCumprimentos\nSent from my iPhone",
+    "label": "cancelamento_reuniao",
+    "persona": "professor"
+  },
+  {
+    "subject": "RE: Precisamos de falar",
+    "body": "Boas Miguel, tens disponibilidade segunda?\n\nThanks",
+    "label": "agendamento_reuniao",
+    "persona": "aluno_internacional"
+  },
+  {
+    "subject": "RE: Meeting",
+    "body": "Pode ser.\n\nThanks\nDISCLAIMER: mensagem automática",
+    "label": "agendamento_reuniao",
+    "persona": "aluno_internacional"
+  },
+  {
+    "subject": "Call",
+    "body": "Quando puderes temos de combinar uma reuniao.\n\nThanks\nEnviado do Outlook",
+    "label": "agendamento_reuniao",
+    "persona": "aluno_internacional"
+  },
+  {
+    "subject": "Re: Imprevisto",
+    "body": "Hi Ana, afinal vou ter de cancelar a reunião de pelas 14h. vemos isso amanha\n\nBest regards\nDISCLAIMER: mensagem automática",
+    "label": "cancelamento_reuniao",
+    "persona": "aluno_internacional"
+  },
+  {
+    "subject": "Fw: Combinado",
+    "body": "Confirmado. vemos isso amanhã 😅\n\nBjs\nDISCLAIMER: mensagem automática",
+    "label": "reuniao_confirmada",
+    "persona": "aluno_informal"
+  },
+  {
+    "subject": "RE: Combinado",
+    "body": "Pode ser.\n\n\nEnviado do Outlook",
+    "label": "reuniao_confirmada",
+    "persona": "aluno_stressado"
+  },
+  {
+    "subject": "Fw: Confirmado",
+    "body": "Confirmado 👍\n\nBest regards\nSent from my iPhone",
+    "label": "reuniao_confirmada",
+    "persona": "aluno_internacional"
+  },
+  {
+    "subject": "RE: Confirmado",
+    "body": "Perfeito, fica então combinado para daqui a 2 dias.\n\nBjs\nDISCLAIMER: mensagem automática",
+    "label": "reuniao_confirmada",
+    "persona": "aluno_informal"
+  },
+  {
+    "subject": "Fw: Reunião",
+    "body": "Podemos fazer uma quick call segunda? tranquilo 🔥\n\n\nEnviado do telemóvel",
+    "label": "agendamento_reuniao",
+    "persona": "aluno_stressado"
+  },
+  {
+    "subject": "RE: Cancelamento",
+    "body": "Depois falamos.\nlogo se vê\n\nAbraço\nEnviado do telemóvel",
+    "label": "cancelamento_reuniao",
+    "persona": "aluno_stressado"
+  },
+  {
+    "subject": "Re: Combinado",
+    "body": "Tranquilo.\n\nBest regards\nDISCLAIMER: mensagem automática",
+    "label": "reuniao_confirmada",
+    "persona": "aluno_internacional"
+  },
+  {
+    "subject": "Projeto",
+    "body": "Temos de alinhar a parte do baseline.\n\nObrigado\nSent from my iPhone",
+    "label": "agendamento_reuniao",
+    "persona": "professor"
+  },
+  {
+    "subject": "RE: Discussão resultados",
+    "body": "Se calhar era melhor reunir amanhã.\n\nObrigado\nDISCLAIMER: mensagem automática",
+    "label": "agendamento_reuniao",
+    "persona": "professor"
+  },
+  {
+    "subject": "Fw: Adiar reunião",
+    "body": "Logo vemos.\n\n\nSent from my iPhone",
+    "label": "cancelamento_reuniao",
+    "persona": "aluno_stressado"
+  },
+  {
+    "subject": "RE: Não vou conseguir",
+    "body": "Surgiu um imprevisto.\n\nThanks\nEnviado do telemóvel",
+    "label": "cancelamento_reuniao",
+    "persona": "aluno_internacional"
+  },
+  {
+    "subject": "RE: Call",
+    "body": "Se calhar era melhor reunir terça.\n\nCumprimentos",
+    "label": "agendamento_reuniao",
+    "persona": "professor"
+  },
+  {
+    "subject": "Combinado",
+    "body": "Está ótimo para mim.\n\nObrigado\nDISCLAIMER: mensagem automática",
+    "label": "reuniao_confirmada",
+    "persona": "professor"
+  },
+  {
+    "subject": "Fw: Projeto",
+    "body": "Se calhar era melhor reunir antes da aula.\n\nBest regards\nDISCLAIMER: mensagem automática",
+    "label": "agendamento_reuniao",
+    "persona": "aluno_internacional"
+  },
+  {
+    "subject": "Re: Meeting",
+    "body": "Confirmado.\ntranquilo 😂\n\nAbraço\nDISCLAIMER: mensagem automática",
+    "label": "agendamento_reuniao",
+    "persona": "aluno_stressado"
+  },
+  {
+    "subject": "Precisamos de falar",
+    "body": "Logo vemos. 👌\n\nAbraço\nEnviado do Outlook",
+    "label": "agendamento_reuniao",
+    "persona": "aluno_informal"
+  },
+  {
+    "subject": "Fw: Meeting",
+    "body": "Pode ser.\n\n\nEnviado do telemóvel",
+    "label": "agendamento_reuniao",
+    "persona": "aluno_stressado"
+  },
+  {
+    "subject": "RE: Precisamos de falar",
+    "body": "Precisamos de discutir o pipeline NLP.\nDá para reunir daqui a 2 dias?\n\nCumprimentos\nEnviado do Outlook",
+    "label": "agendamento_reuniao",
+    "persona": "professor"
+  },
+  {
+    "subject": "Fw: Cancelamento",
+    "body": "Peço desculpa mas temos de adiar.\n\nCumprimentos",
+    "label": "cancelamento_reuniao",
+    "persona": "professor"
+  },
+  {
+    "subject": "RE: Combinado",
+    "body": "Confirmado.\n\nCumps\nEnviado do Outlook",
+    "label": "reuniao_confirmada",
+    "persona": "aluno_informal"
+  },
+  {
+    "subject": "Fw: Confirmado",
+    "body": "Está ótimo para mim.\n\nThanks",
+    "label": "reuniao_confirmada",
+    "persona": "aluno_internacional"
+  },
+  {
+    "subject": "RE: Adiar reunião",
+    "body": "Confirmado. logo se vê\n\nBjs\nEnviado do Outlook",
+    "label": "cancelamento_reuniao",
+    "persona": "aluno_informal"
+  },
+  {
+    "subject": "Re: Tudo certo",
+    "body": "Perfeito, fica então combinado para sexta. 😅\n\n\nDISCLAIMER: mensagem automática",
+    "label": "reuniao_confirmada",
+    "persona": "aluno_informal"
+  },
+  {
+    "subject": "Discussão resultados",
+    "body": "Logo vemos.\n\nAbraço\nEnviado do telemóvel",
+    "label": "agendamento_reuniao",
+    "persona": "aluno_informal"
+  },
+  {
+    "subject": "Reunião confirmada",
+    "body": "Fechado então.\n\nBjs\nSent from my iPhone",
+    "label": "reuniao_confirmada",
+    "persona": "aluno_informal"
+  },
+  {
+    "subject": "RE: Call",
+    "body": "Quando puderes temos de combinar uma reunião.\n\nAbraço",
+    "label": "agendamento_reuniao",
+    "persona": "aluno_stressado"
+  },
+  {
+    "subject": "Re: Call",
+    "body": "Depois falamos.\n\nAté já\nEnviado do telemóvel",
+    "label": "agendamento_reuniao",
+    "persona": "aluno_informal"
+  },
+  {
+    "subject": "Fw: Adiar reunião",
+    "body": "Afinal já não consigo reunir. isso resolve-se\n\nThanks\nEnviado do Outlook",
+    "label": "cancelamento_reuniao",
+    "persona": "aluno_internacional"
+  },
+  {
+    "subject": "Re: Reunião",
+    "body": "Depois falamos. logo se vê\n\nAté já\nDISCLAIMER: mensagem automática",
+    "label": "agendamento_reuniao",
+    "persona": "aluno_informal"
+  },
+  {
+    "subject": "Re: Mudança de planos",
+    "body": "Não vou conseguir ir ao laboratório.\n\nAbraço\nEnviado do Outlook",
+    "label": "cancelamento_reuniao",
+    "persona": "aluno_stressado"
+  },
+  {
+    "subject": "RE: Tudo certo",
+    "body": "Está ótimo para mim.\n\nThanks",
+    "label": "reuniao_confirmada",
+    "persona": "aluno_internacional"
+  },
+  {
+    "subject": "Fw: Precisamos de falar",
+    "body": "Temos de alinhar a parte do dissertação.\n\nCumprimentos",
+    "label": "agendamento_reuniao",
+    "persona": "professor"
+  },
+  {
+    "subject": "Re: Call",
+    "body": "Consegues reunir depois da aula? isso resolve-se\n\n\nEnviado do Outlook",
+    "label": "agendamento_reuniao",
+    "persona": "aluno_stressado"
+  },
+  {
+    "subject": "Re: Reunião confirmada",
+    "body": "Pode ser.\n\nAté já",
+    "label": "reuniao_confirmada",
+    "persona": "aluno_informal"
+  },
+  {
+    "subject": "Fw: Confirmado",
+    "body": "Na boa 👍\n\nCumprimentos\nDISCLAIMER: mensagem automática",
+    "label": "reuniao_confirmada",
+    "persona": "professor"
+  },
+  {
+    "subject": "Discussão resultados",
+    "body": "Podemos fazer uma quick call mais logo?\n\nObrigado\nEnviado do Outlook",
+    "label": "agendamento_reuniao",
+    "persona": "professor"
+  },
+  {
+    "subject": "Imprevisto",
+    "body": "Combinado.\n\nAbraço\nEnviado do telemóvel",
+    "label": "cancelamento_reuniao",
+    "persona": "aluno_stressado"
+  },
+  {
+    "subject": "Precisamos de falar",
+    "body": "Boa tarde João, tens disponibilidade segunda?\n\nObrigado\nSent from my iPhone",
+    "label": "agendamento_reuniao",
+    "persona": "professor"
+  },
+  {
+    "subject": "Re: Meeting",
+    "body": "Bora fazer uma reunião rápida quarta à tarde?\n\nObrigado\nEnviado do telemóvel",
+    "label": "agendamento_reuniao",
+    "persona": "professor"
+  },
+  {
+    "subject": "Tudo certo",
+    "body": "Ok 👍\n\nObrigado\nEnviado do telemóvel",
+    "label": "reuniao_confirmada",
+    "persona": "professor"
+  },
+  {
+    "subject": "RE: Dissertação",
+    "body": "Consegues reunir depois da aula? 😅\n\nAté já\nEnviado do telemóvel",
+    "label": "agendamento_reuniao",
+    "persona": "aluno_informal"
+  },
+  {
+    "subject": "RE: Call",
+    "body": "Olá Ricardo, podemos reunir amanhã às 15h para falar sobre resultados?\n\nAté já\nDISCLAIMER: mensagem automática",
+    "label": "agendamento_reuniao",
+    "persona": "aluno_informal"
+  },
+  {
+    "subject": "RE: Projeto",
+    "body": "Depois falamos.",
+    "label": "agendamento_reuniao",
+    "persona": "aluno_informal"
+  },
+  {
+    "subject": "Precisamos de falar",
+    "body": "Na boa.\n\n\nSent from my iPhone",
+    "label": "agendamento_reuniao",
+    "persona": "aluno_stressado"
+  },
+  {
+    "subject": "Fw: Reunião confirmada",
+    "body": "Eu apareço no Zoom.\n\nCumprimentos\nEnviado do Outlook",
+    "label": "reuniao_confirmada",
+    "persona": "professor"
+  },
+  {
+    "subject": "Re: Reunião confirmada",
+    "body": "Pode ser. tranquilo\n\nThanks",
+    "label": "reuniao_confirmada",
+    "persona": "aluno_internacional"
+  },
+  {
+    "subject": "RE: Reunião",
+    "body": "Olá Miguel, podemos reunir pelas 14h para falar sobre relatório?\n\nBjs",
+    "label": "agendamento_reuniao",
+    "persona": "aluno_informal"
+  },
+  {
+    "subject": "Fw: Combinado",
+    "body": "Tranquilo.\n\nCumps\nEnviado do Outlook",
+    "label": "reuniao_confirmada",
+    "persona": "aluno_informal"
+  },
+  {
+    "subject": "Imprevisto",
+    "body": "Vou ter aula nesse horário.\n\n\nSent from my iPhone",
+    "label": "cancelamento_reuniao",
+    "persona": "aluno_informal"
+  },
+  {
+    "subject": "Dissertação",
+    "body": "Boas Professor Silva, tens disponibilidade amanhã?\n\nThanks\nSent from my iPhone",
+    "label": "agendamento_reuniao",
+    "persona": "aluno_internacional"
+  },
+  {
+    "subject": "Re: Imprevisto",
+    "body": "Não vou conseguir ir ao sala 2.3.\n\nCumprimentos\nSent from my iPhone",
+    "label": "cancelamento_reuniao",
+    "persona": "professor"
+  },
+  {
+    "subject": "Cancelamento",
+    "body": "Hello Professor Ricardo Mendes, afinal vou ter de cancelar a reunião de na próxima semana.\n\nThanks\nSent from my iPhone",
+    "label": "cancelamento_reuniao",
+    "persona": "aluno_internacional"
+  },
+  {
+    "subject": "RE: Precisamos de falar",
+    "body": "Confirmado.\n\nAbraço\nEnviado do Outlook",
+    "label": "agendamento_reuniao",
+    "persona": "aluno_informal"
+  },
+  {
+    "subject": "Re: Tudo certo",
+    "body": "Combinado, vemos isso pelas 14h.\n\nCumps",
+    "label": "reuniao_confirmada",
+    "persona": "aluno_informal"
+  },
+  {
+    "subject": "Fw: Imprevisto",
+    "body": "Hoje não vai dar 😅\n\nAbraço\nEnviado do telemóvel",
+    "label": "cancelamento_reuniao",
+    "persona": "aluno_informal"
+  },
+  {
+    "subject": "Fw: Meeting",
+    "body": "Quando puderes temos de combinar uma reunião. 😅\n\nAté já",
+    "label": "agendamento_reuniao",
+    "persona": "aluno_informal"
+  },
+  {
+    "subject": "Fw: Adiar reunião",
+    "body": "Acho que sexta já dá. 👌\n\n\nEnviado do telemóvel",
+    "label": "cancelamento_reuniao",
+    "persona": "aluno_informal"
+  },
+  {
+    "subject": "Fw: Dissertação",
+    "body": "Se calhar era melhor reunir depois do laboratório.\n\nCumprimentos\nEnviado do telemóvel",
+    "label": "agendamento_reuniao",
+    "persona": "professor"
+  },
+  {
+    "subject": "Reunião confirmada",
+    "body": "Na boa 👍\n\nCumprimentos",
+    "label": "reuniao_confirmada",
+    "persona": "professor"
+  },
+  {
+    "subject": "Re: Cancelamento",
+    "body": "Na boa. 🔥\n\nBjs\nDISCLAIMER: mensagem automática",
+    "label": "cancelamento_reuniao",
+    "persona": "aluno_informal"
+  },
+  {
+    "subject": "RE: Call",
+    "body": "Acho que sexta já dá.",
+    "label": "agendamento_reuniao",
+    "persona": "aluno_stressado"
+  },
+  {
+    "subject": "RE: Adiar reunião",
+    "body": "Peço desculpa mas temos de adiar.\n\nAbraço\nSent from my iPhone",
+    "label": "cancelamento_reuniao",
+    "persona": "aluno_stressado"
+  },
+  {
+    "subject": "Fw: Confirmado",
+    "body": "Confirmado 👍\n\nAbraço\nEnviado do telemóvel",
+    "label": "reuniao_confirmada",
+    "persona": "aluno_stressado"
+  },
+  {
+    "subject": "Re: Mudança de planos",
+    "body": "Boa tarde Ricardo, afinal vou ter de cancelar a reunião de amanhã. isso resolve-se\n\nObrigado\nEnviado do telemóvel",
+    "label": "cancelamento_reuniao",
+    "persona": "professor"
+  },
+  {
+    "subject": "Adiar reunião",
+    "body": "Não vou conseguir ir ao Teams.\n🔥\n\nAté já\nDISCLAIMER: mensagem automática",
+    "label": "cancelamento_reuniao",
+    "persona": "aluno_informal"
+  },
+  {
+    "subject": "Fw: Discussão resultados",
+    "body": "Temos de alinhar a parte do Visualização de Dados.\n\nAté já\nEnviado do telemóvel",
+    "label": "agendamento_reuniao",
+    "persona": "aluno_informal"
+  },
+  {
+    "subject": "Re: Imprevisto",
+    "body": "Tranquilo. vemos isso amanhã\n\nThanks\nEnviado do telemóvel",
+    "label": "cancelamento_reuniao",
+    "persona": "aluno_internacional"
+  },
+  {
+    "subject": "RE: Precisamos de falar",
+    "body": "Boas Ricardo, tens disponibilidade depois do laboratório?\n\nThanks\nSent from my iPhone",
+    "label": "agendamento_reuniao",
+    "persona": "aluno_internacional"
+  },
+  {
+    "subject": "Confirmado",
+    "body": "15h é complicado. na boa 👍\n\nBjs\nEnviado do telemóvel",
+    "label": "reuniao_confirmada",
+    "persona": "aluno_informal"
+  }
+]

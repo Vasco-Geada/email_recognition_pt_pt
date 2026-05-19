@@ -1,0 +1,88 @@
+{
+  "summary": {
+    "total_samples": 50,
+    "exact_matches": 50,
+    "exact_match_accuracy": 1.0
+  },
+  "intent_metrics": {
+    "agendamento_reuniao": {
+      "precision": 1.0,
+      "recall": 1.0,
+      "f1": 1.0,
+      "tp": 25,
+      "fp": 0,
+      "fn": 0
+    },
+    "cancelamento_reuniao": {
+      "precision": 1.0,
+      "recall": 1.0,
+      "f1": 1.0,
+      "tp": 15,
+      "fp": 0,
+      "fn": 0
+    },
+    "reuniao_confirmada": {
+      "precision": 1.0,
+      "recall": 1.0,
+      "f1": 1.0,
+      "tp": 10,
+      "fp": 0,
+      "fn": 0
+    }
+  },
+  "argument_metrics": {
+    "participants": {
+      "precision": 1.0,
+      "recall": 1.0,
+      "f1": 1.0,
+      "tp": 131,
+      "fp": 0,
+      "fn": 0
+    },
+    "time": {
+      "precision": 1.0,
+      "recall": 1.0,
+      "f1": 1.0,
+      "tp": 31,
+      "fp": 0,
+      "fn": 0
+    },
+    "location": {
+      "precision": 1.0,
+      "recall": 1.0,
+      "f1": 1.0,
+      "tp": 5,
+      "fp": 0,
+      "fn": 0
+    },
+    "topic": {
+      "precision": 1.0,
+      "recall": 1.0,
+      "f1": 1.0,
+      "tp": 8,
+      "fp": 0,
+      "fn": 0
+    }
+  },
+  "overall_metrics": {
+    "precision": 1.0,
+    "recall": 1.0,
+    "f1": 1.0
+  },
+  "confusion_matrix": {
+    "agendamento_reuniao": {
+      "agendamento_reuniao": 25
+    },
+    "cancelamento_reuniao": {
+      "cancelamento_reuniao": 15
+    },
+    "reuniao_confirmada": {
+      "reuniao_confirmada": 10
+    }
+  },
+  "error_analysis": {
+    "mismatches": [],
+    "missing": [],
+    "extra": []
+  }
+}

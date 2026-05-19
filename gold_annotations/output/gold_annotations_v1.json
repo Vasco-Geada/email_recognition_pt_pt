@@ -1,0 +1,9143 @@
+[
+  {
+    "id": 1,
+    "text": "Consegues reunir depois da aula? tranquilo\n\nCumprimentos\nDISCLAIMER: mensagem automática",
+    "intent": "agendamento_reuniao",
+    "trigger": [
+      "reunir"
+    ],
+    "arguments": {
+      "participants": [
+        "Cumprimentos",
+        "aula"
+      ],
+      "time": [],
+      "location": [],
+      "topic": []
+    },
+    "confidence": {
+      "trigger": 0.9,
+      "participants": 0.75,
+      "temporal": 0.8,
+      "location": 0.85,
+      "topic": 0.7
+    },
+    "metadata": {
+      "created_at": "2026-05-11T10:26:58.767113",
+      "validated": true,
+      "version": "1.0"
+    }
+  },
+  {
+    "id": 2,
+    "text": "Hoje não vai dar 😅\n\nObrigado\nEnviado do telemóvel",
+    "intent": "cancelamento_reuniao",
+    "trigger": [],
+    "arguments": {
+      "participants": [
+        "Enviado",
+        "de planos",
+        "telemóvel",
+        "vai"
+      ],
+      "time": [
+        "Hoje"
+      ],
+      "location": [],
+      "topic": []
+    },
+    "confidence": {
+      "trigger": 0.9,
+      "participants": 0.75,
+      "temporal": 0.8,
+      "location": 0.85,
+      "topic": 0.7
+    },
+    "metadata": {
+      "created_at": "2026-05-11T10:26:58.767119",
+      "validated": true,
+      "version": "1.0"
+    }
+  },
+  {
+    "id": 3,
+    "text": "Consegues reunir depois da aula? 😂\n\n\nEnviado do Outlook",
+    "intent": "agendamento_reuniao",
+    "trigger": [
+      "reunir"
+    ],
+    "arguments": {
+      "participants": [
+        "aula"
+      ],
+      "time": [],
+      "location": [],
+      "topic": []
+    },
+    "confidence": {
+      "trigger": 0.9,
+      "participants": 0.75,
+      "temporal": 0.8,
+      "location": 0.85,
+      "topic": 0.7
+    },
+    "metadata": {
+      "created_at": "2026-05-11T10:26:58.767123",
+      "validated": true,
+      "version": "1.0"
+    }
+  },
+  {
+    "id": 4,
+    "text": "Bora fazer uma reunião rápida quinta de manhã?\n\n\nDISCLAIMER: mensagem automática",
+    "intent": "agendamento_reuniao",
+    "trigger": [
+      "reunir"
+    ],
+    "arguments": {
+      "participants": [
+        "Bora",
+        "fazer uma",
+        "quinta",
+        "quinta de",
+        "reunião"
+      ],
+      "time": [
+        "quinta",
+        "de manhã"
+      ],
+      "location": [],
+      "topic": [
+        "Dissertação"
+      ]
+    },
+    "confidence": {
+      "trigger": 0.9,
+      "participants": 0.75,
+      "temporal": 0.8,
+      "location": 0.85,
+      "topic": 0.7
+    },
+    "metadata": {
+      "created_at": "2026-05-11T10:26:58.767127",
+      "validated": true,
+      "version": "1.0"
+    }
+  },
+  {
+    "id": 5,
+    "text": "Olá Rita, afinal vou ter de cancelar a reunião de terça.\n\nBjs\nDISCLAIMER: mensagem automática",
+    "intent": "cancelamento_reuniao",
+    "trigger": [
+      "reunir"
+    ],
+    "arguments": {
+      "participants": [
+        "Olá",
+        "Rita",
+        "reunião",
+        "reunião de"
+      ],
+      "time": [
+        "terça"
+      ],
+      "location": [],
+      "topic": []
+    },
+    "confidence": {
+      "trigger": 0.9,
+      "participants": 0.75,
+      "temporal": 0.8,
+      "location": 0.85,
+      "topic": 0.7
+    },
+    "metadata": {
+      "created_at": "2026-05-11T10:26:58.767130",
+      "validated": true,
+      "version": "1.0"
+    }
+  },
+  {
+    "id": 6,
+    "text": "Ok 👍\n\n\nEnviado do telemóvel",
+    "intent": "cancelamento_reuniao",
+    "trigger": [
+      "reunir"
+    ],
+    "arguments": {
+      "participants": [],
+      "time": [],
+      "location": [],
+      "topic": []
+    },
+    "confidence": {
+      "trigger": 0.9,
+      "participants": 0.75,
+      "temporal": 0.8,
+      "location": 0.85,
+      "topic": 0.7
+    },
+    "metadata": {
+      "created_at": "2026-05-11T10:26:58.767132",
+      "validated": true,
+      "version": "1.0"
+    }
+  },
+  {
+    "id": 7,
+    "text": "Podemos fazer uma quick call quinta de manhã? isso resolve-se\n\nObrigado\nSent from my iPhone",
+    "intent": "agendamento_reuniao",
+    "trigger": [],
+    "arguments": {
+      "participants": [
+        "Sent",
+        "de manhã",
+        "quick",
+        "quick call",
+        "resolve"
+      ],
+      "time": [
+        "quinta",
+        "de manhã"
+      ],
+      "location": [],
+      "topic": []
+    },
+    "confidence": {
+      "trigger": 0.9,
+      "participants": 0.75,
+      "temporal": 0.8,
+      "location": 0.85,
+      "topic": 0.7
+    },
+    "metadata": {
+      "created_at": "2026-05-11T10:26:58.767135",
+      "validated": true,
+      "version": "1.0"
+    }
+  },
+  {
+    "id": 8,
+    "text": "Consegues reunir depois da aula? logo se vê\n\nCumprimentos\nDISCLAIMER: mensagem automática",
+    "intent": "agendamento_reuniao",
+    "trigger": [
+      "reunir"
+    ],
+    "arguments": {
+      "participants": [
+        "Consegues",
+        "aula"
+      ],
+      "time": [
+        "logo"
+      ],
+      "location": [],
+      "topic": [
+        "Dissertação"
+      ]
+    },
+    "confidence": {
+      "trigger": 0.9,
+      "participants": 0.75,
+      "temporal": 0.8,
+      "location": 0.85,
+      "topic": 0.7
+    },
+    "metadata": {
+      "created_at": "2026-05-11T10:26:58.767137",
+      "validated": true,
+      "version": "1.0"
+    }
+  },
+  {
+    "id": 9,
+    "text": "Quando puderes temos de combinar uma reunião.\n\nCumprimentos\nEnviado do telemóvel",
+    "intent": "agendamento_reuniao",
+    "trigger": [
+      "reunir"
+    ],
+    "arguments": {
+      "participants": [
+        "puderes",
+        "resultados",
+        "reunião"
+      ],
+      "time": [],
+      "location": [],
+      "topic": []
+    },
+    "confidence": {
+      "trigger": 0.9,
+      "participants": 0.75,
+      "temporal": 0.8,
+      "location": 0.85,
+      "topic": 0.7
+    },
+    "metadata": {
+      "created_at": "2026-05-11T10:26:58.767139",
+      "validated": true,
+      "version": "1.0"
+    }
+  },
+  {
+    "id": 10,
+    "text": "Podemos fazer uma quick call quarta à tarde?\n\nThanks",
+    "intent": "agendamento_reuniao",
+    "trigger": [
+      "reunir"
+    ],
+    "arguments": {
+      "participants": [
+        "Reunião",
+        "quick",
+        "quick call"
+      ],
+      "time": [
+        "quarta",
+        "à tarde"
+      ],
+      "location": [],
+      "topic": []
+    },
+    "confidence": {
+      "trigger": 0.9,
+      "participants": 0.75,
+      "temporal": 0.8,
+      "location": 0.85,
+      "topic": 0.7
+    },
+    "metadata": {
+      "created_at": "2026-05-11T10:26:58.767141",
+      "validated": true,
+      "version": "1.0"
+    }
+  },
+  {
+    "id": 11,
+    "text": "A reunião fica sem efeito.\n\nThanks\nDISCLAIMER: mensagem automática",
+    "intent": "cancelamento_reuniao",
+    "trigger": [
+      "reunir"
+    ],
+    "arguments": {
+      "participants": [
+        "reunião",
+        "reunião fica",
+        "sem"
+      ],
+      "time": [],
+      "location": [],
+      "topic": []
+    },
+    "confidence": {
+      "trigger": 0.9,
+      "participants": 0.75,
+      "temporal": 0.8,
+      "location": 0.85,
+      "topic": 0.7
+    },
+    "metadata": {
+      "created_at": "2026-05-11T10:26:58.767144",
+      "validated": true,
+      "version": "1.0"
+    }
+  },
+  {
+    "id": 12,
+    "text": "Marta, consegues aparecer no laboratório quarta à tarde?\n\n\nDISCLAIMER: mensagem automática",
+    "intent": "agendamento_reuniao",
+    "trigger": [
+      "falar"
+    ],
+    "arguments": {
+      "participants": [
+        "laboratório"
+      ],
+      "time": [
+        "quarta",
+        "à tarde"
+      ],
+      "location": [
+        "laboratório"
+      ],
+      "topic": []
+    },
+    "confidence": {
+      "trigger": 0.9,
+      "participants": 0.75,
+      "temporal": 0.8,
+      "location": 0.85,
+      "topic": 0.7
+    },
+    "metadata": {
+      "created_at": "2026-05-11T10:26:58.767146",
+      "validated": true,
+      "version": "1.0"
+    }
+  },
+  {
+    "id": 13,
+    "text": "Combinado. depois falamos\n\n\nDISCLAIMER: mensagem automática",
+    "intent": "cancelamento_reuniao",
+    "trigger": [
+      "combinar"
+    ],
+    "arguments": {
+      "participants": [
+        "vou"
+      ],
+      "time": [],
+      "location": [],
+      "topic": []
+    },
+    "confidence": {
+      "trigger": 0.9,
+      "participants": 0.75,
+      "temporal": 0.8,
+      "location": 0.85,
+      "topic": 0.7
+    },
+    "metadata": {
+      "created_at": "2026-05-11T10:26:58.767148",
+      "validated": true,
+      "version": "1.0"
+    }
+  },
+  {
+    "id": 14,
+    "text": "Tranquilo.",
+    "intent": "agendamento_reuniao",
+    "trigger": [],
+    "arguments": {
+      "participants": [],
+      "time": [],
+      "location": [],
+      "topic": []
+    },
+    "confidence": {
+      "trigger": 0.9,
+      "participants": 0.75,
+      "temporal": 0.8,
+      "location": 0.85,
+      "topic": 0.7
+    },
+    "metadata": {
+      "created_at": "2026-05-11T10:26:58.767151",
+      "validated": true,
+      "version": "1.0"
+    }
+  },
+  {
+    "id": 15,
+    "text": "Bora fazer uma reunião rápida sexta? logo se vê\n\nCumprimentos\nSent from my iPhone",
+    "intent": "agendamento_reuniao",
+    "trigger": [
+      "reunir"
+    ],
+    "arguments": {
+      "participants": [
+        "Reunião",
+        "fazer",
+        "fazer uma",
+        "reunião",
+        "sexta"
+      ],
+      "time": [
+        "sexta",
+        "logo"
+      ],
+      "location": [],
+      "topic": []
+    },
+    "confidence": {
+      "trigger": 0.9,
+      "participants": 0.75,
+      "temporal": 0.8,
+      "location": 0.85,
+      "topic": 0.7
+    },
+    "metadata": {
+      "created_at": "2026-05-11T10:26:58.767153",
+      "validated": true,
+      "version": "1.0"
+    }
+  },
+  {
+    "id": 16,
+    "text": "Não vou conseguir aparecer sexta às 16h.\n\nCumprimentos\nDISCLAIMER: mensagem automática",
+    "intent": "cancelamento_reuniao",
+    "trigger": [],
+    "arguments": {
+      "participants": [
+        "de planos",
+        "vou"
+      ],
+      "time": [
+        "sexta",
+        "às 16h"
+      ],
+      "location": [],
+      "topic": []
+    },
+    "confidence": {
+      "trigger": 0.9,
+      "participants": 0.75,
+      "temporal": 0.8,
+      "location": 0.85,
+      "topic": 0.7
+    },
+    "metadata": {
+      "created_at": "2026-05-11T10:26:58.767156",
+      "validated": true,
+      "version": "1.0"
+    }
+  },
+  {
+    "id": 17,
+    "text": "Afinal já não consigo reunir.\nvemos isso amanhã\n\nCumps\nEnviado do Outlook",
+    "intent": "cancelamento_reuniao",
+    "trigger": [
+      "reunir"
+    ],
+    "arguments": {
+      "participants": [
+        "Afinal",
+        "amanhã",
+        "consigo"
+      ],
+      "time": [
+        "amanhã"
+      ],
+      "location": [],
+      "topic": []
+    },
+    "confidence": {
+      "trigger": 0.9,
+      "participants": 0.75,
+      "temporal": 0.8,
+      "location": 0.85,
+      "topic": 0.7
+    },
+    "metadata": {
+      "created_at": "2026-05-11T10:26:58.767159",
+      "validated": true,
+      "version": "1.0"
+    }
+  },
+  {
+    "id": 18,
+    "text": "Não vou conseguir aparecer pelas 14h. tranquilo\n\nObrigado\nEnviado do Outlook",
+    "intent": "cancelamento_reuniao",
+    "trigger": [
+      "reunir"
+    ],
+    "arguments": {
+      "participants": [
+        "Adiar",
+        "Não",
+        "Obrigado"
+      ],
+      "time": [],
+      "location": [],
+      "topic": []
+    },
+    "confidence": {
+      "trigger": 0.9,
+      "participants": 0.75,
+      "temporal": 0.8,
+      "location": 0.85,
+      "topic": 0.7
+    },
+    "metadata": {
+      "created_at": "2026-05-11T10:26:58.767161",
+      "validated": true,
+      "version": "1.0"
+    }
+  },
+  {
+    "id": 19,
+    "text": "Precisamos de discutir o métricas F1. Dá para reunir segunda?\n\nObrigado",
+    "intent": "agendamento_reuniao",
+    "trigger": [
+      "reunir"
+    ],
+    "arguments": {
+      "participants": [
+        "métricas",
+        "reunir",
+        "reunir segunda"
+      ],
+      "time": [
+        "segunda"
+      ],
+      "location": [],
+      "topic": [
+        "F1"
+      ]
+    },
+    "confidence": {
+      "trigger": 0.9,
+      "participants": 0.75,
+      "temporal": 0.8,
+      "location": 0.85,
+      "topic": 0.7
+    },
+    "metadata": {
+      "created_at": "2026-05-11T10:26:58.767164",
+      "validated": true,
+      "version": "1.0"
+    }
+  },
+  {
+    "id": 20,
+    "text": "Confirmado. isso resolve-se\n\nAbraço",
+    "intent": "cancelamento_reuniao",
+    "trigger": [
+      "confirmar"
+    ],
+    "arguments": {
+      "participants": [
+        "resolve",
+        "vou"
+      ],
+      "time": [],
+      "location": [],
+      "topic": []
+    },
+    "confidence": {
+      "trigger": 0.9,
+      "participants": 0.75,
+      "temporal": 0.8,
+      "location": 0.85,
+      "topic": 0.7
+    },
+    "metadata": {
+      "created_at": "2026-05-11T10:26:58.767166",
+      "validated": true,
+      "version": "1.0"
+    }
+  },
+  {
+    "id": 21,
+    "text": "Tudo certo para sexta. na boa\n\nCumps\nEnviado do Outlook",
+    "intent": "reuniao_confirmada",
+    "trigger": [
+      "combinar"
+    ],
+    "arguments": {
+      "participants": [
+        "Combinado",
+        "boa",
+        "boa\n\nCumps",
+        "certo",
+        "sexta"
+      ],
+      "time": [
+        "sexta"
+      ],
+      "location": [],
+      "topic": []
+    },
+    "confidence": {
+      "trigger": 0.9,
+      "participants": 0.75,
+      "temporal": 0.8,
+      "location": 0.85,
+      "topic": 0.7
+    },
+    "metadata": {
+      "created_at": "2026-05-11T10:26:58.767169",
+      "validated": true,
+      "version": "1.0"
+    }
+  },
+  {
+    "id": 22,
+    "text": "Pode ser.\n\nAté já",
+    "intent": "reuniao_confirmada",
+    "trigger": [
+      "combinar"
+    ],
+    "arguments": {
+      "participants": [
+        "Combinado"
+      ],
+      "time": [],
+      "location": [],
+      "topic": []
+    },
+    "confidence": {
+      "trigger": 0.9,
+      "participants": 0.75,
+      "temporal": 0.8,
+      "location": 0.85,
+      "topic": 0.7
+    },
+    "metadata": {
+      "created_at": "2026-05-11T10:26:58.767171",
+      "validated": true,
+      "version": "1.0"
+    }
+  },
+  {
+    "id": 23,
+    "text": "Professora Ana Costa, consegues aparecer no laboratório entre cadeiras?\n\nCumprimentos\nEnviado do Outlook",
+    "intent": "agendamento_reuniao",
+    "trigger": [],
+    "arguments": {
+      "participants": [
+        "Ana",
+        "Ana Costa",
+        "laboratório"
+      ],
+      "time": [],
+      "location": [
+        "laboratório"
+      ],
+      "topic": []
+    },
+    "confidence": {
+      "trigger": 0.9,
+      "participants": 0.75,
+      "temporal": 0.8,
+      "location": 0.85,
+      "topic": 0.7
+    },
+    "metadata": {
+      "created_at": "2026-05-11T10:26:58.767173",
+      "validated": true,
+      "version": "1.0"
+    }
+  },
+  {
+    "id": 24,
+    "text": "Combinado.",
+    "intent": "reuniao_confirmada",
+    "trigger": [
+      "combinar"
+    ],
+    "arguments": {
+      "participants": [
+        "Combinado"
+      ],
+      "time": [],
+      "location": [],
+      "topic": []
+    },
+    "confidence": {
+      "trigger": 0.9,
+      "participants": 0.75,
+      "temporal": 0.8,
+      "location": 0.85,
+      "topic": 0.7
+    },
+    "metadata": {
+      "created_at": "2026-05-11T10:26:58.767175",
+      "validated": true,
+      "version": "1.0"
+    }
+  },
+  {
+    "id": 25,
+    "text": "Acho que sexta já dá.\nlogo se vê\n\nThanks\nEnviado do telemóvel",
+    "intent": "agendamento_reuniao",
+    "trigger": [],
+    "arguments": {
+      "participants": [
+        "já dá",
+        "que"
+      ],
+      "time": [
+        "sexta",
+        "logo"
+      ],
+      "location": [],
+      "topic": []
+    },
+    "confidence": {
+      "trigger": 0.9,
+      "participants": 0.75,
+      "temporal": 0.8,
+      "location": 0.85,
+      "topic": 0.7
+    },
+    "metadata": {
+      "created_at": "2026-05-11T10:26:58.767178",
+      "validated": true,
+      "version": "1.0"
+    }
+  },
+  {
+    "id": 26,
+    "text": "Tranquilo. isso resolve-se\n\nBjs\nEnviado do telemóvel",
+    "intent": "cancelamento_reuniao",
+    "trigger": [
+      "cancelar"
+    ],
+    "arguments": {
+      "participants": [
+        "Tranquilo",
+        "resolve"
+      ],
+      "time": [],
+      "location": [],
+      "topic": []
+    },
+    "confidence": {
+      "trigger": 0.9,
+      "participants": 0.75,
+      "temporal": 0.8,
+      "location": 0.85,
+      "topic": 0.7
+    },
+    "metadata": {
+      "created_at": "2026-05-11T10:26:58.767180",
+      "validated": true,
+      "version": "1.0"
+    }
+  },
+  {
+    "id": 27,
+    "text": "Depois falamos.\n\nThanks",
+    "intent": "reuniao_confirmada",
+    "trigger": [
+      "confirmar"
+    ],
+    "arguments": {
+      "participants": [
+        "Depois"
+      ],
+      "time": [],
+      "location": [],
+      "topic": []
+    },
+    "confidence": {
+      "trigger": 0.9,
+      "participants": 0.75,
+      "temporal": 0.8,
+      "location": 0.85,
+      "topic": 0.7
+    },
+    "metadata": {
+      "created_at": "2026-05-11T10:26:58.767183",
+      "validated": true,
+      "version": "1.0"
+    }
+  },
+  {
+    "id": 28,
+    "text": "Quando puderes temos de combinar uma reunião. isso resolve-se\n\nObrigado",
+    "intent": "agendamento_reuniao",
+    "trigger": [
+      "reunir"
+    ],
+    "arguments": {
+      "participants": [
+        "Dissertação",
+        "puderes",
+        "resolve",
+        "reunião"
+      ],
+      "time": [],
+      "location": [],
+      "topic": [
+        "Dissertação"
+      ]
+    },
+    "confidence": {
+      "trigger": 0.9,
+      "participants": 0.75,
+      "temporal": 0.8,
+      "location": 0.85,
+      "topic": 0.7
+    },
+    "metadata": {
+      "created_at": "2026-05-11T10:26:58.767185",
+      "validated": true,
+      "version": "1.0"
+    }
+  },
+  {
+    "id": 29,
+    "text": "Boas Ana, tens disponibilidade na próxima semana?\n\n\nSent from my iPhone",
+    "intent": "agendamento_reuniao",
+    "trigger": [
+      "reunir"
+    ],
+    "arguments": {
+      "participants": [
+        "Ana",
+        "Reunião",
+        "próxima",
+        "próxima semana"
+      ],
+      "time": [
+        "próxima semana",
+        "na próxima semana"
+      ],
+      "location": [],
+      "topic": []
+    },
+    "confidence": {
+      "trigger": 0.9,
+      "participants": 0.75,
+      "temporal": 0.8,
+      "location": 0.85,
+      "topic": 0.7
+    },
+    "metadata": {
+      "created_at": "2026-05-11T10:26:58.767187",
+      "validated": true,
+      "version": "1.0"
+    }
+  },
+  {
+    "id": 30,
+    "text": "Ok, parece-me bem.\n\nBest regards",
+    "intent": "reuniao_confirmada",
+    "trigger": [
+      "combinar"
+    ],
+    "arguments": {
+      "participants": [],
+      "time": [],
+      "location": [],
+      "topic": []
+    },
+    "confidence": {
+      "trigger": 0.9,
+      "participants": 0.75,
+      "temporal": 0.8,
+      "location": 0.85,
+      "topic": 0.7
+    },
+    "metadata": {
+      "created_at": "2026-05-11T10:26:58.767190",
+      "validated": true,
+      "version": "1.0"
+    }
+  },
+  {
+    "id": 31,
+    "text": "Não vou conseguir aparecer quinta de manhã. isso resolve-se\n\nCumps",
+    "intent": "cancelamento_reuniao",
+    "trigger": [
+      "cancelar"
+    ],
+    "arguments": {
+      "participants": [
+        "Não",
+        "de manhã",
+        "resolve"
+      ],
+      "time": [
+        "quinta",
+        "de manhã"
+      ],
+      "location": [],
+      "topic": []
+    },
+    "confidence": {
+      "trigger": 0.9,
+      "participants": 0.75,
+      "temporal": 0.8,
+      "location": 0.85,
+      "topic": 0.7
+    },
+    "metadata": {
+      "created_at": "2026-05-11T10:26:58.767193",
+      "validated": true,
+      "version": "1.0"
+    }
+  },
+  {
+    "id": 32,
+    "text": "Temos de alinhar a parte do dataset. 🔥\n\n\nEnviado do telemóvel",
+    "intent": "agendamento_reuniao",
+    "trigger": [],
+    "arguments": {
+      "participants": [
+        "dataset",
+        "parte",
+        "parte do"
+      ],
+      "time": [],
+      "location": [],
+      "topic": [
+        "dataset"
+      ]
+    },
+    "confidence": {
+      "trigger": 0.9,
+      "participants": 0.75,
+      "temporal": 0.8,
+      "location": 0.85,
+      "topic": 0.7
+    },
+    "metadata": {
+      "created_at": "2026-05-11T10:26:58.767195",
+      "validated": true,
+      "version": "1.0"
+    }
+  },
+  {
+    "id": 33,
+    "text": "Confirmado 👍\n\nAté já\nEnviado do Outlook",
+    "intent": "reuniao_confirmada",
+    "trigger": [
+      "confirmar"
+    ],
+    "arguments": {
+      "participants": [
+        "certo"
+      ],
+      "time": [],
+      "location": [],
+      "topic": []
+    },
+    "confidence": {
+      "trigger": 0.9,
+      "participants": 0.75,
+      "temporal": 0.8,
+      "location": 0.85,
+      "topic": 0.7
+    },
+    "metadata": {
+      "created_at": "2026-05-11T10:26:58.767197",
+      "validated": true,
+      "version": "1.0"
+    }
+  },
+  {
+    "id": 34,
+    "text": "Podemos fazer uma quick call antes da aula?\n\nBest regards",
+    "intent": "agendamento_reuniao",
+    "trigger": [],
+    "arguments": {
+      "participants": [
+        "aula",
+        "quick",
+        "quick call"
+      ],
+      "time": [],
+      "location": [],
+      "topic": []
+    },
+    "confidence": {
+      "trigger": 0.9,
+      "participants": 0.75,
+      "temporal": 0.8,
+      "location": 0.85,
+      "topic": 0.7
+    },
+    "metadata": {
+      "created_at": "2026-05-11T10:26:58.767199",
+      "validated": true,
+      "version": "1.0"
+    }
+  },
+  {
+    "id": 35,
+    "text": "Bora fazer uma reunião rápida terça?\n\nObrigado\nDISCLAIMER: mensagem automática",
+    "intent": "agendamento_reuniao",
+    "trigger": [
+      "reunir"
+    ],
+    "arguments": {
+      "participants": [
+        "DISCLAIMER",
+        "fazer",
+        "fazer uma",
+        "reunião",
+        "terça"
+      ],
+      "time": [
+        "terça"
+      ],
+      "location": [],
+      "topic": []
+    },
+    "confidence": {
+      "trigger": 0.9,
+      "participants": 0.75,
+      "temporal": 0.8,
+      "location": 0.85,
+      "topic": 0.7
+    },
+    "metadata": {
+      "created_at": "2026-05-11T10:26:58.767202",
+      "validated": true,
+      "version": "1.0"
+    }
+  },
+  {
+    "id": 36,
+    "text": "A reuniao sobre relatório vai ter de ficar para outro dia.\n\nThanks\nSent from my iPhone",
+    "intent": "cancelamento_reuniao",
+    "trigger": [],
+    "arguments": {
+      "participants": [
+        "de planos",
+        "outro",
+        "outro dia",
+        "reuniao",
+        "reuniao sobre",
+        "vai"
+      ],
+      "time": [],
+      "location": [],
+      "topic": [
+        "relatório"
+      ]
+    },
+    "confidence": {
+      "trigger": 0.9,
+      "participants": 0.75,
+      "temporal": 0.8,
+      "location": 0.85,
+      "topic": 0.7
+    },
+    "metadata": {
+      "created_at": "2026-05-11T10:26:58.767204",
+      "validated": true,
+      "version": "1.0"
+    }
+  },
+  {
+    "id": 37,
+    "text": "Inês, consegues aparecer no biblioteca na próxima semana?\n\nAté já",
+    "intent": "agendamento_reuniao",
+    "trigger": [
+      "discutir"
+    ],
+    "arguments": {
+      "participants": [
+        "biblioteca",
+        "na próxima",
+        "próxima",
+        "resultados"
+      ],
+      "time": [
+        "próxima semana",
+        "na próxima semana"
+      ],
+      "location": [
+        "biblioteca"
+      ],
+      "topic": []
+    },
+    "confidence": {
+      "trigger": 0.9,
+      "participants": 0.75,
+      "temporal": 0.8,
+      "location": 0.85,
+      "topic": 0.7
+    },
+    "metadata": {
+      "created_at": "2026-05-11T10:26:58.767208",
+      "validated": true,
+      "version": "1.0"
+    }
+  },
+  {
+    "id": 38,
+    "text": "Eu apareço no Zoom. vemos isso amanha",
+    "intent": "reuniao_confirmada",
+    "trigger": [
+      "confirmar"
+    ],
+    "arguments": {
+      "participants": [
+        "amanha"
+      ],
+      "time": [],
+      "location": [
+        "Zoom"
+      ],
+      "topic": []
+    },
+    "confidence": {
+      "trigger": 0.9,
+      "participants": 0.75,
+      "temporal": 0.8,
+      "location": 0.85,
+      "topic": 0.7
+    },
+    "metadata": {
+      "created_at": "2026-05-11T10:26:58.767211",
+      "validated": true,
+      "version": "1.0"
+    }
+  },
+  {
+    "id": 39,
+    "text": "Combinado.\nna boa 👌\n\nAté já",
+    "intent": "agendamento_reuniao",
+    "trigger": [
+      "combinar"
+    ],
+    "arguments": {
+      "participants": [
+        "boa",
+        "resultados"
+      ],
+      "time": [],
+      "location": [],
+      "topic": []
+    },
+    "confidence": {
+      "trigger": 0.9,
+      "participants": 0.75,
+      "temporal": 0.8,
+      "location": 0.85,
+      "topic": 0.7
+    },
+    "metadata": {
+      "created_at": "2026-05-11T10:26:58.767213",
+      "validated": true,
+      "version": "1.0"
+    }
+  },
+  {
+    "id": 40,
+    "text": "Na boa.\n\nAbraço\nDISCLAIMER: mensagem automática",
+    "intent": "agendamento_reuniao",
+    "trigger": [],
+    "arguments": {
+      "participants": [
+        "DISCLAIMER",
+        "boa"
+      ],
+      "time": [],
+      "location": [],
+      "topic": []
+    },
+    "confidence": {
+      "trigger": 0.9,
+      "participants": 0.75,
+      "temporal": 0.8,
+      "location": 0.85,
+      "topic": 0.7
+    },
+    "metadata": {
+      "created_at": "2026-05-11T10:26:58.767215",
+      "validated": true,
+      "version": "1.0"
+    }
+  },
+  {
+    "id": 41,
+    "text": "Temos de alinhar a parte do deadline.\n\nObrigado\nEnviado do telemóvel",
+    "intent": "agendamento_reuniao",
+    "trigger": [
+      "reunir"
+    ],
+    "arguments": {
+      "participants": [
+        "Enviado",
+        "Temos",
+        "deadline",
+        "parte",
+        "parte do",
+        "telemóvel"
+      ],
+      "time": [],
+      "location": [],
+      "topic": []
+    },
+    "confidence": {
+      "trigger": 0.9,
+      "participants": 0.75,
+      "temporal": 0.8,
+      "location": 0.85,
+      "topic": 0.7
+    },
+    "metadata": {
+      "created_at": "2026-05-11T10:26:58.767217",
+      "validated": true,
+      "version": "1.0"
+    }
+  },
+  {
+    "id": 42,
+    "text": "Tranquilo. depois falamos 😂\n\n\nDISCLAIMER: mensagem automática",
+    "intent": "cancelamento_reuniao",
+    "trigger": [],
+    "arguments": {
+      "participants": [
+        "de planos"
+      ],
+      "time": [],
+      "location": [],
+      "topic": []
+    },
+    "confidence": {
+      "trigger": 0.9,
+      "participants": 0.75,
+      "temporal": 0.8,
+      "location": 0.85,
+      "topic": 0.7
+    },
+    "metadata": {
+      "created_at": "2026-05-11T10:26:58.767219",
+      "validated": true,
+      "version": "1.0"
+    }
+  },
+  {
+    "id": 43,
+    "text": "Não vou conseguir ir ao laboratório.\n\n\nEnviado do Outlook",
+    "intent": "cancelamento_reuniao",
+    "trigger": [
+      "reunir"
+    ],
+    "arguments": {
+      "participants": [
+        "Não",
+        "laboratório"
+      ],
+      "time": [],
+      "location": [
+        "laboratório"
+      ],
+      "topic": []
+    },
+    "confidence": {
+      "trigger": 0.9,
+      "participants": 0.75,
+      "temporal": 0.8,
+      "location": 0.85,
+      "topic": 0.7
+    },
+    "metadata": {
+      "created_at": "2026-05-11T10:26:58.767221",
+      "validated": true,
+      "version": "1.0"
+    }
+  },
+  {
+    "id": 44,
+    "text": "Depois falamos.\n\nObrigado",
+    "intent": "reuniao_confirmada",
+    "trigger": [
+      "combinar"
+    ],
+    "arguments": {
+      "participants": [
+        "Depois"
+      ],
+      "time": [],
+      "location": [],
+      "topic": []
+    },
+    "confidence": {
+      "trigger": 0.9,
+      "participants": 0.75,
+      "temporal": 0.8,
+      "location": 0.85,
+      "topic": 0.7
+    },
+    "metadata": {
+      "created_at": "2026-05-11T10:26:58.767224",
+      "validated": true,
+      "version": "1.0"
+    }
+  },
+  {
+    "id": 45,
+    "text": "Temos de alinhar a parte do BERT.\n\nObrigado\nEnviado do Outlook",
+    "intent": "agendamento_reuniao",
+    "trigger": [
+      "falar"
+    ],
+    "arguments": {
+      "participants": [
+        "BERT",
+        "Enviado",
+        "Outlook",
+        "parte",
+        "parte do"
+      ],
+      "time": [],
+      "location": [],
+      "topic": [
+        "BERT"
+      ]
+    },
+    "confidence": {
+      "trigger": 0.9,
+      "participants": 0.75,
+      "temporal": 0.8,
+      "location": 0.85,
+      "topic": 0.7
+    },
+    "metadata": {
+      "created_at": "2026-05-11T10:26:58.767226",
+      "validated": true,
+      "version": "1.0"
+    }
+  },
+  {
+    "id": 46,
+    "text": "Tudo certo para daqui a 2 dias.\n\nBjs\nSent from my iPhone",
+    "intent": "reuniao_confirmada",
+    "trigger": [
+      "combinar"
+    ],
+    "arguments": {
+      "participants": [
+        "Tudo",
+        "daqui",
+        "para"
+      ],
+      "time": [
+        "a 2"
+      ],
+      "location": [],
+      "topic": []
+    },
+    "confidence": {
+      "trigger": 0.9,
+      "participants": 0.75,
+      "temporal": 0.8,
+      "location": 0.85,
+      "topic": 0.7
+    },
+    "metadata": {
+      "created_at": "2026-05-11T10:26:58.767229",
+      "validated": true,
+      "version": "1.0"
+    }
+  },
+  {
+    "id": 47,
+    "text": "Acho que sexta já dá.\n\n\nEnviado do telemóvel",
+    "intent": "agendamento_reuniao",
+    "trigger": [
+      "reunir"
+    ],
+    "arguments": {
+      "participants": [
+        "Acho",
+        "já dá"
+      ],
+      "time": [
+        "sexta"
+      ],
+      "location": [],
+      "topic": []
+    },
+    "confidence": {
+      "trigger": 0.9,
+      "participants": 0.75,
+      "temporal": 0.8,
+      "location": 0.85,
+      "topic": 0.7
+    },
+    "metadata": {
+      "created_at": "2026-05-11T10:26:58.767231",
+      "validated": true,
+      "version": "1.0"
+    }
+  },
+  {
+    "id": 48,
+    "text": "A reunião fica sem efeito. vemos isso amanhã",
+    "intent": "cancelamento_reuniao",
+    "trigger": [
+      "reunir"
+    ],
+    "arguments": {
+      "participants": [
+        "amanhã",
+        "reunião",
+        "reunião fica",
+        "sem"
+      ],
+      "time": [
+        "amanhã"
+      ],
+      "location": [],
+      "topic": []
+    },
+    "confidence": {
+      "trigger": 0.9,
+      "participants": 0.75,
+      "temporal": 0.8,
+      "location": 0.85,
+      "topic": 0.7
+    },
+    "metadata": {
+      "created_at": "2026-05-11T10:26:58.767233",
+      "validated": true,
+      "version": "1.0"
+    }
+  },
+  {
+    "id": 49,
+    "text": "Pode ser. logo se vê\n\nBest regards\nDISCLAIMER: mensagem automática",
+    "intent": "reuniao_confirmada",
+    "trigger": [],
+    "arguments": {
+      "participants": [
+        "certo"
+      ],
+      "time": [
+        "logo"
+      ],
+      "location": [],
+      "topic": []
+    },
+    "confidence": {
+      "trigger": 0.9,
+      "participants": 0.75,
+      "temporal": 0.8,
+      "location": 0.85,
+      "topic": 0.7
+    },
+    "metadata": {
+      "created_at": "2026-05-11T10:26:58.767235",
+      "validated": true,
+      "version": "1.0"
+    }
+  },
+  {
+    "id": 50,
+    "text": "15h é complicado.\n\n\nSent from my iPhone",
+    "intent": "agendamento_reuniao",
+    "trigger": [],
+    "arguments": {
+      "participants": [
+        "Projeto"
+      ],
+      "time": [],
+      "location": [],
+      "topic": [
+        "Projeto"
+      ]
+    },
+    "confidence": {
+      "trigger": 0.9,
+      "participants": 0.75,
+      "temporal": 0.8,
+      "location": 0.85,
+      "topic": 0.7
+    },
+    "metadata": {
+      "created_at": "2026-05-11T10:26:58.767237",
+      "validated": true,
+      "version": "1.0"
+    }
+  },
+  {
+    "id": 51,
+    "text": "Tudo certo para sexta às 16h.\n\nObrigado\nEnviado do Outlook",
+    "intent": "reuniao_confirmada",
+    "trigger": [
+      "reunir"
+    ],
+    "arguments": {
+      "participants": [
+        "Enviado",
+        "Outlook",
+        "Tudo certo",
+        "certo",
+        "confirmada",
+        "sexta"
+      ],
+      "time": [
+        "sexta",
+        "às 16h"
+      ],
+      "location": [],
+      "topic": []
+    },
+    "confidence": {
+      "trigger": 0.9,
+      "participants": 0.75,
+      "temporal": 0.8,
+      "location": 0.85,
+      "topic": 0.7
+    },
+    "metadata": {
+      "created_at": "2026-05-11T10:26:58.767240",
+      "validated": true,
+      "version": "1.0"
+    }
+  },
+  {
+    "id": 52,
+    "text": "Hello Rita, afinal vou ter de cancelar a reunião de na próxima semana.\n\nThanks\nDISCLAIMER: mensagem automática",
+    "intent": "cancelamento_reuniao",
+    "trigger": [
+      "reunir"
+    ],
+    "arguments": {
+      "participants": [
+        "Rita",
+        "de planos",
+        "próxima",
+        "próxima semana",
+        "reunião",
+        "reunião de"
+      ],
+      "time": [
+        "próxima semana",
+        "na próxima semana"
+      ],
+      "location": [],
+      "topic": []
+    },
+    "confidence": {
+      "trigger": 0.9,
+      "participants": 0.75,
+      "temporal": 0.8,
+      "location": 0.85,
+      "topic": 0.7
+    },
+    "metadata": {
+      "created_at": "2026-05-11T10:26:58.767243",
+      "validated": true,
+      "version": "1.0"
+    }
+  },
+  {
+    "id": 53,
+    "text": "Boas João, podemos reunir quinta de manhã para falar sobre trabalho de grupo?\n\n\nEnviado do Outlook",
+    "intent": "agendamento_reuniao",
+    "trigger": [
+      "reunir"
+    ],
+    "arguments": {
+      "participants": [
+        "Boas",
+        "João",
+        "de manhã",
+        "falar",
+        "falar sobre"
+      ],
+      "time": [
+        "quinta",
+        "de manhã"
+      ],
+      "location": [],
+      "topic": [
+        "Projeto",
+        "trabalho"
+      ]
+    },
+    "confidence": {
+      "trigger": 0.9,
+      "participants": 0.75,
+      "temporal": 0.8,
+      "location": 0.85,
+      "topic": 0.7
+    },
+    "metadata": {
+      "created_at": "2026-05-11T10:26:58.767245",
+      "validated": true,
+      "version": "1.0"
+    }
+  },
+  {
+    "id": 54,
+    "text": "Hoje não vai dar 😅 isso resolve-se\n\nCumprimentos\nEnviado do Outlook",
+    "intent": "cancelamento_reuniao",
+    "trigger": [],
+    "arguments": {
+      "participants": [
+        "resolve",
+        "vai",
+        "vou"
+      ],
+      "time": [
+        "Hoje"
+      ],
+      "location": [],
+      "topic": []
+    },
+    "confidence": {
+      "trigger": 0.9,
+      "participants": 0.75,
+      "temporal": 0.8,
+      "location": 0.85,
+      "topic": 0.7
+    },
+    "metadata": {
+      "created_at": "2026-05-11T10:26:58.767248",
+      "validated": true,
+      "version": "1.0"
+    }
+  },
+  {
+    "id": 55,
+    "text": "Temos de alinhar a parte do pipeline NLP.\n\nObrigado\nEnviado do Outlook",
+    "intent": "agendamento_reuniao",
+    "trigger": [
+      "reunir"
+    ],
+    "arguments": {
+      "participants": [
+        "Enviado",
+        "Outlook",
+        "Temos",
+        "parte",
+        "parte do",
+        "pipeline"
+      ],
+      "time": [],
+      "location": [],
+      "topic": [
+        "pipeline",
+        "NLP"
+      ]
+    },
+    "confidence": {
+      "trigger": 0.9,
+      "participants": 0.75,
+      "temporal": 0.8,
+      "location": 0.85,
+      "topic": 0.7
+    },
+    "metadata": {
+      "created_at": "2026-05-11T10:26:58.767250",
+      "validated": true,
+      "version": "1.0"
+    }
+  },
+  {
+    "id": 56,
+    "text": "Na boa.\n\nThanks\nEnviado do Outlook",
+    "intent": "cancelamento_reuniao",
+    "trigger": [],
+    "arguments": {
+      "participants": [
+        "boa"
+      ],
+      "time": [],
+      "location": [],
+      "topic": []
+    },
+    "confidence": {
+      "trigger": 0.9,
+      "participants": 0.75,
+      "temporal": 0.8,
+      "location": 0.85,
+      "topic": 0.7
+    },
+    "metadata": {
+      "created_at": "2026-05-11T10:26:58.767252",
+      "validated": true,
+      "version": "1.0"
+    }
+  },
+  {
+    "id": 57,
+    "text": "Acho que sexta já dá.\ntranquilo\n\n\nDISCLAIMER: mensagem automática",
+    "intent": "agendamento_reuniao",
+    "trigger": [
+      "reunir"
+    ],
+    "arguments": {
+      "participants": [
+        "Acho",
+        "DISCLAIMER",
+        "já dá"
+      ],
+      "time": [
+        "sexta"
+      ],
+      "location": [],
+      "topic": []
+    },
+    "confidence": {
+      "trigger": 0.9,
+      "participants": 0.75,
+      "temporal": 0.8,
+      "location": 0.85,
+      "topic": 0.7
+    },
+    "metadata": {
+      "created_at": "2026-05-11T10:26:58.767255",
+      "validated": true,
+      "version": "1.0"
+    }
+  },
+  {
+    "id": 58,
+    "text": "Eu apareço no sala 2.3.\n\nCumprimentos\nSent from my iPhone",
+    "intent": "reuniao_confirmada",
+    "trigger": [
+      "confirmar"
+    ],
+    "arguments": {
+      "participants": [],
+      "time": [],
+      "location": [
+        "sala 2.3"
+      ],
+      "topic": []
+    },
+    "confidence": {
+      "trigger": 0.9,
+      "participants": 0.75,
+      "temporal": 0.8,
+      "location": 0.85,
+      "topic": 0.7
+    },
+    "metadata": {
+      "created_at": "2026-05-11T10:26:58.767258",
+      "validated": true,
+      "version": "1.0"
+    }
+  },
+  {
+    "id": 59,
+    "text": "Depois falamos.\n\n\nDISCLAIMER: mensagem automática",
+    "intent": "cancelamento_reuniao",
+    "trigger": [],
+    "arguments": {
+      "participants": [
+        "de planos"
+      ],
+      "time": [],
+      "location": [],
+      "topic": []
+    },
+    "confidence": {
+      "trigger": 0.9,
+      "participants": 0.75,
+      "temporal": 0.8,
+      "location": 0.85,
+      "topic": 0.7
+    },
+    "metadata": {
+      "created_at": "2026-05-11T10:26:58.767261",
+      "validated": true,
+      "version": "1.0"
+    }
+  },
+  {
+    "id": 60,
+    "text": "Tranquilo.\n😂\n\nCumps\nDISCLAIMER: mensagem automática",
+    "intent": "reuniao_confirmada",
+    "trigger": [
+      "confirmar"
+    ],
+    "arguments": {
+      "participants": [
+        "Tranquilo"
+      ],
+      "time": [],
+      "location": [],
+      "topic": []
+    },
+    "confidence": {
+      "trigger": 0.9,
+      "participants": 0.75,
+      "temporal": 0.8,
+      "location": 0.85,
+      "topic": 0.7
+    },
+    "metadata": {
+      "created_at": "2026-05-11T10:26:58.767263",
+      "validated": true,
+      "version": "1.0"
+    }
+  },
+  {
+    "id": 61,
+    "text": "Se calhar era melhor reunir sexta. 😅\n\nBjs\nEnviado do telemóvel",
+    "intent": "agendamento_reuniao",
+    "trigger": [
+      "reunir"
+    ],
+    "arguments": {
+      "participants": [
+        "Projeto",
+        "melhor",
+        "melhor reunir"
+      ],
+      "time": [
+        "sexta"
+      ],
+      "location": [],
+      "topic": [
+        "Projeto"
+      ]
+    },
+    "confidence": {
+      "trigger": 0.9,
+      "participants": 0.75,
+      "temporal": 0.8,
+      "location": 0.85,
+      "topic": 0.7
+    },
+    "metadata": {
+      "created_at": "2026-05-11T10:26:58.767265",
+      "validated": true,
+      "version": "1.0"
+    }
+  },
+  {
+    "id": 62,
+    "text": "Na boa. 👌\n\nAbraço\nEnviado do Outlook",
+    "intent": "agendamento_reuniao",
+    "trigger": [],
+    "arguments": {
+      "participants": [
+        "Enviado",
+        "Outlook",
+        "boa"
+      ],
+      "time": [],
+      "location": [],
+      "topic": [
+        "Dissertação"
+      ]
+    },
+    "confidence": {
+      "trigger": 0.9,
+      "participants": 0.75,
+      "temporal": 0.8,
+      "location": 0.85,
+      "topic": 0.7
+    },
+    "metadata": {
+      "created_at": "2026-05-11T10:26:58.767267",
+      "validated": true,
+      "version": "1.0"
+    }
+  },
+  {
+    "id": 63,
+    "text": "Não vou conseguir ir ao Zoom.\n😅",
+    "intent": "cancelamento_reuniao",
+    "trigger": [
+      "reunir"
+    ],
+    "arguments": {
+      "participants": [
+        "Não",
+        "Zoom"
+      ],
+      "time": [],
+      "location": [
+        "Zoom"
+      ],
+      "topic": []
+    },
+    "confidence": {
+      "trigger": 0.9,
+      "participants": 0.75,
+      "temporal": 0.8,
+      "location": 0.85,
+      "topic": 0.7
+    },
+    "metadata": {
+      "created_at": "2026-05-11T10:26:58.767269",
+      "validated": true,
+      "version": "1.0"
+    }
+  },
+  {
+    "id": 64,
+    "text": "Fechado então.\n\nObrigado\nEnviado do Outlook",
+    "intent": "reuniao_confirmada",
+    "trigger": [
+      "combinar"
+    ],
+    "arguments": {
+      "participants": [
+        "Enviado",
+        "Fechado",
+        "Outlook"
+      ],
+      "time": [],
+      "location": [],
+      "topic": []
+    },
+    "confidence": {
+      "trigger": 0.9,
+      "participants": 0.75,
+      "temporal": 0.8,
+      "location": 0.85,
+      "topic": 0.7
+    },
+    "metadata": {
+      "created_at": "2026-05-11T10:26:58.767271",
+      "validated": true,
+      "version": "1.0"
+    }
+  },
+  {
+    "id": 65,
+    "text": "Eu apareço no laboratório.\n\nThanks",
+    "intent": "reuniao_confirmada",
+    "trigger": [],
+    "arguments": {
+      "participants": [
+        "certo"
+      ],
+      "time": [],
+      "location": [
+        "laboratório"
+      ],
+      "topic": []
+    },
+    "confidence": {
+      "trigger": 0.9,
+      "participants": 0.75,
+      "temporal": 0.8,
+      "location": 0.85,
+      "topic": 0.7
+    },
+    "metadata": {
+      "created_at": "2026-05-11T10:26:58.767274",
+      "validated": true,
+      "version": "1.0"
+    }
+  },
+  {
+    "id": 66,
+    "text": "Não vou conseguir aparecer pelas 14h.\n\nCumprimentos\nEnviado do Outlook",
+    "intent": "cancelamento_reuniao",
+    "trigger": [],
+    "arguments": {
+      "participants": [
+        "vou"
+      ],
+      "time": [],
+      "location": [],
+      "topic": []
+    },
+    "confidence": {
+      "trigger": 0.9,
+      "participants": 0.75,
+      "temporal": 0.8,
+      "location": 0.85,
+      "topic": 0.7
+    },
+    "metadata": {
+      "created_at": "2026-05-11T10:26:58.767276",
+      "validated": true,
+      "version": "1.0"
+    }
+  },
+  {
+    "id": 67,
+    "text": "Combinado.\n\nAbraço",
+    "intent": "agendamento_reuniao",
+    "trigger": [
+      "combinar"
+    ],
+    "arguments": {
+      "participants": [],
+      "time": [],
+      "location": [],
+      "topic": []
+    },
+    "confidence": {
+      "trigger": 0.9,
+      "participants": 0.75,
+      "temporal": 0.8,
+      "location": 0.85,
+      "topic": 0.7
+    },
+    "metadata": {
+      "created_at": "2026-05-11T10:26:58.767279",
+      "validated": true,
+      "version": "1.0"
+    }
+  },
+  {
+    "id": 68,
+    "text": "Perfeito, fica então combinado para depois do laboratório.\n\nCumps",
+    "intent": "reuniao_confirmada",
+    "trigger": [
+      "combinar"
+    ],
+    "arguments": {
+      "participants": [
+        "certo",
+        "depois do",
+        "então",
+        "então combinado",
+        "laboratório",
+        "para"
+      ],
+      "time": [],
+      "location": [
+        "laboratório"
+      ],
+      "topic": []
+    },
+    "confidence": {
+      "trigger": 0.9,
+      "participants": 0.75,
+      "temporal": 0.8,
+      "location": 0.85,
+      "topic": 0.7
+    },
+    "metadata": {
+      "created_at": "2026-05-11T10:26:58.767281",
+      "validated": true,
+      "version": "1.0"
+    }
+  },
+  {
+    "id": 69,
+    "text": "Podemos fazer uma quick call depois de almoço?\n\nThanks\nEnviado do telemóvel",
+    "intent": "agendamento_reuniao",
+    "trigger": [],
+    "arguments": {
+      "participants": [
+        "Podemos",
+        "quick",
+        "quick call"
+      ],
+      "time": [
+        "depois de almoço"
+      ],
+      "location": [],
+      "topic": [
+        "Dissertação"
+      ]
+    },
+    "confidence": {
+      "trigger": 0.9,
+      "participants": 0.75,
+      "temporal": 0.8,
+      "location": 0.85,
+      "topic": 0.7
+    },
+    "metadata": {
+      "created_at": "2026-05-11T10:26:58.767284",
+      "validated": true,
+      "version": "1.0"
+    }
+  },
+  {
+    "id": 70,
+    "text": "Temos de alinhar a parte do artigo.\n\nThanks\nEnviado do Outlook",
+    "intent": "agendamento_reuniao",
+    "trigger": [
+      "discutir"
+    ],
+    "arguments": {
+      "participants": [
+        "artigo",
+        "parte",
+        "parte do",
+        "resultados"
+      ],
+      "time": [],
+      "location": [],
+      "topic": [
+        "artigo"
+      ]
+    },
+    "confidence": {
+      "trigger": 0.9,
+      "participants": 0.75,
+      "temporal": 0.8,
+      "location": 0.85,
+      "topic": 0.7
+    },
+    "metadata": {
+      "created_at": "2026-05-11T10:26:58.767286",
+      "validated": true,
+      "version": "1.0"
+    }
+  },
+  {
+    "id": 71,
+    "text": "Afinal já não consigo reunir.\n\nThanks\nEnviado do telemóvel",
+    "intent": "cancelamento_reuniao",
+    "trigger": [
+      "reunir"
+    ],
+    "arguments": {
+      "participants": [
+        "Adiar",
+        "Afinal",
+        "consigo"
+      ],
+      "time": [],
+      "location": [],
+      "topic": []
+    },
+    "confidence": {
+      "trigger": 0.9,
+      "participants": 0.75,
+      "temporal": 0.8,
+      "location": 0.85,
+      "topic": 0.7
+    },
+    "metadata": {
+      "created_at": "2026-05-11T10:26:58.767288",
+      "validated": true,
+      "version": "1.0"
+    }
+  },
+  {
+    "id": 72,
+    "text": "Hoje não vai dar 😅\n\nBest regards\nDISCLAIMER: mensagem automática",
+    "intent": "cancelamento_reuniao",
+    "trigger": [],
+    "arguments": {
+      "participants": [
+        "Hoje",
+        "vai"
+      ],
+      "time": [
+        "Hoje"
+      ],
+      "location": [],
+      "topic": []
+    },
+    "confidence": {
+      "trigger": 0.9,
+      "participants": 0.75,
+      "temporal": 0.8,
+      "location": 0.85,
+      "topic": 0.7
+    },
+    "metadata": {
+      "created_at": "2026-05-11T10:26:58.767291",
+      "validated": true,
+      "version": "1.0"
+    }
+  },
+  {
+    "id": 73,
+    "text": "Boa tarde Marta, tens disponibilidade depois do laboratório?\n\nCumprimentos\nDISCLAIMER: mensagem automática",
+    "intent": "agendamento_reuniao",
+    "trigger": [],
+    "arguments": {
+      "participants": [
+        "laboratório",
+        "tarde",
+        "tarde Marta"
+      ],
+      "time": [
+        "tarde"
+      ],
+      "location": [
+        "laboratório"
+      ],
+      "topic": []
+    },
+    "confidence": {
+      "trigger": 0.9,
+      "participants": 0.75,
+      "temporal": 0.8,
+      "location": 0.85,
+      "topic": 0.7
+    },
+    "metadata": {
+      "created_at": "2026-05-11T10:26:58.767293",
+      "validated": true,
+      "version": "1.0"
+    }
+  },
+  {
+    "id": 74,
+    "text": "Hoje não vai dar 😅 tranquilo\n\nAbraço\nEnviado do telemóvel",
+    "intent": "cancelamento_reuniao",
+    "trigger": [
+      "reunir"
+    ],
+    "arguments": {
+      "participants": [
+        "Abraço",
+        "Hoje",
+        "vai"
+      ],
+      "time": [
+        "Hoje"
+      ],
+      "location": [],
+      "topic": []
+    },
+    "confidence": {
+      "trigger": 0.9,
+      "participants": 0.75,
+      "temporal": 0.8,
+      "location": 0.85,
+      "topic": 0.7
+    },
+    "metadata": {
+      "created_at": "2026-05-11T10:26:58.767295",
+      "validated": true,
+      "version": "1.0"
+    }
+  },
+  {
+    "id": 75,
+    "text": "Combinado, vemos isso ao final do dia.\n\nAbraço\nDISCLAIMER: mensagem automática",
+    "intent": "reuniao_confirmada",
+    "trigger": [
+      "confirmar"
+    ],
+    "arguments": {
+      "participants": [
+        "Combinado",
+        "DISCLAIMER",
+        "dia"
+      ],
+      "time": [],
+      "location": [],
+      "topic": []
+    },
+    "confidence": {
+      "trigger": 0.9,
+      "participants": 0.75,
+      "temporal": 0.8,
+      "location": 0.85,
+      "topic": 0.7
+    },
+    "metadata": {
+      "created_at": "2026-05-11T10:26:58.767297",
+      "validated": true,
+      "version": "1.0"
+    }
+  },
+  {
+    "id": 76,
+    "text": "A reunião sobre revisão bibliográfica vai ter de ficar para outro dia.\n\nObrigado",
+    "intent": "cancelamento_reuniao",
+    "trigger": [
+      "reunir"
+    ],
+    "arguments": {
+      "participants": [
+        "bibliográfica",
+        "outro",
+        "outro dia",
+        "reunião",
+        "reunião sobre",
+        "vai ter"
+      ],
+      "time": [],
+      "location": [],
+      "topic": []
+    },
+    "confidence": {
+      "trigger": 0.9,
+      "participants": 0.75,
+      "temporal": 0.8,
+      "location": 0.85,
+      "topic": 0.7
+    },
+    "metadata": {
+      "created_at": "2026-05-11T10:26:58.767299",
+      "validated": true,
+      "version": "1.0"
+    }
+  },
+  {
+    "id": 77,
+    "text": "A reunião fica sem efeito.\n\nObrigado\nEnviado do telemóvel",
+    "intent": "cancelamento_reuniao",
+    "trigger": [
+      "reunir"
+    ],
+    "arguments": {
+      "participants": [
+        "Enviado",
+        "de planos",
+        "reunião",
+        "reunião fica",
+        "sem",
+        "telemóvel"
+      ],
+      "time": [],
+      "location": [],
+      "topic": []
+    },
+    "confidence": {
+      "trigger": 0.9,
+      "participants": 0.75,
+      "temporal": 0.8,
+      "location": 0.85,
+      "topic": 0.7
+    },
+    "metadata": {
+      "created_at": "2026-05-11T10:26:58.767302",
+      "validated": true,
+      "version": "1.0"
+    }
+  },
+  {
+    "id": 78,
+    "text": "Confirmado 👍 logo se vê\n\nCumprimentos",
+    "intent": "reuniao_confirmada",
+    "trigger": [
+      "confirmar"
+    ],
+    "arguments": {
+      "participants": [
+        "Confirmado"
+      ],
+      "time": [
+        "logo"
+      ],
+      "location": [],
+      "topic": []
+    },
+    "confidence": {
+      "trigger": 0.9,
+      "participants": 0.75,
+      "temporal": 0.8,
+      "location": 0.85,
+      "topic": 0.7
+    },
+    "metadata": {
+      "created_at": "2026-05-11T10:26:58.767305",
+      "validated": true,
+      "version": "1.0"
+    }
+  },
+  {
+    "id": 79,
+    "text": "Logo vemos. 😅\n\n\nSent from my iPhone",
+    "intent": "agendamento_reuniao",
+    "trigger": [
+      "discutir"
+    ],
+    "arguments": {
+      "participants": [
+        "resultados",
+        "vemos"
+      ],
+      "time": [
+        "Logo"
+      ],
+      "location": [],
+      "topic": []
+    },
+    "confidence": {
+      "trigger": 0.9,
+      "participants": 0.75,
+      "temporal": 0.8,
+      "location": 0.85,
+      "topic": 0.7
+    },
+    "metadata": {
+      "created_at": "2026-05-11T10:26:58.767308",
+      "validated": true,
+      "version": "1.0"
+    }
+  },
+  {
+    "id": 80,
+    "text": "Depois falamos.\n\nAbraço\nSent from my iPhone",
+    "intent": "cancelamento_reuniao",
+    "trigger": [
+      "cancelar"
+    ],
+    "arguments": {
+      "participants": [
+        "Depois",
+        "Sent"
+      ],
+      "time": [],
+      "location": [],
+      "topic": []
+    },
+    "confidence": {
+      "trigger": 0.9,
+      "participants": 0.75,
+      "temporal": 0.8,
+      "location": 0.85,
+      "topic": 0.7
+    },
+    "metadata": {
+      "created_at": "2026-05-11T10:26:58.767310",
+      "validated": true,
+      "version": "1.0"
+    }
+  },
+  {
+    "id": 81,
+    "text": "Confirmado 👍\n\nObrigado\nDISCLAIMER: mensagem automática",
+    "intent": "reuniao_confirmada",
+    "trigger": [
+      "reunir"
+    ],
+    "arguments": {
+      "participants": [
+        "Confirmado",
+        "DISCLAIMER",
+        "confirmada"
+      ],
+      "time": [],
+      "location": [],
+      "topic": []
+    },
+    "confidence": {
+      "trigger": 0.9,
+      "participants": 0.75,
+      "temporal": 0.8,
+      "location": 0.85,
+      "topic": 0.7
+    },
+    "metadata": {
+      "created_at": "2026-05-11T10:26:58.767312",
+      "validated": true,
+      "version": "1.0"
+    }
+  },
+  {
+    "id": 82,
+    "text": "A reunião fica sem efeito.\n\n\nDISCLAIMER: mensagem automática",
+    "intent": "cancelamento_reuniao",
+    "trigger": [
+      "reunir"
+    ],
+    "arguments": {
+      "participants": [
+        "Cancelamento",
+        "reunião",
+        "reunião fica",
+        "sem"
+      ],
+      "time": [],
+      "location": [],
+      "topic": []
+    },
+    "confidence": {
+      "trigger": 0.9,
+      "participants": 0.75,
+      "temporal": 0.8,
+      "location": 0.85,
+      "topic": 0.7
+    },
+    "metadata": {
+      "created_at": "2026-05-11T10:26:58.767316",
+      "validated": true,
+      "version": "1.0"
+    }
+  },
+  {
+    "id": 83,
+    "text": "Consegues reunir depois da aula? vemos isso amanhã\n\nThanks\nEnviado do telemóvel",
+    "intent": "agendamento_reuniao",
+    "trigger": [
+      "reunir"
+    ],
+    "arguments": {
+      "participants": [
+        "amanhã",
+        "aula"
+      ],
+      "time": [
+        "amanhã"
+      ],
+      "location": [],
+      "topic": []
+    },
+    "confidence": {
+      "trigger": 0.9,
+      "participants": 0.75,
+      "temporal": 0.8,
+      "location": 0.85,
+      "topic": 0.7
+    },
+    "metadata": {
+      "created_at": "2026-05-11T10:26:58.767318",
+      "validated": true,
+      "version": "1.0"
+    }
+  },
+  {
+    "id": 84,
+    "text": "Não vou conseguir ir ao Teams.\n\nObrigado\nDISCLAIMER: mensagem automática",
+    "intent": "cancelamento_reuniao",
+    "trigger": [
+      "reunir"
+    ],
+    "arguments": {
+      "participants": [
+        "Adiar",
+        "DISCLAIMER",
+        "Não",
+        "Teams"
+      ],
+      "time": [],
+      "location": [
+        "Teams"
+      ],
+      "topic": []
+    },
+    "confidence": {
+      "trigger": 0.9,
+      "participants": 0.75,
+      "temporal": 0.8,
+      "location": 0.85,
+      "topic": 0.7
+    },
+    "metadata": {
+      "created_at": "2026-05-11T10:26:58.767320",
+      "validated": true,
+      "version": "1.0"
+    }
+  },
+  {
+    "id": 85,
+    "text": "Ok 👍 👌\n\n\nSent from my iPhone",
+    "intent": "cancelamento_reuniao",
+    "trigger": [],
+    "arguments": {
+      "participants": [
+        "de planos"
+      ],
+      "time": [],
+      "location": [],
+      "topic": []
+    },
+    "confidence": {
+      "trigger": 0.9,
+      "participants": 0.75,
+      "temporal": 0.8,
+      "location": 0.85,
+      "topic": 0.7
+    },
+    "metadata": {
+      "created_at": "2026-05-11T10:26:58.767322",
+      "validated": true,
+      "version": "1.0"
+    }
+  },
+  {
+    "id": 86,
+    "text": "Precisamos de discutir o Visualização de Dados. Dá para reunir sexta? isso resolve-se\n\nBest regards\nEnviado do Outlook",
+    "intent": "agendamento_reuniao",
+    "trigger": [
+      "reunir"
+    ],
+    "arguments": {
+      "participants": [
+        "Visualização",
+        "resolve",
+        "reunir",
+        "reunir sexta"
+      ],
+      "time": [
+        "sexta"
+      ],
+      "location": [],
+      "topic": []
+    },
+    "confidence": {
+      "trigger": 0.9,
+      "participants": 0.75,
+      "temporal": 0.8,
+      "location": 0.85,
+      "topic": 0.7
+    },
+    "metadata": {
+      "created_at": "2026-05-11T10:26:58.767325",
+      "validated": true,
+      "version": "1.0"
+    }
+  },
+  {
+    "id": 87,
+    "text": "Quando puderes temos de combinar uma reunião. logo se vê\n\nCumprimentos\nEnviado do telemóvel",
+    "intent": "agendamento_reuniao",
+    "trigger": [
+      "reunir"
+    ],
+    "arguments": {
+      "participants": [
+        "puderes",
+        "reunião"
+      ],
+      "time": [
+        "logo"
+      ],
+      "location": [],
+      "topic": []
+    },
+    "confidence": {
+      "trigger": 0.9,
+      "participants": 0.75,
+      "temporal": 0.8,
+      "location": 0.85,
+      "topic": 0.7
+    },
+    "metadata": {
+      "created_at": "2026-05-11T10:26:58.767327",
+      "validated": true,
+      "version": "1.0"
+    }
+  },
+  {
+    "id": 88,
+    "text": "Acho que sexta já dá.\n\n\nSent from my iPhone",
+    "intent": "reuniao_confirmada",
+    "trigger": [
+      "reunir"
+    ],
+    "arguments": {
+      "participants": [
+        "Reunião confirmada",
+        "confirmada",
+        "já dá",
+        "que"
+      ],
+      "time": [
+        "sexta"
+      ],
+      "location": [],
+      "topic": []
+    },
+    "confidence": {
+      "trigger": 0.9,
+      "participants": 0.75,
+      "temporal": 0.8,
+      "location": 0.85,
+      "topic": 0.7
+    },
+    "metadata": {
+      "created_at": "2026-05-11T10:26:58.767330",
+      "validated": true,
+      "version": "1.0"
+    }
+  },
+  {
+    "id": 89,
+    "text": "Quando puderes temos de combinar uma reuniao.\n\nBest regards\nEnviado do telemóvel",
+    "intent": "agendamento_reuniao",
+    "trigger": [
+      "combinar"
+    ],
+    "arguments": {
+      "participants": [
+        "puderes",
+        "reuniao"
+      ],
+      "time": [],
+      "location": [],
+      "topic": []
+    },
+    "confidence": {
+      "trigger": 0.9,
+      "participants": 0.75,
+      "temporal": 0.8,
+      "location": 0.85,
+      "topic": 0.7
+    },
+    "metadata": {
+      "created_at": "2026-05-11T10:26:58.767332",
+      "validated": true,
+      "version": "1.0"
+    }
+  },
+  {
+    "id": 90,
+    "text": "Na boa. 😅\n\nCumps\nSent from my iPhone",
+    "intent": "cancelamento_reuniao",
+    "trigger": [
+      "reunir"
+    ],
+    "arguments": {
+      "participants": [
+        "boa"
+      ],
+      "time": [],
+      "location": [],
+      "topic": []
+    },
+    "confidence": {
+      "trigger": 0.9,
+      "participants": 0.75,
+      "temporal": 0.8,
+      "location": 0.85,
+      "topic": 0.7
+    },
+    "metadata": {
+      "created_at": "2026-05-11T10:26:58.767334",
+      "validated": true,
+      "version": "1.0"
+    }
+  },
+  {
+    "id": 91,
+    "text": "Eu apareço no bar da faculdade.\n\nObrigado\nSent from my iPhone",
+    "intent": "reuniao_confirmada",
+    "trigger": [
+      "reunir"
+    ],
+    "arguments": {
+      "participants": [
+        "Reunião confirmada",
+        "Sent",
+        "confirmada",
+        "faculdade"
+      ],
+      "time": [],
+      "location": [],
+      "topic": []
+    },
+    "confidence": {
+      "trigger": 0.9,
+      "participants": 0.75,
+      "temporal": 0.8,
+      "location": 0.85,
+      "topic": 0.7
+    },
+    "metadata": {
+      "created_at": "2026-05-11T10:26:58.767336",
+      "validated": true,
+      "version": "1.0"
+    }
+  },
+  {
+    "id": 92,
+    "text": "Se calhar era melhor reunir depois de almoço. 😂\n\nCumps",
+    "intent": "agendamento_reuniao",
+    "trigger": [
+      "reunir"
+    ],
+    "arguments": {
+      "participants": [
+        "melhor",
+        "melhor reunir"
+      ],
+      "time": [
+        "depois de almoço"
+      ],
+      "location": [],
+      "topic": []
+    },
+    "confidence": {
+      "trigger": 0.9,
+      "participants": 0.75,
+      "temporal": 0.8,
+      "location": 0.85,
+      "topic": 0.7
+    },
+    "metadata": {
+      "created_at": "2026-05-11T10:26:58.767338",
+      "validated": true,
+      "version": "1.0"
+    }
+  },
+  {
+    "id": 93,
+    "text": "Precisamos de discutir o artigo. Dá para reunir mais logo?\n\nBest regards\nEnviado do telemóvel",
+    "intent": "agendamento_reuniao",
+    "trigger": [
+      "reunir"
+    ],
+    "arguments": {
+      "participants": [
+        "Dissertação",
+        "artigo",
+        "reunir",
+        "reunir mais"
+      ],
+      "time": [
+        "mais logo"
+      ],
+      "location": [],
+      "topic": [
+        "Dissertação",
+        "artigo"
+      ]
+    },
+    "confidence": {
+      "trigger": 0.9,
+      "participants": 0.75,
+      "temporal": 0.8,
+      "location": 0.85,
+      "topic": 0.7
+    },
+    "metadata": {
+      "created_at": "2026-05-11T10:26:58.767341",
+      "validated": true,
+      "version": "1.0"
+    }
+  },
+  {
+    "id": 94,
+    "text": "Precisamos de discutir o trabalho de grupo. Dá para reunir quinta de manhã?\n\nAté já",
+    "intent": "agendamento_reuniao",
+    "trigger": [
+      "reunir"
+    ],
+    "arguments": {
+      "participants": [
+        "reunir",
+        "reunir quinta",
+        "trabalho"
+      ],
+      "time": [
+        "quinta",
+        "de manhã"
+      ],
+      "location": [],
+      "topic": [
+        "trabalho"
+      ]
+    },
+    "confidence": {
+      "trigger": 0.9,
+      "participants": 0.75,
+      "temporal": 0.8,
+      "location": 0.85,
+      "topic": 0.7
+    },
+    "metadata": {
+      "created_at": "2026-05-11T10:26:58.767344",
+      "validated": true,
+      "version": "1.0"
+    }
+  },
+  {
+    "id": 95,
+    "text": "Podemos fazer uma quick call quarta à tarde? na boa\n\nCumprimentos\nEnviado do telemóvel",
+    "intent": "agendamento_reuniao",
+    "trigger": [],
+    "arguments": {
+      "participants": [
+        "boa",
+        "boa\n\nCumprimentos",
+        "quick",
+        "quick call"
+      ],
+      "time": [
+        "quarta",
+        "à tarde"
+      ],
+      "location": [],
+      "topic": []
+    },
+    "confidence": {
+      "trigger": 0.9,
+      "participants": 0.75,
+      "temporal": 0.8,
+      "location": 0.85,
+      "topic": 0.7
+    },
+    "metadata": {
+      "created_at": "2026-05-11T10:26:58.767346",
+      "validated": true,
+      "version": "1.0"
+    }
+  },
+  {
+    "id": 96,
+    "text": "Temos de alinhar a parte do revisão bibliográfica. vemos isso amanhã\n\nObrigado\nDISCLAIMER: mensagem automática",
+    "intent": "agendamento_reuniao",
+    "trigger": [],
+    "arguments": {
+      "participants": [
+        "DISCLAIMER",
+        "amanhã",
+        "parte",
+        "parte do",
+        "revisão"
+      ],
+      "time": [
+        "amanhã"
+      ],
+      "location": [],
+      "topic": []
+    },
+    "confidence": {
+      "trigger": 0.9,
+      "participants": 0.75,
+      "temporal": 0.8,
+      "location": 0.85,
+      "topic": 0.7
+    },
+    "metadata": {
+      "created_at": "2026-05-11T10:26:58.767349",
+      "validated": true,
+      "version": "1.0"
+    }
+  },
+  {
+    "id": 97,
+    "text": "Logo vemos.\n\nThanks\nEnviado do Outlook",
+    "intent": "cancelamento_reuniao",
+    "trigger": [],
+    "arguments": {
+      "participants": [
+        "de planos",
+        "vemos"
+      ],
+      "time": [
+        "Logo"
+      ],
+      "location": [],
+      "topic": []
+    },
+    "confidence": {
+      "trigger": 0.9,
+      "participants": 0.75,
+      "temporal": 0.8,
+      "location": 0.85,
+      "topic": 0.7
+    },
+    "metadata": {
+      "created_at": "2026-05-11T10:26:58.767351",
+      "validated": true,
+      "version": "1.0"
+    }
+  },
+  {
+    "id": 98,
+    "text": "Combinado, vemos isso pelas 14h. 😅\n\n\nEnviado do telemóvel",
+    "intent": "reuniao_confirmada",
+    "trigger": [
+      "combinar"
+    ],
+    "arguments": {
+      "participants": [
+        "Combinado",
+        "pelas"
+      ],
+      "time": [],
+      "location": [],
+      "topic": []
+    },
+    "confidence": {
+      "trigger": 0.9,
+      "participants": 0.75,
+      "temporal": 0.8,
+      "location": 0.85,
+      "topic": 0.7
+    },
+    "metadata": {
+      "created_at": "2026-05-11T10:26:58.767353",
+      "validated": true,
+      "version": "1.0"
+    }
+  },
+  {
+    "id": 99,
+    "text": "Precisamos de discutir o BERT. Dá para reunir sexta?\n\nThanks\nDISCLAIMER: mensagem automática",
+    "intent": "agendamento_reuniao",
+    "trigger": [
+      "reunir"
+    ],
+    "arguments": {
+      "participants": [
+        "BERT",
+        "Projeto",
+        "reunir",
+        "reunir sexta"
+      ],
+      "time": [
+        "sexta"
+      ],
+      "location": [],
+      "topic": [
+        "Projeto",
+        "BERT"
+      ]
+    },
+    "confidence": {
+      "trigger": 0.9,
+      "participants": 0.75,
+      "temporal": 0.8,
+      "location": 0.85,
+      "topic": 0.7
+    },
+    "metadata": {
+      "created_at": "2026-05-11T10:26:58.767356",
+      "validated": true,
+      "version": "1.0"
+    }
+  },
+  {
+    "id": 100,
+    "text": "A reunião fica sem efeito.\n\nObrigado\nDISCLAIMER: mensagem automática",
+    "intent": "cancelamento_reuniao",
+    "trigger": [
+      "reunir"
+    ],
+    "arguments": {
+      "participants": [
+        "DISCLAIMER",
+        "de planos",
+        "reunião",
+        "reunião fica",
+        "sem"
+      ],
+      "time": [],
+      "location": [],
+      "topic": []
+    },
+    "confidence": {
+      "trigger": 0.9,
+      "participants": 0.75,
+      "temporal": 0.8,
+      "location": 0.85,
+      "topic": 0.7
+    },
+    "metadata": {
+      "created_at": "2026-05-11T10:26:58.767359",
+      "validated": true,
+      "version": "1.0"
+    }
+  },
+  {
+    "id": 101,
+    "text": "Precisamos de discutir o BERT. Dá para reunir depois do laboratório?\n\nBest regards\nEnviado do Outlook",
+    "intent": "agendamento_reuniao",
+    "trigger": [
+      "reunir"
+    ],
+    "arguments": {
+      "participants": [
+        "BERT",
+        "laboratório",
+        "reunir",
+        "reunir depois"
+      ],
+      "time": [],
+      "location": [
+        "laboratório"
+      ],
+      "topic": [
+        "BERT"
+      ]
+    },
+    "confidence": {
+      "trigger": 0.9,
+      "participants": 0.75,
+      "temporal": 0.8,
+      "location": 0.85,
+      "topic": 0.7
+    },
+    "metadata": {
+      "created_at": "2026-05-11T10:26:58.767362",
+      "validated": true,
+      "version": "1.0"
+    }
+  },
+  {
+    "id": 102,
+    "text": "15h é complicado.\n\nBjs",
+    "intent": "cancelamento_reuniao",
+    "trigger": [],
+    "arguments": {
+      "participants": [
+        "de planos"
+      ],
+      "time": [],
+      "location": [],
+      "topic": []
+    },
+    "confidence": {
+      "trigger": 0.9,
+      "participants": 0.75,
+      "temporal": 0.8,
+      "location": 0.85,
+      "topic": 0.7
+    },
+    "metadata": {
+      "created_at": "2026-05-11T10:26:58.767363",
+      "validated": true,
+      "version": "1.0"
+    }
+  },
+  {
+    "id": 103,
+    "text": "Tranquilo. vemos isso amanhã\n\nObrigado\nDISCLAIMER: mensagem automática",
+    "intent": "agendamento_reuniao",
+    "trigger": [
+      "falar"
+    ],
+    "arguments": {
+      "participants": [
+        "DISCLAIMER",
+        "amanhã"
+      ],
+      "time": [
+        "amanhã"
+      ],
+      "location": [],
+      "topic": []
+    },
+    "confidence": {
+      "trigger": 0.9,
+      "participants": 0.75,
+      "temporal": 0.8,
+      "location": 0.85,
+      "topic": 0.7
+    },
+    "metadata": {
+      "created_at": "2026-05-11T10:26:58.767365",
+      "validated": true,
+      "version": "1.0"
+    }
+  },
+  {
+    "id": 104,
+    "text": "Depois falamos.\n\nObrigado\nDISCLAIMER: mensagem automática",
+    "intent": "agendamento_reuniao",
+    "trigger": [],
+    "arguments": {
+      "participants": [
+        "DISCLAIMER"
+      ],
+      "time": [],
+      "location": [],
+      "topic": []
+    },
+    "confidence": {
+      "trigger": 0.9,
+      "participants": 0.75,
+      "temporal": 0.8,
+      "location": 0.85,
+      "topic": 0.7
+    },
+    "metadata": {
+      "created_at": "2026-05-11T10:26:58.767367",
+      "validated": true,
+      "version": "1.0"
+    }
+  },
+  {
+    "id": 105,
+    "text": "Tudo certo para após o seminário.\n\nObrigado\nSent from my iPhone",
+    "intent": "reuniao_confirmada",
+    "trigger": [],
+    "arguments": {
+      "participants": [
+        "Sent",
+        "após",
+        "certo",
+        "seminário"
+      ],
+      "time": [],
+      "location": [],
+      "topic": []
+    },
+    "confidence": {
+      "trigger": 0.9,
+      "participants": 0.75,
+      "temporal": 0.8,
+      "location": 0.85,
+      "topic": 0.7
+    },
+    "metadata": {
+      "created_at": "2026-05-11T10:26:58.767370",
+      "validated": true,
+      "version": "1.0"
+    }
+  },
+  {
+    "id": 106,
+    "text": "Não vou conseguir ir ao gabinete.\n\nBest regards\nDISCLAIMER: mensagem automática",
+    "intent": "cancelamento_reuniao",
+    "trigger": [
+      "cancelar"
+    ],
+    "arguments": {
+      "participants": [
+        "Não",
+        "gabinete"
+      ],
+      "time": [],
+      "location": [],
+      "topic": []
+    },
+    "confidence": {
+      "trigger": 0.9,
+      "participants": 0.75,
+      "temporal": 0.8,
+      "location": 0.85,
+      "topic": 0.7
+    },
+    "metadata": {
+      "created_at": "2026-05-11T10:26:58.767372",
+      "validated": true,
+      "version": "1.0"
+    }
+  },
+  {
+    "id": 107,
+    "text": "Acho que sexta já dá. 😅\n\nAbraço\nDISCLAIMER: mensagem automática",
+    "intent": "cancelamento_reuniao",
+    "trigger": [],
+    "arguments": {
+      "participants": [
+        "DISCLAIMER",
+        "já dá",
+        "que",
+        "vou"
+      ],
+      "time": [
+        "sexta"
+      ],
+      "location": [],
+      "topic": []
+    },
+    "confidence": {
+      "trigger": 0.9,
+      "participants": 0.75,
+      "temporal": 0.8,
+      "location": 0.85,
+      "topic": 0.7
+    },
+    "metadata": {
+      "created_at": "2026-05-11T10:26:58.767375",
+      "validated": true,
+      "version": "1.0"
+    }
+  },
+  {
+    "id": 108,
+    "text": "Carolina, consegues aparecer no gabinete amanhã?\n\nObrigado\nDISCLAIMER: mensagem automática",
+    "intent": "agendamento_reuniao",
+    "trigger": [],
+    "arguments": {
+      "participants": [
+        "DISCLAIMER",
+        "gabinete"
+      ],
+      "time": [
+        "amanhã"
+      ],
+      "location": [],
+      "topic": []
+    },
+    "confidence": {
+      "trigger": 0.9,
+      "participants": 0.75,
+      "temporal": 0.8,
+      "location": 0.85,
+      "topic": 0.7
+    },
+    "metadata": {
+      "created_at": "2026-05-11T10:26:58.767377",
+      "validated": true,
+      "version": "1.0"
+    }
+  },
+  {
+    "id": 109,
+    "text": "A reunião fica sem efeito.\n\nBjs\nSent from my iPhone",
+    "intent": "cancelamento_reuniao",
+    "trigger": [
+      "reunir"
+    ],
+    "arguments": {
+      "participants": [
+        "reunião",
+        "reunião fica",
+        "sem"
+      ],
+      "time": [],
+      "location": [],
+      "topic": []
+    },
+    "confidence": {
+      "trigger": 0.9,
+      "participants": 0.75,
+      "temporal": 0.8,
+      "location": 0.85,
+      "topic": 0.7
+    },
+    "metadata": {
+      "created_at": "2026-05-11T10:26:58.767379",
+      "validated": true,
+      "version": "1.0"
+    }
+  },
+  {
+    "id": 110,
+    "text": "Depois falamos.\n\nCumprimentos",
+    "intent": "agendamento_reuniao",
+    "trigger": [],
+    "arguments": {
+      "participants": [],
+      "time": [],
+      "location": [],
+      "topic": []
+    },
+    "confidence": {
+      "trigger": 0.9,
+      "participants": 0.75,
+      "temporal": 0.8,
+      "location": 0.85,
+      "topic": 0.7
+    },
+    "metadata": {
+      "created_at": "2026-05-11T10:26:58.767382",
+      "validated": true,
+      "version": "1.0"
+    }
+  },
+  {
+    "id": 111,
+    "text": "Podemos fazer uma quick call daqui a 2 dias?\n\nAbraço\nDISCLAIMER: mensagem automática",
+    "intent": "agendamento_reuniao",
+    "trigger": [
+      "falar"
+    ],
+    "arguments": {
+      "participants": [
+        "DISCLAIMER",
+        "quick",
+        "quick call"
+      ],
+      "time": [
+        "a 2"
+      ],
+      "location": [],
+      "topic": []
+    },
+    "confidence": {
+      "trigger": 0.9,
+      "participants": 0.75,
+      "temporal": 0.8,
+      "location": 0.85,
+      "topic": 0.7
+    },
+    "metadata": {
+      "created_at": "2026-05-11T10:26:58.767384",
+      "validated": true,
+      "version": "1.0"
+    }
+  },
+  {
+    "id": 112,
+    "text": "Combinado.\n\n\nSent from my iPhone",
+    "intent": "reuniao_confirmada",
+    "trigger": [
+      "combinar"
+    ],
+    "arguments": {
+      "participants": [
+        "Combinado"
+      ],
+      "time": [],
+      "location": [],
+      "topic": []
+    },
+    "confidence": {
+      "trigger": 0.9,
+      "participants": 0.75,
+      "temporal": 0.8,
+      "location": 0.85,
+      "topic": 0.7
+    },
+    "metadata": {
+      "created_at": "2026-05-11T10:26:58.767386",
+      "validated": true,
+      "version": "1.0"
+    }
+  },
+  {
+    "id": 113,
+    "text": "Na boa.\n\nCumps\nEnviado do Outlook",
+    "intent": "reuniao_confirmada",
+    "trigger": [
+      "confirmar"
+    ],
+    "arguments": {
+      "participants": [
+        "boa"
+      ],
+      "time": [],
+      "location": [],
+      "topic": []
+    },
+    "confidence": {
+      "trigger": 0.9,
+      "participants": 0.75,
+      "temporal": 0.8,
+      "location": 0.85,
+      "topic": 0.7
+    },
+    "metadata": {
+      "created_at": "2026-05-11T10:26:58.767388",
+      "validated": true,
+      "version": "1.0"
+    }
+  },
+  {
+    "id": 114,
+    "text": "Ok, parece-me bem.\nisso resolve-se\n\nThanks\nEnviado do telemóvel",
+    "intent": "reuniao_confirmada",
+    "trigger": [
+      "combinar"
+    ],
+    "arguments": {
+      "participants": [
+        "resolve"
+      ],
+      "time": [],
+      "location": [],
+      "topic": []
+    },
+    "confidence": {
+      "trigger": 0.9,
+      "participants": 0.75,
+      "temporal": 0.8,
+      "location": 0.85,
+      "topic": 0.7
+    },
+    "metadata": {
+      "created_at": "2026-05-11T10:26:58.767391",
+      "validated": true,
+      "version": "1.0"
+    }
+  },
+  {
+    "id": 115,
+    "text": "Tranquilo.\n\nAbraço",
+    "intent": "cancelamento_reuniao",
+    "trigger": [],
+    "arguments": {
+      "participants": [
+        "vou"
+      ],
+      "time": [],
+      "location": [],
+      "topic": []
+    },
+    "confidence": {
+      "trigger": 0.9,
+      "participants": 0.75,
+      "temporal": 0.8,
+      "location": 0.85,
+      "topic": 0.7
+    },
+    "metadata": {
+      "created_at": "2026-05-11T10:26:58.767393",
+      "validated": true,
+      "version": "1.0"
+    }
+  },
+  {
+    "id": 116,
+    "text": "Hi Ricardo, tens disponibilidade amanhã às 15h?\n\nBest regards\nDISCLAIMER: mensagem automática",
+    "intent": "agendamento_reuniao",
+    "trigger": [],
+    "arguments": {
+      "participants": [],
+      "time": [
+        "amanhã",
+        "às 15h"
+      ],
+      "location": [],
+      "topic": []
+    },
+    "confidence": {
+      "trigger": 0.9,
+      "participants": 0.75,
+      "temporal": 0.8,
+      "location": 0.85,
+      "topic": 0.7
+    },
+    "metadata": {
+      "created_at": "2026-05-11T10:26:58.767396",
+      "validated": true,
+      "version": "1.0"
+    }
+  },
+  {
+    "id": 117,
+    "text": "Confirmado.\n\nBjs\nEnviado do telemóvel",
+    "intent": "agendamento_reuniao",
+    "trigger": [
+      "confirmar"
+    ],
+    "arguments": {
+      "participants": [],
+      "time": [],
+      "location": [],
+      "topic": []
+    },
+    "confidence": {
+      "trigger": 0.9,
+      "participants": 0.75,
+      "temporal": 0.8,
+      "location": 0.85,
+      "topic": 0.7
+    },
+    "metadata": {
+      "created_at": "2026-05-11T10:26:58.767398",
+      "validated": true,
+      "version": "1.0"
+    }
+  },
+  {
+    "id": 118,
+    "text": "Tudo certo para depois do laboratório.\n\n\nEnviado do Outlook",
+    "intent": "reuniao_confirmada",
+    "trigger": [
+      "combinar"
+    ],
+    "arguments": {
+      "participants": [
+        "Tudo",
+        "depois do",
+        "laboratório",
+        "para"
+      ],
+      "time": [],
+      "location": [
+        "laboratório"
+      ],
+      "topic": []
+    },
+    "confidence": {
+      "trigger": 0.9,
+      "participants": 0.75,
+      "temporal": 0.8,
+      "location": 0.85,
+      "topic": 0.7
+    },
+    "metadata": {
+      "created_at": "2026-05-11T10:26:58.767400",
+      "validated": true,
+      "version": "1.0"
+    }
+  },
+  {
+    "id": 119,
+    "text": "Depois falamos. 👌\n\n\nEnviado do Outlook",
+    "intent": "reuniao_confirmada",
+    "trigger": [
+      "combinar"
+    ],
+    "arguments": {
+      "participants": [
+        "Depois"
+      ],
+      "time": [],
+      "location": [],
+      "topic": []
+    },
+    "confidence": {
+      "trigger": 0.9,
+      "participants": 0.75,
+      "temporal": 0.8,
+      "location": 0.85,
+      "topic": 0.7
+    },
+    "metadata": {
+      "created_at": "2026-05-11T10:26:58.767402",
+      "validated": true,
+      "version": "1.0"
+    }
+  },
+  {
+    "id": 120,
+    "text": "Pode ser.\n\nBjs\nEnviado do Outlook",
+    "intent": "agendamento_reuniao",
+    "trigger": [],
+    "arguments": {
+      "participants": [
+        "Pode"
+      ],
+      "time": [],
+      "location": [],
+      "topic": [
+        "Projeto"
+      ]
+    },
+    "confidence": {
+      "trigger": 0.9,
+      "participants": 0.75,
+      "temporal": 0.8,
+      "location": 0.85,
+      "topic": 0.7
+    },
+    "metadata": {
+      "created_at": "2026-05-11T10:26:58.767405",
+      "validated": true,
+      "version": "1.0"
+    }
+  },
+  {
+    "id": 121,
+    "text": "Logo vemos.\n\n\nDISCLAIMER: mensagem automática",
+    "intent": "reuniao_confirmada",
+    "trigger": [
+      "confirmar"
+    ],
+    "arguments": {
+      "participants": [
+        "Logo"
+      ],
+      "time": [
+        "Logo"
+      ],
+      "location": [],
+      "topic": []
+    },
+    "confidence": {
+      "trigger": 0.9,
+      "participants": 0.75,
+      "temporal": 0.8,
+      "location": 0.85,
+      "topic": 0.7
+    },
+    "metadata": {
+      "created_at": "2026-05-11T10:26:58.767407",
+      "validated": true,
+      "version": "1.0"
+    }
+  },
+  {
+    "id": 122,
+    "text": "Precisamos de discutir o deadline. Dá para reunir daqui a 2 dias?\n\nObrigado\nDISCLAIMER: mensagem automática",
+    "intent": "agendamento_reuniao",
+    "trigger": [
+      "reunir"
+    ],
+    "arguments": {
+      "participants": [
+        "DISCLAIMER",
+        "Precisamos",
+        "deadline",
+        "reunir",
+        "reunir daqui"
+      ],
+      "time": [
+        "a 2"
+      ],
+      "location": [],
+      "topic": []
+    },
+    "confidence": {
+      "trigger": 0.9,
+      "participants": 0.75,
+      "temporal": 0.8,
+      "location": 0.85,
+      "topic": 0.7
+    },
+    "metadata": {
+      "created_at": "2026-05-11T10:26:58.767409",
+      "validated": true,
+      "version": "1.0"
+    }
+  },
+  {
+    "id": 123,
+    "text": "Pode ser. 😅\n\n\nEnviado do Outlook",
+    "intent": "reuniao_confirmada",
+    "trigger": [],
+    "arguments": {
+      "participants": [
+        "certo"
+      ],
+      "time": [],
+      "location": [],
+      "topic": []
+    },
+    "confidence": {
+      "trigger": 0.9,
+      "participants": 0.75,
+      "temporal": 0.8,
+      "location": 0.85,
+      "topic": 0.7
+    },
+    "metadata": {
+      "created_at": "2026-05-11T10:26:58.767411",
+      "validated": true,
+      "version": "1.0"
+    }
+  },
+  {
+    "id": 124,
+    "text": "Temos de alinhar a parte do Segurança Informática.\n\nThanks\nEnviado do Outlook",
+    "intent": "agendamento_reuniao",
+    "trigger": [],
+    "arguments": {
+      "participants": [
+        "Informática",
+        "Segurança",
+        "parte",
+        "parte do"
+      ],
+      "time": [],
+      "location": [],
+      "topic": []
+    },
+    "confidence": {
+      "trigger": 0.9,
+      "participants": 0.75,
+      "temporal": 0.8,
+      "location": 0.85,
+      "topic": 0.7
+    },
+    "metadata": {
+      "created_at": "2026-05-11T10:26:58.767413",
+      "validated": true,
+      "version": "1.0"
+    }
+  },
+  {
+    "id": 125,
+    "text": "Hi Ana, afinal vou ter de cancelar a reunião de daqui a 2 dias. logo se vê\n\nThanks\nEnviado do telemóvel",
+    "intent": "cancelamento_reuniao",
+    "trigger": [
+      "reunir"
+    ],
+    "arguments": {
+      "participants": [
+        "de planos",
+        "reunião",
+        "reunião de"
+      ],
+      "time": [
+        "a 2",
+        "logo"
+      ],
+      "location": [],
+      "topic": []
+    },
+    "confidence": {
+      "trigger": 0.9,
+      "participants": 0.75,
+      "temporal": 0.8,
+      "location": 0.85,
+      "topic": 0.7
+    },
+    "metadata": {
+      "created_at": "2026-05-11T10:26:58.767416",
+      "validated": true,
+      "version": "1.0"
+    }
+  },
+  {
+    "id": 126,
+    "text": "Pode ser. vemos isso amanhã\n\nAbraço\nDISCLAIMER: mensagem automática",
+    "intent": "reuniao_confirmada",
+    "trigger": [
+      "confirmar"
+    ],
+    "arguments": {
+      "participants": [
+        "DISCLAIMER",
+        "Pode",
+        "amanhã"
+      ],
+      "time": [
+        "amanhã"
+      ],
+      "location": [],
+      "topic": []
+    },
+    "confidence": {
+      "trigger": 0.9,
+      "participants": 0.75,
+      "temporal": 0.8,
+      "location": 0.85,
+      "topic": 0.7
+    },
+    "metadata": {
+      "created_at": "2026-05-11T10:26:58.767418",
+      "validated": true,
+      "version": "1.0"
+    }
+  },
+  {
+    "id": 127,
+    "text": "Quando puderes temos de combinar uma reunião.\nlogo se vê\n\nCumprimentos\nEnviado do Outlook",
+    "intent": "agendamento_reuniao",
+    "trigger": [
+      "reunir"
+    ],
+    "arguments": {
+      "participants": [
+        "Quando",
+        "reunião"
+      ],
+      "time": [
+        "logo"
+      ],
+      "location": [],
+      "topic": [
+        "Projeto"
+      ]
+    },
+    "confidence": {
+      "trigger": 0.9,
+      "participants": 0.75,
+      "temporal": 0.8,
+      "location": 0.85,
+      "topic": 0.7
+    },
+    "metadata": {
+      "created_at": "2026-05-11T10:26:58.767421",
+      "validated": true,
+      "version": "1.0"
+    }
+  },
+  {
+    "id": 128,
+    "text": "Está ótimo para mim.\n\nBest regards",
+    "intent": "reuniao_confirmada",
+    "trigger": [],
+    "arguments": {
+      "participants": [
+        "certo",
+        "mim",
+        "para"
+      ],
+      "time": [],
+      "location": [],
+      "topic": []
+    },
+    "confidence": {
+      "trigger": 0.9,
+      "participants": 0.75,
+      "temporal": 0.8,
+      "location": 0.85,
+      "topic": 0.7
+    },
+    "metadata": {
+      "created_at": "2026-05-11T10:26:58.767423",
+      "validated": true,
+      "version": "1.0"
+    }
+  },
+  {
+    "id": 129,
+    "text": "Boas Professor Silva, podemos reunir quinta de manhã para falar sobre baseline?\n\nThanks\nSent from my iPhone",
+    "intent": "agendamento_reuniao",
+    "trigger": [
+      "reunir"
+    ],
+    "arguments": {
+      "participants": [
+        "de manhã",
+        "falar",
+        "falar sobre"
+      ],
+      "time": [
+        "quinta",
+        "de manhã"
+      ],
+      "location": [],
+      "topic": []
+    },
+    "confidence": {
+      "trigger": 0.9,
+      "participants": 0.75,
+      "temporal": 0.8,
+      "location": 0.85,
+      "topic": 0.7
+    },
+    "metadata": {
+      "created_at": "2026-05-11T10:26:58.767425",
+      "validated": true,
+      "version": "1.0"
+    }
+  },
+  {
+    "id": 130,
+    "text": "Tranquilo. 😅\n\nCumps\nEnviado do Outlook",
+    "intent": "cancelamento_reuniao",
+    "trigger": [],
+    "arguments": {
+      "participants": [
+        "de planos"
+      ],
+      "time": [],
+      "location": [],
+      "topic": []
+    },
+    "confidence": {
+      "trigger": 0.9,
+      "participants": 0.75,
+      "temporal": 0.8,
+      "location": 0.85,
+      "topic": 0.7
+    },
+    "metadata": {
+      "created_at": "2026-05-11T10:26:58.767428",
+      "validated": true,
+      "version": "1.0"
+    }
+  },
+  {
+    "id": 131,
+    "text": "Boa tarde Professor Ricardo Mendes, podemos reunir sexta para falar sobre Segurança Informática?\n\nObrigado\nEnviado do Outlook",
+    "intent": "agendamento_reuniao",
+    "trigger": [
+      "reunir"
+    ],
+    "arguments": {
+      "participants": [
+        "Boa",
+        "Enviado",
+        "Informática",
+        "Mendes",
+        "Outlook",
+        "para",
+        "para falar",
+        "tarde Professor"
+      ],
+      "time": [
+        "sexta",
+        "tarde"
+      ],
+      "location": [],
+      "topic": [
+        "Projeto"
+      ]
+    },
+    "confidence": {
+      "trigger": 0.9,
+      "participants": 0.75,
+      "temporal": 0.8,
+      "location": 0.85,
+      "topic": 0.7
+    },
+    "metadata": {
+      "created_at": "2026-05-11T10:26:58.767431",
+      "validated": true,
+      "version": "1.0"
+    }
+  },
+  {
+    "id": 132,
+    "text": "Na boa 👍 👍\n\nAté já",
+    "intent": "reuniao_confirmada",
+    "trigger": [],
+    "arguments": {
+      "participants": [
+        "boa",
+        "certo"
+      ],
+      "time": [],
+      "location": [],
+      "topic": []
+    },
+    "confidence": {
+      "trigger": 0.9,
+      "participants": 0.75,
+      "temporal": 0.8,
+      "location": 0.85,
+      "topic": 0.7
+    },
+    "metadata": {
+      "created_at": "2026-05-11T10:26:58.767434",
+      "validated": true,
+      "version": "1.0"
+    }
+  },
+  {
+    "id": 133,
+    "text": "Confirmado.\n\nThanks\nDISCLAIMER: mensagem automática",
+    "intent": "agendamento_reuniao",
+    "trigger": [
+      "reunir"
+    ],
+    "arguments": {
+      "participants": [
+        "Confirmado"
+      ],
+      "time": [],
+      "location": [],
+      "topic": []
+    },
+    "confidence": {
+      "trigger": 0.9,
+      "participants": 0.75,
+      "temporal": 0.8,
+      "location": 0.85,
+      "topic": 0.7
+    },
+    "metadata": {
+      "created_at": "2026-05-11T10:26:58.767436",
+      "validated": true,
+      "version": "1.0"
+    }
+  },
+  {
+    "id": 134,
+    "text": "Confirmado 👍\n\nObrigado\nSent from my iPhone",
+    "intent": "reuniao_confirmada",
+    "trigger": [
+      "confirmar"
+    ],
+    "arguments": {
+      "participants": [
+        "Confirmado",
+        "Sent"
+      ],
+      "time": [],
+      "location": [],
+      "topic": []
+    },
+    "confidence": {
+      "trigger": 0.9,
+      "participants": 0.75,
+      "temporal": 0.8,
+      "location": 0.85,
+      "topic": 0.7
+    },
+    "metadata": {
+      "created_at": "2026-05-11T10:26:58.767438",
+      "validated": true,
+      "version": "1.0"
+    }
+  },
+  {
+    "id": 135,
+    "text": "Combinado, vemos isso na próxima semana.\n\nAbraço",
+    "intent": "reuniao_confirmada",
+    "trigger": [
+      "combinar"
+    ],
+    "arguments": {
+      "participants": [
+        "certo",
+        "próxima semana",
+        "semana"
+      ],
+      "time": [
+        "próxima semana",
+        "na próxima semana"
+      ],
+      "location": [],
+      "topic": []
+    },
+    "confidence": {
+      "trigger": 0.9,
+      "participants": 0.75,
+      "temporal": 0.8,
+      "location": 0.85,
+      "topic": 0.7
+    },
+    "metadata": {
+      "created_at": "2026-05-11T10:26:58.767441",
+      "validated": true,
+      "version": "1.0"
+    }
+  },
+  {
+    "id": 136,
+    "text": "Logo vemos.\n\nAbraço\nEnviado do telemóvel",
+    "intent": "cancelamento_reuniao",
+    "trigger": [],
+    "arguments": {
+      "participants": [
+        "Enviado",
+        "telemóvel",
+        "vemos",
+        "vou"
+      ],
+      "time": [
+        "Logo"
+      ],
+      "location": [],
+      "topic": []
+    },
+    "confidence": {
+      "trigger": 0.9,
+      "participants": 0.75,
+      "temporal": 0.8,
+      "location": 0.85,
+      "topic": 0.7
+    },
+    "metadata": {
+      "created_at": "2026-05-11T10:26:58.767444",
+      "validated": true,
+      "version": "1.0"
+    }
+  },
+  {
+    "id": 137,
+    "text": "Na boa.\n\n\nEnviado do Outlook",
+    "intent": "agendamento_reuniao",
+    "trigger": [],
+    "arguments": {
+      "participants": [
+        "boa"
+      ],
+      "time": [],
+      "location": [],
+      "topic": []
+    },
+    "confidence": {
+      "trigger": 0.9,
+      "participants": 0.75,
+      "temporal": 0.8,
+      "location": 0.85,
+      "topic": 0.7
+    },
+    "metadata": {
+      "created_at": "2026-05-11T10:26:58.767446",
+      "validated": true,
+      "version": "1.0"
+    }
+  },
+  {
+    "id": 138,
+    "text": "Logo vemos.",
+    "intent": "reuniao_confirmada",
+    "trigger": [
+      "combinar"
+    ],
+    "arguments": {
+      "participants": [
+        "Logo"
+      ],
+      "time": [
+        "Logo"
+      ],
+      "location": [],
+      "topic": []
+    },
+    "confidence": {
+      "trigger": 0.9,
+      "participants": 0.75,
+      "temporal": 0.8,
+      "location": 0.85,
+      "topic": 0.7
+    },
+    "metadata": {
+      "created_at": "2026-05-11T10:26:58.767448",
+      "validated": true,
+      "version": "1.0"
+    }
+  },
+  {
+    "id": 139,
+    "text": "15h é complicado.\n\nAbraço\nEnviado do Outlook",
+    "intent": "reuniao_confirmada",
+    "trigger": [
+      "reunir"
+    ],
+    "arguments": {
+      "participants": [
+        "Enviado",
+        "Outlook",
+        "Reunião confirmada",
+        "confirmada"
+      ],
+      "time": [],
+      "location": [],
+      "topic": []
+    },
+    "confidence": {
+      "trigger": 0.9,
+      "participants": 0.75,
+      "temporal": 0.8,
+      "location": 0.85,
+      "topic": 0.7
+    },
+    "metadata": {
+      "created_at": "2026-05-11T10:26:58.767450",
+      "validated": true,
+      "version": "1.0"
+    }
+  },
+  {
+    "id": 140,
+    "text": "Está ótimo para mim.\n\nCumprimentos",
+    "intent": "reuniao_confirmada",
+    "trigger": [
+      "reunir"
+    ],
+    "arguments": {
+      "participants": [
+        "Está",
+        "confirmada",
+        "mim",
+        "para"
+      ],
+      "time": [],
+      "location": [],
+      "topic": []
+    },
+    "confidence": {
+      "trigger": 0.9,
+      "participants": 0.75,
+      "temporal": 0.8,
+      "location": 0.85,
+      "topic": 0.7
+    },
+    "metadata": {
+      "created_at": "2026-05-11T10:26:58.767452",
+      "validated": true,
+      "version": "1.0"
+    }
+  },
+  {
+    "id": 141,
+    "text": "Peço desculpa mas temos de adiar.\n\nObrigado",
+    "intent": "cancelamento_reuniao",
+    "trigger": [],
+    "arguments": {
+      "participants": [
+        "desculpa",
+        "mas temos",
+        "vou"
+      ],
+      "time": [],
+      "location": [],
+      "topic": []
+    },
+    "confidence": {
+      "trigger": 0.9,
+      "participants": 0.75,
+      "temporal": 0.8,
+      "location": 0.85,
+      "topic": 0.7
+    },
+    "metadata": {
+      "created_at": "2026-05-11T10:26:58.767455",
+      "validated": true,
+      "version": "1.0"
+    }
+  },
+  {
+    "id": 142,
+    "text": "Depois falamos. vemos isso amanhã\n\nObrigado\nEnviado do telemóvel",
+    "intent": "reuniao_confirmada",
+    "trigger": [
+      "reunir"
+    ],
+    "arguments": {
+      "participants": [
+        "Depois falamos",
+        "Enviado",
+        "amanhã",
+        "confirmada",
+        "telemóvel"
+      ],
+      "time": [
+        "amanhã"
+      ],
+      "location": [],
+      "topic": []
+    },
+    "confidence": {
+      "trigger": 0.9,
+      "participants": 0.75,
+      "temporal": 0.8,
+      "location": 0.85,
+      "topic": 0.7
+    },
+    "metadata": {
+      "created_at": "2026-05-11T10:26:58.767458",
+      "validated": true,
+      "version": "1.0"
+    }
+  },
+  {
+    "id": 143,
+    "text": "Hoje não vai dar 😅\n\nObrigado\nEnviado do telemóvel",
+    "intent": "cancelamento_reuniao",
+    "trigger": [],
+    "arguments": {
+      "participants": [
+        "Enviado",
+        "telemóvel",
+        "vai",
+        "vou"
+      ],
+      "time": [
+        "Hoje"
+      ],
+      "location": [],
+      "topic": []
+    },
+    "confidence": {
+      "trigger": 0.9,
+      "participants": 0.75,
+      "temporal": 0.8,
+      "location": 0.85,
+      "topic": 0.7
+    },
+    "metadata": {
+      "created_at": "2026-05-11T10:26:58.767460",
+      "validated": true,
+      "version": "1.0"
+    }
+  },
+  {
+    "id": 144,
+    "text": "Se calhar era melhor reunir depois de almoço. logo se vê\n\nObrigado",
+    "intent": "agendamento_reuniao",
+    "trigger": [
+      "reunir"
+    ],
+    "arguments": {
+      "participants": [
+        "melhor",
+        "melhor reunir"
+      ],
+      "time": [
+        "depois de almoço",
+        "logo"
+      ],
+      "location": [],
+      "topic": []
+    },
+    "confidence": {
+      "trigger": 0.9,
+      "participants": 0.75,
+      "temporal": 0.8,
+      "location": 0.85,
+      "topic": 0.7
+    },
+    "metadata": {
+      "created_at": "2026-05-11T10:26:58.767463",
+      "validated": true,
+      "version": "1.0"
+    }
+  },
+  {
+    "id": 145,
+    "text": "A reunião sobre métricas F1 vai ter de ficar para outro dia. depois falamos\n\nThanks\nEnviado do Outlook",
+    "intent": "cancelamento_reuniao",
+    "trigger": [
+      "reunir"
+    ],
+    "arguments": {
+      "participants": [
+        "de planos",
+        "outro",
+        "outro dia",
+        "reunião",
+        "reunião sobre"
+      ],
+      "time": [],
+      "location": [],
+      "topic": [
+        "F1"
+      ]
+    },
+    "confidence": {
+      "trigger": 0.9,
+      "participants": 0.75,
+      "temporal": 0.8,
+      "location": 0.85,
+      "topic": 0.7
+    },
+    "metadata": {
+      "created_at": "2026-05-11T10:26:58.767465",
+      "validated": true,
+      "version": "1.0"
+    }
+  },
+  {
+    "id": 146,
+    "text": "15h é complicado. na boa\n\nBjs",
+    "intent": "cancelamento_reuniao",
+    "trigger": [
+      "reunir"
+    ],
+    "arguments": {
+      "participants": [
+        "boa",
+        "boa\n\nBjs"
+      ],
+      "time": [],
+      "location": [],
+      "topic": []
+    },
+    "confidence": {
+      "trigger": 0.9,
+      "participants": 0.75,
+      "temporal": 0.8,
+      "location": 0.85,
+      "topic": 0.7
+    },
+    "metadata": {
+      "created_at": "2026-05-11T10:26:58.767467",
+      "validated": true,
+      "version": "1.0"
+    }
+  },
+  {
+    "id": 147,
+    "text": "Perfeito, fica então combinado para ao final do dia.\n😂\n\nThanks\nEnviado do Outlook",
+    "intent": "reuniao_confirmada",
+    "trigger": [
+      "combinar"
+    ],
+    "arguments": {
+      "participants": [
+        "ao final",
+        "certo",
+        "dia",
+        "então",
+        "então combinado",
+        "final",
+        "para"
+      ],
+      "time": [],
+      "location": [],
+      "topic": []
+    },
+    "confidence": {
+      "trigger": 0.9,
+      "participants": 0.75,
+      "temporal": 0.8,
+      "location": 0.85,
+      "topic": 0.7
+    },
+    "metadata": {
+      "created_at": "2026-05-11T10:26:58.767469",
+      "validated": true,
+      "version": "1.0"
+    }
+  },
+  {
+    "id": 148,
+    "text": "Na boa 👍 depois falamos\n\nCumprimentos\nEnviado do telemóvel",
+    "intent": "reuniao_confirmada",
+    "trigger": [
+      "combinar"
+    ],
+    "arguments": {
+      "participants": [
+        "boa"
+      ],
+      "time": [],
+      "location": [],
+      "topic": []
+    },
+    "confidence": {
+      "trigger": 0.9,
+      "participants": 0.75,
+      "temporal": 0.8,
+      "location": 0.85,
+      "topic": 0.7
+    },
+    "metadata": {
+      "created_at": "2026-05-11T10:26:58.767471",
+      "validated": true,
+      "version": "1.0"
+    }
+  },
+  {
+    "id": 149,
+    "text": "Combinado, vemos isso quarta à tarde.\n\nObrigado\nEnviado do telemóvel",
+    "intent": "reuniao_confirmada",
+    "trigger": [
+      "combinar"
+    ],
+    "arguments": {
+      "participants": [
+        "Combinado",
+        "Enviado",
+        "quarta",
+        "telemóvel"
+      ],
+      "time": [
+        "quarta",
+        "à tarde"
+      ],
+      "location": [],
+      "topic": []
+    },
+    "confidence": {
+      "trigger": 0.9,
+      "participants": 0.75,
+      "temporal": 0.8,
+      "location": 0.85,
+      "topic": 0.7
+    },
+    "metadata": {
+      "created_at": "2026-05-11T10:26:58.767474",
+      "validated": true,
+      "version": "1.0"
+    }
+  },
+  {
+    "id": 150,
+    "text": "Peço desculpa mas temos de adiar.\n\n\nEnviado do Outlook",
+    "intent": "cancelamento_reuniao",
+    "trigger": [],
+    "arguments": {
+      "participants": [
+        "desculpa",
+        "mas temos",
+        "vou"
+      ],
+      "time": [],
+      "location": [],
+      "topic": []
+    },
+    "confidence": {
+      "trigger": 0.9,
+      "participants": 0.75,
+      "temporal": 0.8,
+      "location": 0.85,
+      "topic": 0.7
+    },
+    "metadata": {
+      "created_at": "2026-05-11T10:26:58.767476",
+      "validated": true,
+      "version": "1.0"
+    }
+  },
+  {
+    "id": 151,
+    "text": "Confirmado.\n\n\nEnviado do Outlook",
+    "intent": "agendamento_reuniao",
+    "trigger": [
+      "confirmar"
+    ],
+    "arguments": {
+      "participants": [],
+      "time": [],
+      "location": [],
+      "topic": []
+    },
+    "confidence": {
+      "trigger": 0.9,
+      "participants": 0.75,
+      "temporal": 0.8,
+      "location": 0.85,
+      "topic": 0.7
+    },
+    "metadata": {
+      "created_at": "2026-05-11T10:26:58.767478",
+      "validated": true,
+      "version": "1.0"
+    }
+  },
+  {
+    "id": 152,
+    "text": "Confirmado. na boa\n\nBjs\nEnviado do telemóvel",
+    "intent": "reuniao_confirmada",
+    "trigger": [
+      "confirmar"
+    ],
+    "arguments": {
+      "participants": [
+        "boa",
+        "boa\n\nBjs",
+        "certo"
+      ],
+      "time": [],
+      "location": [],
+      "topic": []
+    },
+    "confidence": {
+      "trigger": 0.9,
+      "participants": 0.75,
+      "temporal": 0.8,
+      "location": 0.85,
+      "topic": 0.7
+    },
+    "metadata": {
+      "created_at": "2026-05-11T10:26:58.767481",
+      "validated": true,
+      "version": "1.0"
+    }
+  },
+  {
+    "id": 153,
+    "text": "Podemos fazer uma quick call pelas 14h?\n\nObrigado\nSent from my iPhone",
+    "intent": "agendamento_reuniao",
+    "trigger": [
+      "falar"
+    ],
+    "arguments": {
+      "participants": [
+        "Sent",
+        "quick",
+        "quick call"
+      ],
+      "time": [],
+      "location": [],
+      "topic": []
+    },
+    "confidence": {
+      "trigger": 0.9,
+      "participants": 0.75,
+      "temporal": 0.8,
+      "location": 0.85,
+      "topic": 0.7
+    },
+    "metadata": {
+      "created_at": "2026-05-11T10:26:58.767483",
+      "validated": true,
+      "version": "1.0"
+    }
+  },
+  {
+    "id": 154,
+    "text": "Confirmado.\n\nThanks\nEnviado do Outlook",
+    "intent": "reuniao_confirmada",
+    "trigger": [
+      "reunir"
+    ],
+    "arguments": {
+      "participants": [
+        "Reunião confirmada",
+        "confirmada"
+      ],
+      "time": [],
+      "location": [],
+      "topic": []
+    },
+    "confidence": {
+      "trigger": 0.9,
+      "participants": 0.75,
+      "temporal": 0.8,
+      "location": 0.85,
+      "topic": 0.7
+    },
+    "metadata": {
+      "created_at": "2026-05-11T10:26:58.767485",
+      "validated": true,
+      "version": "1.0"
+    }
+  },
+  {
+    "id": 155,
+    "text": "Logo vemos.\n\n\nEnviado do telemóvel",
+    "intent": "cancelamento_reuniao",
+    "trigger": [
+      "cancelar"
+    ],
+    "arguments": {
+      "participants": [
+        "Cancelamento",
+        "vemos"
+      ],
+      "time": [
+        "Logo"
+      ],
+      "location": [],
+      "topic": []
+    },
+    "confidence": {
+      "trigger": 0.9,
+      "participants": 0.75,
+      "temporal": 0.8,
+      "location": 0.85,
+      "topic": 0.7
+    },
+    "metadata": {
+      "created_at": "2026-05-11T10:26:58.767488",
+      "validated": true,
+      "version": "1.0"
+    }
+  },
+  {
+    "id": 156,
+    "text": "Maria, consegues aparecer no laboratório amanha às 15h?\n\nAbraço\nDISCLAIMER: mensagem automática",
+    "intent": "agendamento_reuniao",
+    "trigger": [],
+    "arguments": {
+      "participants": [
+        "DISCLAIMER",
+        "Maria",
+        "laboratório"
+      ],
+      "time": [
+        "às 15h"
+      ],
+      "location": [
+        "laboratório"
+      ],
+      "topic": [
+        "Projeto"
+      ]
+    },
+    "confidence": {
+      "trigger": 0.9,
+      "participants": 0.75,
+      "temporal": 0.8,
+      "location": 0.85,
+      "topic": 0.7
+    },
+    "metadata": {
+      "created_at": "2026-05-11T10:26:58.767491",
+      "validated": true,
+      "version": "1.0"
+    }
+  },
+  {
+    "id": 157,
+    "text": "Diana, consegues aparecer no sala 2.3 quinta de manhã?\n\nBest regards\nDISCLAIMER: mensagem automática",
+    "intent": "agendamento_reuniao",
+    "trigger": [
+      "discutir"
+    ],
+    "arguments": {
+      "participants": [
+        "de manhã",
+        "resultados",
+        "sala"
+      ],
+      "time": [
+        "quinta",
+        "de manhã"
+      ],
+      "location": [
+        "sala 2.3"
+      ],
+      "topic": []
+    },
+    "confidence": {
+      "trigger": 0.9,
+      "participants": 0.75,
+      "temporal": 0.8,
+      "location": 0.85,
+      "topic": 0.7
+    },
+    "metadata": {
+      "created_at": "2026-05-11T10:26:58.767494",
+      "validated": true,
+      "version": "1.0"
+    }
+  },
+  {
+    "id": 158,
+    "text": "Consegues reunir depois da aula?\n\nCumprimentos\nSent from my iPhone",
+    "intent": "agendamento_reuniao",
+    "trigger": [
+      "reunir"
+    ],
+    "arguments": {
+      "participants": [
+        "aula"
+      ],
+      "time": [],
+      "location": [],
+      "topic": []
+    },
+    "confidence": {
+      "trigger": 0.9,
+      "participants": 0.75,
+      "temporal": 0.8,
+      "location": 0.85,
+      "topic": 0.7
+    },
+    "metadata": {
+      "created_at": "2026-05-11T10:26:58.767496",
+      "validated": true,
+      "version": "1.0"
+    }
+  },
+  {
+    "id": 159,
+    "text": "Podemos fazer uma quick call após o seminário?\n\nAbraço",
+    "intent": "agendamento_reuniao",
+    "trigger": [
+      "falar"
+    ],
+    "arguments": {
+      "participants": [
+        "quick",
+        "quick call",
+        "seminário"
+      ],
+      "time": [],
+      "location": [],
+      "topic": []
+    },
+    "confidence": {
+      "trigger": 0.9,
+      "participants": 0.75,
+      "temporal": 0.8,
+      "location": 0.85,
+      "topic": 0.7
+    },
+    "metadata": {
+      "created_at": "2026-05-11T10:26:58.767498",
+      "validated": true,
+      "version": "1.0"
+    }
+  },
+  {
+    "id": 160,
+    "text": "Confirmado 👍\n\nCumps\nEnviado do Outlook",
+    "intent": "reuniao_confirmada",
+    "trigger": [
+      "confirmar"
+    ],
+    "arguments": {
+      "participants": [
+        "Confirmado"
+      ],
+      "time": [],
+      "location": [],
+      "topic": []
+    },
+    "confidence": {
+      "trigger": 0.9,
+      "participants": 0.75,
+      "temporal": 0.8,
+      "location": 0.85,
+      "topic": 0.7
+    },
+    "metadata": {
+      "created_at": "2026-05-11T10:26:58.767499",
+      "validated": true,
+      "version": "1.0"
+    }
+  },
+  {
+    "id": 161,
+    "text": "Se calhar era melhor reunir depois de almoço.\n\nCumprimentos",
+    "intent": "agendamento_reuniao",
+    "trigger": [
+      "reunir"
+    ],
+    "arguments": {
+      "participants": [
+        "melhor",
+        "melhor reunir"
+      ],
+      "time": [
+        "depois de almoço"
+      ],
+      "location": [],
+      "topic": []
+    },
+    "confidence": {
+      "trigger": 0.9,
+      "participants": 0.75,
+      "temporal": 0.8,
+      "location": 0.85,
+      "topic": 0.7
+    },
+    "metadata": {
+      "created_at": "2026-05-11T10:26:58.767501",
+      "validated": true,
+      "version": "1.0"
+    }
+  },
+  {
+    "id": 162,
+    "text": "Não vou conseguir aparecer na próxima semana.\n👍\n\nAbraço\nEnviado do Outlook",
+    "intent": "cancelamento_reuniao",
+    "trigger": [],
+    "arguments": {
+      "participants": [
+        "Enviado",
+        "Não",
+        "Outlook",
+        "próxima",
+        "próxima semana"
+      ],
+      "time": [
+        "próxima semana",
+        "na próxima semana"
+      ],
+      "location": [],
+      "topic": []
+    },
+    "confidence": {
+      "trigger": 0.9,
+      "participants": 0.75,
+      "temporal": 0.8,
+      "location": 0.85,
+      "topic": 0.7
+    },
+    "metadata": {
+      "created_at": "2026-05-11T10:26:58.767505",
+      "validated": true,
+      "version": "1.0"
+    }
+  },
+  {
+    "id": 163,
+    "text": "Boas Inês, tens disponibilidade depois do laboratório? 🔥\n\n\nEnviado do Outlook",
+    "intent": "agendamento_reuniao",
+    "trigger": [
+      "falar"
+    ],
+    "arguments": {
+      "participants": [
+        "Inês",
+        "laboratório"
+      ],
+      "time": [],
+      "location": [
+        "laboratório"
+      ],
+      "topic": []
+    },
+    "confidence": {
+      "trigger": 0.9,
+      "participants": 0.75,
+      "temporal": 0.8,
+      "location": 0.85,
+      "topic": 0.7
+    },
+    "metadata": {
+      "created_at": "2026-05-11T10:26:58.767507",
+      "validated": true,
+      "version": "1.0"
+    }
+  },
+  {
+    "id": 164,
+    "text": "Consegues reunir depois da aula?\n\nBest regards\nDISCLAIMER: mensagem automática",
+    "intent": "agendamento_reuniao",
+    "trigger": [
+      "reunir"
+    ],
+    "arguments": {
+      "participants": [
+        "aula",
+        "resultados"
+      ],
+      "time": [],
+      "location": [],
+      "topic": []
+    },
+    "confidence": {
+      "trigger": 0.9,
+      "participants": 0.75,
+      "temporal": 0.8,
+      "location": 0.85,
+      "topic": 0.7
+    },
+    "metadata": {
+      "created_at": "2026-05-11T10:26:58.767509",
+      "validated": true,
+      "version": "1.0"
+    }
+  },
+  {
+    "id": 165,
+    "text": "Vou ter aula nesse horário.\n\nBjs\nSent from my iPhone",
+    "intent": "cancelamento_reuniao",
+    "trigger": [],
+    "arguments": {
+      "participants": [
+        "nesse",
+        "nesse horário",
+        "vou"
+      ],
+      "time": [],
+      "location": [],
+      "topic": []
+    },
+    "confidence": {
+      "trigger": 0.9,
+      "participants": 0.75,
+      "temporal": 0.8,
+      "location": 0.85,
+      "topic": 0.7
+    },
+    "metadata": {
+      "created_at": "2026-05-11T10:26:58.767511",
+      "validated": true,
+      "version": "1.0"
+    }
+  },
+  {
+    "id": 166,
+    "text": "Boa tarde João, afinal vou ter de cancelar a reunião de após o seminário.\n\nObrigado\nSent from my iPhone",
+    "intent": "cancelamento_reuniao",
+    "trigger": [
+      "reunir"
+    ],
+    "arguments": {
+      "participants": [
+        "Boa",
+        "Sent",
+        "reunião",
+        "reunião de",
+        "seminário",
+        "tarde João"
+      ],
+      "time": [
+        "tarde"
+      ],
+      "location": [],
+      "topic": []
+    },
+    "confidence": {
+      "trigger": 0.9,
+      "participants": 0.75,
+      "temporal": 0.8,
+      "location": 0.85,
+      "topic": 0.7
+    },
+    "metadata": {
+      "created_at": "2026-05-11T10:26:58.767514",
+      "validated": true,
+      "version": "1.0"
+    }
+  },
+  {
+    "id": 167,
+    "text": "Professora Ana Costa, consegues aparecer no campus mais logo?\n\nBjs\nEnviado do Outlook",
+    "intent": "agendamento_reuniao",
+    "trigger": [
+      "reunir"
+    ],
+    "arguments": {
+      "participants": [
+        "Ana Costa",
+        "Costa",
+        "campus"
+      ],
+      "time": [
+        "mais logo"
+      ],
+      "location": [],
+      "topic": []
+    },
+    "confidence": {
+      "trigger": 0.9,
+      "participants": 0.75,
+      "temporal": 0.8,
+      "location": 0.85,
+      "topic": 0.7
+    },
+    "metadata": {
+      "created_at": "2026-05-11T10:26:58.767516",
+      "validated": true,
+      "version": "1.0"
+    }
+  },
+  {
+    "id": 168,
+    "text": "Acho que sexta já dá.\n\nAbraço\nDISCLAIMER: mensagem automática",
+    "intent": "cancelamento_reuniao",
+    "trigger": [
+      "cancelar"
+    ],
+    "arguments": {
+      "participants": [
+        "Acho",
+        "DISCLAIMER",
+        "já dá"
+      ],
+      "time": [
+        "sexta"
+      ],
+      "location": [],
+      "topic": []
+    },
+    "confidence": {
+      "trigger": 0.9,
+      "participants": 0.75,
+      "temporal": 0.8,
+      "location": 0.85,
+      "topic": 0.7
+    },
+    "metadata": {
+      "created_at": "2026-05-11T10:26:58.767518",
+      "validated": true,
+      "version": "1.0"
+    }
+  },
+  {
+    "id": 169,
+    "text": "Logo vemos.\n\n\nEnviado do telemóvel",
+    "intent": "agendamento_reuniao",
+    "trigger": [],
+    "arguments": {
+      "participants": [
+        "Logo"
+      ],
+      "time": [
+        "Logo"
+      ],
+      "location": [],
+      "topic": [
+        "Dissertação"
+      ]
+    },
+    "confidence": {
+      "trigger": 0.9,
+      "participants": 0.75,
+      "temporal": 0.8,
+      "location": 0.85,
+      "topic": 0.7
+    },
+    "metadata": {
+      "created_at": "2026-05-11T10:26:58.767520",
+      "validated": true,
+      "version": "1.0"
+    }
+  },
+  {
+    "id": 170,
+    "text": "Professora Ana Costa, consegues aparecer no Discord terça?\n\nCumprimentos",
+    "intent": "agendamento_reuniao",
+    "trigger": [],
+    "arguments": {
+      "participants": [
+        "Ana",
+        "Ana Costa",
+        "Discord"
+      ],
+      "time": [
+        "terça"
+      ],
+      "location": [
+        "Discord"
+      ],
+      "topic": []
+    },
+    "confidence": {
+      "trigger": 0.9,
+      "participants": 0.75,
+      "temporal": 0.8,
+      "location": 0.85,
+      "topic": 0.7
+    },
+    "metadata": {
+      "created_at": "2026-05-11T10:26:58.767523",
+      "validated": true,
+      "version": "1.0"
+    }
+  },
+  {
+    "id": 171,
+    "text": "Consegues reunir depois da aula?\n\nAté já\nEnviado do Outlook",
+    "intent": "agendamento_reuniao",
+    "trigger": [
+      "reunir"
+    ],
+    "arguments": {
+      "participants": [
+        "aula"
+      ],
+      "time": [],
+      "location": [],
+      "topic": []
+    },
+    "confidence": {
+      "trigger": 0.9,
+      "participants": 0.75,
+      "temporal": 0.8,
+      "location": 0.85,
+      "topic": 0.7
+    },
+    "metadata": {
+      "created_at": "2026-05-11T10:26:58.767525",
+      "validated": true,
+      "version": "1.0"
+    }
+  },
+  {
+    "id": 172,
+    "text": "Confirmado.\n\nBest regards\nEnviado do telemóvel",
+    "intent": "cancelamento_reuniao",
+    "trigger": [
+      "confirmar"
+    ],
+    "arguments": {
+      "participants": [
+        "vou"
+      ],
+      "time": [],
+      "location": [],
+      "topic": []
+    },
+    "confidence": {
+      "trigger": 0.9,
+      "participants": 0.75,
+      "temporal": 0.8,
+      "location": 0.85,
+      "topic": 0.7
+    },
+    "metadata": {
+      "created_at": "2026-05-11T10:26:58.767527",
+      "validated": true,
+      "version": "1.0"
+    }
+  },
+  {
+    "id": 173,
+    "text": "Perfeito, fica então combinado para mais logo.\n\nAté já\nEnviado do telemóvel",
+    "intent": "reuniao_confirmada",
+    "trigger": [
+      "confirmar"
+    ],
+    "arguments": {
+      "participants": [
+        "Perfeito",
+        "então",
+        "então combinado",
+        "mais logo",
+        "para"
+      ],
+      "time": [
+        "mais logo"
+      ],
+      "location": [],
+      "topic": []
+    },
+    "confidence": {
+      "trigger": 0.9,
+      "participants": 0.75,
+      "temporal": 0.8,
+      "location": 0.85,
+      "topic": 0.7
+    },
+    "metadata": {
+      "created_at": "2026-05-11T10:26:58.767530",
+      "validated": true,
+      "version": "1.0"
+    }
+  },
+  {
+    "id": 174,
+    "text": "Confirmado 👍 🔥\n\nBest regards\nSent from my iPhone",
+    "intent": "reuniao_confirmada",
+    "trigger": [
+      "confirmar"
+    ],
+    "arguments": {
+      "participants": [
+        "Confirmado"
+      ],
+      "time": [],
+      "location": [],
+      "topic": []
+    },
+    "confidence": {
+      "trigger": 0.9,
+      "participants": 0.75,
+      "temporal": 0.8,
+      "location": 0.85,
+      "topic": 0.7
+    },
+    "metadata": {
+      "created_at": "2026-05-11T10:26:58.767532",
+      "validated": true,
+      "version": "1.0"
+    }
+  },
+  {
+    "id": 175,
+    "text": "Perfeito, fica então combinado para daqui a 2 dias. depois falamos\n\nAté já\nEnviado do telemóvel",
+    "intent": "reuniao_confirmada",
+    "trigger": [
+      "combinar"
+    ],
+    "arguments": {
+      "participants": [
+        "Perfeito",
+        "daqui",
+        "então",
+        "então combinado",
+        "para"
+      ],
+      "time": [
+        "a 2"
+      ],
+      "location": [],
+      "topic": []
+    },
+    "confidence": {
+      "trigger": 0.9,
+      "participants": 0.75,
+      "temporal": 0.8,
+      "location": 0.85,
+      "topic": 0.7
+    },
+    "metadata": {
+      "created_at": "2026-05-11T10:26:58.767535",
+      "validated": true,
+      "version": "1.0"
+    }
+  },
+  {
+    "id": 176,
+    "text": "Perfeito, fica então combinado para daqui a 2 dias.\ndepois falamos\n\nBest regards\nDISCLAIMER: mensagem automática",
+    "intent": "reuniao_confirmada",
+    "trigger": [
+      "reunir"
+    ],
+    "arguments": {
+      "participants": [
+        "Perfeito",
+        "confirmada",
+        "daqui",
+        "então",
+        "então combinado",
+        "para"
+      ],
+      "time": [
+        "a 2"
+      ],
+      "location": [],
+      "topic": []
+    },
+    "confidence": {
+      "trigger": 0.9,
+      "participants": 0.75,
+      "temporal": 0.8,
+      "location": 0.85,
+      "topic": 0.7
+    },
+    "metadata": {
+      "created_at": "2026-05-11T10:26:58.767537",
+      "validated": true,
+      "version": "1.0"
+    }
+  },
+  {
+    "id": 177,
+    "text": "Hey Diana, afinal vou ter de cancelar a reunião de mais logo. tranquilo 👍",
+    "intent": "cancelamento_reuniao",
+    "trigger": [
+      "reunir"
+    ],
+    "arguments": {
+      "participants": [
+        "de planos",
+        "reunião",
+        "reunião de"
+      ],
+      "time": [
+        "mais logo"
+      ],
+      "location": [],
+      "topic": []
+    },
+    "confidence": {
+      "trigger": 0.9,
+      "participants": 0.75,
+      "temporal": 0.8,
+      "location": 0.85,
+      "topic": 0.7
+    },
+    "metadata": {
+      "created_at": "2026-05-11T10:26:58.767540",
+      "validated": true,
+      "version": "1.0"
+    }
+  },
+  {
+    "id": 178,
+    "text": "Não vou conseguir aparecer mais logo.\n\nObrigado\nSent from my iPhone",
+    "intent": "cancelamento_reuniao",
+    "trigger": [],
+    "arguments": {
+      "participants": [
+        "Sent",
+        "vou"
+      ],
+      "time": [
+        "mais logo"
+      ],
+      "location": [],
+      "topic": []
+    },
+    "confidence": {
+      "trigger": 0.9,
+      "participants": 0.75,
+      "temporal": 0.8,
+      "location": 0.85,
+      "topic": 0.7
+    },
+    "metadata": {
+      "created_at": "2026-05-11T10:26:58.767542",
+      "validated": true,
+      "version": "1.0"
+    }
+  },
+  {
+    "id": 179,
+    "text": "A reunião sobre baseline vai ter de ficar para outro dia.\n\nBest regards\nEnviado do Outlook",
+    "intent": "cancelamento_reuniao",
+    "trigger": [
+      "reunir"
+    ],
+    "arguments": {
+      "participants": [
+        "outro",
+        "outro dia",
+        "reunião",
+        "reunião sobre"
+      ],
+      "time": [],
+      "location": [],
+      "topic": []
+    },
+    "confidence": {
+      "trigger": 0.9,
+      "participants": 0.75,
+      "temporal": 0.8,
+      "location": 0.85,
+      "topic": 0.7
+    },
+    "metadata": {
+      "created_at": "2026-05-11T10:26:58.767544",
+      "validated": true,
+      "version": "1.0"
+    }
+  },
+  {
+    "id": 180,
+    "text": "Combinado.\n\nAbraço\nEnviado do telemóvel",
+    "intent": "reuniao_confirmada",
+    "trigger": [
+      "confirmar"
+    ],
+    "arguments": {
+      "participants": [
+        "Combinado",
+        "Enviado",
+        "telemóvel"
+      ],
+      "time": [],
+      "location": [],
+      "topic": []
+    },
+    "confidence": {
+      "trigger": 0.9,
+      "participants": 0.75,
+      "temporal": 0.8,
+      "location": 0.85,
+      "topic": 0.7
+    },
+    "metadata": {
+      "created_at": "2026-05-11T10:26:58.767546",
+      "validated": true,
+      "version": "1.0"
+    }
+  },
+  {
+    "id": 181,
+    "text": "Confirmado 👍 vemos isso amanhã\n\nObrigado\nSent from my iPhone",
+    "intent": "reuniao_confirmada",
+    "trigger": [
+      "confirmar"
+    ],
+    "arguments": {
+      "participants": [
+        "Sent",
+        "amanhã",
+        "certo"
+      ],
+      "time": [
+        "amanhã"
+      ],
+      "location": [],
+      "topic": []
+    },
+    "confidence": {
+      "trigger": 0.9,
+      "participants": 0.75,
+      "temporal": 0.8,
+      "location": 0.85,
+      "topic": 0.7
+    },
+    "metadata": {
+      "created_at": "2026-05-11T10:26:58.767548",
+      "validated": true,
+      "version": "1.0"
+    }
+  },
+  {
+    "id": 182,
+    "text": "Fechado então.",
+    "intent": "reuniao_confirmada",
+    "trigger": [
+      "confirmar"
+    ],
+    "arguments": {
+      "participants": [
+        "Fechado"
+      ],
+      "time": [],
+      "location": [],
+      "topic": []
+    },
+    "confidence": {
+      "trigger": 0.9,
+      "participants": 0.75,
+      "temporal": 0.8,
+      "location": 0.85,
+      "topic": 0.7
+    },
+    "metadata": {
+      "created_at": "2026-05-11T10:26:58.767550",
+      "validated": true,
+      "version": "1.0"
+    }
+  },
+  {
+    "id": 183,
+    "text": "Ok 👍 tranquilo\n\nAbraço\nEnviado do Outlook",
+    "intent": "agendamento_reuniao",
+    "trigger": [],
+    "arguments": {
+      "participants": [
+        "Abraço",
+        "Dissertação"
+      ],
+      "time": [],
+      "location": [],
+      "topic": [
+        "Dissertação"
+      ]
+    },
+    "confidence": {
+      "trigger": 0.9,
+      "participants": 0.75,
+      "temporal": 0.8,
+      "location": 0.85,
+      "topic": 0.7
+    },
+    "metadata": {
+      "created_at": "2026-05-11T10:26:58.767553",
+      "validated": true,
+      "version": "1.0"
+    }
+  },
+  {
+    "id": 184,
+    "text": "Combinado.\n\nCumps\nDISCLAIMER: mensagem automática",
+    "intent": "agendamento_reuniao",
+    "trigger": [
+      "reunir"
+    ],
+    "arguments": {
+      "participants": [
+        "Reunião"
+      ],
+      "time": [],
+      "location": [],
+      "topic": []
+    },
+    "confidence": {
+      "trigger": 0.9,
+      "participants": 0.75,
+      "temporal": 0.8,
+      "location": 0.85,
+      "topic": 0.7
+    },
+    "metadata": {
+      "created_at": "2026-05-11T10:26:58.767557",
+      "validated": true,
+      "version": "1.0"
+    }
+  },
+  {
+    "id": 185,
+    "text": "Acho que sexta já dá.\n\n\nEnviado do Outlook",
+    "intent": "reuniao_confirmada",
+    "trigger": [
+      "confirmar"
+    ],
+    "arguments": {
+      "participants": [
+        "Acho",
+        "já dá"
+      ],
+      "time": [
+        "sexta"
+      ],
+      "location": [],
+      "topic": []
+    },
+    "confidence": {
+      "trigger": 0.9,
+      "participants": 0.75,
+      "temporal": 0.8,
+      "location": 0.85,
+      "topic": 0.7
+    },
+    "metadata": {
+      "created_at": "2026-05-11T10:26:58.767559",
+      "validated": true,
+      "version": "1.0"
+    }
+  },
+  {
+    "id": 186,
+    "text": "Consegues reunir depois da aula?\n\nCumprimentos\nDISCLAIMER: mensagem automática",
+    "intent": "agendamento_reuniao",
+    "trigger": [
+      "reunir"
+    ],
+    "arguments": {
+      "participants": [
+        "aula"
+      ],
+      "time": [],
+      "location": [],
+      "topic": []
+    },
+    "confidence": {
+      "trigger": 0.9,
+      "participants": 0.75,
+      "temporal": 0.8,
+      "location": 0.85,
+      "topic": 0.7
+    },
+    "metadata": {
+      "created_at": "2026-05-11T10:26:58.767561",
+      "validated": true,
+      "version": "1.0"
+    }
+  },
+  {
+    "id": 187,
+    "text": "A reunião fica sem efeito.\n\nCumprimentos\nSent from my iPhone",
+    "intent": "cancelamento_reuniao",
+    "trigger": [
+      "reunir"
+    ],
+    "arguments": {
+      "participants": [
+        "Cancelamento",
+        "reunião",
+        "reunião fica",
+        "sem"
+      ],
+      "time": [],
+      "location": [],
+      "topic": []
+    },
+    "confidence": {
+      "trigger": 0.9,
+      "participants": 0.75,
+      "temporal": 0.8,
+      "location": 0.85,
+      "topic": 0.7
+    },
+    "metadata": {
+      "created_at": "2026-05-11T10:26:58.767563",
+      "validated": true,
+      "version": "1.0"
+    }
+  },
+  {
+    "id": 188,
+    "text": "Professor Ricardo Mendes, consegues aparecer no Zoom ao final do dia?\n\nCumprimentos\nEnviado do Outlook",
+    "intent": "agendamento_reuniao",
+    "trigger": [],
+    "arguments": {
+      "participants": [
+        "Mendes",
+        "Zoom",
+        "dia",
+        "final"
+      ],
+      "time": [],
+      "location": [
+        "Zoom"
+      ],
+      "topic": []
+    },
+    "confidence": {
+      "trigger": 0.9,
+      "participants": 0.75,
+      "temporal": 0.8,
+      "location": 0.85,
+      "topic": 0.7
+    },
+    "metadata": {
+      "created_at": "2026-05-11T10:26:58.767565",
+      "validated": true,
+      "version": "1.0"
+    }
+  },
+  {
+    "id": 189,
+    "text": "Não vou conseguir ir ao campus.\n\nThanks\nDISCLAIMER: mensagem automática",
+    "intent": "cancelamento_reuniao",
+    "trigger": [],
+    "arguments": {
+      "participants": [
+        "Não",
+        "campus"
+      ],
+      "time": [],
+      "location": [],
+      "topic": []
+    },
+    "confidence": {
+      "trigger": 0.9,
+      "participants": 0.75,
+      "temporal": 0.8,
+      "location": 0.85,
+      "topic": 0.7
+    },
+    "metadata": {
+      "created_at": "2026-05-11T10:26:58.767567",
+      "validated": true,
+      "version": "1.0"
+    }
+  },
+  {
+    "id": 190,
+    "text": "Vou ter aula nesse horário. 😅\n\nThanks",
+    "intent": "cancelamento_reuniao",
+    "trigger": [],
+    "arguments": {
+      "participants": [
+        "nesse",
+        "nesse horário",
+        "vou"
+      ],
+      "time": [],
+      "location": [],
+      "topic": []
+    },
+    "confidence": {
+      "trigger": 0.9,
+      "participants": 0.75,
+      "temporal": 0.8,
+      "location": 0.85,
+      "topic": 0.7
+    },
+    "metadata": {
+      "created_at": "2026-05-11T10:26:58.767569",
+      "validated": true,
+      "version": "1.0"
+    }
+  },
+  {
+    "id": 191,
+    "text": "Vou ter aula nesse horário.\n\n\nEnviado do Outlook",
+    "intent": "cancelamento_reuniao",
+    "trigger": [],
+    "arguments": {
+      "participants": [
+        "de planos",
+        "nesse",
+        "nesse horário"
+      ],
+      "time": [],
+      "location": [],
+      "topic": []
+    },
+    "confidence": {
+      "trigger": 0.9,
+      "participants": 0.75,
+      "temporal": 0.8,
+      "location": 0.85,
+      "topic": 0.7
+    },
+    "metadata": {
+      "created_at": "2026-05-11T10:26:58.767572",
+      "validated": true,
+      "version": "1.0"
+    }
+  },
+  {
+    "id": 192,
+    "text": "Não vou conseguir ir ao bar da faculdade. 😂\n\nBest regards",
+    "intent": "cancelamento_reuniao",
+    "trigger": [],
+    "arguments": {
+      "participants": [
+        "Não",
+        "bar",
+        "faculdade"
+      ],
+      "time": [],
+      "location": [],
+      "topic": []
+    },
+    "confidence": {
+      "trigger": 0.9,
+      "participants": 0.75,
+      "temporal": 0.8,
+      "location": 0.85,
+      "topic": 0.7
+    },
+    "metadata": {
+      "created_at": "2026-05-11T10:26:58.767574",
+      "validated": true,
+      "version": "1.0"
+    }
+  },
+  {
+    "id": 193,
+    "text": "Perfeito, fica então combinado para sexta às 16h.\n\nBest regards\nSent from my iPhone",
+    "intent": "reuniao_confirmada",
+    "trigger": [
+      "confirmar"
+    ],
+    "arguments": {
+      "participants": [
+        "Perfeito",
+        "então",
+        "então combinado",
+        "para",
+        "sexta"
+      ],
+      "time": [
+        "sexta",
+        "às 16h"
+      ],
+      "location": [],
+      "topic": []
+    },
+    "confidence": {
+      "trigger": 0.9,
+      "participants": 0.75,
+      "temporal": 0.8,
+      "location": 0.85,
+      "topic": 0.7
+    },
+    "metadata": {
+      "created_at": "2026-05-11T10:26:58.767576",
+      "validated": true,
+      "version": "1.0"
+    }
+  },
+  {
+    "id": 194,
+    "text": "A reunião sobre pipeline NLP vai ter de ficar para outro dia.\ndepois falamos\n\nCumps\nSent from my iPhone",
+    "intent": "cancelamento_reuniao",
+    "trigger": [
+      "reunir"
+    ],
+    "arguments": {
+      "participants": [
+        "Adiar",
+        "outro",
+        "outro dia",
+        "reunião",
+        "reunião sobre"
+      ],
+      "time": [],
+      "location": [],
+      "topic": [
+        "pipeline",
+        "NLP"
+      ]
+    },
+    "confidence": {
+      "trigger": 0.9,
+      "participants": 0.75,
+      "temporal": 0.8,
+      "location": 0.85,
+      "topic": 0.7
+    },
+    "metadata": {
+      "created_at": "2026-05-11T10:26:58.767579",
+      "validated": true,
+      "version": "1.0"
+    }
+  },
+  {
+    "id": 195,
+    "text": "Acho que sexta já dá. vemos isso amanha 😅",
+    "intent": "cancelamento_reuniao",
+    "trigger": [
+      "reunir"
+    ],
+    "arguments": {
+      "participants": [
+        "Acho",
+        "amanha",
+        "já dá"
+      ],
+      "time": [
+        "sexta"
+      ],
+      "location": [],
+      "topic": []
+    },
+    "confidence": {
+      "trigger": 0.9,
+      "participants": 0.75,
+      "temporal": 0.8,
+      "location": 0.85,
+      "topic": 0.7
+    },
+    "metadata": {
+      "created_at": "2026-05-11T10:26:58.767582",
+      "validated": true,
+      "version": "1.0"
+    }
+  },
+  {
+    "id": 196,
+    "text": "Na boa.\n\nThanks",
+    "intent": "agendamento_reuniao",
+    "trigger": [],
+    "arguments": {
+      "participants": [
+        "Dissertação",
+        "boa"
+      ],
+      "time": [],
+      "location": [],
+      "topic": [
+        "Dissertação"
+      ]
+    },
+    "confidence": {
+      "trigger": 0.9,
+      "participants": 0.75,
+      "temporal": 0.8,
+      "location": 0.85,
+      "topic": 0.7
+    },
+    "metadata": {
+      "created_at": "2026-05-11T10:26:58.767584",
+      "validated": true,
+      "version": "1.0"
+    }
+  },
+  {
+    "id": 197,
+    "text": "Não vou conseguir aparecer quarta à tarde.\n\nAbraço\nEnviado do Outlook",
+    "intent": "cancelamento_reuniao",
+    "trigger": [],
+    "arguments": {
+      "participants": [
+        "Enviado",
+        "Não",
+        "Outlook"
+      ],
+      "time": [
+        "quarta",
+        "à tarde"
+      ],
+      "location": [],
+      "topic": []
+    },
+    "confidence": {
+      "trigger": 0.9,
+      "participants": 0.75,
+      "temporal": 0.8,
+      "location": 0.85,
+      "topic": 0.7
+    },
+    "metadata": {
+      "created_at": "2026-05-11T10:26:58.767586",
+      "validated": true,
+      "version": "1.0"
+    }
+  },
+  {
+    "id": 198,
+    "text": "Podemos fazer uma quick call depois do laboratório?\n\nBjs\nSent from my iPhone",
+    "intent": "agendamento_reuniao",
+    "trigger": [
+      "falar"
+    ],
+    "arguments": {
+      "participants": [
+        "laboratório",
+        "quick",
+        "quick call"
+      ],
+      "time": [],
+      "location": [
+        "laboratório"
+      ],
+      "topic": []
+    },
+    "confidence": {
+      "trigger": 0.9,
+      "participants": 0.75,
+      "temporal": 0.8,
+      "location": 0.85,
+      "topic": 0.7
+    },
+    "metadata": {
+      "created_at": "2026-05-11T10:26:58.767589",
+      "validated": true,
+      "version": "1.0"
+    }
+  },
+  {
+    "id": 199,
+    "text": "Tudo certo para depois de almoço. isso resolve-se\n\nAbraço\nEnviado do Outlook",
+    "intent": "reuniao_confirmada",
+    "trigger": [],
+    "arguments": {
+      "participants": [
+        "Enviado",
+        "Outlook",
+        "certo",
+        "depois",
+        "depois de",
+        "resolve"
+      ],
+      "time": [
+        "depois de almoço"
+      ],
+      "location": [],
+      "topic": []
+    },
+    "confidence": {
+      "trigger": 0.9,
+      "participants": 0.75,
+      "temporal": 0.8,
+      "location": 0.85,
+      "topic": 0.7
+    },
+    "metadata": {
+      "created_at": "2026-05-11T10:26:58.767591",
+      "validated": true,
+      "version": "1.0"
+    }
+  },
+  {
+    "id": 200,
+    "text": "Peço desculpa mas temos de adiar.\n\nObrigado\nDISCLAIMER: mensagem automática",
+    "intent": "cancelamento_reuniao",
+    "trigger": [
+      "cancelar"
+    ],
+    "arguments": {
+      "participants": [
+        "DISCLAIMER",
+        "Peço",
+        "mas",
+        "mas temos"
+      ],
+      "time": [],
+      "location": [],
+      "topic": []
+    },
+    "confidence": {
+      "trigger": 0.9,
+      "participants": 0.75,
+      "temporal": 0.8,
+      "location": 0.85,
+      "topic": 0.7
+    },
+    "metadata": {
+      "created_at": "2026-05-11T10:26:58.767594",
+      "validated": true,
+      "version": "1.0"
+    }
+  },
+  {
+    "id": 201,
+    "text": "Confirmado 👍\n\nBest regards",
+    "intent": "reuniao_confirmada",
+    "trigger": [
+      "reunir"
+    ],
+    "arguments": {
+      "participants": [
+        "Confirmado",
+        "confirmada"
+      ],
+      "time": [],
+      "location": [],
+      "topic": []
+    },
+    "confidence": {
+      "trigger": 0.9,
+      "participants": 0.75,
+      "temporal": 0.8,
+      "location": 0.85,
+      "topic": 0.7
+    },
+    "metadata": {
+      "created_at": "2026-05-11T10:26:58.767595",
+      "validated": true,
+      "version": "1.0"
+    }
+  },
+  {
+    "id": 202,
+    "text": "Não vou conseguir aparecer segunda.\n\nBest regards\nSent from my iPhone",
+    "intent": "cancelamento_reuniao",
+    "trigger": [],
+    "arguments": {
+      "participants": [
+        "vou"
+      ],
+      "time": [
+        "segunda"
+      ],
+      "location": [],
+      "topic": []
+    },
+    "confidence": {
+      "trigger": 0.9,
+      "participants": 0.75,
+      "temporal": 0.8,
+      "location": 0.85,
+      "topic": 0.7
+    },
+    "metadata": {
+      "created_at": "2026-05-11T10:26:58.767598",
+      "validated": true,
+      "version": "1.0"
+    }
+  },
+  {
+    "id": 203,
+    "text": "A reunião fica sem efeito.\n\nCumprimentos\nEnviado do Outlook",
+    "intent": "cancelamento_reuniao",
+    "trigger": [
+      "reunir"
+    ],
+    "arguments": {
+      "participants": [
+        "Imprevisto",
+        "reunião",
+        "reunião fica",
+        "sem"
+      ],
+      "time": [],
+      "location": [],
+      "topic": []
+    },
+    "confidence": {
+      "trigger": 0.9,
+      "participants": 0.75,
+      "temporal": 0.8,
+      "location": 0.85,
+      "topic": 0.7
+    },
+    "metadata": {
+      "created_at": "2026-05-11T10:26:58.767600",
+      "validated": true,
+      "version": "1.0"
+    }
+  },
+  {
+    "id": 204,
+    "text": "Combinado, vemos isso segunda.\n\nCumprimentos\nEnviado do telemóvel",
+    "intent": "reuniao_confirmada",
+    "trigger": [
+      "reunir"
+    ],
+    "arguments": {
+      "participants": [
+        "Combinado",
+        "confirmada",
+        "segunda"
+      ],
+      "time": [
+        "segunda"
+      ],
+      "location": [],
+      "topic": []
+    },
+    "confidence": {
+      "trigger": 0.9,
+      "participants": 0.75,
+      "temporal": 0.8,
+      "location": 0.85,
+      "topic": 0.7
+    },
+    "metadata": {
+      "created_at": "2026-05-11T10:26:58.767602",
+      "validated": true,
+      "version": "1.0"
+    }
+  },
+  {
+    "id": 205,
+    "text": "Podemos fazer uma quick call ao final do dia? na boa\n\nCumps\nEnviado do telemóvel",
+    "intent": "agendamento_reuniao",
+    "trigger": [
+      "falar"
+    ],
+    "arguments": {
+      "participants": [
+        "boa",
+        "boa\n\nCumps",
+        "dia",
+        "final",
+        "quick",
+        "quick call"
+      ],
+      "time": [],
+      "location": [],
+      "topic": []
+    },
+    "confidence": {
+      "trigger": 0.9,
+      "participants": 0.75,
+      "temporal": 0.8,
+      "location": 0.85,
+      "topic": 0.7
+    },
+    "metadata": {
+      "created_at": "2026-05-11T10:26:58.767605",
+      "validated": true,
+      "version": "1.0"
+    }
+  },
+  {
+    "id": 206,
+    "text": "Pode ser.\n\nBjs",
+    "intent": "reuniao_confirmada",
+    "trigger": [
+      "combinar"
+    ],
+    "arguments": {
+      "participants": [
+        "Pode"
+      ],
+      "time": [],
+      "location": [],
+      "topic": []
+    },
+    "confidence": {
+      "trigger": 0.9,
+      "participants": 0.75,
+      "temporal": 0.8,
+      "location": 0.85,
+      "topic": 0.7
+    },
+    "metadata": {
+      "created_at": "2026-05-11T10:26:58.767608",
+      "validated": true,
+      "version": "1.0"
+    }
+  },
+  {
+    "id": 207,
+    "text": "Pode ser. vemos isso amanhã\n\nAbraço\nSent from my iPhone",
+    "intent": "reuniao_confirmada",
+    "trigger": [
+      "confirmar"
+    ],
+    "arguments": {
+      "participants": [
+        "Confirmado",
+        "Sent",
+        "amanhã"
+      ],
+      "time": [
+        "amanhã"
+      ],
+      "location": [],
+      "topic": []
+    },
+    "confidence": {
+      "trigger": 0.9,
+      "participants": 0.75,
+      "temporal": 0.8,
+      "location": 0.85,
+      "topic": 0.7
+    },
+    "metadata": {
+      "created_at": "2026-05-11T10:26:58.767610",
+      "validated": true,
+      "version": "1.0"
+    }
+  },
+  {
+    "id": 208,
+    "text": "Podemos fazer uma quick call ao final do dia? 🔥\n\nCumps",
+    "intent": "agendamento_reuniao",
+    "trigger": [
+      "reunir"
+    ],
+    "arguments": {
+      "participants": [
+        "Podemos",
+        "dia",
+        "final",
+        "quick",
+        "quick call"
+      ],
+      "time": [],
+      "location": [],
+      "topic": []
+    },
+    "confidence": {
+      "trigger": 0.9,
+      "participants": 0.75,
+      "temporal": 0.8,
+      "location": 0.85,
+      "topic": 0.7
+    },
+    "metadata": {
+      "created_at": "2026-05-11T10:26:58.767612",
+      "validated": true,
+      "version": "1.0"
+    }
+  },
+  {
+    "id": 209,
+    "text": "Se calhar era melhor reunir pelas 14h.\n\nObrigado\nEnviado do Outlook",
+    "intent": "agendamento_reuniao",
+    "trigger": [
+      "reunir"
+    ],
+    "arguments": {
+      "participants": [
+        "Enviado",
+        "Outlook",
+        "melhor",
+        "melhor reunir"
+      ],
+      "time": [],
+      "location": [],
+      "topic": [
+        "Dissertação"
+      ]
+    },
+    "confidence": {
+      "trigger": 0.9,
+      "participants": 0.75,
+      "temporal": 0.8,
+      "location": 0.85,
+      "topic": 0.7
+    },
+    "metadata": {
+      "created_at": "2026-05-11T10:26:58.767614",
+      "validated": true,
+      "version": "1.0"
+    }
+  },
+  {
+    "id": 210,
+    "text": "Pode ser.\nvemos isso amanhã\n\nThanks",
+    "intent": "reuniao_confirmada",
+    "trigger": [],
+    "arguments": {
+      "participants": [
+        "amanhã",
+        "certo"
+      ],
+      "time": [
+        "amanhã"
+      ],
+      "location": [],
+      "topic": []
+    },
+    "confidence": {
+      "trigger": 0.9,
+      "participants": 0.75,
+      "temporal": 0.8,
+      "location": 0.85,
+      "topic": 0.7
+    },
+    "metadata": {
+      "created_at": "2026-05-11T10:26:58.767616",
+      "validated": true,
+      "version": "1.0"
+    }
+  },
+  {
+    "id": 211,
+    "text": "Depois falamos.\n\nAbraço",
+    "intent": "reuniao_confirmada",
+    "trigger": [
+      "combinar"
+    ],
+    "arguments": {
+      "participants": [
+        "Depois"
+      ],
+      "time": [],
+      "location": [],
+      "topic": []
+    },
+    "confidence": {
+      "trigger": 0.9,
+      "participants": 0.75,
+      "temporal": 0.8,
+      "location": 0.85,
+      "topic": 0.7
+    },
+    "metadata": {
+      "created_at": "2026-05-11T10:26:58.767618",
+      "validated": true,
+      "version": "1.0"
+    }
+  },
+  {
+    "id": 212,
+    "text": "Bora fazer uma reunião rápida mais logo?\n\nBest regards\nEnviado do Outlook",
+    "intent": "agendamento_reuniao",
+    "trigger": [
+      "reunir"
+    ],
+    "arguments": {
+      "participants": [
+        "Bora",
+        "fazer uma",
+        "mais",
+        "mais logo",
+        "reunião"
+      ],
+      "time": [
+        "mais logo"
+      ],
+      "location": [],
+      "topic": [
+        "Projeto"
+      ]
+    },
+    "confidence": {
+      "trigger": 0.9,
+      "participants": 0.75,
+      "temporal": 0.8,
+      "location": 0.85,
+      "topic": 0.7
+    },
+    "metadata": {
+      "created_at": "2026-05-11T10:26:58.767622",
+      "validated": true,
+      "version": "1.0"
+    }
+  },
+  {
+    "id": 213,
+    "text": "Afinal já não consigo reunir.\n\nCumprimentos\nSent from my iPhone",
+    "intent": "cancelamento_reuniao",
+    "trigger": [
+      "reunir"
+    ],
+    "arguments": {
+      "participants": [
+        "Afinal",
+        "consigo"
+      ],
+      "time": [],
+      "location": [],
+      "topic": []
+    },
+    "confidence": {
+      "trigger": 0.9,
+      "participants": 0.75,
+      "temporal": 0.8,
+      "location": 0.85,
+      "topic": 0.7
+    },
+    "metadata": {
+      "created_at": "2026-05-11T10:26:58.767624",
+      "validated": true,
+      "version": "1.0"
+    }
+  },
+  {
+    "id": 214,
+    "text": "Pode ser.\nna boa 🔥\n\nAté já\nDISCLAIMER: mensagem automática",
+    "intent": "cancelamento_reuniao",
+    "trigger": [],
+    "arguments": {
+      "participants": [
+        "boa",
+        "vou"
+      ],
+      "time": [],
+      "location": [],
+      "topic": []
+    },
+    "confidence": {
+      "trigger": 0.9,
+      "participants": 0.75,
+      "temporal": 0.8,
+      "location": 0.85,
+      "topic": 0.7
+    },
+    "metadata": {
+      "created_at": "2026-05-11T10:26:58.767627",
+      "validated": true,
+      "version": "1.0"
+    }
+  },
+  {
+    "id": 215,
+    "text": "Confirmado 👍\n\nAbraço\nDISCLAIMER: mensagem automática",
+    "intent": "reuniao_confirmada",
+    "trigger": [
+      "confirmar"
+    ],
+    "arguments": {
+      "participants": [
+        "Confirmado",
+        "DISCLAIMER"
+      ],
+      "time": [],
+      "location": [],
+      "topic": []
+    },
+    "confidence": {
+      "trigger": 0.9,
+      "participants": 0.75,
+      "temporal": 0.8,
+      "location": 0.85,
+      "topic": 0.7
+    },
+    "metadata": {
+      "created_at": "2026-05-11T10:26:58.767630",
+      "validated": true,
+      "version": "1.0"
+    }
+  },
+  {
+    "id": 216,
+    "text": "Bom dia André, podemos reunir antes da aula para falar sobre dissertação? isso resolve-se\n\nObrigado\nDISCLAIMER: mensagem automática",
+    "intent": "agendamento_reuniao",
+    "trigger": [
+      "reunir"
+    ],
+    "arguments": {
+      "participants": [
+        "André",
+        "DISCLAIMER",
+        "aula",
+        "aula para",
+        "falar",
+        "resolve"
+      ],
+      "time": [],
+      "location": [],
+      "topic": [
+        "dissertação"
+      ]
+    },
+    "confidence": {
+      "trigger": 0.9,
+      "participants": 0.75,
+      "temporal": 0.8,
+      "location": 0.85,
+      "topic": 0.7
+    },
+    "metadata": {
+      "created_at": "2026-05-11T10:26:58.767632",
+      "validated": true,
+      "version": "1.0"
+    }
+  },
+  {
+    "id": 217,
+    "text": "Viva Carolina, tens disponibilidade após o seminário?\n\nCumprimentos\nEnviado do telemóvel",
+    "intent": "agendamento_reuniao",
+    "trigger": [],
+    "arguments": {
+      "participants": [
+        "Carolina",
+        "seminário"
+      ],
+      "time": [],
+      "location": [],
+      "topic": []
+    },
+    "confidence": {
+      "trigger": 0.9,
+      "participants": 0.75,
+      "temporal": 0.8,
+      "location": 0.85,
+      "topic": 0.7
+    },
+    "metadata": {
+      "created_at": "2026-05-11T10:26:58.767634",
+      "validated": true,
+      "version": "1.0"
+    }
+  },
+  {
+    "id": 218,
+    "text": "15h é complicado.\n\nAbraço\nEnviado do telemóvel",
+    "intent": "reuniao_confirmada",
+    "trigger": [],
+    "arguments": {
+      "participants": [
+        "Enviado",
+        "certo",
+        "telemóvel"
+      ],
+      "time": [],
+      "location": [],
+      "topic": []
+    },
+    "confidence": {
+      "trigger": 0.9,
+      "participants": 0.75,
+      "temporal": 0.8,
+      "location": 0.85,
+      "topic": 0.7
+    },
+    "metadata": {
+      "created_at": "2026-05-11T10:26:58.767637",
+      "validated": true,
+      "version": "1.0"
+    }
+  },
+  {
+    "id": 219,
+    "text": "15h é complicado. na boa\n\nCumps",
+    "intent": "reuniao_confirmada",
+    "trigger": [
+      "reunir"
+    ],
+    "arguments": {
+      "participants": [
+        "boa",
+        "boa\n\nCumps",
+        "confirmada"
+      ],
+      "time": [],
+      "location": [],
+      "topic": []
+    },
+    "confidence": {
+      "trigger": 0.9,
+      "participants": 0.75,
+      "temporal": 0.8,
+      "location": 0.85,
+      "topic": 0.7
+    },
+    "metadata": {
+      "created_at": "2026-05-11T10:26:58.767639",
+      "validated": true,
+      "version": "1.0"
+    }
+  },
+  {
+    "id": 220,
+    "text": "Está ótimo para mim. logo se vê 🔥\n\nAbraço\nSent from my iPhone",
+    "intent": "reuniao_confirmada",
+    "trigger": [
+      "combinar"
+    ],
+    "arguments": {
+      "participants": [
+        "Está",
+        "Sent",
+        "mim",
+        "para"
+      ],
+      "time": [
+        "logo"
+      ],
+      "location": [],
+      "topic": []
+    },
+    "confidence": {
+      "trigger": 0.9,
+      "participants": 0.75,
+      "temporal": 0.8,
+      "location": 0.85,
+      "topic": 0.7
+    },
+    "metadata": {
+      "created_at": "2026-05-11T10:26:58.767641",
+      "validated": true,
+      "version": "1.0"
+    }
+  },
+  {
+    "id": 221,
+    "text": "Tudo certo para entre cadeiras. na boa 🔥\n\nBest regards",
+    "intent": "reuniao_confirmada",
+    "trigger": [
+      "confirmar"
+    ],
+    "arguments": {
+      "participants": [
+        "Tudo",
+        "boa",
+        "entre cadeiras",
+        "para"
+      ],
+      "time": [],
+      "location": [],
+      "topic": []
+    },
+    "confidence": {
+      "trigger": 0.9,
+      "participants": 0.75,
+      "temporal": 0.8,
+      "location": 0.85,
+      "topic": 0.7
+    },
+    "metadata": {
+      "created_at": "2026-05-11T10:26:58.767643",
+      "validated": true,
+      "version": "1.0"
+    }
+  },
+  {
+    "id": 222,
+    "text": "Eu apareço no sala 2.3.\n\nCumprimentos\nSent from my iPhone",
+    "intent": "reuniao_confirmada",
+    "trigger": [
+      "confirmar"
+    ],
+    "arguments": {
+      "participants": [
+        "Confirmado"
+      ],
+      "time": [],
+      "location": [
+        "sala 2.3"
+      ],
+      "topic": []
+    },
+    "confidence": {
+      "trigger": 0.9,
+      "participants": 0.75,
+      "temporal": 0.8,
+      "location": 0.85,
+      "topic": 0.7
+    },
+    "metadata": {
+      "created_at": "2026-05-11T10:26:58.767645",
+      "validated": true,
+      "version": "1.0"
+    }
+  },
+  {
+    "id": 223,
+    "text": "Tranquilo.\n\n\nEnviado do Outlook",
+    "intent": "cancelamento_reuniao",
+    "trigger": [],
+    "arguments": {
+      "participants": [
+        "de planos"
+      ],
+      "time": [],
+      "location": [],
+      "topic": []
+    },
+    "confidence": {
+      "trigger": 0.9,
+      "participants": 0.75,
+      "temporal": 0.8,
+      "location": 0.85,
+      "topic": 0.7
+    },
+    "metadata": {
+      "created_at": "2026-05-11T10:26:58.767647",
+      "validated": true,
+      "version": "1.0"
+    }
+  },
+  {
+    "id": 224,
+    "text": "Afinal já não consigo reunir.\n\nAbraço\nSent from my iPhone",
+    "intent": "cancelamento_reuniao",
+    "trigger": [
+      "reunir"
+    ],
+    "arguments": {
+      "participants": [
+        "Adiar",
+        "Afinal",
+        "Sent",
+        "consigo"
+      ],
+      "time": [],
+      "location": [],
+      "topic": []
+    },
+    "confidence": {
+      "trigger": 0.9,
+      "participants": 0.75,
+      "temporal": 0.8,
+      "location": 0.85,
+      "topic": 0.7
+    },
+    "metadata": {
+      "created_at": "2026-05-11T10:26:58.767649",
+      "validated": true,
+      "version": "1.0"
+    }
+  },
+  {
+    "id": 225,
+    "text": "Ok, parece-me bem.\n\nCumps\nSent from my iPhone",
+    "intent": "reuniao_confirmada",
+    "trigger": [
+      "combinar"
+    ],
+    "arguments": {
+      "participants": [
+        "Combinado"
+      ],
+      "time": [],
+      "location": [],
+      "topic": []
+    },
+    "confidence": {
+      "trigger": 0.9,
+      "participants": 0.75,
+      "temporal": 0.8,
+      "location": 0.85,
+      "topic": 0.7
+    },
+    "metadata": {
+      "created_at": "2026-05-11T10:26:58.767651",
+      "validated": true,
+      "version": "1.0"
+    }
+  },
+  {
+    "id": 226,
+    "text": "Pode ser. logo se vê\n\nBest regards\nSent from my iPhone",
+    "intent": "reuniao_confirmada",
+    "trigger": [],
+    "arguments": {
+      "participants": [
+        "certo"
+      ],
+      "time": [
+        "logo"
+      ],
+      "location": [],
+      "topic": []
+    },
+    "confidence": {
+      "trigger": 0.9,
+      "participants": 0.75,
+      "temporal": 0.8,
+      "location": 0.85,
+      "topic": 0.7
+    },
+    "metadata": {
+      "created_at": "2026-05-11T10:26:58.767654",
+      "validated": true,
+      "version": "1.0"
+    }
+  },
+  {
+    "id": 227,
+    "text": "Vou ter aula nesse horário.\n\nCumprimentos\nSent from my iPhone",
+    "intent": "cancelamento_reuniao",
+    "trigger": [
+      "cancelar"
+    ],
+    "arguments": {
+      "participants": [
+        "Vou",
+        "nesse",
+        "nesse horário"
+      ],
+      "time": [],
+      "location": [],
+      "topic": []
+    },
+    "confidence": {
+      "trigger": 0.9,
+      "participants": 0.75,
+      "temporal": 0.8,
+      "location": 0.85,
+      "topic": 0.7
+    },
+    "metadata": {
+      "created_at": "2026-05-11T10:26:58.767656",
+      "validated": true,
+      "version": "1.0"
+    }
+  },
+  {
+    "id": 228,
+    "text": "Boas Miguel, tens disponibilidade segunda?\n\nThanks",
+    "intent": "agendamento_reuniao",
+    "trigger": [
+      "falar"
+    ],
+    "arguments": {
+      "participants": [
+        "Miguel"
+      ],
+      "time": [
+        "segunda"
+      ],
+      "location": [],
+      "topic": []
+    },
+    "confidence": {
+      "trigger": 0.9,
+      "participants": 0.75,
+      "temporal": 0.8,
+      "location": 0.85,
+      "topic": 0.7
+    },
+    "metadata": {
+      "created_at": "2026-05-11T10:26:58.767659",
+      "validated": true,
+      "version": "1.0"
+    }
+  },
+  {
+    "id": 229,
+    "text": "Pode ser.\n\nThanks\nDISCLAIMER: mensagem automática",
+    "intent": "agendamento_reuniao",
+    "trigger": [],
+    "arguments": {
+      "participants": [],
+      "time": [],
+      "location": [],
+      "topic": []
+    },
+    "confidence": {
+      "trigger": 0.9,
+      "participants": 0.75,
+      "temporal": 0.8,
+      "location": 0.85,
+      "topic": 0.7
+    },
+    "metadata": {
+      "created_at": "2026-05-11T10:26:58.767660",
+      "validated": true,
+      "version": "1.0"
+    }
+  },
+  {
+    "id": 230,
+    "text": "Quando puderes temos de combinar uma reuniao.\n\nThanks\nEnviado do Outlook",
+    "intent": "agendamento_reuniao",
+    "trigger": [
+      "combinar"
+    ],
+    "arguments": {
+      "participants": [
+        "puderes",
+        "reuniao"
+      ],
+      "time": [],
+      "location": [],
+      "topic": []
+    },
+    "confidence": {
+      "trigger": 0.9,
+      "participants": 0.75,
+      "temporal": 0.8,
+      "location": 0.85,
+      "topic": 0.7
+    },
+    "metadata": {
+      "created_at": "2026-05-11T10:26:58.767662",
+      "validated": true,
+      "version": "1.0"
+    }
+  },
+  {
+    "id": 231,
+    "text": "Hi Ana, afinal vou ter de cancelar a reunião de pelas 14h. vemos isso amanha\n\nBest regards\nDISCLAIMER: mensagem automática",
+    "intent": "cancelamento_reuniao",
+    "trigger": [
+      "reunir"
+    ],
+    "arguments": {
+      "participants": [
+        "Best regards",
+        "amanha",
+        "reunião",
+        "reunião de"
+      ],
+      "time": [],
+      "location": [],
+      "topic": []
+    },
+    "confidence": {
+      "trigger": 0.9,
+      "participants": 0.75,
+      "temporal": 0.8,
+      "location": 0.85,
+      "topic": 0.7
+    },
+    "metadata": {
+      "created_at": "2026-05-11T10:26:58.767665",
+      "validated": true,
+      "version": "1.0"
+    }
+  },
+  {
+    "id": 232,
+    "text": "Confirmado. vemos isso amanhã 😅\n\nBjs\nDISCLAIMER: mensagem automática",
+    "intent": "reuniao_confirmada",
+    "trigger": [
+      "confirmar"
+    ],
+    "arguments": {
+      "participants": [
+        "Confirmado",
+        "amanhã"
+      ],
+      "time": [
+        "amanhã"
+      ],
+      "location": [],
+      "topic": []
+    },
+    "confidence": {
+      "trigger": 0.9,
+      "participants": 0.75,
+      "temporal": 0.8,
+      "location": 0.85,
+      "topic": 0.7
+    },
+    "metadata": {
+      "created_at": "2026-05-11T10:26:58.767667",
+      "validated": true,
+      "version": "1.0"
+    }
+  },
+  {
+    "id": 233,
+    "text": "Pode ser.\n\n\nEnviado do Outlook",
+    "intent": "reuniao_confirmada",
+    "trigger": [
+      "combinar"
+    ],
+    "arguments": {
+      "participants": [
+        "Pode"
+      ],
+      "time": [],
+      "location": [],
+      "topic": []
+    },
+    "confidence": {
+      "trigger": 0.9,
+      "participants": 0.75,
+      "temporal": 0.8,
+      "location": 0.85,
+      "topic": 0.7
+    },
+    "metadata": {
+      "created_at": "2026-05-11T10:26:58.767670",
+      "validated": true,
+      "version": "1.0"
+    }
+  },
+  {
+    "id": 234,
+    "text": "Confirmado 👍\n\nBest regards\nSent from my iPhone",
+    "intent": "reuniao_confirmada",
+    "trigger": [
+      "confirmar"
+    ],
+    "arguments": {
+      "participants": [
+        "Confirmado"
+      ],
+      "time": [],
+      "location": [],
+      "topic": []
+    },
+    "confidence": {
+      "trigger": 0.9,
+      "participants": 0.75,
+      "temporal": 0.8,
+      "location": 0.85,
+      "topic": 0.7
+    },
+    "metadata": {
+      "created_at": "2026-05-11T10:26:58.767673",
+      "validated": true,
+      "version": "1.0"
+    }
+  },
+  {
+    "id": 235,
+    "text": "Perfeito, fica então combinado para daqui a 2 dias.\n\nBjs\nDISCLAIMER: mensagem automática",
+    "intent": "reuniao_confirmada",
+    "trigger": [
+      "confirmar"
+    ],
+    "arguments": {
+      "participants": [
+        "Perfeito",
+        "daqui",
+        "então",
+        "então combinado",
+        "para"
+      ],
+      "time": [
+        "a 2"
+      ],
+      "location": [],
+      "topic": []
+    },
+    "confidence": {
+      "trigger": 0.9,
+      "participants": 0.75,
+      "temporal": 0.8,
+      "location": 0.85,
+      "topic": 0.7
+    },
+    "metadata": {
+      "created_at": "2026-05-11T10:26:58.767675",
+      "validated": true,
+      "version": "1.0"
+    }
+  },
+  {
+    "id": 236,
+    "text": "Podemos fazer uma quick call segunda? tranquilo 🔥\n\n\nEnviado do telemóvel",
+    "intent": "agendamento_reuniao",
+    "trigger": [
+      "reunir"
+    ],
+    "arguments": {
+      "participants": [
+        "Podemos",
+        "quick",
+        "quick call"
+      ],
+      "time": [
+        "segunda"
+      ],
+      "location": [],
+      "topic": []
+    },
+    "confidence": {
+      "trigger": 0.9,
+      "participants": 0.75,
+      "temporal": 0.8,
+      "location": 0.85,
+      "topic": 0.7
+    },
+    "metadata": {
+      "created_at": "2026-05-11T10:26:58.767677",
+      "validated": true,
+      "version": "1.0"
+    }
+  },
+  {
+    "id": 237,
+    "text": "Depois falamos.\nlogo se vê\n\nAbraço\nEnviado do telemóvel",
+    "intent": "cancelamento_reuniao",
+    "trigger": [
+      "cancelar"
+    ],
+    "arguments": {
+      "participants": [
+        "Depois",
+        "Enviado",
+        "telemóvel"
+      ],
+      "time": [
+        "logo"
+      ],
+      "location": [],
+      "topic": []
+    },
+    "confidence": {
+      "trigger": 0.9,
+      "participants": 0.75,
+      "temporal": 0.8,
+      "location": 0.85,
+      "topic": 0.7
+    },
+    "metadata": {
+      "created_at": "2026-05-11T10:26:58.767680",
+      "validated": true,
+      "version": "1.0"
+    }
+  },
+  {
+    "id": 238,
+    "text": "Tranquilo.\n\nBest regards\nDISCLAIMER: mensagem automática",
+    "intent": "reuniao_confirmada",
+    "trigger": [
+      "combinar"
+    ],
+    "arguments": {
+      "participants": [
+        "Tranquilo"
+      ],
+      "time": [],
+      "location": [],
+      "topic": []
+    },
+    "confidence": {
+      "trigger": 0.9,
+      "participants": 0.75,
+      "temporal": 0.8,
+      "location": 0.85,
+      "topic": 0.7
+    },
+    "metadata": {
+      "created_at": "2026-05-11T10:26:58.767682",
+      "validated": true,
+      "version": "1.0"
+    }
+  },
+  {
+    "id": 239,
+    "text": "Temos de alinhar a parte do baseline.\n\nObrigado\nSent from my iPhone",
+    "intent": "agendamento_reuniao",
+    "trigger": [],
+    "arguments": {
+      "participants": [
+        "Projeto",
+        "Sent",
+        "baseline",
+        "parte",
+        "parte do"
+      ],
+      "time": [],
+      "location": [],
+      "topic": [
+        "Projeto"
+      ]
+    },
+    "confidence": {
+      "trigger": 0.9,
+      "participants": 0.75,
+      "temporal": 0.8,
+      "location": 0.85,
+      "topic": 0.7
+    },
+    "metadata": {
+      "created_at": "2026-05-11T10:26:58.767685",
+      "validated": true,
+      "version": "1.0"
+    }
+  },
+  {
+    "id": 240,
+    "text": "Se calhar era melhor reunir amanhã.\n\nObrigado\nDISCLAIMER: mensagem automática",
+    "intent": "agendamento_reuniao",
+    "trigger": [
+      "reunir"
+    ],
+    "arguments": {
+      "participants": [
+        "DISCLAIMER",
+        "melhor",
+        "melhor reunir",
+        "resultados"
+      ],
+      "time": [
+        "amanhã"
+      ],
+      "location": [],
+      "topic": []
+    },
+    "confidence": {
+      "trigger": 0.9,
+      "participants": 0.75,
+      "temporal": 0.8,
+      "location": 0.85,
+      "topic": 0.7
+    },
+    "metadata": {
+      "created_at": "2026-05-11T10:26:58.767688",
+      "validated": true,
+      "version": "1.0"
+    }
+  },
+  {
+    "id": 241,
+    "text": "Logo vemos.\n\n\nSent from my iPhone",
+    "intent": "cancelamento_reuniao",
+    "trigger": [
+      "reunir"
+    ],
+    "arguments": {
+      "participants": [
+        "Logo"
+      ],
+      "time": [
+        "Logo"
+      ],
+      "location": [],
+      "topic": []
+    },
+    "confidence": {
+      "trigger": 0.9,
+      "participants": 0.75,
+      "temporal": 0.8,
+      "location": 0.85,
+      "topic": 0.7
+    },
+    "metadata": {
+      "created_at": "2026-05-11T10:26:58.767690",
+      "validated": true,
+      "version": "1.0"
+    }
+  },
+  {
+    "id": 242,
+    "text": "Surgiu um imprevisto.\n\nThanks\nEnviado do telemóvel",
+    "intent": "cancelamento_reuniao",
+    "trigger": [],
+    "arguments": {
+      "participants": [
+        "vou"
+      ],
+      "time": [],
+      "location": [],
+      "topic": []
+    },
+    "confidence": {
+      "trigger": 0.9,
+      "participants": 0.75,
+      "temporal": 0.8,
+      "location": 0.85,
+      "topic": 0.7
+    },
+    "metadata": {
+      "created_at": "2026-05-11T10:26:58.767692",
+      "validated": true,
+      "version": "1.0"
+    }
+  },
+  {
+    "id": 243,
+    "text": "Se calhar era melhor reunir terça.\n\nCumprimentos",
+    "intent": "agendamento_reuniao",
+    "trigger": [
+      "reunir"
+    ],
+    "arguments": {
+      "participants": [
+        "melhor",
+        "melhor reunir"
+      ],
+      "time": [
+        "terça"
+      ],
+      "location": [],
+      "topic": []
+    },
+    "confidence": {
+      "trigger": 0.9,
+      "participants": 0.75,
+      "temporal": 0.8,
+      "location": 0.85,
+      "topic": 0.7
+    },
+    "metadata": {
+      "created_at": "2026-05-11T10:26:58.767694",
+      "validated": true,
+      "version": "1.0"
+    }
+  },
+  {
+    "id": 244,
+    "text": "Está ótimo para mim.\n\nObrigado\nDISCLAIMER: mensagem automática",
+    "intent": "reuniao_confirmada",
+    "trigger": [
+      "combinar"
+    ],
+    "arguments": {
+      "participants": [
+        "Combinado",
+        "DISCLAIMER",
+        "mim",
+        "para"
+      ],
+      "time": [],
+      "location": [],
+      "topic": []
+    },
+    "confidence": {
+      "trigger": 0.9,
+      "participants": 0.75,
+      "temporal": 0.8,
+      "location": 0.85,
+      "topic": 0.7
+    },
+    "metadata": {
+      "created_at": "2026-05-11T10:26:58.767696",
+      "validated": true,
+      "version": "1.0"
+    }
+  },
+  {
+    "id": 245,
+    "text": "Se calhar era melhor reunir antes da aula.\n\nBest regards\nDISCLAIMER: mensagem automática",
+    "intent": "agendamento_reuniao",
+    "trigger": [
+      "reunir"
+    ],
+    "arguments": {
+      "participants": [
+        "aula",
+        "melhor",
+        "melhor reunir"
+      ],
+      "time": [],
+      "location": [],
+      "topic": [
+        "Projeto"
+      ]
+    },
+    "confidence": {
+      "trigger": 0.9,
+      "participants": 0.75,
+      "temporal": 0.8,
+      "location": 0.85,
+      "topic": 0.7
+    },
+    "metadata": {
+      "created_at": "2026-05-11T10:26:58.767698",
+      "validated": true,
+      "version": "1.0"
+    }
+  },
+  {
+    "id": 246,
+    "text": "Confirmado.\ntranquilo 😂\n\nAbraço\nDISCLAIMER: mensagem automática",
+    "intent": "agendamento_reuniao",
+    "trigger": [
+      "confirmar"
+    ],
+    "arguments": {
+      "participants": [
+        "DISCLAIMER"
+      ],
+      "time": [],
+      "location": [],
+      "topic": []
+    },
+    "confidence": {
+      "trigger": 0.9,
+      "participants": 0.75,
+      "temporal": 0.8,
+      "location": 0.85,
+      "topic": 0.7
+    },
+    "metadata": {
+      "created_at": "2026-05-11T10:26:58.767700",
+      "validated": true,
+      "version": "1.0"
+    }
+  },
+  {
+    "id": 247,
+    "text": "Logo vemos. 👌\n\nAbraço\nEnviado do Outlook",
+    "intent": "agendamento_reuniao",
+    "trigger": [
+      "falar"
+    ],
+    "arguments": {
+      "participants": [
+        "Enviado",
+        "Outlook",
+        "vemos"
+      ],
+      "time": [
+        "Logo"
+      ],
+      "location": [],
+      "topic": []
+    },
+    "confidence": {
+      "trigger": 0.9,
+      "participants": 0.75,
+      "temporal": 0.8,
+      "location": 0.85,
+      "topic": 0.7
+    },
+    "metadata": {
+      "created_at": "2026-05-11T10:26:58.767704",
+      "validated": true,
+      "version": "1.0"
+    }
+  },
+  {
+    "id": 248,
+    "text": "Pode ser.\n\n\nEnviado do telemóvel",
+    "intent": "agendamento_reuniao",
+    "trigger": [],
+    "arguments": {
+      "participants": [],
+      "time": [],
+      "location": [],
+      "topic": []
+    },
+    "confidence": {
+      "trigger": 0.9,
+      "participants": 0.75,
+      "temporal": 0.8,
+      "location": 0.85,
+      "topic": 0.7
+    },
+    "metadata": {
+      "created_at": "2026-05-11T10:26:58.767706",
+      "validated": true,
+      "version": "1.0"
+    }
+  },
+  {
+    "id": 249,
+    "text": "Precisamos de discutir o pipeline NLP.\nDá para reunir daqui a 2 dias?\n\nCumprimentos\nEnviado do Outlook",
+    "intent": "agendamento_reuniao",
+    "trigger": [
+      "reunir"
+    ],
+    "arguments": {
+      "participants": [
+        "pipeline",
+        "reunir",
+        "reunir daqui"
+      ],
+      "time": [
+        "a 2"
+      ],
+      "location": [],
+      "topic": [
+        "pipeline",
+        "NLP"
+      ]
+    },
+    "confidence": {
+      "trigger": 0.9,
+      "participants": 0.75,
+      "temporal": 0.8,
+      "location": 0.85,
+      "topic": 0.7
+    },
+    "metadata": {
+      "created_at": "2026-05-11T10:26:58.767708",
+      "validated": true,
+      "version": "1.0"
+    }
+  },
+  {
+    "id": 250,
+    "text": "Peço desculpa mas temos de adiar.\n\nCumprimentos",
+    "intent": "cancelamento_reuniao",
+    "trigger": [
+      "cancelar"
+    ],
+    "arguments": {
+      "participants": [
+        "Peço",
+        "mas",
+        "mas temos"
+      ],
+      "time": [],
+      "location": [],
+      "topic": []
+    },
+    "confidence": {
+      "trigger": 0.9,
+      "participants": 0.75,
+      "temporal": 0.8,
+      "location": 0.85,
+      "topic": 0.7
+    },
+    "metadata": {
+      "created_at": "2026-05-11T10:26:58.767710",
+      "validated": true,
+      "version": "1.0"
+    }
+  },
+  {
+    "id": 251,
+    "text": "Confirmado.\n\nCumps\nEnviado do Outlook",
+    "intent": "reuniao_confirmada",
+    "trigger": [
+      "confirmar"
+    ],
+    "arguments": {
+      "participants": [
+        "Confirmado"
+      ],
+      "time": [],
+      "location": [],
+      "topic": []
+    },
+    "confidence": {
+      "trigger": 0.9,
+      "participants": 0.75,
+      "temporal": 0.8,
+      "location": 0.85,
+      "topic": 0.7
+    },
+    "metadata": {
+      "created_at": "2026-05-11T10:26:58.767712",
+      "validated": true,
+      "version": "1.0"
+    }
+  },
+  {
+    "id": 252,
+    "text": "Está ótimo para mim.\n\nThanks",
+    "intent": "reuniao_confirmada",
+    "trigger": [
+      "confirmar"
+    ],
+    "arguments": {
+      "participants": [
+        "Está",
+        "mim",
+        "para"
+      ],
+      "time": [],
+      "location": [],
+      "topic": []
+    },
+    "confidence": {
+      "trigger": 0.9,
+      "participants": 0.75,
+      "temporal": 0.8,
+      "location": 0.85,
+      "topic": 0.7
+    },
+    "metadata": {
+      "created_at": "2026-05-11T10:26:58.767714",
+      "validated": true,
+      "version": "1.0"
+    }
+  },
+  {
+    "id": 253,
+    "text": "Confirmado. logo se vê\n\nBjs\nEnviado do Outlook",
+    "intent": "cancelamento_reuniao",
+    "trigger": [
+      "reunir"
+    ],
+    "arguments": {
+      "participants": [
+        "Confirmado"
+      ],
+      "time": [
+        "logo"
+      ],
+      "location": [],
+      "topic": []
+    },
+    "confidence": {
+      "trigger": 0.9,
+      "participants": 0.75,
+      "temporal": 0.8,
+      "location": 0.85,
+      "topic": 0.7
+    },
+    "metadata": {
+      "created_at": "2026-05-11T10:26:58.767717",
+      "validated": true,
+      "version": "1.0"
+    }
+  },
+  {
+    "id": 254,
+    "text": "Perfeito, fica então combinado para sexta. 😅\n\n\nDISCLAIMER: mensagem automática",
+    "intent": "reuniao_confirmada",
+    "trigger": [
+      "combinar"
+    ],
+    "arguments": {
+      "participants": [
+        "certo",
+        "então",
+        "então combinado",
+        "para",
+        "sexta"
+      ],
+      "time": [
+        "sexta"
+      ],
+      "location": [],
+      "topic": []
+    },
+    "confidence": {
+      "trigger": 0.9,
+      "participants": 0.75,
+      "temporal": 0.8,
+      "location": 0.85,
+      "topic": 0.7
+    },
+    "metadata": {
+      "created_at": "2026-05-11T10:26:58.767720",
+      "validated": true,
+      "version": "1.0"
+    }
+  },
+  {
+    "id": 255,
+    "text": "Logo vemos.\n\nAbraço\nEnviado do telemóvel",
+    "intent": "agendamento_reuniao",
+    "trigger": [
+      "discutir"
+    ],
+    "arguments": {
+      "participants": [
+        "Enviado",
+        "resultados",
+        "telemóvel",
+        "vemos"
+      ],
+      "time": [
+        "Logo"
+      ],
+      "location": [],
+      "topic": []
+    },
+    "confidence": {
+      "trigger": 0.9,
+      "participants": 0.75,
+      "temporal": 0.8,
+      "location": 0.85,
+      "topic": 0.7
+    },
+    "metadata": {
+      "created_at": "2026-05-11T10:26:58.767722",
+      "validated": true,
+      "version": "1.0"
+    }
+  },
+  {
+    "id": 256,
+    "text": "Fechado então.\n\nBjs\nSent from my iPhone",
+    "intent": "reuniao_confirmada",
+    "trigger": [
+      "reunir"
+    ],
+    "arguments": {
+      "participants": [
+        "Reunião confirmada",
+        "confirmada",
+        "então"
+      ],
+      "time": [],
+      "location": [],
+      "topic": []
+    },
+    "confidence": {
+      "trigger": 0.9,
+      "participants": 0.75,
+      "temporal": 0.8,
+      "location": 0.85,
+      "topic": 0.7
+    },
+    "metadata": {
+      "created_at": "2026-05-11T10:26:58.767724",
+      "validated": true,
+      "version": "1.0"
+    }
+  },
+  {
+    "id": 257,
+    "text": "Quando puderes temos de combinar uma reunião.\n\nAbraço",
+    "intent": "agendamento_reuniao",
+    "trigger": [
+      "reunir"
+    ],
+    "arguments": {
+      "participants": [
+        "puderes",
+        "reunião"
+      ],
+      "time": [],
+      "location": [],
+      "topic": []
+    },
+    "confidence": {
+      "trigger": 0.9,
+      "participants": 0.75,
+      "temporal": 0.8,
+      "location": 0.85,
+      "topic": 0.7
+    },
+    "metadata": {
+      "created_at": "2026-05-11T10:26:58.767726",
+      "validated": true,
+      "version": "1.0"
+    }
+  },
+  {
+    "id": 258,
+    "text": "Depois falamos.\n\nAté já\nEnviado do telemóvel",
+    "intent": "agendamento_reuniao",
+    "trigger": [],
+    "arguments": {
+      "participants": [],
+      "time": [],
+      "location": [],
+      "topic": []
+    },
+    "confidence": {
+      "trigger": 0.9,
+      "participants": 0.75,
+      "temporal": 0.8,
+      "location": 0.85,
+      "topic": 0.7
+    },
+    "metadata": {
+      "created_at": "2026-05-11T10:26:58.767729",
+      "validated": true,
+      "version": "1.0"
+    }
+  },
+  {
+    "id": 259,
+    "text": "Afinal já não consigo reunir. isso resolve-se\n\nThanks\nEnviado do Outlook",
+    "intent": "cancelamento_reuniao",
+    "trigger": [
+      "reunir"
+    ],
+    "arguments": {
+      "participants": [
+        "Afinal",
+        "consigo",
+        "resolve"
+      ],
+      "time": [],
+      "location": [],
+      "topic": []
+    },
+    "confidence": {
+      "trigger": 0.9,
+      "participants": 0.75,
+      "temporal": 0.8,
+      "location": 0.85,
+      "topic": 0.7
+    },
+    "metadata": {
+      "created_at": "2026-05-11T10:26:58.767731",
+      "validated": true,
+      "version": "1.0"
+    }
+  },
+  {
+    "id": 260,
+    "text": "Depois falamos. logo se vê\n\nAté já\nDISCLAIMER: mensagem automática",
+    "intent": "agendamento_reuniao",
+    "trigger": [
+      "reunir"
+    ],
+    "arguments": {
+      "participants": [
+        "Depois"
+      ],
+      "time": [
+        "logo"
+      ],
+      "location": [],
+      "topic": []
+    },
+    "confidence": {
+      "trigger": 0.9,
+      "participants": 0.75,
+      "temporal": 0.8,
+      "location": 0.85,
+      "topic": 0.7
+    },
+    "metadata": {
+      "created_at": "2026-05-11T10:26:58.767733",
+      "validated": true,
+      "version": "1.0"
+    }
+  },
+  {
+    "id": 261,
+    "text": "Não vou conseguir ir ao laboratório.\n\nAbraço\nEnviado do Outlook",
+    "intent": "cancelamento_reuniao",
+    "trigger": [],
+    "arguments": {
+      "participants": [
+        "Enviado",
+        "Outlook",
+        "de planos",
+        "laboratório",
+        "vou"
+      ],
+      "time": [],
+      "location": [
+        "laboratório"
+      ],
+      "topic": []
+    },
+    "confidence": {
+      "trigger": 0.9,
+      "participants": 0.75,
+      "temporal": 0.8,
+      "location": 0.85,
+      "topic": 0.7
+    },
+    "metadata": {
+      "created_at": "2026-05-11T10:26:58.767736",
+      "validated": true,
+      "version": "1.0"
+    }
+  },
+  {
+    "id": 262,
+    "text": "Está ótimo para mim.\n\nThanks",
+    "intent": "reuniao_confirmada",
+    "trigger": [],
+    "arguments": {
+      "participants": [
+        "certo",
+        "mim",
+        "para"
+      ],
+      "time": [],
+      "location": [],
+      "topic": []
+    },
+    "confidence": {
+      "trigger": 0.9,
+      "participants": 0.75,
+      "temporal": 0.8,
+      "location": 0.85,
+      "topic": 0.7
+    },
+    "metadata": {
+      "created_at": "2026-05-11T10:26:58.767738",
+      "validated": true,
+      "version": "1.0"
+    }
+  },
+  {
+    "id": 263,
+    "text": "Temos de alinhar a parte do dissertação.\n\nCumprimentos",
+    "intent": "agendamento_reuniao",
+    "trigger": [
+      "falar"
+    ],
+    "arguments": {
+      "participants": [
+        "dissertação",
+        "parte",
+        "parte do"
+      ],
+      "time": [],
+      "location": [],
+      "topic": [
+        "dissertação"
+      ]
+    },
+    "confidence": {
+      "trigger": 0.9,
+      "participants": 0.75,
+      "temporal": 0.8,
+      "location": 0.85,
+      "topic": 0.7
+    },
+    "metadata": {
+      "created_at": "2026-05-11T10:26:58.767741",
+      "validated": true,
+      "version": "1.0"
+    }
+  },
+  {
+    "id": 264,
+    "text": "Consegues reunir depois da aula? isso resolve-se\n\n\nEnviado do Outlook",
+    "intent": "agendamento_reuniao",
+    "trigger": [
+      "reunir"
+    ],
+    "arguments": {
+      "participants": [
+        "aula",
+        "resolve"
+      ],
+      "time": [],
+      "location": [],
+      "topic": []
+    },
+    "confidence": {
+      "trigger": 0.9,
+      "participants": 0.75,
+      "temporal": 0.8,
+      "location": 0.85,
+      "topic": 0.7
+    },
+    "metadata": {
+      "created_at": "2026-05-11T10:26:58.767742",
+      "validated": true,
+      "version": "1.0"
+    }
+  },
+  {
+    "id": 265,
+    "text": "Pode ser.\n\nAté já",
+    "intent": "reuniao_confirmada",
+    "trigger": [
+      "reunir"
+    ],
+    "arguments": {
+      "participants": [
+        "Pode ser",
+        "confirmada"
+      ],
+      "time": [],
+      "location": [],
+      "topic": []
+    },
+    "confidence": {
+      "trigger": 0.9,
+      "participants": 0.75,
+      "temporal": 0.8,
+      "location": 0.85,
+      "topic": 0.7
+    },
+    "metadata": {
+      "created_at": "2026-05-11T10:26:58.767744",
+      "validated": true,
+      "version": "1.0"
+    }
+  },
+  {
+    "id": 266,
+    "text": "Na boa 👍\n\nCumprimentos\nDISCLAIMER: mensagem automática",
+    "intent": "reuniao_confirmada",
+    "trigger": [
+      "confirmar"
+    ],
+    "arguments": {
+      "participants": [
+        "boa"
+      ],
+      "time": [],
+      "location": [],
+      "topic": []
+    },
+    "confidence": {
+      "trigger": 0.9,
+      "participants": 0.75,
+      "temporal": 0.8,
+      "location": 0.85,
+      "topic": 0.7
+    },
+    "metadata": {
+      "created_at": "2026-05-11T10:26:58.767746",
+      "validated": true,
+      "version": "1.0"
+    }
+  },
+  {
+    "id": 267,
+    "text": "Podemos fazer uma quick call mais logo?\n\nObrigado\nEnviado do Outlook",
+    "intent": "agendamento_reuniao",
+    "trigger": [
+      "discutir"
+    ],
+    "arguments": {
+      "participants": [
+        "Enviado",
+        "Outlook",
+        "quick",
+        "quick call",
+        "resultados"
+      ],
+      "time": [
+        "mais logo"
+      ],
+      "location": [],
+      "topic": []
+    },
+    "confidence": {
+      "trigger": 0.9,
+      "participants": 0.75,
+      "temporal": 0.8,
+      "location": 0.85,
+      "topic": 0.7
+    },
+    "metadata": {
+      "created_at": "2026-05-11T10:26:58.767749",
+      "validated": true,
+      "version": "1.0"
+    }
+  },
+  {
+    "id": 268,
+    "text": "Combinado.\n\nAbraço\nEnviado do telemóvel",
+    "intent": "cancelamento_reuniao",
+    "trigger": [
+      "combinar"
+    ],
+    "arguments": {
+      "participants": [
+        "Enviado",
+        "Imprevisto",
+        "telemóvel"
+      ],
+      "time": [],
+      "location": [],
+      "topic": []
+    },
+    "confidence": {
+      "trigger": 0.9,
+      "participants": 0.75,
+      "temporal": 0.8,
+      "location": 0.85,
+      "topic": 0.7
+    },
+    "metadata": {
+      "created_at": "2026-05-11T10:26:58.767752",
+      "validated": true,
+      "version": "1.0"
+    }
+  },
+  {
+    "id": 269,
+    "text": "Boa tarde João, tens disponibilidade segunda?\n\nObrigado\nSent from my iPhone",
+    "intent": "agendamento_reuniao",
+    "trigger": [
+      "falar"
+    ],
+    "arguments": {
+      "participants": [
+        "Sent",
+        "tarde",
+        "tarde João"
+      ],
+      "time": [
+        "segunda",
+        "tarde"
+      ],
+      "location": [],
+      "topic": []
+    },
+    "confidence": {
+      "trigger": 0.9,
+      "participants": 0.75,
+      "temporal": 0.8,
+      "location": 0.85,
+      "topic": 0.7
+    },
+    "metadata": {
+      "created_at": "2026-05-11T10:26:58.767755",
+      "validated": true,
+      "version": "1.0"
+    }
+  },
+  {
+    "id": 270,
+    "text": "Bora fazer uma reunião rápida quarta à tarde?\n\nObrigado\nEnviado do telemóvel",
+    "intent": "agendamento_reuniao",
+    "trigger": [
+      "reunir"
+    ],
+    "arguments": {
+      "participants": [
+        "Enviado",
+        "fazer",
+        "fazer uma",
+        "quarta",
+        "reunião",
+        "telemóvel"
+      ],
+      "time": [
+        "quarta",
+        "à tarde"
+      ],
+      "location": [],
+      "topic": []
+    },
+    "confidence": {
+      "trigger": 0.9,
+      "participants": 0.75,
+      "temporal": 0.8,
+      "location": 0.85,
+      "topic": 0.7
+    },
+    "metadata": {
+      "created_at": "2026-05-11T10:26:58.767757",
+      "validated": true,
+      "version": "1.0"
+    }
+  },
+  {
+    "id": 271,
+    "text": "Ok 👍\n\nObrigado\nEnviado do telemóvel",
+    "intent": "reuniao_confirmada",
+    "trigger": [],
+    "arguments": {
+      "participants": [
+        "Enviado",
+        "certo",
+        "telemóvel"
+      ],
+      "time": [],
+      "location": [],
+      "topic": []
+    },
+    "confidence": {
+      "trigger": 0.9,
+      "participants": 0.75,
+      "temporal": 0.8,
+      "location": 0.85,
+      "topic": 0.7
+    },
+    "metadata": {
+      "created_at": "2026-05-11T10:26:58.767759",
+      "validated": true,
+      "version": "1.0"
+    }
+  },
+  {
+    "id": 272,
+    "text": "Consegues reunir depois da aula? 😅\n\nAté já\nEnviado do telemóvel",
+    "intent": "agendamento_reuniao",
+    "trigger": [
+      "reunir"
+    ],
+    "arguments": {
+      "participants": [
+        "Consegues",
+        "aula"
+      ],
+      "time": [],
+      "location": [],
+      "topic": [
+        "Dissertação"
+      ]
+    },
+    "confidence": {
+      "trigger": 0.9,
+      "participants": 0.75,
+      "temporal": 0.8,
+      "location": 0.85,
+      "topic": 0.7
+    },
+    "metadata": {
+      "created_at": "2026-05-11T10:26:58.767762",
+      "validated": true,
+      "version": "1.0"
+    }
+  },
+  {
+    "id": 273,
+    "text": "Olá Ricardo, podemos reunir amanhã às 15h para falar sobre resultados?\n\nAté já\nDISCLAIMER: mensagem automática",
+    "intent": "agendamento_reuniao",
+    "trigger": [
+      "reunir"
+    ],
+    "arguments": {
+      "participants": [
+        "Ricardo",
+        "falar",
+        "falar sobre"
+      ],
+      "time": [
+        "amanhã",
+        "às 15h"
+      ],
+      "location": [],
+      "topic": []
+    },
+    "confidence": {
+      "trigger": 0.9,
+      "participants": 0.75,
+      "temporal": 0.8,
+      "location": 0.85,
+      "topic": 0.7
+    },
+    "metadata": {
+      "created_at": "2026-05-11T10:26:58.767764",
+      "validated": true,
+      "version": "1.0"
+    }
+  },
+  {
+    "id": 274,
+    "text": "Depois falamos.",
+    "intent": "agendamento_reuniao",
+    "trigger": [],
+    "arguments": {
+      "participants": [
+        "Depois"
+      ],
+      "time": [],
+      "location": [],
+      "topic": [
+        "Projeto"
+      ]
+    },
+    "confidence": {
+      "trigger": 0.9,
+      "participants": 0.75,
+      "temporal": 0.8,
+      "location": 0.85,
+      "topic": 0.7
+    },
+    "metadata": {
+      "created_at": "2026-05-11T10:26:58.767767",
+      "validated": true,
+      "version": "1.0"
+    }
+  },
+  {
+    "id": 275,
+    "text": "Na boa.\n\n\nSent from my iPhone",
+    "intent": "agendamento_reuniao",
+    "trigger": [
+      "falar"
+    ],
+    "arguments": {
+      "participants": [
+        "boa"
+      ],
+      "time": [],
+      "location": [],
+      "topic": []
+    },
+    "confidence": {
+      "trigger": 0.9,
+      "participants": 0.75,
+      "temporal": 0.8,
+      "location": 0.85,
+      "topic": 0.7
+    },
+    "metadata": {
+      "created_at": "2026-05-11T10:26:58.767769",
+      "validated": true,
+      "version": "1.0"
+    }
+  },
+  {
+    "id": 276,
+    "text": "Eu apareço no Zoom.\n\nCumprimentos\nEnviado do Outlook",
+    "intent": "reuniao_confirmada",
+    "trigger": [
+      "reunir"
+    ],
+    "arguments": {
+      "participants": [
+        "Eu apareço",
+        "confirmada"
+      ],
+      "time": [],
+      "location": [
+        "Zoom"
+      ],
+      "topic": []
+    },
+    "confidence": {
+      "trigger": 0.9,
+      "participants": 0.75,
+      "temporal": 0.8,
+      "location": 0.85,
+      "topic": 0.7
+    },
+    "metadata": {
+      "created_at": "2026-05-11T10:26:58.767771",
+      "validated": true,
+      "version": "1.0"
+    }
+  },
+  {
+    "id": 277,
+    "text": "Pode ser. tranquilo\n\nThanks",
+    "intent": "reuniao_confirmada",
+    "trigger": [
+      "reunir"
+    ],
+    "arguments": {
+      "participants": [
+        "Pode ser",
+        "Thanks",
+        "confirmada"
+      ],
+      "time": [],
+      "location": [],
+      "topic": []
+    },
+    "confidence": {
+      "trigger": 0.9,
+      "participants": 0.75,
+      "temporal": 0.8,
+      "location": 0.85,
+      "topic": 0.7
+    },
+    "metadata": {
+      "created_at": "2026-05-11T10:26:58.767773",
+      "validated": true,
+      "version": "1.0"
+    }
+  },
+  {
+    "id": 278,
+    "text": "Olá Miguel, podemos reunir pelas 14h para falar sobre relatório?\n\nBjs",
+    "intent": "agendamento_reuniao",
+    "trigger": [
+      "reunir"
+    ],
+    "arguments": {
+      "participants": [
+        "Miguel",
+        "Olá",
+        "falar",
+        "falar sobre"
+      ],
+      "time": [],
+      "location": [],
+      "topic": [
+        "relatório"
+      ]
+    },
+    "confidence": {
+      "trigger": 0.9,
+      "participants": 0.75,
+      "temporal": 0.8,
+      "location": 0.85,
+      "topic": 0.7
+    },
+    "metadata": {
+      "created_at": "2026-05-11T10:26:58.767775",
+      "validated": true,
+      "version": "1.0"
+    }
+  },
+  {
+    "id": 279,
+    "text": "Tranquilo.\n\nCumps\nEnviado do Outlook",
+    "intent": "reuniao_confirmada",
+    "trigger": [
+      "combinar"
+    ],
+    "arguments": {
+      "participants": [
+        "Tranquilo"
+      ],
+      "time": [],
+      "location": [],
+      "topic": []
+    },
+    "confidence": {
+      "trigger": 0.9,
+      "participants": 0.75,
+      "temporal": 0.8,
+      "location": 0.85,
+      "topic": 0.7
+    },
+    "metadata": {
+      "created_at": "2026-05-11T10:26:58.767780",
+      "validated": true,
+      "version": "1.0"
+    }
+  },
+  {
+    "id": 280,
+    "text": "Vou ter aula nesse horário.\n\n\nSent from my iPhone",
+    "intent": "cancelamento_reuniao",
+    "trigger": [],
+    "arguments": {
+      "participants": [
+        "Imprevisto",
+        "nesse",
+        "nesse horário"
+      ],
+      "time": [],
+      "location": [],
+      "topic": []
+    },
+    "confidence": {
+      "trigger": 0.9,
+      "participants": 0.75,
+      "temporal": 0.8,
+      "location": 0.85,
+      "topic": 0.7
+    },
+    "metadata": {
+      "created_at": "2026-05-11T10:26:58.767782",
+      "validated": true,
+      "version": "1.0"
+    }
+  },
+  {
+    "id": 281,
+    "text": "Boas Professor Silva, tens disponibilidade amanhã?\n\nThanks\nSent from my iPhone",
+    "intent": "agendamento_reuniao",
+    "trigger": [],
+    "arguments": {
+      "participants": [
+        "Dissertação"
+      ],
+      "time": [
+        "amanhã"
+      ],
+      "location": [],
+      "topic": [
+        "Dissertação"
+      ]
+    },
+    "confidence": {
+      "trigger": 0.9,
+      "participants": 0.75,
+      "temporal": 0.8,
+      "location": 0.85,
+      "topic": 0.7
+    },
+    "metadata": {
+      "created_at": "2026-05-11T10:26:58.767784",
+      "validated": true,
+      "version": "1.0"
+    }
+  },
+  {
+    "id": 282,
+    "text": "Não vou conseguir ir ao sala 2.3.\n\nCumprimentos\nSent from my iPhone",
+    "intent": "cancelamento_reuniao",
+    "trigger": [],
+    "arguments": {
+      "participants": [
+        "Não",
+        "sala"
+      ],
+      "time": [],
+      "location": [
+        "sala 2.3"
+      ],
+      "topic": []
+    },
+    "confidence": {
+      "trigger": 0.9,
+      "participants": 0.75,
+      "temporal": 0.8,
+      "location": 0.85,
+      "topic": 0.7
+    },
+    "metadata": {
+      "created_at": "2026-05-11T10:26:58.767787",
+      "validated": true,
+      "version": "1.0"
+    }
+  },
+  {
+    "id": 283,
+    "text": "Hello Professor Ricardo Mendes, afinal vou ter de cancelar a reunião de na próxima semana.\n\nThanks\nSent from my iPhone",
+    "intent": "cancelamento_reuniao",
+    "trigger": [
+      "reunir"
+    ],
+    "arguments": {
+      "participants": [
+        "Cancelamento",
+        "Mendes",
+        "próxima",
+        "próxima semana",
+        "reunião",
+        "reunião de"
+      ],
+      "time": [
+        "próxima semana",
+        "na próxima semana"
+      ],
+      "location": [],
+      "topic": []
+    },
+    "confidence": {
+      "trigger": 0.9,
+      "participants": 0.75,
+      "temporal": 0.8,
+      "location": 0.85,
+      "topic": 0.7
+    },
+    "metadata": {
+      "created_at": "2026-05-11T10:26:58.767789",
+      "validated": true,
+      "version": "1.0"
+    }
+  },
+  {
+    "id": 284,
+    "text": "Confirmado.\n\nAbraço\nEnviado do Outlook",
+    "intent": "agendamento_reuniao",
+    "trigger": [
+      "confirmar"
+    ],
+    "arguments": {
+      "participants": [
+        "Enviado",
+        "Outlook"
+      ],
+      "time": [],
+      "location": [],
+      "topic": []
+    },
+    "confidence": {
+      "trigger": 0.9,
+      "participants": 0.75,
+      "temporal": 0.8,
+      "location": 0.85,
+      "topic": 0.7
+    },
+    "metadata": {
+      "created_at": "2026-05-11T10:26:58.767791",
+      "validated": true,
+      "version": "1.0"
+    }
+  },
+  {
+    "id": 285,
+    "text": "Combinado, vemos isso pelas 14h.\n\nCumps",
+    "intent": "reuniao_confirmada",
+    "trigger": [
+      "combinar"
+    ],
+    "arguments": {
+      "participants": [
+        "certo",
+        "pelas"
+      ],
+      "time": [],
+      "location": [],
+      "topic": []
+    },
+    "confidence": {
+      "trigger": 0.9,
+      "participants": 0.75,
+      "temporal": 0.8,
+      "location": 0.85,
+      "topic": 0.7
+    },
+    "metadata": {
+      "created_at": "2026-05-11T10:26:58.767793",
+      "validated": true,
+      "version": "1.0"
+    }
+  },
+  {
+    "id": 286,
+    "text": "Hoje não vai dar 😅\n\nAbraço\nEnviado do telemóvel",
+    "intent": "cancelamento_reuniao",
+    "trigger": [],
+    "arguments": {
+      "participants": [
+        "Enviado",
+        "Hoje",
+        "telemóvel",
+        "vai"
+      ],
+      "time": [
+        "Hoje"
+      ],
+      "location": [],
+      "topic": []
+    },
+    "confidence": {
+      "trigger": 0.9,
+      "participants": 0.75,
+      "temporal": 0.8,
+      "location": 0.85,
+      "topic": 0.7
+    },
+    "metadata": {
+      "created_at": "2026-05-11T10:26:58.767796",
+      "validated": true,
+      "version": "1.0"
+    }
+  },
+  {
+    "id": 287,
+    "text": "Quando puderes temos de combinar uma reunião. 😅\n\nAté já",
+    "intent": "agendamento_reuniao",
+    "trigger": [
+      "reunir"
+    ],
+    "arguments": {
+      "participants": [
+        "puderes",
+        "reunião"
+      ],
+      "time": [],
+      "location": [],
+      "topic": []
+    },
+    "confidence": {
+      "trigger": 0.9,
+      "participants": 0.75,
+      "temporal": 0.8,
+      "location": 0.85,
+      "topic": 0.7
+    },
+    "metadata": {
+      "created_at": "2026-05-11T10:26:58.767799",
+      "validated": true,
+      "version": "1.0"
+    }
+  },
+  {
+    "id": 288,
+    "text": "Acho que sexta já dá. 👌\n\n\nEnviado do telemóvel",
+    "intent": "cancelamento_reuniao",
+    "trigger": [
+      "reunir"
+    ],
+    "arguments": {
+      "participants": [
+        "Acho",
+        "já dá"
+      ],
+      "time": [
+        "sexta"
+      ],
+      "location": [],
+      "topic": []
+    },
+    "confidence": {
+      "trigger": 0.9,
+      "participants": 0.75,
+      "temporal": 0.8,
+      "location": 0.85,
+      "topic": 0.7
+    },
+    "metadata": {
+      "created_at": "2026-05-11T10:26:58.767801",
+      "validated": true,
+      "version": "1.0"
+    }
+  },
+  {
+    "id": 289,
+    "text": "Se calhar era melhor reunir depois do laboratório.\n\nCumprimentos\nEnviado do telemóvel",
+    "intent": "agendamento_reuniao",
+    "trigger": [
+      "reunir"
+    ],
+    "arguments": {
+      "participants": [
+        "laboratório",
+        "melhor",
+        "melhor reunir"
+      ],
+      "time": [],
+      "location": [
+        "laboratório"
+      ],
+      "topic": [
+        "Dissertação"
+      ]
+    },
+    "confidence": {
+      "trigger": 0.9,
+      "participants": 0.75,
+      "temporal": 0.8,
+      "location": 0.85,
+      "topic": 0.7
+    },
+    "metadata": {
+      "created_at": "2026-05-11T10:26:58.767804",
+      "validated": true,
+      "version": "1.0"
+    }
+  },
+  {
+    "id": 290,
+    "text": "Na boa 👍\n\nCumprimentos",
+    "intent": "reuniao_confirmada",
+    "trigger": [
+      "reunir"
+    ],
+    "arguments": {
+      "participants": [
+        "Reunião confirmada",
+        "boa",
+        "confirmada"
+      ],
+      "time": [],
+      "location": [],
+      "topic": []
+    },
+    "confidence": {
+      "trigger": 0.9,
+      "participants": 0.75,
+      "temporal": 0.8,
+      "location": 0.85,
+      "topic": 0.7
+    },
+    "metadata": {
+      "created_at": "2026-05-11T10:26:58.767806",
+      "validated": true,
+      "version": "1.0"
+    }
+  },
+  {
+    "id": 291,
+    "text": "Na boa. 🔥\n\nBjs\nDISCLAIMER: mensagem automática",
+    "intent": "cancelamento_reuniao",
+    "trigger": [
+      "cancelar"
+    ],
+    "arguments": {
+      "participants": [
+        "boa"
+      ],
+      "time": [],
+      "location": [],
+      "topic": []
+    },
+    "confidence": {
+      "trigger": 0.9,
+      "participants": 0.75,
+      "temporal": 0.8,
+      "location": 0.85,
+      "topic": 0.7
+    },
+    "metadata": {
+      "created_at": "2026-05-11T10:26:58.767808",
+      "validated": true,
+      "version": "1.0"
+    }
+  },
+  {
+    "id": 292,
+    "text": "Acho que sexta já dá.",
+    "intent": "agendamento_reuniao",
+    "trigger": [],
+    "arguments": {
+      "participants": [
+        "já dá",
+        "que"
+      ],
+      "time": [
+        "sexta"
+      ],
+      "location": [],
+      "topic": []
+    },
+    "confidence": {
+      "trigger": 0.9,
+      "participants": 0.75,
+      "temporal": 0.8,
+      "location": 0.85,
+      "topic": 0.7
+    },
+    "metadata": {
+      "created_at": "2026-05-11T10:26:58.767811",
+      "validated": true,
+      "version": "1.0"
+    }
+  },
+  {
+    "id": 293,
+    "text": "Peço desculpa mas temos de adiar.\n\nAbraço\nSent from my iPhone",
+    "intent": "cancelamento_reuniao",
+    "trigger": [
+      "reunir"
+    ],
+    "arguments": {
+      "participants": [
+        "Peço",
+        "Sent",
+        "mas",
+        "mas temos"
+      ],
+      "time": [],
+      "location": [],
+      "topic": []
+    },
+    "confidence": {
+      "trigger": 0.9,
+      "participants": 0.75,
+      "temporal": 0.8,
+      "location": 0.85,
+      "topic": 0.7
+    },
+    "metadata": {
+      "created_at": "2026-05-11T10:26:58.767813",
+      "validated": true,
+      "version": "1.0"
+    }
+  },
+  {
+    "id": 294,
+    "text": "Confirmado 👍\n\nAbraço\nEnviado do telemóvel",
+    "intent": "reuniao_confirmada",
+    "trigger": [
+      "confirmar"
+    ],
+    "arguments": {
+      "participants": [
+        "Confirmado",
+        "Enviado",
+        "telemóvel"
+      ],
+      "time": [],
+      "location": [],
+      "topic": []
+    },
+    "confidence": {
+      "trigger": 0.9,
+      "participants": 0.75,
+      "temporal": 0.8,
+      "location": 0.85,
+      "topic": 0.7
+    },
+    "metadata": {
+      "created_at": "2026-05-11T10:26:58.767815",
+      "validated": true,
+      "version": "1.0"
+    }
+  },
+  {
+    "id": 295,
+    "text": "Boa tarde Ricardo, afinal vou ter de cancelar a reunião de amanhã. isso resolve-se\n\nObrigado\nEnviado do telemóvel",
+    "intent": "cancelamento_reuniao",
+    "trigger": [
+      "reunir"
+    ],
+    "arguments": {
+      "participants": [
+        "Enviado",
+        "de planos",
+        "resolve",
+        "reunião",
+        "reunião de",
+        "tarde",
+        "tarde Ricardo",
+        "telemóvel"
+      ],
+      "time": [
+        "amanhã",
+        "tarde"
+      ],
+      "location": [],
+      "topic": []
+    },
+    "confidence": {
+      "trigger": 0.9,
+      "participants": 0.75,
+      "temporal": 0.8,
+      "location": 0.85,
+      "topic": 0.7
+    },
+    "metadata": {
+      "created_at": "2026-05-11T10:26:58.767818",
+      "validated": true,
+      "version": "1.0"
+    }
+  },
+  {
+    "id": 296,
+    "text": "Não vou conseguir ir ao Teams.\n🔥\n\nAté já\nDISCLAIMER: mensagem automática",
+    "intent": "cancelamento_reuniao",
+    "trigger": [
+      "reunir"
+    ],
+    "arguments": {
+      "participants": [
+        "Adiar",
+        "Não",
+        "Teams"
+      ],
+      "time": [],
+      "location": [
+        "Teams"
+      ],
+      "topic": []
+    },
+    "confidence": {
+      "trigger": 0.9,
+      "participants": 0.75,
+      "temporal": 0.8,
+      "location": 0.85,
+      "topic": 0.7
+    },
+    "metadata": {
+      "created_at": "2026-05-11T10:26:58.767821",
+      "validated": true,
+      "version": "1.0"
+    }
+  },
+  {
+    "id": 297,
+    "text": "Temos de alinhar a parte do Visualização de Dados.\n\nAté já\nEnviado do telemóvel",
+    "intent": "agendamento_reuniao",
+    "trigger": [
+      "discutir"
+    ],
+    "arguments": {
+      "participants": [
+        "Visualização",
+        "parte",
+        "parte do",
+        "resultados"
+      ],
+      "time": [],
+      "location": [],
+      "topic": []
+    },
+    "confidence": {
+      "trigger": 0.9,
+      "participants": 0.75,
+      "temporal": 0.8,
+      "location": 0.85,
+      "topic": 0.7
+    },
+    "metadata": {
+      "created_at": "2026-05-11T10:26:58.767823",
+      "validated": true,
+      "version": "1.0"
+    }
+  },
+  {
+    "id": 298,
+    "text": "Tranquilo. vemos isso amanhã\n\nThanks\nEnviado do telemóvel",
+    "intent": "cancelamento_reuniao",
+    "trigger": [],
+    "arguments": {
+      "participants": [
+        "Tranquilo",
+        "amanhã"
+      ],
+      "time": [
+        "amanhã"
+      ],
+      "location": [],
+      "topic": []
+    },
+    "confidence": {
+      "trigger": 0.9,
+      "participants": 0.75,
+      "temporal": 0.8,
+      "location": 0.85,
+      "topic": 0.7
+    },
+    "metadata": {
+      "created_at": "2026-05-11T10:26:58.767825",
+      "validated": true,
+      "version": "1.0"
+    }
+  },
+  {
+    "id": 299,
+    "text": "Boas Ricardo, tens disponibilidade depois do laboratório?\n\nThanks\nSent from my iPhone",
+    "intent": "agendamento_reuniao",
+    "trigger": [
+      "falar"
+    ],
+    "arguments": {
+      "participants": [
+        "Ricardo",
+        "laboratório"
+      ],
+      "time": [],
+      "location": [
+        "laboratório"
+      ],
+      "topic": []
+    },
+    "confidence": {
+      "trigger": 0.9,
+      "participants": 0.75,
+      "temporal": 0.8,
+      "location": 0.85,
+      "topic": 0.7
+    },
+    "metadata": {
+      "created_at": "2026-05-11T10:26:58.767827",
+      "validated": true,
+      "version": "1.0"
+    }
+  },
+  {
+    "id": 300,
+    "text": "15h é complicado. na boa 👍\n\nBjs\nEnviado do telemóvel",
+    "intent": "reuniao_confirmada",
+    "trigger": [
+      "confirmar"
+    ],
+    "arguments": {
+      "participants": [
+        "Confirmado",
+        "boa"
+      ],
+      "time": [],
+      "location": [],
+      "topic": []
+    },
+    "confidence": {
+      "trigger": 0.9,
+      "participants": 0.75,
+      "temporal": 0.8,
+      "location": 0.85,
+      "topic": 0.7
+    },
+    "metadata": {
+      "created_at": "2026-05-11T10:26:58.767829",
+      "validated": true,
+      "version": "1.0"
+    }
+  }
+]
