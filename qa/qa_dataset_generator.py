@@ -225,7 +225,7 @@ class QADataset:
         logger.info(f"Dataset (formato SQuAD) salvo em {filepath}")
     
     @staticmethod
-        def load_json(filepath: str) -> 'QADataset':
+    def load_json(filepath: str) -> 'QADataset':
         """Carrega dataset de JSON."""
         with open(filepath, 'r', encoding='utf-8') as f:
             data = json.load(f)
