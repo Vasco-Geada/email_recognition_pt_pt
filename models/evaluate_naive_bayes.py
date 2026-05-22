@@ -466,7 +466,7 @@ def main():
     parser.add_argument(
         '--dataset',
         type=str,
-        default='dataset/dataset.json',
+        default='dataset/realistic_emails_v2.json',
         help='Caminho do dataset'
     )
     parser.add_argument(
