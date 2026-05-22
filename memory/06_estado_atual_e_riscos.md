@@ -4,6 +4,7 @@
 
 O projeto já contém uma base funcional para:
 
+- anonimização de emails antes do preprocessing;
 - preprocessing de emails;
 - classificação de intenção com modelos clássicos;
 - extração de triggers por léxico/regex;
@@ -24,6 +25,18 @@ Impacto:
 - regex com acentos podem falhar;
 - documentação fica ilegível;
 - modelos podem aprender formas corrompidas.
+
+### 1b. Privacidade e RGPD
+
+Foi adicionado um módulo de anonimização em `preprocessing/`, mas anonimização automática nunca deve ser assumida como perfeita.
+
+Impacto:
+
+- NER pode falhar nomes informais, alcunhas ou assinaturas;
+- regras podem gerar falsos positivos;
+- pseudonimização com mapping continua a ser dado pessoal se o mapping existir.
+
+Recomendação: validar manualmente uma amostra aleatória e casos com muitas/zero substituições antes de criar o dataset final.
 
 ### 2. Dataset Pequeno e Duplicado
 
@@ -82,4 +95,3 @@ Impacto:
 - Não avaliar emails `nao_reuniao` no pipeline end-to-end.
 - Não separar avaliação de intenção, extração e normalização.
 - Não documentar ambiguidade temporal com data de referência.
-

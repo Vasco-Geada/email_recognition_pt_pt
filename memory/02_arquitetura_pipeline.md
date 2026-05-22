@@ -6,6 +6,7 @@ Fluxo pretendido:
 
 ```text
 Email raw
+  -> anonymization
   -> preprocessing
   -> intent classification
   -> se intent == nao_reuniao: parar ou devolver saída mínima
@@ -16,6 +17,44 @@ Email raw
 ```
 
 ## Componentes Existentes
+
+### Anonymization
+
+Ficheiros principais:
+
+- `preprocessing/anonymization.py`
+- `preprocessing/regex_anonymizer.py`
+- `preprocessing/ner_anonymizer.py`
+- `preprocessing/anonymization_config.py`
+- `preprocessing/test_anonymization.py`
+- `preprocessing/ANONYMIZATION_README.md`
+
+Responsabilidades:
+
+- substituir dados sensíveis antes de guardar/processar emails reais;
+- preservar expressões temporais e plataformas úteis para reuniões;
+- manter placeholders consistentes dentro do mesmo email;
+- suportar modo `anonymize` por defeito e modo `pseudonymize` com mapping controlado.
+
+Entidades cobertas:
+
+- nomes de pessoas;
+- emails;
+- telefones;
+- URLs;
+- identificadores académicos/números de aluno;
+- universidades e instituições de ensino;
+- ORG/LOCAL via spaCy quando aplicável.
+
+Whitelist preservada:
+
+- Teams, Zoom, Discord, Moodle, GitHub, Google Meet, Outlook, Gmail, Slack, Trello, Notion.
+
+Função central:
+
+```python
+anonymize_email(email: dict, keep_mapping: bool = False) -> dict
+```
 
 ### Preprocessing
 
@@ -141,4 +180,3 @@ Exemplo conceptual:
   }
 }
 ```
-
