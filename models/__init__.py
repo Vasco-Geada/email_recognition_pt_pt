@@ -24,12 +24,14 @@ __version__ = "1.0.0"
 __author__ = "NLP Research Team"
 __all__ = [
     'NaiveBayesEmailClassifier',
+    'DecisionTreeEmailClassifier',
     'load_dataset',
     'preprocess_text',
     'combine_text_fields'
 ]
 
 from .naive_bayes_classifier import NaiveBayesEmailClassifier
+from .decision_tree_classifier import DecisionTreeEmailClassifier
 from .utils import (
     load_dataset,
     preprocess_text,
