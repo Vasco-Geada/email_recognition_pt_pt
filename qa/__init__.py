@@ -62,7 +62,6 @@ from qa_inference import (
     QAInferenceEngine,
     QAModelLoader,
     QAResultsCache,
-    MultilingualQAFallback,
 )
 
 from qa_evaluator import (
@@ -100,7 +99,6 @@ __all__ = [
     'QAInferenceEngine',
     'QAModelLoader',
     'QAResultsCache',
-    'MultilingualQAFallback',
     
     # Evaluation
     'QAEvaluator',

@@ -35,7 +35,7 @@ def example_1_quick_usage():
     print("="*70)
     
     # Interface rápida
-    QuickQA.init(model_name='multilingual', device='cpu')
+    QuickQA.init(model_name='bertimbau-pt', device='cpu')
     
     email = "Boas Ana, podemos reunir sexta às 15h no Teams?"
     answers = QuickQA.answer(email)
@@ -54,7 +54,7 @@ def example_2_single_email():
     
     # Inicializar pipeline
     pipeline = QAPipeline(
-        model_name='multilingual',
+        model_name='bertimbau-pt',
         device='cpu',
         confidence_threshold=0.5,
         verbose=True,
@@ -94,7 +94,7 @@ def example_3_batch_processing():
     
     # Inicializar pipeline
     pipeline = QAPipeline(
-        model_name='multilingual',
+        model_name='bertimbau-pt',
         device='cpu',
         confidence_threshold=0.4,
     )
@@ -138,7 +138,7 @@ def example_4_load_and_integrate():
     
     # Inicializar pipeline
     pipeline = QAPipeline(
-        model_name='multilingual',
+        model_name='bertimbau-pt',
         device='cpu',
         confidence_threshold=0.4,
     )

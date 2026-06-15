@@ -26,6 +26,7 @@ from pathlib import Path
 import json
 
 import torch
+import torch.nn.functional as F
 from transformers import (
     pipeline,
     AutoModelForQuestionAnswering,
@@ -49,11 +50,13 @@ warnings.filterwarnings('ignore')
 class QAModelLoader:
     """Carregamento e caching de modelos QA."""
     
-    # Modelos recomendados para português
+    # BERTimbau fine-tuned para QA. Nao usar checkpoints base diretamente:
+    # esses carregam uma cabeca qa_outputs aleatoria e produzem respostas fracas.
+    BERTIMBAU_QA_MODEL = 'pierreguillou/bert-base-cased-squad-v1.1-portuguese'
     RECOMMENDED_MODELS = {
-        'bertimbau-pt': 'neuralmind/bert-base-portuguese-cased',
-        'bertimbau-pt-large': 'neuralmind/bert-large-portuguese-cased',
-        'multilingual': 'bert-base-multilingual-cased',
+        'bertimbau-pt': BERTIMBAU_QA_MODEL,
+        'bertimbau-qa': BERTIMBAU_QA_MODEL,
+        'portuguese-qa': BERTIMBAU_QA_MODEL,
     }
     
     _model_cache: Dict[str, Any] = {}
@@ -79,8 +82,17 @@ class QAModelLoader:
         Raises:
             ValueError: Se modelo não encontrado
         """
-        # Resolver nome do modelo
-        full_model_name = cls.RECOMMENDED_MODELS.get(model_name, model_name)
+        # Resolver nome do modelo. Este modulo de QA usa apenas BERTimbau QA.
+        if model_name == cls.BERTIMBAU_QA_MODEL:
+            full_model_name = model_name
+        elif model_name in cls.RECOMMENDED_MODELS:
+            full_model_name = cls.RECOMMENDED_MODELS[model_name]
+        else:
+            valid_models = sorted([*cls.RECOMMENDED_MODELS.keys(), cls.BERTIMBAU_QA_MODEL])
+            raise ValueError(
+                f"Modelo QA nao permitido: {model_name}. "
+                f"Use apenas BERTimbau QA: {valid_models}"
+            )
         
         # Verificar cache
         cache_key = f"{full_model_name}_{device}"
@@ -161,25 +173,119 @@ class QAInferenceEngine:
         
         # Carregar modelo
         try:
-            model, tokenizer = QAModelLoader.get_model(
+            self.model, self.tokenizer = QAModelLoader.get_model(
                 model_name,
                 use_cache=use_cache,
                 device=device,
             )
             
-            # Criar pipeline
-            self.pipeline = pipeline(
-                'question-answering',
-                model=model,
-                tokenizer=tokenizer,
-                device=0 if device == 'cuda' else -1,
-            )
+            # Criar pipeline quando a task existe na versao instalada de
+            # transformers. Se nao existir, usa inferencia manual.
+            self.pipeline = self._build_pipeline()
             
             logger.info("QA Engine inicializado com sucesso")
         
         except Exception as e:
             logger.error(f"Erro ao inicializar QA Engine: {str(e)}")
             raise
+
+    def _build_pipeline(self) -> Optional[Pipeline]:
+        """Cria pipeline HF quando disponivel; caso contrario usa fallback manual."""
+        try:
+            return pipeline(
+                'question-answering',
+                model=self.model,
+                tokenizer=self.tokenizer,
+                device=0 if self.device == 'cuda' else -1,
+            )
+        except Exception as e:
+            logger.warning(
+                "Pipeline 'question-answering' indisponivel nesta instalacao "
+                "do transformers; a usar inferencia manual. Detalhe: %s",
+                str(e),
+            )
+            return None
+
+    def _manual_answer_question(self, question: str, context: str) -> Dict[str, Any]:
+        """
+        Executa QA extrativo sem transformers.pipeline.
+
+        Isto permite continuar a usar AutoModelForQuestionAnswering quando a
+        task publica "question-answering" nao existe na versao instalada.
+        """
+        inputs = self.tokenizer(
+            question,
+            context,
+            add_special_tokens=True,
+            return_tensors="pt",
+            truncation="only_second",
+            max_length=512,
+            return_offsets_mapping=True,
+        )
+        offset_mapping = inputs.pop("offset_mapping")[0]
+        sequence_ids = inputs.sequence_ids(0)
+
+        device_obj = next(self.model.parameters()).device
+        model_inputs = {key: value.to(device_obj) for key, value in inputs.items()}
+
+        with torch.no_grad():
+            outputs = self.model(**model_inputs)
+
+        start_logits = outputs.start_logits[0].detach().cpu()
+        end_logits = outputs.end_logits[0].detach().cpu()
+
+        context_token_indexes = [
+            index for index, sequence_id in enumerate(sequence_ids)
+            if sequence_id == 1
+        ]
+        if not context_token_indexes:
+            return {"answer": "", "score": 0.0, "start": 0, "end": 0}
+
+        mask = torch.full(start_logits.shape, float("-inf"))
+        mask[context_token_indexes] = 0
+        start_logits = start_logits + mask
+        end_logits = end_logits + mask
+
+        max_answer_tokens = min(self.max_answer_len, 64)
+        top_starts = torch.topk(start_logits, k=min(20, len(start_logits))).indices.tolist()
+        top_ends = torch.topk(end_logits, k=min(20, len(end_logits))).indices.tolist()
+        context_index_set = set(context_token_indexes)
+
+        best_score = float("-inf")
+        best_start = context_token_indexes[0]
+        best_end = context_token_indexes[0]
+
+        for start_index in top_starts:
+            if start_index not in context_index_set:
+                continue
+            for end_index in top_ends:
+                if end_index not in context_index_set:
+                    continue
+                if end_index < start_index:
+                    continue
+                if end_index - start_index + 1 > max_answer_tokens:
+                    continue
+
+                score = float(start_logits[start_index] + end_logits[end_index])
+                if score > best_score:
+                    best_score = score
+                    best_start = start_index
+                    best_end = end_index
+
+        start_char = int(offset_mapping[best_start][0])
+        end_char = int(offset_mapping[best_end][1])
+        answer = context[start_char:end_char].strip()
+
+        start_probability = F.softmax(start_logits, dim=0)[best_start]
+        end_probability = F.softmax(end_logits, dim=0)[best_end]
+        score = float((start_probability * end_probability).sqrt())
+
+        return {
+            "answer": answer,
+            "score": score,
+            "start": start_char,
+            "end": end_char,
+        }
     
     def answer_question(
         self,
@@ -204,12 +310,15 @@ class QAInferenceEngine:
         
         try:
             # Inferência
-            result = self.pipeline(
-                question=question,
-                context=context,
-                top_k=self.top_k,
-                max_answer_len=self.max_answer_len,
-            )
+            if self.pipeline is not None:
+                result = self.pipeline(
+                    question=question,
+                    context=context,
+                    top_k=self.top_k,
+                    max_answer_len=self.max_answer_len,
+                )
+            else:
+                result = self._manual_answer_question(question, context)
             
             # Se resultado é lista, pegar primeiro
             if isinstance(result, list):
@@ -327,40 +436,6 @@ class QAInferenceEngine:
         return all_results
 
 
-class MultilingualQAFallback:
-    """
-    Fallback para QA multilíngue se modelo português não disponível.
-    
-    Usa bert-base-multilingual-cased como fallback.
-    """
-    
-    def __init__(self):
-        """Inicializa fallback."""
-        self.engine = None
-        self.available = False
-        
-        try:
-            self.engine = QAInferenceEngine(
-                model_name='multilingual',
-                confidence_threshold=0.4,  # Threshold mais baixo
-            )
-            self.available = True
-            logger.warning("Usando modelo multilíngue como fallback para QA português")
-        except Exception as e:
-            logger.error(f"Erro ao inicializar fallback multilíngue: {str(e)}")
-    
-    def answer_question(
-        self,
-        question: str,
-        context: str,
-    ) -> Optional[QAResult]:
-        """Responde usando modelo multilíngue."""
-        if not self.available:
-            return None
-        
-        return self.engine.answer_question(question, context)
-
-
 class QAResultsCache:
     """Cache simples para resultados de QA."""
     
@@ -409,18 +484,10 @@ def main():
     
     # Inicializar engine
     print("Inicializando QA Engine...")
-    try:
-        engine = QAInferenceEngine(
-            model_name='bertimbau-pt',
-            confidence_threshold=0.5,
-        )
-    except Exception as e:
-        print(f"Erro: {e}")
-        print("Tentando com modelo multilíngue...")
-        engine = QAInferenceEngine(
-            model_name='multilingual',
-            confidence_threshold=0.4,
-        )
+    engine = QAInferenceEngine(
+        model_name='bertimbau-pt',
+        confidence_threshold=0.5,
+    )
     
     # Exemplo de email
     context = """

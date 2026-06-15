@@ -335,6 +335,34 @@ class MetricsCalculator:
         f1 = 2 * (precision * recall) / (precision + recall)
         
         return f1
+
+    @staticmethod
+    def token_overlap_scores(predicted: str, reference: str) -> Dict[str, float]:
+        """
+        Calcula precision, recall e F1 por overlap de tokens.
+
+        Casos vazios:
+        - ambos vazios: score perfeito
+        - apenas um vazio: score zero
+        """
+        pred_tokens = set(predicted.lower().split()) if predicted else set()
+        ref_tokens = set(reference.lower().split()) if reference else set()
+
+        if not pred_tokens and not ref_tokens:
+            return {"precision": 1.0, "recall": 1.0, "f1": 1.0}
+        if not pred_tokens or not ref_tokens:
+            return {"precision": 0.0, "recall": 0.0, "f1": 0.0}
+
+        overlap = len(pred_tokens & ref_tokens)
+        precision = overlap / len(pred_tokens)
+        recall = overlap / len(ref_tokens)
+        f1 = 0.0 if precision + recall == 0 else 2 * precision * recall / (precision + recall)
+
+        return {
+            "precision": precision,
+            "recall": recall,
+            "f1": f1,
+        }
     
     @staticmethod
     def compute_metrics(
@@ -351,9 +379,12 @@ class MetricsCalculator:
         Returns:
             Dicionário com scores
         """
+        overlap = MetricsCalculator.token_overlap_scores(predicted, reference)
         return {
             'exact_match': 1.0 if MetricsCalculator.exact_match(predicted, reference) else 0.0,
-            'f1': MetricsCalculator.token_overlap_f1(predicted, reference),
+            'precision': overlap['precision'],
+            'recall': overlap['recall'],
+            'f1': overlap['f1'],
         }
 
 
