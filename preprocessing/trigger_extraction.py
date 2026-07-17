@@ -59,6 +59,9 @@ class TriggerExtractor:
             "exact": [
                 "agendar",
                 "marcar",
+                "remarcar",
+                "remarcacao",
+                "reagendar",
                 "agendar reunião",
                 "marcar reunião",
                 "agendar encontro",
@@ -66,6 +69,7 @@ class TriggerExtractor:
                 "falar",
                 "reunião",
                 "agendamento",
+                "remarcacao",
                 "marque",
                 "agendai",
                 "marcai",
@@ -100,6 +104,9 @@ class TriggerExtractor:
                 r"\bhorário\b",                            # horário (time slot)
                 r"\breunião\b",                            # horário (time slot)
                 r"\bslot\b",                               # slot (time slot)
+                r"\bremarcar(?:ei|a|as|emos|eis|ao)?\b",   # remarcar + simple verbal forms
+                r"\breagendar(?:ei|a|as|emos|eis|ao)?\b",  # reagendar + simple verbal forms
+                r"\bremarcacao\b",                         # remarcacao
                 r"\bcolocar\s+na\s+agenda\b",              # colocar na agenda
                 r"\bagendar\s+para\b",                     # agendar para
                  r"\bquando\b",                               # quando
@@ -110,7 +117,7 @@ class TriggerExtractor:
                 r"\bdata\b",                                 # data
                 r"\bque\s+tal\b",                            # que tal
             ],
-            "lemma": ["agendar", "marcar", "agendamento"],
+            "lemma": ["agendar", "marcar", "remarcar", "reagendar", "agendamento", "remarcacao"],
         },
         EmailIntent.CANCELAMENTO_REUNIAO: {
             "exact": [
@@ -289,9 +296,9 @@ class TriggerExtractor:
         """
         search_text = text if case_sensitive else text.lower()
         
-        for trigger in triggers:
+        for trigger in sorted(triggers, key=len, reverse=True):
             search_trigger = trigger if case_sensitive else trigger.lower()
-            if search_trigger in search_text:
+            if re.search(rf"\b{re.escape(search_trigger)}\b", search_text):
                 return trigger
         
         return None

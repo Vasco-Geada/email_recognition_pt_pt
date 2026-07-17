@@ -190,6 +190,30 @@ MONTHS = {
     'dezembro': 12, 'dez': 12,
 }
 
+RELATIVE_EXPRESSIONS.update({
+    "amanha": 1,
+    "depois de amanha": 2,
+    "depois amanha": 2,
+    "na proxima semana": "next_week",
+    "proxima semana": "next_week",
+    "este mes": "this_month",
+    "proximo mes": "next_month",
+})
+
+WEEKDAYS.update({
+    "terca": 1,
+    "terca-feira": 1,
+    "sabado": 5,
+})
+
+TIME_OF_DAY.update({
+    "manha": (6, 0, 12, 0),
+    "de manha": (6, 0, 12, 0),
+    "pela manha": (6, 0, 12, 0),
+    "depois de almoco": (12, 30, 14, 0),
+    "pos almoco": (12, 30, 14, 0),
+})
+
 
 # ============================================================================
 # REGEX PATTERNS
@@ -249,6 +273,29 @@ class TemporalPatterns:
         r'(?:em|daqui\s+a|dentro\s+de)\s+(\d+)\s+(dias?|semanas?|horas?)',
         re.IGNORECASE
     )
+
+
+# Keep ASCII variants explicit because the generated dataset intentionally omits
+# accents in many temporal expressions.
+TemporalPatterns.WEEKDAY_PATTERN = re.compile(
+    r'(?:(pr\S+xima|proxima|pr\S+ximo|proximo|esta|este)\s+)?'
+    r'(segunda|ter\S+a|terca|quarta|quinta|sexta|s\S+bado|sabado|domingo|'
+    r'segunda-feira|ter\S+a-feira|terca-feira|quarta-feira|quinta-feira|sexta-feira)',
+    re.IGNORECASE,
+)
+TemporalPatterns.RELATIVE_PATTERN = re.compile(
+    r'(depois de amanh\S+|depois de amanha|amanh\S+|amanha|hoje|ontem|agora|'
+    r'para a semana|esta semana|na proxima semana|proxima semana|'
+    r'pr\S+ximo m\S+s|proximo mes|este m\S+s|este mes|em breve)',
+    re.IGNORECASE,
+)
+TemporalPatterns.TIME_OF_DAY_PATTERN = re.compile(
+    r'(pela\s+)?(manh\S+|manha|tarde|noite|ap\S+s\s+almo\S+o|apos\s+almoco|'
+    r'depois\s+de\s+almo\S+o|depois\s+de\s+almoco|p\S+s\s+almo\S+o|pos\s+almoco|'
+    r'ap\S+s\s+caf\S+|depois\s+do\s+caf\S+|p\S+s\s+caf\S+|'
+    r'de\s+manh\S+|de\s+manha|de\s+tarde|de\s+noite)',
+    re.IGNORECASE,
+)
 
 
 # ============================================================================
@@ -315,18 +362,18 @@ class TemporalNormalizer:
             if parsed:
                 return result
             
-            # 2. Weekday patterns
+            # 2. Complex patterns (combinations)
+            parsed = self._parse_complex_expression(expr_normalized, result)
+            if parsed:
+                return result
+
+            # 3. Weekday patterns
             parsed = self._parse_weekday(expr_normalized, result)
             if parsed:
                 return result
             
-            # 3. Relative expressions
+            # 4. Relative expressions
             parsed = self._parse_relative_expression(expr_normalized, result)
-            if parsed:
-                return result
-            
-            # 4. Complex patterns (combinations)
-            parsed = self._parse_complex_expression(expr_normalized, result)
             if parsed:
                 return result
             

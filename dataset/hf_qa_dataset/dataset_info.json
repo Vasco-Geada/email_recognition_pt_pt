@@ -1,0 +1,46 @@
+{
+  "source_gold": "gold_annotations\\output\\realistic_school_professional_10000_gold.json",
+  "num_gold_items": 10000,
+  "num_examples": 37463,
+  "categories": [
+    "participants",
+    "time",
+    "time_normalized",
+    "location",
+    "topic"
+  ],
+  "include_impossible": false,
+  "splits": {
+    "train": {
+      "count": 29990,
+      "category_counts": {
+        "location": 7209,
+        "participants": 8000,
+        "time": 4205,
+        "time_normalized": 3367,
+        "topic": 7209
+      }
+    },
+    "validation": {
+      "count": 3710,
+      "category_counts": {
+        "location": 894,
+        "participants": 1000,
+        "time": 512,
+        "time_normalized": 410,
+        "topic": 894
+      }
+    },
+    "test": {
+      "count": 3763,
+      "category_counts": {
+        "location": 897,
+        "participants": 1000,
+        "time": 543,
+        "time_normalized": 426,
+        "topic": 897
+      }
+    }
+  },
+  "load_with": "from datasets import load_dataset; ds = load_dataset('json', data_files={'train': 'dataset\\hf_qa_dataset\\train.jsonl', 'validation': 'dataset\\hf_qa_dataset\\validation.jsonl', 'test': 'dataset\\hf_qa_dataset\\test.jsonl'})"
+}

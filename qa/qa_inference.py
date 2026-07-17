@@ -82,8 +82,12 @@ class QAModelLoader:
         Raises:
             ValueError: Se modelo não encontrado
         """
-        # Resolver nome do modelo. Este modulo de QA usa apenas BERTimbau QA.
-        if model_name == cls.BERTIMBAU_QA_MODEL:
+        # Resolver nome do modelo. Permite o checkpoint BERTimbau QA original
+        # ou um diretorio local fine-tuned a partir dele.
+        model_path = Path(model_name)
+        if model_path.exists() and model_path.is_dir():
+            full_model_name = str(model_path)
+        elif model_name == cls.BERTIMBAU_QA_MODEL:
             full_model_name = model_name
         elif model_name in cls.RECOMMENDED_MODELS:
             full_model_name = cls.RECOMMENDED_MODELS[model_name]

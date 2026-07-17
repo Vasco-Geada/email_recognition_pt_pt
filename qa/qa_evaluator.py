@@ -479,7 +479,7 @@ class ComparativeAnalyzer:
 class ProjectQAEvaluation:
     """Avalia outputs do QAPipeline contra gold annotations do projeto."""
 
-    CATEGORIES = ["participants", "time", "location", "topic"]
+    CATEGORIES = ["participants", "time", "time_normalized", "location", "topic"]
 
     @classmethod
     def evaluate_files(
@@ -596,7 +596,10 @@ class ProjectQAEvaluation:
         context = prediction.get("email_text", gold_item.get("text", ""))
 
         for category in cls.CATEGORIES:
-            predicted_result = qa_results.get(category, {}) or {}
+            if category == "time_normalized":
+                predicted_result = cls._normalized_time_result(qa_results.get("time", {}) or {})
+            else:
+                predicted_result = qa_results.get(category, {}) or {}
             predicted_answer = predicted_result.get("answer") or ""
             references = cls._as_reference_list(gold_arguments.get(category, []))
             question = predicted_result.get("question") or cls._question_for_category(category)
@@ -630,6 +633,22 @@ class ProjectQAEvaluation:
         return []
 
     @staticmethod
+    def _normalized_time_result(time_result: Dict[str, Any]) -> Dict[str, Any]:
+        normalized = time_result.get("normalized") or {}
+        answer = (
+            normalized.get("normalized_datetime")
+            or normalized.get("interval_start")
+            or normalized.get("normalized_date")
+            or ""
+        )
+        return {
+            "answer": answer,
+            "confidence": time_result.get("confidence", 0.0),
+            "question": "Qual e a data/hora normalizada da reuniao?",
+            "valid": bool(answer),
+        }
+
+    @staticmethod
     def _best_reference_match(predicted: str, references: List[str]) -> Tuple[str, Dict[str, float]]:
         if not references:
             metrics = MetricsCalculator.compute_metrics(predicted or "", "")
@@ -652,6 +671,8 @@ class ProjectQAEvaluation:
             "location": QuestionCategory.LOCATION,
             "topic": QuestionCategory.TOPIC,
         }
+        if category == "time_normalized":
+            return "Qual e a data/hora normalizada da reuniao?"
         return QAQuestions.get_primary_question(mapping[category])
 
     @staticmethod

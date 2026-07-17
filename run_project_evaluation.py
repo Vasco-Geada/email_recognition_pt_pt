@@ -18,6 +18,7 @@ import argparse
 import csv
 import json
 import logging
+import re
 import sys
 import time
 from dataclasses import dataclass
@@ -273,6 +274,21 @@ def split_dataset(
     )
 
 
+def parse_email_reference_datetime(
+    email: Dict[str, Any],
+    fallback: datetime,
+) -> datetime:
+    for key in ("sent_datetime", "sent_at", "email_date", "date", "created_at"):
+        value = email.get(key)
+        if not value:
+            continue
+        try:
+            return datetime.fromisoformat(str(value).replace("Z", "+00:00"))
+        except ValueError:
+            logger.warning("Data de envio invalida em %s: %s", key, value)
+    return fallback
+
+
 def build_cv_estimators(args: argparse.Namespace) -> Dict[str, Pipeline]:
     vectorizer_kwargs = {
         "lowercase": True,
@@ -441,6 +457,7 @@ def run_downstream_modules(
     ):
         body = email.get("clean_body") or email.get("body") or text
         subject = email.get("subject", "")
+        email_reference_datetime = parse_email_reference_datetime(email, reference_datetime)
 
         try:
             trigger = trigger_extractor.extract_trigger(body, prediction)
@@ -466,7 +483,7 @@ def run_downstream_modules(
                 for span in time_spans:
                     normalized = temporal_normalizer.normalize(
                         span.get("text", ""),
-                        reference_datetime=reference_datetime,
+                        reference_datetime=email_reference_datetime,
                     )
                     temporal_normalized.append(normalized.to_dict())
             except Exception as exc:
@@ -484,6 +501,7 @@ def run_downstream_modules(
                 "trigger": trigger,
                 "arguments": arguments,
                 "normalized_temporals": temporal_normalized,
+                "reference_datetime": email_reference_datetime.isoformat(),
             }
         )
 
@@ -511,6 +529,7 @@ def run_classic_extraction(
         for index, email in enumerate(test_emails):
             body = email.get("clean_body") or email.get("body") or ""
             subject = email.get("subject", "")
+            email_reference_datetime = parse_email_reference_datetime(email, reference_datetime)
             extracted = extractor.extract_with_context(
                 email_body=body,
                 email_subject=subject,
@@ -529,7 +548,7 @@ def run_classic_extraction(
                     "Quando e a reuniao?",
                 ),
                 "location": _classic_category_result(
-                    arguments.get("locations", []),
+                    _normalize_location_spans(arguments.get("locations", [])),
                     "Onde e a reuniao?",
                 ),
                 "topic": _classic_category_result(
@@ -542,9 +561,11 @@ def run_classic_extraction(
             for span in arguments.get("time_expressions", []):
                 normalized = normalizer.normalize(
                     span.get("text", ""),
-                    reference_datetime=reference_datetime,
+                    reference_datetime=email_reference_datetime,
                 )
                 normalized_temporals.append(normalized.to_dict())
+            if normalized_temporals:
+                qa_like_results["time"]["normalized"] = normalized_temporals[0]
 
             results.append(
                 {
@@ -554,9 +575,12 @@ def run_classic_extraction(
                     "qa_results": qa_like_results,
                     "classic_arguments": arguments,
                     "normalized_temporals": normalized_temporals,
+                    "reference_datetime": email_reference_datetime.isoformat(),
                     "metadata": {
                         "method": "regex_spacy_heuristics",
                         "source": "preprocessing.argument_extraction.ArgumentExtractor",
+                        "sent_datetime": email.get("sent_datetime"),
+                        "reference_datetime": email_reference_datetime.isoformat(),
                     },
                 }
             )
@@ -584,6 +608,67 @@ def _classic_category_result(spans: List[Dict[str, Any]], question: str) -> Dict
         "question": question,
         "valid": bool(texts),
     }
+
+
+def _normalize_location_spans(spans: List[Dict[str, Any]]) -> List[Dict[str, Any]]:
+    normalized_spans: List[Dict[str, Any]] = []
+    for span in spans:
+        text = str(span.get("text", "")).strip()
+        normalized = _normalize_location_value(text)
+        if not normalized:
+            continue
+        updated = dict(span)
+        updated["text"] = normalized
+        normalized_spans.append(updated)
+    return normalized_spans
+
+
+def _normalize_location_value(value: str) -> Optional[str]:
+    text = re.sub(r"^\s*(?:em|no|na|por|via)\s+", "", str(value or "").strip(), flags=re.IGNORECASE)
+    if not text:
+        return None
+    remote_match = re.search(r"\b(zoom|teams|microsoft\s+teams|google\s+meet|meet|online|remot[ao])\b", text, re.IGNORECASE)
+    if remote_match:
+        return f"remoto - {_normalize_remote_platform(remote_match.group(0))}"
+    room_department_match = re.search(
+        r"\bsala\s+de\s+reuni(?:ao|oes|ões|Ãµes)\s+do\s+departamento\b",
+        text,
+        re.IGNORECASE,
+    )
+    if room_department_match:
+        return f"presencial - {room_department_match.group(0).strip()}"
+    if re.search(
+        r"\bsala(?:\s+de\s+reuni(?:ao|oes|ões))?(?:\s+[A-Za-z0-9]+(?:[.\-][A-Za-z0-9]+)?)?(?:\s+do\s+departamento)?\b",
+        text,
+        re.IGNORECASE,
+    ):
+        return f"presencial - {text}"
+    office_match = re.search(
+        r"\bgabinete(?:\s+(?:da\s+direcao|da\s+direção|de\s+\w+|\d+(?:[.\-]\d+)?))?\b",
+        text,
+        re.IGNORECASE,
+    )
+    if office_match:
+        return f"presencial - {office_match.group(0).strip()}"
+    presential_match = re.search(
+        r"\b(secretaria|biblioteca|laborat(?:orio|ório)(?:\s+de\s+\w+)?|audit(?:orio|ório)(?:\s+\w+)?|campus(?:\s+\w+)?)\b",
+        text,
+        re.IGNORECASE,
+    )
+    if presential_match:
+        return f"presencial - {presential_match.group(0).strip()}"
+    return None
+
+
+def _normalize_remote_platform(platform: str) -> str:
+    text = str(platform or "").strip().lower()
+    if "team" in text:
+        return "teams"
+    if "meet" in text:
+        return "google meet"
+    if "zoom" in text:
+        return "zoom"
+    return "zoom"
 
 
 def write_classic_results_csv(path: Path, results: List[Dict[str, Any]]) -> None:

@@ -83,7 +83,8 @@ class EmailQAResult:
 class QAContextEnricher:
     """Adds explicit metadata and deterministic fallbacks around extractive QA."""
 
-    REMOTE_DEFAULT = "Zoom/remota"
+    REMOTE_DEFAULT = "remoto - zoom"
+    NON_MEETING_LABELS = {"nao_reuniao", "nao reuniao", "não_reuniao", "não reuniao"}
     SENDER_KEYS = (
         "sender",
         "sender_name",
@@ -96,10 +97,45 @@ class QAContextEnricher:
         "name",
         "nome",
     )
+    LOCATION_METADATA_KEYS = (
+        "location",
+        "locations",
+        "meeting_location",
+        "local",
+        "localizacao",
+        "localização",
+    )
     LOCATION_PATTERN = re.compile(
-        r"\b(zoom|teams|meet|skype|online|remot[ao]|presencial|"
-        r"sala\s+\w+(?:[.\-]\w+)?|laborat[óo]rio|lab\b|audit[óo]rio|"
-        r"gabinete|biblioteca|bar da faculdade|universidade|faculdade)\b",
+        r"\b("
+        r"zoom|teams|microsoft\s+teams|google\s+meet|meet|skype|discord|"
+        r"online|remot[ao]|presencial|"
+        r"sala(?:\s+de\s+reuni(?:ao|oes|ões))?\s+[A-Za-z0-9]+(?:[.\-][A-Za-z0-9]+)?|"
+        r"gabinete(?:\s+(?:da\s+direcao|de\s+\w+|\d+(?:[.\-]\d+)?))?|"
+        r"secretaria(?!\s+academica)|"
+        r"biblioteca|bar\s+da\s+faculdade|"
+        r"laborat(?:orio|ório)|lab\b|audit(?:orio|ório)(?:\s+\w+)?|"
+        r"campus(?:\s+\w+)?|departamento|reitoria|universidade|faculdade"
+        r")\b",
+        re.IGNORECASE,
+    )
+    REMOTE_PATTERN = re.compile(
+        r"\b(zoom|teams|microsoft\s+teams|google\s+meet|meet|online|remot[ao])\b",
+        re.IGNORECASE,
+    )
+    ROOM_DEPARTMENT_PATTERN = re.compile(
+        r"\bsala\s+de\s+reuni(?:ao|oes|ões|Ãµes)\s+do\s+departamento\b",
+        re.IGNORECASE,
+    )
+    ROOM_PATTERN = re.compile(
+        r"\bsala(?:\s+de\s+reuni(?:ao|oes|Ãµes))?(?:\s+[A-Za-z0-9]+(?:[.\-][A-Za-z0-9]+)?)?(?:\s+do\s+departamento)?\b",
+        re.IGNORECASE,
+    )
+    OFFICE_PATTERN = re.compile(
+        r"\bgabinete(?:\s+(?:da\s+direcao|da\s+direÃ§Ã£o|de\s+\w+|\d+(?:[.\-]\d+)?))?\b",
+        re.IGNORECASE,
+    )
+    PRESENTIAL_PATTERN = re.compile(
+        r"\b(secretaria(?!\s+academica)|biblioteca|laborat(?:orio|Ã³rio)(?:\s+de\s+\w+)?|audit(?:orio|Ã³rio)(?:\s+\w+)?|campus(?:\s+\w+)?)\b",
         re.IGNORECASE,
     )
     TEMPORAL_PATTERNS = [
@@ -127,9 +163,14 @@ class QAContextEnricher:
         metadata: Optional[Dict[str, Any]],
     ) -> Dict[str, Any]:
         metadata = metadata or {}
+        reference_datetime = self.extract_reference_datetime(metadata)
         sender = self.extract_sender(metadata, email_text)
-        temporal_hints = self.extract_temporal_hints(email_text)
+        entity_values = self.extract_entity_values(metadata, sender)
+        temporal_hints = self.extract_temporal_hints(email_text, reference_datetime)
         explicit_location = self.extract_explicit_location(email_text)
+        if explicit_location and self.matches_entity_value(explicit_location, entity_values):
+            explicit_location = None
+        metadata_location = self.extract_metadata_location(metadata)
         meeting_related = self.is_meeting_related(email_text, subject, metadata)
 
         hints = []
@@ -152,7 +193,11 @@ class QAContextEnricher:
             "context": enriched_context,
             "subject": subject,
             "sender": sender,
+            "metadata": metadata,
+            "metadata_location": metadata_location,
+            "entity_values": entity_values,
             "temporal_hints": temporal_hints,
+            "reference_datetime": reference_datetime,
             "explicit_location": explicit_location,
             "meeting_related": meeting_related,
             "hints": hints,
@@ -188,25 +233,41 @@ class QAContextEnricher:
             )
 
         location = results.get("location", {})
-        explicit_location = enrichment.get("explicit_location")
-        if explicit_location and self.is_bad_location_answer(location, email_text, enrichment):
-            results["location"] = self.fallback_result(
-                location,
-                explicit_location,
-                "fallback_explicit_location",
-                confidence=0.8,
-            )
-        elif (
-            enrichment.get("meeting_related")
-            and not explicit_location
-            and self.is_bad_location_answer(location, email_text, enrichment)
-        ):
-            results["location"] = self.fallback_result(
-                location,
-                self.REMOTE_DEFAULT,
-                "default_remote_location",
-                confidence=0.6,
-            )
+        if self.is_non_meeting(enrichment.get("metadata", {})):
+            results["location"] = self.empty_result(location, "non_meeting_no_location")
+        elif not self.is_bad_location_answer(location, email_text, enrichment):
+            normalized_location = self.normalize_location_answer(str(location.get("answer") or ""))
+            if normalized_location != location.get("answer"):
+                results["location"] = self.fallback_result(
+                    location,
+                    normalized_location,
+                    "normalized_location",
+                    confidence=float(location.get("confidence") or 0.0),
+                )
+        else:
+            metadata_location = enrichment.get("metadata_location")
+            explicit_location = enrichment.get("explicit_location")
+            if metadata_location:
+                results["location"] = self.fallback_result(
+                    location,
+                    metadata_location,
+                    "fallback_metadata_location",
+                    confidence=0.9,
+                )
+            elif explicit_location:
+                results["location"] = self.fallback_result(
+                    location,
+                    explicit_location,
+                    "fallback_explicit_location",
+                    confidence=0.8,
+                )
+            elif enrichment.get("meeting_related"):
+                results["location"] = self.fallback_result(
+                    location,
+                    self.REMOTE_DEFAULT,
+                    "default_remote_location",
+                    confidence=0.6,
+                )
 
         topic = results.get("topic", {})
         if self.is_bad_answer(topic, email_text) and enrichment.get("subject"):
@@ -218,6 +279,19 @@ class QAContextEnricher:
             )
 
         return results
+
+    @classmethod
+    def empty_result(cls, original: Dict[str, Any], source: str) -> Dict[str, Any]:
+        result = dict(original)
+        result.update(
+            {
+                "answer": None,
+                "confidence": 0.0,
+                "valid": False,
+                "fallback_source": source,
+            }
+        )
+        return result
 
     @classmethod
     def fallback_result(
@@ -275,24 +349,82 @@ class QAContextEnricher:
         if not answer:
             return True
 
-        if QAContextEnricher.LOCATION_PATTERN.search(answer):
-            return False
-
         normalized_answer = TextNormalizer.clean_text(answer, lowercase=True)
-        sender = enrichment.get("sender")
-        if sender and normalized_answer == TextNormalizer.clean_text(str(sender), lowercase=True):
+        if normalized_answer in {"em", "no", "na", "por", "via", "onde"}:
             return True
+
+        for value in enrichment.get("entity_values", []):
+            if QAContextEnricher.matches_entity_value(normalized_answer, [str(value)]):
+                return True
 
         subject = enrichment.get("subject")
         if subject and normalized_answer == TextNormalizer.clean_text(str(subject), lowercase=True):
             return True
 
-        for hint in enrichment.get("temporal_hints", []):
-            hint_text = TextNormalizer.clean_text(str(hint.get("text") or ""), lowercase=True)
-            if hint_text and normalized_answer == hint_text:
-                return True
+        if QAContextEnricher.is_temporal_like(answer, enrichment):
+            return True
+
+        if QAContextEnricher.LOCATION_PATTERN.search(answer):
+            return False
 
         return True
+
+    @classmethod
+    def normalize_location_answer(cls, answer: str) -> str:
+        answer = re.sub(r"^\s*(?:em|no|na|por|via)\s+", "", answer.strip(), flags=re.IGNORECASE)
+        remote_match = cls.REMOTE_PATTERN.search(answer)
+        if remote_match:
+            return f"remoto - {cls.normalize_remote_platform(remote_match.group(0))}"
+        room_department_match = cls.ROOM_DEPARTMENT_PATTERN.search(answer)
+        if room_department_match:
+            return f"presencial - {room_department_match.group(0).strip()}"
+        room_match = cls.ROOM_PATTERN.search(answer)
+        if room_match:
+            return f"presencial - {room_match.group(0).strip()}"
+        office_match = cls.OFFICE_PATTERN.search(answer)
+        if office_match:
+            return f"presencial - {office_match.group(0).strip()}"
+        presential_match = cls.PRESENTIAL_PATTERN.search(answer)
+        if presential_match:
+            return f"presencial - {presential_match.group(0).strip()}"
+        return answer
+
+    @staticmethod
+    def normalize_remote_platform(platform: str) -> str:
+        text = str(platform or "").strip().lower()
+        if "team" in text:
+            return "teams"
+        if "meet" in text:
+            return "google meet"
+        if "zoom" in text:
+            return "zoom"
+        return "zoom"
+
+    @staticmethod
+    def matches_entity_value(answer: str, entity_values: List[str]) -> bool:
+        normalized_answer = TextNormalizer.clean_text(str(answer), lowercase=True)
+        if not normalized_answer:
+            return False
+        for value in entity_values:
+            normalized_value = TextNormalizer.clean_text(str(value), lowercase=True)
+            if normalized_value and (
+                normalized_answer == normalized_value
+                or normalized_value in normalized_answer
+                or normalized_answer in normalized_value
+            ):
+                return True
+        return False
+
+    @classmethod
+    def is_temporal_like(cls, answer: str, enrichment: Dict[str, Any]) -> bool:
+        answer_norm = TextNormalizer.clean_text(answer, lowercase=True)
+        if not answer_norm:
+            return False
+        for hint in enrichment.get("temporal_hints", []):
+            hint_text = TextNormalizer.clean_text(str(hint.get("text") or ""), lowercase=True)
+            if hint_text and (answer_norm == hint_text or answer_norm in hint_text or hint_text in answer_norm):
+                return True
+        return any(pattern.search(answer) for pattern in cls.TEMPORAL_PATTERNS)
 
     @staticmethod
     def is_auxiliary_answer(answer: str) -> bool:
@@ -326,13 +458,55 @@ class QAContextEnricher:
 
         return None
 
+    @classmethod
+    def extract_metadata_location(cls, metadata: Dict[str, Any]) -> Optional[str]:
+        for key in cls.LOCATION_METADATA_KEYS:
+            value = metadata.get(key)
+            if not value:
+                continue
+            if isinstance(value, list):
+                value = next((item for item in value if item), None)
+            if not value:
+                continue
+            text = cls.normalize_location_answer(str(value))
+            return text or None
+        return None
+
+    @classmethod
+    def extract_entity_values(cls, metadata: Dict[str, Any], sender: Optional[str]) -> List[str]:
+        values: List[str] = []
+        for key in (
+            "sender",
+            "sender_name",
+            "sender_email",
+            "recipient",
+            "recipient_name",
+            "recipient_email",
+            "from",
+            "to",
+            "author",
+            "participants",
+        ):
+            value = metadata.get(key)
+            if isinstance(value, list):
+                values.extend(str(item) for item in value if item)
+            elif value:
+                values.append(str(value))
+        if sender:
+            values.append(sender)
+        return list(dict.fromkeys(value.strip() for value in values if value and value.strip()))
+
     @staticmethod
     def clean_sender(value: str) -> str:
         value = re.sub(r"\s+", " ", value).strip()
         value = value.strip("<>")
         return value or ""
 
-    def extract_temporal_hints(self, email_text: str) -> List[Dict[str, Any]]:
+    def extract_temporal_hints_with_reference(
+        self,
+        email_text: str,
+        reference_datetime: Optional[datetime],
+    ) -> List[Dict[str, Any]]:
         seen = set()
         hints = []
         for pattern in self.TEMPORAL_PATTERNS:
@@ -346,11 +520,32 @@ class QAContextEnricher:
                 if self.temporal_normalizer:
                     normalized = self.temporal_normalizer.normalize(
                         text,
-                        reference_datetime=self.reference_datetime,
+                        reference_datetime=reference_datetime,
                     )
                     hint.update(normalized.to_dict())
                 hints.append(hint)
         return hints
+
+    def extract_temporal_hints(
+        self,
+        email_text: str,
+        reference_datetime: Optional[datetime] = None,
+    ) -> List[Dict[str, Any]]:
+        return self.extract_temporal_hints_with_reference(
+            email_text,
+            reference_datetime or self.reference_datetime,
+        )
+
+    def extract_reference_datetime(self, metadata: Dict[str, Any]) -> Optional[datetime]:
+        for key in ("sent_datetime", "sent_at", "email_date", "date", "created_at"):
+            value = metadata.get(key)
+            if not value:
+                continue
+            try:
+                return datetime.fromisoformat(str(value).replace("Z", "+00:00"))
+            except ValueError:
+                continue
+        return self.reference_datetime
 
     @staticmethod
     def attach_temporal_metadata(
@@ -373,8 +568,16 @@ class QAContextEnricher:
 
     @classmethod
     def extract_explicit_location(cls, email_text: str) -> Optional[str]:
-        match = cls.LOCATION_PATTERN.search(email_text or "")
-        return match.group(0).strip() if match else None
+        for match in cls.LOCATION_PATTERN.finditer(email_text or ""):
+            prefix = (email_text or "")[max(0, match.start() - 10):match.start()]
+            if re.search(r"(?:em|no|na|por|via)\s+$", prefix, re.IGNORECASE):
+                return cls.normalize_location_answer(match.group(0).strip())
+        return None
+
+    @classmethod
+    def is_non_meeting(cls, metadata: Dict[str, Any]) -> bool:
+        intent = metadata.get("intent") or metadata.get("label") or metadata.get("predicted_intent")
+        return str(intent or "").strip().lower() in cls.NON_MEETING_LABELS
 
     @staticmethod
     def is_meeting_related(
@@ -383,7 +586,7 @@ class QAContextEnricher:
         metadata: Dict[str, Any],
     ) -> bool:
         intent = metadata.get("intent") or metadata.get("label") or metadata.get("predicted_intent")
-        if intent and intent != "nao_reuniao":
+        if intent and str(intent).strip().lower() not in QAContextEnricher.NON_MEETING_LABELS:
             return True
         combined = f"{subject or ''} {email_text or ''}".lower()
         return any(term in combined for term in ["reuni", "call", "disponibilidade", "combinar", "encontro"])
@@ -535,7 +738,13 @@ class QAPipeline:
                     'confidence_threshold': self.confidence_threshold,
                     'context_enrichment': {
                         'sender': enrichment.get('sender'),
+                        'metadata_location': enrichment.get('metadata_location'),
                         'temporal_hints': enrichment.get('temporal_hints', []),
+                        'reference_datetime': (
+                            enrichment.get('reference_datetime').isoformat()
+                            if enrichment.get('reference_datetime')
+                            else None
+                        ),
                         'explicit_location': enrichment.get('explicit_location'),
                         'meeting_related': enrichment.get('meeting_related'),
                         'hints': enrichment.get('hints', []),

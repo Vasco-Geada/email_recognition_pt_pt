@@ -22,9 +22,8 @@ pandas>=2.0.0
 tqdm>=4.65.0
 
 # Optional: Fine-tuning and advanced features
-# Uncomment if doing fine-tuning:
-# datasets>=2.14.0
-# accelerate>=0.24.0
+datasets>=2.14.0
+# accelerate>=0.24.0  # Only needed if using HuggingFace Trainer
 # bitsandbytes>=0.41.0  # For quantization
 
 # Development & Testing (optional)

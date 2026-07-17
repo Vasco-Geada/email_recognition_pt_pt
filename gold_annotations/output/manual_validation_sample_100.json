@@ -1,0 +1,3846 @@
+[
+  {
+    "id": 1824,
+    "dataset_id": 230,
+    "subject": "Re: Disponibilidade para reuniao",
+    "text": "Boa tarde Prof. Ricardo Mendes,\n\nPreciso de esclarecer alguns pontos sobre relatorio de progresso. Consegue reunir dia 22 as 17h?\n\nSe preferir, posso adaptar ao horario do departamento.\n\nCom os melhores cumprimentos,\nCoordenacao de Mestrado\n\n--\nMensagem enviada automaticamente",
+    "sent_datetime": "2026-03-12T18:30:00",
+    "intent": "agendamento_reuniao",
+    "trigger": [],
+    "arguments": {
+      "participants": [
+        "Coordenacao de Mestrado",
+        "Prof. Ricardo Mendes"
+      ],
+      "time": [
+        "dia 22 as 17h"
+      ],
+      "time_normalized": [
+        "2026-03-12T17:00:00"
+      ],
+      "location": [
+        "remoto - zoom"
+      ],
+      "topic": [
+        "relatorio de progresso"
+      ]
+    },
+    "confidence": {
+      "trigger": 1.0,
+      "participants": 1.0,
+      "temporal": 1.0,
+      "location": 1.0,
+      "topic": 1.0
+    },
+    "metadata": {
+      "created_at": "2026-06-26T16:08:52.592882",
+      "validated": true,
+      "version": "metadata_gold_v2",
+      "source": "dataset metadata + sent_datetime temporal normalization",
+      "sent_datetime": "2026-03-12T18:30:00"
+    }
+  },
+  {
+    "id": 409,
+    "dataset_id": 2989,
+    "subject": "Re: Disponibilidade para reuniao",
+    "text": "Boa tarde Prof. Ricardo Mendes,\n\nConseguimos reagendar a reuniao sobre submissao de artigo para antes do seminario, em remoto?\n\nCumprimentos,\nDiretor do Curso\n\n--\nMensagem enviada automaticamente",
+    "sent_datetime": "2026-03-27T08:40:00",
+    "intent": "agendamento_reuniao",
+    "trigger": [],
+    "arguments": {
+      "participants": [
+        "Diretor do Curso",
+        "Prof. Ricardo Mendes"
+      ],
+      "time": [
+        "antes do seminario"
+      ],
+      "time_normalized": [],
+      "location": [
+        "remoto - zoom"
+      ],
+      "topic": [
+        "submissao de artigo"
+      ]
+    },
+    "confidence": {
+      "trigger": 1.0,
+      "participants": 1.0,
+      "temporal": 1.0,
+      "location": 1.0,
+      "topic": 1.0
+    },
+    "metadata": {
+      "created_at": "2026-06-26T16:08:45.061967",
+      "validated": true,
+      "version": "metadata_gold_v2",
+      "source": "dataset metadata + sent_datetime temporal normalization",
+      "sent_datetime": "2026-03-27T08:40:00"
+    }
+  },
+  {
+    "id": 4506,
+    "dataset_id": 9507,
+    "subject": "Re: Informacao academica",
+    "text": "Bom dia,\n\nRelembro que a aula de amanha sera dedicada a exercicios praticos.\n\nCom os melhores cumprimentos,\nConselho Pedagogico\n\n--\nMensagem enviada automaticamente",
+    "sent_datetime": "2026-04-30T10:05:00",
+    "intent": "nao_reuniao",
+    "trigger": [],
+    "arguments": {
+      "participants": [
+        "Conselho Pedagogico",
+        "Professora Sofia Carvalho"
+      ],
+      "time": [],
+      "time_normalized": [],
+      "location": [],
+      "topic": []
+    },
+    "confidence": {
+      "trigger": 1.0,
+      "participants": 1.0,
+      "temporal": 1.0,
+      "location": 1.0,
+      "topic": 1.0
+    },
+    "metadata": {
+      "created_at": "2026-06-26T16:09:06.642530",
+      "validated": true,
+      "version": "metadata_gold_v2",
+      "source": "dataset metadata + sent_datetime temporal normalization",
+      "sent_datetime": "2026-04-30T10:05:00"
+    }
+  },
+  {
+    "id": 4012,
+    "dataset_id": 4432,
+    "subject": "Indisponibilidade para a reuniao",
+    "text": "Bom dia Secretaria Academica,\n\nInfelizmente tenho de cancelar a reuniao prevista para depois da aula sobre revisao do plano de trabalhos.\n\nCom os melhores cumprimentos,\nMiguel Santos\n\nEnviado do telemovel",
+    "sent_datetime": "2026-02-15T13:50:00",
+    "intent": "cancelamento_reuniao",
+    "trigger": [],
+    "arguments": {
+      "participants": [
+        "Miguel Santos",
+        "Secretaria Academica"
+      ],
+      "time": [
+        "depois da aula"
+      ],
+      "time_normalized": [],
+      "location": [
+        "remoto - zoom"
+      ],
+      "topic": [
+        "revisao do plano de trabalhos"
+      ]
+    },
+    "confidence": {
+      "trigger": 1.0,
+      "participants": 1.0,
+      "temporal": 1.0,
+      "location": 1.0,
+      "topic": 1.0
+    },
+    "metadata": {
+      "created_at": "2026-06-26T16:09:04.035230",
+      "validated": true,
+      "version": "metadata_gold_v2",
+      "source": "dataset metadata + sent_datetime temporal normalization",
+      "sent_datetime": "2026-02-15T13:50:00"
+    }
+  },
+  {
+    "id": 3657,
+    "dataset_id": 1711,
+    "subject": "Re: Marcacao de reuniao",
+    "text": "Ola Professora Ana Costa,\n\nGostaria de saber se tem disponibilidade para reunirmos quarta a tarde, em remoto, para falarmos sobre submissao de artigo.\n\nSe preferir, posso adaptar ao horario do departamento.\n\nObrigado pela atencao.\n\nCom os melhores cumprimentos,\nMiguel Santos\n\nEnviado do telemovel",
+    "sent_datetime": "2026-03-27T12:20:00",
+    "intent": "agendamento_reuniao",
+    "trigger": [],
+    "arguments": {
+      "participants": [
+        "Miguel Santos",
+        "Professora Ana Costa"
+      ],
+      "time": [
+        "quarta a tarde"
+      ],
+      "time_normalized": [
+        "2026-04-01T15:00:00"
+      ],
+      "location": [
+        "remoto - zoom"
+      ],
+      "topic": [
+        "submissao de artigo"
+      ]
+    },
+    "confidence": {
+      "trigger": 1.0,
+      "participants": 1.0,
+      "temporal": 1.0,
+      "location": 1.0,
+      "topic": 1.0
+    },
+    "metadata": {
+      "created_at": "2026-06-26T16:09:02.158390",
+      "validated": true,
+      "version": "metadata_gold_v2",
+      "source": "dataset metadata + sent_datetime temporal normalization",
+      "sent_datetime": "2026-03-27T12:20:00"
+    }
+  },
+  {
+    "id": 2286,
+    "dataset_id": 9525,
+    "subject": "RE: Atualizacao de processo",
+    "text": "Bom dia Miguel Santos,\n\nSegue a informacao solicitada pela secretaria sobre pedido de equivalencias.\n\nObrigado pela atencao.\n\nCumprimentos,\nSecretaria Academica\n\n--\nMensagem enviada automaticamente",
+    "sent_datetime": "2026-05-13T12:45:00",
+    "intent": "nao_reuniao",
+    "trigger": [],
+    "arguments": {
+      "participants": [
+        "Secretaria Academica",
+        "Miguel Santos"
+      ],
+      "time": [],
+      "time_normalized": [],
+      "location": [],
+      "topic": []
+    },
+    "confidence": {
+      "trigger": 1.0,
+      "participants": 1.0,
+      "temporal": 1.0,
+      "location": 1.0,
+      "topic": 1.0
+    },
+    "metadata": {
+      "created_at": "2026-06-26T16:08:55.029326",
+      "validated": true,
+      "version": "metadata_gold_v2",
+      "source": "dataset metadata + sent_datetime temporal normalization",
+      "sent_datetime": "2026-05-13T12:45:00"
+    }
+  },
+  {
+    "id": 1679,
+    "dataset_id": 2237,
+    "subject": "Re: Agendamento - horarios do semestre",
+    "text": "Estimado/a estudante Rita Fernandes,\n\nPodemos remarcar a reuniao sobre horarios do semestre para durante a manha?\n\nCumprimentos,\nSecretaria Academica\n\nEnviado do Outlook",
+    "sent_datetime": "2026-02-15T17:40:00",
+    "intent": "agendamento_reuniao",
+    "trigger": [],
+    "arguments": {
+      "participants": [
+        "Secretaria Academica",
+        "Rita Fernandes"
+      ],
+      "time": [
+        "durante a manha"
+      ],
+      "time_normalized": [
+        "2026-02-15T09:00:00"
+      ],
+      "location": [
+        "remoto - zoom"
+      ],
+      "topic": [
+        "horarios do semestre"
+      ]
+    },
+    "confidence": {
+      "trigger": 1.0,
+      "participants": 1.0,
+      "temporal": 1.0,
+      "location": 1.0,
+      "topic": 1.0
+    },
+    "metadata": {
+      "created_at": "2026-06-26T16:08:51.806382",
+      "validated": true,
+      "version": "metadata_gold_v2",
+      "source": "dataset metadata + sent_datetime temporal normalization",
+      "sent_datetime": "2026-02-15T17:40:00"
+    }
+  },
+  {
+    "id": 8935,
+    "dataset_id": 2430,
+    "subject": "Necessidade de remarcar",
+    "text": "Bom dia Secretaria Academica,\n\nGostaria de saber se tem disponibilidade para reunirmos dia 22 as 17h, em biblioteca, para falarmos sobre pedido de equivalencias.\n\nObrigado,\nAna Martins\n\nEnviado do Outlook",
+    "sent_datetime": "2026-03-22T18:20:00",
+    "intent": "agendamento_reuniao",
+    "trigger": [],
+    "arguments": {
+      "participants": [
+        "Ana Martins",
+        "Secretaria Academica"
+      ],
+      "time": [
+        "dia 22 as 17h"
+      ],
+      "time_normalized": [
+        "2026-03-22T17:00:00"
+      ],
+      "location": [
+        "presencial - biblioteca"
+      ],
+      "topic": [
+        "pedido de equivalencias"
+      ]
+    },
+    "confidence": {
+      "trigger": 1.0,
+      "participants": 1.0,
+      "temporal": 1.0,
+      "location": 1.0,
+      "topic": 1.0
+    },
+    "metadata": {
+      "created_at": "2026-06-26T16:09:30.030178",
+      "validated": true,
+      "version": "metadata_gold_v2",
+      "source": "dataset metadata + sent_datetime temporal normalization",
+      "sent_datetime": "2026-03-22T18:20:00"
+    }
+  },
+  {
+    "id": 1424,
+    "dataset_id": 9711,
+    "subject": "Re: Envio de documentos",
+    "text": "Estimado/a estudante Professor Luis Almeida,\n\nSegue a informacao solicitada pela secretaria sobre submissao de artigo.\n\nCumprimentos,\nSecretaria Academica\n\nEnviado do Outlook",
+    "sent_datetime": "2026-05-08T18:45:00",
+    "intent": "nao_reuniao",
+    "trigger": [],
+    "arguments": {
+      "participants": [
+        "Secretaria Academica",
+        "Professor Luis Almeida"
+      ],
+      "time": [],
+      "time_normalized": [],
+      "location": [],
+      "topic": []
+    },
+    "confidence": {
+      "trigger": 1.0,
+      "participants": 1.0,
+      "temporal": 1.0,
+      "location": 1.0,
+      "topic": 1.0
+    },
+    "metadata": {
+      "created_at": "2026-06-26T16:08:50.495857",
+      "validated": true,
+      "version": "metadata_gold_v2",
+      "source": "dataset metadata + sent_datetime temporal normalization",
+      "sent_datetime": "2026-05-08T18:45:00"
+    }
+  },
+  {
+    "id": 9674,
+    "dataset_id": 1656,
+    "subject": "Agendamento - horarios do semestre",
+    "text": "Cara Professora Professora Ana Costa,\n\nConseguimos reagendar a reuniao sobre horarios do semestre para quinta as 16h, em remoto?\n\nObrigado,\nCarolina Silva",
+    "sent_datetime": "2026-02-05T12:45:00",
+    "intent": "agendamento_reuniao",
+    "trigger": [],
+    "arguments": {
+      "participants": [
+        "Carolina Silva",
+        "Professora Ana Costa"
+      ],
+      "time": [
+        "quinta as 16h"
+      ],
+      "time_normalized": [
+        "2026-02-05T16:00:00"
+      ],
+      "location": [
+        "remoto - zoom"
+      ],
+      "topic": [
+        "horarios do semestre"
+      ]
+    },
+    "confidence": {
+      "trigger": 1.0,
+      "participants": 1.0,
+      "temporal": 1.0,
+      "location": 1.0,
+      "topic": 1.0
+    },
+    "metadata": {
+      "created_at": "2026-06-26T16:09:34.176272",
+      "validated": true,
+      "version": "metadata_gold_v2",
+      "source": "dataset metadata + sent_datetime temporal normalization",
+      "sent_datetime": "2026-02-05T12:45:00"
+    }
+  },
+  {
+    "id": 6912,
+    "dataset_id": 8084,
+    "subject": "Reuniao confirmada",
+    "text": "Viva Coordenacao de Mestrado,\n\nDa minha parte esta confirmado. Encontramo-nos em remoto.\n\nCumprimentos,\nProfessora Ana Costa\n\n--\nMensagem enviada automaticamente",
+    "sent_datetime": "2026-02-20T13:50:00",
+    "intent": "reuniao_confirmada",
+    "trigger": [],
+    "arguments": {
+      "participants": [
+        "Professora Ana Costa",
+        "Coordenacao de Mestrado"
+      ],
+      "time": [],
+      "time_normalized": [],
+      "location": [
+        "remoto - zoom"
+      ],
+      "topic": [
+        "orientacao da dissertacao"
+      ]
+    },
+    "confidence": {
+      "trigger": 1.0,
+      "participants": 1.0,
+      "temporal": 1.0,
+      "location": 1.0,
+      "topic": 1.0
+    },
+    "metadata": {
+      "created_at": "2026-06-26T16:09:19.081576",
+      "validated": true,
+      "version": "metadata_gold_v2",
+      "source": "dataset metadata + sent_datetime temporal normalization",
+      "sent_datetime": "2026-02-20T13:50:00"
+    }
+  },
+  {
+    "id": 520,
+    "dataset_id": 3859,
+    "subject": "Re: Cancelamento de reuniao",
+    "text": "Bom dia,\n\nPor motivo imprevisto, a reuniao de terca as 11h fica sem efeito.\n\nSe preferir, posso adaptar ao horario do departamento.\n\nCumprimentos,\nProfessora Ana Costa\n\nEnviado do telemovel",
+    "sent_datetime": "2026-03-24T18:10:00",
+    "intent": "cancelamento_reuniao",
+    "trigger": [],
+    "arguments": {
+      "participants": [
+        "Professora Ana Costa",
+        "Conselho Pedagogico"
+      ],
+      "time": [
+        "terca as 11h"
+      ],
+      "time_normalized": [
+        "2026-03-31T11:00:00"
+      ],
+      "location": [
+        "remoto - zoom"
+      ],
+      "topic": [
+        "pedido de equivalencias"
+      ]
+    },
+    "confidence": {
+      "trigger": 1.0,
+      "participants": 1.0,
+      "temporal": 1.0,
+      "location": 1.0,
+      "topic": 1.0
+    },
+    "metadata": {
+      "created_at": "2026-06-26T16:08:45.642530",
+      "validated": true,
+      "version": "metadata_gold_v2",
+      "source": "dataset metadata + sent_datetime temporal normalization",
+      "sent_datetime": "2026-03-24T18:10:00"
+    }
+  },
+  {
+    "id": 488,
+    "dataset_id": 6621,
+    "subject": "Tudo certo para a reuniao",
+    "text": "Bom dia,\n\nConfirmo a minha presenca na reuniao em remoto.\n\nCom os melhores cumprimentos,\nProfessora Ana Costa\n\nEnviado do Outlook",
+    "sent_datetime": "2026-02-24T09:15:00",
+    "intent": "reuniao_confirmada",
+    "trigger": [],
+    "arguments": {
+      "participants": [
+        "Professora Ana Costa",
+        "Professora Sofia Carvalho"
+      ],
+      "time": [],
+      "time_normalized": [],
+      "location": [
+        "remoto - zoom"
+      ],
+      "topic": [
+        "relatorio de progresso"
+      ]
+    },
+    "confidence": {
+      "trigger": 1.0,
+      "participants": 1.0,
+      "temporal": 1.0,
+      "location": 1.0,
+      "topic": 1.0
+    },
+    "metadata": {
+      "created_at": "2026-06-26T16:08:45.489385",
+      "validated": true,
+      "version": "metadata_gold_v2",
+      "source": "dataset metadata + sent_datetime temporal normalization",
+      "sent_datetime": "2026-02-24T09:15:00"
+    }
+  },
+  {
+    "id": 1535,
+    "dataset_id": 3427,
+    "subject": "Fw: Reuniao sem efeito",
+    "text": "Cara Professora Professor Luis Almeida,\n\nInfelizmente tenho de cancelar a reuniao prevista para dia 22 as 17h sobre horarios do semestre.\n\nCom os melhores cumprimentos,\nAna Martins\n\nEnviado do Outlook",
+    "sent_datetime": "2026-04-02T16:15:00",
+    "intent": "cancelamento_reuniao",
+    "trigger": [],
+    "arguments": {
+      "participants": [
+        "Ana Martins",
+        "Professor Luis Almeida"
+      ],
+      "time": [
+        "dia 22 as 17h"
+      ],
+      "time_normalized": [
+        "2026-04-02T17:00:00"
+      ],
+      "location": [
+        "remoto - zoom"
+      ],
+      "topic": [
+        "horarios do semestre"
+      ]
+    },
+    "confidence": {
+      "trigger": 1.0,
+      "participants": 1.0,
+      "temporal": 1.0,
+      "location": 1.0,
+      "topic": 1.0
+    },
+    "metadata": {
+      "created_at": "2026-06-26T16:08:51.035371",
+      "validated": true,
+      "version": "metadata_gold_v2",
+      "source": "dataset metadata + sent_datetime temporal normalization",
+      "sent_datetime": "2026-04-02T16:15:00"
+    }
+  },
+  {
+    "id": 3582,
+    "dataset_id": 1428,
+    "subject": "Re: Remarcacao de reuniao",
+    "text": "Bom dia Prof. Ricardo Mendes,\n\nGostaria de saber se tem disponibilidade para reunirmos durante a manha, em sala B104, para falarmos sobre avaliacao continua.\n\nObrigado pela atencao.\n\nObrigado,\nProfessor Luis Almeida\n\n--\nMensagem enviada automaticamente",
+    "sent_datetime": "2026-02-26T15:10:00",
+    "intent": "agendamento_reuniao",
+    "trigger": [],
+    "arguments": {
+      "participants": [
+        "Professor Luis Almeida",
+        "Prof. Ricardo Mendes"
+      ],
+      "time": [
+        "durante a manha"
+      ],
+      "time_normalized": [
+        "2026-02-26T09:00:00"
+      ],
+      "location": [
+        "presencial - sala B104"
+      ],
+      "topic": [
+        "avaliacao continua"
+      ]
+    },
+    "confidence": {
+      "trigger": 1.0,
+      "participants": 1.0,
+      "temporal": 1.0,
+      "location": 1.0,
+      "topic": 1.0
+    },
+    "metadata": {
+      "created_at": "2026-06-26T16:09:01.768874",
+      "validated": true,
+      "version": "metadata_gold_v2",
+      "source": "dataset metadata + sent_datetime temporal normalization",
+      "sent_datetime": "2026-02-26T15:10:00"
+    }
+  },
+  {
+    "id": 3811,
+    "dataset_id": 2229,
+    "subject": "Fw: Pedido de reuniao",
+    "text": "Bom dia Professora Ana Costa,\n\nGostaria de saber se tem disponibilidade para reunirmos depois da aula, em Zoom, para falarmos sobre orientacao da dissertacao.\n\nCumprimentos,\nConselho Pedagogico\n\n--\nMensagem enviada automaticamente",
+    "sent_datetime": "2026-02-25T13:05:00",
+    "intent": "agendamento_reuniao",
+    "trigger": [],
+    "arguments": {
+      "participants": [
+        "Conselho Pedagogico",
+        "Professora Ana Costa"
+      ],
+      "time": [
+        "depois da aula"
+      ],
+      "time_normalized": [],
+      "location": [
+        "remoto - zoom"
+      ],
+      "topic": [
+        "orientacao da dissertacao"
+      ]
+    },
+    "confidence": {
+      "trigger": 1.0,
+      "participants": 1.0,
+      "temporal": 1.0,
+      "location": 1.0,
+      "topic": 1.0
+    },
+    "metadata": {
+      "created_at": "2026-06-26T16:09:02.967145",
+      "validated": true,
+      "version": "metadata_gold_v2",
+      "source": "dataset metadata + sent_datetime temporal normalization",
+      "sent_datetime": "2026-02-25T13:05:00"
+    }
+  },
+  {
+    "id": 8279,
+    "dataset_id": 8643,
+    "subject": "Fw: Re: Marcacao de reuniao",
+    "text": "Caro colega Gabinete de Estagios,\n\nPode ficar marcado conforme proposto. Obrigado pela confirmacao.\n\nObrigado,\nProfessora Sofia Carvalho\n\nEnviado do Outlook",
+    "sent_datetime": "2026-03-08T10:30:00",
+    "intent": "reuniao_confirmada",
+    "trigger": [],
+    "arguments": {
+      "participants": [
+        "Professora Sofia Carvalho",
+        "Gabinete de Estagios"
+      ],
+      "time": [],
+      "time_normalized": [],
+      "location": [
+        "remoto - zoom"
+      ],
+      "topic": [
+        "avaliacao continua"
+      ]
+    },
+    "confidence": {
+      "trigger": 1.0,
+      "participants": 1.0,
+      "temporal": 1.0,
+      "location": 1.0,
+      "topic": 1.0
+    },
+    "metadata": {
+      "created_at": "2026-06-26T16:09:26.636176",
+      "validated": true,
+      "version": "metadata_gold_v2",
+      "source": "dataset metadata + sent_datetime temporal normalization",
+      "sent_datetime": "2026-03-08T10:30:00"
+    }
+  },
+  {
+    "id": 9863,
+    "dataset_id": 8681,
+    "subject": "Re: Confirmado",
+    "text": "Caro colega Diretor do Curso,\n\nConfirmo a reuniao depois da aula, em sala de reunioes do departamento, para discutirmos revisao do plano de trabalhos.\n\nObrigado pela atencao.\n\nCom os melhores cumprimentos,\nProf. Ricardo Mendes",
+    "sent_datetime": "2026-03-14T16:45:00",
+    "intent": "reuniao_confirmada",
+    "trigger": [],
+    "arguments": {
+      "participants": [
+        "Prof. Ricardo Mendes",
+        "Diretor do Curso"
+      ],
+      "time": [
+        "depois da aula"
+      ],
+      "time_normalized": [],
+      "location": [
+        "presencial - sala de reunioes do departamento"
+      ],
+      "topic": [
+        "revisao do plano de trabalhos"
+      ]
+    },
+    "confidence": {
+      "trigger": 1.0,
+      "participants": 1.0,
+      "temporal": 1.0,
+      "location": 1.0,
+      "topic": 1.0
+    },
+    "metadata": {
+      "created_at": "2026-06-26T16:09:35.226049",
+      "validated": true,
+      "version": "metadata_gold_v2",
+      "source": "dataset metadata + sent_datetime temporal normalization",
+      "sent_datetime": "2026-03-14T16:45:00"
+    }
+  },
+  {
+    "id": 434,
+    "dataset_id": 7193,
+    "subject": "RE: Reuniao confirmada",
+    "text": "Bom dia Professor Luis Almeida,\n\nTudo certo para a reuniao sobre preparacao da apresentacao. Ate quando for conveniente.\n\nCom os melhores cumprimentos,\nDiretor do Curso\n\nEnviado do Outlook",
+    "sent_datetime": "2026-02-22T18:30:00",
+    "intent": "reuniao_confirmada",
+    "trigger": [],
+    "arguments": {
+      "participants": [
+        "Diretor do Curso",
+        "Professor Luis Almeida"
+      ],
+      "time": [],
+      "time_normalized": [],
+      "location": [
+        "remoto - zoom"
+      ],
+      "topic": [
+        "preparacao da apresentacao"
+      ]
+    },
+    "confidence": {
+      "trigger": 1.0,
+      "participants": 1.0,
+      "temporal": 1.0,
+      "location": 1.0,
+      "topic": 1.0
+    },
+    "metadata": {
+      "created_at": "2026-06-26T16:08:45.201655",
+      "validated": true,
+      "version": "metadata_gold_v2",
+      "source": "dataset metadata + sent_datetime temporal normalization",
+      "sent_datetime": "2026-02-22T18:30:00"
+    }
+  },
+  {
+    "id": 9195,
+    "dataset_id": 7299,
+    "subject": "RE: Confirmacao - planeamento de aulas",
+    "text": "Boa tarde,\n\nFica entao combinado para depois da aula.\n\nCumprimentos,\nProfessor Luis Almeida\n\nEnviado do telemovel",
+    "sent_datetime": "2026-05-19T15:05:00",
+    "intent": "reuniao_confirmada",
+    "trigger": [],
+    "arguments": {
+      "participants": [
+        "Professor Luis Almeida",
+        "Diretor do Curso"
+      ],
+      "time": [
+        "depois da aula"
+      ],
+      "time_normalized": [],
+      "location": [
+        "remoto - zoom"
+      ],
+      "topic": [
+        "planeamento de aulas"
+      ]
+    },
+    "confidence": {
+      "trigger": 1.0,
+      "participants": 1.0,
+      "temporal": 1.0,
+      "location": 1.0,
+      "topic": 1.0
+    },
+    "metadata": {
+      "created_at": "2026-06-26T16:09:31.690606",
+      "validated": true,
+      "version": "metadata_gold_v2",
+      "source": "dataset metadata + sent_datetime temporal normalization",
+      "sent_datetime": "2026-05-19T15:05:00"
+    }
+  },
+  {
+    "id": 3257,
+    "dataset_id": 8501,
+    "subject": "Tudo certo para a reuniao",
+    "text": "Exmo. Professor,\n\nFica entao combinado para quando for conveniente.\n\nCom os melhores cumprimentos,\nDiretor do Curso\n\nEnviado do Outlook",
+    "sent_datetime": "2026-03-22T09:50:00",
+    "intent": "reuniao_confirmada",
+    "trigger": [],
+    "arguments": {
+      "participants": [
+        "Diretor do Curso",
+        "Professor Luis Almeida"
+      ],
+      "time": [],
+      "time_normalized": [],
+      "location": [
+        "remoto - zoom"
+      ],
+      "topic": [
+        "coordenacao da unidade curricular"
+      ]
+    },
+    "confidence": {
+      "trigger": 1.0,
+      "participants": 1.0,
+      "temporal": 1.0,
+      "location": 1.0,
+      "topic": 1.0
+    },
+    "metadata": {
+      "created_at": "2026-06-26T16:08:59.957114",
+      "validated": true,
+      "version": "metadata_gold_v2",
+      "source": "dataset metadata + sent_datetime temporal normalization",
+      "sent_datetime": "2026-03-22T09:50:00"
+    }
+  },
+  {
+    "id": 8928,
+    "dataset_id": 153,
+    "subject": "Fw: Reuniao sobre distribuicao de servico docente",
+    "text": "Caro/a docente Rita Fernandes,\n\nPreciso de esclarecer alguns pontos sobre distribuicao de servico docente. Consegue reunir ao final do dia?\n\nObrigado pela atencao.\n\nCom os melhores cumprimentos,\nSecretaria Academica\n\nEnviado do telemovel",
+    "sent_datetime": "2026-04-05T13:00:00",
+    "intent": "agendamento_reuniao",
+    "trigger": [],
+    "arguments": {
+      "participants": [
+        "Secretaria Academica",
+        "Rita Fernandes"
+      ],
+      "time": [
+        "ao final do dia"
+      ],
+      "time_normalized": [],
+      "location": [
+        "remoto - zoom"
+      ],
+      "topic": [
+        "distribuicao de servico docente"
+      ]
+    },
+    "confidence": {
+      "trigger": 1.0,
+      "participants": 1.0,
+      "temporal": 1.0,
+      "location": 1.0,
+      "topic": 1.0
+    },
+    "metadata": {
+      "created_at": "2026-06-26T16:09:29.997947",
+      "validated": true,
+      "version": "metadata_gold_v2",
+      "source": "dataset metadata + sent_datetime temporal normalization",
+      "sent_datetime": "2026-04-05T13:00:00"
+    }
+  },
+  {
+    "id": 6873,
+    "dataset_id": 1302,
+    "subject": "Re: Pedido de reuniao",
+    "text": "Bom dia,\n\nGostaria de propor uma remarcacao da reuniao sobre orientacao da dissertacao para depois da aula.\n\nObrigado pela atencao.\n\nCumprimentos,\nSecretaria Academica\n\nEnviado do Outlook",
+    "sent_datetime": "2026-03-20T10:00:00",
+    "intent": "agendamento_reuniao",
+    "trigger": [],
+    "arguments": {
+      "participants": [
+        "Secretaria Academica",
+        "Mariana Lopes"
+      ],
+      "time": [
+        "depois da aula"
+      ],
+      "time_normalized": [],
+      "location": [
+        "remoto - zoom"
+      ],
+      "topic": [
+        "orientacao da dissertacao"
+      ]
+    },
+    "confidence": {
+      "trigger": 1.0,
+      "participants": 1.0,
+      "temporal": 1.0,
+      "location": 1.0,
+      "topic": 1.0
+    },
+    "metadata": {
+      "created_at": "2026-06-26T16:09:18.891686",
+      "validated": true,
+      "version": "metadata_gold_v2",
+      "source": "dataset metadata + sent_datetime temporal normalization",
+      "sent_datetime": "2026-03-20T10:00:00"
+    }
+  },
+  {
+    "id": 3611,
+    "dataset_id": 1813,
+    "subject": "RE: Agendamento - revisao do plano de trabalhos",
+    "text": "Ola Prof. Ricardo Mendes,\n\nPreciso de esclarecer alguns pontos sobre revisao do plano de trabalhos. Consegue reunir amanha as 10h?\n\nCom os melhores cumprimentos,\nAna Martins\n\nEnviado do Outlook",
+    "sent_datetime": "2026-03-12T15:50:00",
+    "intent": "agendamento_reuniao",
+    "trigger": [],
+    "arguments": {
+      "participants": [
+        "Ana Martins",
+        "Prof. Ricardo Mendes"
+      ],
+      "time": [
+        "amanha as 10h"
+      ],
+      "time_normalized": [
+        "2026-03-13T10:00:00"
+      ],
+      "location": [
+        "remoto - zoom"
+      ],
+      "topic": [
+        "revisao do plano de trabalhos"
+      ]
+    },
+    "confidence": {
+      "trigger": 1.0,
+      "participants": 1.0,
+      "temporal": 1.0,
+      "location": 1.0,
+      "topic": 1.0
+    },
+    "metadata": {
+      "created_at": "2026-06-26T16:09:01.922668",
+      "validated": true,
+      "version": "metadata_gold_v2",
+      "source": "dataset metadata + sent_datetime temporal normalization",
+      "sent_datetime": "2026-03-12T15:50:00"
+    }
+  },
+  {
+    "id": 7359,
+    "dataset_id": 3718,
+    "subject": "RE: Reuniao sem efeito",
+    "text": "Viva Gabinete de Estagios,\n\nNao vou conseguir estar presente na reuniao em sala B104, pelo que terei de cancelar.\n\nSe preferir, posso adaptar ao horario do departamento.\n\nCom os melhores cumprimentos,\nProfessora Sofia Carvalho",
+    "sent_datetime": "2026-05-28T13:30:00",
+    "intent": "cancelamento_reuniao",
+    "trigger": [],
+    "arguments": {
+      "participants": [
+        "Professora Sofia Carvalho",
+        "Gabinete de Estagios",
+        "Viva Gabinete de Estagios"
+      ],
+      "time": [],
+      "time_normalized": [],
+      "location": [
+        "presencial - sala B104"
+      ],
+      "topic": [
+        "coordenacao da unidade curricular"
+      ]
+    },
+    "confidence": {
+      "trigger": 1.0,
+      "participants": 1.0,
+      "temporal": 1.0,
+      "location": 1.0,
+      "topic": 1.0
+    },
+    "metadata": {
+      "created_at": "2026-06-26T16:09:21.502324",
+      "validated": true,
+      "version": "metadata_gold_v2",
+      "source": "dataset metadata + sent_datetime temporal normalization",
+      "sent_datetime": "2026-05-28T13:30:00"
+    }
+  },
+  {
+    "id": 9654,
+    "dataset_id": 1666,
+    "subject": "RE: Disponibilidade para reuniao",
+    "text": "Bom dia Prof. Ricardo Mendes,\n\nGostaria de saber se tem disponibilidade para reunirmos na proxima semana, em remoto, para falarmos sobre preparacao da apresentacao.\n\nSe preferir, posso adaptar ao horario do departamento.\n\nCom os melhores cumprimentos,\nRita Fernandes\n\nEnviado do telemovel",
+    "sent_datetime": "2026-02-13T13:30:00",
+    "intent": "agendamento_reuniao",
+    "trigger": [],
+    "arguments": {
+      "participants": [
+        "Rita Fernandes",
+        "Prof. Ricardo Mendes"
+      ],
+      "time": [
+        "na proxima semana"
+      ],
+      "time_normalized": [
+        "2026-02-16T00:00:00"
+      ],
+      "location": [
+        "remoto - zoom"
+      ],
+      "topic": [
+        "preparacao da apresentacao"
+      ]
+    },
+    "confidence": {
+      "trigger": 1.0,
+      "participants": 1.0,
+      "temporal": 1.0,
+      "location": 1.0,
+      "topic": 1.0
+    },
+    "metadata": {
+      "created_at": "2026-06-26T16:09:34.084578",
+      "validated": true,
+      "version": "metadata_gold_v2",
+      "source": "dataset metadata + sent_datetime temporal normalization",
+      "sent_datetime": "2026-02-13T13:30:00"
+    }
+  },
+  {
+    "id": 4557,
+    "dataset_id": 2270,
+    "subject": "Pedido de reuniao",
+    "text": "Caro/a colega Professora Sofia Carvalho,\n\nPreciso de esclarecer alguns pontos sobre preparacao da apresentacao. Consegue reunir quarta a tarde?\n\nSe preferir, posso adaptar ao horario do departamento.\n\nCom os melhores cumprimentos,\nConselho Pedagogico\n\nEnviado do telemovel",
+    "sent_datetime": "2026-02-07T12:30:00",
+    "intent": "agendamento_reuniao",
+    "trigger": [],
+    "arguments": {
+      "participants": [
+        "Conselho Pedagogico",
+        "Professora Sofia Carvalho"
+      ],
+      "time": [
+        "quarta a tarde"
+      ],
+      "time_normalized": [
+        "2026-02-11T15:00:00"
+      ],
+      "location": [
+        "remoto - zoom"
+      ],
+      "topic": [
+        "preparacao da apresentacao"
+      ]
+    },
+    "confidence": {
+      "trigger": 1.0,
+      "participants": 1.0,
+      "temporal": 1.0,
+      "location": 1.0,
+      "topic": 1.0
+    },
+    "metadata": {
+      "created_at": "2026-06-26T16:09:06.875684",
+      "validated": true,
+      "version": "metadata_gold_v2",
+      "source": "dataset metadata + sent_datetime temporal normalization",
+      "sent_datetime": "2026-02-07T12:30:00"
+    }
+  },
+  {
+    "id": 106,
+    "dataset_id": 3866,
+    "subject": "Re: Indisponibilidade para a reuniao",
+    "text": "Caro/a docente Rita Fernandes,\n\nInfelizmente tenho de cancelar a reuniao prevista para segunda de manha sobre submissao de artigo.\n\nObrigado pela atencao.\n\nCumprimentos,\nSecretaria Academica",
+    "sent_datetime": "2026-05-15T15:45:00",
+    "intent": "cancelamento_reuniao",
+    "trigger": [],
+    "arguments": {
+      "participants": [
+        "Secretaria Academica",
+        "Rita Fernandes"
+      ],
+      "time": [
+        "segunda de manha"
+      ],
+      "time_normalized": [
+        "2026-05-18T09:00:00"
+      ],
+      "location": [
+        "remoto - zoom"
+      ],
+      "topic": [
+        "submissao de artigo"
+      ]
+    },
+    "confidence": {
+      "trigger": 1.0,
+      "participants": 1.0,
+      "temporal": 1.0,
+      "location": 1.0,
+      "topic": 1.0
+    },
+    "metadata": {
+      "created_at": "2026-06-26T16:08:43.543875",
+      "validated": true,
+      "version": "metadata_gold_v2",
+      "source": "dataset metadata + sent_datetime temporal normalization",
+      "sent_datetime": "2026-05-15T15:45:00"
+    }
+  },
+  {
+    "id": 2615,
+    "dataset_id": 9963,
+    "subject": "Fw: Envio de documentos",
+    "text": "Cara Professora,\n\nA bibliografia recomendada para esta semana ja se encontra disponivel no Moodle.\n\nCom os melhores cumprimentos,\nCarolina Silva\n\nEnviado do Outlook",
+    "sent_datetime": "2026-05-18T10:15:00",
+    "intent": "nao_reuniao",
+    "trigger": [],
+    "arguments": {
+      "participants": [
+        "Carolina Silva",
+        "Professora Ana Costa"
+      ],
+      "time": [],
+      "time_normalized": [],
+      "location": [],
+      "topic": []
+    },
+    "confidence": {
+      "trigger": 1.0,
+      "participants": 1.0,
+      "temporal": 1.0,
+      "location": 1.0,
+      "topic": 1.0
+    },
+    "metadata": {
+      "created_at": "2026-06-26T16:08:56.685728",
+      "validated": true,
+      "version": "metadata_gold_v2",
+      "source": "dataset metadata + sent_datetime temporal normalization",
+      "sent_datetime": "2026-05-18T10:15:00"
+    }
+  },
+  {
+    "id": 6924,
+    "dataset_id": 6464,
+    "subject": "Re: Confirmacao - planeamento de aulas",
+    "text": "Cara Professora,\n\nConfirmado para dia 22 as 17h. Levarei os documentos relativos a planeamento de aulas.\n\nSe preferir, posso adaptar ao horario do departamento.\n\nCom os melhores cumprimentos,\nJoao Pereira\n\nEnviado do Outlook",
+    "sent_datetime": "2026-06-01T14:05:00",
+    "intent": "reuniao_confirmada",
+    "trigger": [],
+    "arguments": {
+      "participants": [
+        "Joao Pereira",
+        "Professor Luis Almeida"
+      ],
+      "time": [
+        "dia 22 as 17h"
+      ],
+      "time_normalized": [
+        "2026-06-01T17:00:00"
+      ],
+      "location": [
+        "remoto - zoom"
+      ],
+      "topic": [
+        "planeamento de aulas"
+      ]
+    },
+    "confidence": {
+      "trigger": 1.0,
+      "participants": 1.0,
+      "temporal": 1.0,
+      "location": 1.0,
+      "topic": 1.0
+    },
+    "metadata": {
+      "created_at": "2026-06-26T16:09:19.137418",
+      "validated": true,
+      "version": "metadata_gold_v2",
+      "source": "dataset metadata + sent_datetime temporal normalization",
+      "sent_datetime": "2026-06-01T14:05:00"
+    }
+  },
+  {
+    "id": 5574,
+    "dataset_id": 3909,
+    "subject": "RE: Imprevisto - revisao do plano de trabalhos",
+    "text": "Exmo. Professor,\n\nA reuniao marcada para segunda de manha, em secretaria, tera de ser adiada.\n\nSe preferir, posso adaptar ao horario do departamento.\n\nCumprimentos,\nDiretor do Curso\n\nEnviado do telemovel",
+    "sent_datetime": "2026-03-01T18:10:00",
+    "intent": "cancelamento_reuniao",
+    "trigger": [],
+    "arguments": {
+      "participants": [
+        "Diretor do Curso",
+        "Professora Sofia Carvalho"
+      ],
+      "time": [
+        "segunda de manha"
+      ],
+      "time_normalized": [
+        "2026-03-02T09:00:00"
+      ],
+      "location": [
+        "presencial - secretaria"
+      ],
+      "topic": [
+        "revisao do plano de trabalhos"
+      ]
+    },
+    "confidence": {
+      "trigger": 1.0,
+      "participants": 1.0,
+      "temporal": 1.0,
+      "location": 1.0,
+      "topic": 1.0
+    },
+    "metadata": {
+      "created_at": "2026-06-26T16:09:12.152044",
+      "validated": true,
+      "version": "metadata_gold_v2",
+      "source": "dataset metadata + sent_datetime temporal normalization",
+      "sent_datetime": "2026-03-01T18:10:00"
+    }
+  },
+  {
+    "id": 4552,
+    "dataset_id": 2805,
+    "subject": "Re: Remarcacao de reuniao",
+    "text": "Estimado/a estudante Miguel Santos,\n\nQuando tiver disponibilidade, gostava de combinar uma reuniao sobre validacao de atas. amanha as 15h seria possivel?\n\nObrigado pela atencao.\n\nCom os melhores cumprimentos,\nSecretaria Academica",
+    "sent_datetime": "2026-05-30T16:50:00",
+    "intent": "agendamento_reuniao",
+    "trigger": [],
+    "arguments": {
+      "participants": [
+        "Secretaria Academica",
+        "Miguel Santos"
+      ],
+      "time": [
+        "amanha as 15h"
+      ],
+      "time_normalized": [
+        "2026-05-31T15:00:00"
+      ],
+      "location": [
+        "remoto - zoom"
+      ],
+      "topic": [
+        "validacao de atas"
+      ]
+    },
+    "confidence": {
+      "trigger": 1.0,
+      "participants": 1.0,
+      "temporal": 1.0,
+      "location": 1.0,
+      "topic": 1.0
+    },
+    "metadata": {
+      "created_at": "2026-06-26T16:09:06.853099",
+      "validated": true,
+      "version": "metadata_gold_v2",
+      "source": "dataset metadata + sent_datetime temporal normalization",
+      "sent_datetime": "2026-05-30T16:50:00"
+    }
+  },
+  {
+    "id": 2547,
+    "dataset_id": 4396,
+    "subject": "Fw: Imprevisto - proposta de projeto",
+    "text": "Boa tarde,\n\nPeço desculpa, mas terei de desmarcar a reuniao relacionada com proposta de projeto.\n\nCom os melhores cumprimentos,\nProfessora Ana Costa\n\n--\nMensagem enviada automaticamente",
+    "sent_datetime": "2026-05-29T08:00:00",
+    "intent": "cancelamento_reuniao",
+    "trigger": [],
+    "arguments": {
+      "participants": [
+        "Professora Ana Costa",
+        "Secretaria Academica"
+      ],
+      "time": [],
+      "time_normalized": [],
+      "location": [
+        "remoto - zoom"
+      ],
+      "topic": [
+        "proposta de projeto"
+      ]
+    },
+    "confidence": {
+      "trigger": 1.0,
+      "participants": 1.0,
+      "temporal": 1.0,
+      "location": 1.0,
+      "topic": 1.0
+    },
+    "metadata": {
+      "created_at": "2026-06-26T16:08:56.374394",
+      "validated": true,
+      "version": "metadata_gold_v2",
+      "source": "dataset metadata + sent_datetime temporal normalization",
+      "sent_datetime": "2026-05-29T08:00:00"
+    }
+  },
+  {
+    "id": 3527,
+    "dataset_id": 6080,
+    "subject": "Fw: Re: Marcacao de reuniao",
+    "text": "Boa tarde Gabinete de Estagios,\n\nConfirmo a reuniao quando for conveniente, em gabinete de orientacao, para discutirmos preparacao da apresentacao.\n\nCumprimentos,\nProf. Ricardo Mendes\n\nEnviado do telemovel",
+    "sent_datetime": "2026-03-15T12:30:00",
+    "intent": "reuniao_confirmada",
+    "trigger": [],
+    "arguments": {
+      "participants": [
+        "Prof. Ricardo Mendes",
+        "Gabinete de Estagios"
+      ],
+      "time": [],
+      "time_normalized": [],
+      "location": [
+        "presencial - gabinete de orientacao"
+      ],
+      "topic": [
+        "preparacao da apresentacao"
+      ]
+    },
+    "confidence": {
+      "trigger": 1.0,
+      "participants": 1.0,
+      "temporal": 1.0,
+      "location": 1.0,
+      "topic": 1.0
+    },
+    "metadata": {
+      "created_at": "2026-06-26T16:09:01.478927",
+      "validated": true,
+      "version": "metadata_gold_v2",
+      "source": "dataset metadata + sent_datetime temporal normalization",
+      "sent_datetime": "2026-03-15T12:30:00"
+    }
+  },
+  {
+    "id": 5514,
+    "dataset_id": 6068,
+    "subject": "Re: Confirmacao - processo de estagio",
+    "text": "Boa tarde Prof. Ricardo Mendes,\n\nPode ficar marcado conforme proposto. Obrigado pela confirmacao.\n\nObrigado pela atencao.\n\nCom os melhores cumprimentos,\nSecretaria Academica\n\nEnviado do Outlook",
+    "sent_datetime": "2026-05-29T08:20:00",
+    "intent": "reuniao_confirmada",
+    "trigger": [],
+    "arguments": {
+      "participants": [
+        "Secretaria Academica",
+        "Prof. Ricardo Mendes"
+      ],
+      "time": [],
+      "time_normalized": [],
+      "location": [
+        "remoto - zoom"
+      ],
+      "topic": [
+        "processo de estagio"
+      ]
+    },
+    "confidence": {
+      "trigger": 1.0,
+      "participants": 1.0,
+      "temporal": 1.0,
+      "location": 1.0,
+      "topic": 1.0
+    },
+    "metadata": {
+      "created_at": "2026-06-26T16:09:11.866235",
+      "validated": true,
+      "version": "metadata_gold_v2",
+      "source": "dataset metadata + sent_datetime temporal normalization",
+      "sent_datetime": "2026-05-29T08:20:00"
+    }
+  },
+  {
+    "id": 1674,
+    "dataset_id": 9344,
+    "subject": "RE: Informacao academica",
+    "text": "Boa tarde Prof. Ricardo Mendes,\n\nSegue a informacao solicitada pela secretaria sobre validacao de atas.\n\nCom os melhores cumprimentos,\nCoordenacao de Mestrado\n\nEnviado do telemovel",
+    "sent_datetime": "2026-03-23T14:10:00",
+    "intent": "nao_reuniao",
+    "trigger": [],
+    "arguments": {
+      "participants": [
+        "Coordenacao de Mestrado",
+        "Prof. Ricardo Mendes"
+      ],
+      "time": [],
+      "time_normalized": [],
+      "location": [],
+      "topic": []
+    },
+    "confidence": {
+      "trigger": 1.0,
+      "participants": 1.0,
+      "temporal": 1.0,
+      "location": 1.0,
+      "topic": 1.0
+    },
+    "metadata": {
+      "created_at": "2026-06-26T16:08:51.782807",
+      "validated": true,
+      "version": "metadata_gold_v2",
+      "source": "dataset metadata + sent_datetime temporal normalization",
+      "sent_datetime": "2026-03-23T14:10:00"
+    }
+  },
+  {
+    "id": 1519,
+    "dataset_id": 2778,
+    "subject": "Fw: Agendamento - pedido de equivalencias",
+    "text": "Cara colega,\n\nSeria possivel agendar uma breve reuniao dia 18 as 9h30? O objetivo e discutir pedido de equivalencias.\n\nObrigado pela atencao.\n\nCom os melhores cumprimentos,\nProf. Ricardo Mendes\n\n--\nMensagem enviada automaticamente",
+    "sent_datetime": "2026-03-25T08:10:00",
+    "intent": "agendamento_reuniao",
+    "trigger": [],
+    "arguments": {
+      "participants": [
+        "Prof. Ricardo Mendes",
+        "Secretaria Academica"
+      ],
+      "time": [
+        "dia 18 as 9h30"
+      ],
+      "time_normalized": [
+        "2026-03-25T09:30:00"
+      ],
+      "location": [
+        "remoto - zoom"
+      ],
+      "topic": [
+        "pedido de equivalencias"
+      ]
+    },
+    "confidence": {
+      "trigger": 1.0,
+      "participants": 1.0,
+      "temporal": 1.0,
+      "location": 1.0,
+      "topic": 1.0
+    },
+    "metadata": {
+      "created_at": "2026-06-26T16:08:50.959529",
+      "validated": true,
+      "version": "metadata_gold_v2",
+      "source": "dataset metadata + sent_datetime temporal normalization",
+      "sent_datetime": "2026-03-25T08:10:00"
+    }
+  },
+  {
+    "id": 6224,
+    "dataset_id": 2452,
+    "subject": "RE: Pedido de reuniao",
+    "text": "Bom dia Ana Martins,\n\nPreciso de esclarecer alguns pontos sobre acompanhamento pedagogico. Consegue reunir dia 18 as 9h30?\n\nObrigado,\nProfessor Luis Almeida\n\n--\nMensagem enviada automaticamente",
+    "sent_datetime": "2026-04-16T08:20:00",
+    "intent": "agendamento_reuniao",
+    "trigger": [],
+    "arguments": {
+      "participants": [
+        "Professor Luis Almeida",
+        "Ana Martins"
+      ],
+      "time": [
+        "dia 18 as 9h30"
+      ],
+      "time_normalized": [
+        "2026-04-16T09:30:00"
+      ],
+      "location": [
+        "remoto - zoom"
+      ],
+      "topic": [
+        "acompanhamento pedagogico"
+      ]
+    },
+    "confidence": {
+      "trigger": 1.0,
+      "participants": 1.0,
+      "temporal": 1.0,
+      "location": 1.0,
+      "topic": 1.0
+    },
+    "metadata": {
+      "created_at": "2026-06-26T16:09:15.490918",
+      "validated": true,
+      "version": "metadata_gold_v2",
+      "source": "dataset metadata + sent_datetime temporal normalization",
+      "sent_datetime": "2026-04-16T08:20:00"
+    }
+  },
+  {
+    "id": 1584,
+    "dataset_id": 6940,
+    "subject": "Tudo certo para a reuniao",
+    "text": "Cara colega,\n\nFica entao combinado para sexta as 14h30.\n\nCumprimentos,\nProfessora Sofia Carvalho\n\nEnviado do telemovel",
+    "sent_datetime": "2026-02-04T16:30:00",
+    "intent": "reuniao_confirmada",
+    "trigger": [],
+    "arguments": {
+      "participants": [
+        "Professora Sofia Carvalho",
+        "Conselho Pedagogico"
+      ],
+      "time": [
+        "sexta as 14h30"
+      ],
+      "time_normalized": [
+        "2026-02-06T14:30:00"
+      ],
+      "location": [
+        "remoto - zoom"
+      ],
+      "topic": [
+        "submissao de artigo"
+      ]
+    },
+    "confidence": {
+      "trigger": 1.0,
+      "participants": 1.0,
+      "temporal": 1.0,
+      "location": 1.0,
+      "topic": 1.0
+    },
+    "metadata": {
+      "created_at": "2026-06-26T16:08:51.333424",
+      "validated": true,
+      "version": "metadata_gold_v2",
+      "source": "dataset metadata + sent_datetime temporal normalization",
+      "sent_datetime": "2026-02-04T16:30:00"
+    }
+  },
+  {
+    "id": 5881,
+    "dataset_id": 7771,
+    "subject": "Reuniao confirmada",
+    "text": "Boa tarde Professor Luis Almeida,\n\nConfirmo a reuniao amanha as 10h, em remoto, para discutirmos distribuicao de servico docente.\n\nSe preferir, posso adaptar ao horario do departamento.\n\nObrigado pela atencao.\n\nCumprimentos,\nCoordenacao de Mestrado",
+    "sent_datetime": "2026-03-16T11:05:00",
+    "intent": "reuniao_confirmada",
+    "trigger": [],
+    "arguments": {
+      "participants": [
+        "Coordenacao de Mestrado",
+        "Professor Luis Almeida"
+      ],
+      "time": [
+        "amanha as 10h"
+      ],
+      "time_normalized": [
+        "2026-03-17T10:00:00"
+      ],
+      "location": [
+        "remoto - zoom"
+      ],
+      "topic": [
+        "distribuicao de servico docente"
+      ]
+    },
+    "confidence": {
+      "trigger": 1.0,
+      "participants": 1.0,
+      "temporal": 1.0,
+      "location": 1.0,
+      "topic": 1.0
+    },
+    "metadata": {
+      "created_at": "2026-06-26T16:09:13.738082",
+      "validated": true,
+      "version": "metadata_gold_v2",
+      "source": "dataset metadata + sent_datetime temporal normalization",
+      "sent_datetime": "2026-03-16T11:05:00"
+    }
+  },
+  {
+    "id": 5635,
+    "dataset_id": 4578,
+    "subject": "Indisponibilidade para a reuniao",
+    "text": "Bom dia Diretor do Curso,\n\nNao vou conseguir estar presente na reuniao em sala de reunioes do departamento, pelo que terei de cancelar.\n\nObrigado,\nProfessora Ana Costa\n\n--\nMensagem enviada automaticamente",
+    "sent_datetime": "2026-02-08T15:10:00",
+    "intent": "cancelamento_reuniao",
+    "trigger": [],
+    "arguments": {
+      "participants": [
+        "Professora Ana Costa",
+        "Diretor do Curso"
+      ],
+      "time": [],
+      "time_normalized": [],
+      "location": [
+        "presencial - sala de reunioes do departamento"
+      ],
+      "topic": [
+        "coordenacao da unidade curricular"
+      ]
+    },
+    "confidence": {
+      "trigger": 1.0,
+      "participants": 1.0,
+      "temporal": 1.0,
+      "location": 1.0,
+      "topic": 1.0
+    },
+    "metadata": {
+      "created_at": "2026-06-26T16:09:12.496541",
+      "validated": true,
+      "version": "metadata_gold_v2",
+      "source": "dataset metadata + sent_datetime temporal normalization",
+      "sent_datetime": "2026-02-08T15:10:00"
+    }
+  },
+  {
+    "id": 9891,
+    "dataset_id": 8912,
+    "subject": "Re: Tudo certo para a reuniao",
+    "text": "Viva Coordenacao de Mestrado,\n\nTudo certo para a reuniao sobre proposta de projeto. Ate dia 18 as 9h30.\n\nCom os melhores cumprimentos,\nProf. Ricardo Mendes\n\n--\nMensagem enviada automaticamente",
+    "sent_datetime": "2026-05-31T17:15:00",
+    "intent": "reuniao_confirmada",
+    "trigger": [],
+    "arguments": {
+      "participants": [
+        "Prof. Ricardo Mendes",
+        "Coordenacao de Mestrado"
+      ],
+      "time": [
+        "dia 18 as 9h30"
+      ],
+      "time_normalized": [
+        "2026-05-31T09:30:00"
+      ],
+      "location": [
+        "remoto - zoom"
+      ],
+      "topic": [
+        "proposta de projeto"
+      ]
+    },
+    "confidence": {
+      "trigger": 1.0,
+      "participants": 1.0,
+      "temporal": 1.0,
+      "location": 1.0,
+      "topic": 1.0
+    },
+    "metadata": {
+      "created_at": "2026-06-26T16:09:35.369722",
+      "validated": true,
+      "version": "metadata_gold_v2",
+      "source": "dataset metadata + sent_datetime temporal normalization",
+      "sent_datetime": "2026-05-31T17:15:00"
+    }
+  },
+  {
+    "id": 4333,
+    "dataset_id": 3238,
+    "subject": "Reuniao sem efeito",
+    "text": "Boa tarde,\n\nA reuniao marcada para amanha as 15h, em sala 2.3, tera de ser adiada.\n\nCom os melhores cumprimentos,\nJoao Pereira",
+    "sent_datetime": "2026-05-11T17:50:00",
+    "intent": "cancelamento_reuniao",
+    "trigger": [],
+    "arguments": {
+      "participants": [
+        "Joao Pereira",
+        "Professor Luis Almeida"
+      ],
+      "time": [
+        "amanha as 15h"
+      ],
+      "time_normalized": [
+        "2026-05-12T15:00:00"
+      ],
+      "location": [
+        "presencial - sala 2.3"
+      ],
+      "topic": [
+        "credibilidade dos dados recolhidos"
+      ]
+    },
+    "confidence": {
+      "trigger": 1.0,
+      "participants": 1.0,
+      "temporal": 1.0,
+      "location": 1.0,
+      "topic": 1.0
+    },
+    "metadata": {
+      "created_at": "2026-06-26T16:09:05.704755",
+      "validated": true,
+      "version": "metadata_gold_v2",
+      "source": "dataset metadata + sent_datetime temporal normalization",
+      "sent_datetime": "2026-05-11T17:50:00"
+    }
+  },
+  {
+    "id": 711,
+    "dataset_id": 7660,
+    "subject": "Re: Reuniao confirmada",
+    "text": "Caro colega Gabinete de Estagios,\n\nDa minha parte esta confirmado. Encontramo-nos em Google Meet.\n\nObrigado,\nProfessora Ana Costa\n\nEnviado do telemovel",
+    "sent_datetime": "2026-03-06T12:30:00",
+    "intent": "reuniao_confirmada",
+    "trigger": [],
+    "arguments": {
+      "participants": [
+        "Professora Ana Costa",
+        "Gabinete de Estagios"
+      ],
+      "time": [],
+      "time_normalized": [],
+      "location": [
+        "remoto - google meet"
+      ],
+      "topic": [
+        "revisao do plano de trabalhos"
+      ]
+    },
+    "confidence": {
+      "trigger": 1.0,
+      "participants": 1.0,
+      "temporal": 1.0,
+      "location": 1.0,
+      "topic": 1.0
+    },
+    "metadata": {
+      "created_at": "2026-06-26T16:08:46.644126",
+      "validated": true,
+      "version": "metadata_gold_v2",
+      "source": "dataset metadata + sent_datetime temporal normalization",
+      "sent_datetime": "2026-03-06T12:30:00"
+    }
+  },
+  {
+    "id": 7527,
+    "dataset_id": 4337,
+    "subject": "Fw: Imprevisto - acompanhamento pedagogico",
+    "text": "Caro colega Ana Martins,\n\nInfelizmente tenho de cancelar a reuniao prevista para amanha as 15h sobre acompanhamento pedagogico.\n\nCumprimentos,\nProfessor Luis Almeida",
+    "sent_datetime": "2026-02-14T16:15:00",
+    "intent": "cancelamento_reuniao",
+    "trigger": [],
+    "arguments": {
+      "participants": [
+        "Professor Luis Almeida",
+        "Ana Martins"
+      ],
+      "time": [
+        "amanha as 15h"
+      ],
+      "time_normalized": [
+        "2026-02-15T15:00:00"
+      ],
+      "location": [
+        "remoto - zoom"
+      ],
+      "topic": [
+        "acompanhamento pedagogico"
+      ]
+    },
+    "confidence": {
+      "trigger": 1.0,
+      "participants": 1.0,
+      "temporal": 1.0,
+      "location": 1.0,
+      "topic": 1.0
+    },
+    "metadata": {
+      "created_at": "2026-06-26T16:09:22.496651",
+      "validated": true,
+      "version": "metadata_gold_v2",
+      "source": "dataset metadata + sent_datetime temporal normalization",
+      "sent_datetime": "2026-02-14T16:15:00"
+    }
+  },
+  {
+    "id": 8785,
+    "dataset_id": 474,
+    "subject": "Reuniao sobre submissao de artigo",
+    "text": "Bom dia,\n\nSeria possivel agendar uma breve reuniao sexta as 14h30? O objetivo e discutir submissao de artigo.\n\nObrigado,\nProfessora Ana Costa\n\nEnviado do telemovel",
+    "sent_datetime": "2026-02-10T11:40:00",
+    "intent": "agendamento_reuniao",
+    "trigger": [],
+    "arguments": {
+      "participants": [
+        "Professora Ana Costa",
+        "Diretor do Curso"
+      ],
+      "time": [
+        "sexta as 14h30"
+      ],
+      "time_normalized": [
+        "2026-02-13T14:30:00"
+      ],
+      "location": [
+        "remoto - zoom"
+      ],
+      "topic": [
+        "submissao de artigo"
+      ]
+    },
+    "confidence": {
+      "trigger": 1.0,
+      "participants": 1.0,
+      "temporal": 1.0,
+      "location": 1.0,
+      "topic": 1.0
+    },
+    "metadata": {
+      "created_at": "2026-06-26T16:09:29.239574",
+      "validated": true,
+      "version": "metadata_gold_v2",
+      "source": "dataset metadata + sent_datetime temporal normalization",
+      "sent_datetime": "2026-02-10T11:40:00"
+    }
+  },
+  {
+    "id": 2045,
+    "dataset_id": 7401,
+    "subject": "Fw: Confirmacao - preparacao da defesa",
+    "text": "Boa tarde,\n\nConfirmado para quarta a tarde. Levarei os documentos relativos a preparacao da defesa.\n\nSe preferir, posso adaptar ao horario do departamento.\n\nCumprimentos,\nSecretaria Academica\n\nEnviado do Outlook",
+    "sent_datetime": "2026-05-02T08:00:00",
+    "intent": "reuniao_confirmada",
+    "trigger": [],
+    "arguments": {
+      "participants": [
+        "Secretaria Academica",
+        "Mariana Lopes"
+      ],
+      "time": [
+        "quarta a tarde"
+      ],
+      "time_normalized": [
+        "2026-05-06T15:00:00"
+      ],
+      "location": [
+        "remoto - zoom"
+      ],
+      "topic": [
+        "preparacao da defesa"
+      ]
+    },
+    "confidence": {
+      "trigger": 1.0,
+      "participants": 1.0,
+      "temporal": 1.0,
+      "location": 1.0,
+      "topic": 1.0
+    },
+    "metadata": {
+      "created_at": "2026-06-26T16:08:53.715608",
+      "validated": true,
+      "version": "metadata_gold_v2",
+      "source": "dataset metadata + sent_datetime temporal normalization",
+      "sent_datetime": "2026-05-02T08:00:00"
+    }
+  },
+  {
+    "id": 6201,
+    "dataset_id": 7253,
+    "subject": "Confirmacao - submissao de artigo",
+    "text": "Bom dia Professora Ana Costa,\n\nConfirmo a reuniao depois de almoco, em gabinete 3.12, para discutirmos submissao de artigo.\n\nObrigado pela atencao.\n\nCom os melhores cumprimentos,\nRita Fernandes\n\nEnviado do telemovel",
+    "sent_datetime": "2026-02-02T17:05:00",
+    "intent": "reuniao_confirmada",
+    "trigger": [],
+    "arguments": {
+      "participants": [
+        "Rita Fernandes",
+        "Professora Ana Costa"
+      ],
+      "time": [
+        "depois de almoco"
+      ],
+      "time_normalized": [
+        "2026-02-02T13:15:00"
+      ],
+      "location": [
+        "presencial - gabinete 3.12"
+      ],
+      "topic": [
+        "submissao de artigo"
+      ]
+    },
+    "confidence": {
+      "trigger": 1.0,
+      "participants": 1.0,
+      "temporal": 1.0,
+      "location": 1.0,
+      "topic": 1.0
+    },
+    "metadata": {
+      "created_at": "2026-06-26T16:09:15.364031",
+      "validated": true,
+      "version": "metadata_gold_v2",
+      "source": "dataset metadata + sent_datetime temporal normalization",
+      "sent_datetime": "2026-02-02T17:05:00"
+    }
+  },
+  {
+    "id": 1291,
+    "dataset_id": 4922,
+    "subject": "Re: Indisponibilidade para a reuniao",
+    "text": "Caro colega Miguel Santos,\n\nPor indicacao da direcao, a reuniao sobre pedido de equivalencias fica cancelada ate nova comunicacao.\n\nSe preferir, posso adaptar ao horario do departamento.\n\nObrigado,\nProfessora Sofia Carvalho\n\n--\nMensagem enviada automaticamente",
+    "sent_datetime": "2026-04-18T15:20:00",
+    "intent": "cancelamento_reuniao",
+    "trigger": [],
+    "arguments": {
+      "participants": [
+        "Professora Sofia Carvalho",
+        "Miguel Santos"
+      ],
+      "time": [],
+      "time_normalized": [],
+      "location": [
+        "remoto - zoom"
+      ],
+      "topic": [
+        "pedido de equivalencias"
+      ]
+    },
+    "confidence": {
+      "trigger": 1.0,
+      "participants": 1.0,
+      "temporal": 1.0,
+      "location": 1.0,
+      "topic": 1.0
+    },
+    "metadata": {
+      "created_at": "2026-06-26T16:08:49.724544",
+      "validated": true,
+      "version": "metadata_gold_v2",
+      "source": "dataset metadata + sent_datetime temporal normalization",
+      "sent_datetime": "2026-04-18T15:20:00"
+    }
+  },
+  {
+    "id": 9044,
+    "dataset_id": 4301,
+    "subject": "Fw: Imprevisto - proposta de projeto",
+    "text": "Bom dia Secretaria Academica,\n\nNao vou conseguir estar presente na reuniao em remoto, pelo que terei de cancelar.\n\nCom os melhores cumprimentos,\nAna Martins",
+    "sent_datetime": "2026-03-25T11:05:00",
+    "intent": "cancelamento_reuniao",
+    "trigger": [],
+    "arguments": {
+      "participants": [
+        "Ana Martins",
+        "Secretaria Academica"
+      ],
+      "time": [],
+      "time_normalized": [],
+      "location": [
+        "remoto - zoom"
+      ],
+      "topic": [
+        "proposta de projeto"
+      ]
+    },
+    "confidence": {
+      "trigger": 1.0,
+      "participants": 1.0,
+      "temporal": 1.0,
+      "location": 1.0,
+      "topic": 1.0
+    },
+    "metadata": {
+      "created_at": "2026-06-26T16:09:30.744564",
+      "validated": true,
+      "version": "metadata_gold_v2",
+      "source": "dataset metadata + sent_datetime temporal normalization",
+      "sent_datetime": "2026-03-25T11:05:00"
+    }
+  },
+  {
+    "id": 4803,
+    "dataset_id": 9984,
+    "subject": "Fw: Documentacao em falta",
+    "text": "Viva,\n\nA bibliografia recomendada para esta semana ja se encontra disponivel no Moodle.\n\nCumprimentos,\nProfessora Ana Costa",
+    "sent_datetime": "2026-03-27T09:45:00",
+    "intent": "nao_reuniao",
+    "trigger": [],
+    "arguments": {
+      "participants": [
+        "Professora Ana Costa",
+        "Conselho Pedagogico"
+      ],
+      "time": [],
+      "time_normalized": [],
+      "location": [],
+      "topic": []
+    },
+    "confidence": {
+      "trigger": 1.0,
+      "participants": 1.0,
+      "temporal": 1.0,
+      "location": 1.0,
+      "topic": 1.0
+    },
+    "metadata": {
+      "created_at": "2026-06-26T16:09:08.117374",
+      "validated": true,
+      "version": "metadata_gold_v2",
+      "source": "dataset metadata + sent_datetime temporal normalization",
+      "sent_datetime": "2026-03-27T09:45:00"
+    }
+  },
+  {
+    "id": 5925,
+    "dataset_id": 9120,
+    "subject": "Atualizacao de processo",
+    "text": "Caro/a docente Rita Fernandes,\n\nAinda falta entregar a declaracao de presenca no portal academico.\n\nCumprimentos,\nSecretaria Academica\n\nEnviado do telemovel",
+    "sent_datetime": "2026-03-06T11:40:00",
+    "intent": "nao_reuniao",
+    "trigger": [],
+    "arguments": {
+      "participants": [
+        "Secretaria Academica",
+        "Rita Fernandes",
+        "Atualizacao de processo"
+      ],
+      "time": [],
+      "time_normalized": [],
+      "location": [],
+      "topic": []
+    },
+    "confidence": {
+      "trigger": 1.0,
+      "participants": 1.0,
+      "temporal": 1.0,
+      "location": 1.0,
+      "topic": 1.0
+    },
+    "metadata": {
+      "created_at": "2026-06-26T16:09:13.936264",
+      "validated": true,
+      "version": "metadata_gold_v2",
+      "source": "dataset metadata + sent_datetime temporal normalization",
+      "sent_datetime": "2026-03-06T11:40:00"
+    }
+  },
+  {
+    "id": 9459,
+    "dataset_id": 8679,
+    "subject": "Fw: Re: Marcacao de reuniao",
+    "text": "Caro colega,\n\nConfirmado para durante a manha. Levarei os documentos relativos a distribuicao de servico docente.\n\nObrigado,\nProfessora Ana Costa\n\nEnviado do Outlook",
+    "sent_datetime": "2026-03-03T08:10:00",
+    "intent": "reuniao_confirmada",
+    "trigger": [],
+    "arguments": {
+      "participants": [
+        "Professora Ana Costa",
+        "Professora Sofia Carvalho"
+      ],
+      "time": [
+        "durante a manha"
+      ],
+      "time_normalized": [
+        "2026-03-03T09:00:00"
+      ],
+      "location": [
+        "remoto - zoom"
+      ],
+      "topic": [
+        "distribuicao de servico docente"
+      ]
+    },
+    "confidence": {
+      "trigger": 1.0,
+      "participants": 1.0,
+      "temporal": 1.0,
+      "location": 1.0,
+      "topic": 1.0
+    },
+    "metadata": {
+      "created_at": "2026-06-26T16:09:33.046025",
+      "validated": true,
+      "version": "metadata_gold_v2",
+      "source": "dataset metadata + sent_datetime temporal normalization",
+      "sent_datetime": "2026-03-03T08:10:00"
+    }
+  },
+  {
+    "id": 3150,
+    "dataset_id": 3200,
+    "subject": "Imprevisto - distribuicao de servico docente",
+    "text": "Viva Carolina Silva,\n\nPor indicacao da direcao, a reuniao sobre distribuicao de servico docente fica cancelada ate nova comunicacao.\n\nObrigado pela atencao.\n\nCom os melhores cumprimentos,\nProfessora Ana Costa",
+    "sent_datetime": "2026-03-19T17:15:00",
+    "intent": "cancelamento_reuniao",
+    "trigger": [],
+    "arguments": {
+      "participants": [
+        "Professora Ana Costa",
+        "Carolina Silva",
+        "Viva Carolina Silva"
+      ],
+      "time": [],
+      "time_normalized": [],
+      "location": [
+        "remoto - zoom"
+      ],
+      "topic": [
+        "distribuicao de servico docente"
+      ]
+    },
+    "confidence": {
+      "trigger": 1.0,
+      "participants": 1.0,
+      "temporal": 1.0,
+      "location": 1.0,
+      "topic": 1.0
+    },
+    "metadata": {
+      "created_at": "2026-06-26T16:08:59.427396",
+      "validated": true,
+      "version": "metadata_gold_v2",
+      "source": "dataset metadata + sent_datetime temporal normalization",
+      "sent_datetime": "2026-03-19T17:15:00"
+    }
+  },
+  {
+    "id": 1139,
+    "dataset_id": 2949,
+    "subject": "Necessidade de remarcar",
+    "text": "Viva Miguel Santos,\n\nConseguimos reagendar a reuniao sobre revisao do plano de trabalhos para ao final do dia, em remoto?\n\nObrigado,\nProf. Ricardo Mendes\n\nEnviado do Outlook",
+    "sent_datetime": "2026-03-20T11:45:00",
+    "intent": "agendamento_reuniao",
+    "trigger": [],
+    "arguments": {
+      "participants": [
+        "Prof. Ricardo Mendes",
+        "Miguel Santos",
+        "Viva Miguel Santos"
+      ],
+      "time": [
+        "ao final do dia"
+      ],
+      "time_normalized": [],
+      "location": [
+        "remoto - zoom"
+      ],
+      "topic": [
+        "revisao do plano de trabalhos"
+      ]
+    },
+    "confidence": {
+      "trigger": 1.0,
+      "participants": 1.0,
+      "temporal": 1.0,
+      "location": 1.0,
+      "topic": 1.0
+    },
+    "metadata": {
+      "created_at": "2026-06-26T16:08:48.887197",
+      "validated": true,
+      "version": "metadata_gold_v2",
+      "source": "dataset metadata + sent_datetime temporal normalization",
+      "sent_datetime": "2026-03-20T11:45:00"
+    }
+  },
+  {
+    "id": 750,
+    "dataset_id": 379,
+    "subject": "RE: Remarcacao de reuniao",
+    "text": "Bom dia Gabinete de Estagios,\n\nQuando tiver disponibilidade, gostava de combinar uma reuniao sobre pedido de equivalencias. amanha as 10h seria possivel?\n\nCumprimentos,\nProfessor Luis Almeida\n\n--\nMensagem enviada automaticamente",
+    "sent_datetime": "2026-05-04T14:45:00",
+    "intent": "agendamento_reuniao",
+    "trigger": [],
+    "arguments": {
+      "participants": [
+        "Professor Luis Almeida",
+        "Gabinete de Estagios"
+      ],
+      "time": [
+        "amanha as 10h"
+      ],
+      "time_normalized": [
+        "2026-05-05T10:00:00"
+      ],
+      "location": [
+        "remoto - zoom"
+      ],
+      "topic": [
+        "pedido de equivalencias"
+      ]
+    },
+    "confidence": {
+      "trigger": 1.0,
+      "participants": 1.0,
+      "temporal": 1.0,
+      "location": 1.0,
+      "topic": 1.0
+    },
+    "metadata": {
+      "created_at": "2026-06-26T16:08:46.827650",
+      "validated": true,
+      "version": "metadata_gold_v2",
+      "source": "dataset metadata + sent_datetime temporal normalization",
+      "sent_datetime": "2026-05-04T14:45:00"
+    }
+  },
+  {
+    "id": 3733,
+    "dataset_id": 2820,
+    "subject": "Re: Pedido de reuniao",
+    "text": "Bom dia Coordenacao de Mestrado,\n\nPodemos remarcar a reuniao sobre revisao do plano de trabalhos para terca as 11h?\n\nObrigado,\nProfessora Ana Costa\n\nEnviado do Outlook",
+    "sent_datetime": "2026-02-25T13:10:00",
+    "intent": "agendamento_reuniao",
+    "trigger": [],
+    "arguments": {
+      "participants": [
+        "Professora Ana Costa",
+        "Coordenacao de Mestrado"
+      ],
+      "time": [
+        "terca as 11h"
+      ],
+      "time_normalized": [
+        "2026-03-03T11:00:00"
+      ],
+      "location": [
+        "remoto - zoom"
+      ],
+      "topic": [
+        "revisao do plano de trabalhos"
+      ]
+    },
+    "confidence": {
+      "trigger": 1.0,
+      "participants": 1.0,
+      "temporal": 1.0,
+      "location": 1.0,
+      "topic": 1.0
+    },
+    "metadata": {
+      "created_at": "2026-06-26T16:09:02.594499",
+      "validated": true,
+      "version": "metadata_gold_v2",
+      "source": "dataset metadata + sent_datetime temporal normalization",
+      "sent_datetime": "2026-02-25T13:10:00"
+    }
+  },
+  {
+    "id": 4741,
+    "dataset_id": 4627,
+    "subject": "Re: Reuniao sem efeito",
+    "text": "Bom dia,\n\nA reuniao marcada para quarta a tarde, em auditorio principal, tera de ser adiada.\n\nCumprimentos,\nSecretaria Academica\n\nEnviado do telemovel",
+    "sent_datetime": "2026-05-08T11:40:00",
+    "intent": "cancelamento_reuniao",
+    "trigger": [],
+    "arguments": {
+      "participants": [
+        "Secretaria Academica",
+        "Rita Fernandes"
+      ],
+      "time": [
+        "quarta a tarde"
+      ],
+      "time_normalized": [
+        "2026-05-13T15:00:00"
+      ],
+      "location": [
+        "presencial - auditorio principal"
+      ],
+      "topic": [
+        "orientacao da dissertacao"
+      ]
+    },
+    "confidence": {
+      "trigger": 1.0,
+      "participants": 1.0,
+      "temporal": 1.0,
+      "location": 1.0,
+      "topic": 1.0
+    },
+    "metadata": {
+      "created_at": "2026-06-26T16:09:07.823999",
+      "validated": true,
+      "version": "metadata_gold_v2",
+      "source": "dataset metadata + sent_datetime temporal normalization",
+      "sent_datetime": "2026-05-08T11:40:00"
+    }
+  },
+  {
+    "id": 1307,
+    "dataset_id": 4327,
+    "subject": "Fw: Reuniao sem efeito",
+    "text": "Bom dia Professora Sofia Carvalho,\n\nPor indicacao da direcao, a reuniao sobre submissao de artigo fica cancelada ate nova comunicacao.\n\nSe preferir, posso adaptar ao horario do departamento.\n\nCom os melhores cumprimentos,\nCoordenacao de Mestrado\n\nEnviado do Outlook",
+    "sent_datetime": "2026-06-01T15:15:00",
+    "intent": "cancelamento_reuniao",
+    "trigger": [],
+    "arguments": {
+      "participants": [
+        "Coordenacao de Mestrado",
+        "Professora Sofia Carvalho"
+      ],
+      "time": [],
+      "time_normalized": [],
+      "location": [
+        "remoto - zoom"
+      ],
+      "topic": [
+        "submissao de artigo"
+      ]
+    },
+    "confidence": {
+      "trigger": 1.0,
+      "participants": 1.0,
+      "temporal": 1.0,
+      "location": 1.0,
+      "topic": 1.0
+    },
+    "metadata": {
+      "created_at": "2026-06-26T16:08:49.800307",
+      "validated": true,
+      "version": "metadata_gold_v2",
+      "source": "dataset metadata + sent_datetime temporal normalization",
+      "sent_datetime": "2026-06-01T15:15:00"
+    }
+  },
+  {
+    "id": 3814,
+    "dataset_id": 9906,
+    "subject": "Fw: Documentacao em falta",
+    "text": "Caro colega Ana Martins,\n\nEnvio em anexo o documento atualizado relativo a processo de estagio.\n\nCom os melhores cumprimentos,\nProfessora Ana Costa\n\nEnviado do telemovel",
+    "sent_datetime": "2026-06-02T13:10:00",
+    "intent": "nao_reuniao",
+    "trigger": [],
+    "arguments": {
+      "participants": [
+        "Professora Ana Costa",
+        "Ana Martins"
+      ],
+      "time": [],
+      "time_normalized": [],
+      "location": [],
+      "topic": []
+    },
+    "confidence": {
+      "trigger": 1.0,
+      "participants": 1.0,
+      "temporal": 1.0,
+      "location": 1.0,
+      "topic": 1.0
+    },
+    "metadata": {
+      "created_at": "2026-06-26T16:09:02.981442",
+      "validated": true,
+      "version": "metadata_gold_v2",
+      "source": "dataset metadata + sent_datetime temporal normalization",
+      "sent_datetime": "2026-06-02T13:10:00"
+    }
+  },
+  {
+    "id": 1654,
+    "dataset_id": 7462,
+    "subject": "Re: Confirmado",
+    "text": "Ola,\n\nFica entao combinado para dia 22 as 17h.\n\nObrigado,\nRita Fernandes\n\nEnviado do Outlook",
+    "sent_datetime": "2026-04-24T15:10:00",
+    "intent": "reuniao_confirmada",
+    "trigger": [],
+    "arguments": {
+      "participants": [
+        "Rita Fernandes",
+        "Secretaria Academica"
+      ],
+      "time": [
+        "dia 22 as 17h"
+      ],
+      "time_normalized": [
+        "2026-04-24T17:00:00"
+      ],
+      "location": [
+        "remoto - zoom"
+      ],
+      "topic": [
+        "proposta de projeto"
+      ]
+    },
+    "confidence": {
+      "trigger": 1.0,
+      "participants": 1.0,
+      "temporal": 1.0,
+      "location": 1.0,
+      "topic": 1.0
+    },
+    "metadata": {
+      "created_at": "2026-06-26T16:08:51.685621",
+      "validated": true,
+      "version": "metadata_gold_v2",
+      "source": "dataset metadata + sent_datetime temporal normalization",
+      "sent_datetime": "2026-04-24T15:10:00"
+    }
+  },
+  {
+    "id": 6227,
+    "dataset_id": 1459,
+    "subject": "RE: Remarcacao de reuniao",
+    "text": "Boa tarde,\n\nProponho fazermos uma reuniao sexta as 14h30, em sala de reunioes do departamento, para fechar o ponto de situacao de horarios do semestre.\n\nCumprimentos,\nSecretaria Academica",
+    "sent_datetime": "2026-03-17T17:45:00",
+    "intent": "agendamento_reuniao",
+    "trigger": [],
+    "arguments": {
+      "participants": [
+        "Secretaria Academica",
+        "Ana Martins"
+      ],
+      "time": [
+        "sexta as 14h30"
+      ],
+      "time_normalized": [
+        "2026-03-20T14:30:00"
+      ],
+      "location": [
+        "presencial - sala de reunioes do departamento"
+      ],
+      "topic": [
+        "horarios do semestre"
+      ]
+    },
+    "confidence": {
+      "trigger": 1.0,
+      "participants": 1.0,
+      "temporal": 1.0,
+      "location": 1.0,
+      "topic": 1.0
+    },
+    "metadata": {
+      "created_at": "2026-06-26T16:09:15.511640",
+      "validated": true,
+      "version": "metadata_gold_v2",
+      "source": "dataset metadata + sent_datetime temporal normalization",
+      "sent_datetime": "2026-03-17T17:45:00"
+    }
+  },
+  {
+    "id": 4554,
+    "dataset_id": 1338,
+    "subject": "Reuniao sobre pedido de equivalencias",
+    "text": "Bom dia Prof. Ricardo Mendes,\n\nPreciso de esclarecer alguns pontos sobre pedido de equivalencias. Consegue reunir durante a manha?\n\nCom os melhores cumprimentos,\nConselho Pedagogico",
+    "sent_datetime": "2026-05-16T16:05:00",
+    "intent": "agendamento_reuniao",
+    "trigger": [],
+    "arguments": {
+      "participants": [
+        "Conselho Pedagogico",
+        "Prof. Ricardo Mendes"
+      ],
+      "time": [
+        "durante a manha"
+      ],
+      "time_normalized": [
+        "2026-05-16T09:00:00"
+      ],
+      "location": [
+        "remoto - zoom"
+      ],
+      "topic": [
+        "pedido de equivalencias"
+      ]
+    },
+    "confidence": {
+      "trigger": 1.0,
+      "participants": 1.0,
+      "temporal": 1.0,
+      "location": 1.0,
+      "topic": 1.0
+    },
+    "metadata": {
+      "created_at": "2026-06-26T16:09:06.862188",
+      "validated": true,
+      "version": "metadata_gold_v2",
+      "source": "dataset metadata + sent_datetime temporal normalization",
+      "sent_datetime": "2026-05-16T16:05:00"
+    }
+  },
+  {
+    "id": 7428,
+    "dataset_id": 8554,
+    "subject": "Re: Re: Marcacao de reuniao",
+    "text": "Bom dia Prof. Ricardo Mendes,\n\nTudo certo para a reuniao sobre distribuicao de servico docente. Ate antes do seminario.\n\nSe preferir, posso adaptar ao horario do departamento.\n\nCom os melhores cumprimentos,\nConselho Pedagogico\n\n--\nMensagem enviada automaticamente",
+    "sent_datetime": "2026-05-01T09:10:00",
+    "intent": "reuniao_confirmada",
+    "trigger": [],
+    "arguments": {
+      "participants": [
+        "Conselho Pedagogico",
+        "Prof. Ricardo Mendes"
+      ],
+      "time": [
+        "antes do seminario"
+      ],
+      "time_normalized": [],
+      "location": [
+        "remoto - zoom"
+      ],
+      "topic": [
+        "distribuicao de servico docente"
+      ]
+    },
+    "confidence": {
+      "trigger": 1.0,
+      "participants": 1.0,
+      "temporal": 1.0,
+      "location": 1.0,
+      "topic": 1.0
+    },
+    "metadata": {
+      "created_at": "2026-06-26T16:09:21.890368",
+      "validated": true,
+      "version": "metadata_gold_v2",
+      "source": "dataset metadata + sent_datetime temporal normalization",
+      "sent_datetime": "2026-05-01T09:10:00"
+    }
+  },
+  {
+    "id": 5977,
+    "dataset_id": 9892,
+    "subject": "RE: Atualizacao de processo",
+    "text": "Caro Professor,\n\nA pauta foi atualizada no sistema academico. Por favor confirme se consegue aceder.\n\nCumprimentos,\nJoao Pereira\n\nEnviado do telemovel",
+    "sent_datetime": "2026-04-28T17:20:00",
+    "intent": "nao_reuniao",
+    "trigger": [],
+    "arguments": {
+      "participants": [
+        "Joao Pereira",
+        "Secretaria Academica"
+      ],
+      "time": [],
+      "time_normalized": [],
+      "location": [],
+      "topic": []
+    },
+    "confidence": {
+      "trigger": 1.0,
+      "participants": 1.0,
+      "temporal": 1.0,
+      "location": 1.0,
+      "topic": 1.0
+    },
+    "metadata": {
+      "created_at": "2026-06-26T16:09:14.172745",
+      "validated": true,
+      "version": "metadata_gold_v2",
+      "source": "dataset metadata + sent_datetime temporal normalization",
+      "sent_datetime": "2026-04-28T17:20:00"
+    }
+  },
+  {
+    "id": 2664,
+    "dataset_id": 3581,
+    "subject": "Fw: Cancelamento de reuniao",
+    "text": "Exmo./a Senhor/a Prof. Ricardo Mendes,\n\nNao vou conseguir estar presente na reuniao em gabinete 3.12, pelo que terei de cancelar.\n\nCumprimentos,\nConselho Pedagogico\n\n--\nMensagem enviada automaticamente",
+    "sent_datetime": "2026-03-09T16:05:00",
+    "intent": "cancelamento_reuniao",
+    "trigger": [],
+    "arguments": {
+      "participants": [
+        "Conselho Pedagogico",
+        "Prof. Ricardo Mendes"
+      ],
+      "time": [],
+      "time_normalized": [],
+      "location": [
+        "presencial - gabinete 3.12"
+      ],
+      "topic": [
+        "submissao de artigo"
+      ]
+    },
+    "confidence": {
+      "trigger": 1.0,
+      "participants": 1.0,
+      "temporal": 1.0,
+      "location": 1.0,
+      "topic": 1.0
+    },
+    "metadata": {
+      "created_at": "2026-06-26T16:08:56.913548",
+      "validated": true,
+      "version": "metadata_gold_v2",
+      "source": "dataset metadata + sent_datetime temporal normalization",
+      "sent_datetime": "2026-03-09T16:05:00"
+    }
+  },
+  {
+    "id": 6065,
+    "dataset_id": 6110,
+    "subject": "Fw: Confirmado",
+    "text": "Bom dia,\n\nConfirmo a minha presenca na reuniao em remoto.\n\nCom os melhores cumprimentos,\nSecretaria Academica\n\n--\nMensagem enviada automaticamente",
+    "sent_datetime": "2026-02-06T09:45:00",
+    "intent": "reuniao_confirmada",
+    "trigger": [],
+    "arguments": {
+      "participants": [
+        "Secretaria Academica",
+        "Mariana Lopes"
+      ],
+      "time": [],
+      "time_normalized": [],
+      "location": [
+        "remoto - zoom"
+      ],
+      "topic": [
+        "preparacao da defesa"
+      ]
+    },
+    "confidence": {
+      "trigger": 1.0,
+      "participants": 1.0,
+      "temporal": 1.0,
+      "location": 1.0,
+      "topic": 1.0
+    },
+    "metadata": {
+      "created_at": "2026-06-26T16:09:14.696643",
+      "validated": true,
+      "version": "metadata_gold_v2",
+      "source": "dataset metadata + sent_datetime temporal normalization",
+      "sent_datetime": "2026-02-06T09:45:00"
+    }
+  },
+  {
+    "id": 5820,
+    "dataset_id": 4364,
+    "subject": "Fw: Indisponibilidade para a reuniao",
+    "text": "Boa tarde,\n\nPeço desculpa, mas terei de desmarcar a reuniao relacionada com analise dos resultados dos estudantes.\n\nCom os melhores cumprimentos,\nSecretaria Academica",
+    "sent_datetime": "2026-05-14T16:05:00",
+    "intent": "cancelamento_reuniao",
+    "trigger": [],
+    "arguments": {
+      "participants": [
+        "Secretaria Academica",
+        "Professora Sofia Carvalho"
+      ],
+      "time": [],
+      "time_normalized": [],
+      "location": [
+        "remoto - zoom"
+      ],
+      "topic": [
+        "analise dos resultados dos estudantes"
+      ]
+    },
+    "confidence": {
+      "trigger": 1.0,
+      "participants": 1.0,
+      "temporal": 1.0,
+      "location": 1.0,
+      "topic": 1.0
+    },
+    "metadata": {
+      "created_at": "2026-06-26T16:09:13.425259",
+      "validated": true,
+      "version": "metadata_gold_v2",
+      "source": "dataset metadata + sent_datetime temporal normalization",
+      "sent_datetime": "2026-05-14T16:05:00"
+    }
+  },
+  {
+    "id": 3432,
+    "dataset_id": 3079,
+    "subject": "RE: Indisponibilidade para a reuniao",
+    "text": "Ola,\n\nA reuniao marcada para dia 22 as 17h, em remoto, tera de ser adiada.\n\nCumprimentos,\nRita Fernandes\n\nEnviado do telemovel",
+    "sent_datetime": "2026-03-16T10:30:00",
+    "intent": "cancelamento_reuniao",
+    "trigger": [],
+    "arguments": {
+      "participants": [
+        "Rita Fernandes",
+        "Secretaria Academica"
+      ],
+      "time": [
+        "dia 22 as 17h"
+      ],
+      "time_normalized": [
+        "2026-03-16T17:00:00"
+      ],
+      "location": [
+        "remoto - zoom"
+      ],
+      "topic": [
+        "revisao do plano de trabalhos"
+      ]
+    },
+    "confidence": {
+      "trigger": 1.0,
+      "participants": 1.0,
+      "temporal": 1.0,
+      "location": 1.0,
+      "topic": 1.0
+    },
+    "metadata": {
+      "created_at": "2026-06-26T16:09:00.945561",
+      "validated": true,
+      "version": "metadata_gold_v2",
+      "source": "dataset metadata + sent_datetime temporal normalization",
+      "sent_datetime": "2026-03-16T10:30:00"
+    }
+  },
+  {
+    "id": 4374,
+    "dataset_id": 1545,
+    "subject": "Re: Agendamento - planeamento de aulas",
+    "text": "Bom dia Mariana Lopes,\n\nGostaria de saber se tem disponibilidade para reunirmos quando for conveniente, em remoto, para falarmos sobre planeamento de aulas.\n\nObrigado pela atencao.\n\nCom os melhores cumprimentos,\nProfessora Ana Costa\n\nEnviado do telemovel",
+    "sent_datetime": "2026-03-07T10:10:00",
+    "intent": "agendamento_reuniao",
+    "trigger": [],
+    "arguments": {
+      "participants": [
+        "Professora Ana Costa",
+        "Mariana Lopes"
+      ],
+      "time": [],
+      "time_normalized": [],
+      "location": [
+        "remoto - zoom"
+      ],
+      "topic": [
+        "planeamento de aulas"
+      ]
+    },
+    "confidence": {
+      "trigger": 1.0,
+      "participants": 1.0,
+      "temporal": 1.0,
+      "location": 1.0,
+      "topic": 1.0
+    },
+    "metadata": {
+      "created_at": "2026-06-26T16:09:05.901322",
+      "validated": true,
+      "version": "metadata_gold_v2",
+      "source": "dataset metadata + sent_datetime temporal normalization",
+      "sent_datetime": "2026-03-07T10:10:00"
+    }
+  },
+  {
+    "id": 1169,
+    "dataset_id": 7591,
+    "subject": "Confirmacao - validacao de atas",
+    "text": "Caro colega Diretor do Curso,\n\nTudo certo para a reuniao sobre validacao de atas. Ate terca as 11h.\n\nObrigado pela atencao.\n\nCom os melhores cumprimentos,\nProfessora Sofia Carvalho\n\nEnviado do Outlook",
+    "sent_datetime": "2026-03-16T15:05:00",
+    "intent": "reuniao_confirmada",
+    "trigger": [],
+    "arguments": {
+      "participants": [
+        "Professora Sofia Carvalho",
+        "Diretor do Curso"
+      ],
+      "time": [
+        "terca as 11h"
+      ],
+      "time_normalized": [
+        "2026-03-17T11:00:00"
+      ],
+      "location": [
+        "remoto - zoom"
+      ],
+      "topic": [
+        "validacao de atas"
+      ]
+    },
+    "confidence": {
+      "trigger": 1.0,
+      "participants": 1.0,
+      "temporal": 1.0,
+      "location": 1.0,
+      "topic": 1.0
+    },
+    "metadata": {
+      "created_at": "2026-06-26T16:08:49.037792",
+      "validated": true,
+      "version": "metadata_gold_v2",
+      "source": "dataset metadata + sent_datetime temporal normalization",
+      "sent_datetime": "2026-03-16T15:05:00"
+    }
+  },
+  {
+    "id": 9980,
+    "dataset_id": 4740,
+    "subject": "RE: Imprevisto - distribuicao de servico docente",
+    "text": "Ola Secretaria Academica,\n\nPor indicacao da direcao, a reuniao sobre distribuicao de servico docente fica cancelada ate nova comunicacao.\n\nObrigada,\nJoao Pereira",
+    "sent_datetime": "2026-03-26T09:20:00",
+    "intent": "cancelamento_reuniao",
+    "trigger": [],
+    "arguments": {
+      "participants": [
+        "Joao Pereira",
+        "Secretaria Academica"
+      ],
+      "time": [],
+      "time_normalized": [],
+      "location": [
+        "remoto - zoom"
+      ],
+      "topic": [
+        "distribuicao de servico docente"
+      ]
+    },
+    "confidence": {
+      "trigger": 1.0,
+      "participants": 1.0,
+      "temporal": 1.0,
+      "location": 1.0,
+      "topic": 1.0
+    },
+    "metadata": {
+      "created_at": "2026-06-26T16:09:35.863527",
+      "validated": true,
+      "version": "metadata_gold_v2",
+      "source": "dataset metadata + sent_datetime temporal normalization",
+      "sent_datetime": "2026-03-26T09:20:00"
+    }
+  },
+  {
+    "id": 2803,
+    "dataset_id": 7003,
+    "subject": "RE: Re: Marcacao de reuniao",
+    "text": "Estimado/a estudante Mariana Lopes,\n\nDa minha parte esta confirmado. Encontramo-nos em biblioteca.\n\nCom os melhores cumprimentos,\nSecretaria Academica\n\nEnviado do Outlook",
+    "sent_datetime": "2026-05-08T09:40:00",
+    "intent": "reuniao_confirmada",
+    "trigger": [],
+    "arguments": {
+      "participants": [
+        "Secretaria Academica",
+        "Mariana Lopes"
+      ],
+      "time": [],
+      "time_normalized": [],
+      "location": [
+        "presencial - biblioteca"
+      ],
+      "topic": [
+        "horarios do semestre"
+      ]
+    },
+    "confidence": {
+      "trigger": 1.0,
+      "participants": 1.0,
+      "temporal": 1.0,
+      "location": 1.0,
+      "topic": 1.0
+    },
+    "metadata": {
+      "created_at": "2026-06-26T16:08:57.655685",
+      "validated": true,
+      "version": "metadata_gold_v2",
+      "source": "dataset metadata + sent_datetime temporal normalization",
+      "sent_datetime": "2026-05-08T09:40:00"
+    }
+  },
+  {
+    "id": 8751,
+    "dataset_id": 3629,
+    "subject": "RE: Cancelamento de reuniao",
+    "text": "Boa tarde,\n\nA reuniao marcada para quando for conveniente, em sala de reunioes do departamento, tera de ser adiada.\n\nCumprimentos,\nDiretor do Curso\n\nEnviado do Outlook",
+    "sent_datetime": "2026-04-14T09:50:00",
+    "intent": "cancelamento_reuniao",
+    "trigger": [],
+    "arguments": {
+      "participants": [
+        "Diretor do Curso",
+        "Professora Sofia Carvalho"
+      ],
+      "time": [],
+      "time_normalized": [],
+      "location": [
+        "presencial - sala de reunioes do departamento"
+      ],
+      "topic": [
+        "distribuicao de servico docente"
+      ]
+    },
+    "confidence": {
+      "trigger": 1.0,
+      "participants": 1.0,
+      "temporal": 1.0,
+      "location": 1.0,
+      "topic": 1.0
+    },
+    "metadata": {
+      "created_at": "2026-06-26T16:09:29.080452",
+      "validated": true,
+      "version": "metadata_gold_v2",
+      "source": "dataset metadata + sent_datetime temporal normalization",
+      "sent_datetime": "2026-04-14T09:50:00"
+    }
+  },
+  {
+    "id": 4010,
+    "dataset_id": 9765,
+    "subject": "RE: Informacao academica",
+    "text": "Boa tarde,\n\nA pauta foi atualizada no sistema academico. Por favor confirme se consegue aceder.\n\nObrigado,\nProfessora Ana Costa\n\nEnviado do telemovel",
+    "sent_datetime": "2026-02-06T17:40:00",
+    "intent": "nao_reuniao",
+    "trigger": [],
+    "arguments": {
+      "participants": [
+        "Professora Ana Costa",
+        "Diretor do Curso"
+      ],
+      "time": [],
+      "time_normalized": [],
+      "location": [],
+      "topic": []
+    },
+    "confidence": {
+      "trigger": 1.0,
+      "participants": 1.0,
+      "temporal": 1.0,
+      "location": 1.0,
+      "topic": 1.0
+    },
+    "metadata": {
+      "created_at": "2026-06-26T16:09:04.026347",
+      "validated": true,
+      "version": "metadata_gold_v2",
+      "source": "dataset metadata + sent_datetime temporal normalization",
+      "sent_datetime": "2026-02-06T17:40:00"
+    }
+  },
+  {
+    "id": 2677,
+    "dataset_id": 7101,
+    "subject": "RE: Tudo certo para a reuniao",
+    "text": "Boa tarde,\n\nConfirmo a minha presenca na reuniao em auditorio principal.\n\nCom os melhores cumprimentos,\nProfessora Ana Costa\n\nEnviado do telemovel",
+    "sent_datetime": "2026-03-21T09:10:00",
+    "intent": "reuniao_confirmada",
+    "trigger": [],
+    "arguments": {
+      "participants": [
+        "Professora Ana Costa",
+        "Secretaria Academica"
+      ],
+      "time": [],
+      "time_normalized": [],
+      "location": [
+        "presencial - auditorio principal"
+      ],
+      "topic": [
+        "avaliacao continua"
+      ]
+    },
+    "confidence": {
+      "trigger": 1.0,
+      "participants": 1.0,
+      "temporal": 1.0,
+      "location": 1.0,
+      "topic": 1.0
+    },
+    "metadata": {
+      "created_at": "2026-06-26T16:08:56.977816",
+      "validated": true,
+      "version": "metadata_gold_v2",
+      "source": "dataset metadata + sent_datetime temporal normalization",
+      "sent_datetime": "2026-03-21T09:10:00"
+    }
+  },
+  {
+    "id": 7573,
+    "dataset_id": 2560,
+    "subject": "Disponibilidade para reuniao",
+    "text": "Bom dia Prof. Ricardo Mendes,\n\nQuando tiver disponibilidade, gostava de combinar uma reuniao sobre acompanhamento pedagogico. depois da aula seria possivel?\n\nCumprimentos,\nGabinete de Estagios\n\nEnviado do Outlook",
+    "sent_datetime": "2026-04-02T18:20:00",
+    "intent": "agendamento_reuniao",
+    "trigger": [],
+    "arguments": {
+      "participants": [
+        "Gabinete de Estagios",
+        "Prof. Ricardo Mendes"
+      ],
+      "time": [
+        "depois da aula"
+      ],
+      "time_normalized": [],
+      "location": [
+        "remoto - zoom"
+      ],
+      "topic": [
+        "acompanhamento pedagogico"
+      ]
+    },
+    "confidence": {
+      "trigger": 1.0,
+      "participants": 1.0,
+      "temporal": 1.0,
+      "location": 1.0,
+      "topic": 1.0
+    },
+    "metadata": {
+      "created_at": "2026-06-26T16:09:22.779761",
+      "validated": true,
+      "version": "metadata_gold_v2",
+      "source": "dataset metadata + sent_datetime temporal normalization",
+      "sent_datetime": "2026-04-02T18:20:00"
+    }
+  },
+  {
+    "id": 6216,
+    "dataset_id": 7505,
+    "subject": "Re: Reuniao confirmada",
+    "text": "Viva,\n\nFica entao combinado para ao final do dia.\n\nCom os melhores cumprimentos,\nProfessor Luis Almeida",
+    "sent_datetime": "2026-04-01T09:05:00",
+    "intent": "reuniao_confirmada",
+    "trigger": [],
+    "arguments": {
+      "participants": [
+        "Professor Luis Almeida",
+        "Secretaria Academica"
+      ],
+      "time": [
+        "ao final do dia"
+      ],
+      "time_normalized": [],
+      "location": [
+        "remoto - zoom"
+      ],
+      "topic": [
+        "horarios do semestre"
+      ]
+    },
+    "confidence": {
+      "trigger": 1.0,
+      "participants": 1.0,
+      "temporal": 1.0,
+      "location": 1.0,
+      "topic": 1.0
+    },
+    "metadata": {
+      "created_at": "2026-06-26T16:09:15.446782",
+      "validated": true,
+      "version": "metadata_gold_v2",
+      "source": "dataset metadata + sent_datetime temporal normalization",
+      "sent_datetime": "2026-04-01T09:05:00"
+    }
+  },
+  {
+    "id": 4422,
+    "dataset_id": 264,
+    "subject": "Fw: Marcacao de reuniao",
+    "text": "Exmo./a Senhor/a Professora Ana Costa,\n\nQuando tiver disponibilidade, gostava de combinar uma reuniao sobre planeamento de aulas. antes do seminario seria possivel?\n\nCom os melhores cumprimentos,\nGabinete de Estagios\n\nEnviado do Outlook",
+    "sent_datetime": "2026-03-13T13:40:00",
+    "intent": "agendamento_reuniao",
+    "trigger": [],
+    "arguments": {
+      "participants": [
+        "Gabinete de Estagios",
+        "Professora Ana Costa"
+      ],
+      "time": [
+        "antes do seminario"
+      ],
+      "time_normalized": [],
+      "location": [
+        "remoto - zoom"
+      ],
+      "topic": [
+        "planeamento de aulas"
+      ]
+    },
+    "confidence": {
+      "trigger": 1.0,
+      "participants": 1.0,
+      "temporal": 1.0,
+      "location": 1.0,
+      "topic": 1.0
+    },
+    "metadata": {
+      "created_at": "2026-06-26T16:09:06.141474",
+      "validated": true,
+      "version": "metadata_gold_v2",
+      "source": "dataset metadata + sent_datetime temporal normalization",
+      "sent_datetime": "2026-03-13T13:40:00"
+    }
+  },
+  {
+    "id": 9125,
+    "dataset_id": 2643,
+    "subject": "Re: Necessidade de remarcar",
+    "text": "Boa tarde,\n\nSeria possivel agendar uma breve reuniao sexta as 14h30? O objetivo e discutir analise dos resultados dos estudantes.\n\nCom os melhores cumprimentos,\nSecretaria Academica\n\n--\nMensagem enviada automaticamente",
+    "sent_datetime": "2026-05-01T12:15:00",
+    "intent": "agendamento_reuniao",
+    "trigger": [],
+    "arguments": {
+      "participants": [
+        "Secretaria Academica",
+        "Professora Sofia Carvalho"
+      ],
+      "time": [
+        "sexta as 14h30"
+      ],
+      "time_normalized": [
+        "2026-05-01T14:30:00"
+      ],
+      "location": [
+        "remoto - zoom"
+      ],
+      "topic": [
+        "analise dos resultados dos estudantes"
+      ]
+    },
+    "confidence": {
+      "trigger": 1.0,
+      "participants": 1.0,
+      "temporal": 1.0,
+      "location": 1.0,
+      "topic": 1.0
+    },
+    "metadata": {
+      "created_at": "2026-06-26T16:09:31.154058",
+      "validated": true,
+      "version": "metadata_gold_v2",
+      "source": "dataset metadata + sent_datetime temporal normalization",
+      "sent_datetime": "2026-05-01T12:15:00"
+    }
+  },
+  {
+    "id": 3598,
+    "dataset_id": 2874,
+    "subject": "Fw: Pedido de reuniao",
+    "text": "Boa tarde,\n\nSeria possivel agendar uma breve reuniao depois da aula? O objetivo e discutir revisao do plano de trabalhos.\n\nObrigada,\nMiguel Santos",
+    "sent_datetime": "2026-02-14T08:50:00",
+    "intent": "agendamento_reuniao",
+    "trigger": [],
+    "arguments": {
+      "participants": [
+        "Miguel Santos",
+        "Professora Sofia Carvalho"
+      ],
+      "time": [
+        "depois da aula"
+      ],
+      "time_normalized": [],
+      "location": [
+        "remoto - zoom"
+      ],
+      "topic": [
+        "revisao do plano de trabalhos"
+      ]
+    },
+    "confidence": {
+      "trigger": 1.0,
+      "participants": 1.0,
+      "temporal": 1.0,
+      "location": 1.0,
+      "topic": 1.0
+    },
+    "metadata": {
+      "created_at": "2026-06-26T16:09:01.860740",
+      "validated": true,
+      "version": "metadata_gold_v2",
+      "source": "dataset metadata + sent_datetime temporal normalization",
+      "sent_datetime": "2026-02-14T08:50:00"
+    }
+  },
+  {
+    "id": 5313,
+    "dataset_id": 6100,
+    "subject": "Fw: Reuniao confirmada",
+    "text": "Boa tarde Professora Sofia Carvalho,\n\nConfirmo a reuniao sexta as 14h30, em sala B104, para discutirmos avaliacao continua.\n\nCumprimentos,\nCoordenacao de Mestrado\n\nEnviado do telemovel",
+    "sent_datetime": "2026-03-16T11:10:00",
+    "intent": "reuniao_confirmada",
+    "trigger": [],
+    "arguments": {
+      "participants": [
+        "Coordenacao de Mestrado",
+        "Professora Sofia Carvalho"
+      ],
+      "time": [
+        "sexta as 14h30"
+      ],
+      "time_normalized": [
+        "2026-03-20T14:30:00"
+      ],
+      "location": [
+        "presencial - sala B104"
+      ],
+      "topic": [
+        "avaliacao continua"
+      ]
+    },
+    "confidence": {
+      "trigger": 1.0,
+      "participants": 1.0,
+      "temporal": 1.0,
+      "location": 1.0,
+      "topic": 1.0
+    },
+    "metadata": {
+      "created_at": "2026-06-26T16:09:10.818045",
+      "validated": true,
+      "version": "metadata_gold_v2",
+      "source": "dataset metadata + sent_datetime temporal normalization",
+      "sent_datetime": "2026-03-16T11:10:00"
+    }
+  },
+  {
+    "id": 916,
+    "dataset_id": 3463,
+    "subject": "RE: Indisponibilidade para a reuniao",
+    "text": "Cara colega,\n\nA reuniao marcada para quando for conveniente, em remoto, tera de ser adiada.\n\nCom os melhores cumprimentos,\nProfessor Luis Almeida",
+    "sent_datetime": "2026-03-22T14:40:00",
+    "intent": "cancelamento_reuniao",
+    "trigger": [],
+    "arguments": {
+      "participants": [
+        "Professor Luis Almeida",
+        "Professora Sofia Carvalho"
+      ],
+      "time": [],
+      "time_normalized": [],
+      "location": [
+        "remoto - zoom"
+      ],
+      "topic": [
+        "relatorio de progresso"
+      ]
+    },
+    "confidence": {
+      "trigger": 1.0,
+      "participants": 1.0,
+      "temporal": 1.0,
+      "location": 1.0,
+      "topic": 1.0
+    },
+    "metadata": {
+      "created_at": "2026-06-26T16:08:47.735167",
+      "validated": true,
+      "version": "metadata_gold_v2",
+      "source": "dataset metadata + sent_datetime temporal normalization",
+      "sent_datetime": "2026-03-22T14:40:00"
+    }
+  },
+  {
+    "id": 3752,
+    "dataset_id": 6950,
+    "subject": "RE: Tudo certo para a reuniao",
+    "text": "Bom dia Professora Sofia Carvalho,\n\nDa minha parte esta confirmado. Encontramo-nos em remoto.\n\nCom os melhores cumprimentos,\nDiretor do Curso",
+    "sent_datetime": "2026-04-22T18:30:00",
+    "intent": "reuniao_confirmada",
+    "trigger": [],
+    "arguments": {
+      "participants": [
+        "Diretor do Curso",
+        "Professora Sofia Carvalho"
+      ],
+      "time": [],
+      "time_normalized": [],
+      "location": [
+        "remoto - zoom"
+      ],
+      "topic": [
+        "orientacao da dissertacao"
+      ]
+    },
+    "confidence": {
+      "trigger": 1.0,
+      "participants": 1.0,
+      "temporal": 1.0,
+      "location": 1.0,
+      "topic": 1.0
+    },
+    "metadata": {
+      "created_at": "2026-06-26T16:09:02.685589",
+      "validated": true,
+      "version": "metadata_gold_v2",
+      "source": "dataset metadata + sent_datetime temporal normalization",
+      "sent_datetime": "2026-04-22T18:30:00"
+    }
+  },
+  {
+    "id": 525,
+    "dataset_id": 7055,
+    "subject": "Confirmado",
+    "text": "Cara colega Secretaria Academica,\n\nPode ficar marcado conforme proposto. Obrigado pela confirmacao.\n\nObrigado pela atencao.\n\nObrigado,\nProfessor Luis Almeida\n\nEnviado do Outlook",
+    "sent_datetime": "2026-04-30T16:45:00",
+    "intent": "reuniao_confirmada",
+    "trigger": [],
+    "arguments": {
+      "participants": [
+        "Professor Luis Almeida",
+        "Secretaria Academica"
+      ],
+      "time": [],
+      "time_normalized": [],
+      "location": [
+        "remoto - zoom"
+      ],
+      "topic": [
+        "revisao bibliografica"
+      ]
+    },
+    "confidence": {
+      "trigger": 1.0,
+      "participants": 1.0,
+      "temporal": 1.0,
+      "location": 1.0,
+      "topic": 1.0
+    },
+    "metadata": {
+      "created_at": "2026-06-26T16:08:45.667519",
+      "validated": true,
+      "version": "metadata_gold_v2",
+      "source": "dataset metadata + sent_datetime temporal normalization",
+      "sent_datetime": "2026-04-30T16:45:00"
+    }
+  },
+  {
+    "id": 5168,
+    "dataset_id": 9820,
+    "subject": "RE: Pedido de esclarecimento",
+    "text": "Caro colega Secretaria Academica,\n\nSegue a informacao solicitada pela secretaria sobre proposta de projeto.\n\nObrigado pela atencao.\n\nCumprimentos,\nProf. Ricardo Mendes\n\n--\nMensagem enviada automaticamente",
+    "sent_datetime": "2026-05-16T12:50:00",
+    "intent": "nao_reuniao",
+    "trigger": [],
+    "arguments": {
+      "participants": [
+        "Prof. Ricardo Mendes",
+        "Secretaria Academica"
+      ],
+      "time": [],
+      "time_normalized": [],
+      "location": [],
+      "topic": []
+    },
+    "confidence": {
+      "trigger": 1.0,
+      "participants": 1.0,
+      "temporal": 1.0,
+      "location": 1.0,
+      "topic": 1.0
+    },
+    "metadata": {
+      "created_at": "2026-06-26T16:09:10.036061",
+      "validated": true,
+      "version": "metadata_gold_v2",
+      "source": "dataset metadata + sent_datetime temporal normalization",
+      "sent_datetime": "2026-05-16T12:50:00"
+    }
+  },
+  {
+    "id": 6572,
+    "dataset_id": 7510,
+    "subject": "Re: Marcacao de reuniao",
+    "text": "Viva Diretor do Curso,\n\nPode ficar marcado conforme proposto. Obrigado pela confirmacao.\n\nCom os melhores cumprimentos,\nProf. Ricardo Mendes\n\nEnviado do telemovel",
+    "sent_datetime": "2026-02-02T09:05:00",
+    "intent": "reuniao_confirmada",
+    "trigger": [],
+    "arguments": {
+      "participants": [
+        "Prof. Ricardo Mendes",
+        "Diretor do Curso"
+      ],
+      "time": [],
+      "time_normalized": [],
+      "location": [
+        "remoto - zoom"
+      ],
+      "topic": [
+        "processo de estagio"
+      ]
+    },
+    "confidence": {
+      "trigger": 1.0,
+      "participants": 1.0,
+      "temporal": 1.0,
+      "location": 1.0,
+      "topic": 1.0
+    },
+    "metadata": {
+      "created_at": "2026-06-26T16:09:17.405859",
+      "validated": true,
+      "version": "metadata_gold_v2",
+      "source": "dataset metadata + sent_datetime temporal normalization",
+      "sent_datetime": "2026-02-02T09:05:00"
+    }
+  },
+  {
+    "id": 4386,
+    "dataset_id": 8097,
+    "subject": "Tudo certo para a reuniao",
+    "text": "Caro colega Professora Sofia Carvalho,\n\nTudo certo para a reuniao sobre acompanhamento pedagogico. Ate quando for conveniente.\n\nSe preferir, posso adaptar ao horario do departamento.\n\nCom os melhores cumprimentos,\nProfessor Luis Almeida",
+    "sent_datetime": "2026-05-28T10:50:00",
+    "intent": "reuniao_confirmada",
+    "trigger": [],
+    "arguments": {
+      "participants": [
+        "Professor Luis Almeida",
+        "Professora Sofia Carvalho"
+      ],
+      "time": [],
+      "time_normalized": [],
+      "location": [
+        "remoto - zoom"
+      ],
+      "topic": [
+        "acompanhamento pedagogico"
+      ]
+    },
+    "confidence": {
+      "trigger": 1.0,
+      "participants": 1.0,
+      "temporal": 1.0,
+      "location": 1.0,
+      "topic": 1.0
+    },
+    "metadata": {
+      "created_at": "2026-06-26T16:09:05.958729",
+      "validated": true,
+      "version": "metadata_gold_v2",
+      "source": "dataset metadata + sent_datetime temporal normalization",
+      "sent_datetime": "2026-05-28T10:50:00"
+    }
+  },
+  {
+    "id": 1084,
+    "dataset_id": 2970,
+    "subject": "Reuniao sobre distribuicao de servico docente",
+    "text": "Cara colega Professor Luis Almeida,\n\nPreciso de esclarecer alguns pontos sobre distribuicao de servico docente. Consegue reunir quando for conveniente?\n\nObrigado,\nProfessora Sofia Carvalho",
+    "sent_datetime": "2026-02-06T08:30:00",
+    "intent": "agendamento_reuniao",
+    "trigger": [],
+    "arguments": {
+      "participants": [
+        "Professora Sofia Carvalho",
+        "Professor Luis Almeida"
+      ],
+      "time": [],
+      "time_normalized": [],
+      "location": [
+        "remoto - zoom"
+      ],
+      "topic": [
+        "distribuicao de servico docente"
+      ]
+    },
+    "confidence": {
+      "trigger": 1.0,
+      "participants": 1.0,
+      "temporal": 1.0,
+      "location": 1.0,
+      "topic": 1.0
+    },
+    "metadata": {
+      "created_at": "2026-06-26T16:08:48.625327",
+      "validated": true,
+      "version": "metadata_gold_v2",
+      "source": "dataset metadata + sent_datetime temporal normalization",
+      "sent_datetime": "2026-02-06T08:30:00"
+    }
+  },
+  {
+    "id": 3456,
+    "dataset_id": 4816,
+    "subject": "Re: Reuniao sem efeito",
+    "text": "Boa tarde,\n\nPor motivo imprevisto, a reuniao de terca as 11h fica sem efeito.\n\nCom os melhores cumprimentos,\nGabinete de Estagios\n\n--\nMensagem enviada automaticamente",
+    "sent_datetime": "2026-02-27T13:40:00",
+    "intent": "cancelamento_reuniao",
+    "trigger": [],
+    "arguments": {
+      "participants": [
+        "Gabinete de Estagios",
+        "Professora Sofia Carvalho"
+      ],
+      "time": [
+        "terca as 11h"
+      ],
+      "time_normalized": [
+        "2026-03-03T11:00:00"
+      ],
+      "location": [
+        "remoto - zoom"
+      ],
+      "topic": [
+        "validacao de atas"
+      ]
+    },
+    "confidence": {
+      "trigger": 1.0,
+      "participants": 1.0,
+      "temporal": 1.0,
+      "location": 1.0,
+      "topic": 1.0
+    },
+    "metadata": {
+      "created_at": "2026-06-26T16:09:01.063078",
+      "validated": true,
+      "version": "metadata_gold_v2",
+      "source": "dataset metadata + sent_datetime temporal normalization",
+      "sent_datetime": "2026-02-27T13:40:00"
+    }
+  },
+  {
+    "id": 9292,
+    "dataset_id": 4714,
+    "subject": "Re: Reuniao sem efeito",
+    "text": "Cara Professora Secretaria Academica,\n\nPor indicacao da direcao, a reuniao sobre revisao bibliografica fica cancelada ate nova comunicacao.\n\nObrigada,\nJoao Pereira",
+    "sent_datetime": "2026-05-29T18:10:00",
+    "intent": "cancelamento_reuniao",
+    "trigger": [],
+    "arguments": {
+      "participants": [
+        "Joao Pereira",
+        "Secretaria Academica"
+      ],
+      "time": [],
+      "time_normalized": [],
+      "location": [
+        "remoto - zoom"
+      ],
+      "topic": [
+        "revisao bibliografica"
+      ]
+    },
+    "confidence": {
+      "trigger": 1.0,
+      "participants": 1.0,
+      "temporal": 1.0,
+      "location": 1.0,
+      "topic": 1.0
+    },
+    "metadata": {
+      "created_at": "2026-06-26T16:09:32.150824",
+      "validated": true,
+      "version": "metadata_gold_v2",
+      "source": "dataset metadata + sent_datetime temporal normalization",
+      "sent_datetime": "2026-05-29T18:10:00"
+    }
+  },
+  {
+    "id": 5155,
+    "dataset_id": 4499,
+    "subject": "Indisponibilidade para a reuniao",
+    "text": "Cara Professora Professora Ana Costa,\n\nInfelizmente tenho de cancelar a reuniao prevista para quando for conveniente sobre validacao de atas.\n\nCumprimentos,\nRita Fernandes\n\nEnviado do telemovel",
+    "sent_datetime": "2026-03-31T18:05:00",
+    "intent": "cancelamento_reuniao",
+    "trigger": [],
+    "arguments": {
+      "participants": [
+        "Rita Fernandes",
+        "Professora Ana Costa"
+      ],
+      "time": [],
+      "time_normalized": [],
+      "location": [
+        "remoto - zoom"
+      ],
+      "topic": [
+        "validacao de atas"
+      ]
+    },
+    "confidence": {
+      "trigger": 1.0,
+      "participants": 1.0,
+      "temporal": 1.0,
+      "location": 1.0,
+      "topic": 1.0
+    },
+    "metadata": {
+      "created_at": "2026-06-26T16:09:09.976633",
+      "validated": true,
+      "version": "metadata_gold_v2",
+      "source": "dataset metadata + sent_datetime temporal normalization",
+      "sent_datetime": "2026-03-31T18:05:00"
+    }
+  },
+  {
+    "id": 3483,
+    "dataset_id": 8040,
+    "subject": "Re: Confirmado",
+    "text": "Boa tarde Ana Martins,\n\nDa minha parte esta confirmado. Encontramo-nos em gabinete de orientacao.\n\nCumprimentos,\nSecretaria Academica\n\n--\nMensagem enviada automaticamente",
+    "sent_datetime": "2026-02-10T16:05:00",
+    "intent": "reuniao_confirmada",
+    "trigger": [],
+    "arguments": {
+      "participants": [
+        "Secretaria Academica",
+        "Ana Martins"
+      ],
+      "time": [],
+      "time_normalized": [],
+      "location": [
+        "presencial - gabinete de orientacao"
+      ],
+      "topic": [
+        "validacao de atas"
+      ]
+    },
+    "confidence": {
+      "trigger": 1.0,
+      "participants": 1.0,
+      "temporal": 1.0,
+      "location": 1.0,
+      "topic": 1.0
+    },
+    "metadata": {
+      "created_at": "2026-06-26T16:09:01.214474",
+      "validated": true,
+      "version": "metadata_gold_v2",
+      "source": "dataset metadata + sent_datetime temporal normalization",
+      "sent_datetime": "2026-02-10T16:05:00"
+    }
+  },
+  {
+    "id": 8179,
+    "dataset_id": 3233,
+    "subject": "Reuniao sem efeito",
+    "text": "Estimado/a estudante,\n\nPor motivo imprevisto, a reuniao de quando for conveniente fica sem efeito.\n\nCumprimentos,\nSecretaria Academica\n\nEnviado do Outlook",
+    "sent_datetime": "2026-05-25T17:30:00",
+    "intent": "cancelamento_reuniao",
+    "trigger": [],
+    "arguments": {
+      "participants": [
+        "Secretaria Academica",
+        "Rita Fernandes"
+      ],
+      "time": [],
+      "time_normalized": [],
+      "location": [
+        "remoto - zoom"
+      ],
+      "topic": [
+        "preparacao da apresentacao"
+      ]
+    },
+    "confidence": {
+      "trigger": 1.0,
+      "participants": 1.0,
+      "temporal": 1.0,
+      "location": 1.0,
+      "topic": 1.0
+    },
+    "metadata": {
+      "created_at": "2026-06-26T16:09:26.102468",
+      "validated": true,
+      "version": "metadata_gold_v2",
+      "source": "dataset metadata + sent_datetime temporal normalization",
+      "sent_datetime": "2026-05-25T17:30:00"
+    }
+  },
+  {
+    "id": 6482,
+    "dataset_id": 7319,
+    "subject": "Re: Confirmacao - analise dos resultados dos estudantes",
+    "text": "Bom dia Gabinete de Estagios,\n\nTudo certo para a reuniao sobre analise dos resultados dos estudantes. Ate antes do seminario.\n\nObrigado,\nProfessor Luis Almeida\n\nEnviado do Outlook",
+    "sent_datetime": "2026-05-08T17:10:00",
+    "intent": "reuniao_confirmada",
+    "trigger": [],
+    "arguments": {
+      "participants": [
+        "Professor Luis Almeida",
+        "Gabinete de Estagios"
+      ],
+      "time": [
+        "antes do seminario"
+      ],
+      "time_normalized": [],
+      "location": [
+        "remoto - zoom"
+      ],
+      "topic": [
+        "analise dos resultados dos estudantes"
+      ]
+    },
+    "confidence": {
+      "trigger": 1.0,
+      "participants": 1.0,
+      "temporal": 1.0,
+      "location": 1.0,
+      "topic": 1.0
+    },
+    "metadata": {
+      "created_at": "2026-06-26T16:09:16.944219",
+      "validated": true,
+      "version": "metadata_gold_v2",
+      "source": "dataset metadata + sent_datetime temporal normalization",
+      "sent_datetime": "2026-05-08T17:10:00"
+    }
+  },
+  {
+    "id": 7517,
+    "dataset_id": 4580,
+    "subject": "Reuniao sem efeito",
+    "text": "Caro colega Mariana Lopes,\n\nPor indicacao da direcao, a reuniao sobre orientacao da dissertacao fica cancelada ate nova comunicacao.\n\nCom os melhores cumprimentos,\nProfessora Ana Costa\n\nEnviado do Outlook",
+    "sent_datetime": "2026-04-01T08:10:00",
+    "intent": "cancelamento_reuniao",
+    "trigger": [],
+    "arguments": {
+      "participants": [
+        "Professora Ana Costa",
+        "Mariana Lopes"
+      ],
+      "time": [],
+      "time_normalized": [],
+      "location": [
+        "remoto - zoom"
+      ],
+      "topic": [
+        "orientacao da dissertacao"
+      ]
+    },
+    "confidence": {
+      "trigger": 1.0,
+      "participants": 1.0,
+      "temporal": 1.0,
+      "location": 1.0,
+      "topic": 1.0
+    },
+    "metadata": {
+      "created_at": "2026-06-26T16:09:22.417887",
+      "validated": true,
+      "version": "metadata_gold_v2",
+      "source": "dataset metadata + sent_datetime temporal normalization",
+      "sent_datetime": "2026-04-01T08:10:00"
+    }
+  },
+  {
+    "id": 2340,
+    "dataset_id": 8095,
+    "subject": "RE: Reuniao confirmada",
+    "text": "Bom dia,\n\nConfirmo a minha presenca na reuniao em laboratorio de informatica.\n\nCom os melhores cumprimentos,\nSecretaria Academica\n\nEnviado do telemovel",
+    "sent_datetime": "2026-05-25T12:15:00",
+    "intent": "reuniao_confirmada",
+    "trigger": [],
+    "arguments": {
+      "participants": [
+        "Secretaria Academica",
+        "Carolina Silva"
+      ],
+      "time": [],
+      "time_normalized": [],
+      "location": [
+        "presencial - laboratorio de informatica"
+      ],
+      "topic": [
+        "processo de estagio"
+      ]
+    },
+    "confidence": {
+      "trigger": 1.0,
+      "participants": 1.0,
+      "temporal": 1.0,
+      "location": 1.0,
+      "topic": 1.0
+    },
+    "metadata": {
+      "created_at": "2026-06-26T16:08:55.331255",
+      "validated": true,
+      "version": "metadata_gold_v2",
+      "source": "dataset metadata + sent_datetime temporal normalization",
+      "sent_datetime": "2026-05-25T12:15:00"
+    }
+  },
+  {
+    "id": 4339,
+    "dataset_id": 8336,
+    "subject": "RE: Tudo certo para a reuniao",
+    "text": "Caro colega,\n\nFica entao combinado para segunda de manha.\n\nCumprimentos,\nProfessor Luis Almeida\n\n--\nMensagem enviada automaticamente",
+    "sent_datetime": "2026-03-17T14:50:00",
+    "intent": "reuniao_confirmada",
+    "trigger": [],
+    "arguments": {
+      "participants": [
+        "Professor Luis Almeida",
+        "Secretaria Academica"
+      ],
+      "time": [
+        "segunda de manha"
+      ],
+      "time_normalized": [
+        "2026-03-23T09:00:00"
+      ],
+      "location": [
+        "remoto - zoom"
+      ],
+      "topic": [
+        "coordenacao da unidade curricular"
+      ]
+    },
+    "confidence": {
+      "trigger": 1.0,
+      "participants": 1.0,
+      "temporal": 1.0,
+      "location": 1.0,
+      "topic": 1.0
+    },
+    "metadata": {
+      "created_at": "2026-06-26T16:09:05.737839",
+      "validated": true,
+      "version": "metadata_gold_v2",
+      "source": "dataset metadata + sent_datetime temporal normalization",
+      "sent_datetime": "2026-03-17T14:50:00"
+    }
+  },
+  {
+    "id": 2287,
+    "dataset_id": 5482,
+    "subject": "Fw: Cancelamento de reuniao",
+    "text": "Boa tarde,\n\nPor motivo imprevisto, a reuniao de sexta as 14h30 fica sem efeito.\n\nCumprimentos,\nJoao Pereira",
+    "sent_datetime": "2026-02-18T18:10:00",
+    "intent": "cancelamento_reuniao",
+    "trigger": [],
+    "arguments": {
+      "participants": [
+        "Joao Pereira",
+        "Professora Sofia Carvalho"
+      ],
+      "time": [
+        "sexta as 14h30"
+      ],
+      "time_normalized": [
+        "2026-02-20T14:30:00"
+      ],
+      "location": [
+        "remoto - zoom"
+      ],
+      "topic": [
+        "validacao de atas"
+      ]
+    },
+    "confidence": {
+      "trigger": 1.0,
+      "participants": 1.0,
+      "temporal": 1.0,
+      "location": 1.0,
+      "topic": 1.0
+    },
+    "metadata": {
+      "created_at": "2026-06-26T16:08:55.033263",
+      "validated": true,
+      "version": "metadata_gold_v2",
+      "source": "dataset metadata + sent_datetime temporal normalization",
+      "sent_datetime": "2026-02-18T18:10:00"
+    }
+  },
+  {
+    "id": 4040,
+    "dataset_id": 2644,
+    "subject": "RE: Necessidade de remarcar",
+    "text": "Boa tarde Prof. Ricardo Mendes,\n\nPodemos remarcar a reuniao sobre credibilidade dos dados recolhidos para quando for conveniente?\n\nCumprimentos,\nConselho Pedagogico",
+    "sent_datetime": "2026-02-24T10:15:00",
+    "intent": "agendamento_reuniao",
+    "trigger": [],
+    "arguments": {
+      "participants": [
+        "Conselho Pedagogico",
+        "Prof. Ricardo Mendes"
+      ],
+      "time": [],
+      "time_normalized": [],
+      "location": [
+        "remoto - zoom"
+      ],
+      "topic": [
+        "credibilidade dos dados recolhidos"
+      ]
+    },
+    "confidence": {
+      "trigger": 1.0,
+      "participants": 1.0,
+      "temporal": 1.0,
+      "location": 1.0,
+      "topic": 1.0
+    },
+    "metadata": {
+      "created_at": "2026-06-26T16:09:04.182481",
+      "validated": true,
+      "version": "metadata_gold_v2",
+      "source": "dataset metadata + sent_datetime temporal normalization",
+      "sent_datetime": "2026-02-24T10:15:00"
+    }
+  }
+]

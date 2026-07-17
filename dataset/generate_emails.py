@@ -1,6 +1,7 @@
 import argparse
 import json
 import random
+from datetime import datetime, timedelta
 from pathlib import Path
 from typing import Dict, List, Optional
 
@@ -70,20 +71,8 @@ TOPICS = [
 ]
 
 LOCATIONS = [
-    "Zoom",
-    "Teams",
-    "Google Meet",
-    "sala 2.3",
-    "sala B104",
-    "sala de reunioes do departamento",
-    "gabinete 3.12",
-    "gabinete da direcao",
-    "secretaria",
-    "biblioteca",
-    "laboratorio de informatica",
-    "auditorio principal",
-    "bar da faculdade",
-    "campus pedagogico",
+    "Remoto",
+    "Presencial",
 ]
 
 TIMES = [
@@ -124,6 +113,8 @@ SUBJECTS = {
     "agendamento_reuniao": [
         "Pedido de reuniao",
         "Marcacao de reuniao",
+        "Remarcacao de reuniao",
+        "Necessidade de remarcar",
         "Disponibilidade para reuniao",
         "Reuniao sobre {topic}",
         "Agendamento - {topic}",
@@ -133,7 +124,6 @@ SUBJECTS = {
         "Cancelamento de reuniao",
         "Imprevisto - {topic}",
         "Reuniao sem efeito",
-        "Necessidade de remarcar",
         "Indisponibilidade para a reuniao",
     ],
     "reuniao_confirmada": [
@@ -157,6 +147,9 @@ SUBJECTS = {
 AGENDAMENTO_TEMPLATES = [
     "{opening} {recipient_name},\n\nGostaria de saber se tem disponibilidade para reunirmos {time}, em {location}, para falarmos sobre {topic}.",
     "{opening} {recipient_name},\n\nPodemos marcar uma reuniao {time} para alinharmos os proximos passos relativos a {topic}?",
+    "{opening} {recipient_name},\n\nPodemos remarcar a reuniao sobre {topic} para {time}?",
+    "{opening},\n\nGostaria de propor uma remarcacao da reuniao sobre {topic} para {time}.",
+    "{opening} {recipient_name},\n\nConseguimos reagendar a reuniao sobre {topic} para {time}, em {location}?",
     "{opening},\n\nSeria possivel agendar uma breve reuniao {time}? O objetivo e discutir {topic}.",
     "{opening} {recipient_name},\n\nPreciso de esclarecer alguns pontos sobre {topic}. Consegue reunir {time}?",
     "{opening},\n\nProponho fazermos uma reuniao {time}, em {location}, para fechar o ponto de situacao de {topic}.",
@@ -167,7 +160,7 @@ AGENDAMENTO_TEMPLATES = [
 CANCELAMENTO_TEMPLATES = [
     "{opening} {recipient_name},\n\nInfelizmente tenho de cancelar a reuniao prevista para {time} sobre {topic}.",
     "{opening},\n\nPor motivo imprevisto, a reuniao de {time} fica sem efeito.",
-    "{opening} {recipient_name},\n\nNao vou conseguir estar presente na reuniao em {location}. Podemos remarcar para outro dia?",
+    "{opening} {recipient_name},\n\nNao vou conseguir estar presente na reuniao em {location}, pelo que terei de cancelar.",
     "{opening},\n\nPeço desculpa, mas terei de desmarcar a reuniao relacionada com {topic}.",
     "{opening} {recipient_name},\n\nSurgiu uma sobreposicao no horario e nao conseguirei participar na reuniao {time}.",
     "{opening},\n\nA reuniao marcada para {time}, em {location}, tera de ser adiada.",
@@ -200,6 +193,11 @@ NAO_REUNIAO_TEMPLATES = [
 THREAD_PREFIXES = ["", "Re: ", "RE: ", "Fw: "]
 NOISE = ["", "\n\nEnviado do Outlook", "\n\nEnviado do telemovel", "\n\n--\nMensagem enviada automaticamente"]
 
+SENT_DATETIME_START = datetime(2026, 2, 2, 8, 0)
+SENT_DATETIME_DAYS = 120
+SENT_HOURS = list(range(8, 19))
+SENT_MINUTES = [0, 5, 10, 15, 20, 30, 40, 45, 50]
+
 
 def people_by_role(role: str) -> List[Dict[str, str]]:
     return [person for person in PEOPLE if person["role"] == role]
@@ -221,6 +219,17 @@ def maybe(value: str, probability: float) -> Optional[str]:
 def format_subject(label: str, topic: str) -> str:
     subject = random.choice(SUBJECTS[label]).format(topic=topic)
     return random.choice(THREAD_PREFIXES) + subject
+
+
+def random_sent_datetime() -> str:
+    sent_date = SENT_DATETIME_START + timedelta(days=random.randint(0, SENT_DATETIME_DAYS))
+    sent_date = sent_date.replace(
+        hour=random.choice(SENT_HOURS),
+        minute=random.choice(SENT_MINUTES),
+        second=0,
+        microsecond=0,
+    )
+    return sent_date.isoformat()
 
 
 def build_email(label: str, email_id: int) -> Dict[str, object]:
@@ -277,6 +286,7 @@ def build_email(label: str, email_id: int) -> Dict[str, object]:
         "recipient": recipient["name"],
         "recipient_email": recipient["email"],
         "recipient_role": recipient["role"],
+        "sent_datetime": random_sent_datetime(),
         "topic": topic,
         "location": location if include_location and label != "nao_reuniao" else None,
         "time_expression": time_expression if include_time and label != "nao_reuniao" else None,
