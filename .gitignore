@@ -207,3 +207,10 @@ marimo/_lsp/
 __marimo__/
 
 .env
+
+# Local ML artifacts and generated outputs
+dataset/.hf_cache/
+qa/models/
+evaluation_results/
+*.safetensors
+*.arrow
