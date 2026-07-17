@@ -41,6 +41,8 @@ def parse_args() -> argparse.Namespace:
     parser.add_argument("--warmup-ratio", type=float, default=0.0)
     parser.add_argument("--seed", type=int, default=42)
     parser.add_argument("--device", default="cuda" if torch.cuda.is_available() else "cpu")
+    parser.add_argument("--fp16", action="store_true", help="Usa mixed precision em CUDA.")
+    parser.add_argument("--num-workers", type=int, default=0)
     parser.add_argument("--max-train-samples", type=int, default=None)
     parser.add_argument("--max-eval-samples", type=int, default=None)
     parser.add_argument("--gradient-accumulation-steps", type=int, default=1)
@@ -53,6 +55,26 @@ def set_seed(seed: int) -> None:
     torch.manual_seed(seed)
     if torch.cuda.is_available():
         torch.cuda.manual_seed_all(seed)
+
+
+def resolve_device(requested_device: str) -> torch.device:
+    requested = str(requested_device or "auto").lower()
+    if requested == "auto":
+        requested = "cuda" if torch.cuda.is_available() else "cpu"
+
+    if requested.startswith("cuda") and not torch.cuda.is_available():
+        raise RuntimeError(
+            "Foi pedido --device cuda, mas este ambiente Python nao tem CUDA ativo. "
+            f"PyTorch instalado: {torch.__version__}; torch.version.cuda={torch.version.cuda}. "
+            "Instala uma build CUDA do PyTorch na .venv ou corre com --device cpu."
+        )
+
+    device = torch.device(requested)
+    if device.type == "cuda":
+        LOGGER.info("CUDA ativo: %s", torch.cuda.get_device_name(device))
+    else:
+        LOGGER.info("A usar CPU")
+    return device
 
 
 def load_qa_dataset(train_file: str, validation_file: str, cache_dir: str):
@@ -167,7 +189,7 @@ def make_optimizer(model, args: argparse.Namespace):
     return torch.optim.AdamW(grouped_parameters, lr=args.learning_rate)
 
 
-def evaluate_loss(model, dataloader: DataLoader, device: str) -> float:
+def evaluate_loss(model, dataloader: DataLoader, device: torch.device, use_fp16: bool) -> float:
     model.eval()
     losses = []
     with torch.no_grad():
@@ -177,7 +199,8 @@ def evaluate_loss(model, dataloader: DataLoader, device: str) -> float:
                 for key, value in batch.items()
                 if key in {"input_ids", "attention_mask", "token_type_ids", "start_positions", "end_positions"}
             }
-            outputs = model(**inputs)
+            with torch.autocast(device_type="cuda", enabled=use_fp16):
+                outputs = model(**inputs)
             losses.append(float(outputs.loss.detach().cpu()))
     model.train()
     return sum(losses) / len(losses) if losses else 0.0
@@ -195,6 +218,10 @@ def main() -> None:
     args = parse_args()
     logging.basicConfig(level=logging.INFO, format="%(asctime)s - %(levelname)s - %(message)s")
     set_seed(args.seed)
+    device = resolve_device(args.device)
+    use_fp16 = bool(args.fp16 and device.type == "cuda")
+    if args.fp16 and device.type != "cuda":
+        LOGGER.warning("--fp16 foi pedido, mas mixed precision so sera usado em CUDA.")
 
     LOGGER.info("A carregar dataset QA")
     raw_dataset = load_qa_dataset(args.train_file, args.validation_file, args.cache_dir)
@@ -206,7 +233,7 @@ def main() -> None:
     LOGGER.info("A carregar tokenizer/modelo: %s", args.model_name)
     tokenizer = AutoTokenizer.from_pretrained(args.model_name, use_fast=True, cache_dir=args.cache_dir)
     model = AutoModelForQuestionAnswering.from_pretrained(args.model_name, cache_dir=args.cache_dir)
-    model.to(args.device)
+    model.to(device)
 
     LOGGER.info("A tokenizar dataset")
     tokenized = raw_dataset.map(
@@ -220,12 +247,16 @@ def main() -> None:
         batch_size=args.batch_size,
         shuffle=True,
         collate_fn=collate_batch,
+        num_workers=args.num_workers,
+        pin_memory=device.type == "cuda",
     )
     eval_loader = DataLoader(
         tokenized["validation"],
         batch_size=args.batch_size,
         shuffle=False,
         collate_fn=collate_batch,
+        num_workers=args.num_workers,
+        pin_memory=device.type == "cuda",
     )
 
     optimizer = make_optimizer(model, args)
@@ -250,11 +281,12 @@ def main() -> None:
 
         for step, batch in enumerate(progress, start=1):
             inputs = {
-                key: value.to(args.device)
+                key: value.to(device)
                 for key, value in batch.items()
                 if key in {"input_ids", "attention_mask", "token_type_ids", "start_positions", "end_positions"}
             }
-            outputs = model(**inputs)
+            with torch.autocast(device_type="cuda", enabled=use_fp16):
+                outputs = model(**inputs)
             loss = outputs.loss / args.gradient_accumulation_steps
             loss.backward()
             running_loss += float(loss.detach().cpu()) * args.gradient_accumulation_steps
@@ -267,7 +299,7 @@ def main() -> None:
             progress.set_postfix(loss=f"{running_loss / step:.4f}")
 
         train_loss = running_loss / len(train_loader) if train_loader else 0.0
-        eval_loss = evaluate_loss(model, eval_loader, args.device)
+        eval_loss = evaluate_loss(model, eval_loader, device, use_fp16)
         epoch_metrics = {
             "epoch": epoch + 1,
             "train_loss": train_loss,

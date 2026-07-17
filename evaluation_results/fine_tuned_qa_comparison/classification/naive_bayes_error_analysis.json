@@ -1,0 +1,30 @@
+{
+  "total": 80,
+  "num_errors": 1,
+  "error_rate": 0.0125,
+  "by_true_label": {
+    "reuniao_confirmada": 1
+  },
+  "by_predicted_label": {
+    "agendamento_reuniao": 1
+  },
+  "confusion_pairs": {
+    "reuniao_confirmada -> agendamento_reuniao": 1
+  },
+  "errors": [
+    {
+      "email_index": 23,
+      "subject": "Confirmado",
+      "text": "confirmado boa tarde carolina silva, confirmo a reuniao antes do seminario, em remoto, para discutirmos revisao do plano de trabalhos.",
+      "true_label": "reuniao_confirmada",
+      "predicted_label": "agendamento_reuniao",
+      "confidence": 0.38629038173035074,
+      "probabilities": {
+        "agendamento_reuniao": 0.38629038173035074,
+        "cancelamento_reuniao": 0.14778299343362358,
+        "nao_reuniao": 0.08334209012493486,
+        "reuniao_confirmada": 0.38258453471109183
+      }
+    }
+  ]
+}

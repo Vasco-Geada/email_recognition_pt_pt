@@ -1,0 +1,2 @@
+email_index,subject,true_label,predicted_label,confidence,text
+23,Confirmado,reuniao_confirmada,agendamento_reuniao,0.38629038173035074,"confirmado boa tarde carolina silva, confirmo a reuniao antes do seminario, em remoto, para discutirmos revisao do plano de trabalhos."

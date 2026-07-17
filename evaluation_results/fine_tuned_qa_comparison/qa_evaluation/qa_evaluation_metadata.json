@@ -1,0 +1,6 @@
+{
+  "gold_file": "gold_annotations\\output\\realistic_school_professional_400_gold.json",
+  "predictions_file": "evaluation_results\\fine_tuned_qa_comparison\\qa\\qa_results.json",
+  "evaluated_examples": 400,
+  "missing_gold_ids": []
+}

@@ -1,0 +1,21 @@
+{
+  "model_name": "pierreguillou/bert-base-cased-squad-v1.1-portuguese",
+  "train_file": "dataset\\hf_qa_train_validation\\train.jsonl",
+  "validation_file": "dataset\\hf_qa_train_validation\\validation.jsonl",
+  "num_train_features": 29990,
+  "num_validation_features": 7473,
+  "epochs": [
+    {
+      "epoch": 1,
+      "train_loss": 0.010794711639538924,
+      "validation_loss": 0.03799904964149638,
+      "global_step": 7498
+    },
+    {
+      "epoch": 2,
+      "train_loss": 0.0068228396360981445,
+      "validation_loss": 0.0032254474726750304,
+      "global_step": 14996
+    }
+  ]
+}

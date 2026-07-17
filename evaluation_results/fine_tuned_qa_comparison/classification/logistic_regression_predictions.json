@@ -1,0 +1,1122 @@
+[
+  {
+    "email_index": 195,
+    "subject": "RE: Atualizacao de processo",
+    "text": "re: atualizacao de processo cara professora, a bibliografia recomendada para esta semana ja se encontra disponivel no moodle.",
+    "true_label": "nao_reuniao",
+    "predicted_label": "nao_reuniao",
+    "confidence": 0.6879732587967841,
+    "probabilities": {
+      "agendamento_reuniao": 0.11596952321568536,
+      "cancelamento_reuniao": 0.09322489596952613,
+      "nao_reuniao": 0.6879732587967841,
+      "reuniao_confirmada": 0.10283232201800449
+    }
+  },
+  {
+    "email_index": 326,
+    "subject": "Re: Indisponibilidade para a reuniao",
+    "text": "re: indisponibilidade para a reuniao bom dia, por motivo imprevisto, a reuniao de dia 18 as 9h30 fica sem efeito.",
+    "true_label": "cancelamento_reuniao",
+    "predicted_label": "cancelamento_reuniao",
+    "confidence": 0.8328304568088909,
+    "probabilities": {
+      "agendamento_reuniao": 0.05486999205754851,
+      "cancelamento_reuniao": 0.8328304568088909,
+      "nao_reuniao": 0.044318228416287894,
+      "reuniao_confirmada": 0.06798132271727272
+    }
+  },
+  {
+    "email_index": 64,
+    "subject": "RE: Reuniao sobre acompanhamento pedagogico",
+    "text": "re: reuniao sobre acompanhamento pedagogico caro colega, proponho fazermos uma reuniao quarta a tarde, em gabinete 3.12, para fechar o ponto de situacao de acompanhamento pedagogico.",
+    "true_label": "agendamento_reuniao",
+    "predicted_label": "agendamento_reuniao",
+    "confidence": 0.6840579763218858,
+    "probabilities": {
+      "agendamento_reuniao": 0.6840579763218858,
+      "cancelamento_reuniao": 0.10541121782568721,
+      "nao_reuniao": 0.09917370349815842,
+      "reuniao_confirmada": 0.1113571023542686
+    }
+  },
+  {
+    "email_index": 351,
+    "subject": "Fw: Marcacao de reuniao",
+    "text": "fw: marcacao de reuniao bom dia, seria possivel agendar uma breve reuniao dia 22 as 17h? o objetivo e discutir horarios do semestre.",
+    "true_label": "agendamento_reuniao",
+    "predicted_label": "agendamento_reuniao",
+    "confidence": 0.6714573169861233,
+    "probabilities": {
+      "agendamento_reuniao": 0.6714573169861233,
+      "cancelamento_reuniao": 0.1203594090144545,
+      "nao_reuniao": 0.0744243269433365,
+      "reuniao_confirmada": 0.1337589470560857
+    }
+  },
+  {
+    "email_index": 263,
+    "subject": "Fw: Informacao academica",
+    "text": "fw: informacao academica bom dia, partilho a versao revista da ata para validacao.",
+    "true_label": "nao_reuniao",
+    "predicted_label": "nao_reuniao",
+    "confidence": 0.7251991569270252,
+    "probabilities": {
+      "agendamento_reuniao": 0.08688143471620596,
+      "cancelamento_reuniao": 0.08286969847572093,
+      "nao_reuniao": 0.7251991569270252,
+      "reuniao_confirmada": 0.10504970988104798
+    }
+  },
+  {
+    "email_index": 68,
+    "subject": "RE: Disponibilidade para reuniao",
+    "text": "re: disponibilidade para reuniao cara colega professora ana costa, podemos remarcar a reuniao sobre planeamento de aulas para quando for conveniente? se preferir, posso adaptar ao horario do departamento.",
+    "true_label": "agendamento_reuniao",
+    "predicted_label": "agendamento_reuniao",
+    "confidence": 0.5197390807144777,
+    "probabilities": {
+      "agendamento_reuniao": 0.5197390807144777,
+      "cancelamento_reuniao": 0.1818490016044233,
+      "nao_reuniao": 0.07744429874216964,
+      "reuniao_confirmada": 0.22096761893892933
+    }
+  },
+  {
+    "email_index": 252,
+    "subject": "Fw: Confirmado",
+    "text": "fw: confirmado boa tarde miguel santos, da minha parte esta confirmado. encontramo-nos em remoto.",
+    "true_label": "reuniao_confirmada",
+    "predicted_label": "reuniao_confirmada",
+    "confidence": 0.7068658257689264,
+    "probabilities": {
+      "agendamento_reuniao": 0.08498664655802983,
+      "cancelamento_reuniao": 0.08915867224314554,
+      "nao_reuniao": 0.1189888554298982,
+      "reuniao_confirmada": 0.7068658257689264
+    }
+  },
+  {
+    "email_index": 157,
+    "subject": "Reuniao sem efeito",
+    "text": "reuniao sem efeito viva secretaria academica, nao vou conseguir estar presente na reuniao em google meet, pelo que terei de cancelar.",
+    "true_label": "cancelamento_reuniao",
+    "predicted_label": "cancelamento_reuniao",
+    "confidence": 0.7511909277464707,
+    "probabilities": {
+      "agendamento_reuniao": 0.06667480926304438,
+      "cancelamento_reuniao": 0.7511909277464707,
+      "nao_reuniao": 0.09179232405716474,
+      "reuniao_confirmada": 0.09034193893332022
+    }
+  },
+  {
+    "email_index": 84,
+    "subject": "Fw: Informacao academica",
+    "text": "fw: informacao academica estimado/a estudante, a pauta foi atualizada no sistema academico. por favor confirme se consegue aceder.",
+    "true_label": "nao_reuniao",
+    "predicted_label": "nao_reuniao",
+    "confidence": 0.652536587193716,
+    "probabilities": {
+      "agendamento_reuniao": 0.12622697632996532,
+      "cancelamento_reuniao": 0.11095827040594955,
+      "nao_reuniao": 0.652536587193716,
+      "reuniao_confirmada": 0.11027816607036914
+    }
+  },
+  {
+    "email_index": 233,
+    "subject": "Re: Agendamento - credibilidade dos dados recolhidos",
+    "text": "re: agendamento - credibilidade dos dados recolhidos cara colega, seria possivel agendar uma breve reuniao antes do seminario? o objetivo e discutir credibilidade dos dados recolhidos. se preferir, posso adaptar ao horario do departamento.",
+    "true_label": "agendamento_reuniao",
+    "predicted_label": "agendamento_reuniao",
+    "confidence": 0.7076161920520779,
+    "probabilities": {
+      "agendamento_reuniao": 0.7076161920520779,
+      "cancelamento_reuniao": 0.10652201524189686,
+      "nao_reuniao": 0.0864583947231837,
+      "reuniao_confirmada": 0.09940339798284145
+    }
+  },
+  {
+    "email_index": 15,
+    "subject": "RE: Imprevisto - revisao do plano de trabalhos",
+    "text": "re: imprevisto - revisao do plano de trabalhos boa tarde professora ana costa, surgiu uma sobreposicao no horario e nao conseguirei participar na reuniao depois da aula.",
+    "true_label": "cancelamento_reuniao",
+    "predicted_label": "cancelamento_reuniao",
+    "confidence": 0.6114118771121735,
+    "probabilities": {
+      "agendamento_reuniao": 0.1673219546766304,
+      "cancelamento_reuniao": 0.6114118771121735,
+      "nao_reuniao": 0.12433099314685811,
+      "reuniao_confirmada": 0.09693517506433814
+    }
+  },
+  {
+    "email_index": 164,
+    "subject": "Fw: Re: Marcacao de reuniao",
+    "text": "fw: re: marcacao de reuniao cara colega professora sofia carvalho, confirmo a reuniao quinta as 16h, em google meet, para discutirmos orientacao da dissertacao.",
+    "true_label": "reuniao_confirmada",
+    "predicted_label": "reuniao_confirmada",
+    "confidence": 0.45259291233886356,
+    "probabilities": {
+      "agendamento_reuniao": 0.3157593067341593,
+      "cancelamento_reuniao": 0.11539798415025493,
+      "nao_reuniao": 0.11624979677672219,
+      "reuniao_confirmada": 0.45259291233886356
+    }
+  },
+  {
+    "email_index": 247,
+    "subject": "Confirmado",
+    "text": "confirmado boa tarde, fica entao combinado para quinta as 16h.",
+    "true_label": "reuniao_confirmada",
+    "predicted_label": "reuniao_confirmada",
+    "confidence": 0.6316908566378696,
+    "probabilities": {
+      "agendamento_reuniao": 0.14021916126739997,
+      "cancelamento_reuniao": 0.11139337471791097,
+      "nao_reuniao": 0.11669660737681935,
+      "reuniao_confirmada": 0.6316908566378696
+    }
+  },
+  {
+    "email_index": 55,
+    "subject": "Fw: Imprevisto - acompanhamento pedagogico",
+    "text": "fw: imprevisto - acompanhamento pedagogico boa tarde, peço desculpa, mas terei de desmarcar a reuniao relacionada com acompanhamento pedagogico. se preferir, posso adaptar ao horario do departamento. obrigada, ana martins -- mensagem enviada automaticamente",
+    "true_label": "cancelamento_reuniao",
+    "predicted_label": "cancelamento_reuniao",
+    "confidence": 0.6834506540920594,
+    "probabilities": {
+      "agendamento_reuniao": 0.1103786314418373,
+      "cancelamento_reuniao": 0.6834506540920594,
+      "nao_reuniao": 0.08481790358572816,
+      "reuniao_confirmada": 0.1213528108803751
+    }
+  },
+  {
+    "email_index": 365,
+    "subject": "Atualizacao de processo",
+    "text": "atualizacao de processo caro colega, a pauta foi atualizada no sistema academico. por favor confirme se consegue aceder.",
+    "true_label": "nao_reuniao",
+    "predicted_label": "nao_reuniao",
+    "confidence": 0.6729655083826861,
+    "probabilities": {
+      "agendamento_reuniao": 0.1271590726198146,
+      "cancelamento_reuniao": 0.10509173817661363,
+      "nao_reuniao": 0.6729655083826861,
+      "reuniao_confirmada": 0.09478368082088566
+    }
+  },
+  {
+    "email_index": 383,
+    "subject": "Re: Tudo certo para a reuniao",
+    "text": "re: tudo certo para a reuniao caro/a docente prof. ricardo mendes, pode ficar marcado conforme proposto.",
+    "true_label": "reuniao_confirmada",
+    "predicted_label": "reuniao_confirmada",
+    "confidence": 0.8269307880157452,
+    "probabilities": {
+      "agendamento_reuniao": 0.06447843056236346,
+      "cancelamento_reuniao": 0.05017417864534331,
+      "nao_reuniao": 0.058416602776548004,
+      "reuniao_confirmada": 0.8269307880157452
+    }
+  },
+  {
+    "email_index": 189,
+    "subject": "Re: Cancelamento de reuniao",
+    "text": "re: cancelamento de reuniao estimado/a estudante, a reuniao marcada para depois da aula, em zoom, tera de ser adiada.",
+    "true_label": "cancelamento_reuniao",
+    "predicted_label": "cancelamento_reuniao",
+    "confidence": 0.6765138528120229,
+    "probabilities": {
+      "agendamento_reuniao": 0.14742270202309246,
+      "cancelamento_reuniao": 0.6765138528120229,
+      "nao_reuniao": 0.07502574431085388,
+      "reuniao_confirmada": 0.1010377008540307
+    }
+  },
+  {
+    "email_index": 286,
+    "subject": "Re: Reuniao confirmada",
+    "text": "re: reuniao confirmada bom dia, confirmo a minha presenca na reuniao em remoto.",
+    "true_label": "reuniao_confirmada",
+    "predicted_label": "reuniao_confirmada",
+    "confidence": 0.8687429417979606,
+    "probabilities": {
+      "agendamento_reuniao": 0.0356522787384466,
+      "cancelamento_reuniao": 0.057325812676240456,
+      "nao_reuniao": 0.03827896678735229,
+      "reuniao_confirmada": 0.8687429417979606
+    }
+  },
+  {
+    "email_index": 8,
+    "subject": "Fw: Aviso aos estudantes",
+    "text": "fw: aviso aos estudantes bom dia professora sofia carvalho, agradeco o envio do relatorio. irei analisar e dar feedback assim que possivel.",
+    "true_label": "nao_reuniao",
+    "predicted_label": "nao_reuniao",
+    "confidence": 0.7738676759985311,
+    "probabilities": {
+      "agendamento_reuniao": 0.08401902549037556,
+      "cancelamento_reuniao": 0.06624515936517912,
+      "nao_reuniao": 0.7738676759985311,
+      "reuniao_confirmada": 0.0758681391459141
+    }
+  },
+  {
+    "email_index": 280,
+    "subject": "Fw: Informacao academica",
+    "text": "fw: informacao academica cara professora, relembro que a aula de amanha sera dedicada a exercicios praticos.",
+    "true_label": "nao_reuniao",
+    "predicted_label": "nao_reuniao",
+    "confidence": 0.7776699931455123,
+    "probabilities": {
+      "agendamento_reuniao": 0.08370352577932838,
+      "cancelamento_reuniao": 0.0679164793645199,
+      "nao_reuniao": 0.7776699931455123,
+      "reuniao_confirmada": 0.07071000171063939
+    }
+  },
+  {
+    "email_index": 201,
+    "subject": "Reuniao confirmada",
+    "text": "reuniao confirmada exmo./a senhor/a, confirmo a minha presenca na reuniao em google meet. se preferir, posso adaptar ao horario do departamento.",
+    "true_label": "reuniao_confirmada",
+    "predicted_label": "reuniao_confirmada",
+    "confidence": 0.7757855875158001,
+    "probabilities": {
+      "agendamento_reuniao": 0.05804403132999695,
+      "cancelamento_reuniao": 0.11785800274170212,
+      "nao_reuniao": 0.04831237841250094,
+      "reuniao_confirmada": 0.7757855875158001
+    }
+  },
+  {
+    "email_index": 354,
+    "subject": "Re: Disponibilidade para reuniao",
+    "text": "re: disponibilidade para reuniao caro/a docente, seria possivel agendar uma breve reuniao ao final do dia? o objetivo e discutir orientacao da dissertacao.",
+    "true_label": "agendamento_reuniao",
+    "predicted_label": "agendamento_reuniao",
+    "confidence": 0.6643566703869591,
+    "probabilities": {
+      "agendamento_reuniao": 0.6643566703869591,
+      "cancelamento_reuniao": 0.12787405253478423,
+      "nao_reuniao": 0.08177269397754935,
+      "reuniao_confirmada": 0.12599658310070744
+    }
+  },
+  {
+    "email_index": 214,
+    "subject": "Fw: Documentacao em falta",
+    "text": "fw: documentacao em falta cara colega gabinete de estagios, ainda falta entregar a declaracao de presenca no portal academico.",
+    "true_label": "nao_reuniao",
+    "predicted_label": "nao_reuniao",
+    "confidence": 0.7823301482891093,
+    "probabilities": {
+      "agendamento_reuniao": 0.07580997532220018,
+      "cancelamento_reuniao": 0.0671435390240152,
+      "nao_reuniao": 0.7823301482891093,
+      "reuniao_confirmada": 0.07471633736467537
+    }
+  },
+  {
+    "email_index": 138,
+    "subject": "RE: Reuniao sem efeito",
+    "text": "re: reuniao sem efeito caro colega coordenacao de mestrado, por indicacao da direcao, a reuniao sobre calendario de avaliacoes fica cancelada ate nova comunicacao.",
+    "true_label": "cancelamento_reuniao",
+    "predicted_label": "cancelamento_reuniao",
+    "confidence": 0.740479234220579,
+    "probabilities": {
+      "agendamento_reuniao": 0.10811483983261296,
+      "cancelamento_reuniao": 0.740479234220579,
+      "nao_reuniao": 0.07232729746057959,
+      "reuniao_confirmada": 0.0790786284862285
+    }
+  },
+  {
+    "email_index": 258,
+    "subject": "Reuniao sem efeito",
+    "text": "reuniao sem efeito boa tarde gabinete de estagios, nao vou conseguir estar presente na reuniao em remoto, pelo que terei de cancelar.",
+    "true_label": "cancelamento_reuniao",
+    "predicted_label": "cancelamento_reuniao",
+    "confidence": 0.8050464756566663,
+    "probabilities": {
+      "agendamento_reuniao": 0.06295973569290723,
+      "cancelamento_reuniao": 0.8050464756566663,
+      "nao_reuniao": 0.06375610506846803,
+      "reuniao_confirmada": 0.06823768358195827
+    }
+  },
+  {
+    "email_index": 111,
+    "subject": "Re: Atualizacao de processo",
+    "text": "re: atualizacao de processo bom dia mariana lopes, envio em anexo o documento atualizado relativo a revisao do plano de trabalhos.",
+    "true_label": "nao_reuniao",
+    "predicted_label": "nao_reuniao",
+    "confidence": 0.690962615154036,
+    "probabilities": {
+      "agendamento_reuniao": 0.12662356011530193,
+      "cancelamento_reuniao": 0.08873127999767519,
+      "nao_reuniao": 0.690962615154036,
+      "reuniao_confirmada": 0.09368254473298679
+    }
+  },
+  {
+    "email_index": 198,
+    "subject": "RE: Remarcacao de reuniao",
+    "text": "re: remarcacao de reuniao boa tarde prof. ricardo mendes, gostaria de saber se tem disponibilidade para reunirmos dia 18 as 9h30, em remoto, para falarmos sobre orientacao da dissertacao. se preferir, posso adaptar ao horario do departamento.",
+    "true_label": "agendamento_reuniao",
+    "predicted_label": "agendamento_reuniao",
+    "confidence": 0.6205730167735389,
+    "probabilities": {
+      "agendamento_reuniao": 0.6205730167735389,
+      "cancelamento_reuniao": 0.16255649671478295,
+      "nao_reuniao": 0.0695001713131712,
+      "reuniao_confirmada": 0.1473703151985068
+    }
+  },
+  {
+    "email_index": 105,
+    "subject": "RE: Imprevisto - avaliacao continua",
+    "text": "re: imprevisto - avaliacao continua cara colega conselho pedagogico, nao vou conseguir estar presente na reuniao em gabinete da direcao, pelo que terei de cancelar.",
+    "true_label": "cancelamento_reuniao",
+    "predicted_label": "cancelamento_reuniao",
+    "confidence": 0.6452038022867006,
+    "probabilities": {
+      "agendamento_reuniao": 0.1270615294939797,
+      "cancelamento_reuniao": 0.6452038022867006,
+      "nao_reuniao": 0.10765111993752013,
+      "reuniao_confirmada": 0.12008354828179958
+    }
+  },
+  {
+    "email_index": 197,
+    "subject": "Necessidade de remarcar",
+    "text": "necessidade de remarcar boa tarde, proponho fazermos uma reuniao depois de almoco, em remoto, para fechar o ponto de situacao de orientacao da dissertacao.",
+    "true_label": "agendamento_reuniao",
+    "predicted_label": "agendamento_reuniao",
+    "confidence": 0.7214108203025345,
+    "probabilities": {
+      "agendamento_reuniao": 0.7214108203025345,
+      "cancelamento_reuniao": 0.09550924726902722,
+      "nao_reuniao": 0.08884476693930601,
+      "reuniao_confirmada": 0.09423516548913245
+    }
+  },
+  {
+    "email_index": 348,
+    "subject": "Re: Informacao academica",
+    "text": "re: informacao academica bom dia, a pauta foi atualizada no sistema academico. por favor confirme se consegue aceder.",
+    "true_label": "nao_reuniao",
+    "predicted_label": "nao_reuniao",
+    "confidence": 0.6821839879586418,
+    "probabilities": {
+      "agendamento_reuniao": 0.1042321317826515,
+      "cancelamento_reuniao": 0.10538275285947933,
+      "nao_reuniao": 0.6821839879586418,
+      "reuniao_confirmada": 0.10820112739922733
+    }
+  },
+  {
+    "email_index": 376,
+    "subject": "RE: Remarcacao de reuniao",
+    "text": "re: remarcacao de reuniao caro colega conselho pedagogico, quando tiver disponibilidade, gostava de combinar uma reuniao sobre credibilidade dos dados recolhidos. quinta as 16h seria possivel?",
+    "true_label": "agendamento_reuniao",
+    "predicted_label": "agendamento_reuniao",
+    "confidence": 0.889006145371736,
+    "probabilities": {
+      "agendamento_reuniao": 0.889006145371736,
+      "cancelamento_reuniao": 0.03634337058380072,
+      "nao_reuniao": 0.04080234268776759,
+      "reuniao_confirmada": 0.033848141356695574
+    }
+  },
+  {
+    "email_index": 384,
+    "subject": "RE: Cancelamento de reuniao",
+    "text": "re: cancelamento de reuniao exmo./a senhor/a, por motivo imprevisto, a reuniao de sexta as 14h30 fica sem efeito.",
+    "true_label": "cancelamento_reuniao",
+    "predicted_label": "cancelamento_reuniao",
+    "confidence": 0.7611931003513651,
+    "probabilities": {
+      "agendamento_reuniao": 0.08463141984270582,
+      "cancelamento_reuniao": 0.7611931003513651,
+      "nao_reuniao": 0.07017434927446109,
+      "reuniao_confirmada": 0.08400113053146793
+    }
+  },
+  {
+    "email_index": 367,
+    "subject": "Re: Reuniao confirmada",
+    "text": "re: reuniao confirmada cara colega coordenacao de mestrado, tudo certo para a reuniao sobre pedido de equivalencias. ate sexta as 14h30.",
+    "true_label": "reuniao_confirmada",
+    "predicted_label": "reuniao_confirmada",
+    "confidence": 0.571542896160882,
+    "probabilities": {
+      "agendamento_reuniao": 0.20422075801706321,
+      "cancelamento_reuniao": 0.11485347543209384,
+      "nao_reuniao": 0.10938287038996083,
+      "reuniao_confirmada": 0.571542896160882
+    }
+  },
+  {
+    "email_index": 210,
+    "subject": "Fw: Pedido de esclarecimento",
+    "text": "fw: pedido de esclarecimento caro/a docente professor luis almeida, segue a informacao solicitada pela secretaria sobre preparacao da defesa.",
+    "true_label": "nao_reuniao",
+    "predicted_label": "nao_reuniao",
+    "confidence": 0.612471512043135,
+    "probabilities": {
+      "agendamento_reuniao": 0.13564992822113034,
+      "cancelamento_reuniao": 0.12878971179122986,
+      "nao_reuniao": 0.612471512043135,
+      "reuniao_confirmada": 0.12308884794450485
+    }
+  },
+  {
+    "email_index": 39,
+    "subject": "Fw: Remarcacao de reuniao",
+    "text": "fw: remarcacao de reuniao caro colega secretaria academica, conseguimos reagendar a reuniao sobre coordenacao da unidade curricular para depois de almoco, em gabinete 3.12?",
+    "true_label": "agendamento_reuniao",
+    "predicted_label": "agendamento_reuniao",
+    "confidence": 0.7146267265476854,
+    "probabilities": {
+      "agendamento_reuniao": 0.7146267265476854,
+      "cancelamento_reuniao": 0.08392539324013376,
+      "nao_reuniao": 0.08601686561950683,
+      "reuniao_confirmada": 0.115431014592674
+    }
+  },
+  {
+    "email_index": 125,
+    "subject": "RE: Tudo certo para a reuniao",
+    "text": "re: tudo certo para a reuniao bom dia professora sofia carvalho, da minha parte esta confirmado. encontramo-nos em remoto.",
+    "true_label": "reuniao_confirmada",
+    "predicted_label": "reuniao_confirmada",
+    "confidence": 0.8604928959524577,
+    "probabilities": {
+      "agendamento_reuniao": 0.04425487419782825,
+      "cancelamento_reuniao": 0.043607495042526104,
+      "nao_reuniao": 0.05164473480718793,
+      "reuniao_confirmada": 0.8604928959524577
+    }
+  },
+  {
+    "email_index": 385,
+    "subject": "Aviso aos estudantes",
+    "text": "aviso aos estudantes caro professor, partilho a versao revista da ata para validacao.",
+    "true_label": "nao_reuniao",
+    "predicted_label": "nao_reuniao",
+    "confidence": 0.7452388086780384,
+    "probabilities": {
+      "agendamento_reuniao": 0.08993400762757887,
+      "cancelamento_reuniao": 0.07608025635286376,
+      "nao_reuniao": 0.7452388086780384,
+      "reuniao_confirmada": 0.08874692734151897
+    }
+  },
+  {
+    "email_index": 159,
+    "subject": "Re: Reuniao sem efeito",
+    "text": "re: reuniao sem efeito bom dia conselho pedagogico, por indicacao da direcao, a reuniao sobre preparacao da defesa fica cancelada ate nova comunicacao.",
+    "true_label": "cancelamento_reuniao",
+    "predicted_label": "cancelamento_reuniao",
+    "confidence": 0.7391687093105923,
+    "probabilities": {
+      "agendamento_reuniao": 0.0890021774984531,
+      "cancelamento_reuniao": 0.7391687093105923,
+      "nao_reuniao": 0.06626982922061693,
+      "reuniao_confirmada": 0.10555928397033766
+    }
+  },
+  {
+    "email_index": 23,
+    "subject": "Confirmado",
+    "text": "confirmado boa tarde carolina silva, confirmo a reuniao antes do seminario, em remoto, para discutirmos revisao do plano de trabalhos.",
+    "true_label": "reuniao_confirmada",
+    "predicted_label": "reuniao_confirmada",
+    "confidence": 0.38733551968037183,
+    "probabilities": {
+      "agendamento_reuniao": 0.30826957517806164,
+      "cancelamento_reuniao": 0.15024658902719557,
+      "nao_reuniao": 0.15414831611437102,
+      "reuniao_confirmada": 0.38733551968037183
+    }
+  },
+  {
+    "email_index": 362,
+    "subject": "Re: Pedido de reuniao",
+    "text": "re: pedido de reuniao cara professora secretaria academica, preciso de esclarecer alguns pontos sobre validacao de atas. consegue reunir quando for conveniente?",
+    "true_label": "agendamento_reuniao",
+    "predicted_label": "agendamento_reuniao",
+    "confidence": 0.6856515621461303,
+    "probabilities": {
+      "agendamento_reuniao": 0.6856515621461303,
+      "cancelamento_reuniao": 0.09216842340558737,
+      "nao_reuniao": 0.1370816003500739,
+      "reuniao_confirmada": 0.0850984140982084
+    }
+  },
+  {
+    "email_index": 344,
+    "subject": "Re: Marcacao de reuniao",
+    "text": "re: marcacao de reuniao viva mariana lopes, podemos marcar uma reuniao depois da aula para alinharmos os proximos passos relativos a processo de estagio?",
+    "true_label": "agendamento_reuniao",
+    "predicted_label": "agendamento_reuniao",
+    "confidence": 0.6163772136807496,
+    "probabilities": {
+      "agendamento_reuniao": 0.6163772136807496,
+      "cancelamento_reuniao": 0.11616911235996955,
+      "nao_reuniao": 0.10104022496096308,
+      "reuniao_confirmada": 0.16641344899831784
+    }
+  },
+  {
+    "email_index": 341,
+    "subject": "RE: Ponto de situacao",
+    "text": "re: ponto de situacao boa tarde secretaria academica, gostaria de saber se tem disponibilidade para reunirmos sexta as 14h30, em secretaria, para falarmos sobre revisao do plano de trabalhos.",
+    "true_label": "agendamento_reuniao",
+    "predicted_label": "agendamento_reuniao",
+    "confidence": 0.736797495245896,
+    "probabilities": {
+      "agendamento_reuniao": 0.736797495245896,
+      "cancelamento_reuniao": 0.0731288416587422,
+      "nao_reuniao": 0.10874041099638246,
+      "reuniao_confirmada": 0.08133325209897932
+    }
+  },
+  {
+    "email_index": 391,
+    "subject": "Fw: Imprevisto - coordenacao da unidade curricular",
+    "text": "fw: imprevisto - coordenacao da unidade curricular bom dia professora ana costa, surgiu uma sobreposicao no horario e nao conseguirei participar na reuniao depois da aula. se preferir, posso adaptar ao horario do departamento.",
+    "true_label": "cancelamento_reuniao",
+    "predicted_label": "cancelamento_reuniao",
+    "confidence": 0.6849189430595674,
+    "probabilities": {
+      "agendamento_reuniao": 0.108048192676531,
+      "cancelamento_reuniao": 0.6849189430595674,
+      "nao_reuniao": 0.0668796298287959,
+      "reuniao_confirmada": 0.14015323443510574
+    }
+  },
+  {
+    "email_index": 213,
+    "subject": "Re: Reuniao confirmada",
+    "text": "re: reuniao confirmada caro professor professora ana costa, pode ficar marcado conforme proposto.",
+    "true_label": "reuniao_confirmada",
+    "predicted_label": "reuniao_confirmada",
+    "confidence": 0.6698420557070421,
+    "probabilities": {
+      "agendamento_reuniao": 0.10993606569614421,
+      "cancelamento_reuniao": 0.10232990744053351,
+      "nao_reuniao": 0.11789197115628011,
+      "reuniao_confirmada": 0.6698420557070421
+    }
+  },
+  {
+    "email_index": 61,
+    "subject": "RE: Pedido de reuniao",
+    "text": "re: pedido de reuniao estimado/a estudante mariana lopes, podemos marcar uma reuniao segunda de manha para alinharmos os proximos passos relativos a submissao de artigo?",
+    "true_label": "agendamento_reuniao",
+    "predicted_label": "agendamento_reuniao",
+    "confidence": 0.6960897488525196,
+    "probabilities": {
+      "agendamento_reuniao": 0.6960897488525196,
+      "cancelamento_reuniao": 0.08773809994064899,
+      "nao_reuniao": 0.0985545119158735,
+      "reuniao_confirmada": 0.11761763929095799
+    }
+  },
+  {
+    "email_index": 137,
+    "subject": "Reuniao confirmada",
+    "text": "reuniao confirmada caro/a colega, confirmado para terca as 11h. levarei os documentos relativos a processo de estagio.",
+    "true_label": "reuniao_confirmada",
+    "predicted_label": "reuniao_confirmada",
+    "confidence": 0.7263693968369315,
+    "probabilities": {
+      "agendamento_reuniao": 0.10470960510948919,
+      "cancelamento_reuniao": 0.07631182607323053,
+      "nao_reuniao": 0.09260917198034879,
+      "reuniao_confirmada": 0.7263693968369315
+    }
+  },
+  {
+    "email_index": 221,
+    "subject": "Confirmado",
+    "text": "confirmado boa tarde coordenacao de mestrado, confirmo a reuniao quarta a tarde, em sala de reunioes do departamento, para discutirmos distribuicao de servico docente.",
+    "true_label": "reuniao_confirmada",
+    "predicted_label": "reuniao_confirmada",
+    "confidence": 0.4312772426461574,
+    "probabilities": {
+      "agendamento_reuniao": 0.22150303676092364,
+      "cancelamento_reuniao": 0.1892314727185751,
+      "nao_reuniao": 0.1579882478743439,
+      "reuniao_confirmada": 0.4312772426461574
+    }
+  },
+  {
+    "email_index": 259,
+    "subject": "Envio de documentos",
+    "text": "envio de documentos cara professora, a pauta foi atualizada no sistema academico. por favor confirme se consegue aceder. obrigada, miguel santos",
+    "true_label": "nao_reuniao",
+    "predicted_label": "nao_reuniao",
+    "confidence": 0.675497780627051,
+    "probabilities": {
+      "agendamento_reuniao": 0.11324051953222465,
+      "cancelamento_reuniao": 0.10171363117772873,
+      "nao_reuniao": 0.675497780627051,
+      "reuniao_confirmada": 0.10954806866299549
+    }
+  },
+  {
+    "email_index": 300,
+    "subject": "Imprevisto - acompanhamento pedagogico",
+    "text": "imprevisto - acompanhamento pedagogico boa tarde, a reuniao marcada para quando for conveniente, em remoto, tera de ser adiada.",
+    "true_label": "cancelamento_reuniao",
+    "predicted_label": "cancelamento_reuniao",
+    "confidence": 0.6606099638295675,
+    "probabilities": {
+      "agendamento_reuniao": 0.1361786060637989,
+      "cancelamento_reuniao": 0.6606099638295675,
+      "nao_reuniao": 0.09152644604331214,
+      "reuniao_confirmada": 0.11168498406332135
+    }
+  },
+  {
+    "email_index": 240,
+    "subject": "RE: Re: Marcacao de reuniao",
+    "text": "re: re: marcacao de reuniao exmo. professor professora ana costa, confirmo a reuniao sexta as 14h30, em teams, para discutirmos analise dos resultados dos estudantes.",
+    "true_label": "reuniao_confirmada",
+    "predicted_label": "reuniao_confirmada",
+    "confidence": 0.47334719482554966,
+    "probabilities": {
+      "agendamento_reuniao": 0.23872786023684686,
+      "cancelamento_reuniao": 0.13812118817827482,
+      "nao_reuniao": 0.1498037567593287,
+      "reuniao_confirmada": 0.47334719482554966
+    }
+  },
+  {
+    "email_index": 131,
+    "subject": "RE: Entrega de relatorio",
+    "text": "re: entrega de relatorio viva, a bibliografia recomendada para esta semana ja se encontra disponivel no moodle.",
+    "true_label": "nao_reuniao",
+    "predicted_label": "nao_reuniao",
+    "confidence": 0.7405026921327554,
+    "probabilities": {
+      "agendamento_reuniao": 0.0885711468493588,
+      "cancelamento_reuniao": 0.07993560066835192,
+      "nao_reuniao": 0.7405026921327554,
+      "reuniao_confirmada": 0.09099056034953384
+    }
+  },
+  {
+    "email_index": 45,
+    "subject": "Fw: Tudo certo para a reuniao",
+    "text": "fw: tudo certo para a reuniao bom dia, confirmado para durante a manha. levarei os documentos relativos a preparacao da apresentacao.",
+    "true_label": "reuniao_confirmada",
+    "predicted_label": "reuniao_confirmada",
+    "confidence": 0.8811506829297273,
+    "probabilities": {
+      "agendamento_reuniao": 0.035843543834273184,
+      "cancelamento_reuniao": 0.04642076705611109,
+      "nao_reuniao": 0.03658500617988838,
+      "reuniao_confirmada": 0.8811506829297273
+    }
+  },
+  {
+    "email_index": 317,
+    "subject": "Re: Disponibilidade para reuniao",
+    "text": "re: disponibilidade para reuniao boa tarde secretaria academica, gostaria de saber se tem disponibilidade para reunirmos quando for conveniente, em google meet, para falarmos sobre processo de estagio.",
+    "true_label": "agendamento_reuniao",
+    "predicted_label": "agendamento_reuniao",
+    "confidence": 0.6603573669030192,
+    "probabilities": {
+      "agendamento_reuniao": 0.6603573669030192,
+      "cancelamento_reuniao": 0.10634849620194667,
+      "nao_reuniao": 0.10536663110198376,
+      "reuniao_confirmada": 0.12792750579305043
+    }
+  },
+  {
+    "email_index": 349,
+    "subject": "Entrega de relatorio",
+    "text": "entrega de relatorio boa tarde miguel santos, envio em anexo o documento atualizado relativo a validacao de atas.",
+    "true_label": "nao_reuniao",
+    "predicted_label": "nao_reuniao",
+    "confidence": 0.7604680194650093,
+    "probabilities": {
+      "agendamento_reuniao": 0.09519976238121318,
+      "cancelamento_reuniao": 0.07447354497460232,
+      "nao_reuniao": 0.7604680194650093,
+      "reuniao_confirmada": 0.06985867317917518
+    }
+  },
+  {
+    "email_index": 340,
+    "subject": "Re: Reuniao confirmada",
+    "text": "re: reuniao confirmada bom dia, confirmo a minha presenca na reuniao em teams. se preferir, posso adaptar ao horario do departamento.",
+    "true_label": "reuniao_confirmada",
+    "predicted_label": "reuniao_confirmada",
+    "confidence": 0.8210746753331617,
+    "probabilities": {
+      "agendamento_reuniao": 0.044385767394109765,
+      "cancelamento_reuniao": 0.10190515791747344,
+      "nao_reuniao": 0.03263439935525502,
+      "reuniao_confirmada": 0.8210746753331617
+    }
+  },
+  {
+    "email_index": 76,
+    "subject": "Fw: Atualizacao de processo",
+    "text": "fw: atualizacao de processo caro colega, a pauta foi atualizada no sistema academico. por favor confirme se consegue aceder.",
+    "true_label": "nao_reuniao",
+    "predicted_label": "nao_reuniao",
+    "confidence": 0.67150447194831,
+    "probabilities": {
+      "agendamento_reuniao": 0.12637267089562304,
+      "cancelamento_reuniao": 0.10528518583621242,
+      "nao_reuniao": 0.67150447194831,
+      "reuniao_confirmada": 0.09683767131985446
+    }
+  },
+  {
+    "email_index": 148,
+    "subject": "Aviso aos estudantes",
+    "text": "aviso aos estudantes bom dia, partilho a versao revista da ata para validacao.",
+    "true_label": "nao_reuniao",
+    "predicted_label": "nao_reuniao",
+    "confidence": 0.7367792654690234,
+    "probabilities": {
+      "agendamento_reuniao": 0.08656821166307892,
+      "cancelamento_reuniao": 0.07976049336975957,
+      "nao_reuniao": 0.7367792654690234,
+      "reuniao_confirmada": 0.09689202949813801
+    }
+  },
+  {
+    "email_index": 128,
+    "subject": "Fw: Reuniao confirmada",
+    "text": "fw: reuniao confirmada cara colega secretaria academica, confirmo a reuniao dia 22 as 17h, em zoom, para discutirmos calendario de avaliacoes.",
+    "true_label": "reuniao_confirmada",
+    "predicted_label": "reuniao_confirmada",
+    "confidence": 0.535517027783264,
+    "probabilities": {
+      "agendamento_reuniao": 0.1987326574535041,
+      "cancelamento_reuniao": 0.1394683442836532,
+      "nao_reuniao": 0.12628197047957856,
+      "reuniao_confirmada": 0.535517027783264
+    }
+  },
+  {
+    "email_index": 4,
+    "subject": "Fw: Aviso aos estudantes",
+    "text": "fw: aviso aos estudantes boa tarde, informamos que o prazo para submissao dos elementos de avaliacao termina esta sexta-feira.",
+    "true_label": "nao_reuniao",
+    "predicted_label": "nao_reuniao",
+    "confidence": 0.757105118359838,
+    "probabilities": {
+      "agendamento_reuniao": 0.08771755559688947,
+      "cancelamento_reuniao": 0.07312867939337604,
+      "nao_reuniao": 0.757105118359838,
+      "reuniao_confirmada": 0.08204864664989661
+    }
+  },
+  {
+    "email_index": 209,
+    "subject": "RE: Reuniao sem efeito",
+    "text": "re: reuniao sem efeito exmo. professor, por motivo imprevisto, a reuniao de quando for conveniente fica sem efeito.",
+    "true_label": "cancelamento_reuniao",
+    "predicted_label": "cancelamento_reuniao",
+    "confidence": 0.8235168360997212,
+    "probabilities": {
+      "agendamento_reuniao": 0.06365111197936889,
+      "cancelamento_reuniao": 0.8235168360997212,
+      "nao_reuniao": 0.049507262211260825,
+      "reuniao_confirmada": 0.06332478970964907
+    }
+  },
+  {
+    "email_index": 32,
+    "subject": "Fw: Indisponibilidade para a reuniao",
+    "text": "fw: indisponibilidade para a reuniao cara colega coordenacao de mestrado, por indicacao da direcao, a reuniao sobre horarios do semestre fica cancelada ate nova comunicacao.",
+    "true_label": "cancelamento_reuniao",
+    "predicted_label": "cancelamento_reuniao",
+    "confidence": 0.6522350977348522,
+    "probabilities": {
+      "agendamento_reuniao": 0.14268387768075583,
+      "cancelamento_reuniao": 0.6522350977348522,
+      "nao_reuniao": 0.08602314808499836,
+      "reuniao_confirmada": 0.1190578764993935
+    }
+  },
+  {
+    "email_index": 3,
+    "subject": "RE: Reuniao sobre validacao de atas",
+    "text": "re: reuniao sobre validacao de atas exmo. professor professora ana costa, gostaria de saber se tem disponibilidade para reunirmos na proxima semana, em secretaria, para falarmos sobre validacao de atas. se preferir, posso adaptar ao horario do departamento.",
+    "true_label": "agendamento_reuniao",
+    "predicted_label": "agendamento_reuniao",
+    "confidence": 0.6447406431453219,
+    "probabilities": {
+      "agendamento_reuniao": 0.6447406431453219,
+      "cancelamento_reuniao": 0.1355538015130175,
+      "nao_reuniao": 0.09730044063508407,
+      "reuniao_confirmada": 0.1224051147065766
+    }
+  },
+  {
+    "email_index": 301,
+    "subject": "Indisponibilidade para a reuniao",
+    "text": "indisponibilidade para a reuniao cara colega professora sofia carvalho, surgiu uma sobreposicao no horario e nao conseguirei participar na reuniao quinta as 16h.",
+    "true_label": "cancelamento_reuniao",
+    "predicted_label": "cancelamento_reuniao",
+    "confidence": 0.6390638109034108,
+    "probabilities": {
+      "agendamento_reuniao": 0.15990802789667077,
+      "cancelamento_reuniao": 0.6390638109034108,
+      "nao_reuniao": 0.0942204730203269,
+      "reuniao_confirmada": 0.10680768817959159
+    }
+  },
+  {
+    "email_index": 158,
+    "subject": "Fw: Imprevisto - analise dos resultados dos estudantes",
+    "text": "fw: imprevisto - analise dos resultados dos estudantes estimado/a estudante carolina silva, por indicacao da direcao, a reuniao sobre analise dos resultados dos estudantes fica cancelada ate nova comunicacao.",
+    "true_label": "cancelamento_reuniao",
+    "predicted_label": "cancelamento_reuniao",
+    "confidence": 0.4688779169717319,
+    "probabilities": {
+      "agendamento_reuniao": 0.24701707923369393,
+      "cancelamento_reuniao": 0.4688779169717319,
+      "nao_reuniao": 0.1502763331229282,
+      "reuniao_confirmada": 0.13382867067164586
+    }
+  },
+  {
+    "email_index": 181,
+    "subject": "RE: Imprevisto - avaliacao continua",
+    "text": "re: imprevisto - avaliacao continua caro colega gabinete de estagios, surgiu uma sobreposicao no horario e nao conseguirei participar na reuniao amanha as 10h.",
+    "true_label": "cancelamento_reuniao",
+    "predicted_label": "cancelamento_reuniao",
+    "confidence": 0.6652657241094264,
+    "probabilities": {
+      "agendamento_reuniao": 0.13551673970832678,
+      "cancelamento_reuniao": 0.6652657241094264,
+      "nao_reuniao": 0.09727364963686436,
+      "reuniao_confirmada": 0.10194388654538247
+    }
+  },
+  {
+    "email_index": 24,
+    "subject": "Indisponibilidade para a reuniao",
+    "text": "indisponibilidade para a reuniao exmo. professor professora ana costa, surgiu uma sobreposicao no horario e nao conseguirei participar na reuniao amanha as 15h.",
+    "true_label": "cancelamento_reuniao",
+    "predicted_label": "cancelamento_reuniao",
+    "confidence": 0.6900756672990278,
+    "probabilities": {
+      "agendamento_reuniao": 0.11287514918198131,
+      "cancelamento_reuniao": 0.6900756672990278,
+      "nao_reuniao": 0.08784163280406049,
+      "reuniao_confirmada": 0.10920755071493035
+    }
+  },
+  {
+    "email_index": 266,
+    "subject": "Fw: Re: Marcacao de reuniao",
+    "text": "fw: re: marcacao de reuniao caro colega professora sofia carvalho, tudo certo para a reuniao sobre revisao do plano de trabalhos. ate ao final do dia.",
+    "true_label": "reuniao_confirmada",
+    "predicted_label": "reuniao_confirmada",
+    "confidence": 0.41035576786995964,
+    "probabilities": {
+      "agendamento_reuniao": 0.3555775774791987,
+      "cancelamento_reuniao": 0.12084345962464915,
+      "nao_reuniao": 0.11322319502619235,
+      "reuniao_confirmada": 0.41035576786995964
+    }
+  },
+  {
+    "email_index": 94,
+    "subject": "Re: Marcacao de reuniao",
+    "text": "re: marcacao de reuniao cara colega mariana lopes, confirmo a reuniao ao final do dia, em sala b104, para discutirmos planeamento de aulas.",
+    "true_label": "reuniao_confirmada",
+    "predicted_label": "reuniao_confirmada",
+    "confidence": 0.45660878872202726,
+    "probabilities": {
+      "agendamento_reuniao": 0.23791500165489518,
+      "cancelamento_reuniao": 0.17038720927501577,
+      "nao_reuniao": 0.1350890003480617,
+      "reuniao_confirmada": 0.45660878872202726
+    }
+  },
+  {
+    "email_index": 96,
+    "subject": "Re: Reuniao sobre horarios do semestre",
+    "text": "re: reuniao sobre horarios do semestre boa tarde, seria possivel agendar uma breve reuniao depois da aula? o objetivo e discutir horarios do semestre.",
+    "true_label": "agendamento_reuniao",
+    "predicted_label": "agendamento_reuniao",
+    "confidence": 0.6410168568053091,
+    "probabilities": {
+      "agendamento_reuniao": 0.6410168568053091,
+      "cancelamento_reuniao": 0.13705789074553118,
+      "nao_reuniao": 0.09672758113306962,
+      "reuniao_confirmada": 0.1251976713160901
+    }
+  },
+  {
+    "email_index": 67,
+    "subject": "Fw: Informacao academica",
+    "text": "fw: informacao academica boa tarde, partilho a versao revista da ata para validacao.",
+    "true_label": "nao_reuniao",
+    "predicted_label": "nao_reuniao",
+    "confidence": 0.7606204576154448,
+    "probabilities": {
+      "agendamento_reuniao": 0.0814021281245803,
+      "cancelamento_reuniao": 0.07448275673758699,
+      "nao_reuniao": 0.7606204576154448,
+      "reuniao_confirmada": 0.0834946575223879
+    }
+  },
+  {
+    "email_index": 264,
+    "subject": "Atualizacao de processo",
+    "text": "atualizacao de processo viva, a bibliografia recomendada para esta semana ja se encontra disponivel no moodle.",
+    "true_label": "nao_reuniao",
+    "predicted_label": "nao_reuniao",
+    "confidence": 0.6829627523745149,
+    "probabilities": {
+      "agendamento_reuniao": 0.11056245679082712,
+      "cancelamento_reuniao": 0.09818955278987823,
+      "nao_reuniao": 0.6829627523745149,
+      "reuniao_confirmada": 0.10828523804477981
+    }
+  },
+  {
+    "email_index": 250,
+    "subject": "Fw: Pedido de reuniao",
+    "text": "fw: pedido de reuniao bom dia rita fernandes, preciso de esclarecer alguns pontos sobre relatorio de progresso. consegue reunir quando for conveniente?",
+    "true_label": "agendamento_reuniao",
+    "predicted_label": "agendamento_reuniao",
+    "confidence": 0.6477074502674129,
+    "probabilities": {
+      "agendamento_reuniao": 0.6477074502674129,
+      "cancelamento_reuniao": 0.10755673521019825,
+      "nao_reuniao": 0.11863991115803461,
+      "reuniao_confirmada": 0.12609590336435417
+    }
+  },
+  {
+    "email_index": 310,
+    "subject": "Re: Agendamento - horarios do semestre",
+    "text": "re: agendamento - horarios do semestre bom dia diretor do curso, gostaria de saber se tem disponibilidade para reunirmos dia 22 as 17h, em remoto, para falarmos sobre horarios do semestre.",
+    "true_label": "agendamento_reuniao",
+    "predicted_label": "agendamento_reuniao",
+    "confidence": 0.5872877059782174,
+    "probabilities": {
+      "agendamento_reuniao": 0.5872877059782174,
+      "cancelamento_reuniao": 0.15138781477394747,
+      "nao_reuniao": 0.1091458162444798,
+      "reuniao_confirmada": 0.15217866300335514
+    }
+  },
+  {
+    "email_index": 396,
+    "subject": "Fw: Cancelamento de reuniao",
+    "text": "fw: cancelamento de reuniao bom dia, por motivo imprevisto, a reuniao de depois de almoco fica sem efeito.",
+    "true_label": "cancelamento_reuniao",
+    "predicted_label": "cancelamento_reuniao",
+    "confidence": 0.7621143275643713,
+    "probabilities": {
+      "agendamento_reuniao": 0.10237400986426676,
+      "cancelamento_reuniao": 0.7621143275643713,
+      "nao_reuniao": 0.06302495937309166,
+      "reuniao_confirmada": 0.07248670319827036
+    }
+  },
+  {
+    "email_index": 112,
+    "subject": "Confirmacao - preparacao da apresentacao",
+    "text": "confirmacao - preparacao da apresentacao bom dia miguel santos, confirmo a reuniao sexta as 14h30, em remoto, para discutirmos preparacao da apresentacao.",
+    "true_label": "reuniao_confirmada",
+    "predicted_label": "reuniao_confirmada",
+    "confidence": 0.6440550980611592,
+    "probabilities": {
+      "agendamento_reuniao": 0.11067884002139616,
+      "cancelamento_reuniao": 0.13796109067038606,
+      "nao_reuniao": 0.10730497124705853,
+      "reuniao_confirmada": 0.6440550980611592
+    }
+  },
+  {
+    "email_index": 163,
+    "subject": "Fw: Cancelamento de reuniao",
+    "text": "fw: cancelamento de reuniao bom dia professora ana costa, nao vou conseguir estar presente na reuniao em remoto, pelo que terei de cancelar.",
+    "true_label": "cancelamento_reuniao",
+    "predicted_label": "cancelamento_reuniao",
+    "confidence": 0.7339693377491128,
+    "probabilities": {
+      "agendamento_reuniao": 0.08161144870982462,
+      "cancelamento_reuniao": 0.7339693377491128,
+      "nao_reuniao": 0.08583859636533929,
+      "reuniao_confirmada": 0.09858061717572335
+    }
+  },
+  {
+    "email_index": 347,
+    "subject": "Re: Envio de documentos",
+    "text": "re: envio de documentos bom dia, informamos que o prazo para submissao dos elementos de avaliacao termina esta sexta-feira.",
+    "true_label": "nao_reuniao",
+    "predicted_label": "nao_reuniao",
+    "confidence": 0.7766263756952894,
+    "probabilities": {
+      "agendamento_reuniao": 0.07494880956227223,
+      "cancelamento_reuniao": 0.06455889838592242,
+      "nao_reuniao": 0.7766263756952894,
+      "reuniao_confirmada": 0.08386591635651594
+    }
+  },
+  {
+    "email_index": 123,
+    "subject": "Reuniao sobre distribuicao de servico docente",
+    "text": "reuniao sobre distribuicao de servico docente viva conselho pedagogico, gostaria de saber se tem disponibilidade para reunirmos durante a manha, em teams, para falarmos sobre distribuicao de servico docente.",
+    "true_label": "agendamento_reuniao",
+    "predicted_label": "agendamento_reuniao",
+    "confidence": 0.6565768074162063,
+    "probabilities": {
+      "agendamento_reuniao": 0.6565768074162063,
+      "cancelamento_reuniao": 0.13692181917076818,
+      "nao_reuniao": 0.10852125845405476,
+      "reuniao_confirmada": 0.09798011495897069
+    }
+  },
+  {
+    "email_index": 2,
+    "subject": "Fw: Ponto de situacao",
+    "text": "fw: ponto de situacao viva diretor do curso, gostaria de saber se tem disponibilidade para reunirmos amanha as 10h, em zoom, para falarmos sobre revisao do plano de trabalhos.",
+    "true_label": "agendamento_reuniao",
+    "predicted_label": "agendamento_reuniao",
+    "confidence": 0.7758365731140752,
+    "probabilities": {
+      "agendamento_reuniao": 0.7758365731140752,
+      "cancelamento_reuniao": 0.07077584948765736,
+      "nao_reuniao": 0.08060754568096584,
+      "reuniao_confirmada": 0.07278003171730146
+    }
+  },
+  {
+    "email_index": 107,
+    "subject": "Fw: Confirmacao - planeamento de aulas",
+    "text": "fw: confirmacao - planeamento de aulas exmo. professor, confirmado para sexta as 14h30. levarei os documentos relativos a planeamento de aulas.",
+    "true_label": "reuniao_confirmada",
+    "predicted_label": "reuniao_confirmada",
+    "confidence": 0.6237248104024101,
+    "probabilities": {
+      "agendamento_reuniao": 0.1429866206042275,
+      "cancelamento_reuniao": 0.09791676014921602,
+      "nao_reuniao": 0.1353718088441463,
+      "reuniao_confirmada": 0.6237248104024101
+    }
+  }
+]

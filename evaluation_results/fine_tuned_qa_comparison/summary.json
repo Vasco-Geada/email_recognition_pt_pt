@@ -1,0 +1,475 @@
+{
+  "created_at": "2026-07-17T14:13:59.412275",
+  "dataset": "dataset\\realistic_school_professional_400.json",
+  "test_size": 0.2,
+  "random_state": 42,
+  "reference_datetime": "2026-07-17T14:13:56.261816",
+  "num_examples": 400,
+  "num_train": 320,
+  "num_test": 80,
+  "gold_annotations": "gold_annotations\\output\\realistic_school_professional_400_gold.json",
+  "evaluations": {
+    "classification": {
+      "enabled": true,
+      "models": [
+        "logistic_regression",
+        "naive_bayes",
+        "decision_tree"
+      ],
+      "cross_validation_enabled": false,
+      "cv_folds_requested": 5,
+      "output_dir": "evaluation_results\\fine_tuned_qa_comparison\\classification"
+    },
+    "classic_extraction": {
+      "enabled": true,
+      "method": "regex/spaCy/heuristics",
+      "processed_emails": 80,
+      "output_dir": "evaluation_results\\fine_tuned_qa_comparison\\classic_extraction"
+    },
+    "qa": {
+      "enabled": true,
+      "model": "qa\\models\\bertimbau_qa_finetuned",
+      "checkpoint": "pierreguillou/bert-base-cased-squad-v1.1-portuguese",
+      "gold_file": "gold_annotations\\output\\realistic_school_professional_400_gold.json"
+    }
+  },
+  "qa": {
+    "enabled": true,
+    "model": "qa\\models\\bertimbau_qa_finetuned",
+    "checkpoint": "pierreguillou/bert-base-cased-squad-v1.1-portuguese",
+    "gold_file": "gold_annotations\\output\\realistic_school_professional_400_gold.json"
+  },
+  "metrics": {
+    "logistic_regression": {
+      "model": "logistic_regression",
+      "train_seconds": 0.02231050000000323,
+      "predict_seconds": 0.0016658000001825712,
+      "accuracy": 1.0,
+      "precision_macro": 1.0,
+      "recall_macro": 1.0,
+      "f1_macro": 1.0,
+      "f1_weighted": 1.0,
+      "labels": [
+        "agendamento_reuniao",
+        "cancelamento_reuniao",
+        "nao_reuniao",
+        "reuniao_confirmada"
+      ],
+      "confusion_matrix": [
+        [
+          20,
+          0,
+          0,
+          0
+        ],
+        [
+          0,
+          20,
+          0,
+          0
+        ],
+        [
+          0,
+          0,
+          20,
+          0
+        ],
+        [
+          0,
+          0,
+          0,
+          20
+        ]
+      ],
+      "classification_report": {
+        "agendamento_reuniao": {
+          "precision": 1.0,
+          "recall": 1.0,
+          "f1-score": 1.0,
+          "support": 20.0
+        },
+        "cancelamento_reuniao": {
+          "precision": 1.0,
+          "recall": 1.0,
+          "f1-score": 1.0,
+          "support": 20.0
+        },
+        "nao_reuniao": {
+          "precision": 1.0,
+          "recall": 1.0,
+          "f1-score": 1.0,
+          "support": 20.0
+        },
+        "reuniao_confirmada": {
+          "precision": 1.0,
+          "recall": 1.0,
+          "f1-score": 1.0,
+          "support": 20.0
+        },
+        "accuracy": 1.0,
+        "macro avg": {
+          "precision": 1.0,
+          "recall": 1.0,
+          "f1-score": 1.0,
+          "support": 80.0
+        },
+        "weighted avg": {
+          "precision": 1.0,
+          "recall": 1.0,
+          "f1-score": 1.0,
+          "support": 80.0
+        }
+      }
+    },
+    "naive_bayes": {
+      "model": "naive_bayes",
+      "train_seconds": 0.008068000000093889,
+      "predict_seconds": 0.0016430000000582368,
+      "accuracy": 0.9875,
+      "precision_macro": 0.9880952380952381,
+      "recall_macro": 0.9875,
+      "f1_macro": 0.9874921826141339,
+      "f1_weighted": 0.9874921826141339,
+      "labels": [
+        "agendamento_reuniao",
+        "cancelamento_reuniao",
+        "nao_reuniao",
+        "reuniao_confirmada"
+      ],
+      "confusion_matrix": [
+        [
+          20,
+          0,
+          0,
+          0
+        ],
+        [
+          0,
+          20,
+          0,
+          0
+        ],
+        [
+          0,
+          0,
+          20,
+          0
+        ],
+        [
+          1,
+          0,
+          0,
+          19
+        ]
+      ],
+      "classification_report": {
+        "agendamento_reuniao": {
+          "precision": 0.9523809523809523,
+          "recall": 1.0,
+          "f1-score": 0.975609756097561,
+          "support": 20.0
+        },
+        "cancelamento_reuniao": {
+          "precision": 1.0,
+          "recall": 1.0,
+          "f1-score": 1.0,
+          "support": 20.0
+        },
+        "nao_reuniao": {
+          "precision": 1.0,
+          "recall": 1.0,
+          "f1-score": 1.0,
+          "support": 20.0
+        },
+        "reuniao_confirmada": {
+          "precision": 1.0,
+          "recall": 0.95,
+          "f1-score": 0.9743589743589743,
+          "support": 20.0
+        },
+        "accuracy": 0.9875,
+        "macro avg": {
+          "precision": 0.9880952380952381,
+          "recall": 0.9875,
+          "f1-score": 0.9874921826141339,
+          "support": 80.0
+        },
+        "weighted avg": {
+          "precision": 0.9880952380952381,
+          "recall": 0.9875,
+          "f1-score": 0.9874921826141339,
+          "support": 80.0
+        }
+      }
+    },
+    "decision_tree": {
+      "model": "decision_tree",
+      "train_seconds": 0.01223689999983435,
+      "predict_seconds": 0.0017378000000007887,
+      "accuracy": 1.0,
+      "precision_macro": 1.0,
+      "recall_macro": 1.0,
+      "f1_macro": 1.0,
+      "f1_weighted": 1.0,
+      "labels": [
+        "agendamento_reuniao",
+        "cancelamento_reuniao",
+        "nao_reuniao",
+        "reuniao_confirmada"
+      ],
+      "confusion_matrix": [
+        [
+          20,
+          0,
+          0,
+          0
+        ],
+        [
+          0,
+          20,
+          0,
+          0
+        ],
+        [
+          0,
+          0,
+          20,
+          0
+        ],
+        [
+          0,
+          0,
+          0,
+          20
+        ]
+      ],
+      "classification_report": {
+        "agendamento_reuniao": {
+          "precision": 1.0,
+          "recall": 1.0,
+          "f1-score": 1.0,
+          "support": 20.0
+        },
+        "cancelamento_reuniao": {
+          "precision": 1.0,
+          "recall": 1.0,
+          "f1-score": 1.0,
+          "support": 20.0
+        },
+        "nao_reuniao": {
+          "precision": 1.0,
+          "recall": 1.0,
+          "f1-score": 1.0,
+          "support": 20.0
+        },
+        "reuniao_confirmada": {
+          "precision": 1.0,
+          "recall": 1.0,
+          "f1-score": 1.0,
+          "support": 20.0
+        },
+        "accuracy": 1.0,
+        "macro avg": {
+          "precision": 1.0,
+          "recall": 1.0,
+          "f1-score": 1.0,
+          "support": 80.0
+        },
+        "weighted avg": {
+          "precision": 1.0,
+          "recall": 1.0,
+          "f1-score": 1.0,
+          "support": 80.0
+        }
+      }
+    }
+  },
+  "classic_extraction_metrics": {
+    "total_examples": 400,
+    "exact_match_score": 0.2875,
+    "mean_f1_score": 0.37236834129922364,
+    "mean_precision": 0.3798128489867621,
+    "mean_recall": 0.3897916666666667,
+    "mean_confidence": 0.4266005384853851,
+    "per_category": {
+      "participants": {
+        "exact_match": 0.0625,
+        "f1_score": 0.25313582251082256,
+        "precision": 0.2135912698412698,
+        "recall": 0.3333333333333333,
+        "mean_confidence": 0.5977916666666667,
+        "count": 80
+      },
+      "time": {
+        "exact_match": 0.4625,
+        "f1_score": 0.6383333333333333,
+        "precision": 0.7270833333333333,
+        "recall": 0.6020833333333334,
+        "mean_confidence": 0.315,
+        "count": 80
+      },
+      "time_normalized": {
+        "exact_match": 0.6625,
+        "f1_score": 0.6625,
+        "precision": 0.6625,
+        "recall": 0.6625,
+        "mean_confidence": 0.315,
+        "count": 80
+      },
+      "location": {
+        "exact_match": 0.25,
+        "f1_score": 0.26875,
+        "precision": 0.26875,
+        "recall": 0.26875,
+        "mean_confidence": 0.021249999999999998,
+        "count": 80
+      },
+      "topic": {
+        "exact_match": 0.0,
+        "f1_score": 0.03912255065196242,
+        "precision": 0.027139641759206978,
+        "recall": 0.08229166666666667,
+        "mean_confidence": 0.8839610257602587,
+        "count": 80
+      }
+    },
+    "error_distribution": {
+      "LOW_CONFIDENCE": 194,
+      "TRUNCATION": 24,
+      "HALLUCINATION": 155,
+      "WRONG_ANSWER": 16,
+      "EXACT_MATCH": 11
+    }
+  },
+  "qa_metrics": {
+    "total_examples": 400,
+    "exact_match_score": 0.735,
+    "mean_f1_score": 0.7469642857142857,
+    "mean_precision": 0.7454999999999999,
+    "mean_recall": 0.7491666666666665,
+    "mean_confidence": 0.7953756613582372,
+    "per_category": {
+      "participants": {
+        "exact_match": 1.0,
+        "f1_score": 1.0,
+        "precision": 1.0,
+        "recall": 1.0,
+        "mean_confidence": 0.8968889012932777,
+        "count": 80
+      },
+      "time": {
+        "exact_match": 0.4875,
+        "f1_score": 0.4875,
+        "precision": 0.4875,
+        "recall": 0.4875,
+        "mean_confidence": 0.8071056175976992,
+        "count": 80
+      },
+      "time_normalized": {
+        "exact_match": 0.825,
+        "f1_score": 0.825,
+        "precision": 0.825,
+        "recall": 0.825,
+        "mean_confidence": 0.8071056175976992,
+        "count": 80
+      },
+      "location": {
+        "exact_match": 0.8375,
+        "f1_score": 0.8854166666666666,
+        "precision": 0.8785416666666667,
+        "recall": 0.8958333333333333,
+        "mean_confidence": 0.59375,
+        "count": 80
+      },
+      "topic": {
+        "exact_match": 0.525,
+        "f1_score": 0.5369047619047619,
+        "precision": 0.5364583333333334,
+        "recall": 0.5375,
+        "mean_confidence": 0.8720281703025103,
+        "count": 80
+      }
+    },
+    "error_distribution": {
+      "EXACT_MATCH": 224,
+      "TRUNCATION": 19,
+      "EMPTY_ANSWER": 49,
+      "LOW_CONFIDENCE": 26,
+      "HALLUCINATION": 82
+    }
+  },
+  "method_comparison": {
+    "methods": {
+      "classic": "regex/spaCy/heuristics",
+      "qa": "BERTimbau QA"
+    },
+    "rows": [
+      {
+        "scope": "global",
+        "category": "all",
+        "classic_em": 0.2875,
+        "classic_f1": 0.37236834129922364,
+        "qa_em": 0.735,
+        "qa_f1": 0.7469642857142857,
+        "delta_em_qa_minus_classic": 0.4475,
+        "delta_f1_qa_minus_classic": 0.3745959444150621,
+        "winner_f1": "bertimbau_qa"
+      },
+      {
+        "scope": "category",
+        "category": "location",
+        "classic_em": 0.25,
+        "classic_f1": 0.26875,
+        "qa_em": 0.8375,
+        "qa_f1": 0.8854166666666666,
+        "delta_em_qa_minus_classic": 0.5875,
+        "delta_f1_qa_minus_classic": 0.6166666666666667,
+        "winner_f1": "bertimbau_qa"
+      },
+      {
+        "scope": "category",
+        "category": "participants",
+        "classic_em": 0.0625,
+        "classic_f1": 0.25313582251082256,
+        "qa_em": 1.0,
+        "qa_f1": 1.0,
+        "delta_em_qa_minus_classic": 0.9375,
+        "delta_f1_qa_minus_classic": 0.7468641774891774,
+        "winner_f1": "bertimbau_qa"
+      },
+      {
+        "scope": "category",
+        "category": "time",
+        "classic_em": 0.4625,
+        "classic_f1": 0.6383333333333333,
+        "qa_em": 0.4875,
+        "qa_f1": 0.4875,
+        "delta_em_qa_minus_classic": 0.024999999999999967,
+        "delta_f1_qa_minus_classic": -0.15083333333333332,
+        "winner_f1": "classic"
+      },
+      {
+        "scope": "category",
+        "category": "time_normalized",
+        "classic_em": 0.6625,
+        "classic_f1": 0.6625,
+        "qa_em": 0.825,
+        "qa_f1": 0.825,
+        "delta_em_qa_minus_classic": 0.16249999999999998,
+        "delta_f1_qa_minus_classic": 0.16249999999999998,
+        "winner_f1": "bertimbau_qa"
+      },
+      {
+        "scope": "category",
+        "category": "topic",
+        "classic_em": 0.0,
+        "classic_f1": 0.03912255065196242,
+        "qa_em": 0.525,
+        "qa_f1": 0.5369047619047619,
+        "delta_em_qa_minus_classic": 0.525,
+        "delta_f1_qa_minus_classic": 0.4977822112527995,
+        "winner_f1": "bertimbau_qa"
+      }
+    ]
+  }
+}

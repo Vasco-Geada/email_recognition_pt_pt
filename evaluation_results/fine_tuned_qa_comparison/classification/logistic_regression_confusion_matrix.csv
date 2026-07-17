@@ -1,0 +1,5 @@
+true\predicted,agendamento_reuniao,cancelamento_reuniao,nao_reuniao,reuniao_confirmada
+agendamento_reuniao,20,0,0,0
+cancelamento_reuniao,0,20,0,0
+nao_reuniao,0,0,20,0
+reuniao_confirmada,0,0,0,20

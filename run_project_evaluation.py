@@ -143,13 +143,10 @@ def parse_args() -> argparse.Namespace:
     parser.add_argument(
         "--qa-model",
         default="bertimbau-pt",
-        choices=[
-            "bertimbau-pt",
-            "bertimbau-qa",
-            "portuguese-qa",
-            "pierreguillou/bert-base-cased-squad-v1.1-portuguese",
-        ],
-        help="Modelo QA a usar quando --run-qa estiver ativo.",
+        help=(
+            "Modelo QA a usar quando --run-qa estiver ativo. "
+            "Aceita aliases BERTimbau ou um diretorio local fine-tuned."
+        ),
     )
     parser.add_argument(
         "--qa-gold",

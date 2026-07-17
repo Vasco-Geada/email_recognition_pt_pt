@@ -1,0 +1,9 @@
+{
+  "total": 80,
+  "num_errors": 0,
+  "error_rate": 0.0,
+  "by_true_label": {},
+  "by_predicted_label": {},
+  "confusion_pairs": {},
+  "errors": []
+}

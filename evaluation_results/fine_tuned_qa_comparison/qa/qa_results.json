@@ -1,0 +1,4930 @@
+[
+  {
+    "email_id": 195,
+    "email_text": "Cara Professora, A bibliografia recomendada para esta semana ja se encontra disponivel no Moodle.",
+    "subject": "RE: Atualizacao de processo",
+    "qa_results": {
+      "participants": {
+        "answer": "Carolina Silva",
+        "confidence": 0.998928427696228,
+        "question": "Quem participa na reunião?",
+        "valid": true
+      },
+      "time": {
+        "answer": "esta semana",
+        "confidence": 0.9226523041725159,
+        "question": "Quando é a reunião?",
+        "valid": true
+      },
+      "location": {
+        "answer": null,
+        "confidence": 0.0,
+        "question": "Onde é a reunião?",
+        "valid": false,
+        "fallback_source": "non_meeting_no_location"
+      },
+      "topic": {
+        "answer": "RE: Atualizacao de processo",
+        "confidence": 0.65,
+        "question": "Qual é o tópico da reunião?",
+        "valid": true,
+        "fallback_source": "fallback_subject"
+      }
+    },
+    "processed_at": "2026-07-17T14:14:04.458431",
+    "metadata": {
+      "model": "qa\\models\\bertimbau_qa_finetuned",
+      "confidence_threshold": 0.3,
+      "context_enrichment": {
+        "sender": "Carolina Silva",
+        "metadata_location": null,
+        "temporal_hints": [],
+        "reference_datetime": "2026-03-08T12:30:00",
+        "explicit_location": null,
+        "meeting_related": false,
+        "hints": [
+          "Assunto: RE: Atualizacao de processo",
+          "Remetente: Carolina Silva",
+          "Participante por defeito quando nao ha outro participante explicito: Carolina Silva"
+        ]
+      }
+    }
+  },
+  {
+    "email_id": 326,
+    "email_text": "Bom dia, Por motivo imprevisto, a reuniao de dia 18 as 9h30 fica sem efeito.",
+    "subject": "Re: Indisponibilidade para a reuniao",
+    "qa_results": {
+      "participants": {
+        "answer": "Mariana Lopes",
+        "confidence": 0.9493463039398193,
+        "question": "Quem participa na reunião?",
+        "valid": true
+      },
+      "time": {
+        "answer": "dia 18 as 9h30",
+        "confidence": 0.9999969601631165,
+        "question": "Quando é a reunião?",
+        "valid": true,
+        "normalized": {
+          "text": "9h30",
+          "original_text": "9h30",
+          "reference_datetime": "2026-03-23T11:00:00",
+          "temporal_type": "time",
+          "normalized_datetime": "2026-03-23T09:30:00",
+          "precision": "time_only",
+          "confidence": 0.8,
+          "extraction_method": "rule_based",
+          "notes": [
+            "Parsed as time-only expression"
+          ]
+        }
+      },
+      "location": {
+        "answer": "remoto - zoom",
+        "confidence": 0.6,
+        "question": "Onde é a reunião?",
+        "valid": true,
+        "fallback_source": "default_remote_location"
+      },
+      "topic": {
+        "answer": "Re: Indisponibilidade para a reuniao",
+        "confidence": 0.65,
+        "question": "Qual é o tópico da reunião?",
+        "valid": true,
+        "fallback_source": "fallback_subject"
+      }
+    },
+    "processed_at": "2026-07-17T14:14:04.679162",
+    "metadata": {
+      "model": "qa\\models\\bertimbau_qa_finetuned",
+      "confidence_threshold": 0.3,
+      "context_enrichment": {
+        "sender": "Mariana Lopes",
+        "metadata_location": null,
+        "temporal_hints": [
+          {
+            "text": "9h30",
+            "original_text": "9h30",
+            "reference_datetime": "2026-03-23T11:00:00",
+            "temporal_type": "time",
+            "normalized_datetime": "2026-03-23T09:30:00",
+            "precision": "time_only",
+            "confidence": 0.8,
+            "extraction_method": "rule_based",
+            "notes": [
+              "Parsed as time-only expression"
+            ]
+          }
+        ],
+        "reference_datetime": "2026-03-23T11:00:00",
+        "explicit_location": null,
+        "meeting_related": true,
+        "hints": [
+          "Assunto: Re: Indisponibilidade para a reuniao",
+          "Remetente: Mariana Lopes",
+          "Participante por defeito quando nao ha outro participante explicito: Mariana Lopes",
+          "Expressoes temporais normalizadas:",
+          "- 9h30 -> 2026-03-23T09:30:00"
+        ]
+      }
+    }
+  },
+  {
+    "email_id": 64,
+    "email_text": "Caro colega, Proponho fazermos uma reuniao quarta a tarde, em gabinete 3.12, para fechar o ponto de situacao de acompanhamento pedagogico.",
+    "subject": "RE: Reuniao sobre acompanhamento pedagogico",
+    "qa_results": {
+      "participants": {
+        "answer": "Professora Sofia Carvalho",
+        "confidence": 0.812180757522583,
+        "question": "Quem participa na reunião?",
+        "valid": true
+      },
+      "time": {
+        "answer": "quarta a tarde",
+        "confidence": 0.9999990463256836,
+        "question": "Quando é a reunião?",
+        "valid": true,
+        "normalized": {
+          "text": "quarta a tarde",
+          "original_text": "quarta a tarde",
+          "reference_datetime": "2026-03-13T16:05:00",
+          "temporal_type": "datetime",
+          "normalized_datetime": "2026-03-18T15:00:00",
+          "precision": "approximate",
+          "confidence": 0.75,
+          "extraction_method": "rule_based",
+          "notes": [
+            "Combined weekday with time of day: 'tarde'"
+          ]
+        }
+      },
+      "location": {
+        "answer": "presencial - gabinete 3.12",
+        "confidence": 0.9,
+        "question": "Onde é a reunião?",
+        "valid": true,
+        "fallback_source": "fallback_metadata_location"
+      },
+      "topic": {
+        "answer": "acompanhamento pedagogico",
+        "confidence": 0.9999924302101135,
+        "question": "Qual é o tópico da reunião?",
+        "valid": true
+      }
+    },
+    "processed_at": "2026-07-17T14:14:04.929380",
+    "metadata": {
+      "model": "qa\\models\\bertimbau_qa_finetuned",
+      "confidence_threshold": 0.3,
+      "context_enrichment": {
+        "sender": "Professora Sofia Carvalho",
+        "metadata_location": "presencial - gabinete 3.12",
+        "temporal_hints": [
+          {
+            "text": "quarta a tarde",
+            "original_text": "quarta a tarde",
+            "reference_datetime": "2026-03-13T16:05:00",
+            "temporal_type": "datetime",
+            "normalized_datetime": "2026-03-18T15:00:00",
+            "precision": "approximate",
+            "confidence": 0.75,
+            "extraction_method": "rule_based",
+            "notes": [
+              "Combined weekday with time of day: 'tarde'"
+            ]
+          }
+        ],
+        "reference_datetime": "2026-03-13T16:05:00",
+        "explicit_location": "presencial - gabinete 3.12",
+        "meeting_related": true,
+        "hints": [
+          "Assunto: RE: Reuniao sobre acompanhamento pedagogico",
+          "Remetente: Professora Sofia Carvalho",
+          "Participante por defeito quando nao ha outro participante explicito: Professora Sofia Carvalho",
+          "Expressoes temporais normalizadas:",
+          "- quarta a tarde -> 2026-03-18T15:00:00"
+        ]
+      }
+    }
+  },
+  {
+    "email_id": 351,
+    "email_text": "Bom dia, Seria possivel agendar uma breve reuniao dia 22 as 17h? O objetivo e discutir horarios do semestre.",
+    "subject": "Fw: Marcacao de reuniao",
+    "qa_results": {
+      "participants": {
+        "answer": "Secretaria Academica",
+        "confidence": 0.6553772687911987,
+        "question": "Quem participa na reunião?",
+        "valid": true
+      },
+      "time": {
+        "answer": "dia 22 as 17h",
+        "confidence": 0.9999990463256836,
+        "question": "Quando é a reunião?",
+        "valid": true,
+        "normalized": {
+          "text": "17h",
+          "original_text": "17h",
+          "reference_datetime": "2026-03-27T16:20:00",
+          "temporal_type": "time",
+          "normalized_datetime": "2026-03-27T17:00:00",
+          "precision": "time_only",
+          "confidence": 0.8,
+          "extraction_method": "rule_based",
+          "notes": [
+            "Parsed as time-only expression"
+          ]
+        }
+      },
+      "location": {
+        "answer": "remoto - zoom",
+        "confidence": 0.6,
+        "question": "Onde é a reunião?",
+        "valid": true,
+        "fallback_source": "default_remote_location"
+      },
+      "topic": {
+        "answer": "horarios do semestre",
+        "confidence": 0.9991708993911743,
+        "question": "Qual é o tópico da reunião?",
+        "valid": true
+      }
+    },
+    "processed_at": "2026-07-17T14:14:05.151239",
+    "metadata": {
+      "model": "qa\\models\\bertimbau_qa_finetuned",
+      "confidence_threshold": 0.3,
+      "context_enrichment": {
+        "sender": "Secretaria Academica",
+        "metadata_location": null,
+        "temporal_hints": [
+          {
+            "text": "17h",
+            "original_text": "17h",
+            "reference_datetime": "2026-03-27T16:20:00",
+            "temporal_type": "time",
+            "normalized_datetime": "2026-03-27T17:00:00",
+            "precision": "time_only",
+            "confidence": 0.8,
+            "extraction_method": "rule_based",
+            "notes": [
+              "Parsed as time-only expression"
+            ]
+          }
+        ],
+        "reference_datetime": "2026-03-27T16:20:00",
+        "explicit_location": null,
+        "meeting_related": true,
+        "hints": [
+          "Assunto: Fw: Marcacao de reuniao",
+          "Remetente: Secretaria Academica",
+          "Participante por defeito quando nao ha outro participante explicito: Secretaria Academica",
+          "Expressoes temporais normalizadas:",
+          "- 17h -> 2026-03-27T17:00:00"
+        ]
+      }
+    }
+  },
+  {
+    "email_id": 263,
+    "email_text": "Bom dia, Partilho a versao revista da ata para validacao.",
+    "subject": "Fw: Informacao academica",
+    "qa_results": {
+      "participants": {
+        "answer": "Mariana Lopes",
+        "confidence": 0.9990704655647278,
+        "question": "Quem participa na reunião?",
+        "valid": true
+      },
+      "time": {
+        "answer": "Mariana Lopes",
+        "confidence": 0.515950620174408,
+        "question": "Quando é a reunião?",
+        "valid": true
+      },
+      "location": {
+        "answer": null,
+        "confidence": 0.0,
+        "question": "Onde é a reunião?",
+        "valid": false,
+        "fallback_source": "non_meeting_no_location"
+      },
+      "topic": {
+        "answer": "validacao",
+        "confidence": 0.9702883958816528,
+        "question": "Qual é o tópico da reunião?",
+        "valid": true
+      }
+    },
+    "processed_at": "2026-07-17T14:14:05.293112",
+    "metadata": {
+      "model": "qa\\models\\bertimbau_qa_finetuned",
+      "confidence_threshold": 0.3,
+      "context_enrichment": {
+        "sender": "Mariana Lopes",
+        "metadata_location": null,
+        "temporal_hints": [],
+        "reference_datetime": "2026-03-18T10:00:00",
+        "explicit_location": null,
+        "meeting_related": false,
+        "hints": [
+          "Assunto: Fw: Informacao academica",
+          "Remetente: Mariana Lopes",
+          "Participante por defeito quando nao ha outro participante explicito: Mariana Lopes"
+        ]
+      }
+    }
+  },
+  {
+    "email_id": 68,
+    "email_text": "Cara colega Professora Ana Costa, Podemos remarcar a reuniao sobre planeamento de aulas para quando for conveniente? Se preferir, posso adaptar ao horario do departamento.",
+    "subject": "RE: Disponibilidade para reuniao",
+    "qa_results": {
+      "participants": {
+        "answer": "Prof. Ricardo Mendes",
+        "confidence": 0.9827136397361755,
+        "question": "Quem participa na reunião?",
+        "valid": true
+      },
+      "time": {
+        "answer": "quando for conveniente",
+        "confidence": 0.9854399561882019,
+        "question": "Quando é a reunião?",
+        "valid": true
+      },
+      "location": {
+        "answer": "remoto - zoom",
+        "confidence": 0.6,
+        "question": "Onde é a reunião?",
+        "valid": true,
+        "fallback_source": "default_remote_location"
+      },
+      "topic": {
+        "answer": "planeamento de aulas",
+        "confidence": 0.9999972581863403,
+        "question": "Qual é o tópico da reunião?",
+        "valid": true
+      }
+    },
+    "processed_at": "2026-07-17T14:14:05.462176",
+    "metadata": {
+      "model": "qa\\models\\bertimbau_qa_finetuned",
+      "confidence_threshold": 0.3,
+      "context_enrichment": {
+        "sender": "Prof. Ricardo Mendes",
+        "metadata_location": null,
+        "temporal_hints": [],
+        "reference_datetime": "2026-06-02T15:50:00",
+        "explicit_location": null,
+        "meeting_related": true,
+        "hints": [
+          "Assunto: RE: Disponibilidade para reuniao",
+          "Remetente: Prof. Ricardo Mendes",
+          "Participante por defeito quando nao ha outro participante explicito: Prof. Ricardo Mendes"
+        ]
+      }
+    }
+  },
+  {
+    "email_id": 252,
+    "email_text": "Boa tarde Miguel Santos, Da minha parte esta confirmado. Encontramo-nos em remoto.",
+    "subject": "Fw: Confirmado",
+    "qa_results": {
+      "participants": {
+        "answer": "Secretaria Academica",
+        "confidence": 0.9874868988990784,
+        "question": "Quem participa na reunião?",
+        "valid": true
+      },
+      "time": {
+        "answer": "Secretaria Academica",
+        "confidence": 0.5892731547355652,
+        "question": "Quando é a reunião?",
+        "valid": true
+      },
+      "location": {
+        "answer": "remoto - zoom",
+        "confidence": 0.8,
+        "question": "Onde é a reunião?",
+        "valid": true,
+        "fallback_source": "fallback_explicit_location"
+      },
+      "topic": {
+        "answer": "Secretaria Academica",
+        "confidence": 0.5894006490707397,
+        "question": "Qual é o tópico da reunião?",
+        "valid": true
+      }
+    },
+    "processed_at": "2026-07-17T14:14:05.602571",
+    "metadata": {
+      "model": "qa\\models\\bertimbau_qa_finetuned",
+      "confidence_threshold": 0.3,
+      "context_enrichment": {
+        "sender": "Secretaria Academica",
+        "metadata_location": null,
+        "temporal_hints": [],
+        "reference_datetime": "2026-04-23T16:00:00",
+        "explicit_location": "remoto - zoom",
+        "meeting_related": true,
+        "hints": [
+          "Assunto: Fw: Confirmado",
+          "Remetente: Secretaria Academica",
+          "Participante por defeito quando nao ha outro participante explicito: Secretaria Academica"
+        ]
+      }
+    }
+  },
+  {
+    "email_id": 157,
+    "email_text": "Viva Secretaria Academica, Nao vou conseguir estar presente na reuniao em Google Meet, pelo que terei de cancelar.",
+    "subject": "Reuniao sem efeito",
+    "qa_results": {
+      "participants": {
+        "answer": "Professor Luis Almeida",
+        "confidence": 0.995355486869812,
+        "question": "Quem participa na reunião?",
+        "valid": true
+      },
+      "time": {
+        "answer": "Professor Luis Almeida",
+        "confidence": 0.7754594087600708,
+        "question": "Quando é a reunião?",
+        "valid": true
+      },
+      "location": {
+        "answer": "remoto - google meet",
+        "confidence": 0.9,
+        "question": "Onde é a reunião?",
+        "valid": true,
+        "fallback_source": "fallback_metadata_location"
+      },
+      "topic": {
+        "answer": "Professor Luis Almeida",
+        "confidence": 0.6789038181304932,
+        "question": "Qual é o tópico da reunião?",
+        "valid": true
+      }
+    },
+    "processed_at": "2026-07-17T14:14:05.756544",
+    "metadata": {
+      "model": "qa\\models\\bertimbau_qa_finetuned",
+      "confidence_threshold": 0.3,
+      "context_enrichment": {
+        "sender": "Professor Luis Almeida",
+        "metadata_location": "remoto - google meet",
+        "temporal_hints": [],
+        "reference_datetime": "2026-04-16T09:10:00",
+        "explicit_location": "remoto - google meet",
+        "meeting_related": true,
+        "hints": [
+          "Assunto: Reuniao sem efeito",
+          "Remetente: Professor Luis Almeida",
+          "Participante por defeito quando nao ha outro participante explicito: Professor Luis Almeida"
+        ]
+      }
+    }
+  },
+  {
+    "email_id": 84,
+    "email_text": "Estimado/a estudante, A pauta foi atualizada no sistema academico. Por favor confirme se consegue aceder.",
+    "subject": "Fw: Informacao academica",
+    "qa_results": {
+      "participants": {
+        "answer": "Secretaria Academica",
+        "confidence": 0.9966548681259155,
+        "question": "Quem participa na reunião?",
+        "valid": true
+      },
+      "time": {
+        "answer": "Secretaria Academica",
+        "confidence": 0.626573920249939,
+        "question": "Quando é a reunião?",
+        "valid": true
+      },
+      "location": {
+        "answer": null,
+        "confidence": 0.0,
+        "question": "Onde é a reunião?",
+        "valid": false,
+        "fallback_source": "non_meeting_no_location"
+      },
+      "topic": {
+        "answer": "Fw: Informacao academica",
+        "confidence": 0.65,
+        "question": "Qual é o tópico da reunião?",
+        "valid": true,
+        "fallback_source": "fallback_subject"
+      }
+    },
+    "processed_at": "2026-07-17T14:14:05.905168",
+    "metadata": {
+      "model": "qa\\models\\bertimbau_qa_finetuned",
+      "confidence_threshold": 0.3,
+      "context_enrichment": {
+        "sender": "Secretaria Academica",
+        "metadata_location": null,
+        "temporal_hints": [],
+        "reference_datetime": "2026-04-25T11:40:00",
+        "explicit_location": null,
+        "meeting_related": false,
+        "hints": [
+          "Assunto: Fw: Informacao academica",
+          "Remetente: Secretaria Academica",
+          "Participante por defeito quando nao ha outro participante explicito: Secretaria Academica"
+        ]
+      }
+    }
+  },
+  {
+    "email_id": 233,
+    "email_text": "Cara colega, Seria possivel agendar uma breve reuniao antes do seminario? O objetivo e discutir credibilidade dos dados recolhidos. Se preferir, posso adaptar ao horario do departamento.",
+    "subject": "Re: Agendamento - credibilidade dos dados recolhidos",
+    "qa_results": {
+      "participants": {
+        "answer": "Prof. Ricardo Mendes",
+        "confidence": 0.9092419147491455,
+        "question": "Quem participa na reunião?",
+        "valid": true
+      },
+      "time": {
+        "answer": "antes do seminario",
+        "confidence": 0.9999983906745911,
+        "question": "Quando é a reunião?",
+        "valid": true
+      },
+      "location": {
+        "answer": "presencial - sala 2.3",
+        "confidence": 0.9,
+        "question": "Onde é a reunião?",
+        "valid": true,
+        "fallback_source": "fallback_metadata_location"
+      },
+      "topic": {
+        "answer": "credibilidade dos dados recolhidos",
+        "confidence": 0.9999990463256836,
+        "question": "Qual é o tópico da reunião?",
+        "valid": true
+      }
+    },
+    "processed_at": "2026-07-17T14:14:06.125313",
+    "metadata": {
+      "model": "qa\\models\\bertimbau_qa_finetuned",
+      "confidence_threshold": 0.3,
+      "context_enrichment": {
+        "sender": "Prof. Ricardo Mendes",
+        "metadata_location": "presencial - sala 2.3",
+        "temporal_hints": [],
+        "reference_datetime": "2026-05-04T14:40:00",
+        "explicit_location": null,
+        "meeting_related": true,
+        "hints": [
+          "Assunto: Re: Agendamento - credibilidade dos dados recolhidos",
+          "Remetente: Prof. Ricardo Mendes",
+          "Participante por defeito quando nao ha outro participante explicito: Prof. Ricardo Mendes"
+        ]
+      }
+    }
+  },
+  {
+    "email_id": 15,
+    "email_text": "Boa tarde Professora Ana Costa, Surgiu uma sobreposicao no horario e nao conseguirei participar na reuniao depois da aula.",
+    "subject": "RE: Imprevisto - revisao do plano de trabalhos",
+    "qa_results": {
+      "participants": {
+        "answer": "Joao Pereira",
+        "confidence": 0.9832839965820312,
+        "question": "Quem participa na reunião?",
+        "valid": true
+      },
+      "time": {
+        "answer": "depois da aula",
+        "confidence": 0.9999967813491821,
+        "question": "Quando é a reunião?",
+        "valid": true
+      },
+      "location": {
+        "answer": "remoto - zoom",
+        "confidence": 0.6,
+        "question": "Onde é a reunião?",
+        "valid": true,
+        "fallback_source": "default_remote_location"
+      },
+      "topic": {
+        "answer": "revisao do plano de trabalhos",
+        "confidence": 0.9999676942825317,
+        "question": "Qual é o tópico da reunião?",
+        "valid": true
+      }
+    },
+    "processed_at": "2026-07-17T14:14:06.280428",
+    "metadata": {
+      "model": "qa\\models\\bertimbau_qa_finetuned",
+      "confidence_threshold": 0.3,
+      "context_enrichment": {
+        "sender": "Joao Pereira",
+        "metadata_location": null,
+        "temporal_hints": [],
+        "reference_datetime": "2026-02-19T14:10:00",
+        "explicit_location": null,
+        "meeting_related": true,
+        "hints": [
+          "Assunto: RE: Imprevisto - revisao do plano de trabalhos",
+          "Remetente: Joao Pereira",
+          "Participante por defeito quando nao ha outro participante explicito: Joao Pereira"
+        ]
+      }
+    }
+  },
+  {
+    "email_id": 164,
+    "email_text": "Cara colega Professora Sofia Carvalho, Confirmo a reuniao quinta as 16h, em Google Meet, para discutirmos orientacao da dissertacao.",
+    "subject": "Fw: Re: Marcacao de reuniao",
+    "qa_results": {
+      "participants": {
+        "answer": "Professor Luis Almeida",
+        "confidence": 0.7167055010795593,
+        "question": "Quem participa na reunião?",
+        "valid": true
+      },
+      "time": {
+        "answer": "quinta as 16h",
+        "confidence": 0.9999991655349731,
+        "question": "Quando é a reunião?",
+        "valid": true,
+        "normalized": {
+          "text": "quinta as 16h",
+          "original_text": "quinta as 16h",
+          "reference_datetime": "2026-04-09T14:30:00",
+          "temporal_type": "datetime",
+          "normalized_datetime": "2026-04-09T16:00:00",
+          "precision": "exact",
+          "confidence": 0.9,
+          "extraction_method": "rule_based",
+          "notes": []
+        }
+      },
+      "location": {
+        "answer": "remoto - google meet",
+        "confidence": 0.9,
+        "question": "Onde é a reunião?",
+        "valid": true,
+        "fallback_source": "fallback_metadata_location"
+      },
+      "topic": {
+        "answer": "orientacao da dissertacao",
+        "confidence": 0.9999809265136719,
+        "question": "Qual é o tópico da reunião?",
+        "valid": true
+      }
+    },
+    "processed_at": "2026-07-17T14:14:06.553733",
+    "metadata": {
+      "model": "qa\\models\\bertimbau_qa_finetuned",
+      "confidence_threshold": 0.3,
+      "context_enrichment": {
+        "sender": "Professor Luis Almeida",
+        "metadata_location": "remoto - google meet",
+        "temporal_hints": [
+          {
+            "text": "quinta as 16h",
+            "original_text": "quinta as 16h",
+            "reference_datetime": "2026-04-09T14:30:00",
+            "temporal_type": "datetime",
+            "normalized_datetime": "2026-04-09T16:00:00",
+            "precision": "exact",
+            "confidence": 0.9,
+            "extraction_method": "rule_based",
+            "notes": []
+          },
+          {
+            "text": "16h",
+            "original_text": "16h",
+            "reference_datetime": "2026-04-09T14:30:00",
+            "temporal_type": "time",
+            "normalized_datetime": "2026-04-09T16:00:00",
+            "precision": "time_only",
+            "confidence": 0.8,
+            "extraction_method": "rule_based",
+            "notes": [
+              "Parsed as time-only expression"
+            ]
+          }
+        ],
+        "reference_datetime": "2026-04-09T14:30:00",
+        "explicit_location": "remoto - google meet",
+        "meeting_related": true,
+        "hints": [
+          "Assunto: Fw: Re: Marcacao de reuniao",
+          "Remetente: Professor Luis Almeida",
+          "Participante por defeito quando nao ha outro participante explicito: Professor Luis Almeida",
+          "Expressoes temporais normalizadas:",
+          "- quinta as 16h -> 2026-04-09T16:00:00",
+          "- 16h -> 2026-04-09T16:00:00"
+        ]
+      }
+    }
+  },
+  {
+    "email_id": 247,
+    "email_text": "Boa tarde, Fica entao combinado para quinta as 16h.",
+    "subject": "Confirmado",
+    "qa_results": {
+      "participants": {
+        "answer": "Miguel Santos",
+        "confidence": 0.7,
+        "question": "Quem participa na reunião?",
+        "valid": true,
+        "fallback_source": "fallback_sender"
+      },
+      "time": {
+        "answer": "quinta as 16h",
+        "confidence": 0.9996581077575684,
+        "question": "Quando é a reunião?",
+        "valid": true,
+        "normalized": {
+          "text": "quinta as 16h",
+          "original_text": "quinta as 16h",
+          "reference_datetime": "2026-04-16T12:05:00",
+          "temporal_type": "datetime",
+          "normalized_datetime": "2026-04-16T16:00:00",
+          "precision": "exact",
+          "confidence": 0.9,
+          "extraction_method": "rule_based",
+          "notes": []
+        }
+      },
+      "location": {
+        "answer": "presencial - laboratorio de informatica",
+        "confidence": 0.9,
+        "question": "Onde é a reunião?",
+        "valid": true,
+        "fallback_source": "fallback_metadata_location"
+      },
+      "topic": {
+        "answer": "2026-04-16T16:00:00 - 16h -> 2026-04-16T16:00:00",
+        "confidence": 0.6790363192558289,
+        "question": "Qual é o tópico da reunião?",
+        "valid": true
+      }
+    },
+    "processed_at": "2026-07-17T14:14:06.769999",
+    "metadata": {
+      "model": "qa\\models\\bertimbau_qa_finetuned",
+      "confidence_threshold": 0.3,
+      "context_enrichment": {
+        "sender": "Miguel Santos",
+        "metadata_location": "presencial - laboratorio de informatica",
+        "temporal_hints": [
+          {
+            "text": "quinta as 16h",
+            "original_text": "quinta as 16h",
+            "reference_datetime": "2026-04-16T12:05:00",
+            "temporal_type": "datetime",
+            "normalized_datetime": "2026-04-16T16:00:00",
+            "precision": "exact",
+            "confidence": 0.9,
+            "extraction_method": "rule_based",
+            "notes": []
+          },
+          {
+            "text": "16h",
+            "original_text": "16h",
+            "reference_datetime": "2026-04-16T12:05:00",
+            "temporal_type": "time",
+            "normalized_datetime": "2026-04-16T16:00:00",
+            "precision": "time_only",
+            "confidence": 0.8,
+            "extraction_method": "rule_based",
+            "notes": [
+              "Parsed as time-only expression"
+            ]
+          }
+        ],
+        "reference_datetime": "2026-04-16T12:05:00",
+        "explicit_location": null,
+        "meeting_related": true,
+        "hints": [
+          "Assunto: Confirmado",
+          "Remetente: Miguel Santos",
+          "Participante por defeito quando nao ha outro participante explicito: Miguel Santos",
+          "Expressoes temporais normalizadas:",
+          "- quinta as 16h -> 2026-04-16T16:00:00",
+          "- 16h -> 2026-04-16T16:00:00"
+        ]
+      }
+    }
+  },
+  {
+    "email_id": 55,
+    "email_text": "Boa tarde, Peço desculpa, mas terei de desmarcar a reuniao relacionada com acompanhamento pedagogico. Se preferir, posso adaptar ao horario do departamento. Obrigada, Ana Martins -- Mensagem enviada automaticamente",
+    "subject": "Fw: Imprevisto - acompanhamento pedagogico",
+    "qa_results": {
+      "participants": {
+        "answer": "Ana Martins",
+        "confidence": 0.9110683798789978,
+        "question": "Quem participa na reunião?",
+        "valid": true
+      },
+      "time": {
+        "answer": null,
+        "confidence": 0.0,
+        "question": "Quando é a reunião?",
+        "valid": false
+      },
+      "location": {
+        "answer": "remoto - zoom",
+        "confidence": 0.6,
+        "question": "Onde é a reunião?",
+        "valid": true,
+        "fallback_source": "default_remote_location"
+      },
+      "topic": {
+        "answer": "acompanhamento pedagogico",
+        "confidence": 0.999995231628418,
+        "question": "Qual é o tópico da reunião?",
+        "valid": true
+      }
+    },
+    "processed_at": "2026-07-17T14:14:06.999247",
+    "metadata": {
+      "model": "qa\\models\\bertimbau_qa_finetuned",
+      "confidence_threshold": 0.3,
+      "context_enrichment": {
+        "sender": "Ana Martins",
+        "metadata_location": null,
+        "temporal_hints": [],
+        "reference_datetime": "2026-04-24T17:15:00",
+        "explicit_location": null,
+        "meeting_related": true,
+        "hints": [
+          "Assunto: Fw: Imprevisto - acompanhamento pedagogico",
+          "Remetente: Ana Martins",
+          "Participante por defeito quando nao ha outro participante explicito: Ana Martins"
+        ]
+      }
+    }
+  },
+  {
+    "email_id": 365,
+    "email_text": "Caro colega, A pauta foi atualizada no sistema academico. Por favor confirme se consegue aceder.",
+    "subject": "Atualizacao de processo",
+    "qa_results": {
+      "participants": {
+        "answer": "Professora Ana Costa",
+        "confidence": 0.9993699789047241,
+        "question": "Quem participa na reunião?",
+        "valid": true
+      },
+      "time": {
+        "answer": "Professora Ana Costa",
+        "confidence": 0.47377046942710876,
+        "question": "Quando é a reunião?",
+        "valid": true
+      },
+      "location": {
+        "answer": null,
+        "confidence": 0.0,
+        "question": "Onde é a reunião?",
+        "valid": false,
+        "fallback_source": "non_meeting_no_location"
+      },
+      "topic": {
+        "answer": "Atualizacao de processo",
+        "confidence": 0.65,
+        "question": "Qual é o tópico da reunião?",
+        "valid": true,
+        "fallback_source": "fallback_subject"
+      }
+    },
+    "processed_at": "2026-07-17T14:14:07.148205",
+    "metadata": {
+      "model": "qa\\models\\bertimbau_qa_finetuned",
+      "confidence_threshold": 0.3,
+      "context_enrichment": {
+        "sender": "Professora Ana Costa",
+        "metadata_location": null,
+        "temporal_hints": [],
+        "reference_datetime": "2026-02-25T09:05:00",
+        "explicit_location": null,
+        "meeting_related": false,
+        "hints": [
+          "Assunto: Atualizacao de processo",
+          "Remetente: Professora Ana Costa",
+          "Participante por defeito quando nao ha outro participante explicito: Professora Ana Costa"
+        ]
+      }
+    }
+  },
+  {
+    "email_id": 383,
+    "email_text": "Caro/a docente Prof. Ricardo Mendes, Pode ficar marcado conforme proposto.",
+    "subject": "Re: Tudo certo para a reuniao",
+    "qa_results": {
+      "participants": {
+        "answer": "Secretaria Academica",
+        "confidence": 0.9914506077766418,
+        "question": "Quem participa na reunião?",
+        "valid": true
+      },
+      "time": {
+        "answer": "Secretaria Academica",
+        "confidence": 0.5870142579078674,
+        "question": "Quando é a reunião?",
+        "valid": true
+      },
+      "location": {
+        "answer": "remoto - google meet",
+        "confidence": 0.9,
+        "question": "Onde é a reunião?",
+        "valid": true,
+        "fallback_source": "fallback_metadata_location"
+      },
+      "topic": {
+        "answer": "Secretaria Academica",
+        "confidence": 0.639822244644165,
+        "question": "Qual é o tópico da reunião?",
+        "valid": true
+      }
+    },
+    "processed_at": "2026-07-17T14:14:07.283172",
+    "metadata": {
+      "model": "qa\\models\\bertimbau_qa_finetuned",
+      "confidence_threshold": 0.3,
+      "context_enrichment": {
+        "sender": "Secretaria Academica",
+        "metadata_location": "remoto - google meet",
+        "temporal_hints": [],
+        "reference_datetime": "2026-03-28T09:05:00",
+        "explicit_location": null,
+        "meeting_related": true,
+        "hints": [
+          "Assunto: Re: Tudo certo para a reuniao",
+          "Remetente: Secretaria Academica",
+          "Participante por defeito quando nao ha outro participante explicito: Secretaria Academica"
+        ]
+      }
+    }
+  },
+  {
+    "email_id": 189,
+    "email_text": "Estimado/a estudante, A reuniao marcada para depois da aula, em Zoom, tera de ser adiada.",
+    "subject": "Re: Cancelamento de reuniao",
+    "qa_results": {
+      "participants": {
+        "answer": "Secretaria Academica",
+        "confidence": 0.9949976205825806,
+        "question": "Quem participa na reunião?",
+        "valid": true
+      },
+      "time": {
+        "answer": "depois da aula",
+        "confidence": 0.9999995827674866,
+        "question": "Quando é a reunião?",
+        "valid": true
+      },
+      "location": {
+        "answer": "remoto - zoom",
+        "confidence": 0.9,
+        "question": "Onde é a reunião?",
+        "valid": true,
+        "fallback_source": "fallback_metadata_location"
+      },
+      "topic": {
+        "answer": "Secretaria Academica",
+        "confidence": 0.9291980266571045,
+        "question": "Qual é o tópico da reunião?",
+        "valid": true
+      }
+    },
+    "processed_at": "2026-07-17T14:14:07.430634",
+    "metadata": {
+      "model": "qa\\models\\bertimbau_qa_finetuned",
+      "confidence_threshold": 0.3,
+      "context_enrichment": {
+        "sender": "Secretaria Academica",
+        "metadata_location": "remoto - zoom",
+        "temporal_hints": [],
+        "reference_datetime": "2026-04-28T13:20:00",
+        "explicit_location": "remoto - zoom",
+        "meeting_related": true,
+        "hints": [
+          "Assunto: Re: Cancelamento de reuniao",
+          "Remetente: Secretaria Academica",
+          "Participante por defeito quando nao ha outro participante explicito: Secretaria Academica"
+        ]
+      }
+    }
+  },
+  {
+    "email_id": 286,
+    "email_text": "Bom dia, Confirmo a minha presenca na reuniao em remoto.",
+    "subject": "Re: Reuniao confirmada",
+    "qa_results": {
+      "participants": {
+        "answer": "Conselho Pedagogico",
+        "confidence": 0.9987326860427856,
+        "question": "Quem participa na reunião?",
+        "valid": true
+      },
+      "time": {
+        "answer": "Conselho Pedagogico",
+        "confidence": 0.5040366053581238,
+        "question": "Quando é a reunião?",
+        "valid": true
+      },
+      "location": {
+        "answer": "remoto - zoom",
+        "confidence": 0.8,
+        "question": "Onde é a reunião?",
+        "valid": true,
+        "fallback_source": "fallback_explicit_location"
+      },
+      "topic": {
+        "answer": "Conselho Pedagogico",
+        "confidence": 0.5135281085968018,
+        "question": "Qual é o tópico da reunião?",
+        "valid": true
+      }
+    },
+    "processed_at": "2026-07-17T14:14:07.575683",
+    "metadata": {
+      "model": "qa\\models\\bertimbau_qa_finetuned",
+      "confidence_threshold": 0.3,
+      "context_enrichment": {
+        "sender": "Conselho Pedagogico",
+        "metadata_location": null,
+        "temporal_hints": [],
+        "reference_datetime": "2026-03-03T10:50:00",
+        "explicit_location": "remoto - zoom",
+        "meeting_related": true,
+        "hints": [
+          "Assunto: Re: Reuniao confirmada",
+          "Remetente: Conselho Pedagogico",
+          "Participante por defeito quando nao ha outro participante explicito: Conselho Pedagogico"
+        ]
+      }
+    }
+  },
+  {
+    "email_id": 8,
+    "email_text": "Bom dia Professora Sofia Carvalho, Agradeco o envio do relatorio. Irei analisar e dar feedback assim que possivel.",
+    "subject": "Fw: Aviso aos estudantes",
+    "qa_results": {
+      "participants": {
+        "answer": "Diretor do Curso",
+        "confidence": 0.9834771156311035,
+        "question": "Quem participa na reunião?",
+        "valid": true
+      },
+      "time": {
+        "answer": "Diretor do Curso Participante por defeito quando nao ha outro participante explicito: Diretor do Curso",
+        "confidence": 0.6419687867164612,
+        "question": "Quando é a reunião?",
+        "valid": true
+      },
+      "location": {
+        "answer": null,
+        "confidence": 0.0,
+        "question": "Onde é a reunião?",
+        "valid": false,
+        "fallback_source": "non_meeting_no_location"
+      },
+      "topic": {
+        "answer": "Fw: Aviso aos estudantes",
+        "confidence": 0.65,
+        "question": "Qual é o tópico da reunião?",
+        "valid": true,
+        "fallback_source": "fallback_subject"
+      }
+    },
+    "processed_at": "2026-07-17T14:14:07.731870",
+    "metadata": {
+      "model": "qa\\models\\bertimbau_qa_finetuned",
+      "confidence_threshold": 0.3,
+      "context_enrichment": {
+        "sender": "Diretor do Curso",
+        "metadata_location": null,
+        "temporal_hints": [],
+        "reference_datetime": "2026-05-24T08:00:00",
+        "explicit_location": null,
+        "meeting_related": false,
+        "hints": [
+          "Assunto: Fw: Aviso aos estudantes",
+          "Remetente: Diretor do Curso",
+          "Participante por defeito quando nao ha outro participante explicito: Diretor do Curso"
+        ]
+      }
+    }
+  },
+  {
+    "email_id": 280,
+    "email_text": "Cara Professora, Relembro que a aula de amanha sera dedicada a exercicios praticos.",
+    "subject": "Fw: Informacao academica",
+    "qa_results": {
+      "participants": {
+        "answer": "Diretor do Curso",
+        "confidence": 0.44655340909957886,
+        "question": "Quem participa na reunião?",
+        "valid": true
+      },
+      "time": {
+        "answer": "amanha",
+        "confidence": 0.9998067617416382,
+        "question": "Quando é a reunião?",
+        "valid": true,
+        "normalized": {
+          "text": "amanha",
+          "original_text": "amanha",
+          "reference_datetime": "2026-03-09T15:20:00",
+          "temporal_type": "relative",
+          "normalized_datetime": "2026-03-10T15:20:00",
+          "precision": "day",
+          "confidence": 0.85,
+          "extraction_method": "rule_based",
+          "notes": [
+            "Parsed relative expression: 'amanha'"
+          ]
+        }
+      },
+      "location": {
+        "answer": null,
+        "confidence": 0.0,
+        "question": "Onde é a reunião?",
+        "valid": false,
+        "fallback_source": "non_meeting_no_location"
+      },
+      "topic": {
+        "answer": "exercicios praticos",
+        "confidence": 0.93189537525177,
+        "question": "Qual é o tópico da reunião?",
+        "valid": true
+      }
+    },
+    "processed_at": "2026-07-17T14:14:07.968228",
+    "metadata": {
+      "model": "qa\\models\\bertimbau_qa_finetuned",
+      "confidence_threshold": 0.3,
+      "context_enrichment": {
+        "sender": "Diretor do Curso",
+        "metadata_location": null,
+        "temporal_hints": [
+          {
+            "text": "amanha",
+            "original_text": "amanha",
+            "reference_datetime": "2026-03-09T15:20:00",
+            "temporal_type": "relative",
+            "normalized_datetime": "2026-03-10T15:20:00",
+            "precision": "day",
+            "confidence": 0.85,
+            "extraction_method": "rule_based",
+            "notes": [
+              "Parsed relative expression: 'amanha'"
+            ]
+          }
+        ],
+        "reference_datetime": "2026-03-09T15:20:00",
+        "explicit_location": null,
+        "meeting_related": false,
+        "hints": [
+          "Assunto: Fw: Informacao academica",
+          "Remetente: Diretor do Curso",
+          "Participante por defeito quando nao ha outro participante explicito: Diretor do Curso",
+          "Expressoes temporais normalizadas:",
+          "- amanha -> 2026-03-10T15:20:00"
+        ]
+      }
+    }
+  },
+  {
+    "email_id": 201,
+    "email_text": "Exmo./a Senhor/a, Confirmo a minha presenca na reuniao em Google Meet. Se preferir, posso adaptar ao horario do departamento.",
+    "subject": "Reuniao confirmada",
+    "qa_results": {
+      "participants": {
+        "answer": "Conselho Pedagogico",
+        "confidence": 0.9820649027824402,
+        "question": "Quem participa na reunião?",
+        "valid": true
+      },
+      "time": {
+        "answer": "Conselho Pedagogico",
+        "confidence": 0.7162758708000183,
+        "question": "Quando é a reunião?",
+        "valid": true
+      },
+      "location": {
+        "answer": "remoto - google meet",
+        "confidence": 0.9,
+        "question": "Onde é a reunião?",
+        "valid": true,
+        "fallback_source": "fallback_metadata_location"
+      },
+      "topic": {
+        "answer": "Conselho Pedagogico",
+        "confidence": 0.9849147796630859,
+        "question": "Qual é o tópico da reunião?",
+        "valid": true
+      }
+    },
+    "processed_at": "2026-07-17T14:14:08.135916",
+    "metadata": {
+      "model": "qa\\models\\bertimbau_qa_finetuned",
+      "confidence_threshold": 0.3,
+      "context_enrichment": {
+        "sender": "Conselho Pedagogico",
+        "metadata_location": "remoto - google meet",
+        "temporal_hints": [],
+        "reference_datetime": "2026-04-12T12:40:00",
+        "explicit_location": "remoto - google meet",
+        "meeting_related": true,
+        "hints": [
+          "Assunto: Reuniao confirmada",
+          "Remetente: Conselho Pedagogico",
+          "Participante por defeito quando nao ha outro participante explicito: Conselho Pedagogico"
+        ]
+      }
+    }
+  },
+  {
+    "email_id": 354,
+    "email_text": "Caro/a docente, Seria possivel agendar uma breve reuniao ao final do dia? O objetivo e discutir orientacao da dissertacao.",
+    "subject": "Re: Disponibilidade para reuniao",
+    "qa_results": {
+      "participants": {
+        "answer": "Secretaria Academica",
+        "confidence": 0.9931333661079407,
+        "question": "Quem participa na reunião?",
+        "valid": true
+      },
+      "time": {
+        "answer": "ao final do dia",
+        "confidence": 0.9999962449073792,
+        "question": "Quando é a reunião?",
+        "valid": true
+      },
+      "location": {
+        "answer": "remoto - zoom",
+        "confidence": 0.9,
+        "question": "Onde é a reunião?",
+        "valid": true,
+        "fallback_source": "fallback_metadata_location"
+      },
+      "topic": {
+        "answer": "orientacao da dissertacao",
+        "confidence": 0.9997770190238953,
+        "question": "Qual é o tópico da reunião?",
+        "valid": true
+      }
+    },
+    "processed_at": "2026-07-17T14:14:08.300317",
+    "metadata": {
+      "model": "qa\\models\\bertimbau_qa_finetuned",
+      "confidence_threshold": 0.3,
+      "context_enrichment": {
+        "sender": "Secretaria Academica",
+        "metadata_location": "remoto - zoom",
+        "temporal_hints": [],
+        "reference_datetime": "2026-04-17T14:10:00",
+        "explicit_location": null,
+        "meeting_related": true,
+        "hints": [
+          "Assunto: Re: Disponibilidade para reuniao",
+          "Remetente: Secretaria Academica",
+          "Participante por defeito quando nao ha outro participante explicito: Secretaria Academica"
+        ]
+      }
+    }
+  },
+  {
+    "email_id": 214,
+    "email_text": "Cara colega Gabinete de Estagios, Ainda falta entregar a declaracao de presenca no portal academico.",
+    "subject": "Fw: Documentacao em falta",
+    "qa_results": {
+      "participants": {
+        "answer": "Professora Ana Costa",
+        "confidence": 0.9935603737831116,
+        "question": "Quem participa na reunião?",
+        "valid": true
+      },
+      "time": {
+        "answer": "Professora Ana Costa",
+        "confidence": 0.7381744980812073,
+        "question": "Quando é a reunião?",
+        "valid": true
+      },
+      "location": {
+        "answer": null,
+        "confidence": 0.0,
+        "question": "Onde é a reunião?",
+        "valid": false,
+        "fallback_source": "non_meeting_no_location"
+      },
+      "topic": {
+        "answer": "Fw: Documentacao em falta",
+        "confidence": 0.65,
+        "question": "Qual é o tópico da reunião?",
+        "valid": true,
+        "fallback_source": "fallback_subject"
+      }
+    },
+    "processed_at": "2026-07-17T14:14:08.473710",
+    "metadata": {
+      "model": "qa\\models\\bertimbau_qa_finetuned",
+      "confidence_threshold": 0.3,
+      "context_enrichment": {
+        "sender": "Professora Ana Costa",
+        "metadata_location": null,
+        "temporal_hints": [],
+        "reference_datetime": "2026-02-04T11:20:00",
+        "explicit_location": null,
+        "meeting_related": false,
+        "hints": [
+          "Assunto: Fw: Documentacao em falta",
+          "Remetente: Professora Ana Costa",
+          "Participante por defeito quando nao ha outro participante explicito: Professora Ana Costa"
+        ]
+      }
+    }
+  },
+  {
+    "email_id": 138,
+    "email_text": "Caro colega Coordenacao de Mestrado, Por indicacao da direcao, a reuniao sobre calendario de avaliacoes fica cancelada ate nova comunicacao.",
+    "subject": "RE: Reuniao sem efeito",
+    "qa_results": {
+      "participants": {
+        "answer": "Professor Luis Almeida",
+        "confidence": 0.9584380984306335,
+        "question": "Quem participa na reunião?",
+        "valid": true
+      },
+      "time": {
+        "answer": "Professor Luis Almeida",
+        "confidence": 0.5411004424095154,
+        "question": "Quando é a reunião?",
+        "valid": true
+      },
+      "location": {
+        "answer": "presencial - gabinete de orientacao",
+        "confidence": 0.9,
+        "question": "Onde é a reunião?",
+        "valid": true,
+        "fallback_source": "fallback_metadata_location"
+      },
+      "topic": {
+        "answer": "calendario de avaliacoes",
+        "confidence": 0.9998838305473328,
+        "question": "Qual é o tópico da reunião?",
+        "valid": true
+      }
+    },
+    "processed_at": "2026-07-17T14:14:08.630326",
+    "metadata": {
+      "model": "qa\\models\\bertimbau_qa_finetuned",
+      "confidence_threshold": 0.3,
+      "context_enrichment": {
+        "sender": "Professor Luis Almeida",
+        "metadata_location": "presencial - gabinete de orientacao",
+        "temporal_hints": [],
+        "reference_datetime": "2026-05-07T08:30:00",
+        "explicit_location": null,
+        "meeting_related": true,
+        "hints": [
+          "Assunto: RE: Reuniao sem efeito",
+          "Remetente: Professor Luis Almeida",
+          "Participante por defeito quando nao ha outro participante explicito: Professor Luis Almeida"
+        ]
+      }
+    }
+  },
+  {
+    "email_id": 258,
+    "email_text": "Boa tarde Gabinete de Estagios, Nao vou conseguir estar presente na reuniao em remoto, pelo que terei de cancelar.",
+    "subject": "Reuniao sem efeito",
+    "qa_results": {
+      "participants": {
+        "answer": "Prof. Ricardo Mendes",
+        "confidence": 0.9978726506233215,
+        "question": "Quem participa na reunião?",
+        "valid": true
+      },
+      "time": {
+        "answer": "Prof. Ricardo Mendes",
+        "confidence": 0.6994202136993408,
+        "question": "Quando é a reunião?",
+        "valid": true
+      },
+      "location": {
+        "answer": "remoto - zoom",
+        "confidence": 0.8,
+        "question": "Onde é a reunião?",
+        "valid": true,
+        "fallback_source": "fallback_explicit_location"
+      },
+      "topic": {
+        "answer": "Prof. Ricardo Mendes",
+        "confidence": 0.7076128125190735,
+        "question": "Qual é o tópico da reunião?",
+        "valid": true
+      }
+    },
+    "processed_at": "2026-07-17T14:14:08.787635",
+    "metadata": {
+      "model": "qa\\models\\bertimbau_qa_finetuned",
+      "confidence_threshold": 0.3,
+      "context_enrichment": {
+        "sender": "Prof. Ricardo Mendes",
+        "metadata_location": null,
+        "temporal_hints": [],
+        "reference_datetime": "2026-03-21T15:10:00",
+        "explicit_location": "remoto - zoom",
+        "meeting_related": true,
+        "hints": [
+          "Assunto: Reuniao sem efeito",
+          "Remetente: Prof. Ricardo Mendes",
+          "Participante por defeito quando nao ha outro participante explicito: Prof. Ricardo Mendes"
+        ]
+      }
+    }
+  },
+  {
+    "email_id": 111,
+    "email_text": "Bom dia Mariana Lopes, Envio em anexo o documento atualizado relativo a revisao do plano de trabalhos.",
+    "subject": "Re: Atualizacao de processo",
+    "qa_results": {
+      "participants": {
+        "answer": "Secretaria Academica",
+        "confidence": 0.999604344367981,
+        "question": "Quem participa na reunião?",
+        "valid": true
+      },
+      "time": {
+        "answer": "Secretaria Academica",
+        "confidence": 0.634012758731842,
+        "question": "Quando é a reunião?",
+        "valid": true
+      },
+      "location": {
+        "answer": null,
+        "confidence": 0.0,
+        "question": "Onde é a reunião?",
+        "valid": false,
+        "fallback_source": "non_meeting_no_location"
+      },
+      "topic": {
+        "answer": "revisao do plano de trabalhos",
+        "confidence": 0.9997814297676086,
+        "question": "Qual é o tópico da reunião?",
+        "valid": true
+      }
+    },
+    "processed_at": "2026-07-17T14:14:08.945196",
+    "metadata": {
+      "model": "qa\\models\\bertimbau_qa_finetuned",
+      "confidence_threshold": 0.3,
+      "context_enrichment": {
+        "sender": "Secretaria Academica",
+        "metadata_location": null,
+        "temporal_hints": [],
+        "reference_datetime": "2026-04-10T10:05:00",
+        "explicit_location": null,
+        "meeting_related": false,
+        "hints": [
+          "Assunto: Re: Atualizacao de processo",
+          "Remetente: Secretaria Academica",
+          "Participante por defeito quando nao ha outro participante explicito: Secretaria Academica"
+        ]
+      }
+    }
+  },
+  {
+    "email_id": 198,
+    "email_text": "Boa tarde Prof. Ricardo Mendes, Gostaria de saber se tem disponibilidade para reunirmos dia 18 as 9h30, em remoto, para falarmos sobre orientacao da dissertacao. Se preferir, posso adaptar ao horario do departamento.",
+    "subject": "RE: Remarcacao de reuniao",
+    "qa_results": {
+      "participants": {
+        "answer": "Professor Luis Almeida",
+        "confidence": 0.9378897547721863,
+        "question": "Quem participa na reunião?",
+        "valid": true
+      },
+      "time": {
+        "answer": "dia 18 as 9h30",
+        "confidence": 0.9999977946281433,
+        "question": "Quando é a reunião?",
+        "valid": true,
+        "normalized": {
+          "text": "9h30",
+          "original_text": "9h30",
+          "reference_datetime": "2026-05-15T15:10:00",
+          "temporal_type": "time",
+          "normalized_datetime": "2026-05-15T09:30:00",
+          "precision": "time_only",
+          "confidence": 0.8,
+          "extraction_method": "rule_based",
+          "notes": [
+            "Parsed as time-only expression"
+          ]
+        }
+      },
+      "location": {
+        "answer": "remoto - zoom",
+        "confidence": 0.8,
+        "question": "Onde é a reunião?",
+        "valid": true,
+        "fallback_source": "fallback_explicit_location"
+      },
+      "topic": {
+        "answer": "orientacao da dissertacao",
+        "confidence": 0.999993622303009,
+        "question": "Qual é o tópico da reunião?",
+        "valid": true
+      }
+    },
+    "processed_at": "2026-07-17T14:14:09.220636",
+    "metadata": {
+      "model": "qa\\models\\bertimbau_qa_finetuned",
+      "confidence_threshold": 0.3,
+      "context_enrichment": {
+        "sender": "Professor Luis Almeida",
+        "metadata_location": null,
+        "temporal_hints": [
+          {
+            "text": "9h30",
+            "original_text": "9h30",
+            "reference_datetime": "2026-05-15T15:10:00",
+            "temporal_type": "time",
+            "normalized_datetime": "2026-05-15T09:30:00",
+            "precision": "time_only",
+            "confidence": 0.8,
+            "extraction_method": "rule_based",
+            "notes": [
+              "Parsed as time-only expression"
+            ]
+          }
+        ],
+        "reference_datetime": "2026-05-15T15:10:00",
+        "explicit_location": "remoto - zoom",
+        "meeting_related": true,
+        "hints": [
+          "Assunto: RE: Remarcacao de reuniao",
+          "Remetente: Professor Luis Almeida",
+          "Participante por defeito quando nao ha outro participante explicito: Professor Luis Almeida",
+          "Expressoes temporais normalizadas:",
+          "- 9h30 -> 2026-05-15T09:30:00"
+        ]
+      }
+    }
+  },
+  {
+    "email_id": 105,
+    "email_text": "Cara colega Conselho Pedagogico, Nao vou conseguir estar presente na reuniao em gabinete da direcao, pelo que terei de cancelar.",
+    "subject": "RE: Imprevisto - avaliacao continua",
+    "qa_results": {
+      "participants": {
+        "answer": "Professora Sofia Carvalho",
+        "confidence": 0.7469359636306763,
+        "question": "Quem participa na reunião?",
+        "valid": true
+      },
+      "time": {
+        "answer": "Professora Sofia Carvalho",
+        "confidence": 0.39535728096961975,
+        "question": "Quando é a reunião?",
+        "valid": true
+      },
+      "location": {
+        "answer": "presencial - gabinete da direcao",
+        "confidence": 0.9,
+        "question": "Onde é a reunião?",
+        "valid": true,
+        "fallback_source": "fallback_metadata_location"
+      },
+      "topic": {
+        "answer": "avaliacao continua",
+        "confidence": 0.9992588758468628,
+        "question": "Qual é o tópico da reunião?",
+        "valid": true
+      }
+    },
+    "processed_at": "2026-07-17T14:14:09.390578",
+    "metadata": {
+      "model": "qa\\models\\bertimbau_qa_finetuned",
+      "confidence_threshold": 0.3,
+      "context_enrichment": {
+        "sender": "Professora Sofia Carvalho",
+        "metadata_location": "presencial - gabinete da direcao",
+        "temporal_hints": [],
+        "reference_datetime": "2026-05-20T14:15:00",
+        "explicit_location": "presencial - gabinete da direcao",
+        "meeting_related": true,
+        "hints": [
+          "Assunto: RE: Imprevisto - avaliacao continua",
+          "Remetente: Professora Sofia Carvalho",
+          "Participante por defeito quando nao ha outro participante explicito: Professora Sofia Carvalho"
+        ]
+      }
+    }
+  },
+  {
+    "email_id": 197,
+    "email_text": "Boa tarde, Proponho fazermos uma reuniao depois de almoco, em remoto, para fechar o ponto de situacao de orientacao da dissertacao.",
+    "subject": "Necessidade de remarcar",
+    "qa_results": {
+      "participants": {
+        "answer": "Professora Sofia Carvalho",
+        "confidence": 0.8237313032150269,
+        "question": "Quem participa na reunião?",
+        "valid": true
+      },
+      "time": {
+        "answer": "depois de almoco",
+        "confidence": 0.9999959468841553,
+        "question": "Quando é a reunião?",
+        "valid": true
+      },
+      "location": {
+        "answer": "remoto - zoom",
+        "confidence": 0.8,
+        "question": "Onde é a reunião?",
+        "valid": true,
+        "fallback_source": "fallback_explicit_location"
+      },
+      "topic": {
+        "answer": "orientacao da dissertacao",
+        "confidence": 0.9958400726318359,
+        "question": "Qual é o tópico da reunião?",
+        "valid": true
+      }
+    },
+    "processed_at": "2026-07-17T14:14:09.555683",
+    "metadata": {
+      "model": "qa\\models\\bertimbau_qa_finetuned",
+      "confidence_threshold": 0.3,
+      "context_enrichment": {
+        "sender": "Professora Sofia Carvalho",
+        "metadata_location": null,
+        "temporal_hints": [],
+        "reference_datetime": "2026-05-25T17:20:00",
+        "explicit_location": "remoto - zoom",
+        "meeting_related": true,
+        "hints": [
+          "Assunto: Necessidade de remarcar",
+          "Remetente: Professora Sofia Carvalho",
+          "Participante por defeito quando nao ha outro participante explicito: Professora Sofia Carvalho"
+        ]
+      }
+    }
+  },
+  {
+    "email_id": 348,
+    "email_text": "Bom dia, A pauta foi atualizada no sistema academico. Por favor confirme se consegue aceder.",
+    "subject": "Re: Informacao academica",
+    "qa_results": {
+      "participants": {
+        "answer": "Secretaria Academica",
+        "confidence": 0.9953228831291199,
+        "question": "Quem participa na reunião?",
+        "valid": true
+      },
+      "time": {
+        "answer": "Secretaria Academica",
+        "confidence": 0.5400128960609436,
+        "question": "Quando é a reunião?",
+        "valid": true
+      },
+      "location": {
+        "answer": null,
+        "confidence": 0.0,
+        "question": "Onde é a reunião?",
+        "valid": false,
+        "fallback_source": "non_meeting_no_location"
+      },
+      "topic": {
+        "answer": "Re: Informacao academica",
+        "confidence": 0.65,
+        "question": "Qual é o tópico da reunião?",
+        "valid": true,
+        "fallback_source": "fallback_subject"
+      }
+    },
+    "processed_at": "2026-07-17T14:14:09.704406",
+    "metadata": {
+      "model": "qa\\models\\bertimbau_qa_finetuned",
+      "confidence_threshold": 0.3,
+      "context_enrichment": {
+        "sender": "Secretaria Academica",
+        "metadata_location": null,
+        "temporal_hints": [],
+        "reference_datetime": "2026-02-26T18:45:00",
+        "explicit_location": null,
+        "meeting_related": false,
+        "hints": [
+          "Assunto: Re: Informacao academica",
+          "Remetente: Secretaria Academica",
+          "Participante por defeito quando nao ha outro participante explicito: Secretaria Academica"
+        ]
+      }
+    }
+  },
+  {
+    "email_id": 376,
+    "email_text": "Caro colega Conselho Pedagogico, Quando tiver disponibilidade, gostava de combinar uma reuniao sobre credibilidade dos dados recolhidos. quinta as 16h seria possivel?",
+    "subject": "RE: Remarcacao de reuniao",
+    "qa_results": {
+      "participants": {
+        "answer": "Professora Ana Costa",
+        "confidence": 0.8109375238418579,
+        "question": "Quem participa na reunião?",
+        "valid": true
+      },
+      "time": {
+        "answer": "quinta as 16h",
+        "confidence": 0.9999955892562866,
+        "question": "Quando é a reunião?",
+        "valid": true,
+        "normalized": {
+          "text": "quinta as 16h",
+          "original_text": "quinta as 16h",
+          "reference_datetime": "2026-05-24T12:50:00",
+          "temporal_type": "datetime",
+          "normalized_datetime": "2026-05-28T16:00:00",
+          "precision": "exact",
+          "confidence": 0.9,
+          "extraction_method": "rule_based",
+          "notes": []
+        }
+      },
+      "location": {
+        "answer": "remoto - zoom",
+        "confidence": 0.6,
+        "question": "Onde é a reunião?",
+        "valid": true,
+        "fallback_source": "default_remote_location"
+      },
+      "topic": {
+        "answer": "credibilidade dos dados recolhidos",
+        "confidence": 0.9999417662620544,
+        "question": "Qual é o tópico da reunião?",
+        "valid": true
+      }
+    },
+    "processed_at": "2026-07-17T14:14:09.982821",
+    "metadata": {
+      "model": "qa\\models\\bertimbau_qa_finetuned",
+      "confidence_threshold": 0.3,
+      "context_enrichment": {
+        "sender": "Professora Ana Costa",
+        "metadata_location": null,
+        "temporal_hints": [
+          {
+            "text": "quinta as 16h",
+            "original_text": "quinta as 16h",
+            "reference_datetime": "2026-05-24T12:50:00",
+            "temporal_type": "datetime",
+            "normalized_datetime": "2026-05-28T16:00:00",
+            "precision": "exact",
+            "confidence": 0.9,
+            "extraction_method": "rule_based",
+            "notes": []
+          },
+          {
+            "text": "16h",
+            "original_text": "16h",
+            "reference_datetime": "2026-05-24T12:50:00",
+            "temporal_type": "time",
+            "normalized_datetime": "2026-05-24T16:00:00",
+            "precision": "time_only",
+            "confidence": 0.8,
+            "extraction_method": "rule_based",
+            "notes": [
+              "Parsed as time-only expression"
+            ]
+          }
+        ],
+        "reference_datetime": "2026-05-24T12:50:00",
+        "explicit_location": null,
+        "meeting_related": true,
+        "hints": [
+          "Assunto: RE: Remarcacao de reuniao",
+          "Remetente: Professora Ana Costa",
+          "Participante por defeito quando nao ha outro participante explicito: Professora Ana Costa",
+          "Expressoes temporais normalizadas:",
+          "- quinta as 16h -> 2026-05-28T16:00:00",
+          "- 16h -> 2026-05-24T16:00:00"
+        ]
+      }
+    }
+  },
+  {
+    "email_id": 384,
+    "email_text": "Exmo./a Senhor/a, Por motivo imprevisto, a reuniao de sexta as 14h30 fica sem efeito.",
+    "subject": "RE: Cancelamento de reuniao",
+    "qa_results": {
+      "participants": {
+        "answer": "Gabinete de Estagios",
+        "confidence": 0.8804325461387634,
+        "question": "Quem participa na reunião?",
+        "valid": true
+      },
+      "time": {
+        "answer": "sexta as 14h30",
+        "confidence": 0.9999967813491821,
+        "question": "Quando é a reunião?",
+        "valid": true,
+        "normalized": {
+          "text": "sexta as 14h",
+          "original_text": "sexta as 14h",
+          "reference_datetime": "2026-03-21T10:30:00",
+          "temporal_type": "datetime",
+          "normalized_datetime": "2026-03-27T14:00:00",
+          "precision": "exact",
+          "confidence": 0.9,
+          "extraction_method": "rule_based",
+          "notes": []
+        }
+      },
+      "location": {
+        "answer": "remoto - zoom",
+        "confidence": 0.6,
+        "question": "Onde é a reunião?",
+        "valid": true,
+        "fallback_source": "default_remote_location"
+      },
+      "topic": {
+        "answer": "Gabinete de Estagios",
+        "confidence": 0.6646224856376648,
+        "question": "Qual é o tópico da reunião?",
+        "valid": true
+      }
+    },
+    "processed_at": "2026-07-17T14:14:10.244318",
+    "metadata": {
+      "model": "qa\\models\\bertimbau_qa_finetuned",
+      "confidence_threshold": 0.3,
+      "context_enrichment": {
+        "sender": "Gabinete de Estagios",
+        "metadata_location": null,
+        "temporal_hints": [
+          {
+            "text": "sexta as 14h",
+            "original_text": "sexta as 14h",
+            "reference_datetime": "2026-03-21T10:30:00",
+            "temporal_type": "datetime",
+            "normalized_datetime": "2026-03-27T14:00:00",
+            "precision": "exact",
+            "confidence": 0.9,
+            "extraction_method": "rule_based",
+            "notes": []
+          },
+          {
+            "text": "14h30",
+            "original_text": "14h30",
+            "reference_datetime": "2026-03-21T10:30:00",
+            "temporal_type": "time",
+            "normalized_datetime": "2026-03-21T14:30:00",
+            "precision": "time_only",
+            "confidence": 0.8,
+            "extraction_method": "rule_based",
+            "notes": [
+              "Parsed as time-only expression"
+            ]
+          }
+        ],
+        "reference_datetime": "2026-03-21T10:30:00",
+        "explicit_location": null,
+        "meeting_related": true,
+        "hints": [
+          "Assunto: RE: Cancelamento de reuniao",
+          "Remetente: Gabinete de Estagios",
+          "Participante por defeito quando nao ha outro participante explicito: Gabinete de Estagios",
+          "Expressoes temporais normalizadas:",
+          "- sexta as 14h -> 2026-03-27T14:00:00",
+          "- 14h30 -> 2026-03-21T14:30:00"
+        ]
+      }
+    }
+  },
+  {
+    "email_id": 367,
+    "email_text": "Cara colega Coordenacao de Mestrado, Tudo certo para a reuniao sobre pedido de equivalencias. Ate sexta as 14h30.",
+    "subject": "Re: Reuniao confirmada",
+    "qa_results": {
+      "participants": {
+        "answer": "Professora Sofia Carvalho",
+        "confidence": 0.7628540396690369,
+        "question": "Quem participa na reunião?",
+        "valid": true
+      },
+      "time": {
+        "answer": "sexta as 14h30",
+        "confidence": 0.9999982118606567,
+        "question": "Quando é a reunião?",
+        "valid": true,
+        "normalized": {
+          "text": "sexta as 14h",
+          "original_text": "sexta as 14h",
+          "reference_datetime": "2026-04-24T17:15:00",
+          "temporal_type": "datetime",
+          "normalized_datetime": "2026-05-01T14:00:00",
+          "precision": "exact",
+          "confidence": 0.9,
+          "extraction_method": "rule_based",
+          "notes": [
+            "Ambiguous weekday with past time; assuming next week"
+          ]
+        }
+      },
+      "location": {
+        "answer": "remoto - zoom",
+        "confidence": 0.6,
+        "question": "Onde é a reunião?",
+        "valid": true,
+        "fallback_source": "default_remote_location"
+      },
+      "topic": {
+        "answer": "pedido de equivalencias",
+        "confidence": 0.9999730587005615,
+        "question": "Qual é o tópico da reunião?",
+        "valid": true
+      }
+    },
+    "processed_at": "2026-07-17T14:14:10.498764",
+    "metadata": {
+      "model": "qa\\models\\bertimbau_qa_finetuned",
+      "confidence_threshold": 0.3,
+      "context_enrichment": {
+        "sender": "Professora Sofia Carvalho",
+        "metadata_location": null,
+        "temporal_hints": [
+          {
+            "text": "sexta as 14h",
+            "original_text": "sexta as 14h",
+            "reference_datetime": "2026-04-24T17:15:00",
+            "temporal_type": "datetime",
+            "normalized_datetime": "2026-05-01T14:00:00",
+            "precision": "exact",
+            "confidence": 0.9,
+            "extraction_method": "rule_based",
+            "notes": [
+              "Ambiguous weekday with past time; assuming next week"
+            ]
+          },
+          {
+            "text": "14h30",
+            "original_text": "14h30",
+            "reference_datetime": "2026-04-24T17:15:00",
+            "temporal_type": "time",
+            "normalized_datetime": "2026-04-24T14:30:00",
+            "precision": "time_only",
+            "confidence": 0.8,
+            "extraction_method": "rule_based",
+            "notes": [
+              "Parsed as time-only expression"
+            ]
+          }
+        ],
+        "reference_datetime": "2026-04-24T17:15:00",
+        "explicit_location": null,
+        "meeting_related": true,
+        "hints": [
+          "Assunto: Re: Reuniao confirmada",
+          "Remetente: Professora Sofia Carvalho",
+          "Participante por defeito quando nao ha outro participante explicito: Professora Sofia Carvalho",
+          "Expressoes temporais normalizadas:",
+          "- sexta as 14h -> 2026-05-01T14:00:00",
+          "- 14h30 -> 2026-04-24T14:30:00"
+        ]
+      }
+    }
+  },
+  {
+    "email_id": 210,
+    "email_text": "Caro/a docente Professor Luis Almeida, Segue a informacao solicitada pela secretaria sobre preparacao da defesa.",
+    "subject": "Fw: Pedido de esclarecimento",
+    "qa_results": {
+      "participants": {
+        "answer": "Secretaria Academica",
+        "confidence": 0.9958592653274536,
+        "question": "Quem participa na reunião?",
+        "valid": true
+      },
+      "time": {
+        "answer": "Secretaria Academica Participante por defeito quando nao ha outro participante explicito: Secretaria Academica",
+        "confidence": 0.5221179723739624,
+        "question": "Quando é a reunião?",
+        "valid": true
+      },
+      "location": {
+        "answer": null,
+        "confidence": 0.0,
+        "question": "Onde é a reunião?",
+        "valid": false,
+        "fallback_source": "non_meeting_no_location"
+      },
+      "topic": {
+        "answer": "preparacao da defesa",
+        "confidence": 0.9999473094940186,
+        "question": "Qual é o tópico da reunião?",
+        "valid": true
+      }
+    },
+    "processed_at": "2026-07-17T14:14:10.656794",
+    "metadata": {
+      "model": "qa\\models\\bertimbau_qa_finetuned",
+      "confidence_threshold": 0.3,
+      "context_enrichment": {
+        "sender": "Secretaria Academica",
+        "metadata_location": null,
+        "temporal_hints": [],
+        "reference_datetime": "2026-04-04T10:15:00",
+        "explicit_location": null,
+        "meeting_related": false,
+        "hints": [
+          "Assunto: Fw: Pedido de esclarecimento",
+          "Remetente: Secretaria Academica",
+          "Participante por defeito quando nao ha outro participante explicito: Secretaria Academica"
+        ]
+      }
+    }
+  },
+  {
+    "email_id": 39,
+    "email_text": "Caro colega Secretaria Academica, Conseguimos reagendar a reuniao sobre coordenacao da unidade curricular para depois de almoco, em gabinete 3.12?",
+    "subject": "Fw: Remarcacao de reuniao",
+    "qa_results": {
+      "participants": {
+        "answer": "Prof. Ricardo Mendes",
+        "confidence": 0.9709741473197937,
+        "question": "Quem participa na reunião?",
+        "valid": true
+      },
+      "time": {
+        "answer": "depois de almoco",
+        "confidence": 0.9999821782112122,
+        "question": "Quando é a reunião?",
+        "valid": true
+      },
+      "location": {
+        "answer": "presencial - gabinete 3.12",
+        "confidence": 0.9,
+        "question": "Onde é a reunião?",
+        "valid": true,
+        "fallback_source": "fallback_metadata_location"
+      },
+      "topic": {
+        "answer": "coordenacao da unidade curricular",
+        "confidence": 0.9974071979522705,
+        "question": "Qual é o tópico da reunião?",
+        "valid": true
+      }
+    },
+    "processed_at": "2026-07-17T14:14:10.817205",
+    "metadata": {
+      "model": "qa\\models\\bertimbau_qa_finetuned",
+      "confidence_threshold": 0.3,
+      "context_enrichment": {
+        "sender": "Prof. Ricardo Mendes",
+        "metadata_location": "presencial - gabinete 3.12",
+        "temporal_hints": [],
+        "reference_datetime": "2026-03-27T11:20:00",
+        "explicit_location": "presencial - gabinete 3.12",
+        "meeting_related": true,
+        "hints": [
+          "Assunto: Fw: Remarcacao de reuniao",
+          "Remetente: Prof. Ricardo Mendes",
+          "Participante por defeito quando nao ha outro participante explicito: Prof. Ricardo Mendes"
+        ]
+      }
+    }
+  },
+  {
+    "email_id": 125,
+    "email_text": "Bom dia Professora Sofia Carvalho, Da minha parte esta confirmado. Encontramo-nos em remoto.",
+    "subject": "RE: Tudo certo para a reuniao",
+    "qa_results": {
+      "participants": {
+        "answer": "Gabinete de Estagios",
+        "confidence": 0.9921269416809082,
+        "question": "Quem participa na reunião?",
+        "valid": true
+      },
+      "time": {
+        "answer": "Gabinete de Estagios",
+        "confidence": 0.6082622408866882,
+        "question": "Quando é a reunião?",
+        "valid": true
+      },
+      "location": {
+        "answer": "remoto - zoom",
+        "confidence": 0.8,
+        "question": "Onde é a reunião?",
+        "valid": true,
+        "fallback_source": "fallback_explicit_location"
+      },
+      "topic": {
+        "answer": "Gabinete de Estagios",
+        "confidence": 0.8951269388198853,
+        "question": "Qual é o tópico da reunião?",
+        "valid": true
+      }
+    },
+    "processed_at": "2026-07-17T14:14:10.970519",
+    "metadata": {
+      "model": "qa\\models\\bertimbau_qa_finetuned",
+      "confidence_threshold": 0.3,
+      "context_enrichment": {
+        "sender": "Gabinete de Estagios",
+        "metadata_location": null,
+        "temporal_hints": [],
+        "reference_datetime": "2026-05-29T15:50:00",
+        "explicit_location": "remoto - zoom",
+        "meeting_related": true,
+        "hints": [
+          "Assunto: RE: Tudo certo para a reuniao",
+          "Remetente: Gabinete de Estagios",
+          "Participante por defeito quando nao ha outro participante explicito: Gabinete de Estagios"
+        ]
+      }
+    }
+  },
+  {
+    "email_id": 385,
+    "email_text": "Caro Professor, Partilho a versao revista da ata para validacao.",
+    "subject": "Aviso aos estudantes",
+    "qa_results": {
+      "participants": {
+        "answer": "Rita Fernandes",
+        "confidence": 0.9768048524856567,
+        "question": "Quem participa na reunião?",
+        "valid": true
+      },
+      "time": {
+        "answer": "Rita Fernandes",
+        "confidence": 0.6257351040840149,
+        "question": "Quando é a reunião?",
+        "valid": true
+      },
+      "location": {
+        "answer": null,
+        "confidence": 0.0,
+        "question": "Onde é a reunião?",
+        "valid": false,
+        "fallback_source": "non_meeting_no_location"
+      },
+      "topic": {
+        "answer": "validacao",
+        "confidence": 0.8935360908508301,
+        "question": "Qual é o tópico da reunião?",
+        "valid": true
+      }
+    },
+    "processed_at": "2026-07-17T14:14:11.101734",
+    "metadata": {
+      "model": "qa\\models\\bertimbau_qa_finetuned",
+      "confidence_threshold": 0.3,
+      "context_enrichment": {
+        "sender": "Rita Fernandes",
+        "metadata_location": null,
+        "temporal_hints": [],
+        "reference_datetime": "2026-02-06T11:00:00",
+        "explicit_location": null,
+        "meeting_related": false,
+        "hints": [
+          "Assunto: Aviso aos estudantes",
+          "Remetente: Rita Fernandes",
+          "Participante por defeito quando nao ha outro participante explicito: Rita Fernandes"
+        ]
+      }
+    }
+  },
+  {
+    "email_id": 159,
+    "email_text": "Bom dia Conselho Pedagogico, Por indicacao da direcao, a reuniao sobre preparacao da defesa fica cancelada ate nova comunicacao.",
+    "subject": "Re: Reuniao sem efeito",
+    "qa_results": {
+      "participants": {
+        "answer": "Professora Ana Costa",
+        "confidence": 0.7326309680938721,
+        "question": "Quem participa na reunião?",
+        "valid": true
+      },
+      "time": {
+        "answer": "Professora Ana Costa",
+        "confidence": 0.5467308163642883,
+        "question": "Quando é a reunião?",
+        "valid": true
+      },
+      "location": {
+        "answer": "remoto - zoom",
+        "confidence": 0.6,
+        "question": "Onde é a reunião?",
+        "valid": true,
+        "fallback_source": "default_remote_location"
+      },
+      "topic": {
+        "answer": "preparacao da defesa",
+        "confidence": 0.9999825358390808,
+        "question": "Qual é o tópico da reunião?",
+        "valid": true
+      }
+    },
+    "processed_at": "2026-07-17T14:14:11.258047",
+    "metadata": {
+      "model": "qa\\models\\bertimbau_qa_finetuned",
+      "confidence_threshold": 0.3,
+      "context_enrichment": {
+        "sender": "Professora Ana Costa",
+        "metadata_location": null,
+        "temporal_hints": [],
+        "reference_datetime": "2026-03-09T09:10:00",
+        "explicit_location": null,
+        "meeting_related": true,
+        "hints": [
+          "Assunto: Re: Reuniao sem efeito",
+          "Remetente: Professora Ana Costa",
+          "Participante por defeito quando nao ha outro participante explicito: Professora Ana Costa"
+        ]
+      }
+    }
+  },
+  {
+    "email_id": 23,
+    "email_text": "Boa tarde Carolina Silva, Confirmo a reuniao antes do seminario, em remoto, para discutirmos revisao do plano de trabalhos.",
+    "subject": "Confirmado",
+    "qa_results": {
+      "participants": {
+        "answer": "Professor Luis Almeida",
+        "confidence": 0.9977267980575562,
+        "question": "Quem participa na reunião?",
+        "valid": true
+      },
+      "time": {
+        "answer": "antes do seminario",
+        "confidence": 0.9999638795852661,
+        "question": "Quando é a reunião?",
+        "valid": true
+      },
+      "location": {
+        "answer": "remoto - zoom",
+        "confidence": 0.8,
+        "question": "Onde é a reunião?",
+        "valid": true,
+        "fallback_source": "fallback_explicit_location"
+      },
+      "topic": {
+        "answer": "revisao do plano de trabalhos",
+        "confidence": 0.9993338584899902,
+        "question": "Qual é o tópico da reunião?",
+        "valid": true
+      }
+    },
+    "processed_at": "2026-07-17T14:14:11.406194",
+    "metadata": {
+      "model": "qa\\models\\bertimbau_qa_finetuned",
+      "confidence_threshold": 0.3,
+      "context_enrichment": {
+        "sender": "Professor Luis Almeida",
+        "metadata_location": null,
+        "temporal_hints": [],
+        "reference_datetime": "2026-03-26T17:00:00",
+        "explicit_location": "remoto - zoom",
+        "meeting_related": true,
+        "hints": [
+          "Assunto: Confirmado",
+          "Remetente: Professor Luis Almeida",
+          "Participante por defeito quando nao ha outro participante explicito: Professor Luis Almeida"
+        ]
+      }
+    }
+  },
+  {
+    "email_id": 362,
+    "email_text": "Cara Professora Secretaria Academica, Preciso de esclarecer alguns pontos sobre validacao de atas. Consegue reunir quando for conveniente?",
+    "subject": "Re: Pedido de reuniao",
+    "qa_results": {
+      "participants": {
+        "answer": "Ana Martins",
+        "confidence": 0.9109376072883606,
+        "question": "Quem participa na reunião?",
+        "valid": true
+      },
+      "time": {
+        "answer": "Ana Martins Participante por defeito",
+        "confidence": 0.5832009315490723,
+        "question": "Quando é a reunião?",
+        "valid": true
+      },
+      "location": {
+        "answer": "remoto - zoom",
+        "confidence": 0.6,
+        "question": "Onde é a reunião?",
+        "valid": true,
+        "fallback_source": "default_remote_location"
+      },
+      "topic": {
+        "answer": "validacao de atas",
+        "confidence": 0.9999983310699463,
+        "question": "Qual é o tópico da reunião?",
+        "valid": true
+      }
+    },
+    "processed_at": "2026-07-17T14:14:11.561425",
+    "metadata": {
+      "model": "qa\\models\\bertimbau_qa_finetuned",
+      "confidence_threshold": 0.3,
+      "context_enrichment": {
+        "sender": "Ana Martins",
+        "metadata_location": null,
+        "temporal_hints": [],
+        "reference_datetime": "2026-05-14T12:05:00",
+        "explicit_location": null,
+        "meeting_related": true,
+        "hints": [
+          "Assunto: Re: Pedido de reuniao",
+          "Remetente: Ana Martins",
+          "Participante por defeito quando nao ha outro participante explicito: Ana Martins"
+        ]
+      }
+    }
+  },
+  {
+    "email_id": 344,
+    "email_text": "Viva Mariana Lopes, Podemos marcar uma reuniao depois da aula para alinharmos os proximos passos relativos a processo de estagio?",
+    "subject": "Re: Marcacao de reuniao",
+    "qa_results": {
+      "participants": {
+        "answer": "Professora Ana Costa",
+        "confidence": 0.8742705583572388,
+        "question": "Quem participa na reunião?",
+        "valid": true
+      },
+      "time": {
+        "answer": "depois da aula",
+        "confidence": 0.9999986886978149,
+        "question": "Quando é a reunião?",
+        "valid": true
+      },
+      "location": {
+        "answer": "remoto - zoom",
+        "confidence": 0.6,
+        "question": "Onde é a reunião?",
+        "valid": true,
+        "fallback_source": "default_remote_location"
+      },
+      "topic": {
+        "answer": "processo de estagio",
+        "confidence": 0.999993085861206,
+        "question": "Qual é o tópico da reunião?",
+        "valid": true
+      }
+    },
+    "processed_at": "2026-07-17T14:14:11.705582",
+    "metadata": {
+      "model": "qa\\models\\bertimbau_qa_finetuned",
+      "confidence_threshold": 0.3,
+      "context_enrichment": {
+        "sender": "Professora Ana Costa",
+        "metadata_location": null,
+        "temporal_hints": [],
+        "reference_datetime": "2026-05-05T13:50:00",
+        "explicit_location": null,
+        "meeting_related": true,
+        "hints": [
+          "Assunto: Re: Marcacao de reuniao",
+          "Remetente: Professora Ana Costa",
+          "Participante por defeito quando nao ha outro participante explicito: Professora Ana Costa"
+        ]
+      }
+    }
+  },
+  {
+    "email_id": 341,
+    "email_text": "Boa tarde Secretaria Academica, Gostaria de saber se tem disponibilidade para reunirmos sexta as 14h30, em secretaria, para falarmos sobre revisao do plano de trabalhos.",
+    "subject": "RE: Ponto de situacao",
+    "qa_results": {
+      "participants": {
+        "answer": "Professora Ana Costa",
+        "confidence": 0.7,
+        "question": "Quem participa na reunião?",
+        "valid": true,
+        "fallback_source": "fallback_sender"
+      },
+      "time": {
+        "answer": "sexta as 14h30",
+        "confidence": 0.9999988675117493,
+        "question": "Quando é a reunião?",
+        "valid": true,
+        "normalized": {
+          "text": "sexta as 14h",
+          "original_text": "sexta as 14h",
+          "reference_datetime": "2026-05-28T18:05:00",
+          "temporal_type": "datetime",
+          "normalized_datetime": "2026-05-29T14:00:00",
+          "precision": "exact",
+          "confidence": 0.9,
+          "extraction_method": "rule_based",
+          "notes": []
+        }
+      },
+      "location": {
+        "answer": "presencial - secretaria",
+        "confidence": 0.9,
+        "question": "Onde é a reunião?",
+        "valid": true,
+        "fallback_source": "fallback_metadata_location"
+      },
+      "topic": {
+        "answer": "revisao do plano de trabalhos",
+        "confidence": 0.9994499087333679,
+        "question": "Qual é o tópico da reunião?",
+        "valid": true
+      }
+    },
+    "processed_at": "2026-07-17T14:14:11.970732",
+    "metadata": {
+      "model": "qa\\models\\bertimbau_qa_finetuned",
+      "confidence_threshold": 0.3,
+      "context_enrichment": {
+        "sender": "Professora Ana Costa",
+        "metadata_location": "presencial - secretaria",
+        "temporal_hints": [
+          {
+            "text": "sexta as 14h",
+            "original_text": "sexta as 14h",
+            "reference_datetime": "2026-05-28T18:05:00",
+            "temporal_type": "datetime",
+            "normalized_datetime": "2026-05-29T14:00:00",
+            "precision": "exact",
+            "confidence": 0.9,
+            "extraction_method": "rule_based",
+            "notes": []
+          },
+          {
+            "text": "14h30",
+            "original_text": "14h30",
+            "reference_datetime": "2026-05-28T18:05:00",
+            "temporal_type": "time",
+            "normalized_datetime": "2026-05-28T14:30:00",
+            "precision": "time_only",
+            "confidence": 0.8,
+            "extraction_method": "rule_based",
+            "notes": [
+              "Parsed as time-only expression"
+            ]
+          }
+        ],
+        "reference_datetime": "2026-05-28T18:05:00",
+        "explicit_location": "presencial - secretaria",
+        "meeting_related": true,
+        "hints": [
+          "Assunto: RE: Ponto de situacao",
+          "Remetente: Professora Ana Costa",
+          "Participante por defeito quando nao ha outro participante explicito: Professora Ana Costa",
+          "Expressoes temporais normalizadas:",
+          "- sexta as 14h -> 2026-05-29T14:00:00",
+          "- 14h30 -> 2026-05-28T14:30:00"
+        ]
+      }
+    }
+  },
+  {
+    "email_id": 391,
+    "email_text": "Bom dia Professora Ana Costa, Surgiu uma sobreposicao no horario e nao conseguirei participar na reuniao depois da aula. Se preferir, posso adaptar ao horario do departamento.",
+    "subject": "Fw: Imprevisto - coordenacao da unidade curricular",
+    "qa_results": {
+      "participants": {
+        "answer": "Gabinete de Estagios",
+        "confidence": 0.902686595916748,
+        "question": "Quem participa na reunião?",
+        "valid": true
+      },
+      "time": {
+        "answer": "depois da aula",
+        "confidence": 0.9999966621398926,
+        "question": "Quando é a reunião?",
+        "valid": true
+      },
+      "location": {
+        "answer": "presencial - sala 2.3",
+        "confidence": 0.9,
+        "question": "Onde é a reunião?",
+        "valid": true,
+        "fallback_source": "fallback_metadata_location"
+      },
+      "topic": {
+        "answer": "coordenacao da unidade curricular",
+        "confidence": 0.9999907612800598,
+        "question": "Qual é o tópico da reunião?",
+        "valid": true
+      }
+    },
+    "processed_at": "2026-07-17T14:14:12.195734",
+    "metadata": {
+      "model": "qa\\models\\bertimbau_qa_finetuned",
+      "confidence_threshold": 0.3,
+      "context_enrichment": {
+        "sender": "Gabinete de Estagios",
+        "metadata_location": "presencial - sala 2.3",
+        "temporal_hints": [],
+        "reference_datetime": "2026-03-31T12:10:00",
+        "explicit_location": null,
+        "meeting_related": true,
+        "hints": [
+          "Assunto: Fw: Imprevisto - coordenacao da unidade curricular",
+          "Remetente: Gabinete de Estagios",
+          "Participante por defeito quando nao ha outro participante explicito: Gabinete de Estagios"
+        ]
+      }
+    }
+  },
+  {
+    "email_id": 213,
+    "email_text": "Caro Professor Professora Ana Costa, Pode ficar marcado conforme proposto.",
+    "subject": "Re: Reuniao confirmada",
+    "qa_results": {
+      "participants": {
+        "answer": "Rita Fernandes",
+        "confidence": 0.9671005010604858,
+        "question": "Quem participa na reunião?",
+        "valid": true
+      },
+      "time": {
+        "answer": "Rita Fernandes",
+        "confidence": 0.6244103312492371,
+        "question": "Quando é a reunião?",
+        "valid": true
+      },
+      "location": {
+        "answer": "presencial - sala 2.3",
+        "confidence": 0.9,
+        "question": "Onde é a reunião?",
+        "valid": true,
+        "fallback_source": "fallback_metadata_location"
+      },
+      "topic": {
+        "answer": "Re: Reuniao confirmada",
+        "confidence": 0.65,
+        "question": "Qual é o tópico da reunião?",
+        "valid": true,
+        "fallback_source": "fallback_subject"
+      }
+    },
+    "processed_at": "2026-07-17T14:14:12.340846",
+    "metadata": {
+      "model": "qa\\models\\bertimbau_qa_finetuned",
+      "confidence_threshold": 0.3,
+      "context_enrichment": {
+        "sender": "Rita Fernandes",
+        "metadata_location": "presencial - sala 2.3",
+        "temporal_hints": [],
+        "reference_datetime": "2026-05-27T10:40:00",
+        "explicit_location": null,
+        "meeting_related": true,
+        "hints": [
+          "Assunto: Re: Reuniao confirmada",
+          "Remetente: Rita Fernandes",
+          "Participante por defeito quando nao ha outro participante explicito: Rita Fernandes"
+        ]
+      }
+    }
+  },
+  {
+    "email_id": 61,
+    "email_text": "Estimado/a estudante Mariana Lopes, Podemos marcar uma reuniao segunda de manha para alinharmos os proximos passos relativos a submissao de artigo?",
+    "subject": "RE: Pedido de reuniao",
+    "qa_results": {
+      "participants": {
+        "answer": "Secretaria Academica",
+        "confidence": 0.9125331044197083,
+        "question": "Quem participa na reunião?",
+        "valid": true
+      },
+      "time": {
+        "answer": "segunda de manha",
+        "confidence": 0.999998152256012,
+        "question": "Quando é a reunião?",
+        "valid": true,
+        "normalized": {
+          "text": "segunda de manha",
+          "original_text": "segunda de manha",
+          "reference_datetime": "2026-03-22T09:40:00",
+          "temporal_type": "datetime",
+          "normalized_datetime": "2026-03-23T09:00:00",
+          "precision": "approximate",
+          "confidence": 0.75,
+          "extraction_method": "rule_based",
+          "notes": [
+            "Combined weekday with time of day: 'de manha'"
+          ]
+        }
+      },
+      "location": {
+        "answer": "presencial - sala B104",
+        "confidence": 0.9,
+        "question": "Onde é a reunião?",
+        "valid": true,
+        "fallback_source": "fallback_metadata_location"
+      },
+      "topic": {
+        "answer": "submissao de artigo",
+        "confidence": 0.999062716960907,
+        "question": "Qual é o tópico da reunião?",
+        "valid": true
+      }
+    },
+    "processed_at": "2026-07-17T14:14:12.572700",
+    "metadata": {
+      "model": "qa\\models\\bertimbau_qa_finetuned",
+      "confidence_threshold": 0.3,
+      "context_enrichment": {
+        "sender": "Secretaria Academica",
+        "metadata_location": "presencial - sala B104",
+        "temporal_hints": [
+          {
+            "text": "segunda de manha",
+            "original_text": "segunda de manha",
+            "reference_datetime": "2026-03-22T09:40:00",
+            "temporal_type": "datetime",
+            "normalized_datetime": "2026-03-23T09:00:00",
+            "precision": "approximate",
+            "confidence": 0.75,
+            "extraction_method": "rule_based",
+            "notes": [
+              "Combined weekday with time of day: 'de manha'"
+            ]
+          }
+        ],
+        "reference_datetime": "2026-03-22T09:40:00",
+        "explicit_location": null,
+        "meeting_related": true,
+        "hints": [
+          "Assunto: RE: Pedido de reuniao",
+          "Remetente: Secretaria Academica",
+          "Participante por defeito quando nao ha outro participante explicito: Secretaria Academica",
+          "Expressoes temporais normalizadas:",
+          "- segunda de manha -> 2026-03-23T09:00:00"
+        ]
+      }
+    }
+  },
+  {
+    "email_id": 137,
+    "email_text": "Caro/a colega, Confirmado para terca as 11h. Levarei os documentos relativos a processo de estagio.",
+    "subject": "Reuniao confirmada",
+    "qa_results": {
+      "participants": {
+        "answer": "Conselho Pedagogico",
+        "confidence": 0.7435284852981567,
+        "question": "Quem participa na reunião?",
+        "valid": true
+      },
+      "time": {
+        "answer": "terca as 11h",
+        "confidence": 0.9999978542327881,
+        "question": "Quando é a reunião?",
+        "valid": true,
+        "normalized": {
+          "text": "terca as 11h",
+          "original_text": "terca as 11h",
+          "reference_datetime": "2026-05-23T17:05:00",
+          "temporal_type": "datetime",
+          "normalized_datetime": "2026-05-26T11:00:00",
+          "precision": "exact",
+          "confidence": 0.9,
+          "extraction_method": "rule_based",
+          "notes": []
+        }
+      },
+      "location": {
+        "answer": "presencial - gabinete da direcao",
+        "confidence": 0.9,
+        "question": "Onde é a reunião?",
+        "valid": true,
+        "fallback_source": "fallback_metadata_location"
+      },
+      "topic": {
+        "answer": "processo de estagio",
+        "confidence": 0.999602198600769,
+        "question": "Qual é o tópico da reunião?",
+        "valid": true
+      }
+    },
+    "processed_at": "2026-07-17T14:14:12.821454",
+    "metadata": {
+      "model": "qa\\models\\bertimbau_qa_finetuned",
+      "confidence_threshold": 0.3,
+      "context_enrichment": {
+        "sender": "Conselho Pedagogico",
+        "metadata_location": "presencial - gabinete da direcao",
+        "temporal_hints": [
+          {
+            "text": "terca as 11h",
+            "original_text": "terca as 11h",
+            "reference_datetime": "2026-05-23T17:05:00",
+            "temporal_type": "datetime",
+            "normalized_datetime": "2026-05-26T11:00:00",
+            "precision": "exact",
+            "confidence": 0.9,
+            "extraction_method": "rule_based",
+            "notes": []
+          },
+          {
+            "text": "11h",
+            "original_text": "11h",
+            "reference_datetime": "2026-05-23T17:05:00",
+            "temporal_type": "time",
+            "normalized_datetime": "2026-05-23T11:00:00",
+            "precision": "time_only",
+            "confidence": 0.8,
+            "extraction_method": "rule_based",
+            "notes": [
+              "Parsed as time-only expression"
+            ]
+          }
+        ],
+        "reference_datetime": "2026-05-23T17:05:00",
+        "explicit_location": null,
+        "meeting_related": true,
+        "hints": [
+          "Assunto: Reuniao confirmada",
+          "Remetente: Conselho Pedagogico",
+          "Participante por defeito quando nao ha outro participante explicito: Conselho Pedagogico",
+          "Expressoes temporais normalizadas:",
+          "- terca as 11h -> 2026-05-26T11:00:00",
+          "- 11h -> 2026-05-23T11:00:00"
+        ]
+      }
+    }
+  },
+  {
+    "email_id": 221,
+    "email_text": "Boa tarde Coordenacao de Mestrado, Confirmo a reuniao quarta a tarde, em sala de reunioes do departamento, para discutirmos distribuicao de servico docente.",
+    "subject": "Confirmado",
+    "qa_results": {
+      "participants": {
+        "answer": "Professor Luis Almeida",
+        "confidence": 0.7069936394691467,
+        "question": "Quem participa na reunião?",
+        "valid": true
+      },
+      "time": {
+        "answer": "quarta a tarde",
+        "confidence": 0.9999991059303284,
+        "question": "Quando é a reunião?",
+        "valid": true,
+        "normalized": {
+          "text": "quarta a tarde",
+          "original_text": "quarta a tarde",
+          "reference_datetime": "2026-06-01T12:15:00",
+          "temporal_type": "datetime",
+          "normalized_datetime": "2026-06-03T15:00:00",
+          "precision": "approximate",
+          "confidence": 0.75,
+          "extraction_method": "rule_based",
+          "notes": [
+            "Combined weekday with time of day: 'tarde'"
+          ]
+        }
+      },
+      "location": {
+        "answer": "presencial - sala de reunioes do departamento",
+        "confidence": 0.9,
+        "question": "Onde é a reunião?",
+        "valid": true,
+        "fallback_source": "fallback_metadata_location"
+      },
+      "topic": {
+        "answer": "distribuicao de servico docente",
+        "confidence": 0.9998819828033447,
+        "question": "Qual é o tópico da reunião?",
+        "valid": true
+      }
+    },
+    "processed_at": "2026-07-17T14:14:13.061077",
+    "metadata": {
+      "model": "qa\\models\\bertimbau_qa_finetuned",
+      "confidence_threshold": 0.3,
+      "context_enrichment": {
+        "sender": "Professor Luis Almeida",
+        "metadata_location": "presencial - sala de reunioes do departamento",
+        "temporal_hints": [
+          {
+            "text": "quarta a tarde",
+            "original_text": "quarta a tarde",
+            "reference_datetime": "2026-06-01T12:15:00",
+            "temporal_type": "datetime",
+            "normalized_datetime": "2026-06-03T15:00:00",
+            "precision": "approximate",
+            "confidence": 0.75,
+            "extraction_method": "rule_based",
+            "notes": [
+              "Combined weekday with time of day: 'tarde'"
+            ]
+          }
+        ],
+        "reference_datetime": "2026-06-01T12:15:00",
+        "explicit_location": "presencial - sala de reunioes do",
+        "meeting_related": true,
+        "hints": [
+          "Assunto: Confirmado",
+          "Remetente: Professor Luis Almeida",
+          "Participante por defeito quando nao ha outro participante explicito: Professor Luis Almeida",
+          "Expressoes temporais normalizadas:",
+          "- quarta a tarde -> 2026-06-03T15:00:00"
+        ]
+      }
+    }
+  },
+  {
+    "email_id": 259,
+    "email_text": "Cara Professora, A pauta foi atualizada no sistema academico. Por favor confirme se consegue aceder. Obrigada, Miguel Santos",
+    "subject": "Envio de documentos",
+    "qa_results": {
+      "participants": {
+        "answer": "Miguel Santos",
+        "confidence": 0.9882071018218994,
+        "question": "Quem participa na reunião?",
+        "valid": true
+      },
+      "time": {
+        "answer": "Miguel Santos",
+        "confidence": 0.46581128239631653,
+        "question": "Quando é a reunião?",
+        "valid": true
+      },
+      "location": {
+        "answer": null,
+        "confidence": 0.0,
+        "question": "Onde é a reunião?",
+        "valid": false,
+        "fallback_source": "non_meeting_no_location"
+      },
+      "topic": {
+        "answer": "sistema academico",
+        "confidence": 0.5646932125091553,
+        "question": "Qual é o tópico da reunião?",
+        "valid": true
+      }
+    },
+    "processed_at": "2026-07-17T14:14:13.204885",
+    "metadata": {
+      "model": "qa\\models\\bertimbau_qa_finetuned",
+      "confidence_threshold": 0.3,
+      "context_enrichment": {
+        "sender": "Miguel Santos",
+        "metadata_location": null,
+        "temporal_hints": [],
+        "reference_datetime": "2026-04-06T09:30:00",
+        "explicit_location": null,
+        "meeting_related": false,
+        "hints": [
+          "Assunto: Envio de documentos",
+          "Remetente: Miguel Santos",
+          "Participante por defeito quando nao ha outro participante explicito: Miguel Santos"
+        ]
+      }
+    }
+  },
+  {
+    "email_id": 300,
+    "email_text": "Boa tarde, A reuniao marcada para quando for conveniente, em remoto, tera de ser adiada.",
+    "subject": "Imprevisto - acompanhamento pedagogico",
+    "qa_results": {
+      "participants": {
+        "answer": "Secretaria Academica",
+        "confidence": 0.9978592991828918,
+        "question": "Quem participa na reunião?",
+        "valid": true
+      },
+      "time": {
+        "answer": "quando for conveniente",
+        "confidence": 0.5703086853027344,
+        "question": "Quando é a reunião?",
+        "valid": true
+      },
+      "location": {
+        "answer": "remoto - zoom",
+        "confidence": 0.8,
+        "question": "Onde é a reunião?",
+        "valid": true,
+        "fallback_source": "fallback_explicit_location"
+      },
+      "topic": {
+        "answer": "acompanhamento pedagogico",
+        "confidence": 0.9999584555625916,
+        "question": "Qual é o tópico da reunião?",
+        "valid": true
+      }
+    },
+    "processed_at": "2026-07-17T14:14:13.358444",
+    "metadata": {
+      "model": "qa\\models\\bertimbau_qa_finetuned",
+      "confidence_threshold": 0.3,
+      "context_enrichment": {
+        "sender": "Secretaria Academica",
+        "metadata_location": null,
+        "temporal_hints": [],
+        "reference_datetime": "2026-02-13T17:20:00",
+        "explicit_location": "remoto - zoom",
+        "meeting_related": true,
+        "hints": [
+          "Assunto: Imprevisto - acompanhamento pedagogico",
+          "Remetente: Secretaria Academica",
+          "Participante por defeito quando nao ha outro participante explicito: Secretaria Academica"
+        ]
+      }
+    }
+  },
+  {
+    "email_id": 240,
+    "email_text": "Exmo. Professor Professora Ana Costa, Confirmo a reuniao sexta as 14h30, em Teams, para discutirmos analise dos resultados dos estudantes.",
+    "subject": "RE: Re: Marcacao de reuniao",
+    "qa_results": {
+      "participants": {
+        "answer": "Diretor do Curso",
+        "confidence": 0.5871769189834595,
+        "question": "Quem participa na reunião?",
+        "valid": true
+      },
+      "time": {
+        "answer": "sexta as 14h30",
+        "confidence": 0.999998927116394,
+        "question": "Quando é a reunião?",
+        "valid": true,
+        "normalized": {
+          "text": "sexta as 14h",
+          "original_text": "sexta as 14h",
+          "reference_datetime": "2026-02-18T09:15:00",
+          "temporal_type": "datetime",
+          "normalized_datetime": "2026-02-20T14:00:00",
+          "precision": "exact",
+          "confidence": 0.9,
+          "extraction_method": "rule_based",
+          "notes": []
+        }
+      },
+      "location": {
+        "answer": "remoto - teams",
+        "confidence": 0.9,
+        "question": "Onde é a reunião?",
+        "valid": true,
+        "fallback_source": "fallback_metadata_location"
+      },
+      "topic": {
+        "answer": "analise dos resultados dos estudantes",
+        "confidence": 0.9999280571937561,
+        "question": "Qual é o tópico da reunião?",
+        "valid": true
+      }
+    },
+    "processed_at": "2026-07-17T14:14:13.626901",
+    "metadata": {
+      "model": "qa\\models\\bertimbau_qa_finetuned",
+      "confidence_threshold": 0.3,
+      "context_enrichment": {
+        "sender": "Diretor do Curso",
+        "metadata_location": "remoto - teams",
+        "temporal_hints": [
+          {
+            "text": "sexta as 14h",
+            "original_text": "sexta as 14h",
+            "reference_datetime": "2026-02-18T09:15:00",
+            "temporal_type": "datetime",
+            "normalized_datetime": "2026-02-20T14:00:00",
+            "precision": "exact",
+            "confidence": 0.9,
+            "extraction_method": "rule_based",
+            "notes": []
+          },
+          {
+            "text": "14h30",
+            "original_text": "14h30",
+            "reference_datetime": "2026-02-18T09:15:00",
+            "temporal_type": "time",
+            "normalized_datetime": "2026-02-18T14:30:00",
+            "precision": "time_only",
+            "confidence": 0.8,
+            "extraction_method": "rule_based",
+            "notes": [
+              "Parsed as time-only expression"
+            ]
+          }
+        ],
+        "reference_datetime": "2026-02-18T09:15:00",
+        "explicit_location": "remoto - teams",
+        "meeting_related": true,
+        "hints": [
+          "Assunto: RE: Re: Marcacao de reuniao",
+          "Remetente: Diretor do Curso",
+          "Participante por defeito quando nao ha outro participante explicito: Diretor do Curso",
+          "Expressoes temporais normalizadas:",
+          "- sexta as 14h -> 2026-02-20T14:00:00",
+          "- 14h30 -> 2026-02-18T14:30:00"
+        ]
+      }
+    }
+  },
+  {
+    "email_id": 131,
+    "email_text": "Viva, A bibliografia recomendada para esta semana ja se encontra disponivel no Moodle.",
+    "subject": "RE: Entrega de relatorio",
+    "qa_results": {
+      "participants": {
+        "answer": "Professora Sofia Carvalho",
+        "confidence": 0.9995405077934265,
+        "question": "Quem participa na reunião?",
+        "valid": true
+      },
+      "time": {
+        "answer": "esta semana",
+        "confidence": 0.583461344242096,
+        "question": "Quando é a reunião?",
+        "valid": true
+      },
+      "location": {
+        "answer": null,
+        "confidence": 0.0,
+        "question": "Onde é a reunião?",
+        "valid": false,
+        "fallback_source": "non_meeting_no_location"
+      },
+      "topic": {
+        "answer": "Professora Sofia Carvalho",
+        "confidence": 0.6543529033660889,
+        "question": "Qual é o tópico da reunião?",
+        "valid": true
+      }
+    },
+    "processed_at": "2026-07-17T14:14:13.772540",
+    "metadata": {
+      "model": "qa\\models\\bertimbau_qa_finetuned",
+      "confidence_threshold": 0.3,
+      "context_enrichment": {
+        "sender": "Professora Sofia Carvalho",
+        "metadata_location": null,
+        "temporal_hints": [],
+        "reference_datetime": "2026-05-04T08:40:00",
+        "explicit_location": null,
+        "meeting_related": false,
+        "hints": [
+          "Assunto: RE: Entrega de relatorio",
+          "Remetente: Professora Sofia Carvalho",
+          "Participante por defeito quando nao ha outro participante explicito: Professora Sofia Carvalho"
+        ]
+      }
+    }
+  },
+  {
+    "email_id": 45,
+    "email_text": "Bom dia, Confirmado para durante a manha. Levarei os documentos relativos a preparacao da apresentacao.",
+    "subject": "Fw: Tudo certo para a reuniao",
+    "qa_results": {
+      "participants": {
+        "answer": "Secretaria Academica",
+        "confidence": 0.9932458996772766,
+        "question": "Quem participa na reunião?",
+        "valid": true
+      },
+      "time": {
+        "answer": "durante a manha",
+        "confidence": 0.9999977946281433,
+        "question": "Quando é a reunião?",
+        "valid": true
+      },
+      "location": {
+        "answer": "remoto - zoom",
+        "confidence": 0.6,
+        "question": "Onde é a reunião?",
+        "valid": true,
+        "fallback_source": "default_remote_location"
+      },
+      "topic": {
+        "answer": "preparacao da apresentacao",
+        "confidence": 0.8370354771614075,
+        "question": "Qual é o tópico da reunião?",
+        "valid": true
+      }
+    },
+    "processed_at": "2026-07-17T14:14:13.923806",
+    "metadata": {
+      "model": "qa\\models\\bertimbau_qa_finetuned",
+      "confidence_threshold": 0.3,
+      "context_enrichment": {
+        "sender": "Secretaria Academica",
+        "metadata_location": null,
+        "temporal_hints": [],
+        "reference_datetime": "2026-04-24T11:30:00",
+        "explicit_location": null,
+        "meeting_related": true,
+        "hints": [
+          "Assunto: Fw: Tudo certo para a reuniao",
+          "Remetente: Secretaria Academica",
+          "Participante por defeito quando nao ha outro participante explicito: Secretaria Academica"
+        ]
+      }
+    }
+  },
+  {
+    "email_id": 317,
+    "email_text": "Boa tarde Secretaria Academica, Gostaria de saber se tem disponibilidade para reunirmos quando for conveniente, em Google Meet, para falarmos sobre processo de estagio.",
+    "subject": "Re: Disponibilidade para reuniao",
+    "qa_results": {
+      "participants": {
+        "answer": "Professora Sofia Carvalho",
+        "confidence": 0.7222800254821777,
+        "question": "Quem participa na reunião?",
+        "valid": true
+      },
+      "time": {
+        "answer": "Professora Sofia Carvalho",
+        "confidence": 0.6541221737861633,
+        "question": "Quando é a reunião?",
+        "valid": true
+      },
+      "location": {
+        "answer": "remoto - google meet",
+        "confidence": 0.9,
+        "question": "Onde é a reunião?",
+        "valid": true,
+        "fallback_source": "fallback_metadata_location"
+      },
+      "topic": {
+        "answer": "processo de estagio",
+        "confidence": 0.9996878504753113,
+        "question": "Qual é o tópico da reunião?",
+        "valid": true
+      }
+    },
+    "processed_at": "2026-07-17T14:14:14.085615",
+    "metadata": {
+      "model": "qa\\models\\bertimbau_qa_finetuned",
+      "confidence_threshold": 0.3,
+      "context_enrichment": {
+        "sender": "Professora Sofia Carvalho",
+        "metadata_location": "remoto - google meet",
+        "temporal_hints": [],
+        "reference_datetime": "2026-05-13T09:40:00",
+        "explicit_location": "remoto - google meet",
+        "meeting_related": true,
+        "hints": [
+          "Assunto: Re: Disponibilidade para reuniao",
+          "Remetente: Professora Sofia Carvalho",
+          "Participante por defeito quando nao ha outro participante explicito: Professora Sofia Carvalho"
+        ]
+      }
+    }
+  },
+  {
+    "email_id": 349,
+    "email_text": "Boa tarde Miguel Santos, Envio em anexo o documento atualizado relativo a validacao de atas.",
+    "subject": "Entrega de relatorio",
+    "qa_results": {
+      "participants": {
+        "answer": "Secretaria Academica",
+        "confidence": 0.9998545050621033,
+        "question": "Quem participa na reunião?",
+        "valid": true
+      },
+      "time": {
+        "answer": "Secretaria Academica",
+        "confidence": 0.6776223182678223,
+        "question": "Quando é a reunião?",
+        "valid": true
+      },
+      "location": {
+        "answer": null,
+        "confidence": 0.0,
+        "question": "Onde é a reunião?",
+        "valid": false,
+        "fallback_source": "non_meeting_no_location"
+      },
+      "topic": {
+        "answer": "validacao de atas",
+        "confidence": 0.9999215602874756,
+        "question": "Qual é o tópico da reunião?",
+        "valid": true
+      }
+    },
+    "processed_at": "2026-07-17T14:14:14.221683",
+    "metadata": {
+      "model": "qa\\models\\bertimbau_qa_finetuned",
+      "confidence_threshold": 0.3,
+      "context_enrichment": {
+        "sender": "Secretaria Academica",
+        "metadata_location": null,
+        "temporal_hints": [],
+        "reference_datetime": "2026-03-24T18:10:00",
+        "explicit_location": null,
+        "meeting_related": false,
+        "hints": [
+          "Assunto: Entrega de relatorio",
+          "Remetente: Secretaria Academica",
+          "Participante por defeito quando nao ha outro participante explicito: Secretaria Academica"
+        ]
+      }
+    }
+  },
+  {
+    "email_id": 340,
+    "email_text": "Bom dia, Confirmo a minha presenca na reuniao em Teams. Se preferir, posso adaptar ao horario do departamento.",
+    "subject": "Re: Reuniao confirmada",
+    "qa_results": {
+      "participants": {
+        "answer": "Ana Martins",
+        "confidence": 0.9809429049491882,
+        "question": "Quem participa na reunião?",
+        "valid": true
+      },
+      "time": {
+        "answer": "Ana Martins",
+        "confidence": 0.6624169945716858,
+        "question": "Quando é a reunião?",
+        "valid": true
+      },
+      "location": {
+        "answer": "remoto - teams",
+        "confidence": 0.9,
+        "question": "Onde é a reunião?",
+        "valid": true,
+        "fallback_source": "fallback_metadata_location"
+      },
+      "topic": {
+        "answer": "Ana Martins",
+        "confidence": 0.46327170729637146,
+        "question": "Qual é o tópico da reunião?",
+        "valid": true
+      }
+    },
+    "processed_at": "2026-07-17T14:14:14.365521",
+    "metadata": {
+      "model": "qa\\models\\bertimbau_qa_finetuned",
+      "confidence_threshold": 0.3,
+      "context_enrichment": {
+        "sender": "Ana Martins",
+        "metadata_location": "remoto - teams",
+        "temporal_hints": [],
+        "reference_datetime": "2026-02-19T08:30:00",
+        "explicit_location": "remoto - teams",
+        "meeting_related": true,
+        "hints": [
+          "Assunto: Re: Reuniao confirmada",
+          "Remetente: Ana Martins",
+          "Participante por defeito quando nao ha outro participante explicito: Ana Martins"
+        ]
+      }
+    }
+  },
+  {
+    "email_id": 76,
+    "email_text": "Caro colega, A pauta foi atualizada no sistema academico. Por favor confirme se consegue aceder.",
+    "subject": "Fw: Atualizacao de processo",
+    "qa_results": {
+      "participants": {
+        "answer": "Professora Ana Costa",
+        "confidence": 0.9914796352386475,
+        "question": "Quem participa na reunião?",
+        "valid": true
+      },
+      "time": {
+        "answer": "Professora Ana Costa",
+        "confidence": 0.7182946801185608,
+        "question": "Quando é a reunião?",
+        "valid": true
+      },
+      "location": {
+        "answer": null,
+        "confidence": 0.0,
+        "question": "Onde é a reunião?",
+        "valid": false,
+        "fallback_source": "non_meeting_no_location"
+      },
+      "topic": {
+        "answer": "Fw: Atualizacao de processo",
+        "confidence": 0.65,
+        "question": "Qual é o tópico da reunião?",
+        "valid": true,
+        "fallback_source": "fallback_subject"
+      }
+    },
+    "processed_at": "2026-07-17T14:14:14.522992",
+    "metadata": {
+      "model": "qa\\models\\bertimbau_qa_finetuned",
+      "confidence_threshold": 0.3,
+      "context_enrichment": {
+        "sender": "Professora Ana Costa",
+        "metadata_location": null,
+        "temporal_hints": [],
+        "reference_datetime": "2026-05-24T13:20:00",
+        "explicit_location": null,
+        "meeting_related": false,
+        "hints": [
+          "Assunto: Fw: Atualizacao de processo",
+          "Remetente: Professora Ana Costa",
+          "Participante por defeito quando nao ha outro participante explicito: Professora Ana Costa"
+        ]
+      }
+    }
+  },
+  {
+    "email_id": 148,
+    "email_text": "Bom dia, Partilho a versao revista da ata para validacao.",
+    "subject": "Aviso aos estudantes",
+    "qa_results": {
+      "participants": {
+        "answer": "Coordenacao de Mestrado",
+        "confidence": 0.996582567691803,
+        "question": "Quem participa na reunião?",
+        "valid": true
+      },
+      "time": {
+        "answer": "Coordenacao de Mestrado",
+        "confidence": 0.5700855851173401,
+        "question": "Quando é a reunião?",
+        "valid": true
+      },
+      "location": {
+        "answer": null,
+        "confidence": 0.0,
+        "question": "Onde é a reunião?",
+        "valid": false,
+        "fallback_source": "non_meeting_no_location"
+      },
+      "topic": {
+        "answer": "Coordenacao de Mestrado",
+        "confidence": 0.5660169720649719,
+        "question": "Qual é o tópico da reunião?",
+        "valid": true
+      }
+    },
+    "processed_at": "2026-07-17T14:14:14.666345",
+    "metadata": {
+      "model": "qa\\models\\bertimbau_qa_finetuned",
+      "confidence_threshold": 0.3,
+      "context_enrichment": {
+        "sender": "Coordenacao de Mestrado",
+        "metadata_location": null,
+        "temporal_hints": [],
+        "reference_datetime": "2026-03-19T18:45:00",
+        "explicit_location": null,
+        "meeting_related": false,
+        "hints": [
+          "Assunto: Aviso aos estudantes",
+          "Remetente: Coordenacao de Mestrado",
+          "Participante por defeito quando nao ha outro participante explicito: Coordenacao de Mestrado"
+        ]
+      }
+    }
+  },
+  {
+    "email_id": 128,
+    "email_text": "Cara colega Secretaria Academica, Confirmo a reuniao dia 22 as 17h, em Zoom, para discutirmos calendario de avaliacoes.",
+    "subject": "Fw: Reuniao confirmada",
+    "qa_results": {
+      "participants": {
+        "answer": "Professor Luis Almeida",
+        "confidence": 0.7527847290039062,
+        "question": "Quem participa na reunião?",
+        "valid": true
+      },
+      "time": {
+        "answer": "dia 22 as 17h",
+        "confidence": 0.9999990463256836,
+        "question": "Quando é a reunião?",
+        "valid": true,
+        "normalized": {
+          "text": "17h",
+          "original_text": "17h",
+          "reference_datetime": "2026-03-18T13:50:00",
+          "temporal_type": "time",
+          "normalized_datetime": "2026-03-18T17:00:00",
+          "precision": "time_only",
+          "confidence": 0.8,
+          "extraction_method": "rule_based",
+          "notes": [
+            "Parsed as time-only expression"
+          ]
+        }
+      },
+      "location": {
+        "answer": "remoto - zoom",
+        "confidence": 0.9,
+        "question": "Onde é a reunião?",
+        "valid": true,
+        "fallback_source": "fallback_metadata_location"
+      },
+      "topic": {
+        "answer": "calendario de avaliacoes",
+        "confidence": 0.9998369812965393,
+        "question": "Qual é o tópico da reunião?",
+        "valid": true
+      }
+    },
+    "processed_at": "2026-07-17T14:14:14.894625",
+    "metadata": {
+      "model": "qa\\models\\bertimbau_qa_finetuned",
+      "confidence_threshold": 0.3,
+      "context_enrichment": {
+        "sender": "Professor Luis Almeida",
+        "metadata_location": "remoto - zoom",
+        "temporal_hints": [
+          {
+            "text": "17h",
+            "original_text": "17h",
+            "reference_datetime": "2026-03-18T13:50:00",
+            "temporal_type": "time",
+            "normalized_datetime": "2026-03-18T17:00:00",
+            "precision": "time_only",
+            "confidence": 0.8,
+            "extraction_method": "rule_based",
+            "notes": [
+              "Parsed as time-only expression"
+            ]
+          }
+        ],
+        "reference_datetime": "2026-03-18T13:50:00",
+        "explicit_location": "remoto - zoom",
+        "meeting_related": true,
+        "hints": [
+          "Assunto: Fw: Reuniao confirmada",
+          "Remetente: Professor Luis Almeida",
+          "Participante por defeito quando nao ha outro participante explicito: Professor Luis Almeida",
+          "Expressoes temporais normalizadas:",
+          "- 17h -> 2026-03-18T17:00:00"
+        ]
+      }
+    }
+  },
+  {
+    "email_id": 4,
+    "email_text": "Boa tarde, Informamos que o prazo para submissao dos elementos de avaliacao termina esta sexta-feira.",
+    "subject": "Fw: Aviso aos estudantes",
+    "qa_results": {
+      "participants": {
+        "answer": "Miguel Santos",
+        "confidence": 0.9759109020233154,
+        "question": "Quem participa na reunião?",
+        "valid": true
+      },
+      "time": {
+        "answer": "sexta-feira",
+        "confidence": 0.9999970197677612,
+        "question": "Quando é a reunião?",
+        "valid": true,
+        "normalized": {
+          "text": "sexta",
+          "original_text": "sexta",
+          "reference_datetime": "2026-02-24T18:40:00",
+          "temporal_type": "date",
+          "normalized_datetime": "2026-02-27T00:00:00",
+          "precision": "day",
+          "confidence": 0.9,
+          "extraction_method": "rule_based",
+          "notes": []
+        }
+      },
+      "location": {
+        "answer": null,
+        "confidence": 0.0,
+        "question": "Onde é a reunião?",
+        "valid": false,
+        "fallback_source": "non_meeting_no_location"
+      },
+      "topic": {
+        "answer": "submissao dos elementos de avaliacao",
+        "confidence": 0.9789378046989441,
+        "question": "Qual é o tópico da reunião?",
+        "valid": true
+      }
+    },
+    "processed_at": "2026-07-17T14:14:15.076951",
+    "metadata": {
+      "model": "qa\\models\\bertimbau_qa_finetuned",
+      "confidence_threshold": 0.3,
+      "context_enrichment": {
+        "sender": "Miguel Santos",
+        "metadata_location": null,
+        "temporal_hints": [
+          {
+            "text": "sexta",
+            "original_text": "sexta",
+            "reference_datetime": "2026-02-24T18:40:00",
+            "temporal_type": "date",
+            "normalized_datetime": "2026-02-27T00:00:00",
+            "precision": "day",
+            "confidence": 0.9,
+            "extraction_method": "rule_based",
+            "notes": []
+          }
+        ],
+        "reference_datetime": "2026-02-24T18:40:00",
+        "explicit_location": null,
+        "meeting_related": false,
+        "hints": [
+          "Assunto: Fw: Aviso aos estudantes",
+          "Remetente: Miguel Santos",
+          "Participante por defeito quando nao ha outro participante explicito: Miguel Santos",
+          "Expressoes temporais normalizadas:",
+          "- sexta -> 2026-02-27T00:00:00"
+        ]
+      }
+    }
+  },
+  {
+    "email_id": 209,
+    "email_text": "Exmo. Professor, Por motivo imprevisto, a reuniao de quando for conveniente fica sem efeito.",
+    "subject": "RE: Reuniao sem efeito",
+    "qa_results": {
+      "participants": {
+        "answer": "Coordenacao de Mestrado",
+        "confidence": 0.9999094009399414,
+        "question": "Quem participa na reunião?",
+        "valid": true
+      },
+      "time": {
+        "answer": "quando nao ha outro participante explicito: Coordenacao de Mestrado",
+        "confidence": 0.3864375352859497,
+        "question": "Quando é a reunião?",
+        "valid": true
+      },
+      "location": {
+        "answer": "remoto - zoom",
+        "confidence": 0.6,
+        "question": "Onde é a reunião?",
+        "valid": true,
+        "fallback_source": "default_remote_location"
+      },
+      "topic": {
+        "answer": "RE: Reuniao sem efeito",
+        "confidence": 0.65,
+        "question": "Qual é o tópico da reunião?",
+        "valid": true,
+        "fallback_source": "fallback_subject"
+      }
+    },
+    "processed_at": "2026-07-17T14:14:15.235879",
+    "metadata": {
+      "model": "qa\\models\\bertimbau_qa_finetuned",
+      "confidence_threshold": 0.3,
+      "context_enrichment": {
+        "sender": "Coordenacao de Mestrado",
+        "metadata_location": null,
+        "temporal_hints": [],
+        "reference_datetime": "2026-05-23T09:40:00",
+        "explicit_location": null,
+        "meeting_related": true,
+        "hints": [
+          "Assunto: RE: Reuniao sem efeito",
+          "Remetente: Coordenacao de Mestrado",
+          "Participante por defeito quando nao ha outro participante explicito: Coordenacao de Mestrado"
+        ]
+      }
+    }
+  },
+  {
+    "email_id": 32,
+    "email_text": "Cara colega Coordenacao de Mestrado, Por indicacao da direcao, a reuniao sobre horarios do semestre fica cancelada ate nova comunicacao.",
+    "subject": "Fw: Indisponibilidade para a reuniao",
+    "qa_results": {
+      "participants": {
+        "answer": "Prof. Ricardo Mendes",
+        "confidence": 0.9927921295166016,
+        "question": "Quem participa na reunião?",
+        "valid": true
+      },
+      "time": {
+        "answer": "Prof. Ricardo Mendes",
+        "confidence": 0.5570546984672546,
+        "question": "Quando é a reunião?",
+        "valid": true
+      },
+      "location": {
+        "answer": "remoto - zoom",
+        "confidence": 0.6,
+        "question": "Onde é a reunião?",
+        "valid": true,
+        "fallback_source": "default_remote_location"
+      },
+      "topic": {
+        "answer": "horarios do semestre",
+        "confidence": 0.9999018907546997,
+        "question": "Qual é o tópico da reunião?",
+        "valid": true
+      }
+    },
+    "processed_at": "2026-07-17T14:14:15.395595",
+    "metadata": {
+      "model": "qa\\models\\bertimbau_qa_finetuned",
+      "confidence_threshold": 0.3,
+      "context_enrichment": {
+        "sender": "Prof. Ricardo Mendes",
+        "metadata_location": null,
+        "temporal_hints": [],
+        "reference_datetime": "2026-05-29T14:30:00",
+        "explicit_location": null,
+        "meeting_related": true,
+        "hints": [
+          "Assunto: Fw: Indisponibilidade para a reuniao",
+          "Remetente: Prof. Ricardo Mendes",
+          "Participante por defeito quando nao ha outro participante explicito: Prof. Ricardo Mendes"
+        ]
+      }
+    }
+  },
+  {
+    "email_id": 3,
+    "email_text": "Exmo. Professor Professora Ana Costa, Gostaria de saber se tem disponibilidade para reunirmos na proxima semana, em secretaria, para falarmos sobre validacao de atas. Se preferir, posso adaptar ao horario do departamento.",
+    "subject": "RE: Reuniao sobre validacao de atas",
+    "qa_results": {
+      "participants": {
+        "answer": "Diretor do Curso",
+        "confidence": 0.6469831466674805,
+        "question": "Quem participa na reunião?",
+        "valid": true
+      },
+      "time": {
+        "answer": "na proxima semana",
+        "confidence": 0.9999967813491821,
+        "question": "Quando é a reunião?",
+        "valid": true,
+        "normalized": {
+          "text": "na proxima semana",
+          "original_text": "na proxima semana",
+          "reference_datetime": "2026-02-17T12:15:00",
+          "temporal_type": "interval",
+          "normalized_datetime": null,
+          "precision": "week",
+          "confidence": 0.75,
+          "extraction_method": "rule_based",
+          "notes": [
+            "Parsed relative expression: 'na proxima semana'"
+          ],
+          "interval_start": "2026-02-23T00:00:00",
+          "interval_end": "2026-03-02T00:00:00"
+        }
+      },
+      "location": {
+        "answer": "presencial - secretaria",
+        "confidence": 0.9,
+        "question": "Onde é a reunião?",
+        "valid": true,
+        "fallback_source": "fallback_metadata_location"
+      },
+      "topic": {
+        "answer": "validacao de atas",
+        "confidence": 0.9999920129776001,
+        "question": "Qual é o tópico da reunião?",
+        "valid": true
+      }
+    },
+    "processed_at": "2026-07-17T14:14:15.643257",
+    "metadata": {
+      "model": "qa\\models\\bertimbau_qa_finetuned",
+      "confidence_threshold": 0.3,
+      "context_enrichment": {
+        "sender": "Diretor do Curso",
+        "metadata_location": "presencial - secretaria",
+        "temporal_hints": [
+          {
+            "text": "na proxima semana",
+            "original_text": "na proxima semana",
+            "reference_datetime": "2026-02-17T12:15:00",
+            "temporal_type": "interval",
+            "normalized_datetime": null,
+            "precision": "week",
+            "confidence": 0.75,
+            "extraction_method": "rule_based",
+            "notes": [
+              "Parsed relative expression: 'na proxima semana'"
+            ],
+            "interval_start": "2026-02-23T00:00:00",
+            "interval_end": "2026-03-02T00:00:00"
+          }
+        ],
+        "reference_datetime": "2026-02-17T12:15:00",
+        "explicit_location": "presencial - secretaria",
+        "meeting_related": true,
+        "hints": [
+          "Assunto: RE: Reuniao sobre validacao de atas",
+          "Remetente: Diretor do Curso",
+          "Participante por defeito quando nao ha outro participante explicito: Diretor do Curso",
+          "Expressoes temporais normalizadas:",
+          "- na proxima semana ->"
+        ]
+      }
+    }
+  },
+  {
+    "email_id": 301,
+    "email_text": "Cara colega Professora Sofia Carvalho, Surgiu uma sobreposicao no horario e nao conseguirei participar na reuniao quinta as 16h.",
+    "subject": "Indisponibilidade para a reuniao",
+    "qa_results": {
+      "participants": {
+        "answer": "Professora Ana Costa",
+        "confidence": 0.7961493730545044,
+        "question": "Quem participa na reunião?",
+        "valid": true
+      },
+      "time": {
+        "answer": "quinta as 16h",
+        "confidence": 0.9999970197677612,
+        "question": "Quando é a reunião?",
+        "valid": true,
+        "normalized": {
+          "text": "quinta as 16h",
+          "original_text": "quinta as 16h",
+          "reference_datetime": "2026-05-21T12:50:00",
+          "temporal_type": "datetime",
+          "normalized_datetime": "2026-05-21T16:00:00",
+          "precision": "exact",
+          "confidence": 0.9,
+          "extraction_method": "rule_based",
+          "notes": []
+        }
+      },
+      "location": {
+        "answer": "presencial - laboratorio de informatica",
+        "confidence": 0.9,
+        "question": "Onde é a reunião?",
+        "valid": true,
+        "fallback_source": "fallback_metadata_location"
+      },
+      "topic": {
+        "answer": "Indisponibilidade para a reuniao",
+        "confidence": 0.65,
+        "question": "Qual é o tópico da reunião?",
+        "valid": true,
+        "fallback_source": "fallback_subject"
+      }
+    },
+    "processed_at": "2026-07-17T14:14:15.896571",
+    "metadata": {
+      "model": "qa\\models\\bertimbau_qa_finetuned",
+      "confidence_threshold": 0.3,
+      "context_enrichment": {
+        "sender": "Professora Ana Costa",
+        "metadata_location": "presencial - laboratorio de informatica",
+        "temporal_hints": [
+          {
+            "text": "quinta as 16h",
+            "original_text": "quinta as 16h",
+            "reference_datetime": "2026-05-21T12:50:00",
+            "temporal_type": "datetime",
+            "normalized_datetime": "2026-05-21T16:00:00",
+            "precision": "exact",
+            "confidence": 0.9,
+            "extraction_method": "rule_based",
+            "notes": []
+          },
+          {
+            "text": "16h",
+            "original_text": "16h",
+            "reference_datetime": "2026-05-21T12:50:00",
+            "temporal_type": "time",
+            "normalized_datetime": "2026-05-21T16:00:00",
+            "precision": "time_only",
+            "confidence": 0.8,
+            "extraction_method": "rule_based",
+            "notes": [
+              "Parsed as time-only expression"
+            ]
+          }
+        ],
+        "reference_datetime": "2026-05-21T12:50:00",
+        "explicit_location": null,
+        "meeting_related": true,
+        "hints": [
+          "Assunto: Indisponibilidade para a reuniao",
+          "Remetente: Professora Ana Costa",
+          "Participante por defeito quando nao ha outro participante explicito: Professora Ana Costa",
+          "Expressoes temporais normalizadas:",
+          "- quinta as 16h -> 2026-05-21T16:00:00",
+          "- 16h -> 2026-05-21T16:00:00"
+        ]
+      }
+    }
+  },
+  {
+    "email_id": 158,
+    "email_text": "Estimado/a estudante Carolina Silva, Por indicacao da direcao, a reuniao sobre analise dos resultados dos estudantes fica cancelada ate nova comunicacao.",
+    "subject": "Fw: Imprevisto - analise dos resultados dos estudantes",
+    "qa_results": {
+      "participants": {
+        "answer": "Secretaria Academica",
+        "confidence": 0.9894092082977295,
+        "question": "Quem participa na reunião?",
+        "valid": true
+      },
+      "time": {
+        "answer": "Secretaria Academica",
+        "confidence": 0.6260559558868408,
+        "question": "Quando é a reunião?",
+        "valid": true
+      },
+      "location": {
+        "answer": "presencial - gabinete da direcao",
+        "confidence": 0.9,
+        "question": "Onde é a reunião?",
+        "valid": true,
+        "fallback_source": "fallback_metadata_location"
+      },
+      "topic": {
+        "answer": "analise dos resultados dos estudantes",
+        "confidence": 0.9996808171272278,
+        "question": "Qual é o tópico da reunião?",
+        "valid": true
+      }
+    },
+    "processed_at": "2026-07-17T14:14:16.061805",
+    "metadata": {
+      "model": "qa\\models\\bertimbau_qa_finetuned",
+      "confidence_threshold": 0.3,
+      "context_enrichment": {
+        "sender": "Secretaria Academica",
+        "metadata_location": "presencial - gabinete da direcao",
+        "temporal_hints": [],
+        "reference_datetime": "2026-04-14T14:10:00",
+        "explicit_location": null,
+        "meeting_related": true,
+        "hints": [
+          "Assunto: Fw: Imprevisto - analise dos resultados dos estudantes",
+          "Remetente: Secretaria Academica",
+          "Participante por defeito quando nao ha outro participante explicito: Secretaria Academica"
+        ]
+      }
+    }
+  },
+  {
+    "email_id": 181,
+    "email_text": "Caro colega Gabinete de Estagios, Surgiu uma sobreposicao no horario e nao conseguirei participar na reuniao amanha as 10h.",
+    "subject": "RE: Imprevisto - avaliacao continua",
+    "qa_results": {
+      "participants": {
+        "answer": "Prof. Ricardo Mendes",
+        "confidence": 0.972442090511322,
+        "question": "Quem participa na reunião?",
+        "valid": true
+      },
+      "time": {
+        "answer": "amanha as 10h",
+        "confidence": 0.9999955296516418,
+        "question": "Quando é a reunião?",
+        "valid": true,
+        "normalized": {
+          "text": "amanha as 10h",
+          "original_text": "amanha as 10h",
+          "reference_datetime": "2026-05-28T18:20:00",
+          "temporal_type": "datetime",
+          "normalized_datetime": "2026-05-29T10:00:00",
+          "precision": "exact",
+          "confidence": 0.85,
+          "extraction_method": "rule_based",
+          "notes": [
+            "Parsed relative expression: 'amanha'"
+          ]
+        }
+      },
+      "location": {
+        "answer": "remoto - zoom",
+        "confidence": 0.6,
+        "question": "Onde é a reunião?",
+        "valid": true,
+        "fallback_source": "default_remote_location"
+      },
+      "topic": {
+        "answer": "avaliacao continua",
+        "confidence": 0.9993655681610107,
+        "question": "Qual é o tópico da reunião?",
+        "valid": true
+      }
+    },
+    "processed_at": "2026-07-17T14:14:16.329575",
+    "metadata": {
+      "model": "qa\\models\\bertimbau_qa_finetuned",
+      "confidence_threshold": 0.3,
+      "context_enrichment": {
+        "sender": "Prof. Ricardo Mendes",
+        "metadata_location": null,
+        "temporal_hints": [
+          {
+            "text": "amanha as 10h",
+            "original_text": "amanha as 10h",
+            "reference_datetime": "2026-05-28T18:20:00",
+            "temporal_type": "datetime",
+            "normalized_datetime": "2026-05-29T10:00:00",
+            "precision": "exact",
+            "confidence": 0.85,
+            "extraction_method": "rule_based",
+            "notes": [
+              "Parsed relative expression: 'amanha'"
+            ]
+          },
+          {
+            "text": "10h",
+            "original_text": "10h",
+            "reference_datetime": "2026-05-28T18:20:00",
+            "temporal_type": "time",
+            "normalized_datetime": "2026-05-28T10:00:00",
+            "precision": "time_only",
+            "confidence": 0.8,
+            "extraction_method": "rule_based",
+            "notes": [
+              "Parsed as time-only expression"
+            ]
+          }
+        ],
+        "reference_datetime": "2026-05-28T18:20:00",
+        "explicit_location": null,
+        "meeting_related": true,
+        "hints": [
+          "Assunto: RE: Imprevisto - avaliacao continua",
+          "Remetente: Prof. Ricardo Mendes",
+          "Participante por defeito quando nao ha outro participante explicito: Prof. Ricardo Mendes",
+          "Expressoes temporais normalizadas:",
+          "- amanha as 10h -> 2026-05-29T10:00:00",
+          "- 10h -> 2026-05-28T10:00:00"
+        ]
+      }
+    }
+  },
+  {
+    "email_id": 24,
+    "email_text": "Exmo. Professor Professora Ana Costa, Surgiu uma sobreposicao no horario e nao conseguirei participar na reuniao amanha as 15h.",
+    "subject": "Indisponibilidade para a reuniao",
+    "qa_results": {
+      "participants": {
+        "answer": "Coordenacao de Mestrado",
+        "confidence": 0.7,
+        "question": "Quem participa na reunião?",
+        "valid": true,
+        "fallback_source": "fallback_sender"
+      },
+      "time": {
+        "answer": "amanha as 15h",
+        "confidence": 0.9999940395355225,
+        "question": "Quando é a reunião?",
+        "valid": true,
+        "normalized": {
+          "text": "amanha as 15h",
+          "original_text": "amanha as 15h",
+          "reference_datetime": "2026-03-16T13:30:00",
+          "temporal_type": "datetime",
+          "normalized_datetime": "2026-03-17T15:00:00",
+          "precision": "exact",
+          "confidence": 0.85,
+          "extraction_method": "rule_based",
+          "notes": [
+            "Parsed relative expression: 'amanha'"
+          ]
+        }
+      },
+      "location": {
+        "answer": "remoto - zoom",
+        "confidence": 0.6,
+        "question": "Onde é a reunião?",
+        "valid": true,
+        "fallback_source": "default_remote_location"
+      },
+      "topic": {
+        "answer": "Indisponibilidade para a reuniao",
+        "confidence": 0.65,
+        "question": "Qual é o tópico da reunião?",
+        "valid": true,
+        "fallback_source": "fallback_subject"
+      }
+    },
+    "processed_at": "2026-07-17T14:14:16.592380",
+    "metadata": {
+      "model": "qa\\models\\bertimbau_qa_finetuned",
+      "confidence_threshold": 0.3,
+      "context_enrichment": {
+        "sender": "Coordenacao de Mestrado",
+        "metadata_location": null,
+        "temporal_hints": [
+          {
+            "text": "amanha as 15h",
+            "original_text": "amanha as 15h",
+            "reference_datetime": "2026-03-16T13:30:00",
+            "temporal_type": "datetime",
+            "normalized_datetime": "2026-03-17T15:00:00",
+            "precision": "exact",
+            "confidence": 0.85,
+            "extraction_method": "rule_based",
+            "notes": [
+              "Parsed relative expression: 'amanha'"
+            ]
+          },
+          {
+            "text": "15h",
+            "original_text": "15h",
+            "reference_datetime": "2026-03-16T13:30:00",
+            "temporal_type": "time",
+            "normalized_datetime": "2026-03-16T15:00:00",
+            "precision": "time_only",
+            "confidence": 0.8,
+            "extraction_method": "rule_based",
+            "notes": [
+              "Parsed as time-only expression"
+            ]
+          }
+        ],
+        "reference_datetime": "2026-03-16T13:30:00",
+        "explicit_location": null,
+        "meeting_related": true,
+        "hints": [
+          "Assunto: Indisponibilidade para a reuniao",
+          "Remetente: Coordenacao de Mestrado",
+          "Participante por defeito quando nao ha outro participante explicito: Coordenacao de Mestrado",
+          "Expressoes temporais normalizadas:",
+          "- amanha as 15h -> 2026-03-17T15:00:00",
+          "- 15h -> 2026-03-16T15:00:00"
+        ]
+      }
+    }
+  },
+  {
+    "email_id": 266,
+    "email_text": "Caro colega Professora Sofia Carvalho, Tudo certo para a reuniao sobre revisao do plano de trabalhos. Ate ao final do dia.",
+    "subject": "Fw: Re: Marcacao de reuniao",
+    "qa_results": {
+      "participants": {
+        "answer": "Prof. Ricardo Mendes",
+        "confidence": 0.9810248017311096,
+        "question": "Quem participa na reunião?",
+        "valid": true
+      },
+      "time": {
+        "answer": "ao final do dia",
+        "confidence": 0.9999920725822449,
+        "question": "Quando é a reunião?",
+        "valid": true
+      },
+      "location": {
+        "answer": "presencial - sala 2.3",
+        "confidence": 0.9,
+        "question": "Onde é a reunião?",
+        "valid": true,
+        "fallback_source": "fallback_metadata_location"
+      },
+      "topic": {
+        "answer": "revisao do plano de trabalhos",
+        "confidence": 0.999939501285553,
+        "question": "Qual é o tópico da reunião?",
+        "valid": true
+      }
+    },
+    "processed_at": "2026-07-17T14:14:16.743505",
+    "metadata": {
+      "model": "qa\\models\\bertimbau_qa_finetuned",
+      "confidence_threshold": 0.3,
+      "context_enrichment": {
+        "sender": "Prof. Ricardo Mendes",
+        "metadata_location": "presencial - sala 2.3",
+        "temporal_hints": [],
+        "reference_datetime": "2026-05-12T14:40:00",
+        "explicit_location": null,
+        "meeting_related": true,
+        "hints": [
+          "Assunto: Fw: Re: Marcacao de reuniao",
+          "Remetente: Prof. Ricardo Mendes",
+          "Participante por defeito quando nao ha outro participante explicito: Prof. Ricardo Mendes"
+        ]
+      }
+    }
+  },
+  {
+    "email_id": 94,
+    "email_text": "Cara colega Mariana Lopes, Confirmo a reuniao ao final do dia, em sala B104, para discutirmos planeamento de aulas.",
+    "subject": "Re: Marcacao de reuniao",
+    "qa_results": {
+      "participants": {
+        "answer": "Professora Sofia Carvalho",
+        "confidence": 0.7754344940185547,
+        "question": "Quem participa na reunião?",
+        "valid": true
+      },
+      "time": {
+        "answer": "ao final do dia",
+        "confidence": 0.9999988079071045,
+        "question": "Quando é a reunião?",
+        "valid": true
+      },
+      "location": {
+        "answer": "presencial - sala B104",
+        "confidence": 0.9,
+        "question": "Onde é a reunião?",
+        "valid": true,
+        "fallback_source": "fallback_metadata_location"
+      },
+      "topic": {
+        "answer": "planeamento de aulas",
+        "confidence": 0.9999948143959045,
+        "question": "Qual é o tópico da reunião?",
+        "valid": true
+      }
+    },
+    "processed_at": "2026-07-17T14:14:16.897096",
+    "metadata": {
+      "model": "qa\\models\\bertimbau_qa_finetuned",
+      "confidence_threshold": 0.3,
+      "context_enrichment": {
+        "sender": "Professora Sofia Carvalho",
+        "metadata_location": "presencial - sala B104",
+        "temporal_hints": [],
+        "reference_datetime": "2026-05-03T17:00:00",
+        "explicit_location": "presencial - sala B104",
+        "meeting_related": true,
+        "hints": [
+          "Assunto: Re: Marcacao de reuniao",
+          "Remetente: Professora Sofia Carvalho",
+          "Participante por defeito quando nao ha outro participante explicito: Professora Sofia Carvalho"
+        ]
+      }
+    }
+  },
+  {
+    "email_id": 96,
+    "email_text": "Boa tarde, Seria possivel agendar uma breve reuniao depois da aula? O objetivo e discutir horarios do semestre.",
+    "subject": "Re: Reuniao sobre horarios do semestre",
+    "qa_results": {
+      "participants": {
+        "answer": "Professor Luis Almeida",
+        "confidence": 0.9874382019042969,
+        "question": "Quem participa na reunião?",
+        "valid": true
+      },
+      "time": {
+        "answer": "depois da aula",
+        "confidence": 0.9999580979347229,
+        "question": "Quando é a reunião?",
+        "valid": true
+      },
+      "location": {
+        "answer": "remoto - zoom",
+        "confidence": 0.6,
+        "question": "Onde é a reunião?",
+        "valid": true,
+        "fallback_source": "default_remote_location"
+      },
+      "topic": {
+        "answer": "horarios do semestre",
+        "confidence": 0.9999982714653015,
+        "question": "Qual é o tópico da reunião?",
+        "valid": true
+      }
+    },
+    "processed_at": "2026-07-17T14:14:17.048355",
+    "metadata": {
+      "model": "qa\\models\\bertimbau_qa_finetuned",
+      "confidence_threshold": 0.3,
+      "context_enrichment": {
+        "sender": "Professor Luis Almeida",
+        "metadata_location": null,
+        "temporal_hints": [],
+        "reference_datetime": "2026-04-11T13:05:00",
+        "explicit_location": null,
+        "meeting_related": true,
+        "hints": [
+          "Assunto: Re: Reuniao sobre horarios do semestre",
+          "Remetente: Professor Luis Almeida",
+          "Participante por defeito quando nao ha outro participante explicito: Professor Luis Almeida"
+        ]
+      }
+    }
+  },
+  {
+    "email_id": 67,
+    "email_text": "Boa tarde, Partilho a versao revista da ata para validacao.",
+    "subject": "Fw: Informacao academica",
+    "qa_results": {
+      "participants": {
+        "answer": "Joao Pereira",
+        "confidence": 0.999663770198822,
+        "question": "Quem participa na reunião?",
+        "valid": true
+      },
+      "time": {
+        "answer": "Joao Pereira",
+        "confidence": 0.5761011242866516,
+        "question": "Quando é a reunião?",
+        "valid": true
+      },
+      "location": {
+        "answer": null,
+        "confidence": 0.0,
+        "question": "Onde é a reunião?",
+        "valid": false,
+        "fallback_source": "non_meeting_no_location"
+      },
+      "topic": {
+        "answer": "validacao",
+        "confidence": 0.9656867384910583,
+        "question": "Qual é o tópico da reunião?",
+        "valid": true
+      }
+    },
+    "processed_at": "2026-07-17T14:14:17.189533",
+    "metadata": {
+      "model": "qa\\models\\bertimbau_qa_finetuned",
+      "confidence_threshold": 0.3,
+      "context_enrichment": {
+        "sender": "Joao Pereira",
+        "metadata_location": null,
+        "temporal_hints": [],
+        "reference_datetime": "2026-05-07T09:00:00",
+        "explicit_location": null,
+        "meeting_related": false,
+        "hints": [
+          "Assunto: Fw: Informacao academica",
+          "Remetente: Joao Pereira",
+          "Participante por defeito quando nao ha outro participante explicito: Joao Pereira"
+        ]
+      }
+    }
+  },
+  {
+    "email_id": 264,
+    "email_text": "Viva, A bibliografia recomendada para esta semana ja se encontra disponivel no Moodle.",
+    "subject": "Atualizacao de processo",
+    "qa_results": {
+      "participants": {
+        "answer": "Prof. Ricardo Mendes",
+        "confidence": 0.999916672706604,
+        "question": "Quem participa na reunião?",
+        "valid": true
+      },
+      "time": {
+        "answer": "esta semana",
+        "confidence": 0.6736044883728027,
+        "question": "Quando é a reunião?",
+        "valid": true
+      },
+      "location": {
+        "answer": null,
+        "confidence": 0.0,
+        "question": "Onde é a reunião?",
+        "valid": false,
+        "fallback_source": "non_meeting_no_location"
+      },
+      "topic": {
+        "answer": "Atualizacao de processo",
+        "confidence": 0.5071700811386108,
+        "question": "Qual é o tópico da reunião?",
+        "valid": true
+      }
+    },
+    "processed_at": "2026-07-17T14:14:17.333085",
+    "metadata": {
+      "model": "qa\\models\\bertimbau_qa_finetuned",
+      "confidence_threshold": 0.3,
+      "context_enrichment": {
+        "sender": "Prof. Ricardo Mendes",
+        "metadata_location": null,
+        "temporal_hints": [],
+        "reference_datetime": "2026-03-27T13:30:00",
+        "explicit_location": null,
+        "meeting_related": false,
+        "hints": [
+          "Assunto: Atualizacao de processo",
+          "Remetente: Prof. Ricardo Mendes",
+          "Participante por defeito quando nao ha outro participante explicito: Prof. Ricardo Mendes"
+        ]
+      }
+    }
+  },
+  {
+    "email_id": 250,
+    "email_text": "Bom dia Rita Fernandes, Preciso de esclarecer alguns pontos sobre relatorio de progresso. Consegue reunir quando for conveniente?",
+    "subject": "Fw: Pedido de reuniao",
+    "qa_results": {
+      "participants": {
+        "answer": "Secretaria Academica",
+        "confidence": 0.9955478310585022,
+        "question": "Quem participa na reunião?",
+        "valid": true
+      },
+      "time": {
+        "answer": "Secretaria Academica",
+        "confidence": 0.6971927881240845,
+        "question": "Quando é a reunião?",
+        "valid": true
+      },
+      "location": {
+        "answer": "remoto - zoom",
+        "confidence": 0.6,
+        "question": "Onde é a reunião?",
+        "valid": true,
+        "fallback_source": "default_remote_location"
+      },
+      "topic": {
+        "answer": "relatorio de progresso",
+        "confidence": 0.9999850392341614,
+        "question": "Qual é o tópico da reunião?",
+        "valid": true
+      }
+    },
+    "processed_at": "2026-07-17T14:14:17.480295",
+    "metadata": {
+      "model": "qa\\models\\bertimbau_qa_finetuned",
+      "confidence_threshold": 0.3,
+      "context_enrichment": {
+        "sender": "Secretaria Academica",
+        "metadata_location": null,
+        "temporal_hints": [],
+        "reference_datetime": "2026-02-05T08:30:00",
+        "explicit_location": null,
+        "meeting_related": true,
+        "hints": [
+          "Assunto: Fw: Pedido de reuniao",
+          "Remetente: Secretaria Academica",
+          "Participante por defeito quando nao ha outro participante explicito: Secretaria Academica"
+        ]
+      }
+    }
+  },
+  {
+    "email_id": 310,
+    "email_text": "Bom dia Diretor do Curso, Gostaria de saber se tem disponibilidade para reunirmos dia 22 as 17h, em remoto, para falarmos sobre horarios do semestre.",
+    "subject": "Re: Agendamento - horarios do semestre",
+    "qa_results": {
+      "participants": {
+        "answer": "Prof. Ricardo Mendes",
+        "confidence": 0.9482459425926208,
+        "question": "Quem participa na reunião?",
+        "valid": true
+      },
+      "time": {
+        "answer": "dia 22 as 17h",
+        "confidence": 0.9999984502792358,
+        "question": "Quando é a reunião?",
+        "valid": true,
+        "normalized": {
+          "text": "17h",
+          "original_text": "17h",
+          "reference_datetime": "2026-03-21T14:00:00",
+          "temporal_type": "time",
+          "normalized_datetime": "2026-03-21T17:00:00",
+          "precision": "time_only",
+          "confidence": 0.8,
+          "extraction_method": "rule_based",
+          "notes": [
+            "Parsed as time-only expression"
+          ]
+        }
+      },
+      "location": {
+        "answer": "remoto - zoom",
+        "confidence": 0.8,
+        "question": "Onde é a reunião?",
+        "valid": true,
+        "fallback_source": "fallback_explicit_location"
+      },
+      "topic": {
+        "answer": "horarios do semestre",
+        "confidence": 0.9999913573265076,
+        "question": "Qual é o tópico da reunião?",
+        "valid": true
+      }
+    },
+    "processed_at": "2026-07-17T14:14:17.719226",
+    "metadata": {
+      "model": "qa\\models\\bertimbau_qa_finetuned",
+      "confidence_threshold": 0.3,
+      "context_enrichment": {
+        "sender": "Prof. Ricardo Mendes",
+        "metadata_location": null,
+        "temporal_hints": [
+          {
+            "text": "17h",
+            "original_text": "17h",
+            "reference_datetime": "2026-03-21T14:00:00",
+            "temporal_type": "time",
+            "normalized_datetime": "2026-03-21T17:00:00",
+            "precision": "time_only",
+            "confidence": 0.8,
+            "extraction_method": "rule_based",
+            "notes": [
+              "Parsed as time-only expression"
+            ]
+          }
+        ],
+        "reference_datetime": "2026-03-21T14:00:00",
+        "explicit_location": "remoto - zoom",
+        "meeting_related": true,
+        "hints": [
+          "Assunto: Re: Agendamento - horarios do semestre",
+          "Remetente: Prof. Ricardo Mendes",
+          "Participante por defeito quando nao ha outro participante explicito: Prof. Ricardo Mendes",
+          "Expressoes temporais normalizadas:",
+          "- 17h -> 2026-03-21T17:00:00"
+        ]
+      }
+    }
+  },
+  {
+    "email_id": 396,
+    "email_text": "Bom dia, Por motivo imprevisto, a reuniao de depois de almoco fica sem efeito.",
+    "subject": "Fw: Cancelamento de reuniao",
+    "qa_results": {
+      "participants": {
+        "answer": "Ana Martins",
+        "confidence": 0.9946231842041016,
+        "question": "Quem participa na reunião?",
+        "valid": true
+      },
+      "time": {
+        "answer": "depois de almoco",
+        "confidence": 0.9999991059303284,
+        "question": "Quando é a reunião?",
+        "valid": true
+      },
+      "location": {
+        "answer": "presencial - secretaria",
+        "confidence": 0.9,
+        "question": "Onde é a reunião?",
+        "valid": true,
+        "fallback_source": "fallback_metadata_location"
+      },
+      "topic": {
+        "answer": "Fw: Cancelamento de reuniao",
+        "confidence": 0.65,
+        "question": "Qual é o tópico da reunião?",
+        "valid": true,
+        "fallback_source": "fallback_subject"
+      }
+    },
+    "processed_at": "2026-07-17T14:14:17.870872",
+    "metadata": {
+      "model": "qa\\models\\bertimbau_qa_finetuned",
+      "confidence_threshold": 0.3,
+      "context_enrichment": {
+        "sender": "Ana Martins",
+        "metadata_location": "presencial - secretaria",
+        "temporal_hints": [],
+        "reference_datetime": "2026-02-24T11:20:00",
+        "explicit_location": null,
+        "meeting_related": true,
+        "hints": [
+          "Assunto: Fw: Cancelamento de reuniao",
+          "Remetente: Ana Martins",
+          "Participante por defeito quando nao ha outro participante explicito: Ana Martins"
+        ]
+      }
+    }
+  },
+  {
+    "email_id": 112,
+    "email_text": "Bom dia Miguel Santos, Confirmo a reuniao sexta as 14h30, em remoto, para discutirmos preparacao da apresentacao.",
+    "subject": "Confirmacao - preparacao da apresentacao",
+    "qa_results": {
+      "participants": {
+        "answer": "Secretaria Academica",
+        "confidence": 0.9688937664031982,
+        "question": "Quem participa na reunião?",
+        "valid": true
+      },
+      "time": {
+        "answer": "sexta as 14h30",
+        "confidence": 0.9999988079071045,
+        "question": "Quando é a reunião?",
+        "valid": true,
+        "normalized": {
+          "text": "sexta as 14h",
+          "original_text": "sexta as 14h",
+          "reference_datetime": "2026-04-08T08:15:00",
+          "temporal_type": "datetime",
+          "normalized_datetime": "2026-04-10T14:00:00",
+          "precision": "exact",
+          "confidence": 0.9,
+          "extraction_method": "rule_based",
+          "notes": []
+        }
+      },
+      "location": {
+        "answer": "remoto - zoom",
+        "confidence": 0.8,
+        "question": "Onde é a reunião?",
+        "valid": true,
+        "fallback_source": "fallback_explicit_location"
+      },
+      "topic": {
+        "answer": "preparacao da apresentacao",
+        "confidence": 0.9998640418052673,
+        "question": "Qual é o tópico da reunião?",
+        "valid": true
+      }
+    },
+    "processed_at": "2026-07-17T14:14:18.142399",
+    "metadata": {
+      "model": "qa\\models\\bertimbau_qa_finetuned",
+      "confidence_threshold": 0.3,
+      "context_enrichment": {
+        "sender": "Secretaria Academica",
+        "metadata_location": null,
+        "temporal_hints": [
+          {
+            "text": "sexta as 14h",
+            "original_text": "sexta as 14h",
+            "reference_datetime": "2026-04-08T08:15:00",
+            "temporal_type": "datetime",
+            "normalized_datetime": "2026-04-10T14:00:00",
+            "precision": "exact",
+            "confidence": 0.9,
+            "extraction_method": "rule_based",
+            "notes": []
+          },
+          {
+            "text": "14h30",
+            "original_text": "14h30",
+            "reference_datetime": "2026-04-08T08:15:00",
+            "temporal_type": "time",
+            "normalized_datetime": "2026-04-08T14:30:00",
+            "precision": "time_only",
+            "confidence": 0.8,
+            "extraction_method": "rule_based",
+            "notes": [
+              "Parsed as time-only expression"
+            ]
+          }
+        ],
+        "reference_datetime": "2026-04-08T08:15:00",
+        "explicit_location": "remoto - zoom",
+        "meeting_related": true,
+        "hints": [
+          "Assunto: Confirmacao - preparacao da apresentacao",
+          "Remetente: Secretaria Academica",
+          "Participante por defeito quando nao ha outro participante explicito: Secretaria Academica",
+          "Expressoes temporais normalizadas:",
+          "- sexta as 14h -> 2026-04-10T14:00:00",
+          "- 14h30 -> 2026-04-08T14:30:00"
+        ]
+      }
+    }
+  },
+  {
+    "email_id": 163,
+    "email_text": "Bom dia Professora Ana Costa, Nao vou conseguir estar presente na reuniao em remoto, pelo que terei de cancelar.",
+    "subject": "Fw: Cancelamento de reuniao",
+    "qa_results": {
+      "participants": {
+        "answer": "Secretaria Academica",
+        "confidence": 0.9836418032646179,
+        "question": "Quem participa na reunião?",
+        "valid": true
+      },
+      "time": {
+        "answer": "Secretaria Academica",
+        "confidence": 0.7536446452140808,
+        "question": "Quando é a reunião?",
+        "valid": true
+      },
+      "location": {
+        "answer": "remoto - zoom",
+        "confidence": 0.8,
+        "question": "Onde é a reunião?",
+        "valid": true,
+        "fallback_source": "fallback_explicit_location"
+      },
+      "topic": {
+        "answer": "Secretaria Academica",
+        "confidence": 0.9552499651908875,
+        "question": "Qual é o tópico da reunião?",
+        "valid": true
+      }
+    },
+    "processed_at": "2026-07-17T14:14:18.300842",
+    "metadata": {
+      "model": "qa\\models\\bertimbau_qa_finetuned",
+      "confidence_threshold": 0.3,
+      "context_enrichment": {
+        "sender": "Secretaria Academica",
+        "metadata_location": null,
+        "temporal_hints": [],
+        "reference_datetime": "2026-04-15T08:05:00",
+        "explicit_location": "remoto - zoom",
+        "meeting_related": true,
+        "hints": [
+          "Assunto: Fw: Cancelamento de reuniao",
+          "Remetente: Secretaria Academica",
+          "Participante por defeito quando nao ha outro participante explicito: Secretaria Academica"
+        ]
+      }
+    }
+  },
+  {
+    "email_id": 347,
+    "email_text": "Bom dia, Informamos que o prazo para submissao dos elementos de avaliacao termina esta sexta-feira.",
+    "subject": "Re: Envio de documentos",
+    "qa_results": {
+      "participants": {
+        "answer": "Secretaria Academica",
+        "confidence": 0.4171140193939209,
+        "question": "Quem participa na reunião?",
+        "valid": true
+      },
+      "time": {
+        "answer": "sexta-feira",
+        "confidence": 0.9999976754188538,
+        "question": "Quando é a reunião?",
+        "valid": true,
+        "normalized": {
+          "text": "sexta",
+          "original_text": "sexta",
+          "reference_datetime": "2026-03-06T15:05:00",
+          "temporal_type": "date",
+          "normalized_datetime": "2026-03-13T00:00:00",
+          "precision": "day",
+          "confidence": 0.9,
+          "extraction_method": "rule_based",
+          "notes": [
+            "Ambiguous weekday without time; assuming next week"
+          ]
+        }
+      },
+      "location": {
+        "answer": null,
+        "confidence": 0.0,
+        "question": "Onde é a reunião?",
+        "valid": false,
+        "fallback_source": "non_meeting_no_location"
+      },
+      "topic": {
+        "answer": "submissao dos elementos de avaliacao",
+        "confidence": 0.7558462619781494,
+        "question": "Qual é o tópico da reunião?",
+        "valid": true
+      }
+    },
+    "processed_at": "2026-07-17T14:14:18.520339",
+    "metadata": {
+      "model": "qa\\models\\bertimbau_qa_finetuned",
+      "confidence_threshold": 0.3,
+      "context_enrichment": {
+        "sender": "Secretaria Academica",
+        "metadata_location": null,
+        "temporal_hints": [
+          {
+            "text": "sexta",
+            "original_text": "sexta",
+            "reference_datetime": "2026-03-06T15:05:00",
+            "temporal_type": "date",
+            "normalized_datetime": "2026-03-13T00:00:00",
+            "precision": "day",
+            "confidence": 0.9,
+            "extraction_method": "rule_based",
+            "notes": [
+              "Ambiguous weekday without time; assuming next week"
+            ]
+          }
+        ],
+        "reference_datetime": "2026-03-06T15:05:00",
+        "explicit_location": null,
+        "meeting_related": false,
+        "hints": [
+          "Assunto: Re: Envio de documentos",
+          "Remetente: Secretaria Academica",
+          "Participante por defeito quando nao ha outro participante explicito: Secretaria Academica",
+          "Expressoes temporais normalizadas:",
+          "- sexta -> 2026-03-13T00:00:00"
+        ]
+      }
+    }
+  },
+  {
+    "email_id": 123,
+    "email_text": "Viva Conselho Pedagogico, Gostaria de saber se tem disponibilidade para reunirmos durante a manha, em Teams, para falarmos sobre distribuicao de servico docente.",
+    "subject": "Reuniao sobre distribuicao de servico docente",
+    "qa_results": {
+      "participants": {
+        "answer": "Professor Luis Almeida",
+        "confidence": 0.9370707273483276,
+        "question": "Quem participa na reunião?",
+        "valid": true
+      },
+      "time": {
+        "answer": "durante a manha",
+        "confidence": 0.9999983906745911,
+        "question": "Quando é a reunião?",
+        "valid": true
+      },
+      "location": {
+        "answer": "remoto - teams",
+        "confidence": 0.9,
+        "question": "Onde é a reunião?",
+        "valid": true,
+        "fallback_source": "fallback_metadata_location"
+      },
+      "topic": {
+        "answer": "distribuicao de servico docente",
+        "confidence": 0.9999947547912598,
+        "question": "Qual é o tópico da reunião?",
+        "valid": true
+      }
+    },
+    "processed_at": "2026-07-17T14:14:18.699823",
+    "metadata": {
+      "model": "qa\\models\\bertimbau_qa_finetuned",
+      "confidence_threshold": 0.3,
+      "context_enrichment": {
+        "sender": "Professor Luis Almeida",
+        "metadata_location": "remoto - teams",
+        "temporal_hints": [],
+        "reference_datetime": "2026-04-16T08:10:00",
+        "explicit_location": "remoto - teams",
+        "meeting_related": true,
+        "hints": [
+          "Assunto: Reuniao sobre distribuicao de servico docente",
+          "Remetente: Professor Luis Almeida",
+          "Participante por defeito quando nao ha outro participante explicito: Professor Luis Almeida"
+        ]
+      }
+    }
+  },
+  {
+    "email_id": 2,
+    "email_text": "Viva Diretor do Curso, Gostaria de saber se tem disponibilidade para reunirmos amanha as 10h, em Zoom, para falarmos sobre revisao do plano de trabalhos.",
+    "subject": "Fw: Ponto de situacao",
+    "qa_results": {
+      "participants": {
+        "answer": "Professor Luis Almeida",
+        "confidence": 0.7,
+        "question": "Quem participa na reunião?",
+        "valid": true,
+        "fallback_source": "fallback_sender"
+      },
+      "time": {
+        "answer": "amanha as 10h",
+        "confidence": 0.9999979734420776,
+        "question": "Quando é a reunião?",
+        "valid": true,
+        "normalized": {
+          "text": "amanha as 10h",
+          "original_text": "amanha as 10h",
+          "reference_datetime": "2026-05-26T13:20:00",
+          "temporal_type": "datetime",
+          "normalized_datetime": "2026-05-27T10:00:00",
+          "precision": "exact",
+          "confidence": 0.85,
+          "extraction_method": "rule_based",
+          "notes": [
+            "Parsed relative expression: 'amanha'"
+          ]
+        }
+      },
+      "location": {
+        "answer": "remoto - zoom",
+        "confidence": 0.9,
+        "question": "Onde é a reunião?",
+        "valid": true,
+        "fallback_source": "fallback_metadata_location"
+      },
+      "topic": {
+        "answer": "revisao do plano de trabalhos",
+        "confidence": 0.9998669624328613,
+        "question": "Qual é o tópico da reunião?",
+        "valid": true
+      }
+    },
+    "processed_at": "2026-07-17T14:14:18.950050",
+    "metadata": {
+      "model": "qa\\models\\bertimbau_qa_finetuned",
+      "confidence_threshold": 0.3,
+      "context_enrichment": {
+        "sender": "Professor Luis Almeida",
+        "metadata_location": "remoto - zoom",
+        "temporal_hints": [
+          {
+            "text": "amanha as 10h",
+            "original_text": "amanha as 10h",
+            "reference_datetime": "2026-05-26T13:20:00",
+            "temporal_type": "datetime",
+            "normalized_datetime": "2026-05-27T10:00:00",
+            "precision": "exact",
+            "confidence": 0.85,
+            "extraction_method": "rule_based",
+            "notes": [
+              "Parsed relative expression: 'amanha'"
+            ]
+          },
+          {
+            "text": "10h",
+            "original_text": "10h",
+            "reference_datetime": "2026-05-26T13:20:00",
+            "temporal_type": "time",
+            "normalized_datetime": "2026-05-26T10:00:00",
+            "precision": "time_only",
+            "confidence": 0.8,
+            "extraction_method": "rule_based",
+            "notes": [
+              "Parsed as time-only expression"
+            ]
+          }
+        ],
+        "reference_datetime": "2026-05-26T13:20:00",
+        "explicit_location": "remoto - zoom",
+        "meeting_related": true,
+        "hints": [
+          "Assunto: Fw: Ponto de situacao",
+          "Remetente: Professor Luis Almeida",
+          "Participante por defeito quando nao ha outro participante explicito: Professor Luis Almeida",
+          "Expressoes temporais normalizadas:",
+          "- amanha as 10h -> 2026-05-27T10:00:00",
+          "- 10h -> 2026-05-26T10:00:00"
+        ]
+      }
+    }
+  },
+  {
+    "email_id": 107,
+    "email_text": "Exmo. Professor, Confirmado para sexta as 14h30. Levarei os documentos relativos a planeamento de aulas.",
+    "subject": "Fw: Confirmacao - planeamento de aulas",
+    "qa_results": {
+      "participants": {
+        "answer": "Coordenacao de Mestrado",
+        "confidence": 0.7,
+        "question": "Quem participa na reunião?",
+        "valid": true,
+        "fallback_source": "fallback_sender"
+      },
+      "time": {
+        "answer": "sexta as 14h30",
+        "confidence": 0.999998927116394,
+        "question": "Quando é a reunião?",
+        "valid": true,
+        "normalized": {
+          "text": "sexta as 14h",
+          "original_text": "sexta as 14h",
+          "reference_datetime": "2026-03-18T08:15:00",
+          "temporal_type": "datetime",
+          "normalized_datetime": "2026-03-20T14:00:00",
+          "precision": "exact",
+          "confidence": 0.9,
+          "extraction_method": "rule_based",
+          "notes": []
+        }
+      },
+      "location": {
+        "answer": "presencial - laboratorio de informatica",
+        "confidence": 0.9,
+        "question": "Onde é a reunião?",
+        "valid": true,
+        "fallback_source": "fallback_metadata_location"
+      },
+      "topic": {
+        "answer": "planeamento de aulas",
+        "confidence": 0.9999954700469971,
+        "question": "Qual é o tópico da reunião?",
+        "valid": true
+      }
+    },
+    "processed_at": "2026-07-17T14:14:19.212721",
+    "metadata": {
+      "model": "qa\\models\\bertimbau_qa_finetuned",
+      "confidence_threshold": 0.3,
+      "context_enrichment": {
+        "sender": "Coordenacao de Mestrado",
+        "metadata_location": "presencial - laboratorio de informatica",
+        "temporal_hints": [
+          {
+            "text": "sexta as 14h",
+            "original_text": "sexta as 14h",
+            "reference_datetime": "2026-03-18T08:15:00",
+            "temporal_type": "datetime",
+            "normalized_datetime": "2026-03-20T14:00:00",
+            "precision": "exact",
+            "confidence": 0.9,
+            "extraction_method": "rule_based",
+            "notes": []
+          },
+          {
+            "text": "14h30",
+            "original_text": "14h30",
+            "reference_datetime": "2026-03-18T08:15:00",
+            "temporal_type": "time",
+            "normalized_datetime": "2026-03-18T14:30:00",
+            "precision": "time_only",
+            "confidence": 0.8,
+            "extraction_method": "rule_based",
+            "notes": [
+              "Parsed as time-only expression"
+            ]
+          }
+        ],
+        "reference_datetime": "2026-03-18T08:15:00",
+        "explicit_location": null,
+        "meeting_related": true,
+        "hints": [
+          "Assunto: Fw: Confirmacao - planeamento de aulas",
+          "Remetente: Coordenacao de Mestrado",
+          "Participante por defeito quando nao ha outro participante explicito: Coordenacao de Mestrado",
+          "Expressoes temporais normalizadas:",
+          "- sexta as 14h -> 2026-03-20T14:00:00",
+          "- 14h30 -> 2026-03-18T14:30:00"
+        ]
+      }
+    }
+  }
+]
