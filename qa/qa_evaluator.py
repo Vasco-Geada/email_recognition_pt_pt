@@ -597,7 +597,10 @@ class ProjectQAEvaluation:
 
         for category in cls.CATEGORIES:
             if category == "time_normalized":
-                predicted_result = cls._normalized_time_result(qa_results.get("time", {}) or {})
+                predicted_result = (
+                    qa_results.get("time_normalized")
+                    or cls._normalized_time_result(qa_results.get("time", {}) or {})
+                )
             else:
                 predicted_result = qa_results.get(category, {}) or {}
             predicted_answer = predicted_result.get("answer") or ""
@@ -636,7 +639,13 @@ class ProjectQAEvaluation:
     def _normalized_time_result(time_result: Dict[str, Any]) -> Dict[str, Any]:
         normalized = time_result.get("normalized") or {}
         answer = (
-            normalized.get("normalized_datetime")
+            normalized.get("canonical_value")
+            or (
+                f"{normalized.get('interval_start')}/{normalized.get('interval_end')}"
+                if normalized.get("interval_start") and normalized.get("interval_end")
+                else ""
+            )
+            or normalized.get("normalized_datetime")
             or normalized.get("interval_start")
             or normalized.get("normalized_date")
             or ""

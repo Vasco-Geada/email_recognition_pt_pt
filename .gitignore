@@ -212,5 +212,6 @@ __marimo__/
 dataset/.hf_cache/
 qa/models/
 evaluation_results/
+trained_models/
 *.safetensors
 *.arrow

@@ -10,6 +10,7 @@ Purpose: Baseline for event and temporal expression extraction in Portuguese
 
 import re
 import logging
+import unicodedata
 from typing import Dict, List, Optional, Tuple, Callable
 from dataclasses import dataclass, field, asdict
 from datetime import datetime, timedelta
@@ -277,10 +278,10 @@ class ParticipantExtractor:
         self.nlp = nlp_model
     
     # Patterns for extracting participants
-    PARTICIPANT_PATTERNS = [
-        r'(?:com|entre|por|de)\s+(?:o\s+|a\s+|os\s+|as\s+)?([A-Z][a-záéíóúàâêõç\s]+?)(?:\s*(?:de|do|da|e|,|$))',  # com o [Name]
-        r'(?:participar|presença|estar|comparecer|assistir)\s+(?:à|a|do|da)\s+([A-Z][a-záéíóúàâêõç\s]+?)(?:\s*(?:,|$))',  # participar à [Name]
-    ]
+    #PARTICIPANT_PATTERNS = [
+    #    r'(?:com|entre|por|de)\s+(?:o\s+|a\s+|os\s+|as\s+)?([A-Z][a-záéíóúàâêõç\s]+?)(?:\s*(?:de|do|da|e|,|$))',  # com o [Name]
+    #    r'(?:participar|presença|estar|comparecer|assistir)\s+(?:à|a|do|da)\s+([A-Z][a-záéíóúàâêõç\s]+?)(?:\s*(?:,|$))',  # participar à [Name]
+    #]
     
     # Email pattern
     EMAIL_PATTERN = r'\b[A-Za-z0-9._%+-]+@[A-Za-z0-9.-]+\.[A-Z|a-z]{2,}\b'
@@ -327,25 +328,25 @@ class ParticipantExtractor:
             spans.append(span)
         
         # Try pattern-based extraction for informal contexts
-        for pattern in self.PARTICIPANT_PATTERNS:
-            regex = re.compile(pattern, re.IGNORECASE)
-            for match in regex.finditer(text):
-                # Take the group that actually captured the name
-                for group_idx in range(1, len(match.groups()) + 1):
-                    if match.group(group_idx):
-                        # Get actual position in text
-                        name_text = match.group(group_idx).strip()
-                        # Find it in original match to get correct span
-                        name_pos = match.start() + match.group(0).find(name_text)
-                        span = ArgumentSpan(
-                            text=name_text,
-                            span_start=name_pos,
-                            span_end=name_pos + len(name_text),
-                            confidence=0.6,
-                            extraction_method='regex_heuristic',
-                        )
-                        spans.append(span)
-                        break
+       #for pattern in self.PARTICIPANT_PATTERNS:
+       #    regex = re.compile(pattern, re.IGNORECASE)
+       #    for match in regex.finditer(text):
+       #        # Take the group that actually captured the name
+       #        for group_idx in range(1, len(match.groups()) + 1):
+       #            if match.group(group_idx):
+       #                # Get actual position in text
+       #                name_text = match.group(group_idx).strip()
+       #                # Find it in original match to get correct span
+       #                name_pos = match.start() + match.group(0).find(name_text)
+       #                span = ArgumentSpan(
+       #                    text=name_text,
+       #                    span_start=name_pos,
+       #                    span_end=name_pos + len(name_text),
+       #                    confidence=0.6,
+       #                    extraction_method='regex_heuristic',
+       #                )
+       #                spans.append(span)
+       #                break
         
         return self._deduplicate_spans(spans)
     
@@ -367,133 +368,233 @@ class ParticipantExtractor:
 
 class TopicExtractor:
     """
-    Extracts meeting topics using keyword heuristics and textual patterns.
-    
-    Strategy:
-    - Keyword/n-gram frequency analysis (excluding stop words)
-    - Sentence noun phrase extraction using spaCy
-    - Context from intent and subject line
-    - Trigger words indicating topic relevance
+    Extracts one explicit meeting topic from body or subject.
+
+    Topic phrases are anchored to meeting language so greetings, people,
+    locations and arbitrary noun chunks are not returned as topics.
     """
-    
-    # Stop words in Portuguese
+
+    NON_MEETING_INTENTS = {
+        "nao_reuniao",
+        "nao reuniao",
+        "não_reuniao",
+        "não",
+        "nao",
+        "infelizmente",
+    }
+
     STOP_WORDS = {
         'de', 'do', 'da', 'dos', 'das', 'e', 'ou', 'um', 'uma', 'uns', 'umas',
-        'o', 'a', 'os', 'as', 'em', 'em', 'para', 'por', 'com', 'sem', 'sob',
+        'o', 'a', 'os', 'as', 'em', 'para', 'por', 'com', 'sem', 'sob',
         'sobre', 'que', 'qual', 'quais', 'a', 'à', 'ao', 'aos', 'é', 'são',
         'está', 'estão', 'ser', 'estar', 'ter', 'teve', 'temos', 'tenho',
-        'reunião', 'reuniões', 'meeting', 'meetings', 'email', 'emails',
+        'reuniao', 'reunioes', 'meeting', 'meetings', 'email', 'emails',
     }
-    
-    # Topic keywords (indicate relevant content)
-    TOPIC_KEYWORDS = {
-        'projeto': ['projeto', 'projeto', 'desenvolvimento', 'projeto', 'projeto'],
-        'orçamento': ['orçamento', 'orçamento', 'preço', 'custo', 'valor', 'financeiro'],
-        'recursos': ['recursos', 'recursos', 'equipa', 'equipe', 'pessoal', 'staff'],
-        'cronograma': ['cronograma', 'timeline', 'prazos', 'prazo', 'datas', 'milestones'],
-        'qualidade': ['qualidade', 'qc', 'testes', 'testes', 'testes', 'qa', 'qa'],
-        'apresentação': ['apresentação', 'apresentação', 'demo', 'demonstração', 'showcace'],
+
+    GENERIC_TOPICS = {
+        "agendamento",
+        "cancelamento",
+        "confirmacao",
+        "disponibilidade",
+        "informacao",
+        "marcacao",
+        "pedido",
+        "ponto de situacao",
+        "processo",
+        "remarcacao",
+        "reuniao",
+        "reuniao confirmada",
+        "assunto",
+        "esse assunto",
+        "este assunto",
+        "aquilo",
+        "consigo",
+        "isso",
+        "isto",
     }
-    
+
+    BODY_PATTERN_TEMPLATES = (
+        r"\breuni(?:ao|ão)\s+(?:sobre|relacionad[ao]\s+com)\s+{capture}",
+        r"\b(?:falar(?:mos)?|conversar(?:mos)?)\s+(?:consigo\s+)?"
+        r"(?:sobre|acerca\s+(?:de|do|da|dos|das))\s+{capture}",
+        r"\b(?:discutir(?:mos)?|abordar(?:mos)?|rever(?:mos)?|"
+        r"analisar(?:mos)?|avaliar(?:mos)?|debater(?:mos)?)\s+"
+        r"(?:consigo\s+)?(?:o\s+tema\s+de\s+)?{capture}",
+        r"\b(?:reuni(?:ao|ão)|sess(?:ao|ão)|encontro|conversa)\s+"
+        r"(?:(?:e|é|sera|será|foi)\s+)?(?:dedicad[ao]|focad[ao])\s+"
+        r"(?:a|à|ao|aos|às|em|no|na)\s+{capture}",
+        r"\b(?:assunto|tema)\s+(?:principal\s+)?"
+        r"(?:e|é|sera|será|foi)\s+(?:o|a|os|as)?\s*{capture}",
+        r"\bquanto\s+(?:a|à|ao|aos|às)\s+{capture}",
+        r"\btratar(?:mos)?\s+(?:de|do|da|dos|das)\s+{capture}",
+        r"\bincidir(?:a|á)?\s+sobre\s+{capture}",
+        r"\b(?:reuni(?:ao|ão)|sess(?:ao|ão)|encontro)\s+"
+        r"(?:tem|tera|terá|teve)\s+como\s+(?:tema|assunto)\s+{capture}",
+        r"\bordem\s+de\s+trabalhos\s+(?:inclui|incluira|incluirá)\s+{capture}",
+        r"\bdar(?:mos|emos)?\s+seguimento\s+(?:a|à|ao|aos|às)\s+{capture}",
+        r"\b(?:pontos?|quest(?:ao|ão|oes|ões))\s+sobre\s+{capture}",
+        r"\bponto\s+de\s+situa(?:cao|ção)\s+de\s+{capture}",
+        r"\b(?:tema|assunto)\s+(?:de|da|do|sobre)\s+{capture}",
+        r"\brelativ[oa]s?\s+a\s+{capture}",
+        r"\brelacionad[oa]s?\s+com\s+{capture}",
+        r"\b(?:alinhar(?:mos)?\s+(?:os\s+proximos\s+passos\s+)?"
+        r"(?:relativos?\s+a|a\s+parte\s+do)|parte\s+do)\s+{capture}",
+        r"\bsobre\s+{capture}",
+    )
+
+    SUBJECT_PATTERNS = (
+        re.compile(
+            r"\breuni(?:ao|ão)(?:\s+convocada)?\s*(?:sobre|[-:])\s*"
+            r"(?P<topic>.+)$",
+            re.IGNORECASE,
+        ),
+        re.compile(
+            r"\b(?:agendamento|cancelamento|confirma(?:cao|ção)|imprevisto|"
+            r"pedido\s+de\s+reuni(?:ao|ão))\s*[-:]\s*(?P<topic>.+)$",
+            re.IGNORECASE,
+        ),
+    )
+
+    TOPIC_CAPTURE = (
+        r"(?P<topic>[A-Za-zÀ-ÖØ-öø-ÿ0-9]"
+        r"[^,.;?!\n]{0,160}?)"
+        r"(?=\s+(?:para|em|no|na|às|as|pelas|fica|ficou|vai|"
+        r"sera|será|quando|ate|até)\b|[,.;?!\n]|$)"
+    )
+
+    TEMPORAL_OR_LOCATION_ONLY = re.compile(
+        r"^(?:"
+        r"(?:hoje|amanha|amanhã|ontem|segunda|terca|terça|quarta|quinta|sexta)|"
+        r"(?:as|às)?\s*\d{1,2}(?:h\d{0,2}|:\d{2})|"
+        r"(?:zoom|teams|google meet|remoto|presencial|sala|gabinete)"
+        r")$",
+        re.IGNORECASE,
+    )
+
+    REPLY_PREFIX = re.compile(
+        r"^\s*(?:(?:re|fw|fwd|enc)\s*:\s*)+",
+        re.IGNORECASE,
+    )
+
     def __init__(self, nlp_model):
-        """
-        Initialize topic extractor.
-        
-        Args:
-            nlp_model: Loaded spaCy model
-        """
         self.nlp = nlp_model
-    
+        self.body_patterns = [
+            re.compile(
+                template.format(capture=self.TOPIC_CAPTURE),
+                re.IGNORECASE,
+            )
+            for template in self.BODY_PATTERN_TEMPLATES
+        ]
+
     def extract(self, text: str, subject: str = "", intent: str = "") -> List[ArgumentSpan]:
-        """
-        Extract main topics from email.
-        
-        Args:
-            text: Email body text
-            subject: Email subject line
-            intent: Predicted email intent (helps contextualize topic)
-            
-        Returns:
-            List of ArgumentSpan objects with topics
-        """
-        combined_text = f"{subject}. {text}"
-        doc = self.nlp(combined_text)
-        
-        spans = []
-        
-        # Strategy 1: Extract noun phrases (multi-word expressions)
-        noun_phrases = self._extract_noun_phrases(doc)
-        spans.extend(noun_phrases)
-        
-        # Strategy 2: Extract topic keywords
-        keyword_spans = self._extract_keywords(text, combined_text)
-        spans.extend(keyword_spans)
-        
-        # Remove duplicates and low-confidence items
-        spans = self._deduplicate_and_rank(spans)
-        
-        # Keep only top topics (limit to 3-5)
-        return sorted(spans, key=lambda s: s.confidence, reverse=True)[:5]
-    
-    def _extract_noun_phrases(self, doc: Doc) -> List[ArgumentSpan]:
-        """Extract noun chunks (noun phrases) from spaCy doc."""
-        spans = []
-        
-        for chunk in doc.noun_chunks:
-            # Skip if mostly stop words
-            tokens = chunk.text.lower().split()
-            non_stop = [t for t in tokens if t not in self.STOP_WORDS]
-            
-            if len(non_stop) > 0 and len(chunk.text) > 2:  # Skip very short phrases
-                confidence = len(non_stop) / len(tokens)  # More content = higher confidence
-                span = ArgumentSpan(
-                    text=chunk.text.lower(),
-                    span_start=chunk.start_char,
-                    span_end=chunk.end_char,
-                    confidence=min(0.9, 0.5 + confidence * 0.4),  # 0.5-0.9
-                    extraction_method='spacy_noun_chunks',
-                )
-                spans.append(span)
-        
-        return spans
-    
-    def _extract_keywords(self, text: str, combined_text: str) -> List[ArgumentSpan]:
-        """Extract predefined topic keywords."""
-        spans = []
-        text_lower = text.lower()
-        
-        for topic, keywords in self.TOPIC_KEYWORDS.items():
-            for keyword in keywords:
-                regex = re.compile(rf'\b{re.escape(keyword)}\b', re.IGNORECASE)
-                for match in regex.finditer(text_lower):
-                    span = ArgumentSpan(
-                        text=topic,
-                        span_start=match.start(),
-                        span_end=match.end(),
-                        confidence=0.7,
-                        extraction_method='keyword_heuristic',
-                    )
-                    spans.append(span)
-        
-        return spans
-    
-    @staticmethod
-    def _deduplicate_and_rank(spans: List[ArgumentSpan]) -> List[ArgumentSpan]:
-        """Remove duplicates and rank by confidence."""
-        if not spans:
+        """Extract the best explicit topic, returning at most one span."""
+        if self._normalize(intent) in self.NON_MEETING_INTENTS:
             return []
-        
+
+        spans = self._extract_pattern_topics(
+            text or "",
+            self.body_patterns,
+            extraction_method="regex_topic_body",
+            confidence=0.98,
+        )
+        spans.extend(self._extract_subject_topic(subject or ""))
+        ranked = self._deduplicate_and_rank(spans)
+        return ranked[:1]
+
+    def _extract_subject_topic(self, subject: str) -> List[ArgumentSpan]:
+        cleaned_subject = self.REPLY_PREFIX.sub("", subject).strip()
+        if not cleaned_subject:
+            return []
+        return self._extract_pattern_topics(
+            cleaned_subject,
+            self.SUBJECT_PATTERNS,
+            extraction_method="regex_topic_subject",
+            confidence=0.9,
+        )
+
+    def _extract_pattern_topics(
+        self,
+        source: str,
+        patterns: List[re.Pattern],
+        extraction_method: str,
+        confidence: float,
+    ) -> List[ArgumentSpan]:
+        spans = []
+        for pattern in patterns:
+            for match in pattern.finditer(source):
+                raw_candidate = match.group("topic")
+                candidate = self._clean_candidate(raw_candidate)
+                if not self._is_valid_candidate(candidate):
+                    continue
+
+                relative_start = raw_candidate.lower().find(candidate.lower())
+                relative_start = max(0, relative_start)
+                start = match.start("topic") + relative_start
+                spans.append(
+                    ArgumentSpan(
+                        text=candidate,
+                        span_start=start,
+                        span_end=start + len(candidate),
+                        confidence=confidence,
+                        extraction_method=extraction_method,
+                    )
+                )
+        return spans
+
+    @staticmethod
+    def _clean_candidate(value: str) -> str:
+        candidate = re.sub(r"\s+", " ", str(value or "")).strip(" \t\r\n-:;,.'\"")
+        candidate = re.sub(
+            r"^(?:sobre\s+|acerca\s+(?:de|do|da|dos|das)\s+)",
+            "",
+            candidate,
+            flags=re.IGNORECASE,
+        )
+        candidate = re.sub(
+            r"^(?:o|a|os|as)\s+",
+            "",
+            candidate,
+            flags=re.IGNORECASE,
+        )
+        return candidate.strip(" \t\r\n-:;,.'\"")
+
+    def _is_valid_candidate(self, candidate: str) -> bool:
+        if not candidate or len(candidate) > 140 or len(candidate.split()) > 14:
+            return False
+
+        normalized = self._normalize(candidate)
+        if not normalized or normalized in self.GENERIC_TOPICS:
+            return False
+        if self.TEMPORAL_OR_LOCATION_ONLY.fullmatch(candidate):
+            return False
+
+        tokens = re.findall(r"[a-z0-9]+", normalized)
+        content_tokens = [token for token in tokens if token not in self.STOP_WORDS]
+        return bool(content_tokens)
+
+    @staticmethod
+    def _normalize(value: str) -> str:
+        decomposed = unicodedata.normalize("NFKD", str(value or "").lower())
+        without_accents = "".join(
+            char for char in decomposed
+            if not unicodedata.combining(char)
+        )
+        return re.sub(r"\s+", " ", without_accents).strip()
+
+    @classmethod
+    def _deduplicate_and_rank(cls, spans: List[ArgumentSpan]) -> List[ArgumentSpan]:
         unique_by_text = {}
         for span in spans:
-            key = span.text.lower()
-            if key not in unique_by_text:
+            key = cls._normalize(span.text)
+            existing = unique_by_text.get(key)
+            if existing is None or span.confidence > existing.confidence:
                 unique_by_text[key] = span
-            else:
-                # Keep highest confidence
-                if span.confidence > unique_by_text[key].confidence:
-                    unique_by_text[key] = span
-        
-        return sorted(unique_by_text.values(), key=lambda s: s.confidence, reverse=True)
+
+        return sorted(
+            unique_by_text.values(),
+            key=lambda span: (span.confidence, len(span.text)),
+            reverse=True,
+        )
 
 
 class ArgumentExtractor:

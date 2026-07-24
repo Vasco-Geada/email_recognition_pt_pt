@@ -10,7 +10,10 @@ PROJECT_ROOT = Path(__file__).resolve().parents[1]
 if str(PROJECT_ROOT) not in sys.path:
     sys.path.insert(0, str(PROJECT_ROOT))
 
-from preprocessing.temporal_normalization import TemporalNormalizer
+from preprocessing.temporal_normalization import (
+    TemporalNormalizer,
+    parse_datetime_value,
+)
 
 
 MEETING_LABELS = {
@@ -187,14 +190,21 @@ def build_participants(email: Dict[str, Any], nlp: Optional[Any]) -> List[str]:
 
 
 def parse_reference_datetime(email: Dict[str, Any]) -> datetime:
-    for key in ("sent_datetime", "sent_at", "email_date", "date", "created_at"):
+    for key in (
+        "sent_datetime",
+        "sent_at",
+        "email_date",
+        "date",
+        "Date",
+        "created_at",
+        "timestamp",
+    ):
         value = email.get(key)
         if not value:
             continue
-        try:
-            return datetime.fromisoformat(str(value).replace("Z", "+00:00"))
-        except ValueError:
-            continue
+        parsed = parse_datetime_value(value)
+        if parsed is not None:
+            return parsed
     return datetime.now()
 
 
@@ -205,6 +215,14 @@ def expression_in_email(email: Dict[str, Any], expression: str) -> bool:
     ).lower()
     needle = str(expression or "").strip().lower()
     return bool(needle and needle in haystack)
+
+
+def build_topic(email: Dict[str, Any]) -> List[str]:
+    """Keep topic gold only when the topic is observable in subject or body."""
+    topic = str(email.get("topic") or "").strip()
+    if not topic or not expression_in_email(email, topic):
+        return []
+    return [topic]
 
 
 def build_time_arguments(
@@ -221,11 +239,8 @@ def build_time_arguments(
         reference_datetime=reference_datetime,
     ).to_dict()
 
-    normalized_values = []
-    for key in ("normalized_datetime", "interval_start"):
-        value = normalized.get(key)
-        if value:
-            normalized_values.append(str(value))
+    canonical_value = normalized.get("canonical_value")
+    normalized_values = [str(canonical_value)] if canonical_value else []
 
     return {
         "time": [expression],
@@ -312,7 +327,7 @@ def build_gold_item(
         "time": time_arguments["time"],
         "time_normalized": time_arguments["time_normalized"],
         "location": inferred_location(email),
-        "topic": as_list(email.get("topic")) if is_meeting else [],
+        "topic": build_topic(email) if is_meeting else [],
     }
 
     return {

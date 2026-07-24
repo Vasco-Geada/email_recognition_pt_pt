@@ -1,0 +1,197 @@
+{
+  "description": "Holdout set with topic formulations not used to tune the classic extractor.",
+  "cases": [
+    {
+      "id": "holdout-001",
+      "split": "holdout",
+      "subject": "Reunião da direção de curso",
+      "body": "A matéria a apreciar será a transição dos estudantes para o novo plano curricular.",
+      "label": "agendamento_reuniao",
+      "gold_topic": "transição dos estudantes para o novo plano curricular"
+    },
+    {
+      "id": "holdout-002",
+      "split": "holdout",
+      "subject": "Laboratórios",
+      "body": "Este encontro tem por finalidade a reorganização dos turnos laboratoriais.",
+      "label": "agendamento_reuniao",
+      "gold_topic": "reorganização dos turnos laboratoriais"
+    },
+    {
+      "id": "holdout-003",
+      "split": "holdout",
+      "subject": "Conselho de turma",
+      "body": "Da pauta consta a análise das medidas de apoio ao aluno.",
+      "label": "reuniao_confirmada",
+      "gold_topic": "análise das medidas de apoio ao aluno"
+    },
+    {
+      "id": "holdout-004",
+      "split": "holdout",
+      "subject": "Projeto de investigação",
+      "body": "Queria aproveitar a reunião para examinarmos os resultados preliminares do projeto.",
+      "label": "agendamento_reuniao",
+      "gold_topic": "resultados preliminares do projeto"
+    },
+    {
+      "id": "holdout-005",
+      "split": "holdout",
+      "subject": "Acompanhamento científico",
+      "body": "É importante debruçarmo-nos sobre a metodologia usada na recolha de dados.",
+      "label": "agendamento_reuniao",
+      "gold_topic": "metodologia usada na recolha de dados"
+    },
+    {
+      "id": "holdout-006",
+      "split": "holdout",
+      "subject": "Sessão extraordinária",
+      "body": "A sessão fica reservada à aprovação do calendário de exames.",
+      "label": "reuniao_confirmada",
+      "gold_topic": "aprovação do calendário de exames"
+    },
+    {
+      "id": "holdout-007",
+      "split": "holdout",
+      "subject": "Orientação de mestrado",
+      "body": "O centro da nossa conversa será a estrutura do capítulo de resultados.",
+      "label": "agendamento_reuniao",
+      "gold_topic": "estrutura do capítulo de resultados"
+    },
+    {
+      "id": "holdout-008",
+      "split": "holdout",
+      "subject": "Recursos digitais",
+      "body": "Pretendia obter a sua opinião sobre a adoção da nova plataforma de ensino.",
+      "label": "agendamento_reuniao",
+      "gold_topic": "adoção da nova plataforma de ensino"
+    },
+    {
+      "id": "holdout-009",
+      "split": "holdout",
+      "subject": "Reunião convocada: segurança nos laboratórios",
+      "body": "A presença dos responsáveis é necessária na quarta-feira.",
+      "label": "reuniao_confirmada",
+      "gold_topic": "segurança nos laboratórios"
+    },
+    {
+      "id": "holdout-010",
+      "split": "holdout",
+      "subject": "Bibliografia da UC",
+      "body": "O assunto que gostaria de levar à reunião é a atualização da bibliografia obrigatória.",
+      "label": "agendamento_reuniao",
+      "gold_topic": "atualização da bibliografia obrigatória"
+    },
+    {
+      "id": "holdout-011",
+      "split": "holdout",
+      "subject": "Formação docente",
+      "body": "O foco do encontro estará nas necessidades de formação da equipa docente.",
+      "label": "agendamento_reuniao",
+      "gold_topic": "necessidades de formação da equipa docente"
+    },
+    {
+      "id": "holdout-012",
+      "split": "holdout",
+      "subject": "Candidaturas Erasmus",
+      "body": "Na próxima sessão iremos trabalhar na seleção das candidaturas Erasmus.",
+      "label": "agendamento_reuniao",
+      "gold_topic": "seleção das candidaturas Erasmus"
+    },
+    {
+      "id": "holdout-013",
+      "split": "holdout",
+      "subject": "Tutoria",
+      "body": "Convém fazermos um balanço da assiduidade dos estudantes acompanhados.",
+      "label": "agendamento_reuniao",
+      "gold_topic": "assiduidade dos estudantes acompanhados"
+    },
+    {
+      "id": "holdout-014",
+      "split": "holdout",
+      "subject": "Inscrições",
+      "body": "Precisamos de esclarecer as regras aplicáveis às inscrições fora de prazo.",
+      "label": "agendamento_reuniao",
+      "gold_topic": "regras aplicáveis às inscrições fora de prazo"
+    },
+    {
+      "id": "holdout-015",
+      "split": "holdout",
+      "subject": "Contratação",
+      "body": "A reunião prende-se com a contratação de docentes convidados.",
+      "label": "agendamento_reuniao",
+      "gold_topic": "contratação de docentes convidados"
+    },
+    {
+      "id": "holdout-016",
+      "split": "holdout",
+      "subject": "Comissão científica",
+      "body": "A comissão deverá deliberar acerca da proposta de criação da nova unidade curricular.",
+      "label": "reuniao_confirmada",
+      "gold_topic": "proposta de criação da nova unidade curricular"
+    },
+    {
+      "id": "holdout-017",
+      "split": "holdout",
+      "subject": "Confirmação",
+      "body": "Confirmo a minha presença amanhã às 9h na sala 2.14.",
+      "label": "reuniao_confirmada",
+      "gold_topic": ""
+    },
+    {
+      "id": "holdout-018",
+      "split": "holdout",
+      "subject": "Reagendamento",
+      "body": "Seria possível passar a reunião de segunda para quarta-feira?",
+      "label": "agendamento_reuniao",
+      "gold_topic": ""
+    },
+    {
+      "id": "holdout-019",
+      "split": "holdout",
+      "subject": "Impossibilidade de comparecer",
+      "body": "Por motivos de saúde, terei de cancelar o encontro desta tarde.",
+      "label": "cancelamento_reuniao",
+      "gold_topic": ""
+    },
+    {
+      "id": "holdout-020",
+      "split": "holdout",
+      "subject": "Marcação",
+      "body": "Tem algum horário livre durante a próxima semana para nos reunirmos?",
+      "label": "agendamento_reuniao",
+      "gold_topic": ""
+    },
+    {
+      "id": "holdout-021",
+      "split": "holdout",
+      "subject": "Ata aprovada",
+      "body": "Junto envio a ata sobre a reunião anterior, já assinada por todos.",
+      "label": "nao_reuniao",
+      "gold_topic": ""
+    },
+    {
+      "id": "holdout-022",
+      "split": "holdout",
+      "subject": "Ligação",
+      "body": "A reunião mantém-se para hoje. A ligação será enviada antes do início.",
+      "label": "reuniao_confirmada",
+      "gold_topic": ""
+    },
+    {
+      "id": "holdout-023",
+      "split": "holdout",
+      "subject": "Pedido",
+      "body": "Queria trocar algumas ideias consigo quando tiver disponibilidade.",
+      "label": "agendamento_reuniao",
+      "gold_topic": ""
+    },
+    {
+      "id": "holdout-024",
+      "split": "holdout",
+      "subject": "Informação académica",
+      "body": "Este aviso esclarece dúvidas acerca do funcionamento dos exames.",
+      "label": "nao_reuniao",
+      "gold_topic": ""
+    }
+  ]
+}

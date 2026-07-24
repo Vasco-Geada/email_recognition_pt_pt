@@ -15,12 +15,36 @@ Date: 2026
 
 import re
 import logging
+import unicodedata
+from email.utils import parsedate_to_datetime
 from typing import Dict, List, Optional, Tuple, Union
 from dataclasses import dataclass, field, asdict
 from datetime import datetime, timedelta, time as time_obj
 from enum import Enum
 
 logger = logging.getLogger(__name__)
+
+
+def parse_datetime_value(value: object) -> Optional[datetime]:
+    """Parse ISO 8601 or standard RFC 2822 email date metadata."""
+    if isinstance(value, datetime):
+        return value
+    if value is None:
+        return None
+
+    text = str(value).strip()
+    if not text:
+        return None
+
+    try:
+        return datetime.fromisoformat(text.replace("Z", "+00:00"))
+    except ValueError:
+        pass
+
+    try:
+        return parsedate_to_datetime(text)
+    except (TypeError, ValueError, OverflowError):
+        return None
 
 
 # ============================================================================
@@ -64,6 +88,18 @@ class NormalizedTemporal:
     confidence: float = 1.0                    # Confidence score (0-1)
     extraction_method: str = "rule_based"      # Method used
     notes: List[str] = field(default_factory=list)  # Processing notes/warnings
+
+    def canonical_value(self) -> Optional[str]:
+        """Return the most precise ISO-compatible value without inventing data."""
+        if self.interval_start_str and self.interval_end_str:
+            return f"{self.interval_start_str}/{self.interval_end_str}"
+        if self.normalized_datetime_str:
+            return self.normalized_datetime_str
+        if self.normalized_date:
+            return self.normalized_date
+        if self.normalized_time:
+            return self.normalized_time
+        return None
     
     def to_dict(self) -> Dict:
         """Convert to dictionary with ISO string dates."""
@@ -72,6 +108,9 @@ class NormalizedTemporal:
             'reference_datetime': self.reference_datetime.isoformat(),
             'temporal_type': self.temporal_type.value,
             'normalized_datetime': self.normalized_datetime_str,
+            'normalized_date': self.normalized_date,
+            'normalized_time': self.normalized_time,
+            'canonical_value': self.canonical_value(),
             'precision': self.precision,
             'confidence': self.confidence,
             'extraction_method': self.extraction_method,
@@ -95,6 +134,9 @@ RELATIVE_EXPRESSIONS = {
     # Today
     'hoje': 0,
     'agora': 0,
+    'daqui a um bocado': 0,
+    'depois da daily': 0,
+    'depois desta reunião': 0,
     
     # Tomorrow/next day
     'amanhã': 1,
@@ -125,6 +167,7 @@ RELATIVE_EXPRESSIONS = {
 WEEKDAYS = {
     'segunda': 0,           # Monday
     'segunda-feira': 0,
+    'terca': 1,             # Tuesday
     'terça': 1,             # Tuesday
     'terça-feira': 1,
     'quarta': 2,            # Wednesday
@@ -134,7 +177,7 @@ WEEKDAYS = {
     'sexta': 4,             # Friday
     'sexta-feira': 4,
     'sábado': 5,            # Saturday
-    'sábado': 5,
+    'sabado': 5,
     'domingo': 6,           # Sunday
 }
 
@@ -152,13 +195,24 @@ WEEKDAY_QUALIFIERS = {
 TIME_OF_DAY = {
     # Morning
     'manhã': (6, 0, 12, 0),            # 6h-12h
+    'manha': (6, 0, 12, 0),            # 6h-12h
     'de manhã': (6, 0, 12, 0),
+    'de manha': (6, 0, 12, 0),
     'pela manhã': (6, 0, 12, 0),
+    'pela manha': (6, 0, 12, 0),
+    'antes de almoço': (6, 0, 12, 0),
+    'antes de almoco': (6, 0, 12, 0),
     
     # Afternoon
     'tarde': (12, 0, 18, 0),           # 12h-18h
     'de tarde': (12, 0, 18, 0),
     'pela tarde': (12, 0, 18, 0),
+    'antes de sair': (12, 0, 18, 0),
+    'antes de saires': (12, 0, 18, 0),
+    'antes de sairmos': (12, 0, 18, 0),
+    'antes ires para casa': (12, 0, 18, 0),
+    'antes ir para casa': (12, 0, 18, 0),
+    'antes do dia terminar': (12, 0, 18, 0),
     
     # Evening
     'noite': (18, 0, 23, 59),          # 18h-23:59h
@@ -166,19 +220,22 @@ TIME_OF_DAY = {
     'pela noite': (18, 0, 23, 59),
     
     # After lunch
-    'depois de almoço': (12, 30, 14, 0),  # ~12:30-14:00
-    'pós almoço': (12, 30, 14, 0),
+    'depois de almoço': (14, 00, 15, 30),  # ~14:00-15:30
+    'pós almoço': (14, 00, 15, 30),
     
     # After breakfast
     'depois do café': (9, 0, 10, 30),  # ~9:00-10:30
     'pós café': (9, 0, 10, 30),
+    'depois do pequeno almoço': (9, 0, 10, 30),
+    'depois do pequeno-almoço': (9, 0, 10, 30),
+    'assim que entrarmos': (9, 0, 10, 30),
 }
 
 # Month names
 MONTHS = {
     'janeiro': 1, 'jan': 1,
     'fevereiro': 2, 'fev': 2,
-    'março': 3, 'mar': 3,
+    'março': 3, 'marco': 3, 'mar': 3,
     'abril': 4, 'abr': 4,
     'maio': 5, 'mai': 5,
     'junho': 6, 'jun': 6,
@@ -198,20 +255,10 @@ RELATIVE_EXPRESSIONS.update({
     "proxima semana": "next_week",
     "este mes": "this_month",
     "proximo mes": "next_month",
-})
-
-WEEKDAYS.update({
-    "terca": 1,
-    "terca-feira": 1,
-    "sabado": 5,
-})
-
-TIME_OF_DAY.update({
-    "manha": (6, 0, 12, 0),
-    "de manha": (6, 0, 12, 0),
-    "pela manha": (6, 0, 12, 0),
-    "depois de almoco": (12, 30, 14, 0),
-    "pos almoco": (12, 30, 14, 0),
+    "final desta semana": "end_of_week",
+    "final da semana": "end_of_week",
+    "fim desta semana": "end_of_week",
+    "fim da semana": "end_of_week",
 })
 
 
@@ -226,44 +273,54 @@ class TemporalPatterns:
     # Examples: "15h", "15:30", "15h30", "às 15h", "às 15:30"
     # Must have explicit time separator (h, :, or .) to avoid matching dates
     TIME_PATTERN = re.compile(
-        r'(?:às?\s*)?(\d{1,2})(?:[h:\.])(?:(\d{2}))?(?:\s*(?:min|h))?(?!\s*de)',
+        r'(?:(?:as?|pelas?)\s*)?'
+        r'(\d{1,2})(?:h(?:(\d{2}))?|[:\.](\d{1,2})|\s*horas?)'
+        r'(?:\s*min)?(?!\s*de)',
         re.IGNORECASE
     )
     
-    # Explicit date patterns - start of line or after space/punctuation
+    # Explicit dates with either a month name or an unambiguous numeric separator.
     # Examples: "16 de Abril", "16 de abril de 2026", "16/04/2026", "16-04-2026"
     EXPLICIT_DATE_PATTERN = re.compile(
-        r'(?:^|\s)'  # Start or after space
-        r'(\d{1,2})\s*(?:de|/|-)?\s*'  # Day
-        r'([a-záéíóú]+|\d{1,2})\s*'     # Month (name or number)
-        r'(?:(?:de|/)?\s*(\d{4}))?',    # Year (optional)
-        re.IGNORECASE | re.MULTILINE
+        r'\b(?:'
+        r'(\d{1,2})\s+de\s+([a-z]+)(?:\s+de\s+(\d{4}))?'
+        r'|'
+        r'(\d{1,2})\s*([/-])\s*(\d{1,2})(?:\s*[/-]\s*(\d{2,4}))?'
+        r')\b',
+        re.IGNORECASE,
+    )
+
+    # Day of month without an explicit month: "dia 18 às 9h30".
+    DAY_OF_MONTH_PATTERN = re.compile(
+        r'\bdia\s+(\d{1,2})\b',
+        re.IGNORECASE,
     )
     
     # Weekday patterns
     # Examples: "segunda", "próxima sexta", "esta terça"
     WEEKDAY_PATTERN = re.compile(
-        r'(?:(próxima|proxima|próximo|proximo|esta|este)\s+)?'  # Qualifier (optional)
-        r'(segunda|terça|quarta|quinta|sexta|sábado|domingo|'
-        r'segunda-feira|terça-feira|quarta-feira|quinta-feira|sexta-feira)',
+        r'(?:(proxima|proximo|esta|este)\s+)?'
+        r'(segunda(?:-feira)?|terca(?:-feira)?|quarta(?:-feira)?|'
+        r'quinta(?:-feira)?|sexta(?:-feira)?|sabado|domingo)',
         re.IGNORECASE
     )
     
     # Relative expression patterns (amanhã, hoje, ontem, etc.)
     RELATIVE_PATTERN = re.compile(
-        r'(amanhã|hoje|ontem|agora|'
-        r'para a semana|esta semana|próximo mês|este mês|'
-        r'em breve|'
-        r'depois de amanhã)',
+        r'(depois de amanha|depois amanha|amanha|hoje|ontem|agora|'
+        r'para a semana|esta semana|na proxima semana|proxima semana|'
+        r'proximo mes|este mes|em breve|'
+        r'final desta semana|final da semana|fim desta semana|fim da semana)',
         re.IGNORECASE
     )
     
     # Time of day patterns (manhã, tarde, noite, depois de almoço)
     TIME_OF_DAY_PATTERN = re.compile(
-        r'(pela\s+)?(manhã|tarde|noite|após\s+almoço|'
-        r'depois\s+de\s+almoço|pós\s+almoço|'
-        r'após\s+café|depois\s+do\s+café|pós\s+café|'
-        r'de\s+manhã|de\s+tarde|de\s+noite)',
+        r'\b(durante\s+a\s+manha|ao\s+final\s+do\s+dia|final\s+do\s+dia|'
+        r'pela\s+manha|de\s+manha|manha|pela\s+tarde|de\s+tarde|tarde|'
+        r'pela\s+noite|de\s+noite|noite|apos\s+almoco|'
+        r'depois\s+de\s+almoco|pos\s+almoco|apos\s+cafe|'
+        r'depois\s+do\s+cafe|pos\s+cafe)\b',
         re.IGNORECASE
     )
     
@@ -273,29 +330,6 @@ class TemporalPatterns:
         r'(?:em|daqui\s+a|dentro\s+de)\s+(\d+)\s+(dias?|semanas?|horas?)',
         re.IGNORECASE
     )
-
-
-# Keep ASCII variants explicit because the generated dataset intentionally omits
-# accents in many temporal expressions.
-TemporalPatterns.WEEKDAY_PATTERN = re.compile(
-    r'(?:(pr\S+xima|proxima|pr\S+ximo|proximo|esta|este)\s+)?'
-    r'(segunda|ter\S+a|terca|quarta|quinta|sexta|s\S+bado|sabado|domingo|'
-    r'segunda-feira|ter\S+a-feira|terca-feira|quarta-feira|quinta-feira|sexta-feira)',
-    re.IGNORECASE,
-)
-TemporalPatterns.RELATIVE_PATTERN = re.compile(
-    r'(depois de amanh\S+|depois de amanha|amanh\S+|amanha|hoje|ontem|agora|'
-    r'para a semana|esta semana|na proxima semana|proxima semana|'
-    r'pr\S+ximo m\S+s|proximo mes|este m\S+s|este mes|em breve)',
-    re.IGNORECASE,
-)
-TemporalPatterns.TIME_OF_DAY_PATTERN = re.compile(
-    r'(pela\s+)?(manh\S+|manha|tarde|noite|ap\S+s\s+almo\S+o|apos\s+almoco|'
-    r'depois\s+de\s+almo\S+o|depois\s+de\s+almoco|p\S+s\s+almo\S+o|pos\s+almoco|'
-    r'ap\S+s\s+caf\S+|depois\s+do\s+caf\S+|p\S+s\s+caf\S+|'
-    r'de\s+manh\S+|de\s+manha|de\s+tarde|de\s+noite)',
-    re.IGNORECASE,
-)
 
 
 # ============================================================================
@@ -321,6 +355,93 @@ class TemporalNormalizer:
         self.months = MONTHS
         self.relative_expr = RELATIVE_EXPRESSIONS
         self.time_of_day = TIME_OF_DAY
+
+    @staticmethod
+    def _normalize_text(value: str) -> str:
+        """Normalize accents and spacing while keeping offsets irrelevant here."""
+        decomposed = unicodedata.normalize("NFKD", str(value or ""))
+        without_accents = "".join(char for char in decomposed if not unicodedata.combining(char))
+        return re.sub(r"\s+", " ", without_accents).strip().lower()
+
+    @staticmethod
+    def _datetime_for_date(reference: datetime, year: int, month: int, day: int) -> datetime:
+        return datetime(year, month, day, tzinfo=reference.tzinfo)
+
+    @staticmethod
+    def _set_date(
+        result: NormalizedTemporal,
+        value: datetime,
+        temporal_type: TemporalType = TemporalType.DATE,
+        precision: str = "day",
+    ) -> None:
+        result.normalized_datetime = None
+        result.normalized_datetime_str = None
+        result.normalized_date = value.strftime("%Y-%m-%d")
+        result.normalized_time = None
+        result.temporal_type = temporal_type
+        result.precision = precision
+
+    @staticmethod
+    def _set_datetime(
+        result: NormalizedTemporal,
+        value: datetime,
+        precision: str = "exact",
+        temporal_type: TemporalType = TemporalType.DATETIME,
+    ) -> None:
+        value = value.replace(second=0, microsecond=0)
+        result.normalized_datetime = value
+        result.normalized_datetime_str = value.isoformat()
+        result.normalized_date = value.strftime("%Y-%m-%d")
+        result.normalized_time = value.strftime("%H:%M:%S")
+        result.temporal_type = temporal_type
+        result.precision = precision
+
+    @staticmethod
+    def _set_interval(
+        result: NormalizedTemporal,
+        start: datetime,
+        end: datetime,
+        precision: str,
+    ) -> None:
+        result.normalized_datetime = None
+        result.normalized_datetime_str = None
+        result.normalized_date = start.strftime("%Y-%m-%d")
+        result.normalized_time = None
+        result.interval_start = start
+        result.interval_end = end
+        result.interval_start_str = start.isoformat()
+        result.interval_end_str = end.isoformat()
+        result.temporal_type = TemporalType.INTERVAL
+        result.precision = precision
+
+    def _apply_time_of_day_interval(
+        self,
+        result: NormalizedTemporal,
+        expr: str,
+    ) -> bool:
+        match = self.patterns.TIME_OF_DAY_PATTERN.search(expr)
+        if not match or not result.normalized_date:
+            return False
+
+        time_range = self._get_time_of_day_range(match.group(0))
+        if not time_range:
+            return False
+
+        start_h, start_m, end_h, end_m = time_range
+        base_date = datetime.fromisoformat(result.normalized_date)
+        start = base_date.replace(
+            hour=start_h,
+            minute=start_m,
+            tzinfo=result.reference_datetime.tzinfo,
+        )
+        end = base_date.replace(
+            hour=end_h,
+            minute=end_m,
+            tzinfo=result.reference_datetime.tzinfo,
+        )
+        self._set_interval(result, start, end, "time_of_day")
+        result.notes.append(f"Applied time-of-day interval: '{match.group(0)}'")
+        return True
     
     def normalize(
         self,
@@ -344,8 +465,8 @@ class TemporalNormalizer:
         if reference_datetime is None:
             reference_datetime = datetime.now()
         
-        # Normalize input
-        expr_normalized = temporal_expression.strip().lower()
+        # Normalize accents because project datasets contain accented and ASCII PT-PT.
+        expr_normalized = self._normalize_text(temporal_expression)
         
         # Initialize result
         result = NormalizedTemporal(
@@ -361,28 +482,38 @@ class TemporalNormalizer:
             parsed = self._parse_explicit_date(expr_normalized, result)
             if parsed:
                 return result
+
+            # 2. Day of month without month name ("dia 18 às 9h30")
+            parsed = self._parse_day_of_month(expr_normalized, result)
+            if parsed:
+                return result
             
-            # 2. Complex patterns (combinations)
+            # 3. Complex patterns (combinations)
             parsed = self._parse_complex_expression(expr_normalized, result)
             if parsed:
                 return result
 
-            # 3. Weekday patterns
+            # 4. Relative numeric offsets ("daqui a 2 dias")
+            parsed = self._parse_relative_offset(expr_normalized, result)
+            if parsed:
+                return result
+
+            # 5. Weekday patterns
             parsed = self._parse_weekday(expr_normalized, result)
             if parsed:
                 return result
             
-            # 4. Relative expressions
+            # 6. Relative expressions
             parsed = self._parse_relative_expression(expr_normalized, result)
             if parsed:
                 return result
             
-            # 5. Time of day standalone patterns
+            # 7. Time of day standalone patterns
             parsed = self._parse_time_of_day_standalone(expr_normalized, result)
             if parsed:
                 return result
             
-            # 6. Time only patterns
+            # 8. Time only patterns
             parsed = self._parse_time_only(expr_normalized, result)
             if parsed:
                 return result
@@ -413,42 +544,41 @@ class TemporalNormalizer:
             return False
         
         try:
-            day = int(match.group(1))
-            month_part = match.group(2).lower()
-            year_part = match.group(3) if match.lastindex >= 3 else None
-            
-            # Parse month
-            if month_part.isdigit():
-                month = int(month_part)
-            else:
+            if match.group(1):
+                day = int(match.group(1))
+                month_part = match.group(2).lower()
+                year_part = match.group(3)
                 month = self.months.get(month_part)
                 if month is None:
                     return False
+            else:
+                day = int(match.group(4))
+                month = int(match.group(6))
+                year_part = match.group(7)
             
-            # Parse year (use reference year if not provided)
             if year_part:
                 year = int(year_part)
+                if year < 100:
+                    year += 2000
             else:
                 year = result.reference_datetime.year
             
-            # Create datetime
-            parsed_date = datetime(year, month, day)
+            parsed_date = self._datetime_for_date(
+                result.reference_datetime,
+                year,
+                month,
+                day,
+            )
             
             # Extract time if present in same expression
             time_result = self._extract_time(expr)
             if time_result:
                 hours, minutes = time_result
                 parsed_date = parsed_date.replace(hour=hours, minute=minutes)
-                result.temporal_type = TemporalType.DATETIME
-                result.precision = "exact"
+                self._set_datetime(result, parsed_date)
             else:
-                result.temporal_type = TemporalType.DATE
-                result.precision = "day"
-            
-            result.normalized_datetime = parsed_date
-            result.normalized_date = parsed_date.strftime('%Y-%m-%d')
-            result.normalized_time = parsed_date.strftime('%H:%M:%S')
-            result.normalized_datetime_str = parsed_date.isoformat()
+                self._set_date(result, parsed_date)
+                self._apply_time_of_day_interval(result, expr)
             result.confidence = 0.95
             result.notes.append("Parsed as explicit date")
             
@@ -457,6 +587,46 @@ class TemporalNormalizer:
         except (ValueError, TypeError) as e:
             logger.debug(f"Failed to parse explicit date: {e}")
             return False
+
+    def _parse_day_of_month(
+        self,
+        expr: str,
+        result: NormalizedTemporal,
+    ) -> bool:
+        """Resolve an unqualified day number to its next valid occurrence."""
+        match = self.patterns.DAY_OF_MONTH_PATTERN.search(expr)
+        if not match:
+            return False
+
+        day = int(match.group(1))
+        time_result = self._extract_time(expr)
+        reference = result.reference_datetime
+
+        for month_offset in range(13):
+            month_index = reference.month - 1 + month_offset
+            year = reference.year + month_index // 12
+            month = month_index % 12 + 1
+            try:
+                candidate = self._datetime_for_date(reference, year, month, day)
+            except ValueError:
+                continue
+
+            if time_result:
+                candidate = candidate.replace(hour=time_result[0], minute=time_result[1])
+                if candidate <= reference:
+                    continue
+                self._set_datetime(result, candidate)
+            else:
+                if candidate.date() < reference.date():
+                    continue
+                self._set_date(result, candidate)
+                self._apply_time_of_day_interval(result, expr)
+
+            result.confidence = 0.88
+            result.notes.append("Month inferred as the next occurrence of the stated day")
+            return True
+
+        return False
     
     def _parse_weekday(
         self,
@@ -529,24 +699,20 @@ class TemporalNormalizer:
                 
                 target_date = ref_date + timedelta(days=days_ahead)
             
-            # Create datetime
-            parsed_datetime = datetime.combine(target_date, time_obj(0, 0))
+            parsed_datetime = datetime.combine(
+                target_date,
+                time_obj(0, 0),
+                tzinfo=result.reference_datetime.tzinfo,
+            )
             
             # Extract time if present
             time_result = self._extract_time(expr)
             if time_result:
                 hours, minutes = time_result
                 parsed_datetime = parsed_datetime.replace(hour=hours, minute=minutes)
-                result.temporal_type = TemporalType.DATETIME
-                result.precision = "exact"
+                self._set_datetime(result, parsed_datetime)
             else:
-                result.temporal_type = TemporalType.DATE
-                result.precision = "day"
-            
-            result.normalized_datetime = parsed_datetime
-            result.normalized_date = parsed_datetime.strftime('%Y-%m-%d')
-            result.normalized_time = parsed_datetime.strftime('%H:%M:%S')
-            result.normalized_datetime_str = parsed_datetime.isoformat()
+                self._set_date(result, parsed_datetime)
             result.confidence = 0.9
             
             return True
@@ -577,87 +743,84 @@ class TemporalNormalizer:
                 return False
             
             ref_datetime = result.reference_datetime
-            target_datetime = ref_datetime
-            
+            target_datetime: Optional[datetime] = None
+
             if isinstance(value, int):
-                # Offset by days
-                target_datetime = ref_datetime + timedelta(days=value)
-                result.temporal_type = TemporalType.RELATIVE
-                result.precision = "day"
-            
+                target_datetime = (ref_datetime + timedelta(days=value)).replace(
+                    hour=0,
+                    minute=0,
+                    second=0,
+                    microsecond=0,
+                )
+                time_result = self._extract_time(expr)
+                if time_result:
+                    target_datetime = target_datetime.replace(
+                        hour=time_result[0],
+                        minute=time_result[1],
+                    )
+                    self._set_datetime(result, target_datetime)
+                else:
+                    self._set_date(
+                        result,
+                        target_datetime,
+                        temporal_type=TemporalType.RELATIVE,
+                    )
+
             elif value == 'this_week':
-                # This week: Monday to Sunday
                 monday = ref_datetime.date() - timedelta(days=ref_datetime.weekday())
-                target_datetime = datetime.combine(monday, time_obj(0, 0))
-                result.interval_start = target_datetime
-                result.interval_end = target_datetime + timedelta(days=7)
-                result.interval_start_str = result.interval_start.isoformat()
-                result.interval_end_str = result.interval_end.isoformat()
-                result.temporal_type = TemporalType.INTERVAL
-                result.precision = "week"
-            
+                start = datetime.combine(monday, time_obj(0, 0), tzinfo=ref_datetime.tzinfo)
+                end = start + timedelta(days=7) - timedelta(seconds=1)
+                self._set_interval(result, start, end, "week")
+
             elif value == 'next_week':
-                # Next week
                 monday = ref_datetime.date() - timedelta(days=ref_datetime.weekday())
-                monday = monday + timedelta(days=7)  # Next Monday
-                target_datetime = datetime.combine(monday, time_obj(0, 0))
-                result.interval_start = target_datetime
-                result.interval_end = target_datetime + timedelta(days=7)
-                result.interval_start_str = result.interval_start.isoformat()
-                result.interval_end_str = result.interval_end.isoformat()
-                result.temporal_type = TemporalType.INTERVAL
-                result.precision = "week"
-            
+                start = datetime.combine(
+                    monday + timedelta(days=7),
+                    time_obj(0, 0),
+                    tzinfo=ref_datetime.tzinfo,
+                )
+                end = start + timedelta(days=7) - timedelta(seconds=1)
+                self._set_interval(result, start, end, "week")
+
             elif value == 'this_month':
-                # This month: 1st to last day
-                first_day = ref_datetime.replace(day=1)
+                first_day = ref_datetime.replace(
+                    day=1,
+                    hour=0,
+                    minute=0,
+                    second=0,
+                    microsecond=0,
+                )
                 next_month = first_day + timedelta(days=32)
-                last_day = next_month.replace(day=1) - timedelta(days=1)
-                result.interval_start = first_day
-                result.interval_end = datetime.combine(last_day.date(), time_obj(23, 59))
-                result.interval_start_str = result.interval_start.isoformat()
-                result.interval_end_str = result.interval_end.isoformat()
-                result.temporal_type = TemporalType.INTERVAL
-                result.precision = "month"
-            
+                end = next_month.replace(day=1) - timedelta(seconds=1)
+                self._set_interval(result, first_day, end, "month")
+
             elif value == 'next_month':
-                # Next month
-                next_month_date = ref_datetime + timedelta(days=32)
-                first_day = next_month_date.replace(day=1)
+                next_month_date = ref_datetime.replace(day=28) + timedelta(days=4)
+                first_day = next_month_date.replace(
+                    day=1,
+                    hour=0,
+                    minute=0,
+                    second=0,
+                    microsecond=0,
+                )
                 next_next_month = first_day + timedelta(days=32)
-                last_day = next_next_month.replace(day=1) - timedelta(days=1)
-                result.interval_start = first_day
-                result.interval_end = datetime.combine(last_day.date(), time_obj(23, 59))
-                result.interval_start_str = result.interval_start.isoformat()
-                result.interval_end_str = result.interval_end.isoformat()
-                result.temporal_type = TemporalType.INTERVAL
-                result.precision = "month"
-            
+                end = next_next_month.replace(day=1) - timedelta(seconds=1)
+                self._set_interval(result, first_day, end, "month")
+
+            elif value == 'end_of_week':
+                sunday = ref_datetime.date() + timedelta(days=6 - ref_datetime.weekday())
+                target_datetime = datetime.combine(
+                    sunday,
+                    time_obj(0, 0),
+                    tzinfo=ref_datetime.tzinfo,
+                )
+                self._set_date(result, target_datetime)
+
             elif value == 'soon':
-                # "Soon" = next 3 days (heuristic)
-                result.interval_start = ref_datetime
-                result.interval_end = ref_datetime + timedelta(days=3)
-                result.interval_start_str = result.interval_start.isoformat()
-                result.interval_end_str = result.interval_end.isoformat()
-                result.temporal_type = TemporalType.INTERVAL
-                result.precision = "vague"
+                start = ref_datetime.replace(microsecond=0)
+                self._set_interval(result, start, start + timedelta(days=3), "vague")
                 result.confidence = 0.7
                 result.notes.append("'Soon' is vague; assuming next 3 days")
-            
-            # Extract time if present
-            time_result = self._extract_time(expr)
-            if time_result:
-                hours, minutes = time_result
-                if isinstance(value, int):  # Only for day offsets
-                    target_datetime = target_datetime.replace(hour=hours, minute=minutes)
-                    result.temporal_type = TemporalType.DATETIME
-                    result.precision = "exact"
-            
-            if result.temporal_type != TemporalType.INTERVAL:
-                result.normalized_datetime = target_datetime
-                result.normalized_date = target_datetime.strftime('%Y-%m-%d')
-                result.normalized_time = target_datetime.strftime('%H:%M:%S')
-                result.normalized_datetime_str = target_datetime.isoformat()
             
             result.confidence = 0.85 if result.temporal_type != TemporalType.INTERVAL else 0.75
             result.notes.append(f"Parsed relative expression: '{rel_expr}'")
@@ -667,6 +830,43 @@ class TemporalNormalizer:
         except (ValueError, TypeError) as e:
             logger.debug(f"Failed to parse relative expression: {e}")
             return False
+
+    def _parse_relative_offset(
+        self,
+        expr: str,
+        result: NormalizedTemporal,
+    ) -> bool:
+        """Parse numeric offsets such as 'daqui a 2 dias às 15h'."""
+        match = self.patterns.RELATIVE_OFFSET_PATTERN.search(expr)
+        if not match:
+            return False
+
+        amount = int(match.group(1))
+        unit = match.group(2).lower()
+        if unit.startswith("semana"):
+            delta = timedelta(weeks=amount)
+        elif unit.startswith("hora"):
+            delta = timedelta(hours=amount)
+        else:
+            delta = timedelta(days=amount)
+
+        target = result.reference_datetime + delta
+        time_result = self._extract_time(expr)
+        if time_result:
+            target = target.replace(hour=time_result[0], minute=time_result[1])
+            self._set_datetime(result, target)
+        elif unit.startswith("hora"):
+            self._set_datetime(result, target, precision="hour")
+        else:
+            self._set_date(
+                result,
+                target,
+                temporal_type=TemporalType.RELATIVE,
+            )
+
+        result.confidence = 0.9
+        result.notes.append(f"Parsed relative offset: {amount} {unit}")
+        return True
     
     def _parse_complex_expression(
         self,
@@ -686,32 +886,35 @@ class TemporalNormalizer:
         time_of_day_match = self.patterns.TIME_OF_DAY_PATTERN.search(expr)
         
         if weekday_match and time_of_day_match:
-            # Has both weekday and time of day
             try:
-                # First parse weekday (without time)
-                weekday_expr = weekday_match.group(0)
                 if not self._parse_weekday(expr, result):
                     return False
+
+                # An explicit clock time is more precise than a broad period.
+                if self._extract_time(expr):
+                    return True
                 
-                # Then apply time of day constraints
                 time_of_day_expr = time_of_day_match.group(0).lower()
                 time_range = self._get_time_of_day_range(time_of_day_expr)
                 
-                if time_range:
+                if time_range and result.normalized_date:
                     start_h, start_m, end_h, end_m = time_range
-                    # Apply midpoint of time range (heuristic)
-                    mid_h = (start_h + end_h) // 2
-                    mid_m = (start_m + end_m) // 2
-                    
-                    result.normalized_datetime = result.normalized_datetime.replace(
-                        hour=mid_h,
-                        minute=mid_m
+                    base_date = datetime.fromisoformat(result.normalized_date)
+                    start = base_date.replace(
+                        hour=start_h,
+                        minute=start_m,
+                        tzinfo=result.reference_datetime.tzinfo,
                     )
-                    result.temporal_type = TemporalType.DATETIME
-                    result.precision = "approximate"
+                    end = base_date.replace(
+                        hour=end_h,
+                        minute=end_m,
+                        tzinfo=result.reference_datetime.tzinfo,
+                    )
+                    self._set_interval(result, start, end, "time_of_day")
                     result.confidence = 0.75
-                    result.notes.append(f"Combined weekday with time of day: '{time_of_day_expr}'")
-                    result.normalized_datetime_str = result.normalized_datetime.isoformat()
+                    result.notes.append(
+                        f"Combined weekday with time-of-day interval: '{time_of_day_expr}'"
+                    )
                     
                     return True
             
@@ -724,6 +927,11 @@ class TemporalNormalizer:
         if relative_match:
             try:
                 if self._parse_relative_expression(expr, result):
+                    if (
+                        result.temporal_type != TemporalType.INTERVAL
+                        and not self._extract_time(expr)
+                    ):
+                        self._apply_time_of_day_interval(result, expr)
                     return True
             except Exception as e:
                 logger.debug(f"Failed parsing relative in complex: {e}")
@@ -758,24 +966,21 @@ class TemporalNormalizer:
             
             if time_range:
                 start_h, start_m, end_h, end_m = time_range
-                # Apply midpoint of time range (heuristic)
-                mid_h = (start_h + end_h) // 2
-                mid_m = (start_m + end_m) // 2
-                
-                target_datetime = result.reference_datetime.replace(
-                    hour=mid_h,
-                    minute=mid_m,
-                    second=0
+                start = result.reference_datetime.replace(
+                    hour=start_h,
+                    minute=start_m,
+                    second=0,
+                    microsecond=0,
                 )
-                
-                result.normalized_datetime = target_datetime
-                result.normalized_time = target_datetime.strftime('%H:%M:%S')
-                result.normalized_date = target_datetime.strftime('%Y-%m-%d')
-                result.normalized_datetime_str = target_datetime.isoformat()
-                result.temporal_type = TemporalType.TIME
-                result.precision = "approximate"
+                end = result.reference_datetime.replace(
+                    hour=end_h,
+                    minute=end_m,
+                    second=0,
+                    microsecond=0,
+                )
+                self._set_interval(result, start, end, "time_of_day")
                 result.confidence = 0.75
-                result.notes.append(f"Time of day: '{time_of_day_expr}' → ~{mid_h:02d}:{mid_m:02d}")
+                result.notes.append(f"Time-of-day interval: '{time_of_day_expr}'")
                 
                 return True
             
@@ -808,11 +1013,12 @@ class TemporalNormalizer:
                 second=0
             )
             
-            result.normalized_datetime = target_datetime
-            result.normalized_time = target_datetime.strftime('%H:%M:%S')
-            result.normalized_datetime_str = target_datetime.isoformat()
-            result.temporal_type = TemporalType.TIME
-            result.precision = "time_only"
+            self._set_datetime(
+                result,
+                target_datetime,
+                precision="time_only",
+                temporal_type=TemporalType.TIME,
+            )
             result.confidence = 0.8
             result.notes.append("Parsed as time-only expression")
             
@@ -835,11 +1041,12 @@ class TemporalNormalizer:
         
         try:
             hours = int(match.group(1))
-            minutes = int(match.group(2)) if match.group(2) else 0
+            minute_group = match.group(2) or match.group(3)
+            minutes = int(minute_group) if minute_group else 0
             
             # Validate ranges
             if not (0 <= hours <= 23):
-                hours = hours % 24  # Handle 24h format edge cases
+                return None
             if not (0 <= minutes <= 59):
                 return None
             

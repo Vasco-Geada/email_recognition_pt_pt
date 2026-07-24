@@ -1,0 +1,197 @@
+{
+  "description": "Development set for tuning the classic meeting topic extractor.",
+  "cases": [
+    {
+      "id": "dev-001",
+      "split": "dev",
+      "subject": "Avaliações do segundo semestre",
+      "body": "Gostaria de conversar consigo acerca da calendarização das avaliações.",
+      "label": "agendamento_reuniao",
+      "gold_topic": "calendarização das avaliações"
+    },
+    {
+      "id": "dev-002",
+      "split": "dev",
+      "subject": "Reunião do departamento",
+      "body": "A reunião será dedicada à validação das atas do departamento.",
+      "label": "agendamento_reuniao",
+      "gold_topic": "validação das atas do departamento"
+    },
+    {
+      "id": "dev-003",
+      "split": "dev",
+      "subject": "Distribuição de serviço",
+      "body": "Na próxima terça-feira, o assunto principal será a distribuição do serviço docente.",
+      "label": "agendamento_reuniao",
+      "gold_topic": "distribuição do serviço docente"
+    },
+    {
+      "id": "dev-004",
+      "split": "dev",
+      "subject": "Orientação",
+      "body": "Podemos analisar o progresso da dissertação na próxima reunião?",
+      "label": "agendamento_reuniao",
+      "gold_topic": "progresso da dissertação"
+    },
+    {
+      "id": "dev-005",
+      "split": "dev",
+      "subject": "Estágio curricular",
+      "body": "Queria falar consigo acerca do processo de estágio.",
+      "label": "agendamento_reuniao",
+      "gold_topic": "processo de estágio"
+    },
+    {
+      "id": "dev-006",
+      "split": "dev",
+      "subject": "Pedido de equivalências",
+      "body": "Quanto ao pedido de equivalências, precisamos de reunir esta semana.",
+      "label": "agendamento_reuniao",
+      "gold_topic": "pedido de equivalências"
+    },
+    {
+      "id": "dev-007",
+      "split": "dev",
+      "subject": "Preparação da defesa",
+      "body": "Proponho uma conversa focada na preparação da defesa.",
+      "label": "agendamento_reuniao",
+      "gold_topic": "preparação da defesa"
+    },
+    {
+      "id": "dev-008",
+      "split": "dev",
+      "subject": "Coordenação da UC",
+      "body": "Na reunião vamos tratar da coordenação da unidade curricular.",
+      "label": "agendamento_reuniao",
+      "gold_topic": "coordenação da unidade curricular"
+    },
+    {
+      "id": "dev-009",
+      "split": "dev",
+      "subject": "Reunião: acompanhamento pedagógico",
+      "body": "Podemos encontrar-nos amanhã às 10h no gabinete 12?",
+      "label": "agendamento_reuniao",
+      "gold_topic": "acompanhamento pedagógico"
+    },
+    {
+      "id": "dev-010",
+      "split": "dev",
+      "subject": "Horários",
+      "body": "Confirmo a reunião para abordarmos os horários do semestre.",
+      "label": "reuniao_confirmada",
+      "gold_topic": "horários do semestre"
+    },
+    {
+      "id": "dev-011",
+      "split": "dev",
+      "subject": "Regulamento interno",
+      "body": "A sessão incidirá sobre a atualização do regulamento interno.",
+      "label": "agendamento_reuniao",
+      "gold_topic": "atualização do regulamento interno"
+    },
+    {
+      "id": "dev-012",
+      "split": "dev",
+      "subject": "Critérios de avaliação",
+      "body": "Proponho debater os critérios de avaliação da unidade curricular.",
+      "label": "agendamento_reuniao",
+      "gold_topic": "critérios de avaliação da unidade curricular"
+    },
+    {
+      "id": "dev-013",
+      "split": "dev",
+      "subject": "Visitas de estudo",
+      "body": "O encontro terá como tema o planeamento das visitas de estudo.",
+      "label": "agendamento_reuniao",
+      "gold_topic": "planeamento das visitas de estudo"
+    },
+    {
+      "id": "dev-014",
+      "split": "dev",
+      "subject": "Resultados do inquérito",
+      "body": "Precisamos de reunir para avaliar os resultados do inquérito aos estudantes.",
+      "label": "agendamento_reuniao",
+      "gold_topic": "resultados do inquérito aos estudantes"
+    },
+    {
+      "id": "dev-015",
+      "split": "dev",
+      "subject": "Conselho pedagógico",
+      "body": "A ordem de trabalhos inclui a revisão do plano anual de atividades.",
+      "label": "reuniao_confirmada",
+      "gold_topic": "revisão do plano anual de atividades"
+    },
+    {
+      "id": "dev-016",
+      "split": "dev",
+      "subject": "Plano de recuperação",
+      "body": "Na quinta-feira daremos seguimento ao plano de recuperação do aluno.",
+      "label": "reuniao_confirmada",
+      "gold_topic": "plano de recuperação do aluno"
+    },
+    {
+      "id": "dev-017",
+      "split": "dev",
+      "subject": "Pedido de reunião",
+      "body": "Gostaria de falar consigo. Tem disponibilidade amanhã à tarde?",
+      "label": "agendamento_reuniao",
+      "gold_topic": ""
+    },
+    {
+      "id": "dev-018",
+      "split": "dev",
+      "subject": "Reunião confirmada",
+      "body": "Fica então combinado para sexta-feira às 14h por Zoom.",
+      "label": "reuniao_confirmada",
+      "gold_topic": ""
+    },
+    {
+      "id": "dev-019",
+      "split": "dev",
+      "subject": "Cancelamento",
+      "body": "Não poderei comparecer à reunião de amanhã. Peço desculpa pelo incómodo.",
+      "label": "cancelamento_reuniao",
+      "gold_topic": ""
+    },
+    {
+      "id": "dev-020",
+      "split": "dev",
+      "subject": "Nova data",
+      "body": "Podemos remarcar a nossa conversa para dia 18 às 11h?",
+      "label": "agendamento_reuniao",
+      "gold_topic": ""
+    },
+    {
+      "id": "dev-021",
+      "split": "dev",
+      "subject": "Documentação",
+      "body": "Envio informação sobre o processo de creditação para consulta.",
+      "label": "nao_reuniao",
+      "gold_topic": ""
+    },
+    {
+      "id": "dev-022",
+      "split": "dev",
+      "subject": "Presença",
+      "body": "Sobre a reunião, confirmo que estarei presente no horário indicado.",
+      "label": "reuniao_confirmada",
+      "gold_topic": ""
+    },
+    {
+      "id": "dev-023",
+      "split": "dev",
+      "subject": "Disponibilidade",
+      "body": "Depois falamos sobre isso. Para já, confirme apenas a sua disponibilidade.",
+      "label": "agendamento_reuniao",
+      "gold_topic": ""
+    },
+    {
+      "id": "dev-024",
+      "split": "dev",
+      "subject": "Aviso aos docentes",
+      "body": "A secretaria informa sobre a alteração do horário de atendimento.",
+      "label": "nao_reuniao",
+      "gold_topic": ""
+    }
+  ]
+}

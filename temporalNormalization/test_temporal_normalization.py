@@ -132,11 +132,10 @@ class TestTemporalNormalization(unittest.TestCase):
     
     def test_weekday_ambiguity_same_day_with_future_time(self):
         """Test ambiguity: same weekday with future time."""
-        # Reference: Monday 10:00
-        # Expression: "segunda às 15h" (Monday at 3 PM - later today)
-        result = self.normalizer.normalize("segunda às 15h", self.reference_dt)
+        reference = datetime(2026, 4, 20, 10, 0)  # Monday
+        result = self.normalizer.normalize("segunda às 15h", reference)
         
-        expected = self.reference_dt.replace(hour=15, minute=0)
+        expected = reference.replace(hour=15, minute=0)
         self.assertEqual(result.normalized_datetime, expected)
     
     # ========================================================================
@@ -186,29 +185,34 @@ class TestTemporalNormalization(unittest.TestCase):
         """Test 'manhã' (morning)."""
         result = self.normalizer.normalize("manhã", self.reference_dt)
         
-        # Should be treated as interval (morning hours)
-        self.assertIsNotNone(result.normalized_datetime)
+        self.assertEqual(result.temporal_type, TemporalType.INTERVAL)
+        self.assertEqual(result.interval_start.hour, 6)
+        self.assertEqual(result.interval_end.hour, 12)
+        self.assertIsNone(result.normalized_datetime)
     
     def test_time_of_day_tarde(self):
         """Test 'à tarde' (afternoon)."""
         result = self.normalizer.normalize("à tarde", self.reference_dt)
         
-        self.assertIsNotNone(result.normalized_datetime)
+        self.assertEqual(result.temporal_type, TemporalType.INTERVAL)
+        self.assertEqual(result.interval_start.hour, 12)
+        self.assertEqual(result.interval_end.hour, 18)
     
     def test_time_of_day_noite(self):
         """Test 'de noite' (evening/night)."""
         result = self.normalizer.normalize("de noite", self.reference_dt)
         
-        self.assertIsNotNone(result.normalized_datetime)
+        self.assertEqual(result.temporal_type, TemporalType.INTERVAL)
+        self.assertEqual(result.interval_start.hour, 18)
     
     def test_time_of_day_depois_almoço(self):
         """Test 'depois de almoço' (after lunch)."""
         result = self.normalizer.normalize("depois de almoço", self.reference_dt)
         
-        self.assertIsNotNone(result.normalized_datetime)
-        # Should be in early afternoon (around 13:00-14:00)
-        self.assertGreaterEqual(result.normalized_datetime.hour, 12)
-        self.assertLessEqual(result.normalized_datetime.hour, 15)
+        self.assertEqual(result.temporal_type, TemporalType.INTERVAL)
+        self.assertEqual(result.interval_start.hour, 12)
+        self.assertEqual(result.interval_start.minute, 30)
+        self.assertEqual(result.interval_end.hour, 14)
     
     # ========================================================================
     # COMPLEX EXPRESSION TESTS
@@ -237,11 +241,11 @@ class TestTemporalNormalization(unittest.TestCase):
         """Test 'sexta à tarde' (Friday afternoon)."""
         result = self.normalizer.normalize("sexta à tarde", self.reference_dt)
         
-        self.assertEqual(result.temporal_type, TemporalType.DATETIME)
-        # Should be Friday at some afternoon hour (Tuesday + 3 = Friday)
+        self.assertEqual(result.temporal_type, TemporalType.INTERVAL)
         expected_date = self.reference_dt + timedelta(days=3)
         self.assertEqual(result.normalized_date, expected_date.strftime('%Y-%m-%d'))
-        self.assertGreater(result.normalized_datetime.hour, 11)  # Afternoon
+        self.assertEqual(result.interval_start.hour, 12)
+        self.assertEqual(result.interval_end.hour, 18)
     
     def test_complex_explicit_date_with_time(self):
         """Test '16 de Abril às 15h' (April 16 at 3 PM)."""
@@ -250,6 +254,49 @@ class TestTemporalNormalization(unittest.TestCase):
         self.assertEqual(result.temporal_type, TemporalType.DATETIME)
         self.assertEqual(result.normalized_date, "2026-04-16")
         self.assertEqual(result.normalized_time, "15:00:00")
+
+    def test_day_of_month_uses_next_occurrence(self):
+        result = self.normalizer.normalize(
+            "dia 18 as 9h30",
+            datetime(2026, 3, 23, 11, 0),
+        )
+
+        self.assertEqual(result.normalized_datetime_str, "2026-04-18T09:30:00")
+        self.assertEqual(result.precision, "exact")
+
+    def test_day_of_month_rolls_over_year(self):
+        result = self.normalizer.normalize(
+            "dia 3 as 10h",
+            datetime(2026, 12, 20, 11, 0),
+        )
+
+        self.assertEqual(result.normalized_datetime_str, "2027-01-03T10:00:00")
+
+    def test_relative_date_does_not_inherit_send_time(self):
+        result = self.normalizer.normalize("amanhã", self.reference_dt)
+
+        self.assertEqual(result.normalized_date, "2026-04-22")
+        self.assertIsNone(result.normalized_datetime)
+        self.assertIsNone(result.normalized_time)
+        self.assertEqual(result.canonical_value(), "2026-04-22")
+
+    def test_relative_offset_with_explicit_time(self):
+        result = self.normalizer.normalize(
+            "daqui a 2 dias as 16h30",
+            self.reference_dt,
+        )
+
+        self.assertEqual(result.normalized_datetime_str, "2026-04-23T16:30:00")
+
+    def test_relative_day_with_time_of_day_is_interval(self):
+        result = self.normalizer.normalize(
+            "amanhã de manhã",
+            self.reference_dt,
+        )
+
+        self.assertEqual(result.temporal_type, TemporalType.INTERVAL)
+        self.assertEqual(result.interval_start.isoformat(), "2026-04-22T06:00:00")
+        self.assertEqual(result.interval_end.isoformat(), "2026-04-22T12:00:00")
     
     # ========================================================================
     # EXPLICIT DATE TESTS
@@ -300,7 +347,9 @@ class TestTemporalNormalization(unittest.TestCase):
         
         self.assertEqual(len(results), len(expressions))
         for result in results:
-            self.assertIsNotNone(result.normalized_datetime or result.interval_start)
+            self.assertIsNotNone(
+                result.normalized_datetime or result.interval_start or result.normalized_date
+            )
     
     # ========================================================================
     # EDGE CASES AND ERROR HANDLING
@@ -378,7 +427,7 @@ class TestTemporalNormalizationIntegration(unittest.TestCase):
         scenarios = [
             ("Consegues reunir segunda às 14h?", TemporalType.DATETIME),
             ("Podemos agendar para amanhã?", TemporalType.RELATIVE),  # amanhã = tomorrow (no time)
-            ("Vamos marcar para sexta à tarde?", TemporalType.DATETIME),  # sexta + tarde = datetime
+            ("Vamos marcar para sexta à tarde?", TemporalType.INTERVAL),
             ("Pode ser ainda no final desta semana?", TemporalType.DATE),  # final desta semana
             ("Para a semana temos tempo?", TemporalType.INTERVAL),
         ]

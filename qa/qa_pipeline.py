@@ -41,9 +41,13 @@ from qa_utils import (
 )
 
 try:
-    from preprocessing.temporal_normalization import TemporalNormalizer
+    from preprocessing.temporal_normalization import (
+        TemporalNormalizer,
+        parse_datetime_value,
+    )
 except Exception:  # pragma: no cover - optional when QA is used standalone
     TemporalNormalizer = None
+    parse_datetime_value = None
 
 
 logger = logging.getLogger(__name__)
@@ -140,16 +144,51 @@ class QAContextEnricher:
     )
     TEMPORAL_PATTERNS = [
         re.compile(
-            r"\b(hoje|amanh[ãa]|depois de amanh[ãa]|mais logo|"
-            r"pr[óo]xima semana|na pr[óo]xima semana|"
-            r"segunda|ter[çc]a|quarta|quinta|sexta|s[áa]bado|domingo)"
-            r"(?:\s+(?:de|à|a|pela|ao)\s+(?:manh[ãa]|tarde|noite))?"
-            r"(?:\s+(?:às|as|a)\s+\d{1,2}(?:h|:\d{2})?)?",
+            r"\bdia\s+\d{1,2}"
+            r"(?:\s+de\s+(?:janeiro|fevereiro|mar[çc]o|abril|maio|junho|"
+            r"julho|agosto|setembro|outubro|novembro|dezembro))?"
+            r"(?:\s+(?:às|as|pelas)\s+\d{1,2}(?:h\d{0,2}|:\d{2}|\s+horas?))?\b",
             re.IGNORECASE,
         ),
-        re.compile(r"\b\d{1,2}(?:h|:\d{2})(?:\d{2})?\b", re.IGNORECASE),
-        re.compile(r"\b\d{1,2}[/-]\d{1,2}(?:[/-]\d{2,4})?\b", re.IGNORECASE),
-        re.compile(r"\bdaqui\s+a\s+\d+\s+(?:dias|semanas|horas)\b", re.IGNORECASE),
+        re.compile(
+            r"\b\d{1,2}\s+de\s+(?:janeiro|fevereiro|mar[çc]o|abril|maio|"
+            r"junho|julho|agosto|setembro|outubro|novembro|dezembro)"
+            r"(?:\s+de\s+\d{4})?"
+            r"(?:\s+(?:às|as|pelas)\s+\d{1,2}(?:h\d{0,2}|:\d{2}|\s+horas?))?\b",
+            re.IGNORECASE,
+        ),
+        re.compile(
+            r"\b\d{1,2}[/-]\d{1,2}(?:[/-]\d{2,4})?"
+            r"(?:\s+(?:às|as|pelas)\s+\d{1,2}(?:h\d{0,2}|:\d{2}|\s+horas?))?\b",
+            re.IGNORECASE,
+        ),
+        re.compile(
+            r"\b(depois\s+de\s+amanh[ãa]|amanh[ãa]|hoje|ontem|"
+            r"(?:na\s+)?pr[óo]xima\s+semana|para\s+a\s+semana|esta\s+semana|"
+            r"(?:pr[óo]xima|esta)\s+"
+            r"(?:segunda|ter[çc]a|quarta|quinta|sexta|s[áa]bado|domingo)|"
+            r"segunda|ter[çc]a|quarta|quinta|sexta|s[áa]bado|domingo)"
+            r"(?:-feira)?"
+            r"(?:\s+(?:de|à|a|pela|ao)\s+(?:manh[ãa]|tarde|noite))?"
+            r"(?:\s+(?:às|as|pelas)\s+\d{1,2}(?:h\d{0,2}|:\d{2}|\s+horas?))?\b",
+            re.IGNORECASE,
+        ),
+        re.compile(
+            r"\b(?:durante\s+a\s+manh[ãa]|ao\s+final\s+do\s+dia|"
+            r"depois\s+de\s+almo[çc]o|depois\s+da\s+aula|"
+            r"antes\s+do\s+semin[áa]rio|mais\s+logo)\b",
+            re.IGNORECASE,
+        ),
+        re.compile(
+            r"\b(?:daqui\s+a|dentro\s+de|em)\s+\d+\s+"
+            r"(?:dias?|semanas?|horas?)"
+            r"(?:\s+(?:às|as|pelas)\s+\d{1,2}(?:h\d{0,2}|:\d{2}|\s+horas?))?\b",
+            re.IGNORECASE,
+        ),
+        re.compile(
+            r"\b(?:às|as|pelas)?\s*\d{1,2}(?:h\d{0,2}|:\d{2}|\.\d{2}|\s+horas?)\b",
+            re.IGNORECASE,
+        ),
     ]
 
     def __init__(self, reference_datetime: Optional[datetime] = None) -> None:
@@ -179,11 +218,6 @@ class QAContextEnricher:
         if sender:
             hints.append(f"Remetente: {sender}")
             hints.append(f"Participante por defeito quando nao ha outro participante explicito: {sender}")
-        if temporal_hints:
-            hints.append("Expressoes temporais normalizadas:")
-            for hint in temporal_hints:
-                normalized = hint.get("normalized_datetime") or hint.get("normalized_date") or ""
-                hints.append(f"- {hint['text']} -> {normalized}".rstrip())
 
         enriched_context = email_text
         if hints:
@@ -222,14 +256,49 @@ class QAContextEnricher:
 
         time_result = results.get("time", {})
         temporal_hints = enrichment.get("temporal_hints", [])
-        if self.is_bad_answer(time_result, email_text) and temporal_hints:
-            first_hint = temporal_hints[0]
-            results["time"] = self.fallback_result(
+        if self.is_non_meeting(enrichment.get("metadata", {})):
+            results["time"] = self.empty_result(time_result, "non_meeting_no_time")
+            results["time_normalized"] = self.empty_result(
+                {},
+                "non_meeting_no_time",
+            )
+        elif temporal_hints:
+            selected_hint = self.select_temporal_hint(time_result, temporal_hints)
+            matched_qa_answer = selected_hint is not None
+            if selected_hint is None and len(temporal_hints) > 1:
+                results["time"] = self.empty_result(
+                    time_result,
+                    "ambiguous_temporal_expressions",
+                )
+                results["time_normalized"] = self.empty_result(
+                    {},
+                    "ambiguous_temporal_expressions",
+                )
+                selected_hint = None
+            else:
+                selected_hint = selected_hint or temporal_hints[0]
+
+            if selected_hint is not None:
+                model_confidence = float(time_result.get("confidence") or 0.0)
+                results["time"] = self.fallback_result(
+                    time_result,
+                    selected_hint["text"],
+                    "qa_temporal_alignment" if matched_qa_answer else "fallback_temporal_expression",
+                    confidence=model_confidence if matched_qa_answer else 0.85,
+                    extra={"normalized": selected_hint},
+                )
+                results["time_normalized"] = self.build_normalized_time_result(
+                    selected_hint,
+                    confidence=model_confidence if matched_qa_answer else 0.85,
+                )
+        else:
+            results["time"] = self.empty_result(
                 time_result,
-                first_hint["text"],
-                "fallback_temporal_normalization",
-                confidence=0.75,
-                extra={"normalized": first_hint},
+                "no_explicit_temporal_expression",
+            )
+            results["time_normalized"] = self.empty_result(
+                {},
+                "no_explicit_temporal_expression",
             )
 
         location = results.get("location", {})
@@ -283,6 +352,7 @@ class QAContextEnricher:
     @classmethod
     def empty_result(cls, original: Dict[str, Any], source: str) -> Dict[str, Any]:
         result = dict(original)
+        result.pop("normalized", None)
         result.update(
             {
                 "answer": None,
@@ -292,6 +362,68 @@ class QAContextEnricher:
             }
         )
         return result
+
+    @staticmethod
+    def temporal_canonical_value(hint: Dict[str, Any]) -> str:
+        return str(
+            hint.get("canonical_value")
+            or (
+                f"{hint.get('interval_start')}/{hint.get('interval_end')}"
+                if hint.get("interval_start") and hint.get("interval_end")
+                else ""
+            )
+            or hint.get("normalized_datetime")
+            or hint.get("normalized_date")
+            or hint.get("normalized_time")
+            or ""
+        )
+
+    @classmethod
+    def build_normalized_time_result(
+        cls,
+        hint: Dict[str, Any],
+        confidence: float,
+    ) -> Dict[str, Any]:
+        answer = cls.temporal_canonical_value(hint)
+        return {
+            "answer": answer or None,
+            "confidence": confidence if answer else 0.0,
+            "question": "Qual e a data/hora normalizada da reuniao?",
+            "valid": bool(answer),
+            "normalization_source": "email_sent_datetime",
+            "normalized": hint,
+        }
+
+    @classmethod
+    def select_temporal_hint(
+        cls,
+        time_result: Dict[str, Any],
+        temporal_hints: List[Dict[str, Any]],
+    ) -> Optional[Dict[str, Any]]:
+        answer = TextNormalizer.clean_text(
+            str((time_result or {}).get("answer") or ""),
+            lowercase=True,
+        )
+        if not answer:
+            return None
+
+        for hint in temporal_hints:
+            hint_text = TextNormalizer.clean_text(
+                str(hint.get("text") or ""),
+                lowercase=True,
+            )
+            canonical = TextNormalizer.clean_text(
+                cls.temporal_canonical_value(hint),
+                lowercase=True,
+            )
+            if (
+                hint_text
+                and (answer == hint_text or answer in hint_text or hint_text in answer)
+            ):
+                return hint
+            if canonical and answer == canonical:
+                return hint
+        return None
 
     @classmethod
     def fallback_result(
@@ -507,23 +639,43 @@ class QAContextEnricher:
         email_text: str,
         reference_datetime: Optional[datetime],
     ) -> List[Dict[str, Any]]:
-        seen = set()
-        hints = []
+        candidates = []
         for pattern in self.TEMPORAL_PATTERNS:
             for match in pattern.finditer(email_text):
                 text = match.group(0).strip()
-                key = text.lower()
-                if not text or key in seen:
+                if not text:
                     continue
-                seen.add(key)
-                hint = {"text": text}
-                if self.temporal_normalizer:
-                    normalized = self.temporal_normalizer.normalize(
-                        text,
-                        reference_datetime=reference_datetime,
-                    )
-                    hint.update(normalized.to_dict())
-                hints.append(hint)
+                candidates.append((match.start(), match.end(), text))
+
+        # Prefer complete expressions such as "dia 18 as 9h30" over "9h30".
+        selected = []
+        for start, end, text in sorted(
+            candidates,
+            key=lambda item: (item[0], -(item[1] - item[0])),
+        ):
+            if any(start < other_end and end > other_start for other_start, other_end, _ in selected):
+                continue
+            selected.append((start, end, text))
+
+        hints = []
+        seen = set()
+        for start, end, text in sorted(selected, key=lambda item: item[0]):
+            key = TextNormalizer.clean_text(text, lowercase=True)
+            if key in seen:
+                continue
+            seen.add(key)
+            hint = {
+                "text": text,
+                "span_start": start,
+                "span_end": end,
+            }
+            if self.temporal_normalizer:
+                normalized = self.temporal_normalizer.normalize(
+                    text,
+                    reference_datetime=reference_datetime,
+                )
+                hint.update(normalized.to_dict())
+            hints.append(hint)
         return hints
 
     def extract_temporal_hints(
@@ -537,14 +689,21 @@ class QAContextEnricher:
         )
 
     def extract_reference_datetime(self, metadata: Dict[str, Any]) -> Optional[datetime]:
-        for key in ("sent_datetime", "sent_at", "email_date", "date", "created_at"):
+        for key in (
+            "sent_datetime",
+            "sent_at",
+            "email_date",
+            "date",
+            "Date",
+            "created_at",
+            "timestamp",
+        ):
             value = metadata.get(key)
             if not value:
                 continue
-            try:
-                return datetime.fromisoformat(str(value).replace("Z", "+00:00"))
-            except ValueError:
-                continue
+            parsed = parse_datetime_value(value) if parse_datetime_value else None
+            if parsed is not None:
+                return parsed
         return self.reference_datetime
 
     @staticmethod
@@ -867,7 +1026,7 @@ class QAPipeline:
             
             with open(output_file, 'w', newline='', encoding='utf-8') as f:
                 fieldnames = [
-                    'email_id', 'subject', 'participants', 'time',
+                    'email_id', 'subject', 'participants', 'time', 'time_normalized',
                     'location', 'topic', 'processed_at'
                 ]
                 writer = csv.DictWriter(f, fieldnames=fieldnames)
@@ -880,6 +1039,7 @@ class QAPipeline:
                         'subject': result.subject,
                         'participants': answers.get('participants', ''),
                         'time': answers.get('time', ''),
+                        'time_normalized': answers.get('time_normalized', ''),
                         'location': answers.get('location', ''),
                         'topic': answers.get('topic', ''),
                         'processed_at': result.processed_at,

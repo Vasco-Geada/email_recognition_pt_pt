@@ -26,8 +26,6 @@ from datetime import datetime
 from pathlib import Path
 from typing import Any, Dict, Iterable, List, Optional, Tuple
 
-from sklearn.feature_extraction.text import TfidfVectorizer
-from sklearn.linear_model import LogisticRegression
 from sklearn.metrics import (
     accuracy_score,
     classification_report,
@@ -46,11 +44,15 @@ if str(PROJECT_ROOT) not in sys.path:
     sys.path.insert(0, str(PROJECT_ROOT))
 
 from models.decision_tree_classifier import DecisionTreeEmailClassifier
+from models.logistic_regression_classifier import LogisticRegressionEmailClassifier
 from models.naive_bayes_classifier import NaiveBayesEmailClassifier
 from models.utils import combine_text_fields, load_dataset, preprocess_texts, validate_dataset
 from preprocessing.anonymization import EmailAnonymizer
 from preprocessing.preprocess import preprocessEmail
-from preprocessing.temporal_normalization import TemporalNormalizer
+from preprocessing.temporal_normalization import (
+    TemporalNormalizer,
+    parse_datetime_value,
+)
 from preprocessing.trigger_extraction import TriggerExtractor
 
 logger = logging.getLogger("run_project_evaluation")
@@ -64,45 +66,6 @@ class PreparedDataset:
     processed_emails: List[Dict[str, Any]]
     texts: List[str]
     labels: List[str]
-
-
-class LogisticRegressionEmailClassifier:
-    """Pequeno adaptador para alinhar Logistic Regression com os outros modelos."""
-
-    def __init__(
-        self,
-        max_features: int = 5000,
-        ngram_range: Tuple[int, int] = (1, 2),
-        random_state: int = 42,
-    ) -> None:
-        self.vectorizer = TfidfVectorizer(
-            lowercase=True,
-            strip_accents=None,
-            ngram_range=ngram_range,
-            max_features=max_features,
-        )
-        self.model = LogisticRegression(
-            max_iter=1000,
-            class_weight="balanced",
-            random_state=random_state,
-        )
-        self.classes_: Optional[List[str]] = None
-
-    def fit(self, texts: List[str], labels: List[str]) -> "LogisticRegressionEmailClassifier":
-        x_train = self.vectorizer.fit_transform(texts)
-        self.model.fit(x_train, labels)
-        self.classes_ = [str(label) for label in self.model.classes_]
-        return self
-
-    def predict(self, texts: List[str]) -> List[str]:
-        return [str(label) for label in self.model.predict(self.vectorizer.transform(texts))]
-
-    def predict_proba(self, texts: List[str]) -> List[Dict[str, float]]:
-        classes = [str(label) for label in self.model.classes_]
-        return [
-            {label: float(probability) for label, probability in zip(classes, row)}
-            for row in self.model.predict_proba(self.vectorizer.transform(texts))
-        ]
 
 
 def parse_args() -> argparse.Namespace:
@@ -275,14 +238,22 @@ def parse_email_reference_datetime(
     email: Dict[str, Any],
     fallback: datetime,
 ) -> datetime:
-    for key in ("sent_datetime", "sent_at", "email_date", "date", "created_at"):
+    for key in (
+        "sent_datetime",
+        "sent_at",
+        "email_date",
+        "date",
+        "Date",
+        "created_at",
+        "timestamp",
+    ):
         value = email.get(key)
         if not value:
             continue
-        try:
-            return datetime.fromisoformat(str(value).replace("Z", "+00:00"))
-        except ValueError:
-            logger.warning("Data de envio invalida em %s: %s", key, value)
+        parsed = parse_datetime_value(value)
+        if parsed is not None:
+            return parsed
+        logger.warning("Data de envio invalida em %s: %s", key, value)
     return fallback
 
 

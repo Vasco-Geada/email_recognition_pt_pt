@@ -25,6 +25,7 @@ __author__ = "NLP Research Team"
 __all__ = [
     'NaiveBayesEmailClassifier',
     'DecisionTreeEmailClassifier',
+    'LogisticRegressionEmailClassifier',
     'load_dataset',
     'preprocess_text',
     'combine_text_fields'
@@ -32,6 +33,7 @@ __all__ = [
 
 from .naive_bayes_classifier import NaiveBayesEmailClassifier
 from .decision_tree_classifier import DecisionTreeEmailClassifier
+from .logistic_regression_classifier import LogisticRegressionEmailClassifier
 from .utils import (
     load_dataset,
     preprocess_text,
