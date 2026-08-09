@@ -210,6 +210,7 @@ __marimo__/
 
 # Local ML artifacts and generated outputs
 dataset/.hf_cache/
+dataset/imported_emails*.json
 qa/models/
 evaluation_results/
 trained_models/

@@ -1,401 +1,376 @@
 example_id,category,exact_match,precision,recall,f1_score,confidence,predicted,reference,error_type
-195:participants,participants,0.0,0.0,0.0,0.0,0.0,,Carolina Silva,LOW_CONFIDENCE
-195:time,time,0.0,0.0,0.0,0.0,0.9,esta semana,,TRUNCATION
-195:time_normalized,time_normalized,0.0,0.0,0.0,0.0,0.9,2026-03-02T00:00:00,,HALLUCINATION
-195:location,location,1.0,1.0,1.0,1.0,0.0,,,LOW_CONFIDENCE
-195:topic,topic,0.0,0.0,0.0,0.0,0.9,"atualizacao; processo; cara professora,; esta semana; moodle",,HALLUCINATION
-326:participants,participants,0.0,0.0,0.0,0.0,0.6,motivo impr,Mariana Lopes,WRONG_ANSWER
-326:time,time,0.0,0.0,0.0,0.0,0.0,,dia 18 as 9h30,LOW_CONFIDENCE
-326:time_normalized,time_normalized,0.0,0.0,0.0,0.0,0.0,,2026-03-23T09:30:00,LOW_CONFIDENCE
-326:location,location,0.0,0.0,0.0,0.0,0.0,,remoto - zoom,LOW_CONFIDENCE
-326:topic,topic,0.0,0.0,0.0,0.0,0.86,indisponibilidade; bom dia; dia; efeito; a reuniao,coordenacao da unidade curricular,HALLUCINATION
-64:participants,participants,0.0,0.0,0.0,0.0,0.7,Proponho; situacao,Professora Sofia Carvalho,HALLUCINATION
-64:time,time,0.0,1.0,0.3333333333333333,0.5,0.9,quarta,quarta a tarde,TRUNCATION
-64:time_normalized,time_normalized,0.0,0.0,0.0,0.0,0.9,2026-03-18T00:00:00,2026-03-18T15:00:00,HALLUCINATION
-64:location,location,0.0,0.75,0.75,0.75,0.85,presencial - gabinete 3,presencial - gabinete 3.12,HALLUCINATION
-64:topic,topic,0.0,0.16666666666666666,0.5,0.25,0.9,reuniao; acompanhamento pedagogico; caro; proponho; gabinete,acompanhamento pedagogico,HALLUCINATION
-351:participants,participants,0.0,0.0,0.0,0.0,0.0,,Secretaria Academica,LOW_CONFIDENCE
-351:time,time,0.0,1.0,0.5,0.6666666666666666,0.9,as 17h,dia 22 as 17h,TRUNCATION
-351:time_normalized,time_normalized,1.0,1.0,1.0,1.0,0.9,2026-03-27T17:00:00,2026-03-27T17:00:00,EXACT_MATCH
-351:location,location,0.0,0.0,0.0,0.0,0.0,,remoto - zoom,LOW_CONFIDENCE
-351:topic,topic,0.0,0.2,0.3333333333333333,0.25,0.9,marcacao; reuniao; bom dia; dia; horarios,horarios do semestre,HALLUCINATION
-263:participants,participants,0.0,0.0,0.0,0.0,0.0,,Mariana Lopes,LOW_CONFIDENCE
-263:time,time,1.0,1.0,1.0,1.0,0.0,,,LOW_CONFIDENCE
-263:time_normalized,time_normalized,1.0,1.0,1.0,1.0,0.0,,,LOW_CONFIDENCE
-263:location,location,1.0,1.0,1.0,1.0,0.0,,,LOW_CONFIDENCE
-263:topic,topic,0.0,0.0,0.0,0.0,0.9,informacao; bom dia; partilho; ata; validacao,,HALLUCINATION
-68:participants,participants,0.0,0.3333333333333333,0.6666666666666666,0.4444444444444444,0.7,Professora Ana Costa; aulas para quan,Professora Ana Costa,HALLUCINATION
-68:time,time,1.0,1.0,1.0,1.0,0.0,,,LOW_CONFIDENCE
-68:time_normalized,time_normalized,1.0,1.0,1.0,1.0,0.0,,,LOW_CONFIDENCE
-68:location,location,0.0,0.0,0.0,0.0,0.0,,remoto - zoom,LOW_CONFIDENCE
-68:topic,topic,0.0,0.14285714285714285,0.3333333333333333,0.2,0.9,"disponibilidade; reuniao; cara; professora ana costa,; planeamento",planeamento de aulas,HALLUCINATION
-252:participants,participants,0.0,0.3333333333333333,0.5,0.4,0.7,Miguel Santos; Migu,Miguel Santos,HALLUCINATION
-252:time,time,1.0,1.0,1.0,1.0,0.0,,,LOW_CONFIDENCE
-252:time_normalized,time_normalized,1.0,1.0,1.0,1.0,0.0,,,LOW_CONFIDENCE
-252:location,location,0.0,0.0,0.0,0.0,0.0,,remoto - zoom,LOW_CONFIDENCE
-252:topic,topic,0.0,0.0,0.0,0.0,0.9,miguel santos; minha parte; esta confirmado; remoto,planeamento de aulas,HALLUCINATION
-157:participants,participants,0.0,0.0,0.0,0.0,0.6,canc,Professor Luis Almeida,WRONG_ANSWER
-157:time,time,1.0,1.0,1.0,1.0,0.0,,,LOW_CONFIDENCE
-157:time_normalized,time_normalized,1.0,1.0,1.0,1.0,0.0,,,LOW_CONFIDENCE
+392:participants,participants,0.0,0.0,0.0,0.0,0.0,,Carolina Silva,LOW_CONFIDENCE
+392:time,time,1.0,1.0,1.0,1.0,0.0,,,LOW_CONFIDENCE
+392:time_normalized,time_normalized,1.0,1.0,1.0,1.0,0.0,,,LOW_CONFIDENCE
+392:location,location,0.0,0.0,0.0,0.0,0.0,,remoto - zoom,LOW_CONFIDENCE
+392:topic,topic,0.0,0.0,0.0,0.0,0.0,,analise dos resultados dos estudantes,LOW_CONFIDENCE
+16:participants,participants,0.0,0.16666666666666666,0.3333333333333333,0.2222222222222222,0.8000000000000002,Professor Professora Ana Costa; Agradeco; Irei,Professora Sofia Carvalho,HALLUCINATION
+16:time,time,1.0,1.0,1.0,1.0,0.0,,,LOW_CONFIDENCE
+16:time_normalized,time_normalized,1.0,1.0,1.0,1.0,0.0,,,LOW_CONFIDENCE
+16:location,location,1.0,1.0,1.0,1.0,0.0,,,LOW_CONFIDENCE
+16:topic,topic,1.0,1.0,1.0,1.0,0.0,,,LOW_CONFIDENCE
+88:participants,participants,0.0,0.0,0.0,0.0,0.0,,Coordenacao de Mestrado,LOW_CONFIDENCE
+88:time,time,1.0,1.0,1.0,1.0,0.0,,,LOW_CONFIDENCE
+88:time_normalized,time_normalized,1.0,1.0,1.0,1.0,0.0,,,LOW_CONFIDENCE
+88:location,location,1.0,1.0,1.0,1.0,0.0,,,LOW_CONFIDENCE
+88:topic,topic,0.0,0.0,0.0,0.0,0.98,acompanhamento pedagogico,,TRUNCATION
+293:participants,participants,0.0,0.0,0.0,0.0,0.0,,Professora Ana Costa,LOW_CONFIDENCE
+293:time,time,1.0,1.0,1.0,1.0,0.0,,,LOW_CONFIDENCE
+293:time_normalized,time_normalized,1.0,1.0,1.0,1.0,0.0,,,LOW_CONFIDENCE
+293:location,location,1.0,1.0,1.0,1.0,0.0,,,LOW_CONFIDENCE
+293:topic,topic,1.0,1.0,1.0,1.0,0.0,,,LOW_CONFIDENCE
+53:participants,participants,0.0,0.0,0.0,0.0,0.8000000000000002,Prof; Ricardo Mendes; Preciso,Secretaria Academica,HALLUCINATION
+53:time,time,0.0,0.0,0.0,0.0,0.9,as 15h,,TRUNCATION
+53:time_normalized,time_normalized,0.0,0.0,0.0,0.0,0.9,2026-03-23T15:00:00,,HALLUCINATION
+53:location,location,1.0,1.0,1.0,1.0,0.0,,,LOW_CONFIDENCE
+53:topic,topic,0.0,0.0,0.0,0.0,0.98,avaliacao continua,,TRUNCATION
+284:participants,participants,0.0,0.3333333333333333,0.3333333333333333,0.3333333333333333,0.8,Professora Ana Costa,Professora Sofia Carvalho,PARTIAL_MATCH
+284:time,time,0.0,0.0,0.0,0.0,0.0,,segunda de manha,LOW_CONFIDENCE
+284:time_normalized,time_normalized,0.0,0.0,0.0,0.0,0.0,,2026-04-13T09:00:00,LOW_CONFIDENCE
+284:location,location,0.0,0.0,0.0,0.0,0.0,,remoto - zoom,LOW_CONFIDENCE
+284:topic,topic,0.0,0.0,0.0,0.0,0.98,proposta de projeto,avaliacao continua,WRONG_ANSWER
+222:participants,participants,0.0,0.0,0.0,0.0,0.8,Surgiu,Conselho Pedagogico,WRONG_ANSWER
+222:time,time,0.0,0.0,0.0,0.0,0.9,as 11h,,TRUNCATION
+222:time_normalized,time_normalized,0.0,0.0,0.0,0.0,0.9,2026-05-05T11:00:00,,HALLUCINATION
+222:location,location,0.0,0.0,0.0,0.0,0.0,,remoto - zoom,LOW_CONFIDENCE
+222:topic,topic,0.0,0.3333333333333333,0.3333333333333333,0.3333333333333333,0.9,submissao de artigo,pedido de equivalencias,HALLUCINATION
+216:participants,participants,0.0,0.0,0.0,0.0,0.8,Gabinete de Estagios,Carolina Silva,WRONG_ANSWER
+216:time,time,1.0,1.0,1.0,1.0,0.0,,,LOW_CONFIDENCE
+216:time_normalized,time_normalized,1.0,1.0,1.0,1.0,0.0,,,LOW_CONFIDENCE
+216:location,location,0.0,0.25,0.3333333333333333,0.28571428571428575,0.85,presencial - sala 2,remoto - zoom,HALLUCINATION
+216:topic,topic,0.0,0.0,0.0,0.0,0.98,acompanhamento pedagogico,pedido de equivalencias,WRONG_ANSWER
+234:participants,participants,0.0,0.0,0.0,0.0,0.0,,Professora Sofia Carvalho,LOW_CONFIDENCE
+234:time,time,1.0,1.0,1.0,1.0,0.0,,,LOW_CONFIDENCE
+234:time_normalized,time_normalized,1.0,1.0,1.0,1.0,0.0,,,LOW_CONFIDENCE
+234:location,location,1.0,1.0,1.0,1.0,0.0,,,LOW_CONFIDENCE
+234:topic,topic,0.0,0.0,0.0,0.0,0.98,submissao de artigo,,TRUNCATION
+361:participants,participants,0.0,0.0,0.0,0.0,0.8,Professora Ana Costa; Segue,Prof. Ricardo Mendes,HALLUCINATION
+361:time,time,0.0,0.0,0.0,0.0,0.0,,na proxima semana,LOW_CONFIDENCE
+361:time_normalized,time_normalized,0.0,0.0,0.0,0.0,0.0,,2026-03-23T00:00:00,LOW_CONFIDENCE
+361:location,location,0.0,0.0,0.0,0.0,0.0,,presencial - sala B104,LOW_CONFIDENCE
+361:topic,topic,0.0,0.0,0.0,0.0,0.0,,proposta de projeto,LOW_CONFIDENCE
+0:participants,participants,0.0,0.0,0.0,0.0,0.0,,Secretaria Academica,LOW_CONFIDENCE
+0:time,time,0.0,0.0,0.0,0.0,0.0,,quinta as 16h,LOW_CONFIDENCE
+0:time_normalized,time_normalized,0.0,0.0,0.0,0.0,0.0,,2026-02-19T16:00:00,LOW_CONFIDENCE
+0:location,location,0.0,0.0,0.0,0.0,0.0,,remoto - teams,LOW_CONFIDENCE
+0:topic,topic,0.0,0.0,0.0,0.0,0.0,,credibilidade dos dados recolhidos,LOW_CONFIDENCE
+380:participants,participants,0.0,0.0,0.0,0.0,0.0,,Conselho Pedagogico,LOW_CONFIDENCE
+380:time,time,0.0,0.0,0.0,0.0,0.0,,dia 18 as 9h30,LOW_CONFIDENCE
+380:time_normalized,time_normalized,0.0,0.0,0.0,0.0,0.0,,2026-03-17T09:30:00,LOW_CONFIDENCE
+380:location,location,0.0,0.0,0.0,0.0,0.0,,remoto - zoom,LOW_CONFIDENCE
+380:topic,topic,0.0,0.0,0.0,0.0,0.0,,horarios do semestre,LOW_CONFIDENCE
+217:participants,participants,0.0,0.0,0.0,0.0,0.0,,Diretor do Curso,LOW_CONFIDENCE
+217:time,time,1.0,1.0,1.0,1.0,0.0,,,LOW_CONFIDENCE
+217:time_normalized,time_normalized,1.0,1.0,1.0,1.0,0.0,,,LOW_CONFIDENCE
+217:location,location,0.0,0.0,0.0,0.0,0.0,,remoto - zoom,LOW_CONFIDENCE
+217:topic,topic,0.0,0.0,0.0,0.0,0.0,,credibilidade dos dados recolhidos,LOW_CONFIDENCE
+157:participants,participants,0.0,0.3333333333333333,0.3333333333333333,0.3333333333333333,0.8,Viva Ana Martins,Viva Secretaria Academica,PARTIAL_MATCH
+157:time,time,0.0,0.0,0.0,0.0,0.9,as 10h,,TRUNCATION
+157:time_normalized,time_normalized,0.0,0.0,0.0,0.0,0.9,2026-02-03T10:00:00,,HALLUCINATION
 157:location,location,0.0,0.0,0.0,0.0,0.0,,remoto - google meet,LOW_CONFIDENCE
-157:topic,topic,0.0,0.0,0.0,0.0,0.9,reuniao; efeito; viva secretaria academica; nao; google meet,validacao de atas,HALLUCINATION
-84:participants,participants,0.0,0.0,0.0,0.0,0.6,favor confirm,Secretaria Academica,WRONG_ANSWER
-84:time,time,1.0,1.0,1.0,1.0,0.0,,,LOW_CONFIDENCE
-84:time_normalized,time_normalized,1.0,1.0,1.0,1.0,0.0,,,LOW_CONFIDENCE
-84:location,location,1.0,1.0,1.0,1.0,0.0,,,LOW_CONFIDENCE
-84:topic,topic,0.0,0.0,0.0,0.0,0.8,informacao; sistema academico; a estudante; a pauta,,HALLUCINATION
-233:participants,participants,0.0,0.0,0.0,0.0,0.6,dos,Prof. Ricardo Mendes,WRONG_ANSWER
-233:time,time,0.0,0.0,0.0,0.0,0.0,,antes do seminario,LOW_CONFIDENCE
-233:time_normalized,time_normalized,1.0,1.0,1.0,1.0,0.0,,,LOW_CONFIDENCE
-233:location,location,0.0,0.0,0.0,0.0,0.0,,remoto - zoom,LOW_CONFIDENCE
-233:topic,topic,0.0,0.0,0.0,0.0,0.9,agendamento; credibilidade; dados; cara colega; seminario,credibilidade dos dados recolhidos,HALLUCINATION
-15:participants,participants,0.0,0.4,0.6666666666666666,0.5,0.7333333333333334,Professora Ana Costa; Prof; Surgiu,Professora Ana Costa,HALLUCINATION
-15:time,time,0.0,0.0,0.0,0.0,0.0,,depois da aula,LOW_CONFIDENCE
-15:time_normalized,time_normalized,1.0,1.0,1.0,1.0,0.0,,,LOW_CONFIDENCE
-15:location,location,0.0,0.0,0.0,0.0,0.0,,remoto - zoom,LOW_CONFIDENCE
-15:topic,topic,0.0,0.0,0.0,0.0,0.9,": imprevisto; plano; trabalhos; professora ana costa,; horario",revisao do plano de trabalhos,HALLUCINATION
-164:participants,participants,1.0,1.0,1.0,1.0,0.8,Professora Sofia Carvalho,Professora Sofia Carvalho,EXACT_MATCH
-164:time,time,0.0,0.6666666666666666,0.6666666666666666,0.6666666666666666,0.9,quinta; as 16h,quinta as 16h,HALLUCINATION
-164:time_normalized,time_normalized,0.0,0.0,0.0,0.0,0.9,2026-04-16T00:00:00,2026-04-09T16:00:00,HALLUCINATION
-164:location,location,0.0,0.0,0.0,0.0,0.0,,remoto - google meet,LOW_CONFIDENCE
-164:topic,topic,0.0,0.0,0.0,0.0,0.9,"marcacao; reuniao; cara; professora sofia carvalho, confirmo; google meet,",orientacao da dissertacao,HALLUCINATION
-247:participants,participants,0.0,0.0,0.0,0.0,0.8,Fica,Miguel Santos,WRONG_ANSWER
-247:time,time,0.0,0.6666666666666666,0.6666666666666666,0.6666666666666666,0.9,quinta; as 16h,quinta as 16h,HALLUCINATION
-247:time_normalized,time_normalized,0.0,0.0,0.0,0.0,0.9,2026-04-23T00:00:00,2026-04-16T16:00:00,HALLUCINATION
-247:location,location,0.0,0.0,0.0,0.0,0.0,,remoto - zoom,LOW_CONFIDENCE
-247:topic,topic,0.0,0.0,0.0,0.0,0.7,as 16h,horarios do semestre,WRONG_ANSWER
-55:participants,participants,0.0,0.2857142857142857,1.0,0.4444444444444445,0.7,Peço; desmarcar a r; acompanham; Ana Martins,Ana Martins,HALLUCINATION
-55:time,time,1.0,1.0,1.0,1.0,0.0,,,LOW_CONFIDENCE
-55:time_normalized,time_normalized,1.0,1.0,1.0,1.0,0.0,,,LOW_CONFIDENCE
-55:location,location,0.0,0.0,0.0,0.0,0.0,,remoto - zoom,LOW_CONFIDENCE
-55:topic,topic,0.0,0.16666666666666666,0.5,0.25,0.9,imprevisto; acompanhamento pedagogico; horario; departamento; obrigada,acompanhamento pedagogico,HALLUCINATION
-365:participants,participants,0.0,0.0,0.0,0.0,0.6,favor confirm,Professora Ana Costa,WRONG_ANSWER
-365:time,time,1.0,1.0,1.0,1.0,0.0,,,LOW_CONFIDENCE
-365:time_normalized,time_normalized,1.0,1.0,1.0,1.0,0.0,,,LOW_CONFIDENCE
-365:location,location,1.0,1.0,1.0,1.0,0.0,,,LOW_CONFIDENCE
-365:topic,topic,0.0,0.0,0.0,0.0,0.86,atualizacao; processo; caro; sistema academico; a pauta,,HALLUCINATION
-383:participants,participants,0.0,0.25,0.3333333333333333,0.28571428571428575,0.7,Ricardo Mendes; ficar marca,Prof. Ricardo Mendes,HALLUCINATION
-383:time,time,1.0,1.0,1.0,1.0,0.0,,,LOW_CONFIDENCE
-383:time_normalized,time_normalized,1.0,1.0,1.0,1.0,0.0,,,LOW_CONFIDENCE
-383:location,location,0.0,0.0,0.0,0.0,0.0,,remoto - zoom,LOW_CONFIDENCE
-383:topic,topic,0.0,0.0,0.0,0.0,0.86,"caro; /a docente; prof; ricardo mendes,; a reuniao",avaliacao continua,HALLUCINATION
-189:participants,participants,0.0,0.0,0.0,0.0,0.7,Zoom; ser adia,Secretaria Academica,HALLUCINATION
-189:time,time,0.0,0.0,0.0,0.0,0.0,,depois da aula,LOW_CONFIDENCE
-189:time_normalized,time_normalized,1.0,1.0,1.0,1.0,0.0,,,LOW_CONFIDENCE
-189:location,location,0.0,0.0,0.0,0.0,0.0,,remoto - zoom,LOW_CONFIDENCE
-189:topic,topic,0.0,0.0,0.0,0.0,0.8333333333333334,"cancelamento; reuniao; aula; , em zoom; a estudante",analise dos resultados dos estudantes,HALLUCINATION
+157:topic,topic,0.0,0.3333333333333333,0.3333333333333333,0.3333333333333333,0.98,processo de estagio,validacao de atas,PARTIAL_MATCH
+374:participants,participants,0.0,0.0,0.0,0.0,0.8,Peço,Professor Luis Almeida,WRONG_ANSWER
+374:time,time,1.0,1.0,1.0,1.0,0.0,,,LOW_CONFIDENCE
+374:time_normalized,time_normalized,1.0,1.0,1.0,1.0,0.0,,,LOW_CONFIDENCE
+374:location,location,0.0,0.0,0.0,0.0,0.0,,remoto - zoom,LOW_CONFIDENCE
+374:topic,topic,0.0,0.0,0.0,0.0,0.98,processo de estagio,orientacao da dissertacao,WRONG_ANSWER
+311:participants,participants,1.0,1.0,1.0,1.0,0.8,Ana Martins,Ana Martins,EXACT_MATCH
+311:time,time,0.0,0.0,0.0,0.0,0.0,,amanha as 10h,LOW_CONFIDENCE
+311:time_normalized,time_normalized,0.0,0.0,0.0,0.0,0.0,,2026-02-15T10:00:00,LOW_CONFIDENCE
+311:location,location,0.0,0.0,0.0,0.0,0.0,,remoto - zoom,LOW_CONFIDENCE
+311:topic,topic,0.0,0.0,0.0,0.0,0.98,analise dos resultados dos estudantes,processo de estagio,WRONG_ANSWER
+288:participants,participants,0.0,0.0,0.0,0.0,0.8,Caro Professor Secretaria Academica; Joao Pereira Enviado do Outlook,Professora Ana Costa,HALLUCINATION
+288:time,time,0.0,0.0,0.0,0.0,0.9,sexta,dia 18 as 9h30,WRONG_ANSWER
+288:time_normalized,time_normalized,0.0,0.0,0.0,0.0,0.9,2026-03-13,2026-03-15T09:30:00,HALLUCINATION
+288:location,location,0.0,0.0,0.0,0.0,0.0,,remoto - zoom,LOW_CONFIDENCE
+288:topic,topic,0.0,0.3333333333333333,0.25,0.28571428571428575,0.98,pedido de equivalencias,distribuicao de servico docente,PARTIAL_MATCH
+118:participants,participants,0.0,0.0,0.0,0.0,0.0,,Mariana Lopes,LOW_CONFIDENCE
+118:time,time,1.0,1.0,1.0,1.0,0.0,,,LOW_CONFIDENCE
+118:time_normalized,time_normalized,1.0,1.0,1.0,1.0,0.0,,,LOW_CONFIDENCE
+118:location,location,1.0,1.0,1.0,1.0,0.0,,,LOW_CONFIDENCE
+118:topic,topic,1.0,1.0,1.0,1.0,0.0,,,LOW_CONFIDENCE
+178:participants,participants,0.0,0.0,0.0,0.0,0.8,Professora Ana Costa; Conseguimos,Coordenacao de Mestrado,HALLUCINATION
+178:time,time,0.0,0.0,0.0,0.0,0.9,as 17h,na proxima semana,WRONG_ANSWER
+178:time_normalized,time_normalized,0.0,0.0,0.0,0.0,0.9,2026-04-22T17:00:00,2026-02-16T00:00:00,HALLUCINATION
+178:location,location,0.0,0.0,0.0,0.0,0.0,,remoto - zoom,LOW_CONFIDENCE
+178:topic,topic,0.0,0.3333333333333333,0.3333333333333333,0.3333333333333333,0.98,preparacao da defesa,orientacao da dissertacao,PARTIAL_MATCH
+182:participants,participants,0.0,0.0,0.0,0.0,0.8,Miguel Santos,Prof. Ricardo Mendes,WRONG_ANSWER
+182:time,time,0.0,0.0,0.0,0.0,0.0,,amanha as 10h,LOW_CONFIDENCE
+182:time_normalized,time_normalized,0.0,0.0,0.0,0.0,0.0,,2026-05-03T10:00:00,LOW_CONFIDENCE
+182:location,location,0.0,0.0,0.0,0.0,0.0,,remoto - zoom,LOW_CONFIDENCE
+182:topic,topic,0.0,0.0,0.0,0.0,0.98,pedido de equivalencias,orientacao da dissertacao,WRONG_ANSWER
+192:participants,participants,0.0,0.2,0.3333333333333333,0.25,0.8000000000000002,Cara Professora; Luis Almeida; Pode,Professor Luis Almeida,HALLUCINATION
+192:time,time,1.0,1.0,1.0,1.0,0.0,,,LOW_CONFIDENCE
+192:time_normalized,time_normalized,1.0,1.0,1.0,1.0,0.0,,,LOW_CONFIDENCE
+192:location,location,0.0,0.0,0.0,0.0,0.0,,presencial - sala de reunioes do departamento,LOW_CONFIDENCE
+192:topic,topic,0.0,0.0,0.0,0.0,0.0,,analise dos resultados dos estudantes,LOW_CONFIDENCE
+389:participants,participants,0.0,0.25,0.3333333333333333,0.28571428571428575,0.8,Professora Ana Costa; Preciso,Professora Sofia Carvalho,HALLUCINATION
+389:time,time,0.0,0.5,0.3333333333333333,0.4,0.9,as 17h,sexta as 14h30,PARTIAL_MATCH
+389:time_normalized,time_normalized,0.0,0.0,0.0,0.0,0.9,2026-02-05T17:00:00,2026-04-03T14:30:00,HALLUCINATION
+389:location,location,0.0,0.0,0.0,0.0,0.0,,remoto - zoom,LOW_CONFIDENCE
+389:topic,topic,0.0,0.3333333333333333,0.3333333333333333,0.3333333333333333,0.98,submissao de artigo,pedido de equivalencias,PARTIAL_MATCH
+80:participants,participants,0.0,0.0,0.0,0.0,0.8,Nao,Professora Ana Costa,WRONG_ANSWER
+80:time,time,0.0,0.0,0.0,0.0,0.0,,amanha as 10h,LOW_CONFIDENCE
+80:time_normalized,time_normalized,0.0,0.0,0.0,0.0,0.0,,2026-02-07T10:00:00,LOW_CONFIDENCE
+80:location,location,0.0,0.3333333333333333,0.3333333333333333,0.3333333333333333,0.85,presencial - laboratorio,remoto - zoom,HALLUCINATION
+80:topic,topic,0.0,0.0,0.0,0.0,0.0,,submissao de artigo,LOW_CONFIDENCE
+376:participants,participants,0.0,0.0,0.0,0.0,0.8,Prof; Ricardo Mendes,Professora Ana Costa,HALLUCINATION
+376:time,time,0.0,0.0,0.0,0.0,0.0,,quinta as 16h,LOW_CONFIDENCE
+376:time_normalized,time_normalized,0.0,0.0,0.0,0.0,0.0,,2026-05-28T16:00:00,LOW_CONFIDENCE
+376:location,location,0.0,0.0,0.0,0.0,0.0,,remoto - zoom,LOW_CONFIDENCE
+376:topic,topic,0.0,0.0,0.0,0.0,0.98,avaliacao continua,credibilidade dos dados recolhidos,WRONG_ANSWER
+349:participants,participants,0.0,0.0,0.0,0.0,0.8,Carolina Silva,Secretaria Academica,WRONG_ANSWER
+349:time,time,0.0,0.0,0.0,0.0,0.9,manha,,TRUNCATION
+349:time_normalized,time_normalized,0.0,0.0,0.0,0.0,0.9,2026-03-31T06:00:00/2026-03-31T12:00:00,,HALLUCINATION
+349:location,location,1.0,1.0,1.0,1.0,0.0,,,LOW_CONFIDENCE
+349:topic,topic,0.0,0.0,0.0,0.0,0.98,credibilidade dos dados recolhidos,,TRUNCATION
+315:participants,participants,0.0,0.0,0.0,0.0,0.0,,Professora Sofia Carvalho,LOW_CONFIDENCE
+315:time,time,0.0,0.0,0.0,0.0,0.0,,quarta a tarde,LOW_CONFIDENCE
+315:time_normalized,time_normalized,0.0,0.0,0.0,0.0,0.0,,2026-03-04T15:00:00,LOW_CONFIDENCE
+315:location,location,0.0,0.0,0.0,0.0,0.0,,remoto - zoom,LOW_CONFIDENCE
+315:topic,topic,0.0,0.0,0.0,0.0,0.98,coordenacao da unidade curricular,submissao de artigo,WRONG_ANSWER
+363:participants,participants,0.0,0.0,0.0,0.0,0.8,Gabinete de Estagios,Miguel Santos,WRONG_ANSWER
+363:time,time,0.0,0.0,0.0,0.0,0.0,,antes do seminario,LOW_CONFIDENCE
+363:time_normalized,time_normalized,1.0,1.0,1.0,1.0,0.0,,,LOW_CONFIDENCE
+363:location,location,0.0,0.3333333333333333,0.3333333333333333,0.3333333333333333,0.85,presencial - laboratorio,remoto - zoom,HALLUCINATION
+363:topic,topic,0.0,0.0,0.0,0.0,0.9,credibilidade dos dados recolhidos,planeamento de aulas,HALLUCINATION
+3247:participants,participants,0.0,0.4,1.0,0.5714285714285715,0.8,Caro Professor; Joao Pereira Enviado,Joao Pereira,HALLUCINATION
+3247:time,time,1.0,1.0,1.0,1.0,0.0,,,LOW_CONFIDENCE
+3247:time_normalized,time_normalized,1.0,1.0,1.0,1.0,0.0,,,LOW_CONFIDENCE
+3247:location,location,0.0,0.0,0.0,0.0,0.0,,remoto - zoom,LOW_CONFIDENCE
+3247:topic,topic,1.0,1.0,1.0,1.0,0.98,submissao de artigo,submissao de artigo,EXACT_MATCH
+287:participants,participants,0.0,0.0,0.0,0.0,0.8,Exmo./a Senhor,Secretaria Academica,WRONG_ANSWER
+287:time,time,0.0,0.0,0.0,0.0,0.0,,dia 22 as 17h,LOW_CONFIDENCE
+287:time_normalized,time_normalized,0.0,0.0,0.0,0.0,0.0,,2026-02-05T17:00:00,LOW_CONFIDENCE
+287:location,location,0.0,0.0,0.0,0.0,0.0,,remoto - zoom,LOW_CONFIDENCE
+287:topic,topic,0.0,0.3333333333333333,0.3333333333333333,0.3333333333333333,0.98,relatorio de progresso,submissao de artigo,PARTIAL_MATCH
+95:participants,participants,0.0,0.3333333333333333,0.6666666666666666,0.4444444444444444,0.8000000000000002,Cara Professora; Professor Luis Almeida; Tudo,Professor Luis Almeida,HALLUCINATION
+95:time,time,0.0,0.0,0.0,0.0,0.0,,dia 22 as 17h,LOW_CONFIDENCE
+95:time_normalized,time_normalized,0.0,0.0,0.0,0.0,0.0,,2026-03-26T17:00:00,LOW_CONFIDENCE
+95:location,location,0.0,0.0,0.0,0.0,0.0,,remoto - zoom,LOW_CONFIDENCE
+95:topic,topic,0.0,0.3333333333333333,0.3333333333333333,0.3333333333333333,0.98,submissao de artigo,calendario de avaliacoes,PARTIAL_MATCH
+281:participants,participants,0.0,0.0,0.0,0.0,0.8,Prof; Ricardo Mendes,Professora Ana Costa,HALLUCINATION
+281:time,time,0.0,0.0,0.0,0.0,0.0,,sexta as 14h30,LOW_CONFIDENCE
+281:time_normalized,time_normalized,0.0,0.0,0.0,0.0,0.0,,2026-03-27T14:30:00,LOW_CONFIDENCE
+281:location,location,0.0,0.0,0.0,0.0,0.0,,remoto - zoom,LOW_CONFIDENCE
+281:topic,topic,0.0,0.0,0.0,0.0,0.0,,calendario de avaliacoes,LOW_CONFIDENCE
+214:participants,participants,0.0,0.0,0.0,0.0,0.0,,Professora Ana Costa,LOW_CONFIDENCE
+214:time,time,0.0,0.0,0.0,0.0,0.9,quinta; as 16h,,HALLUCINATION
+214:time_normalized,time_normalized,0.0,0.0,0.0,0.0,0.9,2026-06-04,,HALLUCINATION
+214:location,location,1.0,1.0,1.0,1.0,0.0,,,LOW_CONFIDENCE
+214:topic,topic,0.0,0.0,0.0,0.0,0.9,processo de estagio,,HALLUCINATION
+9:participants,participants,0.0,0.3333333333333333,0.3333333333333333,0.3333333333333333,0.8,Professora Ana Costa,Professora Sofia Carvalho,PARTIAL_MATCH
+9:time,time,1.0,1.0,1.0,1.0,0.0,,,LOW_CONFIDENCE
+9:time_normalized,time_normalized,1.0,1.0,1.0,1.0,0.0,,,LOW_CONFIDENCE
+9:location,location,0.0,0.0,0.0,0.0,0.0,,remoto - google meet,LOW_CONFIDENCE
+9:topic,topic,0.0,0.0,0.0,0.0,0.9,analise dos resultados dos estudantes,revisao bibliografica,HALLUCINATION
+129:participants,participants,0.0,0.5,0.6666666666666666,0.5714285714285715,0.8,Professora Ana Costa; Conseguimos,Professora Ana Costa,HALLUCINATION
+129:time,time,0.0,0.0,0.0,0.0,0.9,as 10h,,TRUNCATION
+129:time_normalized,time_normalized,0.0,0.0,0.0,0.0,0.9,2026-02-12T10:00:00,,HALLUCINATION
+129:location,location,1.0,1.0,1.0,1.0,0.0,,,LOW_CONFIDENCE
+129:topic,topic,0.0,0.0,0.0,0.0,0.98,revisao do plano de trabalhos,,TRUNCATION
+346:participants,participants,0.0,0.0,0.0,0.0,0.0,,Professor Luis Almeida,LOW_CONFIDENCE
+346:time,time,0.0,0.0,0.0,0.0,0.9,esta semana,durante a manha,WRONG_ANSWER
+346:time_normalized,time_normalized,0.0,0.0,0.0,0.0,0.9,2026-04-27T00:00:00/2026-05-03T23:59:59,2026-03-29T09:00:00,HALLUCINATION
+346:location,location,0.0,0.0,0.0,0.0,0.0,,remoto - zoom,LOW_CONFIDENCE
+346:topic,topic,0.0,0.0,0.0,0.0,0.0,,analise dos resultados dos estudantes,LOW_CONFIDENCE
+37:participants,participants,0.0,0.0,0.0,0.0,0.8,Peço,Prof. Ricardo Mendes,WRONG_ANSWER
+37:time,time,0.0,0.0,0.0,0.0,0.0,,sexta as 14h30,LOW_CONFIDENCE
+37:time_normalized,time_normalized,0.0,0.0,0.0,0.0,0.0,,2026-05-29T14:30:00,LOW_CONFIDENCE
+37:location,location,0.0,0.0,0.0,0.0,0.0,,remoto - zoom,LOW_CONFIDENCE
+37:topic,topic,0.0,0.0,0.0,0.0,0.98,avaliacao continua,relatorio de progresso,WRONG_ANSWER
+98:participants,participants,0.0,0.0,0.0,0.0,0.8,Proponho,Ana Martins,WRONG_ANSWER
+98:time,time,0.0,0.0,0.0,0.0,0.9,as 11h,,TRUNCATION
+98:time_normalized,time_normalized,0.0,0.0,0.0,0.0,0.9,2026-05-20T11:00:00,,HALLUCINATION
+98:location,location,0.0,0.0,0.0,0.0,0.0,,remoto - zoom,LOW_CONFIDENCE
+98:topic,topic,0.0,0.0,0.0,0.0,0.98,proposta de projeto,coordenacao da unidade curricular,WRONG_ANSWER
+327:participants,participants,0.0,0.0,0.0,0.0,0.8000000000000002,Prof; Ricardo Mendes; Conseguimos,Conselho Pedagogico,HALLUCINATION
+327:time,time,0.0,0.0,0.0,0.0,0.9,as 15h,depois de almoco,WRONG_ANSWER
+327:time_normalized,time_normalized,0.0,0.0,0.0,0.0,0.9,2026-05-24T15:00:00,2026-05-08T13:15:00,HALLUCINATION
+327:location,location,0.0,0.0,0.0,0.0,0.0,,presencial - gabinete da direcao,LOW_CONFIDENCE
+327:topic,topic,0.0,0.0,0.0,0.0,0.98,planeamento de aulas,acompanhamento pedagogico,WRONG_ANSWER
+292:participants,participants,0.0,0.0,0.0,0.0,0.8,Caro Professor; Fica,Conselho Pedagogico,HALLUCINATION
+292:time,time,1.0,1.0,1.0,1.0,0.0,,,LOW_CONFIDENCE
+292:time_normalized,time_normalized,1.0,1.0,1.0,1.0,0.0,,,LOW_CONFIDENCE
+292:location,location,0.0,0.0,0.0,0.0,0.0,,presencial - gabinete 3.12,LOW_CONFIDENCE
+292:topic,topic,0.0,0.25,0.3333333333333333,0.28571428571428575,0.9,distribuicao de servico docente,pedido de equivalencias,HALLUCINATION
+60:participants,participants,0.0,0.0,0.0,0.0,0.0,,Diretor do Curso,LOW_CONFIDENCE
+60:time,time,1.0,1.0,1.0,1.0,0.0,,,LOW_CONFIDENCE
+60:time_normalized,time_normalized,1.0,1.0,1.0,1.0,0.0,,,LOW_CONFIDENCE
+60:location,location,0.0,0.0,0.0,0.0,0.0,,presencial - sala de reunioes do departamento,LOW_CONFIDENCE
+60:topic,topic,0.0,0.0,0.0,0.0,0.98,credibilidade dos dados recolhidos,planeamento de aulas,WRONG_ANSWER
+269:participants,participants,0.0,0.0,0.0,0.0,0.0,,Secretaria Academica,LOW_CONFIDENCE
+269:time,time,0.0,0.0,0.0,0.0,0.9,esta semana,amanha as 10h,WRONG_ANSWER
+269:time_normalized,time_normalized,0.0,0.0,0.0,0.0,0.9,2026-03-30T00:00:00/2026-04-05T23:59:59,2026-04-10T10:00:00,HALLUCINATION
+269:location,location,0.0,0.0,0.0,0.0,0.0,,remoto - zoom,LOW_CONFIDENCE
+269:topic,topic,0.0,0.0,0.0,0.0,0.0,,orientacao da dissertacao,LOW_CONFIDENCE
+206:participants,participants,0.0,0.0,0.0,0.0,0.0,,Professora Ana Costa,LOW_CONFIDENCE
+206:time,time,0.0,0.3333333333333333,0.3333333333333333,0.3333333333333333,0.9,quinta; as 16h,sexta as 14h30,HALLUCINATION
+206:time_normalized,time_normalized,0.0,0.0,0.0,0.0,0.9,2026-05-14,2026-04-10T14:30:00,HALLUCINATION
+206:location,location,0.0,0.0,0.0,0.0,0.0,,presencial - laboratorio de informatica,LOW_CONFIDENCE
+206:topic,topic,0.0,0.3333333333333333,0.3333333333333333,0.3333333333333333,0.98,submissao de artigo,calendario de avaliacoes,PARTIAL_MATCH
+195:participants,participants,0.0,0.0,0.0,0.0,0.0,,Carolina Silva,LOW_CONFIDENCE
+195:time,time,0.0,0.0,0.0,0.0,0.9,as 17h,,TRUNCATION
+195:time_normalized,time_normalized,0.0,0.0,0.0,0.0,0.9,2026-04-05T17:00:00,,HALLUCINATION
+195:location,location,1.0,1.0,1.0,1.0,0.0,,,LOW_CONFIDENCE
+195:topic,topic,1.0,1.0,1.0,1.0,0.0,,,LOW_CONFIDENCE
+141:participants,participants,0.0,0.0,0.0,0.0,0.8,Secretaria Academica; Tudo,Diretor do Curso,HALLUCINATION
+141:time,time,0.0,0.0,0.0,0.0,0.9,quarta,,TRUNCATION
+141:time_normalized,time_normalized,0.0,0.0,0.0,0.0,0.9,2026-05-20,,HALLUCINATION
+141:location,location,1.0,1.0,1.0,1.0,0.0,,,LOW_CONFIDENCE
+141:topic,topic,0.0,0.0,0.0,0.0,0.98,acompanhamento pedagogico,,TRUNCATION
+92:participants,participants,0.0,0.0,0.0,0.0,0.8,Zoom,Professora Ana Costa,WRONG_ANSWER
+92:time,time,0.0,0.0,0.0,0.0,0.9,as 17h,,TRUNCATION
+92:time_normalized,time_normalized,0.0,0.0,0.0,0.0,0.9,2026-03-14T17:00:00,,HALLUCINATION
+92:location,location,1.0,1.0,1.0,1.0,0.0,,,LOW_CONFIDENCE
+92:topic,topic,0.0,0.0,0.0,0.0,0.98,horarios do semestre,,TRUNCATION
+90:participants,participants,0.0,0.0,0.0,0.0,0.8,Professora Ana Costa,Prof. Ricardo Mendes,WRONG_ANSWER
+90:time,time,0.0,0.0,0.0,0.0,0.9,as 10h,na proxima semana,WRONG_ANSWER
+90:time_normalized,time_normalized,0.0,0.0,0.0,0.0,0.9,2026-03-24T10:00:00,2026-02-23T00:00:00,HALLUCINATION
+90:location,location,0.0,0.0,0.0,0.0,0.0,,remoto - zoom,LOW_CONFIDENCE
+90:topic,topic,0.0,0.3333333333333333,0.3333333333333333,0.3333333333333333,0.98,pedido de equivalencias,submissao de artigo,PARTIAL_MATCH
+162:participants,participants,0.0,0.2,0.3333333333333333,0.25,0.8,Exmo./a Senhor; Professora Sofia Carvalho,Professora Ana Costa,HALLUCINATION
+162:time,time,0.0,0.0,0.0,0.0,0.0,,durante a manha,LOW_CONFIDENCE
+162:time_normalized,time_normalized,0.0,0.0,0.0,0.0,0.0,,2026-05-12T09:00:00,LOW_CONFIDENCE
+162:location,location,0.0,0.0,0.0,0.0,0.0,,remoto - zoom,LOW_CONFIDENCE
+162:topic,topic,0.0,0.3333333333333333,0.25,0.28571428571428575,0.98,relatorio de progresso,distribuicao de servico docente,PARTIAL_MATCH
+262:participants,participants,0.0,0.3333333333333333,0.3333333333333333,0.3333333333333333,0.8,Ricardo Mendes; Tudo,Prof. Ricardo Mendes,HALLUCINATION
+262:time,time,0.0,0.0,0.0,0.0,0.9,as 17h,,TRUNCATION
+262:time_normalized,time_normalized,0.0,0.0,0.0,0.0,0.9,2026-04-17T17:00:00,,HALLUCINATION
+262:location,location,0.0,0.0,0.0,0.0,0.0,,presencial - secretaria,LOW_CONFIDENCE
+262:topic,topic,0.0,0.0,0.0,0.0,0.98,distribuicao de servico docente,horarios do semestre,WRONG_ANSWER
+356:participants,participants,0.0,0.0,0.0,0.0,0.0,,Rita Fernandes,LOW_CONFIDENCE
+356:time,time,0.0,0.0,0.0,0.0,0.0,,segunda de manha,LOW_CONFIDENCE
+356:time_normalized,time_normalized,0.0,0.0,0.0,0.0,0.0,,2026-05-25T09:00:00,LOW_CONFIDENCE
+356:location,location,0.0,0.0,0.0,0.0,0.0,,presencial - sala de reunioes do departamento,LOW_CONFIDENCE
+356:topic,topic,0.0,0.0,0.0,0.0,0.9,submissao de artigo,preparacao da apresentacao,HALLUCINATION
+305:participants,participants,0.0,0.0,0.0,0.0,0.0,,Prof. Ricardo Mendes,LOW_CONFIDENCE
+305:time,time,1.0,1.0,1.0,1.0,0.0,,,LOW_CONFIDENCE
+305:time_normalized,time_normalized,1.0,1.0,1.0,1.0,0.0,,,LOW_CONFIDENCE
+305:location,location,0.0,0.0,0.0,0.0,0.0,,remoto - google meet,LOW_CONFIDENCE
+305:topic,topic,0.0,0.0,0.0,0.0,0.98,pedido de equivalencias,analise dos resultados dos estudantes,WRONG_ANSWER
+38:participants,participants,0.0,0.0,0.0,0.0,0.8,Caro Professor Secretaria Academica; Pode,Ana Martins,HALLUCINATION
+38:time,time,0.0,0.0,0.0,0.0,0.0,,durante a manha,LOW_CONFIDENCE
+38:time_normalized,time_normalized,0.0,0.0,0.0,0.0,0.0,,2026-04-02T09:00:00,LOW_CONFIDENCE
+38:location,location,0.0,0.0,0.0,0.0,0.0,,remoto - zoom,LOW_CONFIDENCE
+38:topic,topic,0.0,0.0,0.0,0.0,0.0,,proposta de projeto,LOW_CONFIDENCE
+152:participants,participants,0.0,0.0,0.0,0.0,0.0,,Professora Ana Costa,LOW_CONFIDENCE
+152:time,time,0.0,0.0,0.0,0.0,0.9,segunda; manha,,HALLUCINATION
+152:time_normalized,time_normalized,0.0,0.0,0.0,0.0,0.9,2026-04-27,,HALLUCINATION
+152:location,location,0.0,0.0,0.0,0.0,0.0,,remoto - zoom,LOW_CONFIDENCE
+152:topic,topic,0.0,0.0,0.0,0.0,0.98,calendario de avaliacoes,orientacao da dissertacao,WRONG_ANSWER
 286:participants,participants,0.0,0.0,0.0,0.0,0.0,,Conselho Pedagogico,LOW_CONFIDENCE
 286:time,time,1.0,1.0,1.0,1.0,0.0,,,LOW_CONFIDENCE
 286:time_normalized,time_normalized,1.0,1.0,1.0,1.0,0.0,,,LOW_CONFIDENCE
 286:location,location,0.0,0.0,0.0,0.0,0.0,,remoto - zoom,LOW_CONFIDENCE
-286:topic,topic,0.0,0.0,0.0,0.0,0.8733333333333334,reuniao; bom dia; confirmo; remoto; a minha presenca,relatorio de progresso,HALLUCINATION
-8:participants,participants,0.0,0.4,0.6666666666666666,0.5,0.8000000000000002,Professora Sofia Carvalho; Agradeco; Irei,Professora Sofia Carvalho,HALLUCINATION
-8:time,time,1.0,1.0,1.0,1.0,0.0,,,LOW_CONFIDENCE
-8:time_normalized,time_normalized,1.0,1.0,1.0,1.0,0.0,,,LOW_CONFIDENCE
-8:location,location,1.0,1.0,1.0,1.0,0.0,,,LOW_CONFIDENCE
-8:topic,topic,0.0,0.0,0.0,0.0,0.9,estudantes; bom dia; professora sofia carvalho; agradeco; relatorio,,HALLUCINATION
-280:participants,participants,0.0,0.0,0.0,0.0,0.7,Relembro; amanha s,Diretor do Curso,HALLUCINATION
-280:time,time,1.0,1.0,1.0,1.0,0.0,,,LOW_CONFIDENCE
-280:time_normalized,time_normalized,1.0,1.0,1.0,1.0,0.0,,,LOW_CONFIDENCE
-280:location,location,1.0,1.0,1.0,1.0,0.0,,,LOW_CONFIDENCE
-280:topic,topic,0.0,0.0,0.0,0.0,0.8384615384615385,"informacao; cara professora, relembro que a aula de amanha sera dedicada a exercicios praticos.",,HALLUCINATION
-201:participants,participants,0.0,0.0,0.0,0.0,0.8,Exmo./a Senhor,Conselho Pedagogico,WRONG_ANSWER
-201:time,time,1.0,1.0,1.0,1.0,0.0,,,LOW_CONFIDENCE
-201:time_normalized,time_normalized,1.0,1.0,1.0,1.0,0.0,,,LOW_CONFIDENCE
-201:location,location,0.0,0.0,0.0,0.0,0.0,,remoto - google meet,LOW_CONFIDENCE
-201:topic,topic,0.0,0.0,0.0,0.0,0.8818181818181818,"reuniao; horario; departamento; exmo./a senhor/a, confirmo a minha presenca na reuniao em google meet.",processo de estagio,HALLUCINATION
-354:participants,participants,0.0,0.0,0.0,0.0,0.0,,Secretaria Academica,LOW_CONFIDENCE
-354:time,time,0.0,0.0,0.0,0.0,0.0,,ao final do dia,LOW_CONFIDENCE
-354:time_normalized,time_normalized,1.0,1.0,1.0,1.0,0.0,,,LOW_CONFIDENCE
-354:location,location,0.0,0.0,0.0,0.0,0.0,,remoto - zoom,LOW_CONFIDENCE
-354:topic,topic,0.0,0.0,0.0,0.0,0.9,disponibilidade; reuniao; caro; /a docente; final,orientacao da dissertacao,HALLUCINATION
-214:participants,participants,0.0,0.5,0.6666666666666666,0.5714285714285715,0.6666666666666666,Gabinete de Estagios; Estagios; pr,Gabinete de Estagios,HALLUCINATION
-214:time,time,1.0,1.0,1.0,1.0,0.0,,,LOW_CONFIDENCE
-214:time_normalized,time_normalized,1.0,1.0,1.0,1.0,0.0,,,LOW_CONFIDENCE
-214:location,location,1.0,1.0,1.0,1.0,0.0,,,LOW_CONFIDENCE
-214:topic,topic,0.0,0.0,0.0,0.0,0.9,documentacao; falta; cara; gabinete; estagios,,HALLUCINATION
-138:participants,participants,0.0,0.0,0.0,0.0,0.6,Mestra; indicacao; avaliaco,Professor Luis Almeida,HALLUCINATION
-138:time,time,1.0,1.0,1.0,1.0,0.0,,,LOW_CONFIDENCE
-138:time_normalized,time_normalized,1.0,1.0,1.0,1.0,0.0,,,LOW_CONFIDENCE
-138:location,location,0.0,0.0,0.0,0.0,0.0,,remoto - zoom,LOW_CONFIDENCE
-138:topic,topic,0.0,0.0,0.0,0.0,0.9,reuniao; efeito; caro; coordenacao; mestrado,calendario de avaliacoes,HALLUCINATION
-258:participants,participants,0.0,0.4,0.6666666666666666,0.5,0.65,Gabinete de Estagios; Gabin; Estagios; canc,Gabinete de Estagios,HALLUCINATION
-258:time,time,1.0,1.0,1.0,1.0,0.0,,,LOW_CONFIDENCE
-258:time_normalized,time_normalized,1.0,1.0,1.0,1.0,0.0,,,LOW_CONFIDENCE
-258:location,location,0.0,0.0,0.0,0.0,0.0,,remoto - zoom,LOW_CONFIDENCE
-258:topic,topic,0.0,0.0,0.0,0.0,0.9,reuniao; efeito; gabinete; estagios; nao,pedido de equivalencias,HALLUCINATION
-111:participants,participants,0.0,0.3333333333333333,0.5,0.4,0.8,Mariana Lopes; Envio,Mariana Lopes,HALLUCINATION
-111:time,time,1.0,1.0,1.0,1.0,0.0,,,LOW_CONFIDENCE
-111:time_normalized,time_normalized,1.0,1.0,1.0,1.0,0.0,,,LOW_CONFIDENCE
-111:location,location,1.0,1.0,1.0,1.0,0.0,,,LOW_CONFIDENCE
-111:topic,topic,0.0,0.0,0.0,0.0,0.9,"atualizacao; processo; bom dia; mariana lopes; , envio",,HALLUCINATION
-198:participants,participants,0.0,0.16666666666666666,0.3333333333333333,0.2222222222222222,0.7,Prof; Ricardo Mendes; sab; para r,Prof. Ricardo Mendes,HALLUCINATION
-198:time,time,0.0,0.0,0.0,0.0,0.0,,dia 18 as 9h30,LOW_CONFIDENCE
-198:time_normalized,time_normalized,0.0,0.0,0.0,0.0,0.0,,2026-05-15T09:30:00,LOW_CONFIDENCE
-198:location,location,0.0,0.0,0.0,0.0,0.0,,remoto - zoom,LOW_CONFIDENCE
-198:topic,topic,0.0,0.0,0.0,0.0,0.9,remarcacao; reuniao; boa tarde prof; horario; departamento,orientacao da dissertacao,HALLUCINATION
-105:participants,participants,0.0,0.0,0.0,0.0,0.6,canc,Professora Sofia Carvalho,WRONG_ANSWER
-105:time,time,1.0,1.0,1.0,1.0,0.0,,,LOW_CONFIDENCE
-105:time_normalized,time_normalized,1.0,1.0,1.0,1.0,0.0,,,LOW_CONFIDENCE
-105:location,location,0.0,0.0,0.0,0.0,0.0,,presencial - gabinete da direcao,LOW_CONFIDENCE
-105:topic,topic,0.0,0.0,0.0,0.0,0.9,: imprevisto; cara; conselho pedagogico; nao; reuniao,avaliacao continua,HALLUCINATION
-197:participants,participants,0.0,0.0,0.0,0.0,0.6666666666666666,Proponho; almoco; situacao,Professora Sofia Carvalho,HALLUCINATION
-197:time,time,0.0,0.0,0.0,0.0,0.0,,depois de almoco,LOW_CONFIDENCE
-197:time_normalized,time_normalized,0.0,0.0,0.0,0.0,0.0,,2026-05-25T13:15:00,LOW_CONFIDENCE
-197:location,location,0.0,0.0,0.0,0.0,0.0,,remoto - zoom,LOW_CONFIDENCE
-197:topic,topic,0.0,0.0,0.0,0.0,0.9,necessidade; proponho; almoco; remoto; situacao,orientacao da dissertacao,HALLUCINATION
-348:participants,participants,0.0,0.0,0.0,0.0,0.6,favor confirm,Secretaria Academica,WRONG_ANSWER
-348:time,time,1.0,1.0,1.0,1.0,0.0,,,LOW_CONFIDENCE
-348:time_normalized,time_normalized,1.0,1.0,1.0,1.0,0.0,,,LOW_CONFIDENCE
-348:location,location,1.0,1.0,1.0,1.0,0.0,,,LOW_CONFIDENCE
-348:topic,topic,0.0,0.0,0.0,0.0,0.85,informacao; bom dia; sistema academico; a pauta,,HALLUCINATION
-376:participants,participants,0.0,0.0,0.0,0.0,0.6,combinar uma r; dos,Professora Ana Costa,HALLUCINATION
-376:time,time,0.0,0.6666666666666666,0.6666666666666666,0.6666666666666666,0.9,quinta; as 16h,quinta as 16h,HALLUCINATION
-376:time_normalized,time_normalized,0.0,0.0,0.0,0.0,0.9,2026-05-28T00:00:00,2026-05-28T16:00:00,HALLUCINATION
-376:location,location,0.0,0.0,0.0,0.0,0.0,,remoto - zoom,LOW_CONFIDENCE
-376:topic,topic,0.0,0.0,0.0,0.0,0.9,remarcacao; reuniao; caro; conselho pedagogico; disponibilidade,credibilidade dos dados recolhidos,HALLUCINATION
-384:participants,participants,0.0,0.0,0.0,0.0,0.7,Exmo./a Senhor; motivo impr,Gabinete de Estagios,HALLUCINATION
-384:time,time,0.0,1.0,0.3333333333333333,0.5,0.9,sexta,sexta as 14h30,TRUNCATION
-384:time_normalized,time_normalized,0.0,0.0,0.0,0.0,0.9,2026-03-27T00:00:00,2026-03-27T14:30:00,HALLUCINATION
-384:location,location,0.0,0.0,0.0,0.0,0.0,,remoto - zoom,LOW_CONFIDENCE
-384:topic,topic,0.0,0.0,0.0,0.0,0.9,cancelamento; reuniao; exmo./a senhor/a; sexta; efeito,proposta de projeto,HALLUCINATION
-367:participants,participants,0.0,0.3333333333333333,0.6666666666666666,0.4444444444444444,0.7,Coordenacao de Mestrado; Mestra; Tudo; equival,Coordenacao de Mestrado,HALLUCINATION
-367:time,time,0.0,1.0,0.3333333333333333,0.5,0.9,sexta,sexta as 14h30,TRUNCATION
-367:time_normalized,time_normalized,0.0,0.0,0.0,0.0,0.9,2026-05-01T00:00:00,2026-05-01T14:30:00,HALLUCINATION
-367:location,location,0.0,0.0,0.0,0.0,0.0,,remoto - zoom,LOW_CONFIDENCE
-367:topic,topic,0.0,0.0,0.0,0.0,0.9,reuniao; cara; coordenacao; mestrado; sexta,pedido de equivalencias,HALLUCINATION
-210:participants,participants,0.0,0.5,0.6666666666666666,0.5714285714285715,0.8,Professor Luis Almeida; Segue,Professor Luis Almeida,HALLUCINATION
-210:time,time,1.0,1.0,1.0,1.0,0.0,,,LOW_CONFIDENCE
-210:time_normalized,time_normalized,1.0,1.0,1.0,1.0,0.0,,,LOW_CONFIDENCE
-210:location,location,1.0,1.0,1.0,1.0,0.0,,,LOW_CONFIDENCE
-210:topic,topic,0.0,0.0,0.0,0.0,0.9,pedido; esclarecimento; caro; /a docente; professor luis almeida,,HALLUCINATION
-39:participants,participants,0.0,0.16666666666666666,0.5,0.25,0.7,Secretaria Academica; Conseguimos; curricular para; almoco,Secretaria Academica,HALLUCINATION
-39:time,time,0.0,0.0,0.0,0.0,0.0,,depois de almoco,LOW_CONFIDENCE
-39:time_normalized,time_normalized,0.0,0.0,0.0,0.0,0.0,,2026-03-27T13:15:00,LOW_CONFIDENCE
-39:location,location,0.0,0.75,0.75,0.75,0.85,presencial - gabinete 3,presencial - gabinete 3.12,HALLUCINATION
-39:topic,topic,0.0,0.16666666666666666,0.25,0.2,0.9,remarcacao; reuniao; caro; secretaria academica; coordenacao,coordenacao da unidade curricular,HALLUCINATION
-125:participants,participants,1.0,1.0,1.0,1.0,0.8,Professora Sofia Carvalho,Professora Sofia Carvalho,EXACT_MATCH
-125:time,time,1.0,1.0,1.0,1.0,0.0,,,LOW_CONFIDENCE
-125:time_normalized,time_normalized,1.0,1.0,1.0,1.0,0.0,,,LOW_CONFIDENCE
-125:location,location,0.0,0.0,0.0,0.0,0.0,,remoto - zoom,LOW_CONFIDENCE
-125:topic,topic,0.0,0.0,0.0,0.0,0.8800000000000001,"bom dia; professora sofia carvalho; esta confirmado; remoto; , da minha parte",submissao de artigo,HALLUCINATION
-385:participants,participants,0.0,0.0,0.0,0.0,0.8,Caro Professor,Rita Fernandes,WRONG_ANSWER
-385:time,time,1.0,1.0,1.0,1.0,0.0,,,LOW_CONFIDENCE
-385:time_normalized,time_normalized,1.0,1.0,1.0,1.0,0.0,,,LOW_CONFIDENCE
-385:location,location,1.0,1.0,1.0,1.0,0.0,,,LOW_CONFIDENCE
-385:topic,topic,0.0,0.0,0.0,0.0,0.86,"aviso; estudantes; caro professor, partilho a versao revista da ata para validacao.",,HALLUCINATION
-159:participants,participants,0.0,0.0,0.0,0.0,0.6,indicacao,Professora Ana Costa,WRONG_ANSWER
-159:time,time,1.0,1.0,1.0,1.0,0.0,,,LOW_CONFIDENCE
-159:time_normalized,time_normalized,1.0,1.0,1.0,1.0,0.0,,,LOW_CONFIDENCE
-159:location,location,0.0,0.0,0.0,0.0,0.0,,remoto - zoom,LOW_CONFIDENCE
-159:topic,topic,0.0,0.0,0.0,0.0,0.9,reuniao; efeito; bom dia; conselho pedagogico; direcao,preparacao da defesa,HALLUCINATION
-23:participants,participants,1.0,1.0,1.0,1.0,0.8,Carolina Silva,Carolina Silva,EXACT_MATCH
-23:time,time,0.0,0.0,0.0,0.0,0.0,,antes do seminario,LOW_CONFIDENCE
-23:time_normalized,time_normalized,1.0,1.0,1.0,1.0,0.0,,,LOW_CONFIDENCE
-23:location,location,0.0,0.0,0.0,0.0,0.0,,remoto - zoom,LOW_CONFIDENCE
-23:topic,topic,0.0,0.14285714285714285,0.2,0.16666666666666666,0.9,"carolina silva, confirmo; seminario; revisao; plano; trabalhos",revisao do plano de trabalhos,HALLUCINATION
-362:participants,participants,0.0,0.0,0.0,0.0,0.7333333333333334,Cara Professora; Preciso; esclar,Ana Martins,HALLUCINATION
-362:time,time,1.0,1.0,1.0,1.0,0.0,,,LOW_CONFIDENCE
-362:time_normalized,time_normalized,1.0,1.0,1.0,1.0,0.0,,,LOW_CONFIDENCE
-362:location,location,0.0,0.0,0.0,0.0,0.0,,remoto - zoom,LOW_CONFIDENCE
-362:topic,topic,0.0,0.14285714285714285,0.6666666666666666,0.23529411764705882,0.8727272727272728,"pedido; reuniao; cara professora; secretaria academica, preciso de esclarecer alguns pontos sobre validacao de atas.",validacao de atas,HALLUCINATION
-344:participants,participants,0.0,0.6666666666666666,1.0,0.8,0.8,Viva Mariana Lopes,Mariana Lopes,TRUNCATION
-344:time,time,0.0,0.0,0.0,0.0,0.0,,depois da aula,LOW_CONFIDENCE
-344:time_normalized,time_normalized,1.0,1.0,1.0,1.0,0.0,,,LOW_CONFIDENCE
-344:location,location,0.0,0.0,0.0,0.0,0.0,,remoto - zoom,LOW_CONFIDENCE
-344:topic,topic,0.0,0.14285714285714285,0.3333333333333333,0.2,0.9,"marcacao; reuniao; viva mariana lopes,; aula; processo",processo de estagio,HALLUCINATION
-341:participants,participants,0.0,0.16666666666666666,0.5,0.25,0.65,Secretaria Academica; Secr; sab; para r,Secretaria Academica,HALLUCINATION
-341:time,time,0.0,1.0,0.3333333333333333,0.5,0.9,sexta,sexta as 14h30,TRUNCATION
-341:time_normalized,time_normalized,0.0,0.0,0.0,0.0,0.9,2026-05-29T00:00:00,2026-05-29T14:30:00,HALLUCINATION
-341:location,location,0.0,0.0,0.0,0.0,0.0,,presencial - secretaria,LOW_CONFIDENCE
-341:topic,topic,0.0,0.17391304347826086,0.8,0.2857142857142857,0.763768115942029,"ponto de situacao.; secretaria academica, gostaria de saber se tem disponibilidade para reunirmos sexta as 14h30, em secretaria, para falarmos sobre revisao do plano de trabalhos.",revisao do plano de trabalhos,HALLUCINATION
-391:participants,participants,0.0,0.5,0.6666666666666666,0.5714285714285715,0.8,Professora Ana Costa; Surgiu,Professora Ana Costa,HALLUCINATION
-391:time,time,0.0,0.0,0.0,0.0,0.0,,depois da aula,LOW_CONFIDENCE
-391:time_normalized,time_normalized,1.0,1.0,1.0,1.0,0.0,,,LOW_CONFIDENCE
-391:location,location,0.0,0.0,0.0,0.0,0.0,,remoto - zoom,LOW_CONFIDENCE
-391:topic,topic,0.0,0.1111111111111111,0.25,0.15384615384615383,0.9,"imprevisto; unidade curricular; bom dia; professora ana costa,; horario",coordenacao da unidade curricular,HALLUCINATION
-213:participants,participants,0.0,0.2857142857142857,0.6666666666666666,0.4,0.7,Caro Professor Professora Ana Costa; ficar marca,Professora Ana Costa,HALLUCINATION
-213:time,time,1.0,1.0,1.0,1.0,0.0,,,LOW_CONFIDENCE
-213:time_normalized,time_normalized,1.0,1.0,1.0,1.0,0.0,,,LOW_CONFIDENCE
-213:location,location,0.0,0.0,0.0,0.0,0.0,,remoto - zoom,LOW_CONFIDENCE
-213:topic,topic,0.0,0.0,0.0,0.0,0.9,"reuniao; caro; professor; professora ana costa,",distribuicao de servico docente,HALLUCINATION
-61:participants,participants,0.0,0.1111111111111111,0.5,0.1818181818181818,0.7,Mariana Lopes; manha para alinharmos os proximos passos r,Mariana Lopes,HALLUCINATION
-61:time,time,0.0,0.5,0.3333333333333333,0.4,0.9,segunda; manha,segunda de manha,HALLUCINATION
-61:time_normalized,time_normalized,0.0,0.0,0.0,0.0,0.9,2026-03-23T00:00:00,2026-03-23T09:00:00,HALLUCINATION
-61:location,location,0.0,0.0,0.0,0.0,0.0,,remoto - zoom,LOW_CONFIDENCE
-61:topic,topic,0.0,0.14285714285714285,0.3333333333333333,0.2,0.9,: pedido; reuniao; mariana lopes; manha; submissao,submissao de artigo,HALLUCINATION
-137:participants,participants,0.0,0.0,0.0,0.0,0.0,,Conselho Pedagogico,LOW_CONFIDENCE
-137:time,time,0.0,1.0,0.6666666666666666,0.8,0.9,as 11h,terca as 11h,TRUNCATION
-137:time_normalized,time_normalized,0.0,0.0,0.0,0.0,0.9,2026-05-23T11:00:00,2026-05-26T11:00:00,HALLUCINATION
-137:location,location,0.0,0.0,0.0,0.0,0.0,,remoto - zoom,LOW_CONFIDENCE
-137:topic,topic,0.0,0.16666666666666666,0.3333333333333333,0.2222222222222222,0.9,reuniao; caro; /a colega; terca; processo,processo de estagio,HALLUCINATION
-221:participants,participants,0.0,0.2857142857142857,0.6666666666666666,0.4,0.64,Coordenacao de Mestrado; Coor; Mestra; reunio; servico,Coordenacao de Mestrado,HALLUCINATION
-221:time,time,0.0,1.0,0.3333333333333333,0.5,0.9,quarta,quarta a tarde,TRUNCATION
-221:time_normalized,time_normalized,0.0,0.0,0.0,0.0,0.9,2026-06-03T00:00:00,2026-06-03T15:00:00,HALLUCINATION
-221:location,location,0.0,0.0,0.0,0.0,0.0,,presencial - sala de reunioes do departamento,LOW_CONFIDENCE
-221:topic,topic,0.0,0.0,0.0,0.0,0.9,coordenacao; mestrado; confirmo; sala; reunioes,distribuicao de servico docente,HALLUCINATION
-259:participants,participants,0.0,0.5,1.0,0.6666666666666666,0.7,favor confirm; Miguel Santos,Miguel Santos,HALLUCINATION
-259:time,time,1.0,1.0,1.0,1.0,0.0,,,LOW_CONFIDENCE
-259:time_normalized,time_normalized,1.0,1.0,1.0,1.0,0.0,,,LOW_CONFIDENCE
-259:location,location,1.0,1.0,1.0,1.0,0.0,,,LOW_CONFIDENCE
-259:topic,topic,0.0,0.0,0.0,0.0,0.9,"envio; documentos; cara professora,; sistema academico; obrigada",,HALLUCINATION
-300:participants,participants,0.0,0.0,0.0,0.0,0.6,ser adia,Secretaria Academica,WRONG_ANSWER
-300:time,time,1.0,1.0,1.0,1.0,0.0,,,LOW_CONFIDENCE
-300:time_normalized,time_normalized,1.0,1.0,1.0,1.0,0.0,,,LOW_CONFIDENCE
-300:location,location,0.0,0.0,0.0,0.0,0.0,,remoto - zoom,LOW_CONFIDENCE
-300:topic,topic,0.0,0.1111111111111111,0.5,0.1818181818181818,0.8166666666666667,"imprevisto; - acompanhamento pedagogico; , em remoto; a reuniao",acompanhamento pedagogico,HALLUCINATION
-240:participants,participants,0.0,0.4,0.6666666666666666,0.5,0.8,Professor Professora Ana Costa; Confirmo,Professora Ana Costa,HALLUCINATION
-240:time,time,0.0,1.0,0.3333333333333333,0.5,0.9,sexta,sexta as 14h30,TRUNCATION
-240:time_normalized,time_normalized,0.0,0.0,0.0,0.0,0.9,2026-02-20T00:00:00,2026-02-20T14:30:00,HALLUCINATION
-240:location,location,0.0,0.0,0.0,0.0,0.0,,remoto - teams,LOW_CONFIDENCE
-240:topic,topic,0.0,0.0,0.0,0.0,0.9,": re; marcacao; reuniao; exmo; professor professora ana costa, confirmo",analise dos resultados dos estudantes,HALLUCINATION
-131:participants,participants,0.0,0.0,0.0,0.0,0.0,,Professora Sofia Carvalho,LOW_CONFIDENCE
-131:time,time,0.0,0.0,0.0,0.0,0.9,esta semana,,TRUNCATION
-131:time_normalized,time_normalized,0.0,0.0,0.0,0.0,0.9,2026-05-04T00:00:00,,HALLUCINATION
-131:location,location,1.0,1.0,1.0,1.0,0.0,,,LOW_CONFIDENCE
-131:topic,topic,0.0,0.0,0.0,0.0,0.9,: entrega; relatorio; viva; esta semana; moodle,,HALLUCINATION
-45:participants,participants,0.0,0.0,0.0,0.0,0.0,,Secretaria Academica,LOW_CONFIDENCE
-45:time,time,0.0,1.0,0.3333333333333333,0.5,0.9,manha,durante a manha,TRUNCATION
-45:time_normalized,time_normalized,1.0,1.0,1.0,1.0,0.9,2026-04-24T09:00:00,2026-04-24T09:00:00,EXACT_MATCH
-45:location,location,0.0,0.0,0.0,0.0,0.0,,remoto - zoom,LOW_CONFIDENCE
-45:topic,topic,0.0,0.0,0.0,0.0,0.8066666666666666,bom dia; apresentacao; durante a manha; os documentos relativos; a reuniao,preparacao da apresentacao,HALLUCINATION
-317:participants,participants,0.0,0.16666666666666666,0.5,0.25,0.65,Secretaria Academica; Secr; sab; para r,Secretaria Academica,HALLUCINATION
-317:time,time,1.0,1.0,1.0,1.0,0.0,,,LOW_CONFIDENCE
-317:time_normalized,time_normalized,1.0,1.0,1.0,1.0,0.0,,,LOW_CONFIDENCE
-317:location,location,0.0,0.0,0.0,0.0,0.0,,remoto - google meet,LOW_CONFIDENCE
-317:topic,topic,0.0,0.09090909090909091,0.6666666666666666,0.16,0.8636363636363636,"disponibilidade; reuniao; secretaria academica, gostaria de saber se tem disponibilidade para reunirmos quando for conveniente, em google meet, para falarmos sobre processo de estagio.",processo de estagio,HALLUCINATION
-349:participants,participants,0.0,0.25,0.5,0.3333333333333333,0.7333333333333334,Miguel Santos; Migu; Envio,Miguel Santos,HALLUCINATION
-349:time,time,1.0,1.0,1.0,1.0,0.0,,,LOW_CONFIDENCE
-349:time_normalized,time_normalized,1.0,1.0,1.0,1.0,0.0,,,LOW_CONFIDENCE
-349:location,location,1.0,1.0,1.0,1.0,0.0,,,LOW_CONFIDENCE
-349:topic,topic,0.0,0.0,0.0,0.0,0.9,"entrega; relatorio; miguel santos, envio; anexo; atas",,HALLUCINATION
-340:participants,participants,0.0,0.0,0.0,0.0,0.0,,Ana Martins,LOW_CONFIDENCE
-340:time,time,1.0,1.0,1.0,1.0,0.0,,,LOW_CONFIDENCE
-340:time_normalized,time_normalized,1.0,1.0,1.0,1.0,0.0,,,LOW_CONFIDENCE
-340:location,location,0.0,0.0,0.0,0.0,0.0,,remoto - teams,LOW_CONFIDENCE
-340:topic,topic,0.0,0.0,0.0,0.0,0.9,reuniao; bom dia; confirmo; teams; horario,relatorio de progresso,HALLUCINATION
-76:participants,participants,0.0,0.0,0.0,0.0,0.6,favor confirm,Professora Ana Costa,WRONG_ANSWER
-76:time,time,1.0,1.0,1.0,1.0,0.0,,,LOW_CONFIDENCE
-76:time_normalized,time_normalized,1.0,1.0,1.0,1.0,0.0,,,LOW_CONFIDENCE
-76:location,location,1.0,1.0,1.0,1.0,0.0,,,LOW_CONFIDENCE
-76:topic,topic,0.0,0.0,0.0,0.0,0.86,atualizacao; processo; caro; sistema academico; a pauta,,HALLUCINATION
-148:participants,participants,0.0,0.0,0.0,0.0,0.0,,Coordenacao de Mestrado,LOW_CONFIDENCE
-148:time,time,1.0,1.0,1.0,1.0,0.0,,,LOW_CONFIDENCE
-148:time_normalized,time_normalized,1.0,1.0,1.0,1.0,0.0,,,LOW_CONFIDENCE
-148:location,location,1.0,1.0,1.0,1.0,0.0,,,LOW_CONFIDENCE
-148:topic,topic,0.0,0.0,0.0,0.0,0.9,aviso; estudantes; bom dia; partilho; ata,,HALLUCINATION
-128:participants,participants,0.0,0.25,0.5,0.3333333333333333,0.7333333333333334,Secretaria Academica; Zoom; avaliaco,Secretaria Academica,HALLUCINATION
-128:time,time,0.0,1.0,0.5,0.6666666666666666,0.9,as 17h,dia 22 as 17h,TRUNCATION
-128:time_normalized,time_normalized,1.0,1.0,1.0,1.0,0.9,2026-03-18T17:00:00,2026-03-18T17:00:00,EXACT_MATCH
-128:location,location,0.0,0.0,0.0,0.0,0.0,,remoto - zoom,LOW_CONFIDENCE
-128:topic,topic,0.0,0.0,0.0,0.0,0.9,"reuniao; cara; secretaria academica, confirmo; dia; zoom",calendario de avaliacoes,HALLUCINATION
-4:participants,participants,0.0,0.0,0.0,0.0,0.7,Informamos; avaliacao t,Miguel Santos,HALLUCINATION
-4:time,time,0.0,0.0,0.0,0.0,0.9,esta sexta,,TRUNCATION
-4:time_normalized,time_normalized,0.0,0.0,0.0,0.0,0.9,2026-02-27T00:00:00,,HALLUCINATION
-4:location,location,1.0,1.0,1.0,1.0,0.0,,,LOW_CONFIDENCE
-4:topic,topic,0.0,0.0,0.0,0.0,0.86,estudantes; elementos; avaliacao; esta sexta-feira; o prazo,,HALLUCINATION
-209:participants,participants,0.0,0.0,0.0,0.0,0.6666666666666666,Professor; motivo impr; quan,Coordenacao de Mestrado,HALLUCINATION
-209:time,time,1.0,1.0,1.0,1.0,0.0,,,LOW_CONFIDENCE
-209:time_normalized,time_normalized,1.0,1.0,1.0,1.0,0.0,,,LOW_CONFIDENCE
+286:topic,topic,1.0,1.0,1.0,1.0,0.9,relatorio de progresso,relatorio de progresso,EXACT_MATCH
+34:participants,participants,0.0,0.0,0.0,0.0,0.8,Joao Pereira; Preciso,Secretaria Academica,HALLUCINATION
+34:time,time,0.0,0.0,0.0,0.0,0.0,,segunda de manha,LOW_CONFIDENCE
+34:time_normalized,time_normalized,0.0,0.0,0.0,0.0,0.0,,2026-05-25T09:00:00,LOW_CONFIDENCE
+34:location,location,0.0,0.0,0.0,0.0,0.0,,remoto - zoom,LOW_CONFIDENCE
+34:topic,topic,0.0,0.0,0.0,0.0,0.98,preparacao da defesa,validacao de atas,WRONG_ANSWER
+93:participants,participants,0.0,0.0,0.0,0.0,0.0,,Mariana Lopes,LOW_CONFIDENCE
+93:time,time,0.0,0.0,0.0,0.0,0.9,as 10h,,TRUNCATION
+93:time_normalized,time_normalized,0.0,0.0,0.0,0.0,0.9,2026-02-11T10:00:00,,HALLUCINATION
+93:location,location,0.0,0.0,0.0,0.0,0.0,,remoto - zoom,LOW_CONFIDENCE
+93:topic,topic,0.0,0.0,0.0,0.0,0.0,,avaliacao continua,LOW_CONFIDENCE
+50:participants,participants,0.0,0.5,0.6666666666666666,0.5714285714285715,0.8,Professor Prof; Ricardo Mendes,Prof. Ricardo Mendes,HALLUCINATION
+50:time,time,1.0,1.0,1.0,1.0,0.0,,,LOW_CONFIDENCE
+50:time_normalized,time_normalized,1.0,1.0,1.0,1.0,0.0,,,LOW_CONFIDENCE
+50:location,location,1.0,1.0,1.0,1.0,0.0,,,LOW_CONFIDENCE
+50:topic,topic,1.0,1.0,1.0,1.0,0.0,,,LOW_CONFIDENCE
+209:participants,participants,0.0,0.0,0.0,0.0,0.0,,Coordenacao de Mestrado,LOW_CONFIDENCE
+209:time,time,0.0,0.0,0.0,0.0,0.9,quinta; as 16h,,HALLUCINATION
+209:time_normalized,time_normalized,0.0,0.0,0.0,0.0,0.9,2026-04-23,,HALLUCINATION
 209:location,location,0.0,0.0,0.0,0.0,0.0,,remoto - zoom,LOW_CONFIDENCE
-209:topic,topic,0.0,0.0,0.0,0.0,0.9,reuniao; efeito; exmo; professor; motivo imprevisto,planeamento de aulas,HALLUCINATION
-32:participants,participants,0.0,0.4,0.6666666666666666,0.5,0.6666666666666666,Coordenacao de Mestrado; Mestra; indicacao,Coordenacao de Mestrado,HALLUCINATION
-32:time,time,1.0,1.0,1.0,1.0,0.0,,,LOW_CONFIDENCE
-32:time_normalized,time_normalized,1.0,1.0,1.0,1.0,0.0,,,LOW_CONFIDENCE
-32:location,location,0.0,0.0,0.0,0.0,0.0,,remoto - zoom,LOW_CONFIDENCE
-32:topic,topic,0.0,0.0,0.0,0.0,0.9,indisponibilidade; cara; coordenacao; mestrado; direcao,horarios do semestre,HALLUCINATION
-3:participants,participants,0.0,0.2857142857142857,0.6666666666666666,0.4,0.6666666666666666,Professor Professora Ana Costa; sab; para r,Professora Ana Costa,HALLUCINATION
-3:time,time,0.0,1.0,0.6666666666666666,0.8,0.9,proxima semana,na proxima semana,TRUNCATION
-3:time_normalized,time_normalized,1.0,1.0,1.0,1.0,0.9,2026-02-23T00:00:00,2026-02-23T00:00:00,EXACT_MATCH
-3:location,location,0.0,0.0,0.0,0.0,0.0,,presencial - secretaria,LOW_CONFIDENCE
-3:topic,topic,0.0,0.0,0.0,0.0,0.9,reuniao; validacao; atas; exmo; horario,validacao de atas,HALLUCINATION
-301:participants,participants,0.0,0.5,0.6666666666666666,0.5714285714285715,0.8,Professora Sofia Carvalho; Surgiu,Professora Sofia Carvalho,HALLUCINATION
-301:time,time,0.0,0.6666666666666666,0.6666666666666666,0.6666666666666666,0.9,quinta; as 16h,quinta as 16h,HALLUCINATION
-301:time_normalized,time_normalized,0.0,0.0,0.0,0.0,0.9,2026-05-28T00:00:00,2026-05-21T16:00:00,HALLUCINATION
-301:location,location,0.0,0.0,0.0,0.0,0.0,,remoto - zoom,LOW_CONFIDENCE
-301:topic,topic,0.0,0.0,0.0,0.0,0.9,"indisponibilidade; cara; professora sofia carvalho,; horario; nao",proposta de projeto,HALLUCINATION
-158:participants,participants,0.0,0.3333333333333333,0.5,0.4,0.7,Carolina Silva; indicacao,Carolina Silva,HALLUCINATION
-158:time,time,1.0,1.0,1.0,1.0,0.0,,,LOW_CONFIDENCE
-158:time_normalized,time_normalized,1.0,1.0,1.0,1.0,0.0,,,LOW_CONFIDENCE
-158:location,location,0.0,0.0,0.0,0.0,0.0,,remoto - zoom,LOW_CONFIDENCE
-158:topic,topic,0.0,0.0,0.0,0.0,0.9,imprevisto; analise; resultados; estudantes; carolina silva,analise dos resultados dos estudantes,HALLUCINATION
-181:participants,participants,0.0,0.75,1.0,0.8571428571428571,0.7,Gabinete de Estagios; Estagios,Gabinete de Estagios,HALLUCINATION
-181:time,time,0.0,1.0,0.6666666666666666,0.8,0.9,as 10h,amanha as 10h,TRUNCATION
-181:time_normalized,time_normalized,0.0,0.0,0.0,0.0,0.9,2026-05-28T10:00:00,2026-05-29T10:00:00,HALLUCINATION
-181:location,location,0.0,0.0,0.0,0.0,0.0,,remoto - zoom,LOW_CONFIDENCE
-181:topic,topic,0.0,0.0,0.0,0.0,0.9,: imprevisto; caro; gabinete; estagios; horario,avaliacao continua,HALLUCINATION
-24:participants,participants,0.0,0.4,0.6666666666666666,0.5,0.8,Professor Professora Ana Costa; Surgiu,Professora Ana Costa,HALLUCINATION
-24:time,time,0.0,1.0,0.6666666666666666,0.8,0.9,as 15h,amanha as 15h,TRUNCATION
-24:time_normalized,time_normalized,0.0,0.0,0.0,0.0,0.9,2026-03-16T15:00:00,2026-03-17T15:00:00,HALLUCINATION
-24:location,location,0.0,0.0,0.0,0.0,0.0,,remoto - zoom,LOW_CONFIDENCE
-24:topic,topic,0.0,0.0,0.0,0.0,0.9,"indisponibilidade; exmo; professor professora ana costa,; horario; nao",credibilidade dos dados recolhidos,HALLUCINATION
-266:participants,participants,0.0,0.5,0.6666666666666666,0.5714285714285715,0.8,Professora Sofia Carvalho; Tudo,Professora Sofia Carvalho,HALLUCINATION
-266:time,time,0.0,0.0,0.0,0.0,0.0,,ao final do dia,LOW_CONFIDENCE
-266:time_normalized,time_normalized,1.0,1.0,1.0,1.0,0.0,,,LOW_CONFIDENCE
-266:location,location,0.0,0.0,0.0,0.0,0.0,,remoto - zoom,LOW_CONFIDENCE
-266:topic,topic,0.0,0.0,0.0,0.0,0.9,marcacao; reuniao; caro; professora sofia carvalho; dia,revisao do plano de trabalhos,HALLUCINATION
-94:participants,participants,1.0,1.0,1.0,1.0,0.8,Mariana Lopes,Mariana Lopes,EXACT_MATCH
-94:time,time,0.0,0.0,0.0,0.0,0.0,,ao final do dia,LOW_CONFIDENCE
-94:time_normalized,time_normalized,1.0,1.0,1.0,1.0,0.0,,,LOW_CONFIDENCE
-94:location,location,0.0,0.0,0.0,0.0,0.0,,presencial - sala B104,LOW_CONFIDENCE
-94:topic,topic,0.0,0.0,0.0,0.0,0.9,"marcacao; reuniao; cara; mariana lopes; , confirmo",planeamento de aulas,HALLUCINATION
-96:participants,participants,0.0,0.0,0.0,0.0,0.0,,Professor Luis Almeida,LOW_CONFIDENCE
-96:time,time,0.0,0.0,0.0,0.0,0.0,,depois da aula,LOW_CONFIDENCE
-96:time_normalized,time_normalized,1.0,1.0,1.0,1.0,0.0,,,LOW_CONFIDENCE
-96:location,location,0.0,0.0,0.0,0.0,0.0,,remoto - zoom,LOW_CONFIDENCE
-96:topic,topic,0.0,0.0,0.0,0.0,0.86,reuniao; horarios; semestre; aula; o objetivo,horarios do semestre,HALLUCINATION
-67:participants,participants,0.0,0.0,0.0,0.0,0.8,Partilho,Joao Pereira,WRONG_ANSWER
-67:time,time,1.0,1.0,1.0,1.0,0.0,,,LOW_CONFIDENCE
-67:time_normalized,time_normalized,1.0,1.0,1.0,1.0,0.0,,,LOW_CONFIDENCE
-67:location,location,1.0,1.0,1.0,1.0,0.0,,,LOW_CONFIDENCE
-67:topic,topic,0.0,0.0,0.0,0.0,0.8733333333333334,"informacao; boa tarde, partilho; ata; validacao; a versao revista",,HALLUCINATION
-264:participants,participants,0.0,0.0,0.0,0.0,0.0,,Prof. Ricardo Mendes,LOW_CONFIDENCE
-264:time,time,0.0,0.0,0.0,0.0,0.9,esta semana,,TRUNCATION
-264:time_normalized,time_normalized,0.0,0.0,0.0,0.0,0.9,2026-03-23T00:00:00,,HALLUCINATION
-264:location,location,1.0,1.0,1.0,1.0,0.0,,,LOW_CONFIDENCE
-264:topic,topic,0.0,0.0,0.0,0.0,0.9,atualizacao; processo; viva; esta semana; moodle,,HALLUCINATION
-250:participants,participants,0.0,0.2,0.5,0.28571428571428575,0.7,Rita Fernandes; Preciso; esclar; progr,Rita Fernandes,HALLUCINATION
-250:time,time,1.0,1.0,1.0,1.0,0.0,,,LOW_CONFIDENCE
-250:time_normalized,time_normalized,1.0,1.0,1.0,1.0,0.0,,,LOW_CONFIDENCE
-250:location,location,0.0,0.0,0.0,0.0,0.0,,remoto - zoom,LOW_CONFIDENCE
-250:topic,topic,0.0,0.0,0.0,0.0,0.9,"pedido; reuniao; bom dia; rita fernandes; , preciso",relatorio de progresso,HALLUCINATION
-310:participants,participants,0.0,0.3333333333333333,0.6666666666666666,0.4444444444444444,0.6666666666666666,Diretor do Curso; sab; para r,Diretor do Curso,HALLUCINATION
-310:time,time,0.0,1.0,0.5,0.6666666666666666,0.9,as 17h,dia 22 as 17h,TRUNCATION
-310:time_normalized,time_normalized,1.0,1.0,1.0,1.0,0.9,2026-03-21T17:00:00,2026-03-21T17:00:00,EXACT_MATCH
-310:location,location,0.0,0.0,0.0,0.0,0.0,,remoto - zoom,LOW_CONFIDENCE
-310:topic,topic,0.0,0.0,0.0,0.0,0.9,agendamento; semestre; bom dia; diretor; curso,horarios do semestre,HALLUCINATION
-396:participants,participants,0.0,0.0,0.0,0.0,0.6,motivo impr; depois,Ana Martins,HALLUCINATION
-396:time,time,0.0,0.0,0.0,0.0,0.0,,depois de almoco,LOW_CONFIDENCE
-396:time_normalized,time_normalized,0.0,0.0,0.0,0.0,0.0,,2026-02-24T13:15:00,LOW_CONFIDENCE
-396:location,location,0.0,0.0,0.0,0.0,0.0,,remoto - zoom,LOW_CONFIDENCE
-396:topic,topic,0.0,0.0,0.0,0.0,0.9,cancelamento; reuniao; bom dia; motivo imprevisto; almoco,calendario de avaliacoes,HALLUCINATION
-112:participants,participants,1.0,1.0,1.0,1.0,0.8,Miguel Santos,Miguel Santos,EXACT_MATCH
-112:time,time,0.0,1.0,0.3333333333333333,0.5,0.9,sexta,sexta as 14h30,TRUNCATION
-112:time_normalized,time_normalized,0.0,0.0,0.0,0.0,0.9,2026-04-10T00:00:00,2026-04-10T14:30:00,HALLUCINATION
-112:location,location,0.0,0.0,0.0,0.0,0.0,,remoto - zoom,LOW_CONFIDENCE
-112:topic,topic,0.0,0.0,0.0,0.0,0.9,"confirmacao; apresentacao; bom dia; miguel santos; , confirmo",preparacao da apresentacao,HALLUCINATION
-163:participants,participants,0.0,0.4,0.6666666666666666,0.5,0.7333333333333334,Professora Ana Costa; Nao; canc,Professora Ana Costa,HALLUCINATION
-163:time,time,1.0,1.0,1.0,1.0,0.0,,,LOW_CONFIDENCE
-163:time_normalized,time_normalized,1.0,1.0,1.0,1.0,0.0,,,LOW_CONFIDENCE
-163:location,location,0.0,0.0,0.0,0.0,0.0,,remoto - zoom,LOW_CONFIDENCE
-163:topic,topic,0.0,0.047619047619047616,0.3333333333333333,0.08333333333333333,0.8764705882352941,"cancelamento; reuniao; bom dia; professora ana costa, nao vou conseguir estar presente na reuniao em remoto, pelo que terei de cancelar.",validacao de atas,HALLUCINATION
-347:participants,participants,0.0,0.0,0.0,0.0,0.7,Informamos; avaliacao t,Secretaria Academica,HALLUCINATION
-347:time,time,0.0,0.0,0.0,0.0,0.9,esta sexta,,TRUNCATION
-347:time_normalized,time_normalized,0.0,0.0,0.0,0.0,0.9,2026-03-06T00:00:00,,HALLUCINATION
-347:location,location,1.0,1.0,1.0,1.0,0.0,,,LOW_CONFIDENCE
-347:topic,topic,0.0,0.0,0.0,0.0,0.9,envio; documentos; bom dia; elementos; avaliacao,,HALLUCINATION
-123:participants,participants,0.0,0.0,0.0,0.0,0.6,sab; para r; servico,Professor Luis Almeida,HALLUCINATION
-123:time,time,0.0,1.0,0.3333333333333333,0.5,0.9,manha,durante a manha,TRUNCATION
-123:time_normalized,time_normalized,1.0,1.0,1.0,1.0,0.9,2026-04-16T09:00:00,2026-04-16T09:00:00,EXACT_MATCH
-123:location,location,0.0,0.0,0.0,0.0,0.0,,remoto - teams,LOW_CONFIDENCE
-123:topic,topic,0.0,0.05555555555555555,0.25,0.0909090909090909,0.8666666666666667,"reuniao; distribuicao; viva conselho pedagogico, gostaria de saber se tem disponibilidade para reunirmos durante a manha, em teams,",distribuicao de servico docente,HALLUCINATION
-2:participants,participants,0.0,0.0,0.0,0.0,0.6666666666666666,sab; para r; Zoom,Professor Luis Almeida,HALLUCINATION
-2:time,time,0.0,1.0,0.6666666666666666,0.8,0.9,as 10h,amanha as 10h,TRUNCATION
-2:time_normalized,time_normalized,0.0,0.0,0.0,0.0,0.9,2026-05-26T10:00:00,2026-05-27T10:00:00,HALLUCINATION
-2:location,location,0.0,0.0,0.0,0.0,0.0,,remoto - zoom,LOW_CONFIDENCE
-2:topic,topic,0.0,0.0,0.0,0.0,0.9,"viva; diretor; curso; , gostaria; disponibilidade",revisao do plano de trabalhos,HALLUCINATION
-107:participants,participants,0.0,0.0,0.0,0.0,0.8,Professor,Coordenacao de Mestrado,WRONG_ANSWER
-107:time,time,0.0,1.0,0.3333333333333333,0.5,0.9,sexta,sexta as 14h30,TRUNCATION
-107:time_normalized,time_normalized,0.0,0.0,0.0,0.0,0.9,2026-03-20T00:00:00,2026-03-20T14:30:00,HALLUCINATION
-107:location,location,0.0,0.0,0.0,0.0,0.0,,remoto - zoom,LOW_CONFIDENCE
-107:topic,topic,0.0,0.0,0.0,0.0,0.9,confirmacao; - planeamento; aulas; exmo; professor,planeamento de aulas,HALLUCINATION
+209:topic,topic,0.0,0.0,0.0,0.0,0.98,credibilidade dos dados recolhidos,planeamento de aulas,WRONG_ANSWER
+177:participants,participants,0.0,0.0,0.0,0.0,0.0,,Prof. Ricardo Mendes,LOW_CONFIDENCE
+177:time,time,0.0,0.0,0.0,0.0,0.0,,segunda de manha,LOW_CONFIDENCE
+177:time_normalized,time_normalized,0.0,0.0,0.0,0.0,0.0,,2026-05-18T09:00:00,LOW_CONFIDENCE
+177:location,location,0.0,0.0,0.0,0.0,0.0,,presencial - auditorio principal,LOW_CONFIDENCE
+177:topic,topic,0.0,0.0,0.0,0.0,0.0,,revisao do plano de trabalhos,LOW_CONFIDENCE
+268:participants,participants,0.0,0.0,0.0,0.0,0.8,Cara; Rita Fernandes,Professor Luis Almeida,HALLUCINATION
+268:time,time,1.0,1.0,1.0,1.0,0.0,,,LOW_CONFIDENCE
+268:time_normalized,time_normalized,1.0,1.0,1.0,1.0,0.0,,,LOW_CONFIDENCE
+268:location,location,0.0,0.0,0.0,0.0,0.85,presencial - gabinete 3,,HALLUCINATION
+268:topic,topic,1.0,1.0,1.0,1.0,0.0,,,LOW_CONFIDENCE
+47:participants,participants,0.0,0.0,0.0,0.0,0.8,Proponho; Zoom,Conselho Pedagogico,HALLUCINATION
+47:time,time,0.0,0.0,0.0,0.0,0.9,proxima semana,dia 22 as 17h,WRONG_ANSWER
+47:time_normalized,time_normalized,0.0,0.0,0.0,0.0,0.9,2026-04-06T00:00:00/2026-04-12T23:59:59,2026-04-25T17:00:00,HALLUCINATION
+47:location,location,0.0,0.0,0.0,0.0,0.0,,remoto - zoom,LOW_CONFIDENCE
+47:topic,topic,0.0,0.0,0.0,0.0,0.98,revisao bibliografica,validacao de atas,WRONG_ANSWER
+366:participants,participants,0.0,0.0,0.0,0.0,0.8,Secretaria Academica,Gabinete de Estagios,WRONG_ANSWER
+366:time,time,1.0,1.0,1.0,1.0,0.0,,,LOW_CONFIDENCE
+366:time_normalized,time_normalized,1.0,1.0,1.0,1.0,0.0,,,LOW_CONFIDENCE
+366:location,location,0.0,0.0,0.0,0.0,0.0,,remoto - zoom,LOW_CONFIDENCE
+366:topic,topic,0.0,0.0,0.0,0.0,0.98,horarios do semestre,proposta de projeto,WRONG_ANSWER
+372:participants,participants,0.0,0.0,0.0,0.0,0.8,Professor Luis Almeida,Prof. Ricardo Mendes,WRONG_ANSWER
+372:time,time,1.0,1.0,1.0,1.0,0.0,,,LOW_CONFIDENCE
+372:time_normalized,time_normalized,1.0,1.0,1.0,1.0,0.0,,,LOW_CONFIDENCE
+372:location,location,0.0,0.3333333333333333,0.3333333333333333,0.3333333333333333,0.85,presencial - auditorio,remoto - zoom,HALLUCINATION
+372:topic,topic,0.0,0.3333333333333333,0.25,0.28571428571428575,0.98,processo de estagio,distribuicao de servico docente,PARTIAL_MATCH
+91:participants,participants,0.0,0.0,0.0,0.0,0.0,,Conselho Pedagogico,LOW_CONFIDENCE
+91:time,time,1.0,1.0,1.0,1.0,0.0,,,LOW_CONFIDENCE
+91:time_normalized,time_normalized,1.0,1.0,1.0,1.0,0.0,,,LOW_CONFIDENCE
+91:location,location,1.0,1.0,1.0,1.0,0.0,,,LOW_CONFIDENCE
+91:topic,topic,1.0,1.0,1.0,1.0,0.0,,,LOW_CONFIDENCE
+142:participants,participants,0.0,0.0,0.0,0.0,0.0,,Joao Pereira,LOW_CONFIDENCE
+142:time,time,0.0,0.0,0.0,0.0,0.9,manha,,TRUNCATION
+142:time_normalized,time_normalized,0.0,0.0,0.0,0.0,0.9,2026-02-06T06:00:00/2026-02-06T12:00:00,,HALLUCINATION
+142:location,location,1.0,1.0,1.0,1.0,0.0,,,LOW_CONFIDENCE
+142:topic,topic,0.0,0.0,0.0,0.0,0.98,orientacao da dissertacao,,TRUNCATION
+5:participants,participants,0.0,0.0,0.0,0.0,0.0,,Professor Luis Almeida,LOW_CONFIDENCE
+5:time,time,0.0,0.0,0.0,0.0,0.9,sexta,,TRUNCATION
+5:time_normalized,time_normalized,0.0,0.0,0.0,0.0,0.9,2026-04-24,,HALLUCINATION
+5:location,location,0.0,0.0,0.0,0.0,0.0,,remoto - zoom,LOW_CONFIDENCE
+5:topic,topic,0.0,0.0,0.0,0.0,0.98,distribuicao de servico docente,analise dos resultados dos estudantes,WRONG_ANSWER
+203:participants,participants,0.0,0.0,0.0,0.0,0.0,,Professora Sofia Carvalho,LOW_CONFIDENCE
+203:time,time,1.0,1.0,1.0,1.0,0.0,,,LOW_CONFIDENCE
+203:time_normalized,time_normalized,1.0,1.0,1.0,1.0,0.0,,,LOW_CONFIDENCE
+203:location,location,1.0,1.0,1.0,1.0,0.0,,,LOW_CONFIDENCE
+203:topic,topic,0.0,0.0,0.0,0.0,0.9,validacao de atas,,HALLUCINATION
+242:participants,participants,0.0,0.0,0.0,0.0,0.8,Exmo./a Senhor; Ricardo Mendes,Professora Ana Costa,HALLUCINATION
+242:time,time,0.0,0.0,0.0,0.0,0.0,,dia 18 as 9h30,LOW_CONFIDENCE
+242:time_normalized,time_normalized,0.0,0.0,0.0,0.0,0.0,,2026-04-18T09:30:00,LOW_CONFIDENCE
+242:location,location,0.0,0.0,0.0,0.0,0.0,,remoto - teams,LOW_CONFIDENCE
+242:topic,topic,0.0,0.0,0.0,0.0,0.0,,avaliacao continua,LOW_CONFIDENCE
+371:participants,participants,0.0,0.0,0.0,0.0,0.8,Caro Professor Secretaria Academica,Gabinete de Estagios,WRONG_ANSWER
+371:time,time,1.0,1.0,1.0,1.0,0.0,,,LOW_CONFIDENCE
+371:time_normalized,time_normalized,1.0,1.0,1.0,1.0,0.0,,,LOW_CONFIDENCE
+371:location,location,0.0,0.0,0.0,0.0,0.0,,presencial - secretaria,LOW_CONFIDENCE
+371:topic,topic,0.0,0.0,0.0,0.0,0.0,,revisao do plano de trabalhos,LOW_CONFIDENCE
+100:participants,participants,0.0,0.0,0.0,0.0,0.0,,Professora Ana Costa,LOW_CONFIDENCE
+100:time,time,0.0,0.0,0.0,0.0,0.0,,depois de almoco,LOW_CONFIDENCE
+100:time_normalized,time_normalized,0.0,0.0,0.0,0.0,0.0,,2026-04-24T13:15:00,LOW_CONFIDENCE
+100:location,location,0.0,0.25,0.3333333333333333,0.28571428571428575,0.85,presencial - sala 2,remoto - zoom,HALLUCINATION
+100:topic,topic,0.0,0.0,0.0,0.0,0.0,,distribuicao de servico docente,LOW_CONFIDENCE
+337:participants,participants,0.0,0.0,0.0,0.0,0.0,,Diretor do Curso,LOW_CONFIDENCE
+337:time,time,0.0,0.0,0.0,0.0,0.0,,quinta as 16h,LOW_CONFIDENCE
+337:time_normalized,time_normalized,0.0,0.0,0.0,0.0,0.0,,2026-03-19T16:00:00,LOW_CONFIDENCE
+337:location,location,0.0,0.0,0.0,0.0,0.0,,presencial - gabinete de orientacao,LOW_CONFIDENCE
+337:topic,topic,0.0,0.0,0.0,0.0,0.0,,relatorio de progresso,LOW_CONFIDENCE
+253:participants,participants,0.0,0.3333333333333333,0.6666666666666666,0.4444444444444444,0.8,Caro Professor Professora Sofia Carvalho; Tudo,Professora Sofia Carvalho,HALLUCINATION
+253:time,time,0.0,1.0,0.6666666666666666,0.8,0.9,as 15h,amanha as 15h,TRUNCATION
+253:time_normalized,time_normalized,0.0,0.0,0.0,0.0,0.9,2026-03-16T15:00:00,2026-04-16T15:00:00,HALLUCINATION
+253:location,location,0.0,0.0,0.0,0.0,0.0,,remoto - zoom,LOW_CONFIDENCE
+253:topic,topic,0.0,0.0,0.0,0.0,0.98,avaliacao continua,preparacao da defesa,WRONG_ANSWER
+86:participants,participants,0.0,0.0,0.0,0.0,0.0,,Prof. Ricardo Mendes,LOW_CONFIDENCE
+86:time,time,0.0,0.0,0.0,0.0,0.9,segunda; manha,quinta as 16h,HALLUCINATION
+86:time_normalized,time_normalized,0.0,0.0,0.0,0.0,0.9,2026-04-20,2026-04-16T16:00:00,HALLUCINATION
+86:location,location,0.0,0.0,0.0,0.0,0.0,,remoto - zoom,LOW_CONFIDENCE
+86:topic,topic,0.0,0.0,0.0,0.0,0.0,,coordenacao da unidade curricular,LOW_CONFIDENCE
+215:participants,participants,0.0,0.6666666666666666,1.0,0.8,0.8,Ola Secretaria Academica,Secretaria Academica,TRUNCATION
+215:time,time,0.0,0.0,0.0,0.0,0.0,,antes do seminario,LOW_CONFIDENCE
+215:time_normalized,time_normalized,1.0,1.0,1.0,1.0,0.0,,,LOW_CONFIDENCE
+215:location,location,0.0,0.0,0.0,0.0,0.0,,remoto - zoom,LOW_CONFIDENCE
+215:topic,topic,0.0,0.0,0.0,0.0,0.0,,credibilidade dos dados recolhidos,LOW_CONFIDENCE
+12:participants,participants,0.0,0.0,0.0,0.0,0.8,Ola Secretaria Academica,Professora Ana Costa,WRONG_ANSWER
+12:time,time,1.0,1.0,1.0,1.0,0.0,,,LOW_CONFIDENCE
+12:time_normalized,time_normalized,1.0,1.0,1.0,1.0,0.0,,,LOW_CONFIDENCE
+12:location,location,0.0,0.0,0.0,0.0,0.0,,remoto - zoom,LOW_CONFIDENCE
+12:topic,topic,0.0,0.0,0.0,0.0,0.98,acompanhamento pedagogico,credibilidade dos dados recolhidos,WRONG_ANSWER
+238:participants,participants,0.0,0.0,0.0,0.0,0.8,Carolina Silva,Professora Sofia Carvalho,WRONG_ANSWER
+238:time,time,0.0,0.0,0.0,0.0,0.9,as 11h,,TRUNCATION
+238:time_normalized,time_normalized,0.0,0.0,0.0,0.0,0.9,2026-03-25T11:00:00,,HALLUCINATION
+238:location,location,0.0,0.0,0.0,0.0,0.0,,remoto - zoom,LOW_CONFIDENCE
+238:topic,topic,0.0,0.0,0.0,0.0,0.98,relatorio de progresso,preparacao da apresentacao,WRONG_ANSWER

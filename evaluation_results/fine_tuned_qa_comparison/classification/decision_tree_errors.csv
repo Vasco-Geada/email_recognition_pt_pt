@@ -1,1 +1,4 @@
 email_index,subject,true_label,predicted_label,confidence,text
+4594,Fw: Pedido de esclarecimento,nao_reuniao,agendamento_reuniao,1.0,"fw: pedido de esclarecimento caro colega gabinete de estagios, envio em anexo o documento atualizado relativo a revisao do plano de trabalhos."
+5996,RE: Entrega de relatorio,nao_reuniao,agendamento_reuniao,1.0,"re: entrega de relatorio boa tarde gabinete de estagios, envio em anexo o documento atualizado relativo a pedido de equivalencias."
+7349,RE: Entrega de relatorio,nao_reuniao,agendamento_reuniao,1.0,"re: entrega de relatorio boa tarde gabinete de estagios, envio em anexo o documento atualizado relativo a calendario de avaliacoes."

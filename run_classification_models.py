@@ -3,9 +3,7 @@
 
 Examples:
     python run_classification_models.py train \
-        --dataset dataset/train.json \
-        --model-dir trained_models/email_intent \
-        --skip-anonymization
+        --dataset dataset/train.json
 
     python run_classification_models.py evaluate \
         --dataset dataset/test.json \
@@ -52,6 +50,9 @@ from run_project_evaluation import (
 
 
 logger = logging.getLogger("run_classification_models")
+
+PROJECT_ROOT = Path(__file__).resolve().parent
+DEFAULT_MODEL_DIR = PROJECT_ROOT / "trained_models" / "email_intent"
 
 EXPECTED_LABELS = {
     "agendamento_reuniao",
@@ -162,7 +163,7 @@ def _feature_importance(classifier: Any) -> Any:
 def train_all_models(
     dataset_path: Path,
     model_dir: Path,
-    use_anonymization: bool = True,
+    use_anonymization: bool = False,
     max_features: int = 5000,
     random_state: int = 42,
 ) -> Dict[str, Any]:
@@ -481,14 +482,10 @@ def parse_args() -> argparse.Namespace:
     train_parser.add_argument(
         "--model-dir",
         type=Path,
-        default=Path("trained_models/email_intent"),
+        default=DEFAULT_MODEL_DIR,
     )
     train_parser.add_argument("--max-features", type=int, default=5000)
     train_parser.add_argument("--random-state", type=int, default=42)
-    train_parser.add_argument(
-        "--skip-anonymization",
-        action="store_true",
-    )
 
     evaluate_parser = subparsers.add_parser(
         "evaluate",
@@ -498,7 +495,7 @@ def parse_args() -> argparse.Namespace:
     evaluate_parser.add_argument(
         "--model-dir",
         type=Path,
-        default=Path("trained_models/email_intent"),
+        default=DEFAULT_MODEL_DIR,
     )
     evaluate_parser.add_argument(
         "--output-dir",
@@ -523,7 +520,7 @@ def main() -> None:
         metadata = train_all_models(
             dataset_path=args.dataset,
             model_dir=args.model_dir,
-            use_anonymization=not args.skip_anonymization,
+            use_anonymization=False,
             max_features=args.max_features,
             random_state=args.random_state,
         )

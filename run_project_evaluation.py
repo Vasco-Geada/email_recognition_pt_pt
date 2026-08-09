@@ -150,7 +150,7 @@ def prepare_dataset(dataset_path: str, use_anonymization: bool) -> PreparedDatas
             continue
 
         working_email = dict(email)
-        if anonymizer is not None:
+        if anonymizer is not None and not working_email.get("anonymization"):
             working_email = anonymizer.anonymize_email(working_email)
 
         try:
@@ -501,7 +501,10 @@ def run_classic_extraction(
             extracted = extractor.extract_with_context(
                 email_body=body,
                 email_subject=subject,
-                predicted_intent=email.get("label", ""),
+                predicted_intent=(
+                    email.get("predicted_intent")
+                    or email.get("label", "")
+                ),
                 trigger="",
             )
             arguments = extracted.get("extracted_arguments", {})
@@ -869,6 +872,8 @@ def run_qa_module(
 ) -> Optional[int]:
     """Run the QA module once over the test set, when explicitly requested."""
     try:
+        import torch
+
         qa_dir = PROJECT_ROOT / "qa"
         if str(qa_dir) not in sys.path:
             sys.path.insert(0, str(qa_dir))
@@ -889,7 +894,7 @@ def run_qa_module(
 
         pipeline = QAPipeline(
             model_name=model_name,
-            device="cpu",
+            device="cuda" if torch.cuda.is_available() else "cpu",
             confidence_threshold=0.3,
             verbose=True,
             reference_datetime=reference_datetime,

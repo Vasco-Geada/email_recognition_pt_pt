@@ -11,6 +11,7 @@ from run_classification_models import (
     model_artifact_paths,
     train_all_models,
 )
+from run_project import run_project
 
 
 class TestSeparateClassificationWorkflow(unittest.TestCase):
@@ -63,6 +64,34 @@ class TestSeparateClassificationWorkflow(unittest.TestCase):
             self.assertEqual(summary["overlapping_email_count"], 0)
             self.assertEqual(set(summary["metrics"]), set(MODEL_NAMES))
             self.assertTrue((output_dir / "summary.json").exists())
+            for artifact_path, original_hash in artifact_hashes.items():
+                self.assertEqual(file_sha256(artifact_path), original_hash)
+
+            unlabeled_path = root / "unlabeled.json"
+            unlabeled_emails = []
+            for email in self._test_emails():
+                item = dict(email)
+                item.pop("label")
+                item["anonymization"] = {"entities": [], "mode": "anonymize"}
+                unlabeled_emails.append(item)
+            self._write_dataset(unlabeled_path, unlabeled_emails)
+            project_summary = run_project(
+                dataset_path=unlabeled_path,
+                model_dir=model_dir,
+                output_root=root / "project-results",
+                include_classic=False,
+                include_qa=False,
+            )
+            self.assertEqual(project_summary["num_emails"], 4)
+            self.assertEqual(project_summary["anonymized_at_import_count"], 4)
+            self.assertIsNone(
+                project_summary["classification"]["metrics"]
+            )
+            self.assertTrue(
+                Path(project_summary["output_dir"])
+                .joinpath("emails_with_intent.json")
+                .exists()
+            )
             for artifact_path, original_hash in artifact_hashes.items():
                 self.assertEqual(file_sha256(artifact_path), original_hash)
 

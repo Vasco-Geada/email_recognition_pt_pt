@@ -200,6 +200,7 @@ TIME_OF_DAY = {
     'de manha': (6, 0, 12, 0),
     'pela manhã': (6, 0, 12, 0),
     'pela manha': (6, 0, 12, 0),
+    'durante a manha': (6, 0, 12, 0),
     'antes de almoço': (6, 0, 12, 0),
     'antes de almoco': (6, 0, 12, 0),
     
@@ -218,14 +219,22 @@ TIME_OF_DAY = {
     'noite': (18, 0, 23, 59),          # 18h-23:59h
     'de noite': (18, 0, 23, 59),
     'pela noite': (18, 0, 23, 59),
+    'ao final do dia': (17, 0, 19, 0),
+    'final do dia': (17, 0, 19, 0),
     
     # After lunch
-    'depois de almoço': (14, 00, 15, 30),  # ~14:00-15:30
-    'pós almoço': (14, 00, 15, 30),
+    'depois de almoço': (12, 30, 14, 0),
+    'depois de almoco': (12, 30, 14, 0),
+    'apos almoco': (12, 30, 14, 0),
+    'pós almoço': (12, 30, 14, 0),
+    'pos almoco': (12, 30, 14, 0),
     
     # After breakfast
     'depois do café': (9, 0, 10, 30),  # ~9:00-10:30
+    'depois do cafe': (9, 0, 10, 30),
+    'apos cafe': (9, 0, 10, 30),
     'pós café': (9, 0, 10, 30),
+    'pos cafe': (9, 0, 10, 30),
     'depois do pequeno almoço': (9, 0, 10, 30),
     'depois do pequeno-almoço': (9, 0, 10, 30),
     'assim que entrarmos': (9, 0, 10, 30),

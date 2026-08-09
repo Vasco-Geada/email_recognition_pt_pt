@@ -1,9 +1,58 @@
 {
-  "total": 80,
-  "num_errors": 0,
-  "error_rate": 0.0,
-  "by_true_label": {},
-  "by_predicted_label": {},
-  "confusion_pairs": {},
-  "errors": []
+  "total": 2000,
+  "num_errors": 3,
+  "error_rate": 0.0015,
+  "by_true_label": {
+    "nao_reuniao": 3
+  },
+  "by_predicted_label": {
+    "agendamento_reuniao": 3
+  },
+  "confusion_pairs": {
+    "nao_reuniao -> agendamento_reuniao": 3
+  },
+  "errors": [
+    {
+      "email_index": 4594,
+      "subject": "Fw: Pedido de esclarecimento",
+      "text": "fw: pedido de esclarecimento caro colega gabinete de estagios, envio em anexo o documento atualizado relativo a revisao do plano de trabalhos.",
+      "true_label": "nao_reuniao",
+      "predicted_label": "agendamento_reuniao",
+      "confidence": 1.0,
+      "probabilities": {
+        "agendamento_reuniao": 1.0,
+        "cancelamento_reuniao": 0.0,
+        "nao_reuniao": 0.0,
+        "reuniao_confirmada": 0.0
+      }
+    },
+    {
+      "email_index": 5996,
+      "subject": "RE: Entrega de relatorio",
+      "text": "re: entrega de relatorio boa tarde gabinete de estagios, envio em anexo o documento atualizado relativo a pedido de equivalencias.",
+      "true_label": "nao_reuniao",
+      "predicted_label": "agendamento_reuniao",
+      "confidence": 1.0,
+      "probabilities": {
+        "agendamento_reuniao": 1.0,
+        "cancelamento_reuniao": 0.0,
+        "nao_reuniao": 0.0,
+        "reuniao_confirmada": 0.0
+      }
+    },
+    {
+      "email_index": 7349,
+      "subject": "RE: Entrega de relatorio",
+      "text": "re: entrega de relatorio boa tarde gabinete de estagios, envio em anexo o documento atualizado relativo a calendario de avaliacoes.",
+      "true_label": "nao_reuniao",
+      "predicted_label": "agendamento_reuniao",
+      "confidence": 1.0,
+      "probabilities": {
+        "agendamento_reuniao": 1.0,
+        "cancelamento_reuniao": 0.0,
+        "nao_reuniao": 0.0,
+        "reuniao_confirmada": 0.0
+      }
+    }
+  ]
 }

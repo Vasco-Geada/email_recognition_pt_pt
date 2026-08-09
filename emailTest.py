@@ -1,5 +1,5 @@
-from preprocessing.preprocess import preprocessEmail
-import emailExtraction
+from emailExtraction import extractEmail
 
 
-emailExtraction.extractEmail()
+if __name__ == "__main__":
+    extractEmail()

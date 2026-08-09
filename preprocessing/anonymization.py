@@ -83,7 +83,19 @@ class PlaceholderRegistry:
 
 
 class EmailAnonymizer:
-    """Main hybrid anonymizer for subject/body email fields."""
+    """Main hybrid anonymizer for email text and participant metadata."""
+
+    SENSITIVE_METADATA_FIELDS = (
+        "sender",
+        "from",
+        "from_",
+        "recipient",
+        "recipients",
+        "to",
+        "cc",
+        "bcc",
+        "participants",
+    )
 
     def __init__(self, use_spacy: bool = True) -> None:
         self.regex_anonymizer = RegexAnonymizer()
@@ -132,7 +144,7 @@ class EmailAnonymizer:
         include_original_text: bool = False,
     ) -> Dict:
         """
-        Anonymize subject/body while preserving labels and extra metadata.
+        Anonymize subject/body and identity-bearing metadata fields.
 
         Args:
             email: Dict with at least subject/body-like fields.
@@ -162,8 +174,23 @@ class EmailAnonymizer:
         result["subject"] = anonymized_subject
         result["body"] = anonymized_body
 
+        metadata_entities: List[Dict] = []
+        original_metadata: Dict[str, object] = {}
+        for field in self.SENSITIVE_METADATA_FIELDS:
+            if field not in result or result[field] is None:
+                continue
+            if include_original_text:
+                original_metadata[field] = result[field]
+            result[field], field_entities = self._anonymize_metadata_value(
+                result[field],
+                field=field,
+                registry=registry,
+                include_original=keep_mapping,
+            )
+            metadata_entities.extend(field_entities)
+
         anonymization = {
-            "entities": subject_entities + body_entities,
+            "entities": subject_entities + body_entities + metadata_entities,
             "mode": "pseudonymize" if keep_mapping else "anonymize",
         }
         if keep_mapping:
@@ -172,10 +199,39 @@ class EmailAnonymizer:
             anonymization["original_text"] = {
                 "subject": subject,
                 "body": body,
+                **original_metadata,
             }
 
         result["anonymization"] = anonymization
         return result
+
+    def _anonymize_metadata_value(
+        self,
+        value: object,
+        field: str,
+        registry: PlaceholderRegistry,
+        include_original: bool,
+    ) -> Tuple[object, List[Dict]]:
+        if isinstance(value, (list, tuple)):
+            anonymized_values = []
+            entities: List[Dict] = []
+            for index, item in enumerate(value):
+                anonymized, item_entities = self.anonymize_text(
+                    str(item),
+                    field=f"{field}[{index}]",
+                    registry=registry,
+                    include_original=include_original,
+                )
+                anonymized_values.append(anonymized)
+                entities.extend(item_entities)
+            return anonymized_values, entities
+
+        return self.anonymize_text(
+            str(value),
+            field=field,
+            registry=registry,
+            include_original=include_original,
+        )
 
     def _find_candidates(self, text: str) -> List[EntityCandidate]:
         candidates: List[EntityCandidate] = []

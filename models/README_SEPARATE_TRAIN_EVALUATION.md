@@ -5,9 +5,7 @@ TF-IDF e os três classificadores. Não cria uma divisão interna de teste.
 
 ```powershell
 python run_classification_models.py train `
-  --dataset dataset/dataset_treino.json `
-  --model-dir trained_models/email_intent `
-  --skip-anonymization
+  --dataset dataset/dataset_treino.json
 ```
 
 São guardados o modelo e o vectorizer de:
@@ -30,6 +28,8 @@ python run_classification_models.py evaluate `
 
 O comando `evaluate` nunca executa `fit()` nem altera os vectorizers. O
 pré-processamento usado no treino é recuperado automaticamente dos metadados.
+Os datasets importados já devem estar anonimizados; esta etapa não volta a
+aplicar anonimização.
 
 Por defeito, a avaliação é interrompida quando:
 

@@ -1,12 +1,12 @@
 {
   "model": "naive_bayes",
-  "train_seconds": 0.008068000000093889,
-  "predict_seconds": 0.0016430000000582368,
-  "accuracy": 0.9875,
-  "precision_macro": 0.9880952380952381,
-  "recall_macro": 0.9875,
-  "f1_macro": 0.9874921826141339,
-  "f1_weighted": 0.9874921826141339,
+  "train_seconds": 0.12695819999999003,
+  "predict_seconds": 0.03424689999997099,
+  "accuracy": 1.0,
+  "precision_macro": 1.0,
+  "recall_macro": 1.0,
+  "f1_macro": 1.0,
+  "f1_weighted": 1.0,
   "labels": [
     "agendamento_reuniao",
     "cancelamento_reuniao",
@@ -15,67 +15,67 @@
   ],
   "confusion_matrix": [
     [
-      20,
+      600,
       0,
       0,
       0
     ],
     [
       0,
-      20,
+      600,
       0,
       0
     ],
     [
       0,
       0,
-      20,
+      200,
       0
     ],
     [
-      1,
       0,
       0,
-      19
+      0,
+      600
     ]
   ],
   "classification_report": {
     "agendamento_reuniao": {
-      "precision": 0.9523809523809523,
+      "precision": 1.0,
       "recall": 1.0,
-      "f1-score": 0.975609756097561,
-      "support": 20.0
+      "f1-score": 1.0,
+      "support": 600.0
     },
     "cancelamento_reuniao": {
       "precision": 1.0,
       "recall": 1.0,
       "f1-score": 1.0,
-      "support": 20.0
+      "support": 600.0
     },
     "nao_reuniao": {
       "precision": 1.0,
       "recall": 1.0,
       "f1-score": 1.0,
-      "support": 20.0
+      "support": 200.0
     },
     "reuniao_confirmada": {
       "precision": 1.0,
-      "recall": 0.95,
-      "f1-score": 0.9743589743589743,
-      "support": 20.0
+      "recall": 1.0,
+      "f1-score": 1.0,
+      "support": 600.0
     },
-    "accuracy": 0.9875,
+    "accuracy": 1.0,
     "macro avg": {
-      "precision": 0.9880952380952381,
-      "recall": 0.9875,
-      "f1-score": 0.9874921826141339,
-      "support": 80.0
+      "precision": 1.0,
+      "recall": 1.0,
+      "f1-score": 1.0,
+      "support": 2000.0
     },
     "weighted avg": {
-      "precision": 0.9880952380952381,
-      "recall": 0.9875,
-      "f1-score": 0.9874921826141339,
-      "support": 80.0
+      "precision": 1.0,
+      "recall": 1.0,
+      "f1-score": 1.0,
+      "support": 2000.0
     }
   }
 }
