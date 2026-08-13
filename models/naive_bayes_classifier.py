@@ -123,7 +123,8 @@ class NaiveBayesEmailClassifier:
             f"ngram_range={ngram_range}, "
             f"alpha={alpha}"
         )
-    
+     
+    # Creates the TF-IDF vectorizer and fits the Naive Bayes model to the provided texts and labels.
     def fit(
         self,
         X: List[str],

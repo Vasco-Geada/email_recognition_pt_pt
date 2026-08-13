@@ -67,7 +67,7 @@ MODEL_NAMES = (
 )
 METADATA_FILENAME = "training_metadata.json"
 
-
+# Return the paths for the model and vectorizer artifacts for a given model name.
 def model_artifact_paths(
     model_dir: Path,
     model_name: str,
@@ -77,7 +77,7 @@ def model_artifact_paths(
         model_dir / f"{model_name}_vectorizer.joblib",
     )
 
-
+# Return a dictionary of instantiated classifiers with the given parameters.
 def create_models(
     max_features: int = 5000,
     random_state: int = 42,
@@ -105,7 +105,7 @@ def file_sha256(path: Path) -> str:
             digest.update(chunk)
     return digest.hexdigest()
 
-
+# Return a sorted list of unique SHA256 fingerprints for a list of texts.
 def text_fingerprints(texts: List[str]) -> List[str]:
     return sorted({
         hashlib.sha256(text.strip().encode("utf-8")).hexdigest()
@@ -113,7 +113,7 @@ def text_fingerprints(texts: List[str]) -> List[str]:
         if text.strip()
     })
 
-
+# Validate that the training dataset contains all expected labels.
 def validate_training_labels(labels: List[str]) -> None:
     observed = set(labels)
     missing = EXPECTED_LABELS.difference(observed)
@@ -153,13 +153,13 @@ def _load_classifier(
         )
     raise ValueError(f"Modelo desconhecido: {model_name}")
 
-
+# Return the top feature importance for a given classifier.
 def _feature_importance(classifier: Any) -> Any:
     if isinstance(classifier, DecisionTreeEmailClassifier):
         return classifier.get_feature_importance(top_n=20)
     return classifier.get_feature_importance(top_n=20)
 
-
+#train all classifiers on the complete training dataset and persist them, returning a summary of training metadata.
 def train_all_models(
     dataset_path: Path,
     model_dir: Path,
@@ -251,7 +251,7 @@ def load_all_models(model_dir: Path) -> Dict[str, Any]:
         )
     return models
 
-
+#Validate that the evaluation dataset is independent from the training dataset and return a summary of overlap and unknown labels.
 def validate_independent_evaluation(
     dataset_path: Path,
     prepared: PreparedDataset,
@@ -291,7 +291,7 @@ def validate_independent_evaluation(
         "overlap_allowed": allow_overlap,
     }
 
-
+# Evaluate a loaded classifier on a prepared dataset and return metrics, predictions, and probabilities.
 def evaluate_loaded_classifier(
     model_name: str,
     classifier: Any,
@@ -366,7 +366,7 @@ def evaluate_loaded_classifier(
     }
     return metrics, predictions, probabilities
 
-
+#evaluate all saved models on a given dataset without retraining and return a summary of metrics.
 def evaluate_saved_models(
     dataset_path: Path,
     model_dir: Path,

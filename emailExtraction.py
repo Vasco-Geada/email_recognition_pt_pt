@@ -109,7 +109,8 @@ def message_to_email_data(message: Message, email_id: str) -> Dict:
         result["cc"] = cc
     return result
 
-
+# Anonymization is done immediately after fetching the email to avoid storing any sensitive data in memory or on disk. 
+# The anonymized representation is then saved to a JSON file for downstream processing.
 def anonymize_imported_email(
     email_data: Dict,
     anonymizer: EmailAnonymizer,
@@ -129,7 +130,7 @@ def save_imported_emails(emails: List[Dict], output_path: Path) -> None:
     with output_path.open("w", encoding="utf-8") as handle:
         json.dump(emails, handle, ensure_ascii=False, indent=2)
 
-
+# Fetch emails from an IMAP server, anonymize them immediately, and save the anonymized dataset to a JSON file.
 def extract_emails(
     output_path: Path = DEFAULT_OUTPUT,
     mailbox: str = "inbox",
@@ -212,8 +213,8 @@ def extract_emails(
     print(f"{len(imported)} emails anonimizados guardados em: {output_path.resolve()}")
     return imported
 
-
-def extractEmail() -> List[Dict]:
+# Getter of the extracted emails.
+def GetExtractEmail() -> List[Dict]:
     """Compatibility wrapper for the original project entry point."""
     return extract_emails()
 

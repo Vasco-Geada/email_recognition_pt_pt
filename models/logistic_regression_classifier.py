@@ -42,6 +42,7 @@ class LogisticRegressionEmailClassifier:
         self.classes_: Optional[np.ndarray] = None
         self.is_fitted = False
 
+# Creates the TF-IDF vectorizer and fits the Logistic Regression model to the provided texts and labels.
     def fit(
         self,
         texts: List[str],
@@ -64,7 +65,8 @@ class LogisticRegressionEmailClassifier:
         self.classes_ = self.model.classes_
         self.is_fitted = True
         return self
-
+    
+# Predicts the class labels for the given texts using the fitted Logistic Regression model.
     def predict(self, texts: PredictionInput) -> Union[str, List[str]]:
         self._ensure_fitted()
         prepared, return_single = self._prepare_input(texts)
@@ -73,6 +75,8 @@ class LogisticRegressionEmailClassifier:
         ).tolist()
         return predictions[0] if return_single else predictions
 
+
+# Returns the prediction probabilities for each class using the fitted Logistic Regression model.
     def predict_proba(
         self,
         texts: PredictionInput,

@@ -50,13 +50,14 @@ def parse_args() -> argparse.Namespace:
     return parser.parse_args()
 
 
+# Set random seeds for reproducibility across random, numpy, and torch.
 def set_seed(seed: int) -> None:
     random.seed(seed)
     torch.manual_seed(seed)
     if torch.cuda.is_available():
         torch.cuda.manual_seed_all(seed)
 
-
+# Resolve the device to use for training (CPU or CUDA) based on user input and availability.
 def resolve_device(requested_device: str) -> torch.device:
     requested = str(requested_device or "auto").lower()
     if requested == "auto":
@@ -77,6 +78,7 @@ def resolve_device(requested_device: str) -> torch.device:
     return device
 
 
+# Load the QA dataset from JSON files for training and validation, using the Hugging Face datasets library.
 def load_qa_dataset(train_file: str, validation_file: str, cache_dir: str):
     return load_dataset(
         "json",
@@ -87,7 +89,7 @@ def load_qa_dataset(train_file: str, validation_file: str, cache_dir: str):
         cache_dir=cache_dir,
     )
 
-
+# Prepare the training features for the QA model by tokenizing the questions and contexts, handling overflow, and mapping answer positions to token indices.
 def prepare_train_features(examples: Dict[str, List[Any]], tokenizer, args: argparse.Namespace) -> Dict[str, List[Any]]:
     tokenized = tokenizer(
         examples["question"],
@@ -108,6 +110,7 @@ def prepare_train_features(examples: Dict[str, List[Any]], tokenizer, args: argp
     example_ids = []
     categories = []
 
+# Map the answer start and end character positions to token indices, handling cases where the answer is not fully contained in the tokenized span.
     for feature_index, offsets in enumerate(offset_mapping):
         input_ids = tokenized["input_ids"][feature_index]
         cls_index = input_ids.index(tokenizer.cls_token_id)
@@ -153,7 +156,7 @@ def prepare_train_features(examples: Dict[str, List[Any]], tokenizer, args: argp
     tokenized["category"] = categories
     return tokenized
 
-
+# Collate a batch of examples into tensors for input to the model, including input IDs, attention masks, token type IDs, and answer positions, while also preserving example IDs and categories.
 def collate_batch(batch: List[Dict[str, Any]]) -> Dict[str, Any]:
     tensor_keys = ["input_ids", "attention_mask", "start_positions", "end_positions"]
     if "token_type_ids" in batch[0]:
@@ -167,7 +170,7 @@ def collate_batch(batch: List[Dict[str, Any]]) -> Dict[str, Any]:
     result["category"] = [item["category"] for item in batch]
     return result
 
-
+# Create an optimizer for the model with separate weight decay settings for different parameter groups.
 def make_optimizer(model, args: argparse.Namespace):
     no_decay = ["bias", "LayerNorm.weight"]
     grouped_parameters = [
@@ -188,7 +191,7 @@ def make_optimizer(model, args: argparse.Namespace):
     ]
     return torch.optim.AdamW(grouped_parameters, lr=args.learning_rate)
 
-
+# Evaluate the average loss of the model on the evaluation dataset, using mixed precision if specified.
 def evaluate_loss(model, dataloader: DataLoader, device: torch.device, use_fp16: bool) -> float:
     model.eval()
     losses = []
@@ -205,7 +208,7 @@ def evaluate_loss(model, dataloader: DataLoader, device: torch.device, use_fp16:
     model.train()
     return sum(losses) / len(losses) if losses else 0.0
 
-
+# Save the model and tokenizer to the specified output directory, along with training metrics in a JSON file.
 def save_checkpoint(model, tokenizer, output_dir: Path, metrics: Dict[str, Any]) -> None:
     output_dir.mkdir(parents=True, exist_ok=True)
     model.save_pretrained(output_dir)
@@ -250,6 +253,7 @@ def main() -> None:
         num_workers=args.num_workers,
         pin_memory=device.type == "cuda",
     )
+    
     eval_loader = DataLoader(
         tokenized["validation"],
         batch_size=args.batch_size,
@@ -274,6 +278,7 @@ def main() -> None:
 
     model.train()
     global_step = 0
+    # Train the model for the specified number of epochs, accumulating gradients and updating the optimizer at defined intervals, while logging training and validation loss metrics.
     for epoch in range(args.num_epochs):
         progress = tqdm(train_loader, desc=f"epoch {epoch + 1}/{args.num_epochs}")
         running_loss = 0.0

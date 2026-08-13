@@ -73,6 +73,10 @@ class QAQuestions:
         "Rita e João",
         "o meu colega",
         "o orientador",
+        " a professora",
+        "eu",
+        "nós",
+        "a equipa",
         "os alunos",
         "a turma",
     ]
@@ -83,6 +87,12 @@ class QAQuestions:
         "10h",
         "na sala",
         "o dataset",
+        "a",
+        "m",
+        "amanhã",
+        "hoje",
+        "32",
+        "cento e vinte e cinco"
     ]
     
     # Pergunta sobre HORA
@@ -97,6 +107,8 @@ class QAQuestions:
         "Em que altura?",
         "Para que horas?",
         "A que hora marcou?",
+        "Para que horas ficou marcada a reunião?"
+        "Para quando é que ficou marcada?"
     ]
     TIME_EXAMPLES_CORRECT = [
         "sexta às 15h",
@@ -117,6 +129,8 @@ class QAQuestions:
         "na sala",
         "o professor",
         "online",
+        "presencial",
+        "a"
     ]
     
     # Pergunta sobre LOCAL
@@ -144,6 +158,7 @@ class QAQuestions:
         "na cantina",
         "à distância",
         "office",
+        "remoto",
     ]
     LOCATION_EXAMPLES_INCORRECT = [
         "Ana",

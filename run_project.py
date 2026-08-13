@@ -49,7 +49,7 @@ class InferenceDataset:
     texts: List[str]
     labels: List[Optional[str]]
 
-
+# Resolve the directory containing the persisted classification models, preferring the canonical location but falling back to the most recently saved model bundle if necessary.
 def resolve_classification_model_dir() -> Path:
     """Use the canonical directory, falling back to the latest saved bundle."""
     canonical_metadata = DEFAULT_MODEL_DIR / "training_metadata.json"
@@ -64,7 +64,7 @@ def resolve_classification_model_dir() -> Path:
         "python run_classification_models.py train --dataset <dataset.json>"
     )
 
-
+# Prepare the inference dataset by preprocessing the imported emails.
 def prepare_inference_dataset(dataset_path: Path) -> InferenceDataset:
     """Preprocess an imported dataset without applying anonymization again."""
     raw_emails = load_dataset(str(dataset_path))
@@ -124,6 +124,7 @@ def prepare_inference_dataset(dataset_path: Path) -> InferenceDataset:
     )
 
 
+#Return a dictionary with predictions, probabilities, rows and metrics for a given model and dataset.
 def _predict_model(
     model_name: str,
     classifier: Any,
@@ -177,7 +178,7 @@ def _predict_model(
         "metrics": metrics,
     }
 
-
+# Attach the primary intent prediction and consensus from multiple models to each email in the dataset.
 def _attach_primary_intent(
     dataset: InferenceDataset,
     model_results: Dict[str, Dict[str, Any]],
@@ -196,7 +197,7 @@ def _attach_primary_intent(
             for model_name in MODEL_NAMES
         }
 
-
+# Run the main project pipeline with the specified parameters.
 def run_project(
     dataset_path: Path,
     model_dir: Optional[Path] = None,
@@ -210,15 +211,18 @@ def run_project(
     if not dataset_path.exists():
         raise FileNotFoundError(f"Dataset nao encontrado: {dataset_path}")
 
+# Define variables
     selected_model_dir = model_dir or resolve_classification_model_dir()
     training_metadata = load_training_metadata(selected_model_dir)
     models = load_all_models(selected_model_dir)
     dataset = prepare_inference_dataset(dataset_path)
 
+#Define output directories
     output_dir = output_root / dataset_path.stem
     classification_dir = output_dir / "classification"
     classification_dir.mkdir(parents=True, exist_ok=True)
 
+# Run predictions for each model and save the results to JSON files, including metrics if available.
     model_results: Dict[str, Dict[str, Any]] = {}
     classification_metrics: Dict[str, Dict[str, Any]] = {}
     for model_name, classifier in models.items():
@@ -240,10 +244,12 @@ def run_project(
             classification_dir / "summary.csv",
             classification_metrics,
         )
-
+        
+# Attach the primary intent predictions and consensus to the dataset, then save the updated dataset to a JSON file.
     _attach_primary_intent(dataset, model_results)
     write_json(output_dir / "emails_with_intent.json", dataset.processed_emails)
 
+# Run classic extraction and QA modules if enabled, and summarize the results in a JSON file.
     reference_datetime = datetime.now()
     classic_count = None
     if include_classic:
@@ -253,6 +259,7 @@ def run_project(
             reference_datetime=reference_datetime,
         )
 
+# Run the QA module if enabled, ensuring that the specified QA model exists, and summarize the results in a JSON file.
     qa_count = None
     if include_qa:
         if not qa_model.exists():
@@ -264,6 +271,7 @@ def run_project(
             reference_datetime=reference_datetime,
         )
 
+# Summarize the project run, including counts of processed and anonymized emails, model details, and results from classic extraction and QA modules, then save the summary to a JSON file.
     anonymized_count = sum(
         isinstance(email_item.get("anonymization"), dict)
         for email_item in dataset.raw_emails

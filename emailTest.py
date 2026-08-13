@@ -1,5 +1,5 @@
-from emailExtraction import extractEmail
+from emailExtraction import GetExtractEmail
 
 
 if __name__ == "__main__":
-    extractEmail()
+    GetExtractEmail()

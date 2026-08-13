@@ -26,6 +26,8 @@ from datetime import datetime
 from pathlib import Path
 from typing import Any, Dict, Iterable, List, Optional, Tuple
 
+from sklearn.feature_extraction.text import TfidfVectorizer
+from sklearn.linear_model import LogisticRegression
 from sklearn.metrics import (
     accuracy_score,
     classification_report,
@@ -1094,6 +1096,7 @@ def main() -> None:
         len(set(prepared.labels)),
     )
 
+# Run cross-validation for all models if requested.
     cv_results = run_cross_validation(prepared.texts, prepared.labels, args)
     all_metrics: Dict[str, Dict[str, Any]] = {}
     all_predictions: Dict[str, List[Dict[str, Any]]] = {}
@@ -1101,6 +1104,7 @@ def main() -> None:
     classification_dir = output_dir / "classification"
     classification_dir.mkdir(parents=True, exist_ok=True)
 
+# Run all classification models and evaluate them.
     for model_name, model in build_models(args).items():
         result = evaluate_classifier(model_name, model, x_train, x_test, y_train, y_test)
         if model_name in cv_results:
@@ -1135,6 +1139,7 @@ def main() -> None:
 
     write_summary_csv(classification_dir / "summary.csv", all_metrics)
 
+# Run the classic structured extraction pipeline if not skipped.
     classic_processed_count = None
     classic_metrics = None
     if not args.skip_argument_extraction:
@@ -1193,6 +1198,7 @@ def main() -> None:
     }
     write_summary_csv(output_dir / "summary.csv", all_metrics)
 
+# Evaluate the QA module if enabled.
     qa_processed_count = None
     qa_metrics = None
     if args.run_qa:

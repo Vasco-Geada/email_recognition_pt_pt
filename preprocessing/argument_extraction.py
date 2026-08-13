@@ -61,6 +61,7 @@ class ExtractedArguments:
         }
 
 
+########## Temporal Expression Extractor ##########
 class TemporalExpressionExtractor:
     """
     Extracts Portuguese temporal expressions using pattern-based regex matching.
@@ -183,6 +184,7 @@ class TemporalExpressionExtractor:
         return sorted(deduplicated, key=lambda s: s.span_start)
 
 
+########## LocationExtractor ##########
 class LocationExtractor:
     """
     Extracts room/location information using regex patterns and heuristics.
@@ -258,6 +260,7 @@ class LocationExtractor:
         return sorted(deduplicated, key=lambda s: s.span_start)
 
 
+########## ParticipantExtractor ##########
 class ParticipantExtractor:
     """
     Extracts participant names using spaCy NER and email-specific heuristics.
@@ -366,6 +369,7 @@ class ParticipantExtractor:
         return sorted(unique_by_text.values(), key=lambda s: s.span_start)
 
 
+########## TopicExtractor ##########
 class TopicExtractor:
     """
     Extracts one explicit meeting topic from body or subject.
@@ -597,6 +601,7 @@ class TopicExtractor:
         )
 
 
+########## ArgumentExtractor ##########
 class ArgumentExtractor:
     """
     Main class for extracting structured arguments from Portuguese meeting emails.

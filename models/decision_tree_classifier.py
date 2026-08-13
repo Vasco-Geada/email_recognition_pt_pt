@@ -72,6 +72,9 @@ class DecisionTreeEmailClassifier:
         self.classes_: Optional[np.ndarray] = None
         self.is_fitted = False
 
+# Train the model using the provided texts and labels.
+# Checks for input validity, cleans the texts, vectorizes them using TF-IDF, and finally fits the Decision Tree model. 
+# The method also sets the classes_ attribute and marks the model as fitted.
     def fit(self, texts: List[str], labels: List[str]) -> "DecisionTreeEmailClassifier":
         """
         Fit TF-IDF vectorizer and Decision Tree model.
@@ -100,6 +103,8 @@ class DecisionTreeEmailClassifier:
         self.is_fitted = True
         return self
 
+# Predicts the class labels using the trained Decision Tree model.
+# It returns either a single prediction or a list of predictions based on the input type.
     def predict(self, texts: PredictionInput) -> Union[str, List[str]]:
         """Predict the class for one text or a list of texts."""
         self._ensure_fitted()
@@ -108,6 +113,7 @@ class DecisionTreeEmailClassifier:
         predictions = self.model.predict(x_values).tolist()
         return predictions[0] if return_single else predictions
 
+# Returns the prediction probabilities for each class using the trained Decision Tree model.
     def predict_proba(
         self,
         texts: PredictionInput,
@@ -125,6 +131,7 @@ class DecisionTreeEmailClassifier:
         ]
         return results[0] if return_single else results
 
+# Returns a dictionary containing the predicted class, the probabilities for each class, and the confidence score
     def predict_with_confidence(self, text: str) -> Dict:
         """
         Predict a single email and return class, probabilities and confidence.
@@ -140,6 +147,7 @@ class DecisionTreeEmailClassifier:
             "confidence": float(probabilities.get(prediction, 0.0)),
         }
 
+# Evaluate the classifier using standard classification metrics and return a dictionary of results.
     def evaluate(self, texts: List[str], labels: List[str], verbose: bool = True) -> Dict:
         """Evaluate the classifier with standard classification metrics."""
         self._ensure_fitted()
@@ -181,6 +189,7 @@ class DecisionTreeEmailClassifier:
 
         return metrics
 
+# Returns the most important TF-IDF features according to the trained Decision Tree model.
     def get_feature_importance(self, top_n: int = 20) -> List[Tuple[str, float]]:
         """
         Return the most important TF-IDF features according to the tree.
@@ -198,6 +207,7 @@ class DecisionTreeEmailClassifier:
             if importances[index] > 0
         ]
 
+# Persist model and vectorizer with joblib.
     def save(
         self,
         model_path: str = "models/decision_tree_model.joblib",
@@ -212,6 +222,7 @@ class DecisionTreeEmailClassifier:
         logger.info("Saved Decision Tree model to %s", model_path)
         logger.info("Saved TF-IDF vectorizer to %s", vectorizer_path)
 
+# Load model and vectorizer from disk.
     def load(
         self,
         model_path: str = "models/decision_tree_model.joblib",
